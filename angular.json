@@ -1,0 +1,148 @@
+{
+    "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
+    "version": 1,
+    "newProjectRoot": "projects",
+    "projects": {
+        "retirement-election-wc": {
+            "projectType": "application",
+            "schematics": {},
+            "root": "",
+            "sourceRoot": "src",
+            "prefix": "app",
+            "architect": {
+                "serve-mf": {
+                    "builder": "ngx-build-plus:dev-server",
+                    "options": {
+                        "buildTarget": "retirement-election-wc:build"
+                    },
+                    "configurations": {
+                        "production": {
+                            "buildTarget": "retirement-election-wc:build:production"
+                        }
+                    }
+                },
+                "build-mf": {
+                    "builder": "ngx-build-plus:browser",
+                    "options": {
+                        "allowedCommonJsDependencies": ["babel-runtime", "rxjs", "@babel/runtime", "core-js", "xlsx", "raf"],
+                        "outputPath": "dist/retirement-election-wc/MF",
+                        "index": "src/index.html",
+                        "main": "src/main-mf.ts",
+                        "tsConfig": "tsconfig.mf.json",
+                        "aot": true,
+                        "assets": ["src/favicon.ico", "src/al-assets"],
+                        "styles": ["src/styles.css"],
+                        "scripts": [],
+                        "extraWebpackConfig": "webpack.prod.config.js",
+                        "commonChunk": false
+                    },
+                    "configurations": {
+                        "module-federation": {
+                            "fileReplacements": [{
+                                "replace": "src/environments/environment.ts",
+                                "with": "src/environments/environment.prod.ts"
+                            }],
+                            "optimization": true,
+                            "sourceMap": false,
+                            "namedChunks": false,
+                            "extractLicenses": true,
+                            "vendorChunk": false,
+                            "buildOptimizer": true,
+                            "budgets": [{
+                                "type": "initial",
+                                "maximumWarning": "2mb",
+                                "maximumError": "5mb"
+                            }],
+                            "outputHashing": "none"
+                        }
+                    }
+                },
+                "build": {
+                    "builder": "ngx-build-plus:browser",
+                    "options": {
+                        "allowedCommonJsDependencies": ["babel-runtime", "rxjs", "@babel/runtime", "core-js", "xlsx", "raf"],
+                        "outputPath": "dist/retirement-election-wc",
+                        "index": "src/index.html",
+                        "main": "src/main.ts",
+                        "tsConfig": "tsconfig.app.json",
+                        "aot": true,
+                        "assets": ["src/favicon.ico", "src/al-assets"],
+                        "styles": ["src/styles.css"],
+                        "scripts": []
+                    },
+                    "configurations": {
+                        "production": {
+                            "fileReplacements": [{
+                                "replace": "src/environments/environment.ts",
+                                "with": "src/environments/environment.prod.ts"
+                            }],
+                            "optimization": true,
+                            "outputHashing": "all",
+                            "sourceMap": false,
+                            "namedChunks": false,
+                            "extractLicenses": true,
+                            "vendorChunk": false,
+                            "buildOptimizer": true,
+                            "budgets": [{
+                                "type": "initial",
+                                "maximumWarning": "2mb",
+                                "maximumError": "5mb"
+                            }]
+                        }
+                    }
+                },
+                "serve": {
+                    "builder": "ngx-build-plus:dev-server",
+                    "options": {
+                        "buildTarget": "retirement-election-wc:build"
+                    },
+                    "configurations": {
+                        "production": {
+                            "buildTarget": "retirement-election-wc:build:production"
+                        }
+                    }
+                },
+                "extract-i18n": {
+                    "builder": "@angular-devkit/build-angular:extract-i18n",
+                    "options": {
+                        "buildTarget": "retirement-election-wc:build"
+                    }
+                },
+                "test": {
+                    "builder": "ngx-build-plus:karma",
+                    "options": {
+                        "main": "src/test.ts",
+                        "tsConfig": "tsconfig.spec.json",
+                        "karmaConfig": "karma.conf.js",
+                        "assets": ["src/favicon.ico", "src/al-assets"],
+                        "styles": ["src/styles.css"],
+                        "scripts": []
+                    }
+                },
+                "lint": {
+                    "builder": "@angular-eslint/builder:lint",
+                    "options": {
+                        "lintFilePatterns": ["src/**/*.ts"]
+                    }
+                },
+                "e2e": {
+                    "builder": "@angular-devkit/build-angular:protractor",
+                    "options": {
+                        "protractorConfig": "e2e/protractor.conf.js",
+                        "devServerTarget": "retirement-election-wc:serve"
+                    },
+                    "configurations": {
+                        "production": {
+                            "devServerTarget": "retirement-election-wc:serve:production"
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "defaultProject": "retirement-election-wc",
+    "cli": {
+        "analytics": false,
+        "schematicCollections": ["@angular-eslint/schematics"]
+    }
+}
