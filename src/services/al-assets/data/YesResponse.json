@@ -1,0 +1,20 @@
+{
+	"change": "Change",
+	"retirementProgressStage": null,
+	"popUpContent": {
+		"yesText": "Yes",
+		"noText": "No",
+		"changeModelText": "Do you want to change your choices?<br><br> You’ll need to start the retirement process again from the beginning. That’s because making changes to this information may impact your benefits options and payment amounts."
+	},
+	"progressBarList": [
+		"Your Info",
+		"Dates",
+		"Beneficiaries",
+		"Rights",
+		"Payment",
+		"Destination",
+		"Review",
+		"Authorize"
+	],
+	"statusCode": 200
+}

@@ -1,0 +1,161 @@
+{
+
+	"status": {
+		"statusCode": 200,
+		"statusMessage": "OK"
+	},
+
+	"pensionPaymentSummaryInfoBean": {
+
+		"pageHeaderText": {
+			"flowNameText": "Make Your Retirement Choices",
+			"pageNameText": "Pension Payment Summary",
+			"isDeferralAllowed": true,
+			"tipsLabel": "tip",
+			"tipsShortDescription": "Just want to enroll in retiree health care?",
+			"moreLable": "More",
+			"lessLable": "Less",
+			"tipLinkText": "Defer All your pension payment options.",
+			"tipLinkButton": "Defer All",
+			"bcdText": "This provides a summary of any payment choices you make for your benefit beginning <b> October 1, 2017.</b>",
+			"wishToDeferText": "If you don’t want to receive benefits on that date, you may choose to Defer. There are several ",
+			"rollOverText": "reasons why you may wish to defer.",
+			"rollOverHeaderText": "Defer",
+			"rollOverContentText": "You can skip (defer) making a pension choice and come back to make that choice later.",
+			"rollOverContentText2": "You may choose to defer payment of a pension benefit if:",
+			"rollOverConditionText": [{
+					"point": "You want to make your health care choices and prefer to begin pension benefits later."
+				},
+				{
+					"point": "You want to review your savings options and prefer to begin pension benefits later."
+				},
+				{
+					"point": "You (or your spouse, if applicable) have other sources of income and don't need your pension benefits now."
+				},
+				{
+					"point": "You don't want to pay taxes (if applicable) on your benefits until later."
+				}
+			],
+			"changeText": "You can change your form of payment (up to the last business day before your benefits begin).",
+			"deferAllModalHeaderText":"Do you want to defer all your payments?" ,
+         "deferAllModalParaText":"If you want to receive all your pension benefits at a later date, choose Yes.",
+         "yesButtonText":"Yes",
+         "noButtonText":"No"
+		},
+		"benefitHeaderText": "Nonqualified Benefit",
+		"benefitContent1": "You'll also receive an additional nonqualified benefit from Nonqualified Pension Plan 1, which isn't listed here",
+		"benefitContent2": "You'll also receive a nonqualified benefit from Nonqualified Pension Plan 1, which isn't listed here",
+		"benefitContent3": "You're eligible for this benefit on September 1, 2017.",
+		"benefitContent4": "You'll see a message on the home page of this site when you can make payment choices.",
+		"benefitContent5": "Before you need to make decisions, you'll receive more information by postal mail about how to make your payment choices.",
+		"benefitContent6": "You can make payment choices beginning September 1, 2017. Before you need to make decisions, you'll receive more information by postal mail about how to make your payment choices.",
+		"isPptOpfmMtrxElig": true,
+		"choosePaymentOptionsButtonText": "Choose Payment Options",
+		"isDeferAlwd": true,
+		"hasDbNqlfBnft": false,
+		"deferAllButtonText": "Defer All",
+		"paymentTableSectionHeaderText": "Your Form of Payment Choices",
+		"paymentTable": [{
+				"planDescription": "Premier Cash Balance Plan",
+				"noteHeaderText": "Note:",
+				"noteText": "Amounts are before tax, and don't include any payments to your beneficiary after you die (if applicable).",
+				"deferButtonText": "Defer",
+				"deferButtonHeaderText1": "Do you want to defer your payments? ",
+				"deferButtonHeaderText2": "If you want to receive all your pension benefits at a later date, choose Yes.",
+				"deferYesButtonText": "yes",
+				"deferNoButtonText ": "no",
+				"paymentTableContent": [{
+					"electionDescription": "Benefit",
+					"optionalFormGroupDescription": "Form of Payment",
+					"PaymentToYouText": "Payment to you",
+					"hasSelectedPrimOpfmPmt": false,
+					"reviewButtonText": "Action"
+				}],
+				"paymentTableContentdata": [{
+						"electionDescription": "Benefit1",
+						"optionalFormGroupDescription": "not on file",
+						"PaymentToYouText": "-",
+						"hasSelectedPrimOpfmPmt": false,
+						"reviewButtonText": " Review Option ",
+
+						"changeButtonText": " Change "
+					},
+					{
+						"electionDescription": "Benefit2",
+						"optionalFormGroupDescription": "not on file",
+						"PaymentToYouText": "-",
+						"hasSelectedPrimOpfmPmt": false,
+						"reviewButtonText": " Review Option ",
+						"changeButtonText": " Change "
+					}
+				]
+
+			},
+			{
+				"planDescription": "Premier Cash Balance Plan",
+				"noteHeaderText": "Note:",
+				"noteText": "Amounts are before tax, and don't include any payments to your beneficiary after you die (if applicable).",
+				"deferButtonText": "Defer",
+				"deferButtonHeaderText1": "Do you want to defer your payments? ",
+				"deferButtonHeaderText2": "If you want to receive all your pension benefits at a later date, choose Yes.",
+				"deferYesButtonText": "yes",
+				"deferNoButtonText ": "no",
+				"paymentTableContent": [{
+					"electionDescription": "Benefit",
+					"optionalFormGroupDescription": "Form of Payment",
+					"PaymentToYouText": "Payment to you",
+					"reviewButtonText": "Action"
+				}],
+				"paymentTableContentdata": [{
+						"electionDescription": "Benefit1",
+						"optionalFormGroupDescription": "not on file",
+						"PaymentToYouText": "-",
+						"hasSelectedPrimOpfmPmt": false,
+						"reviewButtonText": " Review Option ",
+						"changeButtonText": " Change "
+					},
+					{
+						"electionDescription": "Benefit2",
+						"optionalFormGroupDescription": "not on file",
+						"PaymentToYouText": "-",
+						"hasSelectedPrimOpfmPmt": false,
+						"reviewButtonText": " Review Option ",
+						"changeButtonText": " Change "
+					}
+				]
+			}
+		],
+
+		"tableHeaderText": "Total Estimated Payments",
+		"totalEstimatedPaymentsContent": [{
+				"totalEstimatedPaymentTableRowHeader": "One-Time Payment",
+				"totalEstimatedPaymentTableRowData": "$0.00"
+			},
+			{
+				"totalEstimatedPaymentTableRowHeader": "Monthly Amount",
+				"totalEstimatedPaymentTableRowData": "$0.00"
+			}
+		],
+		"paymentDestinationText": "<b>Payment destination</b> decisions are part of the next step. Continue once you’ve made all your payment option choices.",
+		"expandSectionHeaderText1": "Taxes",
+		"expandSectionContentText1": "You may be required to pay Social Security and Medicare taxes on the nonqualified pension payments that are shown on this site. These taxes, which are required by the Internal Revenue Service, are often called FICA (Federal Insurance Contributions Act) taxes. If FICA taxes apply to you, they'll be deducted from your active payroll, if applicable, or your payment. The timing of the withholding may vary. <p>In addition to FICA taxes, federal and state tax withholding may also apply to your nonqualified [pension] payment.</p>",
+		"expandSectionHeaderText2": "Cash Balance Benefit",
+		"expandSectionContentText2": "Your cash balance benefit has been calculated using current interest rates. Your actual cash balance benefit will be converted to the annuity options based on the interest rate in effect on your payment start date. If the interest rate at the time your payment begins is different from the current rate, your annuity options may be higher or lower than the amounts shown on this site.<br><p>Your cash balance benefit has been calculated based on:</p>",
+		"expandSectionConditionContentText2": [{
+				"expandSectionPoint": "The value of your account from this plan"
+			},
+			{
+				"expandSectionPoint": "Any benefit you accrued from a previous plan"
+			},
+			{
+				"expandSectionPoint": "Any grandfathered benefits."
+			}
+		],
+		"expandSectionHeaderText": "Qualified Domestic Relations Order (QDRO) Adjustment",
+		"expandSectionContentText": "According to our records, a portion of your benefit may be assigned to an alternate payee due to a Qualified Domestic Relations Order (QDRO). The benefit shown hasn't been adjusted to reflect this QDRO.",
+		"continueButtonText": "Continue",
+		"comeBackLaterButtontext": "Come Back Later",
+		"quitButtonText": "Quit"
+	}
+
+}

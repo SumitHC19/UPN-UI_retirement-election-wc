@@ -1,0 +1,480 @@
+{
+	"body": {
+	"status": {
+	  "statusCode": 200,
+	  "statusMessage": "OK"
+	},
+	"paymentDestination": {
+	  "flowNameText": "Make Your Retirement Choices",
+	  "pageNameText": "Choose Where to Receive Your Payment(s)",
+	  "pageContentText": "Choose where and how you want to receive your payment(s).",
+	  "tipHeaderText": "Get your payment faster when you choose direct deposit.",
+	  "tipBadgeText": "tip",
+	  "paymentTable": [
+		{
+		  "tableHeaderText": "FAP Lump Sum Payment",
+		  "paymentId": "1000",
+		  "splitPayment": false,
+		  "choosePaymentText": "Choose <strong>1</strong> destination for this payment. Deductions may be taken from the payment.",
+		  "paymentDetailData": {
+			"rowHeaderText": "Total Payment Before Deductions",
+			"primaryPaymentAmountText": "$20,119.60",
+			"paymentFrequencyText": "(one-time)"
+		  },
+		  "primaryPaymentDetails": {
+			"primaryDeliveryTypeId": "1000_5000",
+			"primaryDeliveryId": "5000",
+			"addressDestinationDetailData": [
+			  {
+				"addressDetail": {
+				  "addressIdText": 25,
+				  "addressTypeText": "S",
+				  "addressDescription": " AddressId: 25",
+				  "addressLines": [
+					"123 Fake Street",
+					"Chicago IL 12345"
+				  ],
+				  "changeButtonText": "Change",
+				  "changeButtonLink": "window.location.href=/web/${friendlyUrl}/update-pstl-addr?linkId=PRTL_CS_PRSN_UPDATE_PSTL_ADDR_LINK&technicalNameForLink=PRTL_CS_PRSN_UPDATE_PSTL_ADDR_LINK&userFriendlyNameForLink=Link to support update postal address functionality&domain=Ben-CM&baseClientIndicator=Base&srcPrlt=dbElecRcvRlvrDest'",
+				  "methodOfDeliveryText": "Typically, you should receive the paper check 5&ndash;7 business days after the payment has been processed.",
+				  "addrOnFile": true,
+				  "finalcialAddress": false,
+				  "addressSelected": false
+				}
+			  },
+			  {
+				"addressDetail": {
+				  "addressIdText": 410,
+				  "addressDescription": "DeliveryId: 5000 AddressId: 410",
+				  "changeButtonText": "Change",
+				  "changeButtonLink": "window.location.href='/web/${friendlyUrl}/financial-institution?linkId=YBR_FNCL_INST&technicalNameForLink=YBR_FNCL_INST&userFriendlyNameForLink=Add Financial Institution (YBR_FNCL_INST) on UPoint&domain=Ben-CM&baseClientIndicator=Base&sourcePortlet=DB_ELEC_RCVRLVR_PRTL&addressId=410&service=DB'",
+				  "notOnFileAddressText": "&mdash;Not on File&mdash;",
+				  "methodOfDeliveryText": "Typically, you should receive the paper check 5&ndash;7 business days after the payment has been processed.",
+				  "addrOnFile": false,
+				  "finalcialAddress": true,
+				  "addressSelected": false
+				}
+			  },
+			  {
+				"addressDetail": {
+				  "addressIdText": 430,
+				  "addressDescription": "DeliveryId: 5000 AddressId: 430",
+				  "changeButtonText": "Change",
+				  "changeButtonLink": "window.location.href='/web/${friendlyUrl}/financial-institution?linkId=YBR_FNCL_INST&technicalNameForLink=YBR_FNCL_INST&userFriendlyNameForLink=Add Financial Institution (YBR_FNCL_INST) on UPoint&domain=Ben-CM&baseClientIndicator=Base&sourcePortlet=DB_ELEC_RCVRLVR_PRTL&addressId=430&service=DB'",
+				  "notOnFileAddressText": "&mdash;Not on File&mdash;",
+				  "methodOfDeliveryText": "Typically, you should receive the paper check 5&ndash;7 business days after the payment has been processed.",
+				  "addrOnFile": false,
+				  "finalcialAddress": true,
+				  "addressSelected": false
+				}
+			  },
+			  {
+				"addressDetail": {
+				  "addressIdText": 10,
+				  "addressTypeText": "S",
+				  "addressDescription": " AddressId: 10",
+				  "addressLines": [
+					"123 Fake Street",
+					"Chicago IL 12345"
+				  ],
+				  "changeButtonText": "Change",
+				  "changeButtonLink": "window.location.href=/web/${friendlyUrl}/update-pstl-addr?linkId=PRTL_CS_PRSN_UPDATE_PSTL_ADDR_LINK&technicalNameForLink=PRTL_CS_PRSN_UPDATE_PSTL_ADDR_LINK&userFriendlyNameForLink=Link to support update postal address functionality&domain=Ben-CM&baseClientIndicator=Base&srcPrlt=dbElecRcvRlvrDest'",
+				  "methodOfDeliveryText": "Typically, you should receive the paper check 5&ndash;7 business days after the payment has been processed.",
+				  "addrOnFile": true,
+				  "finalcialAddress": false,
+				  "addressSelected": false
+				}
+			  },
+			  {
+				"addressDetail": {
+				  "addressIdText": 5,
+				  "addressDescription": "DeliveryId: 5000 AddressId: 5",
+				  "changeButtonText": "Change",
+				  "changeButtonLink": "window.location.href='/web/${friendlyUrl}/financial-institution?linkId=YBR_FNCL_INST&technicalNameForLink=YBR_FNCL_INST&userFriendlyNameForLink=Add Financial Institution (YBR_FNCL_INST) on UPoint&domain=Ben-CM&baseClientIndicator=Base&sourcePortlet=DB_ELEC_RCVRLVR_PRTL&addressId=5&service=DB'",
+				  "notOnFileAddressText": "&mdash;Not on File&mdash;",
+				  "methodOfDeliveryText": "Typically, you should receive the paper check 5&ndash;7 business days after the payment has been processed.",
+				  "addrOnFile": false,
+				  "finalcialAddress": true,
+				  "addressSelected": false
+				}
+			  }
+			]
+		  },
+		  "secondaryPaymentDetails": {
+			"addressDestinationDetailData": [
+			  
+			]
+		  }
+		},
+		{
+		  "tableHeaderText": "FAP Annuity Payment",
+		  "paymentId": "2000",
+		  "splitPayment": true,
+		  "choosePaymentText": "You may choose up to <strong>2</strong> destinations for this payment. Deductions may be taken from the payment.",
+		  "paymentDetailData": {
+			"rowHeaderText": "Total Payment Before Deductions",
+			"primaryPaymentAmountText": "$4,324.20",
+			"paymentFrequencyText": "(monthly)"
+		  },
+		  "primaryPaymentDetails": {
+			"primaryDeliveryTypeId": "2000_2000",
+			"primaryDeliveryId": "2000",
+			"primaryPaymentDestinationText": "Primary Payment Destination",
+			"addressDestinationDetailData": [
+			  {
+				"addressDetail": {
+				  "addressIdText": 25,
+				  "addressTypeText": "S",
+				  "addressDescription": " AddressId: 25",
+				  "addressLines": [
+					"123 Fake Street",
+					"Chicago IL 12345"
+				  ],
+				  "changeButtonText": "Change",
+				  "changeButtonLink": "window.location.href=/web/${friendlyUrl}/update-pstl-addr?linkId=PRTL_CS_PRSN_UPDATE_PSTL_ADDR_LINK&technicalNameForLink=PRTL_CS_PRSN_UPDATE_PSTL_ADDR_LINK&userFriendlyNameForLink=Link to support update postal address functionality&domain=Ben-CM&baseClientIndicator=Base&srcPrlt=dbElecRcvRlvrDest'",
+				  "methodOfDeliveryText": "Typically, you should receive the paper check 5&ndash;7 business days after the payment has been processed.",
+				  "addrOnFile": true,
+				  "finalcialAddress": false,
+				  "addressSelected": false
+				}
+			  },
+			  {
+				"addressDetail": {
+				  "addressIdText": 10,
+				  "addressTypeText": "S",
+				  "addressDescription": " AddressId: 10",
+				  "addressLines": [
+					"123 Fake Street",
+					"Chicago IL 12345"
+				  ],
+				  "changeButtonText": "Change",
+				  "changeButtonLink": "window.location.href=/web/${friendlyUrl}/update-pstl-addr?linkId=PRTL_CS_PRSN_UPDATE_PSTL_ADDR_LINK&technicalNameForLink=PRTL_CS_PRSN_UPDATE_PSTL_ADDR_LINK&userFriendlyNameForLink=Link to support update postal address functionality&domain=Ben-CM&baseClientIndicator=Base&srcPrlt=dbElecRcvRlvrDest'",
+				  "methodOfDeliveryText": "Typically, you should receive the paper check 5&ndash;7 business days after the payment has been processed.",
+				  "addrOnFile": true,
+				  "finalcialAddress": false,
+				  "addressSelected": false
+				}
+			  },
+			  {
+				"addressDetail": {
+				  "addressIdText": 5,
+				  "addressDescription": "DeliveryId: 2000 AddressId: 5",
+				  "changeButtonText": "Change",
+				  "changeButtonLink": "window.location.href='/web/${friendlyUrl}/financial-institution?linkId=YBR_FNCL_INST&technicalNameForLink=YBR_FNCL_INST&userFriendlyNameForLink=Add Financial Institution (YBR_FNCL_INST) on UPoint&domain=Ben-CM&baseClientIndicator=Base&sourcePortlet=DB_ELEC_RCVRLVR_PRTL&addressId=5&service=DB'",
+				  "notOnFileAddressText": "&mdash;Not on File&mdash;",
+				  "methodOfDeliveryText": "Typically, you should receive the paper check 5&ndash;7 business days after the payment has been processed.",
+				  "addrOnFile": false,
+				  "finalcialAddress": true,
+				  "addressSelected": false
+				}
+			  },
+			  {
+				"addressDetail": {
+				  "addressIdText": 180,
+				  "addressDescription": "DeliveryId: 2000 AddressId: 180",
+				  "changeButtonText": "Change",
+				  "changeButtonLink": "window.location.href='/web/${friendlyUrl}/financial-institution?linkId=YBR_FNCL_INST&technicalNameForLink=YBR_FNCL_INST&userFriendlyNameForLink=Add Financial Institution (YBR_FNCL_INST) on UPoint&domain=Ben-CM&baseClientIndicator=Base&sourcePortlet=DB_ELEC_RCVRLVR_PRTL&addressId=180&service=DB'",
+				  "notOnFileAddressText": "&mdash;Not on File&mdash;",
+				  "methodOfDeliveryText": "Typically, you should receive the paper check 5&ndash;7 business days after the payment has been processed.",
+				  "addrOnFile": false,
+				  "finalcialAddress": true,
+				  "addressSelected": false
+				}
+			  },
+			  {
+				"addressDetail": {
+				  "addressIdText": 410,
+				  "addressDescription": "DeliveryId: 2000 AddressId: 410",
+				  "changeButtonText": "Change",
+				  "changeButtonLink": "window.location.href='/web/${friendlyUrl}/financial-institution?linkId=YBR_FNCL_INST&technicalNameForLink=YBR_FNCL_INST&userFriendlyNameForLink=Add Financial Institution (YBR_FNCL_INST) on UPoint&domain=Ben-CM&baseClientIndicator=Base&sourcePortlet=DB_ELEC_RCVRLVR_PRTL&addressId=410&service=DB'",
+				  "notOnFileAddressText": "&mdash;Not on File&mdash;",
+				  "methodOfDeliveryText": "Typically, you should receive the paper check 5&ndash;7 business days after the payment has been processed.",
+				  "addrOnFile": false,
+				  "finalcialAddress": true,
+				  "addressSelected": false
+				}
+			  },
+			  {
+				"addressDetail": {
+				  "addressIdText": 430,
+				  "addressDescription": "DeliveryId: 2000 AddressId: 430",
+				  "changeButtonText": "Change",
+				  "changeButtonLink": "window.location.href='/web/${friendlyUrl}/financial-institution?linkId=YBR_FNCL_INST&technicalNameForLink=YBR_FNCL_INST&userFriendlyNameForLink=Add Financial Institution (YBR_FNCL_INST) on UPoint&domain=Ben-CM&baseClientIndicator=Base&sourcePortlet=DB_ELEC_RCVRLVR_PRTL&addressId=430&service=DB'",
+				  "notOnFileAddressText": "&mdash;Not on File&mdash;",
+				  "methodOfDeliveryText": "Typically, you should receive the paper check 5&ndash;7 business days after the payment has been processed.",
+				  "addrOnFile": false,
+				  "finalcialAddress": true,
+				  "addressSelected": false
+				}
+			  }
+			]
+		  },
+		  "secondaryPaymentDetails": {
+			"secondaryDeliveryTypeId": "2000_3000",
+			"secondaryDeliveryId": "3000",
+			"secondaryPaymentDestinationText": "Secondary Payment Destination",
+			"secondaryPaymentOneText": "You can also choose to receive a portion of your payment at a second mailing address or financial institution.",
+			"secondaryPaymentTwoText": "Enter the amount and then choose where to receive that portion of your payment.",
+			"secondaryPaymentThirdText": "Deductions may be taken from the payment.",
+			"secondaryDeliveryPaymentAmountText": "Amount to Second Destination",
+			"secondaryDeliveryPaymentEnterText": "Enter 0.00 if you don't want to send an amount to a second destination.",
+			"secondaryDeliveryPaymentAmount": "0.00",
+			"secondaryFootnoteText": "Enter the amount you want sent to a second destination.",
+			"addressDestinationDetailData": [
+			  {
+				"addressDetail": {
+				  "addressIdText": 25,
+				  "addressTypeText": "S",
+				  "addressDescription": " AddressId: 25",
+				  "addressLines": [
+					"123 Fake Street",
+					"Chicago IL 12345"
+				  ],
+				  "changeButtonText": "Change",
+				  "changeButtonLink": "window.location.href=/web/${friendlyUrl}/update-pstl-addr?linkId=PRTL_CS_PRSN_UPDATE_PSTL_ADDR_LINK&technicalNameForLink=PRTL_CS_PRSN_UPDATE_PSTL_ADDR_LINK&userFriendlyNameForLink=Link to support update postal address functionality&domain=Ben-CM&baseClientIndicator=Base&srcPrlt=dbElecRcvRlvrDest'",
+				  "methodOfDeliveryText": "Typically, you should receive the paper check 5&ndash;7 business days after the payment has been processed.",
+				  "addrOnFile": true,
+				  "finalcialAddress": false,
+				  "addressSelected": false
+				}
+			  },
+			  {
+				"addressDetail": {
+				  "addressIdText": 10,
+				  "addressTypeText": "S",
+				  "addressDescription": " AddressId: 10",
+				  "addressLines": [
+					"123 Fake Street",
+					"Chicago IL 12345"
+				  ],
+				  "changeButtonText": "Change",
+				  "changeButtonLink": "window.location.href=/web/${friendlyUrl}/update-pstl-addr?linkId=PRTL_CS_PRSN_UPDATE_PSTL_ADDR_LINK&technicalNameForLink=PRTL_CS_PRSN_UPDATE_PSTL_ADDR_LINK&userFriendlyNameForLink=Link to support update postal address functionality&domain=Ben-CM&baseClientIndicator=Base&srcPrlt=dbElecRcvRlvrDest'",
+				  "methodOfDeliveryText": "Typically, you should receive the paper check 5&ndash;7 business days after the payment has been processed.",
+				  "addrOnFile": true,
+				  "finalcialAddress": false,
+				  "addressSelected": false
+				}
+			  },
+			  {
+				"addressDetail": {
+				  "addressIdText": 5,
+				  "addressDescription": "DeliveryId: 3000 AddressId: 5",
+				  "changeButtonText": "Change",
+				  "changeButtonLink": "window.location.href='/web/${friendlyUrl}/financial-institution?linkId=YBR_FNCL_INST&technicalNameForLink=YBR_FNCL_INST&userFriendlyNameForLink=Add Financial Institution (YBR_FNCL_INST) on UPoint&domain=Ben-CM&baseClientIndicator=Base&sourcePortlet=DB_ELEC_RCVRLVR_PRTL&addressId=5&service=DB'",
+				  "notOnFileAddressText": "&mdash;Not on File&mdash;",
+				  "methodOfDeliveryText": "Typically, you should receive the paper check 5&ndash;7 business days after the payment has been processed.",
+				  "addrOnFile": false,
+				  "finalcialAddress": true,
+				  "addressSelected": false
+				}
+			  },
+			  {
+				"addressDetail": {
+				  "addressIdText": 180,
+				  "addressDescription": "DeliveryId: 3000 AddressId: 180",
+				  "changeButtonText": "Change",
+				  "changeButtonLink": "window.location.href='/web/${friendlyUrl}/financial-institution?linkId=YBR_FNCL_INST&technicalNameForLink=YBR_FNCL_INST&userFriendlyNameForLink=Add Financial Institution (YBR_FNCL_INST) on UPoint&domain=Ben-CM&baseClientIndicator=Base&sourcePortlet=DB_ELEC_RCVRLVR_PRTL&addressId=180&service=DB'",
+				  "notOnFileAddressText": "&mdash;Not on File&mdash;",
+				  "methodOfDeliveryText": "Typically, you should receive the paper check 5&ndash;7 business days after the payment has been processed.",
+				  "addrOnFile": false,
+				  "finalcialAddress": true,
+				  "addressSelected": false
+				}
+			  },
+			  {
+				"addressDetail": {
+				  "addressIdText": 410,
+				  "addressDescription": "DeliveryId: 3000 AddressId: 410",
+				  "changeButtonText": "Change",
+				  "changeButtonLink": "window.location.href='/web/${friendlyUrl}/financial-institution?linkId=YBR_FNCL_INST&technicalNameForLink=YBR_FNCL_INST&userFriendlyNameForLink=Add Financial Institution (YBR_FNCL_INST) on UPoint&domain=Ben-CM&baseClientIndicator=Base&sourcePortlet=DB_ELEC_RCVRLVR_PRTL&addressId=410&service=DB'",
+				  "notOnFileAddressText": "&mdash;Not on File&mdash;",
+				  "methodOfDeliveryText": "Typically, you should receive the paper check 5&ndash;7 business days after the payment has been processed.",
+				  "addrOnFile": false,
+				  "finalcialAddress": true,
+				  "addressSelected": false
+				}
+			  },
+			  {
+				"addressDetail": {
+				  "addressIdText": 430,
+				  "addressDescription": "DeliveryId: 3000 AddressId: 430",
+				  "changeButtonText": "Change",
+				  "changeButtonLink": "window.location.href='/web/${friendlyUrl}/financial-institution?linkId=YBR_FNCL_INST&technicalNameForLink=YBR_FNCL_INST&userFriendlyNameForLink=Add Financial Institution (YBR_FNCL_INST) on UPoint&domain=Ben-CM&baseClientIndicator=Base&sourcePortlet=DB_ELEC_RCVRLVR_PRTL&addressId=430&service=DB'",
+				  "notOnFileAddressText": "&mdash;Not on File&mdash;",
+				  "methodOfDeliveryText": "Typically, you should receive the paper check 5&ndash;7 business days after the payment has been processed.",
+				  "addrOnFile": false,
+				  "finalcialAddress": true,
+				  "addressSelected": false
+				}
+			  }
+			]
+		  }
+		}
+	  ],
+	  "flowButtonNavigation": {
+		"buttonList": [
+		  {
+			"action": "continue",
+			"label": "Continue"
+		  },
+		  {
+			"action": "comeBackLater",
+			"label": "Come Back Later"
+		  },
+		  {
+			"action": "quit",
+			"label": "Quit"
+			},
+			{
+			"action": "back",
+			"label": "Back"
+			}
+		],
+		"quitModalContent": {
+		  "title": "What do you want to do?",
+		  "bodyList": [
+			{
+			  "heading": "Save",
+			  "paragraph": "Keep the choices you've made, so far. Finish making pension choices later."
+			},
+			{
+			  "heading": "Quit",
+			  "paragraph": "Cancel your pension request and lose all the pension choices you've made, so far."
+			},
+			{
+			  "heading": "Return",
+			  "paragraph": "Go back to the current page without quitting."
+			}
+		  ],
+		  "buttonList": [
+			{
+			  "action": "comeBackLater",
+			  "label": "Save"
+			},
+			{
+			  "action": "quit",
+			  "label": "Quit"
+			},
+			{
+			  "action": "return",
+			  "label": "Return"
+			}
+		  ]
+		}
+	  },
+	  "editList": [
+		{
+		  "editId": "91000169",
+		  "editMessage": "An Address is required. Choose an item before continuing."
+		},
+		{
+		  "editId": "18000605",
+		  "editMessage": "You chose an address that's not on file.  Choose one that's on file or add a new one."
+		},
+		{
+		  "editId": "94000100",
+		  "editMessage": "You entered an invalid amount. Enter a valid amount or 0."
+		},
+		{
+		  "editId": "0",
+		  "editMessage": "Please provide a number."
+		},
+		{
+		  "editId": "96500300",
+		  "editMessage": "Your entry is invalid. Enter a value using letters and/or numbers only. (Message Number: 96500300)"
+		},
+		{
+		  "editId": "94000101",
+		  "editMessage": "You entered an invalid amount. Enter a valid amount or \"0\" before continuing. (Message Number&#58; 94000101)"
+		},
+    {
+      "editId": "21257",
+      "editMessage": "There are payments which have deliveries that do not have unique addresses. Enter unique addresses for deliveries of payment."
+    }
+	  ]
+	},
+	"progressBarPopovers": [
+		{
+			"hasError": false,
+			"stepId": 3,
+			"stepName": "beneficiaries",
+			"stepCode": "BENE",
+			"title": "3. Beneficiaries",
+			"linkText": "Change",
+			"contentList": [
+				{
+					"contentData": [
+						"DB FAP Pension Plan",
+						"No Beneficiary"
+					]
+				}
+			],
+			"changeModal": {
+				"changeModalText": "Do you want to change your choices?<br><br> You’ll need to start the retirement process again from the beginning. That’s because making changes to this information may impact your benefits options and payment amounts.",
+				"yesBtn": "Yes",
+				"noBtn": "No"
+			}
+		},
+		{
+			"hasError": false,
+			"stepId": 4,
+			"stepName": "rights",
+			"stepCode": "NORS",
+			"title": "4. Your Notice of Rights",
+			"linkText": "Review",
+			"contentList": [
+				{
+					"contentData": [
+						"Acknowledged receiving and reviewing notice of rights."
+					]
+				}
+			]
+		},
+		{
+			"hasError": false,
+			"stepId": 5,
+			"stepName": "payment",
+			"stepCode": "PAYT",
+			"title": "5. Pension Payments",
+			"linkText": "Review/Change",
+			"contentList": [
+				{
+					"contentData": [
+						"Made your choices."
+					]
+				}
+			]
+		},
+		{
+			"hasError": false,
+			"stepId": 6,
+			"stepName": "destination",
+			"stepCode": "DEST",
+			"title": "6. Destination",
+			"linkText": "Change",
+			"contentList": [
+				{
+					"contentData": [
+						"Selected your payment destination."
+					]
+				}
+			]
+		},
+		{
+			"hasError": false,
+			"stepId": 7,
+			"stepName": "review",
+			"stepCode": "REVW",
+			"title": "7. Review",
+			"linkText": "Review",
+			"contentList": [
+				{
+					"contentData": [
+						"Reviewed a list of all the choices you made."
+					]
+				}
+			]
+		}
+	]
+	}
+}

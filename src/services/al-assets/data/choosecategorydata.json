@@ -1,0 +1,148 @@
+{
+   "status":{
+      "statusCode":200,
+      "statusMessage":"OK"
+   },
+   "choosePaymentCategoryBean":{
+      "calculationReferenceNumber": 100,
+      "areCalculationFormulasSupported": false,
+      "transactionTitle":"Make Your Retirement Choices",
+      "pageTitle":"Choose Your Payment Options",
+      "pageUsageText":"Choose a group and the payment options for each plan.",
+      "chooseGroupButtonText":"Choose This Group",
+      "chosenButtonText":"Chosen",
+      "changeButtonText":"Change",
+      "optionsButtonText":"Options",
+      "moreElectionText":"OR ",
+      "notOnFileText":"&mdash;Not On File&mdash;",
+      "deferredText":"Deferred",
+      "responsiveDataTitle1":"Benefits",
+      "responsiveDataTitle2":"Form of Payment",
+      "responsiveDataTitle3":"Payment to You",
+      "pensionAmtBefTaxNote":"<strong>Note:</strong> Amounts are before tax, and don't include any payments to your beneficiary after you die (if applicable).",
+      "pageFootNote":"<small><strong>Note:</strong> The The Syndicate reserves the right to correct any errors. If it's determined at any time that the information provided on this site conflicts with the benefit defined by the DB FAP Pension Plan, the DB FAP Pension Plan will prevail. Under the law, a plan must be operated in accordance with its terms.</small>",
+      "hasPensPmtCol":true,
+      "clientTextContentList1":"",
+      "clientTextContentList2":"",
+      "clientTextContentList3":"",
+      "electionGroupTableData":{
+         "planId":"8744",
+         "planShortDescription":"DB FAPPenPlan",
+         "planDescription":"DB FAP Pension Plan",
+         "electionGroupId":"1001",
+         "electionGroupDescription":"1001 Election Group",
+         "electionTableDataContent":[
+            {
+               "electionId":"10",
+               "electionDescription":"Simple Election Alternate",
+               "electionMoreInfoText":"Placeholder text for Election. Client should override",
+               "isElectionDeferred":false,
+               "isElectionChosen":true,
+               "optionalFormGroupPaymentData":[
+                  {
+                     "optionalFormGroupId":"2325",
+                     "optionalFormGroupDescription":"Simple Election Opfm Gp",
+                     "selectedOptionalFormPaymentData":{
+                        "optionalFormId":"3020",
+                        "optionalFormShortDescription":"NPM 10 Yr C&L",
+                        "optionalFormDescription":"10 Year Certain and Life",
+                        "optionalFormStartAmount":"$2,051.36",
+                        "optionalFormFrequencyText":"(monthly)",
+                        "optionalFormFrequencyCode":"M",
+                        "autoSelectedOptionalFormsOfPaymentList":[
+                           {
+                              "optionalFormId":"3130",
+                              "optionalFormShortDescription":"NPM True J&S",
+                              "optionalFormDescription":"True Joint & Survivor",
+                              "optionalFormStartAmount":"$1,715.96",
+                              "optionalFormFrequencyText":"(monthly)",
+                              "optionalFormFrequencyCode":"M"
+                           }
+                        ]
+                     }
+                  }
+               ]
+            },
+            {
+               "electionId":"190",
+               "electionDescription":"Simple Election 2",
+               "electionMoreInfoText":"Placeholder text for Election. Client should override",
+               "isElectionDeferred":false,
+               "isElectionChosen":false,
+               "optionalFormGroupPaymentData":[
+                  {
+                     "optionalFormGroupId":"2325",
+                     "optionalFormGroupDescription":"Simple Election Opfm Gp"
+                  }
+               ]
+            }
+         ]
+      },
+      "paymentChoicePanelList":[
+
+      ],
+      "flowButtonNavigation":{
+         "buttonList":[
+            {
+               "action":"continue",
+               "label":"Continue"
+            },
+            {
+               "action":"comeBackLater",
+               "label":"Come Back Later"
+            },
+            {
+               "action":"quit",
+               "label":"Quit"
+            }
+         ],
+         "quitModalContent":{
+            "title":"What do you want to do?",
+            "bodyList":[
+               {
+                  "heading":"Save",
+                  "paragraph":"Keep the choices you've made, so far. Finish making pension choices later."
+               },
+               {
+                  "heading":"Quit",
+                  "paragraph":"Cancel your pension request and lose all the pension choices you've made, so far."
+               },
+               {
+                  "heading":"Return",
+                  "paragraph":"Go back to the current page without quitting."
+               }
+            ],
+            "buttonList":[
+               {
+                  "action":"comeBackLater",
+                  "label":"Save"
+               },
+               {
+                  "action":"quit",
+                  "label":"Quit"
+               },
+               {
+                  "action":"return",
+                  "label":"Return"
+               }
+            ]
+         }
+      },
+      "accessibilityTexts":{
+         "btnContinue":"Choose this button to continue on to the next step in the process.",
+         "btnComeBackLater":"Choose this button to save all the changes and choices you have made so far, but exit the flow at this time.",
+         "btnQuit":"Choose this button to exit the flow and save none of the choices you made up to this point.",
+         "btnBack":"Choose this button to return to the prior page without saving any changes or choices you made on this page."
+      },
+      "editList":[
+         {
+            "editId":"0",
+            "editMessage":"You haven’t made all your choices. Choose a group of benefits, then your benefit choices within your chosen group. "
+         },
+         {
+            "editId":"1",
+            "editMessage":"Selection Required"
+         }
+      ]
+   }
+}

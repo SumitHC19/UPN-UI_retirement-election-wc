@@ -1,0 +1,159 @@
+{
+	"status": {
+		"statusCode": 200,
+		"statusMessage": "OK"
+	},
+
+	"changeIncomeTaxWithholding": {
+		"flowNameText": "Make Your Retirement Choices",
+		"pageNameText": "Change Your Income Tax Withholding ",
+		"introText": "Review your state and federal income tax withholding.",
+		"tipHeaderText": "Consider All Your Income",
+		"tipContentText": "Make sure you're withholding enough to avoid any tax penalties.",
+		"taxHeaderText ": "Tax Considerations",
+		"taxContentText": "Review the <a href=\"javascript:void(0);\">Notice of Your Rights</a> for general tax information about payments from the plan.",
+		"paymentNameText ": "Premier Pension Plan Payments",
+		"paymentDescriptionText ": "You can make changes to your withholdings.",
+		"isUSFedWthlCd": true,
+		"isPRFedWthlCd": true,
+		"isCANFedWthlCd": true,
+		"isUSStWthlCd": true,
+		"isPRStWthlCd": true,
+		"canStWthlCd": true,
+		"usFederalAccessibilityText": "Choose what you want to withhold for Federal taxes:",
+		"usStateAccessibilityText": "Choose what you want to withhold for State taxes:",
+		"puertoRicoAccessibilityText": "Choose what you want to withhold for Puerto Rico taxes:",
+
+		"uSFederalIncomeTaxWithholdingTable": {
+			"tableHeaderText": "Federal Income Tax Withholding",
+			"taxableIncomeText": "Taxable Income",
+			"taxableIncomeAmountText": "$999,999.99",
+			"isPmtLsum": true,
+			"withholdNothingText": "Withhold Nothing",
+			"withholdNothingAmountText": "$0.00",
+			"withholdDefaultText": "Withhold Default Amount",
+			"withholdDefaultAmountText": "$8,999.99",
+			"withholdMinimumText": "Withhold Minimum Amount",
+			"withholdMinimumAmountText": "$1,999.99",
+			"withholdThisAmountText": "Withhold This Amount",
+			"withholdThisAmountTextValue":"(minimum $1,999.99)",
+			"withholdThisPercentText": "Withhold This Percent",
+			"withholdThisPercentTextValue": "(minimum 3%)",
+			"withholdNothingMinimumText": "Withhold Nothing",
+			"withholdNothingMinimumTextValue": "(minimums may apply)",
+			"withholdNothingMinimumAmount": "$0.00",
+			"withholdChoicesText": "Withhold Using These Choices:",
+			"maritalStatusText": "Marital Status",
+			"maritalStatusMarriedText": "Married",
+			"maritalStatusSingleText": "Single",
+			"numberofAllowancesText": "Number of Allowances",
+			"additionalAmountText": "Additional Amount"
+		},
+
+		"puertoRicoFederalWithholdingTable": {
+			"tableHeaderText": "Federal Income Tax Withholding",
+			"federalWithholdingText": "Federal income tax withholding is not supported for this payment.",
+			"taxableIncomeText": "Taxable Income",
+			"taxableIncomeAmountText": "$999,999.99",
+			"withholdNothingText": "Withhold Nothing",
+			"withholdNothingAmountText": "$0.00",
+			"withholdDefaultText": "Withhold Default Amount",
+			"withholdDefaultAmountText": "$8,999.99"
+		},
+
+		"canadianFederalWithholdingTable": {
+			"tableHeaderText": "Federal Income Tax Withholding",
+			"taxableIncomeText": "Taxable Income",
+			"taxableIncomeAmountText": "$999,999.99",
+			"taxCreditAmountText": "Federal Personal Tax Credit Amount (TD1)",
+			"taxCreditAmountTextAmount": "(minimum $89.99)",
+			"withholdAdditionalAmountText": "Withhold Additional Amount"
+		},
+
+		"uSStateIncomeTaxWithholdingTable": {
+			"tableHeaderText": "State Income Tax Withholding",
+			"taxableIncomeText": "Taxable Income",
+			"taxableIncomeAmountText": "$111,111.11",
+			"tableRowHeaderText": "State",
+			"isStateDropdownBox": true,
+			"stateDropdownBoxText": {
+				"state1": "IN",
+				"state2": "TA"
+			},
+			"isUseThisStateButton": true,
+			"useThisStateButtonText": "Use This State button",
+			"withholdingStateText": "IL",
+			"isStateNotSupported": true,
+			"stateNotSupportedText": "State income tax withholding is not supported for  this payment.",
+			"withholdNothingText": "Withhold Nothing",
+			"withholdNothingAmountText": "$0.00",
+			"withholdNothingFederalText": "Withhold Nothing",
+			"withholdNothingFederalTextValue": "(if no federal income tax withheld)",
+			"withholdNothingFederalAmountText": "$0.00",
+			"withholdDefaultOptionText": "Withhold Default Amount",
+			"withholdDefaultOptionTextValue": "(10% of federal withholding)",
+			"withholdDefaultAmountOptionText": "Withhold Default Amount",
+			"withholdDefaultAmountOptionTextValue": "(10% of taxable benefits)",
+			"withholdDefaultAmountOptionDataText": "$7,999.99",
+			"stateReplacementAmountOptionText": "Withhold This Amount",
+			"stateReplacementAmountOptionTextValue1": "(minimum $59.99)",
+			"stateReplacementAmountOptionTextValue2": "(minimums may apply)",
+			"stateWithholdingChoiceSection": {
+				"withholdingChoiceHeaderText": "Withholding Choice Header",
+				"maritalStatusOptionHeaderText": "Marital Status",
+				"maritalStatusDropdownBoxText": {
+					"status1": "Married",
+					"status2": "Single"
+				},
+				"numberOfAllowancesHeaderText": "Number of Allowances",
+				"choiceAdditionalAmountOptionHeaderText": "Additional Amount",
+				"choiceAdditionalPercentOptionHeaderText": "Additional Percent"
+			},
+			"withholdingPercentageChoiceSection": {
+				"withholdingChoiceHeaderText": "Withhold Using These Choices:",
+				"taxableBenefitOptionHeaderText": "Percentage of Your Taxable Benefit Amount",
+				"taxablePercentageDropdownBoxText": {
+					"percent1": "10%",
+					"percent2": "20%"
+				},
+				"additionalAmountHeaderText": "Additional Amount",
+				"choiceAdditionalPercentOptionHeaderText": "Additional Percent"
+			}
+		},
+
+		"puertoRicoStateWithholdingTable": {
+			"tableHeaderText": "U.S. Territory Income Tax Withholding",
+			"rowHeaderText": "Taxable Income",
+			"taxableIncomeAmountText": "$111,111.11",
+			"territoryRowHeaderText": "U.S. Territory",
+			"territoryLocationText": "PR",
+			"territorySupportText": "U.S. territory income tax withholding is not supported for this payment.",
+			"withholdNothingOptionText": "Withhold Nothing",
+			"withholdNothingOptionAmountText": "$0.00",
+			"withholdDefaultAmountText": "Withhold Default Amount",
+			"withholdDefaultAmountDataText": "$7,999.99"
+		},
+
+		"canadianStateIncomeTaxWithHoldingTable": {
+			"tableHeaderText": "Provincial Income Tax Withholding",
+			"taxableIncomeText": "Taxable Income",
+			"taxableIncomeAmountText": "$111,111.11",
+			"provinceText": "Province",
+			"provinceStatusText": "ON",
+			"provincialTaxCreditText": "Provincial Personal Tax Credit Amount (TD1)",
+			"provincialTaxCreditTextAmount": "(minimum $69.99)",
+			"withholdAdditionalAmountText": "Withhold Additional Amount"
+		},
+		"flowButtonNavigation": {
+			"buttonList": [{
+					"action": "saveReturn",
+					"label": "Save & Return"
+				},
+				{
+					"action": "cancel",
+					"label": "Cancel"
+				}
+			]
+		}
+	}
+}

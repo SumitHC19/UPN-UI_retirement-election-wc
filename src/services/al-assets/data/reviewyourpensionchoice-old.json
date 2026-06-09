@@ -1,0 +1,468 @@
+{
+	"status": {
+		"statusCode": 200,
+		"statusMessage": "OK"
+	},
+	"ReviewChoices": {
+		"flowNameText": "Make Your Retirement Choices",
+		"pageNameText": "Review Your Pension Choices",
+		"pageUsageText": "Review your choices closely and make any needed changes. When you are satisfied with your pension choices, submit them.",
+		"retirementTableHeaderText": "Your Retirement Dates",
+		"retirementTableChangeButtonText": "Change",
+		"retirementTableRow1text": "Your Last Day",
+		"retirementTableRow1date": "Sep 18, 2017",
+		"beginReceivingBenefitsText": "Day You May Begin Receiving Benefits",
+		"retirementTablerow2date": "Oct 1, 2017",
+		"superscripHeaderText": "Footnote",
+		"printText": "Print",
+		"superscripText": "Assumes you have completed all the required notifications, paperwork, and authorizations within the required timeframe. It may take up to 30 days to process your payments",
+		"beneficiariesTableHeaderText": "Beneficiaries",
+		"benefitTextHeader": "Benefit",
+		"beneficiaryTextHeader": "Beneficiary",
+		"beneficiariesTableContentText": [
+			{
+				"benefitText": "Cash Balance Benefit",
+				"beneficiaryText": "Chris M. Alvarez"
+			},
+			{
+				"benefitText": "Pension Plan Benefit",
+				"beneficiaryText": "Patricia Alvarez"
+			}
+		],
+		"paymentsTableHeaderText": "One-Time Payments",
+		"PlanBenefitTextHeader": "Plan Benefit",
+		"BenefitTextHeader": null,
+		"FormofPaymentTextHeader": "Form of Payment",
+		"PaymenttoYouTextHeader": "Payment to You",
+		"frequencyTextHeader": null,
+		"ChangeButtonTextHeader": null,
+		"paymentsTableContentText": [
+			{
+				"PlanBenefitText": " Premier Pension Plan-",
+				"BenefitText": "Non-Union Benefit",
+				"FormofPaymentText": "Lump Sum Option",
+				"PaymenttoYouText": "$73,157.50",
+				"frequencyText": "(one-time)",
+				"ChangeButtonText": "change"
+			},
+			{
+				"PlanBenefitText": " Premier Pension Plan -",
+				"BenefitText": "Grandfathered Benefit",
+				"FormofPaymentText": "Lump Sum Option",
+				"PaymenttoYouText": "$73,157.50",
+				"frequencyText": "(one-time)",
+				"ChangeButtonText": "change"
+			}
+		],
+		"deductionsText": "Total Payment Before Deductions",
+		"amountText": "$97,582.50",
+		"deductionsTableText": [
+			{
+				"deductionrowText": "Rollover Amount",
+				"deductionAmountText": "-$89,425.50",
+				"changeButtonText": "Change"
+			},
+			{
+				"deductionrowText": "Federal Withholding",
+				"deductionAmountText": "-$1,631.50",
+				"changeButtonText": "Change"
+			},
+			{
+				"deductionrowText": "State Withholding",
+				"deductionAmountText": "-$244.72",
+				"changeButtonText": "Change"
+			}
+		],
+		"EstimatedPaymentText": "Estimated One-Time Payment to You",
+		"EstimatedPaymentAmountText": "$6,280.78",
+		"otherDetailsText": "Other Details",
+		"expandAllText": "Expand All",
+		"collapseAllText": "Collapse All",
+		"beneficiaryExpandSection1HeaderText": "Payment Amounts to You and Your Beneficiary",
+		"optionalFormDescriptionTable1": [
+			{
+				"paymentTableHeader": "Premier Pension Plan—Non-Union Benefit",
+				"paymentTableHeader2": "Premier Pension Plan—Grandfathered Benefit",
+				"optionalFormDescription": "Lump Sum Option",
+				"rollOverText": "(Part or all of this payment option can be <b class='al-nowrap'>rolled over</b> in a later step.)",
+				"panelHeaderText": "One-time payment for you only ",
+				"panelText": [
+					{
+						"point": "Part or all of this payment option can be rolled over"
+					},
+					{
+						"point": "<b>No</b> payment to your beneficiary"
+					},
+					{
+						"point": "If married, your spouse must consent"
+					},
+					{
+						"point": "Entire value of your pension benefit (or, in some cases, a portion of the entire value)"
+					}
+				],
+				"learnMoreLinkText": "Learn More",
+				"PaymentAmount": [
+					{
+						"optionalFormPaymentAmount": "$47,875.00",
+						"paymentFrequencyText": "(one time)"
+					}
+				],
+				"paymentOptionBeneficiaryText": [
+					{
+						"paymentOptionBeneficiaryContentText": "Beneficiary Benefit (for payments after your death)",
+						"amountText": "$0.00"
+					}
+				]
+			},
+			{
+				"paymentTableHeader": "Premier Pension Plan—Grandfathered Benefit",
+				"optionalFormDescription": "Lump Sum Option",
+				"rollOverText": "(Part or all of this payment option can be <b class='al-nowrap'>rolled over</b> in a later step.)",
+				"panelHeaderText": "One-time payment for you only ",
+				"panelText": [
+					{
+						"point": "Part or all of this payment option can be rolled over"
+					},
+					{
+						"point": "<b>No</b> payment to your beneficiary"
+					},
+					{
+						"point": "If married, your spouse must consent"
+					},
+					{
+						"point": "Entire value of your pension benefit (or, in some cases, a portion of the entire value)"
+					}
+				],
+				"learnMoreLinkText": "Learn More",
+				"PaymentAmount": [
+					{
+						"optionalFormPaymentAmount": "$47,875.00",
+						"paymentFrequencyText": "(one time)"
+					}
+				],
+				"paymentOptionBeneficiaryText": [
+					{
+						"paymentOptionBeneficiaryContentText": "Beneficiary Benefit (for payments after your death)",
+						"amountText": "$0.00"
+					}
+				]
+			}
+		],
+		"taxationExpandSectionHeader": {
+			"taxationExpandSectionHeaderText": "Taxation Information",
+			"planBenefitText": "Plan Benefit",
+			"benefitText": null,
+			"taxableAmountText": "Taxable Amount",
+			"nontaxableAmountText": "Nontaxable Amount",
+			"totalGrossBenefitAmountText": "Total Gross Benefit Amount",
+			"taxationExpandSectionTableContent": [
+				{
+					"planBenefitText": "Premier Pension Plan",
+					"benefitText": "Non-Union Benefit",
+					"taxableAmountText": "$8,157.50",
+					"nontaxableAmountText": "$65,000.00",
+					"totalGrossBenefitAmountText": "$73,157.50"
+				},
+				{
+					"planBenefitText": "Premier Pension Plan",
+					"benefitText": "Grandfathered Benefit",
+					"taxableAmountText": "$0.00",
+					"nontaxableAmountText": "$24,425.50",
+					"totalGrossBenefitAmountText": "$24,425.50"
+				}
+			]
+		},
+		"taxWithholdingExpandSectionHeaderText": "Estimated Income TaxWithholding",
+		"taxWithholdingChangeButtonText": "Change",
+		"incomeTableContentText": [
+			{
+				"incomeText": "Taxable Income",
+				"incomeAmount": "$6,280.78"
+			},
+			{
+				"incomeText": "Percentage Withheld",
+				"incomeAmount": "20%"
+			},
+			{
+				"incomeText": "Marital Status",
+				"incomeAmount": "Married"
+			},
+			{
+				"incomeText": "Number of Allowances",
+				"incomeAmount": "3"
+			},
+			{
+				"incomeText": "Additional Amount Withheld",
+				"incomeAmount": "$0.00"
+			}
+		],
+		"WithholdingText": "Federal Withholding",
+		"frequencyTextValue": "(Estimated)",
+		"WithholdingAmount": "-$1,631.50",
+		"incomeTable1ContentText": [
+			{
+				"incomeText": "Taxable Income",
+				"incomeAmount": "$6,280.78"
+			},
+			{
+				"incomeText": "State",
+				"incomeAmount": "IL"
+			},
+			{
+				"incomeText": "Marital Status",
+				"incomeAmount": "Married"
+			},
+			{
+				"incomeText": "Number of Allowances",
+				"incomeAmount": "3"
+			},
+			{
+				"incomeText": "Additional Amount Withheld",
+				"incomeAmount": "$0.00"
+			}
+		],
+		"WithholdingText1": "Federal Withholding",
+		"frequencyText1": "(Estimated)",
+		"WithholdingAmount1": "-$244.72",
+		"destinationExpandsectionHeaderText": "Payment Destination(s)",
+		"destinationExpandsection3ContentText": [
+			{
+				"paymentText": "Payment to You",
+				"ChangeButtonText": "Change",
+				"directDepositText": "Direct Deposit",
+				"directDepositAmountText": "$6,280.78",
+				"NameText": "J.P. Morgan Chase Bank",
+				"accountTypeText": "Account Type:",
+				"accountTypeDataText": "Savings",
+				"routingNumberText": "Routing Number:",
+				"routingNumberDataText": "09090909",
+				"accountNumberText": "Account Number:",
+				"accountNumberDataText": "xxxxxxxx1111",
+				"dtcNumberText": "DTC Number:",
+				"dtcNumberDataText": "32323232"
+			},
+			{
+				"paymentText": "Rollover Payment",
+				"ChangeButtonText": "Change",
+				"directDepositText": "Traditional IRA",
+				"directDepositAmountText": "$89,425.50",
+				"NameText": "E*TRADE Securities",
+				"routingNumberText": "Routing Number:",
+				"routingNumberDataText": "09090909",
+				"accountTypeText": "For Further Credit:",
+				"accountTypeDataText": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx9999",
+				"accountNumberText": "Account Number:",
+				"accountNumberDataText": "xxxxxxxxxxxx5678",
+				"dtcNumberText": "Rollover Type:",
+				"dtcNumberDataText": "Traditional IRA"
+			}
+		],
+		"annuityTableHeaderText": "Annuity Payments",
+		"PlanBenefitTextHeader1": "Plan Benefit",
+		"BenefitTextHeader1": null,
+		"FormofPaymentTextHeader1": "Form of Payment",
+		"PaymenttoYouTextHeader1": "Payment to You",
+		"frequencyTextHeader1": null,
+		"ChangeButtonTextHeader1": null,
+		"annuitytableContentText": [
+			{
+				"PlanBenefitText": "Cash Balance Plan—",
+				"BenefitText": "Cash Balance Benefit",
+				"FormofPaymentText": "Straight Life Annuity",
+				"PaymenttoYouText": "$73,157.50",
+				"frequencyText": "(one-time)",
+				"ChangeButtonText": "Change"
+			},
+			{
+				"PlanBenefitText": "Premier Pension Plan—",
+				"BenefitText": "Cash Balance Benefit",
+				"FormofPaymentText": "Straight Life Annuity",
+				"PaymenttoYouText": "$73,157.50",
+				"frequencyText": "(one-time)",
+				"ChangeButtonText": "change"
+			}
+		],
+		"deductionsText1": "Total Payment Before Deductions",
+		"amountText1": "$97,582.50",
+		"deductionsTableText1": [
+			{
+				"deductionrowText": "Federal Withholding",
+				"deductionAmountText": "-$89,425.50",
+				"changeButtonText": "Change"
+			},
+			{
+				"deductionrowText": "State Withholding",
+				"deductionAmountText": "-$1,631.50",
+				"changeButtonText": "Change"
+			}
+		],
+		"estimatedPaymentText": "Estimated One-Time Payment to You",
+		"estimatedPaymentAmountText": "$6,280.78",
+		"otherDetailsText1": "Other Details",
+		"expandAllText1": "Expand All",
+		"collapseAllText1": "Collapse All",
+		"beneficiaryexpandSection2HeaderText": "Payment Amounts to You and Your Beneficiary",
+		"BeneficiaryExpandSection2ContentText": [
+			{
+				"beneficiaryExpandSectionHeaderPlanText": "Cash Balance Plan—",
+				"beneficiaryExpandSectionHeaderBenefitText": "Cash Balance Benefit",
+				"beneficiaryTableHeaderText": "Straight Life Annuity",
+				"beneficiaryTableContentText": "A Monthly payment to you only, until you die",
+				"beneficiaryAmountText": "$73,157.50 <sup>1</sup>",
+				"beneficiarysuperscripHeaderText": "Footnote",
+				"beneficiaryPrintText": "Print",
+				"beneficiarysuperscriptText": "This is a before-tax amount.",
+				"beneficiarysuperscriptnumbeertext": "1",
+				"beneficiaryBenefitText": "Beneficiary Benefit (for payments after your death)",
+				"beneficiaryBenefitFrequencyText": "(one time)",
+				"beneficiaryBenefitAmountText": "$0.00",
+				"beneficiaryListText": [
+					{
+						"list": "Part or all of this payment option can be rolled over"
+					},
+					{
+						"list": "No payment to your beneficiary"
+					},
+					{
+						"list": "If married, your spouse must consent"
+					},
+					{
+						"list": "Entire value of your pension benefit (or, in some cases, a portion of the entire value)"
+					}
+				],
+				"beneficiaryLearnMoreText": "Learn More"
+			},
+			{
+				"beneficiaryExpandSectionHeaderPlanText": "Premier Pension Plan",
+				"beneficiaryExpandSectionHeaderBenefitText": "Cash Balance Benefit",
+				"beneficiaryTableHeaderText": "Straight Life Annuity",
+				"beneficiaryTableContentText": "A Monthly payment to you only, until you die",
+				"beneficiaryAmountText": "$73,157.50 <sup>1</sup>",
+				"beneficiarysuperscripHeaderText": "Footnote",
+				"beneficiaryPrintText": "Print",
+				"beneficiarysuperscriptText": "This is a before-tax amount.",
+				"beneficiarysuperscriptnumbeertext": "1",
+				"beneficiaryBenefitText": "Beneficiary Benefit (for payments after your death)",
+				"beneficiaryBenefitFrequencyText": "(one time)",
+				"beneficiaryBenefitAmountText": "$0.00",
+				"beneficiaryListText": [
+					{
+						"list": "Part or all of this payment option can be rolled over"
+					},
+					{
+						"list": "No payment to your beneficiary"
+					},
+					{
+						"list": "If married, your spouse must consent"
+					},
+					{
+						"list": "Entire value of your pension benefit (or, in some cases, a portion of the entire value)"
+					}
+				],
+				"beneficiaryLearnMoreText": "Learn More"
+			}
+		],
+		"taxationExpandSection2HeaderText": "Taxation Information",
+		"taxationExpandSection2TableText": [
+			{
+				"planBenefitText": "Plan Benefit",
+				"benefitText": null,
+				"taxableAmountText": "Taxable Amount",
+				"nontaxableAmountText": "Nontaxable Amount",
+				"totalGrossBenefitAmountText": "Total Gross Benefit Amount"
+			},
+			{
+				"planBenefitText": "Cash Balance Plan-",
+				"benefitText": "Cash Balance Benefit",
+				"taxableAmountText": "$8,157.50",
+				"nontaxableAmountText": "$65,000.00",
+				"totalGrossBenefitAmountText": "$73,157.50"
+			},
+			{
+				"planBenefitText": "Premier Pension Plan",
+				"benefitText": "Cash Balance Benefit",
+				"taxableAmountText": "$0.00",
+				"nontaxableAmountText": "$24,425.50",
+				"totalGrossBenefitAmountText": "$24,425.50"
+			}
+		],
+		"expandSection2HeaderText": "Estimated Income TaxWithholding",
+		"taxWithholding2ChangeButtonText": "Change",
+		"incomeTable2ContentText": [
+			{
+				"incomeText": "Taxable Income",
+				"incomeAmount": "$6,280.78"
+			},
+			{
+				"incomeText": "Percentage Withheld",
+				"incomeAmount": "20%"
+			},
+			{
+				"incomeText": "Marital Status",
+				"incomeAmount": "Married"
+			},
+			{
+				"incomeText": "Number of Allowances",
+				"incomeAmount": "3"
+			},
+			{
+				"incomeText": "Additional Amount Withheld",
+				"incomeAmount": "$0.00"
+			}
+		],
+		"WithholdingText2": "Federal Withholding",
+		"frequencyText2": "(Estimated)",
+		"WithholdingAmount2": "-$1,631.50",
+		"incomeTable3ContentText": [
+			{
+				"incomeText": "Taxable Income",
+				"incomeAmount": "$6,280.78"
+			},
+			{
+				"incomeText": "State",
+				"incomeAmount": "IL"
+			},
+			{
+				"incomeText": "Marital Status",
+				"incomeAmount": "Married"
+			},
+			{
+				"incomeText": "Number of Allowances",
+				"incomeAmount": "3"
+			},
+			{
+				"incomeText": "Additional Amount Withheld",
+				"incomeAmount": "$0.00"
+			}
+		],
+		"WithholdingText3": "Federal Withholding",
+		"frequencyText3": "(Estimated)",
+		"WithholdingAmount3": "-$244.72",
+		"destinationExpandsection2HeaderText": "Payment Destination(s)",
+		"destinationExpandsection2ContentText": [
+			{
+				"paymentText": "Payment to You",
+				"ChangeButtonText": "Change",
+				"directDepositText": "Direct Deposit",
+				"directDepositAmountText": "$6,280.78",
+				"NameText": "J.P. Morgan Chase Bank",
+				"accountTypeText": "Account Type:",
+				"accountTypeDataText": "Savings",
+				"routingNumberText": "Routing Number:",
+				"routingNumberDataText": "09090909",
+				"accountNumberText": "Account Number:",
+				"accountNumberDataText": "xxxxxxxx1111",
+				"dtcNumberText": "DTC Number:",
+				"dtcNumberDataText": "32323232"
+			}
+		],
+		"pageFootnoteText": "Read Footnote",
+		"footnoteHeaderText": "Footnote",
+		"footerContentText": "Assumes you have completed all the required notifications, paperwork, and authorizations within the required timeframe. It may take up to 30 days to process your payments.",
+		"footerNumberText": "1",
+		"footerPrintText": "print",
+		"SubmitButtonText": "Submit",
+		"ComeBackLaterText": "Come Back Later",
+		"QuitButtonText": "Quit"
+	}
+}

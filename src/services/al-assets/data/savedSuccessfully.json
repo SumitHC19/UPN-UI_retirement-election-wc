@@ -1,0 +1,13 @@
+{
+    "status": {
+        "statusCode": 200,
+        "statusMessage": "OK"
+    },
+    "savedSuccessfully": {
+        "flowNameText": "Make Your Retirement Choices",
+        "savedSuccessfullyTitle": "Saved Successfully",
+        "pensionChoicesSaved": "The pension choices you've made so far have been saved. You may return to this site at any time to review your choices.",
+        "finishChoicesToReceivePayment": "Authorize your <A onclick=\"if(isUACrossEnabled()){try{ga('trackerUa1.send','event', 'Internal Link' ,'Link click','LinkId:DB_ELEC_PENS_CHC_LNK LinkDest:/web/retirement4x/retirement-hub'); } catch(err){}} if(isUAClientEnabled()){ try{if(isGTMEnabled()){dataLayer.push({'event':'UPointLinkEvent','linkCategory':'Internal Link','linkAction':'Link Click','linkLabel':'LinkId:DB_ELEC_PENS_CHC_LNK LinkDest:/web/retirement4x/retirement-hub'});}else{ga('trackerUa2.send','event', 'Internal Link' ,'Link click','LinkId:DB_ELEC_PENS_CHC_LNK LinkDest:/web/retirement4x/retirement-hub'); }} catch(err){}}setTimeout(function() {document.location.href = href;}, 100);return false;\" href=\"/web/retirement4x/retirement-hub?linkId=DB_ELEC_PENS_CHC_LNK&technicalNameForLink=DB_ELEC_PENS_CHC_LNK&userFriendlyNameForLink=Retirement Hub on UPoint&domain=Ben-DB&baseClientIndicator=Base\">pension choices</A> by 2018-05-01 to receive your payment. ",
+        "makeHealthChoices": "You can also make your <A onclick=\"if(isUACrossEnabled()){try{ga('trackerUa1.send','event', 'Internal Link' ,'Link click','LinkId:DB_ELEC_HLTH_CHC_LNK LinkDest:/web/retirement4x/retirement-hub'); } catch(err){}} if(isUAClientEnabled()){ try{if(isGTMEnabled()){dataLayer.push({'event':'UPointLinkEvent','linkCategory':'Internal Link','linkAction':'Link Click','linkLabel':'LinkId:DB_ELEC_HLTH_CHC_LNK LinkDest:/web/retirement4x/retirement-hub'});}else{ga('trackerUa2.send','event', 'Internal Link' ,'Link click','LinkId:DB_ELEC_HLTH_CHC_LNK LinkDest:/web/retirement4x/retirement-hub'); }} catch(err){}}setTimeout(function() {document.location.href = href;}, 100);return false;\" href=\"/web/retirement4x/retirement-hub?linkId=DB_ELEC_HLTH_CHC_LNK&technicalNameForLink=DB_ELEC_HLTH_CHC_LNK&userFriendlyNameForLink=Retirement Hub on UPoint&domain=Ben-DB&baseClientIndicator=Base\">health choices</A>."
+    }
+}

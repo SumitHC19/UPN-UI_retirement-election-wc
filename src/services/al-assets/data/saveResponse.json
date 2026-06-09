@@ -1,0 +1,15 @@
+{
+    "body": {
+      "statusCode": 200,
+      "statusMessage": "200 OK",
+      "status": "OK",
+      "hasEdit": false,
+      "hasServerEdit": false,
+      "routingPage": "SUBS",
+      "suaChannelResponse": {
+        "isResultMode": true,
+        "statusCode": 3,
+        "suaStatus": "success"
+      }
+    }
+}

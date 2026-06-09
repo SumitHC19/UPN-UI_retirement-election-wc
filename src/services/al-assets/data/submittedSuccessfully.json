@@ -1,0 +1,72 @@
+{
+  "body": {
+    "status": {
+      "statusCode": 200,
+      "statusMessage": "OK"
+    },
+    "submittedSuccessfullyHeader": {
+      "flowNameText": "Make Your Retirement Choices",
+      "pageNameText": "Submitted Successfully&mdash;Authorization Required",
+      "confirmationNumberText": "Your confirmation number is <strong>1234567890</strong>.",
+      "completeEmailText": "You'll receive a confirmation email to your preferred email address (usually, within 30 minutes). For your privacy, some details won't be in the email.",
+      "completPrintText": "Print this page",
+      "completeRecordsText": "for your records.",
+      "completePostalText": "Your confirmation statement and authorization form will be mailed to you within 2 business days. Allow an additional 1 to 3 days for postal delivery.",
+      "alsoReceiveHeader": "You'll also receive:",
+      "alsoReceiveEmail": "Ongoing updates about your pension through your preferred email address",
+      "alsoReceiveText": "A text message confirming your first pension payment",
+      "alsoReceiveDeliveryNotice": "<li>A notification will be sent to your mailing address if your payment amounts change</li>",
+      "alsoReceiveEmailNotice": "You'll receive a text message confirming your first pension payment.",
+      "alsoReceiveTextNotice": "You'll receive ongoing updates about your pension through your preferred email address.",
+      "cancelText": "If you want to cancel or make changes, contact a specialist at <b class=\"nobr\">1-888-555-5555</b>."
+    },
+    "submittedSuccessfullyFollowUps": {
+      "finishText": "To finish the pension  retirement process, complete these steps.",
+      "signReturnText": "Sign and Return Your Authorization Form Before <span class=\"ah-nowrap\">Oct 3, 2020</span>",
+      "confirmationStatementText": "Access the email in your <A onclick=\"if(isUACrossEnabled()){try{ga('trackerUa1.send','event', 'Internal Link' ,'Link click','LinkId:DC_WTHD_SECURE_MAILBOX_LNK LinkDest:/web/${friendlyUrl}/gmc#secureMailbox?selecttab=1'); } catch(err){}} if(isUAClientEnabled()){ try{if(isGTMEnabled()){dataLayer.push({'event':'UPointLinkEvent','linkCategory':'Internal Link','linkAction':'Link Click','linkLabel':'LinkId:DC_WTHD_SECURE_MAILBOX_LNK LinkDest:/web/${friendlyUrl}/gmc#secureMailbox?selecttab=1'});}else{ga('trackerUa2.send','event', 'Internal Link' ,'Link click','LinkId:DC_WTHD_SECURE_MAILBOX_LNK LinkDest:/web/${friendlyUrl}/gmc#secureMailbox?selecttab=1'); }} catch(err){}}setTimeout(function() {document.location.href = href;}, 100);return false;\" href=\"/web/${friendlyUrl}/gmc?selecttab=1&linkId=DC_WTHD_SECURE_MAILBOX_LNK&technicalNameForLink=DC_WTHD_SECURE_MAILBOX_LNK&userFriendlyNameForLink=Link for Secure Mailbox&domain=Ben-DC&baseClientIndicator=Base#secureMailbox\">Secure Mailbox</A> in the Message Center on this site. It contains your confirmation statement and important forms that require follow-up.",
+      "reviewConfirmationStatementText": "Review the confirmation statement to make sure your pension choices are correct.",
+      "printSignDateText": "Print, sign, and date the authorization form.",
+      "directionsText": "Follow the directions about:",
+      "whatElseText": "What else you need to do",
+      "whereHowText": "Where and how to send any documentation",
+      "sendDocumentationText": "Send documentation, as specified on the form. It must be <strong>received before</strong> Oct 3, 2020."
+    },
+    "nextStepsSection": {
+      "nextStepsTitle": "Your Next Steps",
+      "nextStepsHMHeader": "Retiree Health Benefits",
+      "nextStepsHMEnroll": "You can enroll in Premier Retiree medical coverage <strong>up to 90 days before</strong> you retire or <strong>within 31 days after</strong> you retire.",
+      "nextStepsHMNote": "<strong>Note:</strong> If you don’t enroll within these dates, you will lose eligibility for coverage and won't be able to enroll in the future.",
+      "nextStepsHMEnrollLink": "<A>INVALID LINK :<br/>Reasons:<br/>Linked business lineage doesn't match with User's active service account lineage [Link=HM_ENRL_010_LINK_ENROLL, Lineage=19939_1.0]</br></A>",
+      "nextStepsHMEnrollButton": "Research and Enroll",
+      "nextStepsAnswerLink": "<A onclick=\"if(isUACrossEnabled()){try{ga('trackerUa1.send','event', 'Internal Link' ,'Link click','LinkId:DB_ELEC_NXT_STEPS_ANS_LNK LinkDest:/web/${friendlyUrl}/retirement-answers?articleId=RA_INCOME_TAXES_RTRM_SAVINGS'); } catch(err){}} if(isUAClientEnabled()){ try{if(isGTMEnabled()){dataLayer.push({'event':'UPointLinkEvent','linkCategory':'Internal Link','linkAction':'Link Click','linkLabel':'LinkId:DB_ELEC_NXT_STEPS_ANS_LNK LinkDest:/web/${friendlyUrl}/retirement-answers?articleId=RA_INCOME_TAXES_RTRM_SAVINGS'});}else{ga('trackerUa2.send','event', 'Internal Link' ,'Link click','LinkId:DB_ELEC_NXT_STEPS_ANS_LNK LinkDest:/web/${friendlyUrl}/retirement-answers?articleId=RA_INCOME_TAXES_RTRM_SAVINGS'); }} catch(err){}}setTimeout(function() {document.location.href = href;}, 100);return false;\" href=\"/web/${friendlyUrl}/retirement-answers?articleId=RA_INCOME_TAXES_RTRM_SAVINGS&linkId=DB_ELEC_NXT_STEPS_ANS_LNK&technicalNameForLink=DB_ELEC_NXT_STEPS_ANS_LNK&userFriendlyNameForLink=Link to Retirement Answers\/Income and Taxes\/Retirement Savings Plan topic&domain=Ben-CM&baseClientIndicator=Base\">Review Your Savings Plan Options</A>",
+      "nextStepsConsiderOptions": "Consider all your options when it comes to accessing your retirement savings.",
+      "nextStepsHubLink": "<A onclick=\"if(isUACrossEnabled()){try{ga('trackerUa1.send','event', 'Internal Link' ,'Link click','LinkId:DB_ELEC_NXT_STEPS_HUB_LNK LinkDest:/web/${friendlyUrl}/retirement-hub'); } catch(err){}} if(isUAClientEnabled()){ try{if(isGTMEnabled()){dataLayer.push({'event':'UPointLinkEvent','linkCategory':'Internal Link','linkAction':'Link Click','linkLabel':'LinkId:DB_ELEC_NXT_STEPS_HUB_LNK LinkDest:/web/${friendlyUrl}/retirement-hub'});}else{ga('trackerUa2.send','event', 'Internal Link' ,'Link click','LinkId:DB_ELEC_NXT_STEPS_HUB_LNK LinkDest:/web/${friendlyUrl}/retirement-hub'); }} catch(err){}}setTimeout(function() {document.location.href = href;}, 100);return false;\" href=\"/web/${friendlyUrl}/retirement-hub?linkId=DB_ELEC_NXT_STEPS_HUB_LNK&technicalNameForLink=DB_ELEC_NXT_STEPS_HUB_LNK&userFriendlyNameForLink=Retirement Hub on UPoint&domain=Ben-DB&baseClientIndicator=Base\">Still have questions?</A>",
+      "nextStepsHubText": "Check out all the information on the <A onclick=\"if(isUACrossEnabled()){try{ga('trackerUa1.send','event', 'Internal Link' ,'Link click','LinkId:CS_RETIREMENT_HUB_NAV LinkDest:/web/${friendlyUrl}/retirement-hub'); } catch(err){}} if(isUAClientEnabled()){ try{if(isGTMEnabled()){dataLayer.push({'event':'UPointLinkEvent','linkCategory':'Internal Link','linkAction':'Link Click','linkLabel':'LinkId:CS_RETIREMENT_HUB_NAV LinkDest:/web/${friendlyUrl}/retirement-hub'});}else{ga('trackerUa2.send','event', 'Internal Link' ,'Link click','LinkId:CS_RETIREMENT_HUB_NAV LinkDest:/web/${friendlyUrl}/retirement-hub'); }} catch(err){}}setTimeout(function() {document.location.href = href;}, 100);return false;\" href=\"/web/${friendlyUrl}/retirement-hub?linkId=CS_RETIREMENT_HUB_NAV&technicalNameForLink=CS_RETIREMENT_HUB_NAV&userFriendlyNameForLink=Retirement Hub on UPoint&domain=Ben-DB&baseClientIndicator=Base\">Retirement Hub</A>."
+    },
+    "submittedSuccessfullySummary": {
+      "summaryTitle": "Summary of Your Request",
+      "summaryConfirmationText": "Confirmation Number",
+      "summaryConfirmationNumber": "462800078",
+      "summaryRequestText": "Request",
+      "summaryDescriptionText": "Make Your Pension Retirement Choices",
+      "summaryLastDayText": "Your Last Day of Employment",
+      "summaryBeginDateText": "Date You Begin Receiving Benefits",
+      "footnoteList": [
+        {
+          "footnoteId": 1,
+          "footnoteTitle": "Footnote",
+          "footnoteMessage": "Assumes you have completed all the required notifications, paperwork, and authorizations within the required timeframe. It may take up to 30 days to process your payments."
+        }
+      ],
+      "readFootnotesTxt": "1"
+    },
+    "footnoteList": [
+      {
+        "footnoteId": 1,
+        "footnoteTitle": "Footnote",
+        "footnoteMessage": "Assumes you have completed all the required notifications, paperwork, and authorizations within the required timeframe. It may take up to 30 days to process your payments."
+      }
+    ],
+    "readFootnotesTxt": "Read Footnote"
+  }
+}

@@ -1,0 +1,182 @@
+{
+    "status": {
+    
+                    "statusCode": 200,
+                    "statusMessage": "OK"
+    },
+    "progressBarList": [
+		"Your Info",
+		"Dates",
+		"Beneficiaries",
+		"Rights",
+		"Payment",
+		"Destination",
+		"Review",
+		"Authorize"
+	],
+    "yoursNoticeOfRightsStepBean": {
+        "yoursNoticeOfRightsTitle": "4. Your Notice of Rights",
+        "changeButtonText": "Review",
+        "yoursNoticeOfRightsText": "Acknowledged receiving and reviewing notice of rights."
+    },
+    "BeneficiaryStepBean": {
+        "beneficiaryTitle": "3. Beneficiaries",
+        "changeButtonText": "Change",
+        "beneficiaryTable": [
+            {
+                "planDescriptionText": "FAP Pension Plan",
+                "isBeneficiaryAvailable": true,
+                "beneficiaryDetails": {
+                    "beneficiaryName": "Christopher Alvarez",
+                    "beneficiaryRealation": "Spouse",
+                    "beneficiaryDob": "Oct 20, 1973"
+                }
+            },
+            {
+                "planDescriptionText": "Cash Balance Plan Benefit",
+                "isBeneficiaryAvailable": true,
+                "beneficiaryDetails": {
+                    "beneficiaryName": "Christopher Alvarez",
+                    "beneficiaryRealation": "Spouse",
+                    "beneficiaryDob": "Oct 20, 1973"
+                }
+            },
+            {
+                "planDescriptionText": "ABC Pension Plan",
+                "isBeneficiaryAvailable": false,
+                "beneficiaryNotAvailableText": "No Beneficiary"
+            }  
+        ],
+        "beneficiaryPopUpContent": {
+            "beneficiaryPopUpContentHeader": "Do you want to change your choices?",
+            "beneficiaryPopUpContentText": "You'll need to start the retirement process again from the beginning. That's because making changes to this information may impact your benefits options and payment amounts.",
+            "beneficiaryPopUpContentYesButtonText":"Yes",
+            "beneficiaryPopUpContentNoButtonText" :"No"
+        }
+    },
+    "paymentModalBean": {
+        "pageNameText": "5. Pension Payments",
+        "changeText":"Change",
+        "reviewText":"Review",
+        "planDescriptionText": "Plan Benefit",
+        "optionalFormGroupDescriptionText": "Form of Payment",
+        "PaymentToYouText": "Payment to you",
+        "paymentTable": [
+            {
+                "paymentDescription": "Premier Pension Plan One-Time Payments",
+                "paymentTableContentdata": [
+                    {
+                        "planDescription": "Premier Pension Plan B—Non-Union Benefit",
+                        "optionalFormDescription": "Lump Sum Option",
+                        "optionalFormGrossAmount": "$73,157.50",
+                        "labelFrequency":"(one-time)"
+                    },
+                    {
+                        "planDescription": "Premier Pension Plan B—Grandfathered Benefit",
+                        "optionalFormDescription": "Lump Sum Option",
+                        "optionalFormGrossAmount": "$24,425.50",
+                        "labelFrequency":"(one-time)"
+                    }
+                ],
+                "deductionsRollAmount": "$97,582.50",
+                "totalAmountText": "Total Payment Before Deductions",
+                "totalRolloverAmount": "-$89,425.50",
+                "rolloverAmountText": "Rollover Amount"
+            },
+            {
+                "paymentDescription": "Cash Balance Plan Annuity Payments",
+                "paymentTableContent": [
+                    {
+                        "planDescriptionText": "Plan Benefit",
+                        "optionalFormGroupDescriptionText": "Form of Payment",
+                        "PaymentToYouText": "Payment to you"
+                    }
+                ],
+                "paymentTableContentdata": [
+                    {
+                        "planDescription": "Premier Pension Plan—Cash Balance Benefit",
+                        "optionalFormDescription": "Straight Life Annuity",
+                        "optionalFormGrossAmount": "$876.34",
+                        "labelFrequency":"(monthly)"
+                    }
+                ],
+                "totalRolloverAmount": "$876.34",
+                "rolloverAmountText": "Rollover Amount"
+            },
+            {
+                "paymentDescription": "Premier Pension Plan Deferred Payments",
+                "paymentTableContent": [
+                    {
+                        "planDescriptionText": "Plan Benefit",
+                        "optionalFormGroupDescriptionText": "Form of Payment",
+                        "PaymentToYouText": "Payment to you"
+                    }
+                ],
+                "paymentTableContentdata": [
+                    {
+                        "planDescription": "Premier Pension Plan—Cash Balance Benefit",
+                        "optionalFormDescription": "Deferred",
+                        "optionalFormGrossAmount": "$0.00",
+                         "labelFrequency":"(monthly)"
+                    }
+                ],
+                "totalRolloverAmount": "$0.00",
+                "rolloverAmountText": "Rollover Amount"
+            }
+        ]
+    },
+    "paymentDestinationStepBean": {
+        "paymentDestinationTitle": "6. Destination",
+        "changeButtonText": "Change",
+        "paymentTable": [
+            {
+                "tableHeaderText": "Premier Pension Plan Payments (one-time)",  
+                    "primaryPaymentDetailData": {
+                        "primaryPaymentText": "Payment to You ",
+                        "primaryPaymentAmountText": "$2,248.86",
+                        "paymentFrequencyText": "(one-time)",
+                        "addressDestinationDetailData": {
+                            "addressTypeText": "Direct Deposit ",
+                            "addressTypeDescriptionText": "J.P. Morgan Chase Bank"
+                        }
+                    },
+                    "rolloverDestinationData": {
+                        "directDeliverPaymentDetailData": {
+                        "rowHeaderText":"Rollover Payment ",
+                        "rollOverAmountAvailable":"$89,425.50",
+                        "addressDestinationDetailData": {
+                            "addressTypeText": "Traditional IRA",
+                            "addressTypeDescriptionText": "E*Trade Securities"
+                        }
+                     }
+                }
+            },
+            {
+                "tableHeaderText": "Premier Pension Plan Annuity Payments (monthly)",  
+                "primaryPaymentDetailData": {
+                    "primaryPaymentText": "Payment to You ",
+                    "primaryPaymentAmountText": "$112.64",
+                    "paymentFrequencyText": "(monthly)",
+                    "addressDestinationDetailData": {
+                        "addressTypeText": "Address",
+                        "addressTypeDescriptionText": "Permanent"
+                    }
+                },
+                "secondaryPaymentDetailData": {
+                    "secondaryPaymentText": "Payment to you",
+                    "secondaryPaymentAmountText": "$405.81",
+                    "addressDestinationDetailData": {
+                        "addressTypeText": "Direct Deposit ",
+                        "addressTypeDescriptionText": "J.P. Morgan Chase Bank"
+                    }
+                }      
+            }
+        ]
+    },
+    "reviewStepBean": {
+        "reviewTitle": "7. Review",
+        "changeButtonText": "Review",
+        "reviewText": "Reviewed a list of all the choices you made."
+    }
+}
+

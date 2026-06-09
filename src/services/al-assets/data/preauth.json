@@ -1,0 +1,48 @@
+{
+    "change": "Change",
+    "retirementProgressStage": {
+        "yourInfoDetails": {
+            "infoHeader": "1. Your Contact Information",
+            "maritalStatus": "Married",
+            "email": "palvarez@gmail.com",
+            "address": [
+                "110 Main St",
+                "Apt 1A",
+                "Walla Walla, WA 10100"
+            ],
+            "phoneNo": "999-999-9999",
+            "paymentConfirmationContent": "Yes",
+            "paymentConfirmationText": "Pension Payment Confirmation<br>Text Message:",
+            "retirementKitContent": "Secure Mailbox",
+            "retirementKitText": "Retirement Kit:"
+        },
+        "retirementDatesDetails": {
+            "datesHeader": "2. Retirement Dates",
+            "benefitCommencementInfoContent": {
+                "benefitCommencement": "Date Benefits Begin",
+                "benefitCommencementDate": "Jul 01,2018"
+            },
+            "lastDayInfoContent": {
+                "lastDayEmp": "Last Day of Employment",
+                "lastDayEmpDate": "Jun 30,2018"
+            }
+        }
+	},
+	
+    "popUpContent": {
+        "yesText": "Yes",
+        "noText": "No",
+        "changeModelText": "<h3>Do you want to change your choices?</h3>You’ll need to start the retirement process again from the beginning. That’s because making changes to this information may impact your benefits options and payment amounts."
+    },
+    "progressBarList": [
+        "Your info",
+        "Dates",
+        "Beneficiaries",
+        "Rights",
+        "Payment",
+        "Destination",
+        "Review",
+        "Authorize"
+    ],
+    "statusCode": 200
+}

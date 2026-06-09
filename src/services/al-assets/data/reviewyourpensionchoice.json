@@ -1,0 +1,607 @@
+{
+  "body": {
+  "responseStatus":{
+     "statusCode":200,
+     "statusMessage":"OK",
+     "httpStatus":"OK"
+  },
+  "transactionTitle":"Make Your Retirement Choices",
+  "pageTitle":"Review Your Pension Choices",
+  "pageSummary":"Below is a summary of your pension choices. Review your choices closely and make any needed changes. When you are satisfied with your pension choices, submit them.",
+  "changeButtonLabel":"Change",
+  "readFootnotesTxt":"Read Footnotes",
+  "isAllowedToChooseMultipleBeneficiaries":true,
+  "changeDateBeneModalContent":{
+     "heading":"Do you want to change your choices?",
+     "introContent":"<p>Youll need to start the retirement process again if you change one or more of these choices:</p>",
+     "listedContent":"<ul><li>Your last day of employment</li><li>Date you begin receiving benefits</li><li>Your beneficiaries</li></ul>",
+     "endingContent":"<p>This is because the benefits options available and amounts may change, too.</p>",
+     "buttonList":[
+        {
+           "action":"continue",
+           "label":"Continue"
+        },
+        {
+           "action":"return",
+           "label":"Return"
+        }
+     ],
+     "routeLink":"<A onclick=\"if(isUACrossEnabled()){try{ga('trackerUa1.send','event', 'Internal Link' ,'Link click','LinkId:DB_MAKE_RTRM_CHOICES LinkDest:/web/${friendlyUrl}/retirement-choices#/retirement-choices/your-info'); } catch(err){}} if(isUAClientEnabled()){ try{if(isGTMEnabled()){dataLayer.push({'event':'UPointLinkEvent','linkCategory':'Internal Link','linkAction':'Link Click','linkLabel':'LinkId:DB_MAKE_RTRM_CHOICES LinkDest:/web/${friendlyUrl}/retirement-choices#/retirement-choices/your-info'});}else{ga('trackerUa2.send','event', 'Internal Link' ,'Link click','LinkId:DB_MAKE_RTRM_CHOICES LinkDest:/web/${friendlyUrl}/retirement-choices#/retirement-choices/your-info'); }} catch(err){}}setTimeout(function() {document.location.href = href;}, 100);return false;\" href=\"/web/retirement3x/retirement-choices?linkId=DB_MAKE_RTRM_CHOICES&technicalNameForLink=DB_MAKE_RTRM_CHOICES&userFriendlyNameForLink=Make Your Retirement Choices&domain=Ben-DB&baseClientIndicator=Base#/retirement-choices/your-info\">Make Your Retirement Choices</A>"
+  },
+  "retirementDatesContent":{
+     "heading":"Your Retirement Dates",
+     "changeButtonAltText":"Select this button to change your retirement dates.",
+     "yourLastDayLabel":"Your Last Day",
+     "yourLastDayDate":"Oct 30, 2020",
+     "beginBenefitDateLabel":"Date You May Begin Receiving Benefits",
+     "beginBenefitDate":"Nov 1, 2020"
+  },
+  "beneficiaryContent":{
+     "showChangeButton":true,
+     "heading":"Beneficiaries",
+     "benefitColumnLabel":"Benefit",
+     "beneficiaryColumnLabel":"Beneficiary",
+     "btnChange":"Change",
+     "btnAltChange":"Select this button to change your beneficiaries.",
+     "changeDateBeneModalContent":{
+        "heading":"Do you want to change your choices?",
+        "introContent":"<p>Youll need to start the retirement process again if you change one or more of these choices:</p>",
+        "listedContent":"<ul><li>Your last day of employment</li><li>Date you begin receiving benefits</li><li>Your beneficiaries</li></ul>",
+        "endingContent":"<p>This is because the benefits options available and amounts may change, too.</p>",
+        "buttonList":[
+           {
+              "action":"continue",
+              "label":"Continue"
+           },
+           {
+              "action":"return",
+              "label":"Return"
+           }
+        ],
+        "routeLink":"<A onclick=\"if(isUACrossEnabled()){try{ga('trackerUa1.send','event', 'Internal Link' ,'Link click','LinkId:DB_MAKE_RTRM_CHOICES LinkDest:/web/${friendlyUrl}/retirement-choices#/retirement-choices/your-info'); } catch(err){}} if(isUAClientEnabled()){ try{if(isGTMEnabled()){dataLayer.push({'event':'UPointLinkEvent','linkCategory':'Internal Link','linkAction':'Link Click','linkLabel':'LinkId:DB_MAKE_RTRM_CHOICES LinkDest:/web/${friendlyUrl}/retirement-choices#/retirement-choices/your-info'});}else{ga('trackerUa2.send','event', 'Internal Link' ,'Link click','LinkId:DB_MAKE_RTRM_CHOICES LinkDest:/web/${friendlyUrl}/retirement-choices#/retirement-choices/your-info'); }} catch(err){}}setTimeout(function() {document.location.href = href;}, 100);return false;\" href=\"/web/retirement3x/retirement-choices?linkId=DB_MAKE_RTRM_CHOICES&technicalNameForLink=DB_MAKE_RTRM_CHOICES&userFriendlyNameForLink=Make Your Retirement Choices&domain=Ben-DB&baseClientIndicator=Base#/retirement-choices/your-info\">Make Your Retirement Choices</A>"
+     },
+     "beneficiaryPlanElectionDetail":[
+        {
+           "planId":"8744",
+           "electionId":"10",
+           "planDescription":"DB FAP Pension Plan",
+           "electionDescription":"Simple Election Alternate",
+           "planElectionDescription":"DB FAP Pension Plan&mdash;Simple Election Alternate",
+           "beneficiaryName":"No Beneficiary",
+           "beneficiaryExternalId":"",
+           "beneficiaryBirthDate":"1800-01-01",
+           "beneficiaryRelationCode":""
+        },
+        {
+           "planId":"8744",
+           "electionId":"190",
+           "planDescription":"DB FAP Pension Plan",
+           "electionDescription":"Simple Election 2",
+           "planElectionDescription":"DB FAP Pension Plan&mdash;Simple Election 2",
+           "beneficiaryName":"No Beneficiary",
+           "beneficiaryExternalId":"",
+           "beneficiaryBirthDate":"1800-01-01",
+           "beneficiaryRelationCode":""
+        }
+     ]
+  },
+  "paymentElections":[
+     {
+        "paymentId":"1000",
+        "paymentDescription":"FAP Lump Sum Payment",
+        "paymentIntroContentList":[
+           "This payment will be made from a plan that's intended to be qualified under section 401(a) of Internal Revenue Code.",
+           "All amounts shown below may change based on your final employment data. The final amount paid to you may include other deductions that aren't shown."
+        ],
+        "planBenefitLabel":"Benefit",
+        "formOfPaymentLabel":"Form of Payment",
+        "paymentToYouLabel":"Payment to You",
+        "paymentElectionBenefits":[
+           {
+              "planId":"8744",
+              "benefitDescription":"Simple Election Alternate",
+              "planDescription":"DB FAP Pension Plan",
+              "elecId":"10",
+              "elecDescription":"Simple Election Alternate",
+              "elecGroupId":"0",
+              "paymentOptionId":"3010",
+              "paymentOptionDescription":"Lump Sum Distribution",
+              "paymentOptionToYouAmt":"$319,407.80",
+              "paymentOptionFrequency":"one-time",
+              "showChangeButton":true,
+              "showPaymentOption":true,
+              "retroASD":false
+           }
+        ],
+        "paymentTotalsLabel":"Total Payment Before Deductions",
+        "paymentTotalAmount":"$319,407.80",
+        "paymentDeductions":[
+           {
+              "description":"Rollover Amount",
+              "deductionAmount":"-$0.00",
+              "showChangeButton":true,
+              "rolloverDeduction":true
+           },
+           {
+              "description":"Federal Withholding",
+              "deductionAmount":"-$63,881.56",
+              "showChangeButton":true,
+              "rolloverDeduction":false
+           },
+           {
+              "description":"State Withholding",
+              "deductionAmount":"$0.00",
+              "showChangeButton":true,
+              "rolloverDeduction":false
+           }
+        ],
+        "estimatedPaymentLabel":"Estimated One-Time Payment to You",
+        "estimatedPaymentAmount":"$255,526.24",
+        "otherDetailsContentHeading":"Other Details",
+        "expandAllLabel":"Expand All",
+        "collapseAllLabel":"Collapse All",
+        "paymentDetailsContent":{
+           "contentHeading":"Payment Amounts to You and Your Beneficiary",
+           "primaryOptionalFormPaymentList":[
+              {
+                 "optionalFormPanelHeader":"Lump Sum Distribution",
+                 "optionalFormPanelLeadinText":"A one-time payment to you only",
+                 "optionalFormPanelText":"<li><strong>No</strong> payment to your beneficiary</li> <li>If married, your spouse must consent</li> <li>Entire value of your pension benefit (or, in some cases, a portion of the entire value)</li> <li>Subject to taxation, and the Internal Revenue Service requires 20% be automatically withheld</li> <li>May be subject to 10% penalty tax on early distributions</li>",
+                 "optionalFormPanelLearnMoreLink":"<A onclick=\"if(isUACrossEnabled()){try{ga('trackerUa1.send','event', 'Internal Link' ,'Link click','LinkId:DB_PAYMENT_OPTION_DESC_LINK LinkDest:/web/retirement3x/payment-option-description'); } catch(err){}} if(isUAClientEnabled()){ try{if(isGTMEnabled()){dataLayer.push({'event':'UPointLinkEvent','linkCategory':'Internal Link','linkAction':'Link Click','linkLabel':'LinkId:DB_PAYMENT_OPTION_DESC_LINK LinkDest:/web/retirement3x/payment-option-description'});}else{ga('trackerUa2.send','event', 'Internal Link' ,'Link click','LinkId:DB_PAYMENT_OPTION_DESC_LINK LinkDest:/web/retirement3x/payment-option-description'); }} catch(err){}}try{setTimeout(function() {}, 100);}catch(err){}window.winHandle = window.open('/web/retirement3x/payment-option-description#/?planId=8744&electionId=10&electionGroupId=0&opFmId=3010&calcRefId=null&linkId=DB_PAYMENT_OPTION_DESC_LINK&technicalNameForLink=DB_PAYMENT_OPTION_DESC_LINK&userFriendlyNameForLink=DB_PAYMENT_OPTION_DESC_LINK&domain=Ben-DB&baseClientIndicator=Base','DB_PAYMENT_OPTION_DESC_LINK','titlebar=yes,scrollbars=yes,resizable=yes,width=980,height=560');if(typeof XD != 'undefined'){XD.registerWindow('DB_PAYMENT_OPTION_DESC_LINK',window.winHandle);}try{setSessionTimeOut()}catch(err){};return false;\" href=\"/web/retirement3x/payment-option-description#/?planId=8744&electionId=10&electionGroupId=0&opFmId=3010&calcRefId=null&linkId=DB_PAYMENT_OPTION_DESC_LINK&technicalNameForLink=DB_PAYMENT_OPTION_DESC_LINK&userFriendlyNameForLink=DB_PAYMENT_OPTION_DESC_LINK&domain=Ben-DB&baseClientIndicator=Base\" class=\"ah-secondaryWindow\">Learn More</A>",
+                 "optionalFormToYouAmountList":[
+                    {
+                       "optionalFormAmount":"$319,407.80",
+                       "optionalFormFrequencyDescription":"(one-time)"
+                    }
+                 ],
+                 "optionalFormBeneficiaryList":[
+                    {
+                       "beneficiaryText":"Beneficiary Benefit (for payments after your death)",
+                       "beneficiaryAmount":"$0.00",
+                       "benefitFrequency":"(one-time)"
+                    }
+                 ],
+                 "optionalFormPanelRelativeValueSection":{
+                    
+                 },
+                 "autoSelectedFormsOfPaymentList":[
+                    
+                 ],
+                 "hypotheticalOptionalForm":false,
+                 "optionalFormSelected":false
+              }
+           ]
+        },
+        "taxationContent":{
+           "contentHeading":"Taxation Information",
+           "benefitLabel":"Benefit",
+           "taxableAmtLabel":"Taxable Amount",
+           "nonTaxAmtLabel":"Nontaxable Amount",
+           "totalGrossLabel":"Total Gross Benefit Amount",
+           "paymentTaxDetails":[
+              {
+                 "electionDescription":"Simple Election Alternate",
+                 "taxableAmount":"$319,407.80",
+                 "nonTaxableAmount":"$0.00",
+                 "totalGrossAmount":"$319,407.80"
+              }
+           ]
+        },
+        "paymentDestinationsContent":{
+           "contentHeading":"Payment Destination(s)",
+           "toYouHeading":"Payment to You",
+           "rolloverHeading":"Rollover Payment",
+           "paymentDestinations":[
+              {
+                 "deliveryId":"5000",
+                 "addressId":"25",
+                 "showChangeButton":true,
+                 "paymentAmount":"$319,407.80",
+                 "paymentAddresses":[
+                    {
+                       "description":"CM-Mailing Address",
+                       "addressLines":[
+                          "123 Fake Street",
+                          "Chicago IL 12345"
+                       ]
+                    }
+                 ],
+                 "paymentType":"P",
+                 "unformatPaymentAmount":319407.8,
+                 "rollover":false
+              }
+           ]
+        },
+        "withholdingContent":{
+           "contentHeading":"Estimated Income Tax Withholding",
+           "showChangeButton":true,
+           "fedWithholdingTitle":"Federal Income Tax Withholding",
+           "stateWithholdingTitle":"State Income Tax Withholding",
+           "fedWithholdingDetailList":[
+              {
+                 "detailDescription":"Taxable Income",
+                 "detailValue":"$319,407.80",
+                 "isTotalsItem":false
+              },
+              {
+                 "detailDescription":"Percentage Withheld",
+                 "detailValue":"0%",
+                 "isTotalsItem":false
+              },
+              {
+                 "detailDescription":"Marital Status",
+                 "detailValue":"Married",
+                 "isTotalsItem":false
+              },
+              {
+                 "detailDescription":"Number of Allowances",
+                 "detailValue":"3",
+                 "isTotalsItem":false
+              },
+              {
+                 "detailDescription":"Additional Amount Withheld",
+                 "detailValue":"$0.00",
+                 "isTotalsItem":false
+              },
+              {
+                 "detailDescription":"<strong>Federal Withholding</strong> <small>(estimated)</small>",
+                 "detailValue":"$63,881.56",
+                 "isTotalsItem":true
+              }
+           ],
+           "stateWithholdingDetailList":[
+              {
+                 "detailDescription":"Taxable Income",
+                 "detailValue":"$319,407.80",
+                 "isTotalsItem":false
+              },
+              {
+                 "detailDescription":"State",
+                 "detailValue":"IL",
+                 "isTotalsItem":false,
+                 "withHoldingType":"TXST"
+              },
+              {
+                 "detailDescription":"<strong>State Withholding</strong> <small>(estimated)</small>",
+                 "detailValue":"$0.00",
+                 "isTotalsItem":true
+              }
+           ]
+        }
+     },
+     {
+        "paymentId":"2000",
+        "paymentDescription":"FAP Annuity Payment",
+        "paymentIntroContentList":[
+           "This payment will be made from a plan that's intended to be qualified under section 401(a) of Internal Revenue Code.",
+           "All amounts shown below may change based on your final employment data. The final amount paid to you may include other deductions that aren't shown."
+        ],
+        "planBenefitLabel":"Benefit",
+        "formOfPaymentLabel":"Form of Payment",
+        "paymentToYouLabel":"Payment to You",
+        "paymentElectionBenefits":[
+           {
+              "planId":"8744",
+              "benefitDescription":"Simple Election 2",
+              "planDescription":"DB FAP Pension Plan",
+              "elecId":"190",
+              "elecDescription":"Simple Election 2",
+              "elecGroupId":"0",
+              "paymentOptionId":"3040",
+              "paymentOptionDescription":"Single Life Annuity",
+              "paymentOptionToYouAmt":"$2,184.34",
+              "paymentOptionFrequency":"monthly",
+              "showChangeButton":true,
+              "showPaymentOption":true,
+              "retroASD":false
+           }
+        ],
+        "paymentTotalsLabel":"Total Payment Before Deductions",
+        "paymentTotalAmount":"$2,184.34",
+        "paymentDeductions":[
+           {
+              "description":"Federal Withholding",
+              "deductionAmount":"-$11.77",
+              "showChangeButton":true,
+              "rolloverDeduction":false
+           },
+           {
+              "description":"State Withholding",
+              "deductionAmount":"$0.00",
+              "showChangeButton":true,
+              "rolloverDeduction":false
+           }
+        ],
+        "estimatedPaymentLabel":"Estimated Monthly Payment to You",
+        "estimatedPaymentAmount":"$2,172.57",
+        "otherDetailsContentHeading":"Other Details",
+        "expandAllLabel":"Expand All",
+        "collapseAllLabel":"Collapse All",
+        "paymentDetailsContent":{
+           "contentHeading":"Payment Amounts to You and Your Beneficiary",
+           "primaryOptionalFormPaymentList":[
+              {
+                 "optionalFormPanelHeader":"Single Life Annuity",
+                 "optionalFormPanelLeadinText":"A monthly payment to you only, until you die",
+                 "optionalFormPanelText":"<li><strong>No</strong> payment to your beneficiary</li><li>If married, your spouse must consent</li>",
+                 "optionalFormPanelLearnMoreLink":"<A onclick=\"if(isUACrossEnabled()){try{ga('trackerUa1.send','event', 'Internal Link' ,'Link click','LinkId:DB_PAYMENT_OPTION_DESC_LINK LinkDest:/web/retirement3x/payment-option-description'); } catch(err){}} if(isUAClientEnabled()){ try{if(isGTMEnabled()){dataLayer.push({'event':'UPointLinkEvent','linkCategory':'Internal Link','linkAction':'Link Click','linkLabel':'LinkId:DB_PAYMENT_OPTION_DESC_LINK LinkDest:/web/retirement3x/payment-option-description'});}else{ga('trackerUa2.send','event', 'Internal Link' ,'Link click','LinkId:DB_PAYMENT_OPTION_DESC_LINK LinkDest:/web/retirement3x/payment-option-description'); }} catch(err){}}try{setTimeout(function() {}, 100);}catch(err){}window.winHandle = window.open('/web/retirement3x/payment-option-description#/?planId=8744&electionId=190&electionGroupId=0&opFmId=3040&calcRefId=null&linkId=DB_PAYMENT_OPTION_DESC_LINK&technicalNameForLink=DB_PAYMENT_OPTION_DESC_LINK&userFriendlyNameForLink=DB_PAYMENT_OPTION_DESC_LINK&domain=Ben-DB&baseClientIndicator=Base','DB_PAYMENT_OPTION_DESC_LINK','titlebar=yes,scrollbars=yes,resizable=yes,width=980,height=560');if(typeof XD != 'undefined'){XD.registerWindow('DB_PAYMENT_OPTION_DESC_LINK',window.winHandle);}try{setSessionTimeOut()}catch(err){};return false;\" href=\"/web/retirement3x/payment-option-description#/?planId=8744&electionId=190&electionGroupId=0&opFmId=3040&calcRefId=null&linkId=DB_PAYMENT_OPTION_DESC_LINK&technicalNameForLink=DB_PAYMENT_OPTION_DESC_LINK&userFriendlyNameForLink=DB_PAYMENT_OPTION_DESC_LINK&domain=Ben-DB&baseClientIndicator=Base\" class=\"ah-secondaryWindow\">Learn More</A>",
+                 "optionalFormToYouAmountList":[
+                    {
+                       "optionalFormAmount":"$2,184.34",
+                       "optionalFormFrequencyDescription":"(monthly)"
+                    }
+                 ],
+                 "optionalFormBeneficiaryList":[
+                    {
+                       "beneficiaryText":"Beneficiary Benefit (for payments after your death)",
+                       "beneficiaryAmount":"$0.00",
+                       "benefitFrequency":"(monthly)"
+                    }
+                 ],
+                 "optionalFormPanelRelativeValueSection":{
+                    
+                 },
+                 "autoSelectedFormsOfPaymentList":[
+                    
+                 ],
+                 "hypotheticalOptionalForm":false,
+                 "optionalFormSelected":false
+              }
+           ]
+        },
+        "taxationContent":{
+           "contentHeading":"Taxation Information",
+           "benefitLabel":"Benefit",
+           "taxableAmtLabel":"Taxable Amount",
+           "nonTaxAmtLabel":"Nontaxable Amount",
+           "totalGrossLabel":"Total Gross Benefit Amount",
+           "paymentTaxDetails":[
+              {
+                 "electionDescription":"Simple Election 2",
+                 "taxableAmount":"$2,184.34",
+                 "nonTaxableAmount":"$0.00",
+                 "totalGrossAmount":"$2,184.34"
+              }
+           ]
+        },
+        "paymentDestinationsContent":{
+           "contentHeading":"Payment Destination(s)",
+           "toYouHeading":"Payment to You",
+           "rolloverHeading":"Rollover Payment",
+           "paymentDestinations":[
+              {
+                 "deliveryId":"2000",
+                 "addressId":"10",
+                 "showChangeButton":true,
+                 "paymentAmount":"$2,184.34",
+                 "paymentAddresses":[
+                    {
+                       "description":"CM-Permanent Address",
+                       "addressLines":[
+                          "123 Fake Street",
+                          "Chicago IL 12345"
+                       ]
+                    }
+                 ],
+                 "paymentType":"P",
+                 "unformatPaymentAmount":2184.34,
+                 "rollover":false
+              }
+           ]
+        },
+        "withholdingContent":{
+           "contentHeading":"Estimated Income Tax Withholding",
+           "showChangeButton":true,
+           "fedWithholdingTitle":"Federal Income Tax Withholding",
+           "stateWithholdingTitle":"State Income Tax Withholding",
+           "fedWithholdingDetailList":[
+              {
+                 "detailDescription":"Taxable Income",
+                 "detailValue":"$2,184.34",
+                 "isTotalsItem":false
+              },
+              {
+                 "detailDescription":"Percentage Withheld",
+                 "detailValue":"0%",
+                 "isTotalsItem":false
+              },
+              {
+                 "detailDescription":"Marital Status",
+                 "detailValue":"Married",
+                 "isTotalsItem":false
+              },
+              {
+                 "detailDescription":"Number of Allowances",
+                 "detailValue":"3",
+                 "isTotalsItem":false
+              },
+              {
+                 "detailDescription":"Additional Amount Withheld",
+                 "detailValue":"$0.00",
+                 "isTotalsItem":false
+              },
+              {
+                 "detailDescription":"<strong>Federal Withholding</strong> <small>(estimated)</small>",
+                 "detailValue":"$11.77",
+                 "isTotalsItem":true
+              }
+           ],
+           "stateWithholdingDetailList":[
+              {
+                 "detailDescription":"Taxable Income",
+                 "detailValue":"$2,184.34",
+                 "isTotalsItem":false
+              },
+              {
+                 "detailDescription":"State",
+                 "detailValue":"IL",
+                 "isTotalsItem":false,
+                 "withHoldingType":"TXST"
+              },
+              {
+                 "detailDescription":"<strong>State Withholding</strong> <small>(estimated)</small>",
+                 "detailValue":"$0.00",
+                 "isTotalsItem":true
+              }
+           ]
+        }
+     }
+  ],
+  "submitContentTitle":"Submit Your Choices",
+  "submitContentIntro":"When you <strong>Submit</strong>, you acknowledge that you've read and understand <A onclick=\"if(isUACrossEnabled()){try{ga('trackerUa1.send','event', 'Internal Link' ,'Link click','LinkId:UPN_DB_ELEC_NOR_LNK LinkDest:/web/retirement3x/db-notice-of-rights'); } catch(err){}} if(isUAClientEnabled()){ try{if(isGTMEnabled()){dataLayer.push({'event':'UPointLinkEvent','linkCategory':'Internal Link','linkAction':'Link Click','linkLabel':'LinkId:UPN_DB_ELEC_NOR_LNK LinkDest:/web/retirement3x/db-notice-of-rights'});}else{ga('trackerUa2.send','event', 'Internal Link' ,'Link click','LinkId:UPN_DB_ELEC_NOR_LNK LinkDest:/web/retirement3x/db-notice-of-rights'); }} catch(err){}}try{setTimeout(function() {}, 100);}catch(err){}window.winHandle = window.open('/ah-angular-afirst-web/#/web/retirement3x/db-notice-of-rights?linkId=UPN_DB_ELEC_NOR_LNK&technicalNameForLink=UPN_DB_ELEC_NOR_LNK&userFriendlyNameForLink=Link to the db notice of rights page&domain=Ben-DB&baseClientIndicator=Base','UPN_DB_ELEC_NOR_LNK','titlebar=yes,scrollbars=yes,resizable=yes,width=980,height=560');if(typeof XD != 'undefined'){XD.registerWindow('UPN_DB_ELEC_NOR_LNK',window.winHandle);}try{setSessionTimeOut()}catch(err){};return false;\" href=\"/web/retirement3x/db-notice-of-rights?linkId=UPN_DB_ELEC_NOR_LNK&technicalNameForLink=UPN_DB_ELEC_NOR_LNK&userFriendlyNameForLink=Link to the db notice of rights page&domain=Ben-DB&baseClientIndicator=Base\" class=\"ah-secondaryWindow\">Your Notice of Rights</A> and that your choices may result in the waiver of the applicable",
+  "submitContentIntroTipRollover":"30-day notice period",
+  "submitContentTipContent":"By law, you have at least 30 days to think about your pension choices and decide if you want to consent to receiving benefits.After you start your benefit, you can't change the payment option. You can waive your right to this 30-day period by choosing Submit below. If you're not ready now to consent to receiving benefits, do not submit your choices.You can choose Come Back Later and return to this site when you're ready to submit your pension choices.",
+  "submitContentNote":"<strong>Note:</strong> After you submit your pension choices, your authorization is required to finalize them.",
+  "flowButtonNavigation":{
+     "buttonList":[
+        {
+           "action":"submit",
+           "label":"Submit"
+        },
+        {
+           "action":"comeBackLater",
+           "label":"Come Back Later"
+        },
+        {
+           "action":"quit",
+           "label":"Quit"
+        },
+        {
+           "action":"back",
+           "label":"Back"
+        }
+     ],
+     "quitModalContent":{
+        "title":"What do you want to do?",
+        "bodyList":[
+           {
+              "heading":"Save",
+              "paragraph":"Keep the choices you've made, so far. Finish making pension choices later."
+           },
+           {
+              "heading":"Quit",
+              "paragraph":"Cancel your pension request and lose all the pension choices you've made, so far."
+           },
+           {
+              "heading":"Return",
+              "paragraph":"Go back to the current page without quitting."
+           }
+        ],
+        "buttonList":[
+           {
+              "action":"comeBackLater",
+              "label":"Save"
+           },
+           {
+              "action":"quit",
+              "label":"Quit"
+           },
+           {
+              "action":"return",
+              "label":"Return"
+           }
+        ]
+     },
+     "editButtonList":[
+        {
+           "action":"continue",
+           "label":"Continue"
+        },
+        {
+           "action":"return",
+           "label":"Return"
+        }
+     ]
+  },
+  "footnoteList":[
+     {
+        "footnoteId":1,
+        "footnoteTitle":"Footnotes",
+        "footnoteMessage":"Assumes you have completed all the required notifications, paperwork, and authorizations within the required timeframe. It may take up to 30 days to process your payments."
+     }
+  ],
+  "progressBarPopovers": [
+   {
+      "hasError": false,
+      "stepId": 3,
+      "stepName": "beneficiaries",
+      "stepCode": "BENE",
+      "title": "3. Beneficiaries",
+      "linkText": "Change",
+      "contentList": [
+         {
+            "contentData": [
+               "DB FAP Pension Plan",
+               "No Beneficiary"
+            ]
+         }
+      ],
+      "changeModal": {
+         "changeModalText": "Do you want to change your choices?<br><br> You’ll need to start the retirement process again from the beginning. That’s because making changes to this information may impact your benefits options and payment amounts.",
+         "yesBtn": "Yes",
+         "noBtn": "No"
+      }
+   },
+   {
+      "hasError": false,
+      "stepId": 4,
+      "stepName": "rights",
+      "stepCode": "NORS",
+      "title": "4. Your Notice of Rights",
+      "linkText": "Review",
+      "contentList": [
+         {
+            "contentData": [
+               "Acknowledged receiving and reviewing notice of rights."
+            ]
+         }
+      ]
+   },
+   {
+      "hasError": false,
+      "stepId": 5,
+      "stepName": "payment",
+      "stepCode": "PAYT",
+      "title": "5. Pension Payments",
+      "linkText": "Review/Change",
+      "contentList": [
+         {
+            "contentData": [
+               "Made your choices."
+            ]
+         }
+      ]
+   },
+   {
+      "hasError": false,
+      "stepId": 6,
+      "stepName": "destination",
+      "stepCode": "DEST",
+      "title": "6. Destination",
+      "linkText": "Change",
+      "contentList": [
+         {
+            "contentData": [
+               "Selected your payment destination."
+            ]
+         }
+      ]
+   },
+   {
+      "hasError": false,
+      "stepId": 7,
+      "stepName": "review",
+      "stepCode": "REVW",
+      "title": "7. Review",
+      "linkText": "Review",
+      "contentList": [
+         {
+            "contentData": [
+               "Reviewed a list of all the choices you made."
+            ]
+         }
+      ]
+   }
+]
+}
+}

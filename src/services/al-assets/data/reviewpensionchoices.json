@@ -1,0 +1,710 @@
+{
+   "body": {
+   "responseStatus": {
+      "statusCode": 200,
+      "statusMessage": "OK",
+      "httpStatus": "OK"
+   },
+   "transactionTitle": "Make Your Retirement Choices",
+   "pageTitle": "Review Your Pension Choices",
+   "pageSummary": "Below is a summary of your pension choices. Review your choices closely and make any needed changes. When you are satisfied with your pension choices, submit them.",
+   "changeButtonLabel": "Change",
+   "readFootnotesTxt": "Read Footnotes",
+   "isAllowedToChooseMultipleBeneficiaries": false,
+   "changeDateBeneModalContent": {
+      "heading": "Do you want to change your choices?",
+      "introContent": "<p>Youll need to start the retirement process again if you change one or more of these choices:</p>",
+      "listedContent": "<ul><li>Your last day of employment</li><li>Date you begin receiving benefits</li><li>Your beneficiaries</li></ul>",
+      "endingContent": "<p>This is because the benefits options available and amounts may change, too.</p>",
+      "buttonList": [
+         {
+            "action": "continue",
+            "label": "Continue"
+         },
+         {
+            "action": "return",
+            "label": "Return"
+         }
+      ]
+   },
+   "retirementDatesContent": {
+      "heading": "Your Retirement Dates",
+      "changeButtonAltText": "Select this button to change your retirement dates.",
+      "yourLastDayLabel": "Your Last Day",
+      "yourLastDayDate": "31 Oct 2020",
+      "beginBenefitDateLabel": "Date You May Begin Receiving Benefits",
+      "beginBenefitDate": "1 Nov 2020"
+   },
+   "beneficiaryContent": {
+      "showChangeButton": true,
+      "heading": "Beneficiaries",
+      "benefitColumnLabel": "Benefit",
+      "beneficiaryColumnLabel": "Beneficiary",
+      "btnChange": "Change",
+      "btnAltChange": "Select this button to change your beneficiaries.",
+      "changeDateBeneModalContent": {
+         "heading": "Do you want to change your choices?",
+         "introContent": "<p>Youll need to start the retirement process again if you change one or more of these choices:</p>",
+         "listedContent": "<ul><li>Your last day of employment</li><li>Date you begin receiving benefits</li><li>Your beneficiaries</li></ul>",
+         "endingContent": "<p>This is because the benefits options available and amounts may change, too.</p>",
+         "buttonList": [
+            {
+               "action": "continue",
+               "label": "Continue"
+            },
+            {
+               "action": "return",
+               "label": "Return"
+            }
+         ]
+      },
+      "beneficiaryPlanElectionDetail": [
+         {
+            "planId": "8744",
+            "electionId": "190",
+            "planDescription": "FAP Pension Plan",
+            "electionDescription": "FP Simple Election2",
+            "planElectionDescription": "FAP Pension Plan&mdash;FP Simple Election2",
+            "beneficiaryName": "No Beneficiary",
+            "beneficiaryExternalId": "",
+            "beneficiaryBirthDate": "1800-01-01",
+            "beneficiaryRelationCode": ""
+         },
+         {
+            "planId": "3744",
+            "electionId": "10",
+            "planDescription": "CB Pension Plan",
+            "electionDescription": "Simple Election",
+            "planElectionDescription": "CB Pension Plan&mdash;Simple Election",
+            "beneficiaryName": "No Beneficiary",
+            "beneficiaryExternalId": "",
+            "beneficiaryBirthDate": "1800-01-01",
+            "beneficiaryRelationCode": ""
+         }
+      ]
+   },
+   "paymentElections": [
+      {
+         "paymentId": "2000",
+         "paymentDescription": "FAP Annuity Payment",
+         "paymentIntroContentList": [
+            "This payment will be made from a plan that's intended to be qualified under section 401(a) of Internal Revenue Code.",
+            "All amounts shown below may change based on your final employment data. The final amount paid to you may include other deductions that aren't shown.",
+            "You'll receive one combined payment that includes all of your FAP Annuity Payment benefits."
+         ],
+         "planBenefitLabel": "Plan&mdash;Benefit",
+         "formOfPaymentLabel": "Form of Payment",
+         "paymentToYouLabel": "Payment to You",
+         "paymentElectionBenefits": [
+            {
+               "planId": "8744",
+               "benefitDescription": "FAP Pension Plan&mdash;FP Simple Election2",
+               "planDescription": "FAP Pension Plan",
+               "elecId": "190",
+               "elecDescription": "FP Simple Election2",
+               "elecGroupId": "0",
+               "paymentOptionId": "3040",
+               "paymentOptionDescription": "Single Life Annuity",
+               "paymentOptionToYouAmt": "$1,902.81",
+               "paymentOptionFrequency": "monthly",
+               "showChangeButton": true,
+               "showPaymentOption": true,
+               "retroASD": false
+            }
+         ],
+         "paymentTotalsLabel": "Total Payment Before Deductions",
+         "paymentTotalAmount": "$1,902.81",
+         "paymentDeductions": [
+            {
+               "description": "Federal Withholding",
+               "deductionAmount": "$0.00",
+               "showChangeButton": true,
+               "rolloverDeduction": false
+            },
+            {
+               "description": "State Withholding",
+               "deductionAmount": "$0.00",
+               "showChangeButton": true,
+               "rolloverDeduction": false
+            }
+         ],
+         "estimatedPaymentLabel": "Estimated Monthly Payment to You",
+         "estimatedPaymentAmount": "$1,902.81",
+         "otherDetailsContentHeading": "Other Details",
+         "expandAllLabel": "Expand All",
+         "collapseAllLabel": "Collapse All",
+         "paymentDetailsContent": {
+            "contentHeading": "Payment Amounts to You and Your Beneficiary",
+            "primaryOptionalFormPaymentList": [
+               {
+                  "optionalFormPanelHeader": "Single Life Annuity",
+                  "optionalFormPanelLeadinText": "A monthly payment to you only, until you die Test 123",
+                  "optionalFormPanelText": "<li><strong>No</strong> payment to your beneficiary</li><li>If married, your spouse must consent</li>",
+                  "optionalFormPanelLearnMoreLink": "<A onclick=\"if(isUACrossEnabled()){try{ga('trackerUa1.send','event', 'Internal Link' ,'Link click','LinkId:DB_PAYMENT_OPTION_DESC_LINK LinkDest:/web/retirement4x/payment-option-description'); } catch(err){}} if(isUAClientEnabled()){ try{if(isGTMEnabled()){dataLayer.push({'event':'UPointLinkEvent','linkCategory':'Internal Link','linkAction':'Link Click','linkLabel':'LinkId:DB_PAYMENT_OPTION_DESC_LINK LinkDest:/web/retirement4x/payment-option-description'});}else{ga('trackerUa2.send','event', 'Internal Link' ,'Link click','LinkId:DB_PAYMENT_OPTION_DESC_LINK LinkDest:/web/retirement4x/payment-option-description'); }} catch(err){}}try{setTimeout(function() {}, 100);}catch(err){}window.winHandle = window.open('/web/retirement4x/payment-option-description#/?planId=8744&electionId=190&electionGroupId=0&opFmId=3040&calcRefId=null&linkId=DB_PAYMENT_OPTION_DESC_LINK&technicalNameForLink=DB_PAYMENT_OPTION_DESC_LINK&userFriendlyNameForLink=DB_PAYMENT_OPTION_DESC_LINK&domain=Ben-DB&baseClientIndicator=Base','DB_PAYMENT_OPTION_DESC_LINK','titlebar=yes,scrollbars=yes,resizable=yes,width=980,height=560');if(typeof XD != 'undefined'){XD.registerWindow('DB_PAYMENT_OPTION_DESC_LINK',window.winHandle);}try{setSessionTimeOut()}catch(err){};return false;\" href=\"/web/retirement4x/payment-option-description#/?planId=8744&electionId=190&electionGroupId=0&opFmId=3040&calcRefId=null&linkId=DB_PAYMENT_OPTION_DESC_LINK&technicalNameForLink=DB_PAYMENT_OPTION_DESC_LINK&userFriendlyNameForLink=DB_PAYMENT_OPTION_DESC_LINK&domain=Ben-DB&baseClientIndicator=Base\" class=\"ah-secondaryWindow\">Learn More</A>",
+                  "optionalFormToYouAmountList": [
+                     {
+                        "optionalFormAmount": "$1,902.81",
+                        "optionalFormFrequencyDescription": "(monthly)"
+                     }
+                  ],
+                  "optionalFormBeneficiaryList": [
+                     {
+                        "beneficiaryText": "Beneficiary Benefit (for payments after your death)",
+                        "beneficiaryAmount": "$0.00",
+                        "benefitFrequency": "(monthly)"
+                     }
+                  ],
+                  "optionalFormPanelRelativeValueSection": {},
+                  "autoSelectedFormsOfPaymentList": [],
+                  "hypotheticalOptionalForm": false,
+                  "optionalFormSelected": false
+               }
+            ]
+         },
+         "taxationContent": {
+            "contentHeading": "Taxation Information",
+            "benefitLabel": "Benefit",
+            "taxableAmtLabel": "Taxable Amount",
+            "nonTaxAmtLabel": "Nontaxable Amount",
+            "totalGrossLabel": "Total Gross Benefit Amount",
+            "paymentTaxDetails": [
+               {
+                  "electionDescription": "FP Simple Election2",
+                  "taxableAmount": "$1,902.81",
+                  "nonTaxableAmount": "$0.00",
+                  "totalGrossAmount": "$1,902.81"
+               }
+            ]
+         },
+         "paymentDestinationsContent": {
+            "contentHeading": "Payment Destination(s)",
+            "toYouHeading": "Payment to You",
+            "rolloverHeading": "Rollover Payment",
+            "paymentDestinations": [
+               {
+                  "deliveryId": "2000",
+                  "addressId": "10",
+                  "showChangeButton": true,
+                  "paymentAmount": "$1,902.81",
+                  "paymentAddresses": [
+                     {
+                        "description": "Permanent",
+                        "addressLines": [
+                           "123,santhome road",
+                           "Lincolnshire IL 12345"
+                        ]
+                     }
+                  ],
+                  "paymentType": "P",
+                  "unformatPaymentAmount": 1902.81,
+                  "rollover": false
+               }
+            ]
+         },
+         "withholdingContent": {
+            "contentHeading": "Estimated Income Tax Withholding",
+            "showChangeButton": true,
+            "fedWithholdingTitle": "Federal Income Tax Withholding",
+            "stateWithholdingTitle": "State Income Tax Withholding",
+            "fedWithholdingDetailList": [
+               {
+                  "detailDescription": "Taxable Income",
+                  "detailValue": "$1,902.81",
+                  "isTotalsItem": false
+               },
+               {
+                  "detailDescription": "Percentage Withheld",
+                  "detailValue": "0%",
+                  "isTotalsItem": false
+               },
+               {
+                  "detailDescription": "Marital Status",
+                  "detailValue": "Married",
+                  "isTotalsItem": false
+               },
+               {
+                  "detailDescription": "Number of Allowances",
+                  "detailValue": "3",
+                  "isTotalsItem": false
+               },
+               {
+                  "detailDescription": "Additional Amount Withheld",
+                  "detailValue": "$0.00",
+                  "isTotalsItem": false
+               },
+               {
+                  "detailDescription": "<strong>Federal Withholding</strong> <small>(estimated)</small>",
+                  "detailValue": "$0.00",
+                  "isTotalsItem": true
+               }
+            ],
+            "stateWithholdingDetailList": [
+               {
+                  "detailDescription": "Taxable Income",
+                  "detailValue": "$1,902.81",
+                  "isTotalsItem": false
+               },
+               {
+                  "detailDescription": "State",
+                  "detailValue": "IL",
+                  "isTotalsItem": false,
+                  "withHoldingType": "TXST"
+               },
+               {
+                  "detailDescription": "<strong>State Withholding</strong> <small>(estimated)</small>",
+                  "detailValue": "$0.00",
+                  "isTotalsItem": true
+               }
+            ]
+         }
+      },
+      {
+         "paymentId": "2030",
+         "paymentDescription": "CB Lump Sum Payment",
+         "paymentIntroContentList": [
+            "This payment will be made from a plan that's intended to be qualified under section 401(a) of Internal Revenue Code.",
+            "All amounts shown below may change based on your final employment data. The final amount paid to you may include other deductions that aren't shown.",
+            "You'll receive one combined payment that includes all of your CB Lump Sum Payment benefits."
+         ],
+         "planBenefitLabel": "Plan&mdash;Benefit",
+         "formOfPaymentLabel": "Form of Payment",
+         "paymentToYouLabel": "Payment to You",
+         "paymentElectionBenefits": [
+            {
+               "planId": "3744",
+               "benefitDescription": "CB Pension Plan&mdash;Simple Election",
+               "planDescription": "CB Pension Plan",
+               "elecId": "10",
+               "elecDescription": "Simple Election",
+               "elecGroupId": "0",
+               "paymentOptionId": "3010",
+               "paymentOptionDescription": "Lump Sum Distribution",
+               "paymentOptionToYouAmt": "$500.00",
+               "paymentOptionFrequency": "one-time",
+               "showChangeButton": true,
+               "showPaymentOption": true,
+               "retroASD": false
+            }
+         ],
+         "paymentTotalsLabel": "Total Payment Before Deductions",
+         "paymentTotalAmount": "$500.00",
+         "paymentDeductions": [
+            {
+               "description": "Rollover Amount",
+               "deductionAmount": "-$0.00",
+               "showChangeButton": true,
+               "rolloverDeduction": true
+            },
+            {
+               "description": "Federal Withholding",
+               "deductionAmount": "-$100.00",
+               "showChangeButton": true,
+               "rolloverDeduction": false
+            },
+            {
+               "description": "State Withholding",
+               "deductionAmount": "$0.00",
+               "showChangeButton": true,
+               "rolloverDeduction": false
+            }
+         ],
+         "estimatedPaymentLabel": "Estimated One-Time Payment to You",
+         "estimatedPaymentAmount": "$400.00",
+         "otherDetailsContentHeading": "Other Details",
+         "expandAllLabel": "Expand All",
+         "collapseAllLabel": "Collapse All",
+         "paymentDetailsContent": {
+            "contentHeading": "Payment Amounts to You and Your Beneficiary",
+            "primaryOptionalFormPaymentList": [
+               {
+                  "optionalFormPanelHeader": "Lump Sum Distribution",
+                  "optionalFormPanelLeadinText": "A one-time payment to you only",
+                  "optionalFormPanelText": "<li><strong>No</strong> payment to your beneficiary</li> <li>If married, your spouse must consent</li> <li>Entire value of your pension benefit (or, in some cases, a portion of the entire value)</li> <li>Subject to taxation, and the Internal Revenue Service requires 20% be automatically withheld</li> <li>May be subject to 10% penalty tax on early distributions</li>",
+                  "optionalFormPanelLearnMoreLink": "<A onclick=\"if(isUACrossEnabled()){try{ga('trackerUa1.send','event', 'Internal Link' ,'Link click','LinkId:DB_PAYMENT_OPTION_DESC_LINK LinkDest:/web/retirement4x/payment-option-description'); } catch(err){}} if(isUAClientEnabled()){ try{if(isGTMEnabled()){dataLayer.push({'event':'UPointLinkEvent','linkCategory':'Internal Link','linkAction':'Link Click','linkLabel':'LinkId:DB_PAYMENT_OPTION_DESC_LINK LinkDest:/web/retirement4x/payment-option-description'});}else{ga('trackerUa2.send','event', 'Internal Link' ,'Link click','LinkId:DB_PAYMENT_OPTION_DESC_LINK LinkDest:/web/retirement4x/payment-option-description'); }} catch(err){}}try{setTimeout(function() {}, 100);}catch(err){}window.winHandle = window.open('/web/retirement4x/payment-option-description#/?planId=3744&electionId=10&electionGroupId=0&opFmId=3010&calcRefId=null&linkId=DB_PAYMENT_OPTION_DESC_LINK&technicalNameForLink=DB_PAYMENT_OPTION_DESC_LINK&userFriendlyNameForLink=DB_PAYMENT_OPTION_DESC_LINK&domain=Ben-DB&baseClientIndicator=Base','DB_PAYMENT_OPTION_DESC_LINK','titlebar=yes,scrollbars=yes,resizable=yes,width=980,height=560');if(typeof XD != 'undefined'){XD.registerWindow('DB_PAYMENT_OPTION_DESC_LINK',window.winHandle);}try{setSessionTimeOut()}catch(err){};return false;\" href=\"/web/retirement4x/payment-option-description#/?planId=3744&electionId=10&electionGroupId=0&opFmId=3010&calcRefId=null&linkId=DB_PAYMENT_OPTION_DESC_LINK&technicalNameForLink=DB_PAYMENT_OPTION_DESC_LINK&userFriendlyNameForLink=DB_PAYMENT_OPTION_DESC_LINK&domain=Ben-DB&baseClientIndicator=Base\" class=\"ah-secondaryWindow\">Learn More</A>",
+                  "optionalFormToYouAmountList": [
+                     {
+                        "optionalFormAmount": "$500.00",
+                        "optionalFormFrequencyDescription": "(one-time)"
+                     }
+                  ],
+                  "optionalFormBeneficiaryList": [
+                     {
+                        "beneficiaryText": "Beneficiary Benefit (for payments after your death)",
+                        "beneficiaryAmount": "$0.00",
+                        "benefitFrequency": "(one-time)"
+                     }
+                  ],
+                  "optionalFormPanelRelativeValueSection": {},
+                  "autoSelectedFormsOfPaymentList": [],
+                  "hypotheticalOptionalForm": false,
+                  "optionalFormSelected": false
+               }
+            ]
+         },
+         "taxationContent": {
+            "contentHeading": "Taxation Information",
+            "benefitLabel": "Benefit",
+            "taxableAmtLabel": "Taxable Amount",
+            "nonTaxAmtLabel": "Nontaxable Amount",
+            "totalGrossLabel": "Total Gross Benefit Amount",
+            "paymentTaxDetails": [
+               {
+                  "electionDescription": "Simple Election",
+                  "taxableAmount": "$500.00",
+                  "nonTaxableAmount": "$0.00",
+                  "totalGrossAmount": "$500.00"
+               }
+            ]
+         },
+         "paymentDestinationsContent": {
+            "contentHeading": "Payment Destination(s)",
+            "toYouHeading": "Payment to You",
+            "rolloverHeading": "Rollover Payment",
+            "paymentDestinations": [
+               {
+                  "deliveryId": "5000",
+                  "addressId": "10",
+                  "showChangeButton": true,
+                  "paymentAmount": "$500.00",
+                  "paymentAddresses": [
+                     {
+                        "description": "Permanent",
+                        "addressLines": [
+                           "123,santhome road",
+                           "Lincolnshire IL 12345"
+                        ]
+                     }
+                  ],
+                  "paymentType": "P",
+                  "unformatPaymentAmount": 500.0,
+                  "rollover": false
+               }
+            ]
+         },
+         "withholdingContent": {
+            "contentHeading": "Estimated Income Tax Withholding",
+            "showChangeButton": true,
+            "fedWithholdingTitle": "Federal Income Tax Withholding",
+            "stateWithholdingTitle": "State Income Tax Withholding",
+            "fedWithholdingDetailList": [
+               {
+                  "detailDescription": "Taxable Income",
+                  "detailValue": "$500.00",
+                  "isTotalsItem": false
+               },
+               {
+                  "detailDescription": "Percentage Withheld",
+                  "detailValue": "0%",
+                  "isTotalsItem": false
+               },
+               {
+                  "detailDescription": "Marital Status",
+                  "detailValue": "Married",
+                  "isTotalsItem": false
+               },
+               {
+                  "detailDescription": "Number of Allowances",
+                  "detailValue": "3",
+                  "isTotalsItem": false
+               },
+               {
+                  "detailDescription": "Additional Amount Withheld",
+                  "detailValue": "$0.00",
+                  "isTotalsItem": false
+               },
+               {
+                  "detailDescription": "<strong>Federal Withholding</strong> <small>(estimated)</small>",
+                  "detailValue": "$100.00",
+                  "isTotalsItem": true
+               }
+            ],
+            "stateWithholdingDetailList": [
+               {
+                  "detailDescription": "Taxable Income",
+                  "detailValue": "$500.00",
+                  "isTotalsItem": false
+               },
+               {
+                  "detailDescription": "State",
+                  "detailValue": "IL",
+                  "isTotalsItem": false,
+                  "withHoldingType": "TXST"
+               },
+               {
+                  "detailDescription": "<strong>State Withholding</strong> <small>(estimated)</small>",
+                  "detailValue": "$0.00",
+                  "isTotalsItem": true
+               }
+            ]
+         }
+      },
+      {
+         "paymentId": "2040",
+         "paymentDescription": "CB Annuity Payment",
+         "paymentIntroContentList": [
+            "This payment will be made from a plan that's intended to be qualified under section 401(a) of Internal Revenue Code.",
+            "All amounts shown below may change based on your final employment data. The final amount paid to you may include other deductions that aren't shown.",
+            "You'll receive one combined payment that includes all of your CB Annuity Payment benefits."
+         ],
+         "planBenefitLabel": "Plan&mdash;Benefit",
+         "formOfPaymentLabel": "Form of Payment",
+         "paymentToYouLabel": "Payment to You",
+         "paymentElectionBenefits": [
+            {
+               "planId": "3744",
+               "benefitDescription": "CB Pension Plan&mdash;Simple Election",
+               "planDescription": "CB Pension Plan",
+               "elecId": "10",
+               "elecDescription": "Simple Election",
+               "elecGroupId": "0",
+               "paymentOptionId": "3040",
+               "paymentOptionDescription": "Single Life Annuity",
+               "paymentOptionToYouAmt": "$87.84",
+               "paymentOptionFrequency": "monthly",
+               "showChangeButton": true,
+               "showPaymentOption": true,
+               "retroASD": false
+            }
+         ],
+         "paymentTotalsLabel": "Total Payment Before Deductions",
+         "paymentTotalAmount": "$87.84",
+         "paymentDeductions": [
+            {
+               "description": "Federal Withholding",
+               "deductionAmount": "$0.00",
+               "showChangeButton": true,
+               "rolloverDeduction": false
+            },
+            {
+               "description": "State Withholding",
+               "deductionAmount": "$0.00",
+               "showChangeButton": true,
+               "rolloverDeduction": false
+            }
+         ],
+         "estimatedPaymentLabel": "Estimated Monthly Payment to You",
+         "estimatedPaymentAmount": "$87.84",
+         "otherDetailsContentHeading": "Other Details",
+         "expandAllLabel": "Expand All",
+         "collapseAllLabel": "Collapse All",
+         "paymentDetailsContent": {
+            "contentHeading": "Payment Amounts to You and Your Beneficiary",
+            "primaryOptionalFormPaymentList": [
+               {
+                  "optionalFormPanelHeader": "Single Life Annuity",
+                  "optionalFormPanelLeadinText": "A monthly payment to you only, until you die Test 123",
+                  "optionalFormPanelText": "<li><strong>No</strong> payment to your beneficiary</li><li>If married, your spouse must consent</li>",
+                  "optionalFormPanelLearnMoreLink": "<A onclick=\"if(isUACrossEnabled()){try{ga('trackerUa1.send','event', 'Internal Link' ,'Link click','LinkId:DB_PAYMENT_OPTION_DESC_LINK LinkDest:/web/retirement4x/payment-option-description'); } catch(err){}} if(isUAClientEnabled()){ try{if(isGTMEnabled()){dataLayer.push({'event':'UPointLinkEvent','linkCategory':'Internal Link','linkAction':'Link Click','linkLabel':'LinkId:DB_PAYMENT_OPTION_DESC_LINK LinkDest:/web/retirement4x/payment-option-description'});}else{ga('trackerUa2.send','event', 'Internal Link' ,'Link click','LinkId:DB_PAYMENT_OPTION_DESC_LINK LinkDest:/web/retirement4x/payment-option-description'); }} catch(err){}}try{setTimeout(function() {}, 100);}catch(err){}window.winHandle = window.open('/web/retirement4x/payment-option-description#/?planId=3744&electionId=10&electionGroupId=0&opFmId=3040&calcRefId=null&linkId=DB_PAYMENT_OPTION_DESC_LINK&technicalNameForLink=DB_PAYMENT_OPTION_DESC_LINK&userFriendlyNameForLink=DB_PAYMENT_OPTION_DESC_LINK&domain=Ben-DB&baseClientIndicator=Base','DB_PAYMENT_OPTION_DESC_LINK','titlebar=yes,scrollbars=yes,resizable=yes,width=980,height=560');if(typeof XD != 'undefined'){XD.registerWindow('DB_PAYMENT_OPTION_DESC_LINK',window.winHandle);}try{setSessionTimeOut()}catch(err){};return false;\" href=\"/web/retirement4x/payment-option-description#/?planId=3744&electionId=10&electionGroupId=0&opFmId=3040&calcRefId=null&linkId=DB_PAYMENT_OPTION_DESC_LINK&technicalNameForLink=DB_PAYMENT_OPTION_DESC_LINK&userFriendlyNameForLink=DB_PAYMENT_OPTION_DESC_LINK&domain=Ben-DB&baseClientIndicator=Base\" class=\"ah-secondaryWindow\">Learn More</A>",
+                  "optionalFormToYouAmountList": [
+                     {
+                        "optionalFormAmount": "$87.84",
+                        "optionalFormFrequencyDescription": "(monthly)"
+                     }
+                  ],
+                  "optionalFormBeneficiaryList": [
+                     {
+                        "beneficiaryText": "Beneficiary Benefit (for payments after your death)",
+                        "beneficiaryAmount": "$0.00",
+                        "benefitFrequency": "(monthly)"
+                     }
+                  ],
+                  "optionalFormPanelRelativeValueSection": {},
+                  "autoSelectedFormsOfPaymentList": [],
+                  "hypotheticalOptionalForm": false,
+                  "optionalFormSelected": false
+               }
+            ]
+         },
+         "taxationContent": {
+            "contentHeading": "Taxation Information",
+            "benefitLabel": "Benefit",
+            "taxableAmtLabel": "Taxable Amount",
+            "nonTaxAmtLabel": "Nontaxable Amount",
+            "totalGrossLabel": "Total Gross Benefit Amount",
+            "paymentTaxDetails": [
+               {
+                  "electionDescription": "Simple Election",
+                  "taxableAmount": "$87.84",
+                  "nonTaxableAmount": "$0.00",
+                  "totalGrossAmount": "$87.84"
+               }
+            ]
+         },
+         "paymentDestinationsContent": {
+            "contentHeading": "Payment Destination(s)",
+            "toYouHeading": "Payment to You",
+            "rolloverHeading": "Rollover Payment",
+            "paymentDestinations": [
+               {
+                  "deliveryId": "2000",
+                  "addressId": "10",
+                  "showChangeButton": true,
+                  "paymentAmount": "$87.84",
+                  "paymentAddresses": [
+                     {
+                        "description": "Permanent",
+                        "addressLines": [
+                           "123,santhome road",
+                           "Lincolnshire IL 12345"
+                        ]
+                     }
+                  ],
+                  "paymentType": "P",
+                  "unformatPaymentAmount": 87.84,
+                  "rollover": false
+               }
+            ]
+         },
+         "withholdingContent": {
+            "contentHeading": "Estimated Income Tax Withholding",
+            "showChangeButton": true,
+            "fedWithholdingTitle": "Federal Income Tax Withholding",
+            "stateWithholdingTitle": "State Income Tax Withholding",
+            "fedWithholdingDetailList": [
+               {
+                  "detailDescription": "Taxable Income",
+                  "detailValue": "$87.84",
+                  "isTotalsItem": false
+               },
+               {
+                  "detailDescription": "Percentage Withheld",
+                  "detailValue": "0%",
+                  "isTotalsItem": false
+               },
+               {
+                  "detailDescription": "Marital Status",
+                  "detailValue": "Married",
+                  "isTotalsItem": false
+               },
+               {
+                  "detailDescription": "Number of Allowances",
+                  "detailValue": "3",
+                  "isTotalsItem": false
+               },
+               {
+                  "detailDescription": "Additional Amount Withheld",
+                  "detailValue": "$0.00",
+                  "isTotalsItem": false
+               },
+               {
+                  "detailDescription": "<strong>Federal Withholding</strong> <small>(estimated)</small>",
+                  "detailValue": "$0.00",
+                  "isTotalsItem": true
+               }
+            ],
+            "stateWithholdingDetailList": [
+               {
+                  "detailDescription": "Taxable Income",
+                  "detailValue": "$87.84",
+                  "isTotalsItem": false
+               },
+               {
+                  "detailDescription": "State",
+                  "detailValue": "IL",
+                  "isTotalsItem": false,
+                  "withHoldingType": "TXST"
+               },
+               {
+                  "detailDescription": "<strong>State Withholding</strong> <small>(estimated)</small>",
+                  "detailValue": "$0.00",
+                  "isTotalsItem": true
+               }
+            ]
+         }
+      }
+   ],
+   "deferredBenefitsContent": {
+      "contentHeading": "Deferred Benefits",
+      "showChangeButton": true,
+      "changeButtonTitle": "Change",
+      "planBenefitLabel": "Benefit",
+      "formOfPaymentLabel": "Form of Payment",
+      "paymentToYouLabel": "Payment to You",
+      "naText": "N/A",
+      "deferredText": "Deferred",
+      "deferredBenefits": [
+         {
+            "planId": "8744",
+            "planDescription": "FAP Pension Plan",
+            "elecId": "10",
+            "elecDescription": "Simple Election",
+            "elecGpId": "0",
+            "elecGpDescription": "Simple Election"
+         }
+      ]
+   },
+   "submitContentTitle": "Submit Your Choices",
+   "submitContentIntro": "When you <strong>Submit</strong>, you acknowledge that you've read and understand <A onclick=\"if(isUACrossEnabled()){try{ga('trackerUa1.send','event', 'Internal Link' ,'Link click','LinkId:UPN_DB_ELEC_NOR_LNK LinkDest:/web/retirement4x/db-notice-of-rights'); } catch(err){}} if(isUAClientEnabled()){ try{if(isGTMEnabled()){dataLayer.push({'event':'UPointLinkEvent','linkCategory':'Internal Link','linkAction':'Link Click','linkLabel':'LinkId:UPN_DB_ELEC_NOR_LNK LinkDest:/web/retirement4x/db-notice-of-rights'});}else{ga('trackerUa2.send','event', 'Internal Link' ,'Link click','LinkId:UPN_DB_ELEC_NOR_LNK LinkDest:/web/retirement4x/db-notice-of-rights'); }} catch(err){}}try{setTimeout(function() {}, 100);}catch(err){}window.winHandle = window.open('/ah-angular-afirst-web/#/web/retirement4x/db-notice-of-rights?linkId=UPN_DB_ELEC_NOR_LNK&technicalNameForLink=UPN_DB_ELEC_NOR_LNK&userFriendlyNameForLink=Link to the db notice of rights page&domain=Ben-DB&baseClientIndicator=Base','UPN_DB_ELEC_NOR_LNK','titlebar=yes,scrollbars=yes,resizable=yes,width=980,height=560');if(typeof XD != 'undefined'){XD.registerWindow('UPN_DB_ELEC_NOR_LNK',window.winHandle);}try{setSessionTimeOut()}catch(err){};return false;\" href=\"/web/retirement4x/db-notice-of-rights?linkId=UPN_DB_ELEC_NOR_LNK&technicalNameForLink=UPN_DB_ELEC_NOR_LNK&userFriendlyNameForLink=Link to the db notice of rights page&domain=Ben-DB&baseClientIndicator=Base\" class=\"ah-secondaryWindow\">Your Notice of Rights</A> and that your choices may result in the waiver of the applicable",
+   "submitContentIntroTipRollover": "30-day notice period",
+   "submitContentTipContent": "By law, you have at least 30 days to think about your pension choices and decide if you want to consent to receiving benefits.After you start your benefit, you can't change the payment option. You can waive your right to this 30-day period by choosing Submit below. If you're not ready now to consent to receiving benefits, do not submit your choices.You can choose Come Back Later and return to this site when you're ready to submit your pension choices.",
+   "submitContentNote": "<strong>Note:</strong> After you submit your pension choices, your authorization is required to finalize them.",
+   "flowButtonNavigation": {
+      "buttonList": [
+         {
+            "action": "submit",
+            "label": "Submit"
+         },
+         {
+            "action": "comeBackLater",
+            "label": "Come Back Later"
+         },
+         {
+            "action": "quit",
+            "label": "Quit"
+         },
+         {
+            "action": "back",
+            "label": "Back"
+         }
+      ],
+      "quitModalContent": {
+         "title": "What do you want to do?",
+         "bodyList": [
+            {
+               "heading": "Save",
+               "paragraph": "Keep the choices you've made, so far. Finish making pension choices later."
+            },
+            {
+               "heading": "Quit",
+               "paragraph": "Cancel your pension request and lose all the pension choices you've made, so far."
+            },
+            {
+               "heading": "Return",
+               "paragraph": "Go back to the current page without quitting."
+            }
+         ],
+         "buttonList": [
+            {
+               "action": "comeBackLater",
+               "label": "Save"
+            },
+            {
+               "action": "quit",
+               "label": "Quit"
+            },
+            {
+               "action": "return",
+               "label": "Return"
+            }
+         ]
+      },
+      "editButtonList": [
+         {
+            "action": "continue",
+            "label": "Continue"
+         },
+         {
+            "action": "return",
+            "label": "Return"
+         }
+      ]
+   },
+   "footnoteList": [
+      {
+         "footnoteId": 1,
+         "footnoteTitle": "Footnotes",
+         "footnoteMessage": "Assumes you have completed all the required notifications, paperwork, and authorizations within the required timeframe. It may take up to 30 days to process your payments."
+      }
+   ]
+}
+}

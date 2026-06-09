@@ -1,0 +1,148 @@
+{  
+   "status":{  
+      "statusCode":200,
+      "statusMessage":"OK"
+   },
+   "ChooseWheretoReceiveYourPayment":{  
+      "pageNameText":"Choose Where to Receive Your Payment(s)",
+      "pageIntroText":"Choose where and how you want to receive your payment(s).",
+      "tipText":"tip",
+      "tipContentText":"Get your payment faster when you choose direct deposit.",
+      "noteText":"<b>Note:</b> If you choose direct deposit, you confirm that you won't transfer your total payment(s) to a bank or financial agency located outside the United States. If you cannot confirm this, then choose to have a paper check mailed to you.",
+      "paymentDestinationTable":[  
+         {  
+            "tableTitleText":"Premier Pension Plan Payments—Non-Union Benefit",
+            "splitPaymentText1":"Choose 1 destination for this payment.",
+            "splitPaymentText2":"Deductions may be taken from the payment.",
+            "tableRowHeaderText":"Total Payment Before Deductions",
+            "AmountText":"$9,086.00",
+            "FrequencyText":"(one time)",
+            "rowText":[  
+               {  
+                  "depositText":"Direct Deposit",
+                  "mailingAddressText":"Gualdoni Capital Management",
+                  "accountTypeText":"Account Type",
+                  "hyphenText":"-",
+                  "accountTypeContentText":"Checking",
+                  "routingNumberText":"Routing Number",
+                  "routingNumberContentText":"99999999",
+                  "accountText":"Account Number:",
+                  "accountNumberText":"xxxxxxxxxxxxxxxx9999",
+                  "changeButtonText":"Change",
+                  "directDepositDeliveryTypeText":"Your money will be deposited 2–3 business days after the payment has been processed."
+               },
+               {  
+                  "permanentAddressText":"Permanent Mailing Address",
+                  "addressLine1Text":"Gualdoni Capital Management",
+                  "addressLine2Text":"100 Half Day Raod",
+                  "addressLine3Text":"Lincolnshire, IL 60069",
+                  "addressLine4Text":"United States of America",
+                  "incorrectToolTipText":"Incorrect?",
+                  "incorrectToolTipContentText1":"Need to change your address?",
+                  "incorrectToolTipContentText2":"Contact your local Human Resources representative. Then allow up to 7 days for your new information to be updated",
+                  "postalAddressDeliveryTypeText":"Typically, you should receive the paper check 5–7 business days after the payment has been processed."
+               },
+               {  
+                  "alternativeMailingAddressText":"Alternative Mailing Address",
+                 "notonFile"  :"—Not on File—",
+                  "changeButtonText":"Change",
+                  "postalAddressDeliveryTypeText":"Typically, you should receive the paper check 5–7 business days after the payment has been processed."
+               }
+            ]
+         },
+         {  
+            "tableTitleText":"Premier Pension Plan Payments—Non-Union Benefit",
+            "splitPaymentText1":"Choose 2 destination for this payment.",
+            "splitPaymentText2":"Deductions may be taken from the payment.",
+            "tableRowHeaderText":"Total Payment Before Deductions",
+            "AmountText":"$9086.00",
+            "FrequencyText":"(one time)",
+            "tableRowHeaderText2":"Primary Payment Destination",
+            "rowText":[  
+               {  
+                  "depositText":"Direct Deposit",
+                  "mailingAddressText":"Gualdoni Capital Management",
+                  "accountTypeText":"Account Type",
+                  "hyphenText":"-",
+                  "accountTypeContentText":"Checking",
+                  "routingNumberText":"Routing Number",
+                  "routingNumberContentText":"99999999",
+                  "accountText":"Account Number:",
+                  "accountNumberText":"xxxxxxxxxxxxxxxx9999",
+                  "changeButtonText":"Change",
+                  "directDepositDeliveryTypeText":"Your money will be deposited 2–3 business days after the payment has been processed."
+               },
+               {  
+                  "permanentAddressText":"Permanent Mailing Address",
+                  "addressLine1Text":"Gualdoni Capital Management",
+                  "addressLine2Text":"100 Half Day Raod",
+                  "addressLine3Text":"Lincolnshire IL 60069",
+                  "addressLine4Text":"United States of America",
+                  "incorrectToolTipText":"Incorrect?",
+                  "incorrectToolTipContentText1":"Need to change your address?",
+                  "incorrectToolTipContentText2":"Contact your local Human Resources representative. Then allow up to 7 days for your new information to be updated",
+                  "postalAddressDeliveryTypeText":"Typically, you should receive the paper check 5–7 business days after the payment has been processed."
+               },
+               {  
+                  "alternativeMailingAddressText":"Alternative Mailing Address",
+                  "notonFile":"—Not on File—",
+                  "changeButtonText":"Change",
+                  "postalAddressDeliveryTypeText":"Typically, you should receive the paper check 5–7 business days after the payment has been processed."
+               }
+            ]
+         }
+      ],
+      "SecondaryPaymentDestinationText":"Secondary Payment Destination",
+      "displayedPaymentText1":"You can also choose to receive a portion of your payment at a second mailing address or financial institution.",
+      "displayedPaymentText2":"Enter the amount and then choose where to receive that portion of your payment.",
+      "displayedPaymentText3":"Deductions may be taken from the payment.",
+      "amountToSecondDestinationText1":"Amount to Second Destination",
+      "amountToSecondDestinationText2":"Enter $0.00 if you don't want to send an amount to the second address.",
+      "amountText":"0.00",
+      "rowText":[  
+         {  
+            "depositText":"Direct Deposit",
+            "mailingAddressText":"Gualdoni Capital Management",
+            "accountTypeText":"Account Type",
+            "hyphenText":"-",
+            "accountTypeContentText":"Checking",
+            "routingNumberText":"Routing Number",
+            "routingNumberContentText":"99999999",
+            "accountText":"Account Number:",
+            "accountNumberText":"xxxxxxxxxxxxxxxx9999",
+            "changeButtonText":"Change",
+            "directDepositDeliveryTypeText":"Your money will be deposited 2–3 business days after the payment has been processed."
+         },
+         {  
+            "permanentAddressText":"Permanent Mailing Address",
+            "addressLine1Text":"Gualdoni Capital Management",
+            "addressLine2Text":"100 Half Day Raod",
+            "addressLine3Text":"Lincolnshire IL 60069",
+            "addressLine4Text":"United States of America",
+            "incorrectToolTipText":"Incorrect?",
+            "incorrectToolTipContentText1":"Need to change your address?",
+            "incorrectToolTipContentText2":"Contact your local Human Resources representative. Then allow up to 7 days for your new information to be updated",
+            "postalAddressDeliveryTypeText":"Typically, you should receive the paper check 5–7 business days after the payment has been processed."
+         },
+         {  
+            "alternativeMailingAddressText":"Alternative Mailing Address",
+            "notonFile":"—Not on File—",
+            "changeButtonText":"Change",
+            "postalAddressDeliveryTypeText":"Typically, you should receive the paper check 5–7 business days after the payment has been processed."
+         }
+      ]
+   },
+   "continueButtonText":"Continue",
+   "comeBackLaterText":"Come Back Later",
+   "quitButtonText":"quit",
+   "quitPopupHeadetText":"What do you want to do?",
+   "saveHeaderText":"Save",
+   "saveContentText":"Keep the choices you've made, so far. Finish making pension choices later.",
+   "quitHeaderText":"Quit",
+   "quitContentText":"Cancel your pension request and lose all the pension choices you've made, so far.",
+   "returnHeaderText":"Return",
+   "returnContentText":"Go back to the current page without quitting.",
+   "saveButtonText":"Save",
+   "quitButtonText":"Quit",
+   "returnButtonText":"Return"
+}

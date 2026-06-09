@@ -1,0 +1,527 @@
+{
+    "status": {
+        "statusCode": 200,
+        "statusMessage": "OK"
+    },
+    "message": null,
+    "content": {
+        "nextRedirect": "",
+        "onQuit": "http://localhost:4200/#/",
+        "choosePaymentOptionInfoBean": {
+            "retirementProgressStage": {
+                "progressBarList": [
+                    "Your Info",
+                    "Dates",
+                    "Beneficiaries",
+                    "Rights",
+                    "Payment",
+                    "Destination",
+                    "Review",
+                    "Authorize"
+                ]
+            },
+            "pageHeaderText": {
+                "flowNameText": "Make Your Retirement Choices",
+                "pageNameText": "Choose a Payment Option",
+                "benefitCommencementDate": "Apr 01,2019",
+                "pageHeaderText1": "<p>Choose the form of payment you want to receive on <b class='al-nowrap'>October 1, 2017</b>. You can change your form of payment up to the last business day before your benefits begin. The forms of payment are based on other retirement choices you've made:",
+                "pageHeaderText2": {
+                    "benefitCommencementDate": "Apr 01,2019",
+                    "point1": "Your last day of employment will be <b class='al-nowrap'>September 18, 2017</b>.",
+                    "lastDayEmpDate": "Mar 31,2019",
+                    "point2": "You'll begin receiving the payment you choose on <b class='al-nowrap'>October 1, 2017</b>.",
+                    "hasBeneDsgn": true,
+                    "point3": "<b class='al-nowrap'>Chris M. Alvarez</b> is the beneficiary chosen for this payment option.",
+                    "point4": "<b class='al-nowrap'>No beneficiary</b> is chosen for this plan."
+                },
+                "noteLegalText": "<b class='al-nowrap'>Note</b>: The Premier Company reserves the right to correct any errors. If it's determined at any time that the information provided on this site conflicts with the benefit defined by the Premier Pension Plan, the Premier Pension Plan will prevail. Under the law, a plan must be operated in accordance with its terms.",
+                "isRtrmSpclstMdlElig": true,
+                "contactlText": "Review the details of all your payment options. If you have any questions, specialists are ready to help at <b class='al-nowrap'>888-123-4567</b><span class='al-nowrap'> (8 a.m. to 4 p.m. CT,</span> Monday through Friday).",
+                "planDescription": "Premier Pension Plan",
+                "electionDescription": "Non-Union Benefit",
+                "tableTitleText": "Premier Pension Plan—Non-Union Benefit.",
+                "instructionText": "You must choose 2 payment options for this benefit.",
+                "isDfrAvlb": true,
+                "deferRowTitleText": "Defer",
+                "deferPanelText": "You can skip (defer) making a pension choice and come back to make that choice later. ",
+                "expandedDeferPanelText1": "You may choose to defer payment of a pension benefit if:",
+                "expandedDeferPanelText2": [
+                    {
+                        "point": "You want to make your health care choices and prefer to begin pension benefits later."
+                    },
+                    {
+                        "point": "You want to review your savings options and prefer to begin pension benefits later."
+                    },
+                    {
+                        "point": "You (or your spouse, if applicable) have other sources of income and don't need your pension benefits now."
+                    },
+                    {
+                        "point": "You don't want to pay taxes (if applicable) on your benefits until later."
+                    }
+                ],
+                "deferButtonText": "Defer",
+                "benefitDeferModalHeader": " Do you want to defer your payment?",
+                "benefitDeferModalText": "If you want to begin to receive your pension benefit at a later date, choose Yes.",
+                "deferDialogYesButtonText": "Yes",
+                "deferDialogNoButtonText": "No",
+                "hasMultOpfmGp": true,
+                "multiplePaymentHeaderText": "Choose From This Form of Payment List (1 of 2) DB Contributions Refunded",
+                "chosenButtonText": "Chosen",
+                "optionalFormDescriptionTable": [
+                    {
+                        "optionalFormDescription": "Lump Sum Option",
+                        "rollOverText": "(Part or all of this payment option can be <b class='al-nowrap'>rolled over</b> in a later step.)",
+                        "panelHeaderText": "<strong>One-time payment for you only</strong> ",
+                        "panelText": [
+                            {
+                                "point": "Part or all of this payment option can be rolled over"
+                            },
+                            {
+                                "point": "<b >No</b> payment to your beneficiary"
+                            },
+                            {
+                                "point": "If married, your spouse must consent"
+                            },
+                            {
+                                "point": "Entire value of your pension benefit (or, in some cases, a portion of the entire value)"
+                            }
+                        ],
+                        "learnMoreLinkText": "Learn More",
+                        "PaymentAmount": [
+                            {
+                                "optionalFormPaymentAmount": "$58,526.00",
+                                "paymentFrequencyText": "(one time)"
+                            }
+                        ],
+                        "paymentOptionBeneficiaryText": [
+                            {
+                                "paymentOptionBeneficiaryContentText": "Beneficiary Benefit (for payments after your death)",
+                                "amountText": "$0.00"
+                            }
+                        ],
+                        "relativeValueText": "Relative Value",
+                        "relativeValueRollOverText": "<b class='al-nowrap'>Relative Value</b><p>While you must choose an option based on your personal situation, the relative value information shows how the value of each payment option compares to the values of the others. The relative value is an estimate that is determined by comparing the value of each payment option available to the value of the Single Life Annuity.</p>",
+                        "chooseButtonText": "Choose",
+                        "percentText": "100.00%"
+                    },
+                    {
+                        "optionalFormDescription": "Straight Life Annuity",
+                        "rollOverText": null,
+                        "panelHeaderText": "A monthly payment to you only, until you die",
+                        "panelText": [
+                            {
+                                "point": "<b>No</b> payment to your beneficiary"
+                            },
+                            {
+                                "point": "If married, your spouse must consent"
+                            },
+                            {
+                                "point": "If single, considered \"standard\" form of pension payment"
+                            }
+                        ],
+                        "learnMoreLinkText": "Learn More",
+                        "PaymentAmount": [
+                            {
+                                "optionalFormPaymentAmount": "$450.20",
+                                "paymentFrequencyText": "(monthly)"
+                            }
+                        ],
+                        "paymentOptionBeneficiaryText": [
+                            {
+                                "paymentOptionBeneficiaryContentText": "Beneficiary Benefit (for payments after your death)",
+                                "amountText": "$0.00"
+                            }
+                        ],
+                        "relativeValueText": "Relative Value",
+                        "relativeValueRollOverText": "<b>Relative Value</b><p>While you must choose an option based on your personal situation, the relative value information shows how the value of each payment option compares to the values of the others. The relative value is an estimate that is determined by comparing the value of each payment option available to the value of the Single Life Annuity.</p>",
+                        "chooseButtonText": "Choose",
+                        "percentText": "100.00%"
+                    },
+                    {
+                        "optionalFormDescription": "50% Joint and Survivor Annuity",
+                        "rollOverText": null,
+                        "panelHeaderText": "A monthly payment to you until you die, then  50% of your monthly payment to your beneficiary until your beneficiary dies ",
+                        "panelText": [
+                            {
+                                "point": "After you die, <b class='al-nowrap'>50%</b> benefit payment to your beneficiary until he or she dies"
+                            },
+                            {
+                                "point": "If married and beneficiary is <b>not</b> your spouse, your spouse must consent"
+                            },
+                            {
+                                "point": "Reduced amount of your monthly payment so there will be monthly payments to your beneficiary after you die"
+                            }
+                        ],
+                        "learnMoreLinkText": "Learn More",
+                        "PaymentAmount": [
+                            {
+                                "optionalFormPaymentAmount": "$416.07",
+                                "paymentFrequencyText": "(monthly)"
+                            }
+                        ],
+                        "paymentOptionBeneficiaryText": [
+                            {
+                                "paymentOptionBeneficiaryContentText": "Beneficiary Benefit (for payments after your death)",
+                                "amountText": "$0.00"
+                            }
+                        ],
+                        "relativeValueText": "Relative Value",
+                        "relativeValueRollOverText": "<b>Relative Value</b><p>While you must choose an option based on your personal situation, the relative value information shows how the value of each payment option compares to the values of the others. The relative value is an estimate that is determined by comparing the value of each payment option available to the value of the Single Life Annuity.</p>",
+                        "chooseButtonText": "Choose",
+                        "percentText": "100.00%"
+                    },
+                    {
+                        "optionalFormDescription": "75% Joint and Survivor Annuity",
+                        "rollOverText": null,
+                        "panelHeaderText": "A monthly payment to you until you die, then 75% of your monthly payment to your beneficiary until your beneficiary dies ",
+                        "panelText": [
+                            {
+                                "point": "After you die, <b class='al-nowrap'>75%</b> benefit payment to your beneficiary until he or she dies"
+                            },
+                            {
+                                "point": "If married and beneficiary is <b>not</b> your spouse, your spouse must consent"
+                            },
+                            {
+                                "point": "Reduced amount of your monthly payment so there will be monthly payments to your beneficiary after you die"
+                            }
+                        ],
+                        "learnMoreLinkText": "Learn More",
+                        "PaymentAmount": [
+                            {
+                                "optionalFormPaymentAmount": "$410.53",
+                                "paymentFrequencyText": "(monthly)"
+                            }
+                        ],
+                        "paymentOptionBeneficiaryText": [
+                            {
+                                "paymentOptionBeneficiaryContentText": "Beneficiary Benefit (for payments after your death)",
+                                "amountText": "$0.00"
+                            }
+                        ],
+                        "relativeValueText": "Relative Value",
+                        "relativeValueRollOverText": "<b>Relative Value</b><p>While you must choose an option based on your personal situation, the relative value information shows how the value of each payment option compares to the values of the others. The relative value is an estimate that is determined by comparing the value of each payment option available to the value of the Single Life Annuity.</p>",
+                        "chooseButtonText": "Choose",
+                        "percentText": "100.00%"
+                    },
+                    {
+                        "optionalFormDescription": "100% Joint and Survivor Annuity",
+                        "rollOverText": null,
+                        "panelHeaderText": "A monthly payment to you until you die, then 100% of your monthly payment to your beneficiary until your beneficiary dies ",
+                        "panelText": [
+                            {
+                                "point": "After you die, <b class='al-nowrap'>100%</b> benefit payment to your beneficiary until he or she dies"
+                            },
+                            {
+                                "point": "If married and beneficiary is <b>not</b> your spouse, your spouse must consent"
+                            },
+                            {
+                                "point": "Reduced amount of your monthly payment so there will be monthly payments to your beneficiary after you die"
+                            }
+                        ],
+                        "learnMoreLinkText": "Learn More",
+                        "PaymentAmount": [
+                            {
+                                "optionalFormPaymentAmount": "$405.81",
+                                "paymentFrequencyText": "(monthly)"
+                            }
+                        ],
+                        "paymentOptionBeneficiaryText": [
+                            {
+                                "paymentOptionBeneficiaryContentText": "Beneficiary Benefit (for payments after your death)",
+                                "amountText": "$0.00"
+                            }
+                        ],
+                        "relativeValueText": "Relative Value",
+                        "relativeValueRollOverText": "<b>Relative Value</b><p>While you must choose an option based on your personal situation, the relative value information shows how the value of each payment option compares to the values of the others. The relative value is an estimate that is determined by comparing the value of each payment option available to the value of the Single Life Annuity.</p>",
+                        "chooseButtonText": "Choose",
+                        "percentText": "100.00%"
+                    },
+                    {
+                        "optionalFormDescription": "Life Annuity with 60 Payments / 5 Years Guaranteed",
+                        "rollOverText": null,
+                        "panelHeaderText": "A monthly payment to you until you die, then your monthly payment to your beneficiary until the cutoff date (September 1, 2022) ",
+                        "panelText": [
+                            {
+                                "point": "If you die <b>after</b> 5-year cutoff date, <b>no</b> payment to your beneficiary"
+                            },
+                            {
+                                "point": "If you die <b>before</b> 5-year cutoff date, <b>yes</b> monthly payments to your beneficiary <b>until</b> the 5-year cutoff date"
+                            },
+                            {
+                                "point": "If married, your spouse must consent"
+                            },
+                            {
+                                "point": "Beneficiary can be added after you retire"
+                            }
+                        ],
+                        "learnMoreLinkText": "Learn More",
+                        "PaymentAmount": [
+                            {
+                                "optionalFormPaymentAmount": "$430.35",
+                                "paymentFrequencyText": "(monthly)"
+                            }
+                        ],
+                        "paymentOptionBeneficiaryText": [
+                            {
+                                "paymentOptionBeneficiaryContentText": "Beneficiary Benefit (after your death, for payments <b>before </b>Sep 30, 2027)",
+                                "amountText": "$0.00"
+                            },
+                            {
+                                "paymentOptionBeneficiaryContentText": "Beneficiary Benefit (after your death, for payments <b class='al-nowrap'>on or after</b> Sep 30, 2027)",
+                                "amountText": "$0.00"
+                            }
+                        ],
+                        "relativeValueText": "Relative Value",
+                        "relativeValueRollOverText": "<b>Relative Value</b><p>While you must choose an option based on your personal situation, the relative value information shows how the value of each payment option compares to the values of the others. The relative value is an estimate that is determined by comparing the value of each payment option available to the value of the Single Life Annuity.</p>",
+                        "chooseButtonText": "Choose",
+                        "percentText": "100.00%"
+                    },
+                    {
+                        "optionalFormDescription": "Life Annuity with 120 Payments / 10 Years Guaranteed",
+                        "rollOverText": null,
+                        "panelHeaderText": "A monthly payment to you until you die, then your monthly payment to your beneficiary until the cutoff date (September 1, 2027) ",
+                        "panelText": [
+                            {
+                                "point": "If you die <b>after</b> 10-year cutoff date, <b>no</b> payment to your beneficiary"
+                            },
+                            {
+                                "point": "If you die <b>before</b> 10-year cutoff date, <b>yes</b> monthly payments to your beneficiary <b>until</b> the 10-year cutoff date"
+                            },
+                            {
+                                "point": "If married, your spouse must consent"
+                            },
+                            {
+                                "point": "Beneficiary can be added after you retire"
+                            }
+                        ],
+                        "learnMoreLinkText": "Learn More",
+                        "PaymentAmount": [
+                            {
+                                "optionalFormPaymentAmount": "$420.64",
+                                "paymentFrequencyText": "(monthly)"
+                            }
+                        ],
+                        "paymentOptionBeneficiaryText": [
+                            {
+                                "paymentOptionBeneficiaryContentText": "Beneficiary Benefit (after your death, for payments <b>before</b> Sep 30, 2027)",
+                                "amountText": "$0.00"
+                            },
+                            {
+                                "paymentOptionBeneficiaryContentText": "Beneficiary Benefit (after your death, for payments <b class='al-nowrap'>on or after</b> Sep 30, 2027)",
+                                "amountText": "$0.00"
+                            }
+                        ],
+                        "relativeValueText": "Relative Value",
+                        "relativeValueRollOverText": "<b>Relative Value</b><p>While you must choose an option based on your personal situation, the relative value information shows how the value of each payment option compares to the values of the others. The relative value is an estimate that is determined by comparing the value of each payment option available to the value of the Single Life Annuity.</p>",
+                        "chooseButtonText": "Choose",
+                        "percentText": "100.00%"
+                    },
+                    {
+                        "optionalFormDescription": "Life Annuity with 180 Payments / 15 Years Guaranteed",
+                        "rollOverText": null,
+                        "panelHeaderText": "A monthly payment to you until you die, then your monthly payment to your beneficiary until the cutoff date (September 1, 2032) ",
+                        "panelText": [
+                            {
+                                "point": "If you die <b>after</b> 15-year cutoff date, <b>no</b> payment to your beneficiary"
+                            },
+                            {
+                                "point": "If you die <b>before</b> 15-year cutoff date, <b>yes</b> monthly payments to your beneficiary <b>until</b> the 15-year cutoff date"
+                            },
+                            {
+                                "point": "If married, your spouse must consent"
+                            },
+                            {
+                                "point": "Beneficiary can be added after you retire"
+                            }
+                        ],
+                        "learnMoreLinkText": "Learn More",
+                        "PaymentAmount": [
+                            {
+                                "optionalFormPaymentAmount": "$411.53",
+                                "paymentFrequencyText": "(monthly)"
+                            }
+                        ],
+                        "paymentOptionBeneficiaryText": [
+                            {
+                                "paymentOptionBeneficiaryContentText": "Beneficiary Benefit (after your death, for payments <b>before</b> Sep 30, 2027)",
+                                "amountText": "$0.00"
+                            },
+                            {
+                                "paymentOptionBeneficiaryContentText": "Beneficiary Benefit (after your death, for payments <b class='al-nowrap'>on or after</b> Sep 30, 2027)",
+                                "amountText": "$0.00"
+                            }
+                        ],
+                        "relativeValueText": "Relative Value",
+                        "relativeValueRollOverText": "<b>Relative Value</b><p>While you must choose an option based on your personal situation, the relative value information shows how the value of each payment option compares to the values of the others. The relative value is an estimate that is determined by comparing the value of each payment option available to the value of the Single Life Annuity.</p>",
+                        "chooseButtonText": "Choose",
+                        "percentText": "100.00%"
+                    },
+                    {
+                        "optionalFormDescription": "Age 62 Level Income and 100% Joint and Survivor Annuity",
+                        "rollOverText": null,
+                        "panelHeaderText": "A monthly payment to you until you die, then to a beneficiary, with an increased benefit until you reach (or would have reached) age 62, when your payment is reduced (because you can take or could have taken your Social Security benefit) ",
+                        "panelText": [
+                            {
+                                "point": "Receive retirement payments immediately if you retire early (between ages 55 and 62)"
+                            },
+                            {
+                                "point": "Similar amount of income before and after age 62"
+                            },
+                            {
+                                "point": "<b>Increased</b> benefit <b>until</b> you reach age 62 (and can take your Social Security benefit"
+                            },
+                            {
+                                "point": "<b>Reduced<b/> benefit <b>when</b> you reach age 62 (because you can take your Social Security benefit)"
+                            },
+                            {
+                                "point": "If you die <b>before</b> age 62, beneficiary receives <b class='al-nowrap'>100%</b> of your payment, <b>until</b> you would have reached age 62 (when payment will be <b>reduced</b>, as it would have if you were still living)"
+                            },
+                            {
+                                "point": "If you die <b>after</b> age 62, <b class='al-nowrap'>100%</b> of what you would have received if you had chosen the regular <b class='al-nowrap'>100% Joint and Survivor</b> payment option will be paid to your beneficiary"
+                            },
+                            {
+                                "point": "If married, your spouse must consent"
+                            }
+                        ],
+                        "learnMoreLinkText": "Learn More",
+                        "PaymentAmount": [
+                            {
+                                "optionalFormPaymentAmount": "$430.35",
+                                "paymentFrequencyText": "(monthly through Aug 31, 2022)"
+                            },
+                            {
+                                "optionalFormPaymentAmount": "$220.35",
+                                "paymentFrequencyText": "(monthly beginning Sep 1, 2022)"
+                            }
+                        ],
+                        "paymentOptionBeneficiaryText": [
+                            {
+                                "paymentOptionBeneficiaryContentText": "Beneficiary Benefit (after your death, for payments <b>before</b> Sep 30, 2027)",
+                                "amountText": "$0.00"
+                            },
+                            {
+                                "paymentOptionBeneficiaryContentText": "Beneficiary Benefit (after your death, for payments <b class='al-nowrap'>on or after</b> Sep 30, 2027)",
+                                "amountText": "$0.00"
+                            }
+                        ],
+                        "relativeValueText": "Relative Value",
+                        "relativeValueRollOverText": "<b>Relative Value</b><p>While you must choose an option based on your personal situation, the relative value information shows how the value of each payment option compares to the values of the others. The relative value is an estimate that is determined by comparing the value of each payment option available to the value of the Single Life Annuity.</p>",
+                        "chooseButtonText": "Choose",
+                        "percentText": "100.00%"
+                    }
+                ],
+                "multiplePaymentHeaderText2": "Choose From This Form of Payment List (2 of 2)—DB Contributions Refunded Lump Sum",
+                "optionalFormDescriptionTable1": [
+                    {
+                        "optionalFormDescription": "Lump Sum Option",
+                        "rollOverText": "(Part or all of this payment option can be <b class='al-nowrap'>rolled over</b> in a later step.)",
+                        "panelHeaderText": "One-time payment for you only ",
+                        "panelText": [
+                            {
+                                "point": "Part or all of this payment option can be rolled over"
+                            },
+                            {
+                                "point": "<b>No</b> payment to your beneficiary"
+                            },
+                            {
+                                "point": "If married, your spouse must consent"
+                            },
+                            {
+                                "point": "Entire value of your pension benefit (or, in some cases, a portion of the entire value)"
+                            }
+                        ],
+                        "learnMoreLinkText": "Learn More",
+                        "PaymentAmount": [
+                            {
+                                "optionalFormPaymentAmount": "$47,875.00",
+                                "paymentFrequencyText": "(one time)"
+                            }
+                        ],
+                        "paymentOptionBeneficiaryText": [
+                            {
+                                "paymentOptionBeneficiaryContentText": "Beneficiary Benefit (for payments after your death)",
+                                "amountText": "$0.00"
+                            }
+                        ],
+                        "relativeValueText": "Relative Value",
+                        "relativeValueRollOverText": "<b>Relative Value</b><p>While you must choose an option based on your personal situation, the relative value information shows how the value of each payment option compares to the values of the others. The relative value is an estimate that is determined by comparing the value of each payment option available to the value of the Single Life Annuity.</p>",
+                        "chooseButtonText": "Choose",
+                        "percentText": "100.00%"
+                    }
+                ],
+                "hypotheticalPaymentOptionPanelHeader": "Hypothetical Payment Options",
+                "hypotheticalPaymentOptionText": "Hypothetical payment options are available to you but you can't choose them now. We don't have all the information needed to calculate the actual amounts.",
+                "survivorBenefitText": " To calculate hypothetical options that include a survivor benefit, we used an estimated beneficiary birth date of <b class='al-nowrap'>[mm-dd-yyyy]</b>. To choose one of these options, you must name a beneficiary.",
+                "socialSecurityLevelText": " To calculate hypothetical options that include a Social Security level income feature, we used an estimated Social Security benefit amount. To choose one of these options, contact the Premier Benefits Center at <b class='al-nowrap'>1-800-XXX-XXXX</b>. We'll tell you how to send us information so we can recalculate your payment options.",
+                "headerText": " Relative Value",
+                "mainSectionContentList": [
+                    {
+                        "content": "[Premier Company] is legally required to provide you with relative value information for the payment options available to you. This information will help you compare the values of your payment options, relative to each other. "
+                    },
+                    {
+                        "content": "It's difficult to compare all your options because they may be paid over different periods of time. For example, some are paid monthly for only your lifetime and some are paid monthly for the lifetime of you and your spouse. "
+                    },
+                    {
+                        "content": "While you must choose an option based on your personal situation, the relative value information shows how the value of each payment option compares to the values of the others. The relative value information is only an estimate because the true relative value depends on how long you live."
+                    }
+                ],
+                "relativeValuePlanDetailBean": {
+                    "planContentList": [
+                        {
+                            "content": "<p>The payment option amounts for the [Premier Company Benefit election] are all about equal in relative value to the [Single Life Annuity]. This relative value comparison is made by comparing the value of each available payment option to the value of the [Single Life Annuity]. This comparison uses interest and average life expectancy assumptions.</p>"
+                        },
+                        {
+                            "content": "<p>An interest rate assumption of [5.00]% for the first 5 years, [10.00]% for years 5 through 19, and [15.00]% for years 20 and later was used for all optional forms of payment. "
+                        },
+                        {
+                            "content": "The actual relative value of payments made to you will depend on how long you live. If you want more information on the average life expectancies used in this calculation, Contact Us.</p>"
+                        },
+                        {
+                            "content": "<p>For the relative values comparison, we calculated your [50% Joint and Survivor Annuity] for the [Premier Company Benefit election] using your spouse as a beneficiary and using an estimated birth date of [February 12, 1950] for your spouse. You can provide the actual birth date for your spouse and receive an updated calculation. However, this request would require a recalculation of your payment options, which could change your benefit amount and may delay your payment.</p>"
+                        }
+                    ]
+                },
+                "expandSectionHeaderText1": "Taxes",
+                "expandSectionContentText1": "You may be required to pay Social Security and Medicare taxes on the nonqualified pension payments that are shown on this site. These taxes, which are required by the Internal Revenue Service, are often called FICA (Federal Insurance Contributions Act) taxes. If FICA taxes apply to you, they'll be deducted from your active payroll, if applicable, or your payment. The timing of the withholding may vary. ",
+                "contentText":"In addition to FICA taxes, federal and state tax withholding may also apply to your nonqualified [pension] payment.",
+                "expandSectionHeaderText2": "Cash Balance Benefit",
+                "expandSectionContentText2": "Your cash balance benefit has been calculated using current interest rates. Your actual cash balance benefit will be converted to the annuity options based on the interest rate in effect on your payment start date. If the interest rate at the time your payment begins is different from the current rate, your annuity options may be higher or lower than the amounts shown on this site.",
+                "contentText1":"Your cash balance benefit has been calculated based on:",
+                "expandSectionContentConditionText2": [
+                    {
+                        "expandSectionPoint": "The value of your account from this plan"
+                    },
+                    {
+                        "expandSectionPoint": "Any benefit you accrued from a previous plan"
+                    },
+                    {
+                        "expandSectionPoint": "Any grandfathered benefits."
+                    }
+                ],
+                "expandSectionHeaderText3": "Qualified Domestic Relations Order (QDRO) Adjustment",
+                "expandSectionContentText3": "According to our records, a portion of your benefit may be assigned to an alternate payee due to a Qualified Domestic Relations Order (QDRO). The benefit shown hasn't been adjusted to reflect this QDRO.",
+                "footnoteLinkText": " Read Footnotes",
+                "footnoteTitleText": " Footnotes",
+                "footnoteText1": " This is a before-tax amount. ",
+                "footnoteText2": "2 This is a hypothetical estimate. Refer to the Hypothetical Payment Options section for a further explanation.",
+                "continueButtonText": "Continue",
+                "comeBackLaterButtontext": "Come Back Later",
+                "quitButtonText": "Quit",
+                "quitButtonModalText": "What do you want to do?<p><b>Save</b><br>Keep the choices you've made, so far. Finish making pension choices later.</p><p><b>Quit</b><br>Cancel your pension request and lose all the pension choices you've made, so far.</p><p><b>Return</b><br>Go back to the current page without quitting.</p>",
+                "modalSaveButtonText": "Save",
+                "modalQuitButtonText": "Quit",
+                "modalReturnButtonText": "Return",
+                "isDbRtrmPlmElig": true,
+                "peopleLikeMeLinkText": "People Like Me™",
+                "peopleLikeMeText": "Find out what choices others are making. ",
+                "isOpfrmCmprElig": true,
+                "comparePaymentOptionsLinkText": "Compare Payment Options",
+                "questionsBoxText": "Questions?<br>If or when you have questions, specialists are ready to help at <b class='al-nowrap'>888-123-4567</b> (8 a.m. to 4:30 p.m. CT, Monday through Friday). ",
+                "sectionHeaderText": "Other Resources",
+                "resourceLinkText1": "How Your Benefits is Calculated",
+                "resourceLinkText2": "Information Used to Calculate Your Pension Benefit",
+                "resourceLinkText3": "Notice of Your Rights"
+            }
+        }
+    }
+}

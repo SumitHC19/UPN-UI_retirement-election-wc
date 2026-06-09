@@ -1,0 +1,155 @@
+{
+	"status": {
+		"statusCode": 200,
+		"statusMessage": "OK"
+	},
+	"PensionCategory": {
+		"pageNameText": "Choose Your Payment Options",
+		"pageUsageText": "Choose a group and the payment options for each plan",
+		"electionGroupTableHeaderText": "Premier Election Group",
+		"noteText": "<b>Note:</b> Amounts are before tax, and don't include any payments to your beneficiary after you die (if applicable)",
+		"electionGroupTableData": [{
+				"electionGroupTableDataID": "ONE",
+				"electionGroupTableDataName": "electionGroupTable",
+				"electionGroupNameText": "Premier Company Benefit Group A",
+				"electionGroupMoreInfoText": "Your contributions to the pension plan and interest earned on those contributions will be paid as a lump sum. For the company benefit, you can choose the form of payment separately.",
+				
+				"chosenButtonText": "Chosen",
+				"electionGroupTableDataContent": [{
+						"electionGroupTableDataContentID": "TWO",
+						"electionGroupTableDataContentType": "Type1",
+						"benefitText": "Contributions Retained",
+						"paymentTextData": [{
+								"PaymentTableID": "THREE",
+								"paymentTableName": "10 Year Certain and LifeType",
+								"PaymentNameText": "10 Year Certain and Life",
+								"PaymentAmountText": "$2,978.37",
+								"PaymentFrequencyText": "(monthly)"
+							},
+							{
+								"PaymentTableID": "Four",
+								"paymentTableName": "Lump Sum DistributionType",
+								"PaymentNameText": "Lump Sum Distribution",
+								"PaymentAmountText": "$2,978.37",
+								"PaymentFrequencyText": "(monthly)"
+							}
+						],
+						"ChangeButtonText": "Change"
+					},
+					{
+						"electionGroupTableDataContentID": "FIVE",
+						"electionGroupTableDataContentType": "Type2",
+						"benefitText": "Contributions Refunded",
+						"paymentTextData": [{
+							"PaymentTableID": "SIX",
+							"paymentTableName": "Level Income Age 62Type",
+							"PaymentNameText": "Level Income Age 62",
+							"PaymentAmountText": "$2,978.37",
+							"PaymentFrequencyText": "(monthly)"
+						}],
+						"ChangeButtonText": "Change"
+					}
+				],
+				"orText": "OR"
+			},
+			{
+				"electionGroupTableDataID": "SEVEN",
+				"electionGroupTableDataName": "electionGroupTableONE",
+				"electionGroupNameText": "Premier Company Benefit Group B",
+				"electionGroupMoreInfoText": "Your contributions to the pension plan and interest earned on those contributions will be paid as a lump sum. For the company benefit, you can choose the form of payment separately.",
+				"chooseGroupButtonText": "Choose This Group",
+				"chosenButtonText": "Chosen",
+				"electionGroupTableDataContent": [{
+						"electionGroupTableDataContentID": "EIGHT",
+						"electionGroupTableDataContentType": "Type3",
+						"benefitText": "Contributions Retained",
+						"paymentTextData": [{
+							"PaymentTableID": "SEVEN",
+							"paymentTableName": "Level Income Age 62Type",
+							"PaymentNameText": "Level Income Age 62",
+							"PaymentAmountText": "$2,978.37",
+							"PaymentFrequencyText": "(monthly)"
+						}],
+						"ChangeButtonText": "Change"
+					},
+					{
+						"electionGroupTableDataContentID": "NINE",
+						"electionGroupTableDataContentType": "Type4",
+						"benefitText": "Union Benefit 1",
+						"paymentTextData": [{
+							"PaymentTableID": "eight",
+							"paymentTableName": "Straight Life AnnuityType",
+							"PaymentNameText": "Straight Life Annuity",
+							"popOverContent": [{
+								"popOverContentID": "ONE",
+								"popOverContentTEXT": "POPOVER",
+								"popOverContentHeaderText": "Straight Life Annuity",
+								"popOverContentText": "A monthly payment to you only, until you die",
+								"popOverContentList": [{
+										"ListID": "LISTONE",
+										"ListName": "listone",
+										"list1": "<b>No</b> payment to your beneficiary"
+									},
+									{
+										"ListID": "LISTTWO",
+										"ListName": "listtwo",
+										"list2": "If married, your spouse must consent"
+									},
+									{
+										"ListID": "LISTTHREE",
+										"ListName": "listthree",
+										"list3": "If single, considered standard form of pension payment"
+									}
+								],
+								"learnMoreLinkText": "Learn More"
+							}],
+							"PaymentAmountText": "$2,978.37",
+							"PaymentFrequencyText": "(monthly)"
+						},
+						{
+								"PaymentTableID": "SEVEN",
+								"paymentTableName": "Lump Sum DistributionType",
+								"PaymentNameText": "Lump Sum Distribution",
+								"PaymentAmountText": "$2,978.37",
+								"PaymentFrequencyText": "(monthly)"
+							}
+					],
+						"ChangeButtonText": "Change"
+					}
+				]
+			}
+		]
+	},
+	"FooterNoteText": "<b>Note: </b> The Premier Company reserves the right to correct any errors. If it's determined at any time that the information provided on this site conflicts with the benefit defined by the Premier Pension Plan, the Premier Pension Plan will prevail. Under the law, a plan must be operated in accordance with its terms.",
+	"expandSectionHeaderText1": "Taxes",
+	"expandSectionContentText1": "You may be required to pay Social Security and Medicare taxes on the nonqualified pension payments that are shown on this site. These taxes, which are required by the Internal Revenue Service, are often called FICA (Federal Insurance Contributions Act) taxes. If FICA taxes apply to you, they'll be deducted from your active payroll, if applicable, or your payment. The timing of the withholding may vary. <br> <br> In addition to FICA taxes, federal and state tax withholding may also apply to your nonqualified pension payment.",
+
+	"expandSectionHeaderText2": "Cash Balance Benefit",
+	"expandSectionContentText2": "Your cash balance benefit has been calculated using current interest rates. Your actual cash balance benefit will be converted to the annuity options based on the interest rate in effect on your payment start date. If the interest rate at the time your payment begins is different from the current rate, your annuity options may be higher or lower than the amounts shown on this site.<br> <br>Your cash balance benefit has been calculated based on:",
+	"expandSectionContentTextsub": [{
+			"expandSectionPoint": "The value of your account from this plan"
+		},
+		{
+			"expandSectionPoint": "Any benefit you accrued from a previous plan"
+		},
+		{
+			"expandSectionPoint": "Any grandfathered benefits."
+		}
+	],
+	"expandSectionHeaderText": "Qualified Domestic Relations Order (QDRO) Adjustment",
+	"expandSectionContentText3": "According to our records, a portion of your benefit may be assigned to an alternate payee due to a Qualified Domestic Relations Order (QDRO). The benefit shown hasn't been adjusted to reflect this QDRO.",
+	"continueButtonText": "Continue",
+	"comeBackLaterButtontext": "Come Back Later",
+	"quitPopupText": "Quit",
+	"quitPopupHeadetText": "What do you want to do?",
+	"saveHeaderText": "Save",
+	"saveContentText": "Keep the choices you've made, so far. Finish making pension choices later.",
+	"quitHeaderText": "Quit",
+	"quitContentText": "Cancel your pension request and lose all the pension choices you've made, so far.",
+	"returnHeaderText": "Return",
+	"returnContentText": "Go back to the current page without quitting.",
+	"saveButtonText": "Save",
+	"quitButtonText": "Quit",
+	"returnButtonText": "Return"
+
+}

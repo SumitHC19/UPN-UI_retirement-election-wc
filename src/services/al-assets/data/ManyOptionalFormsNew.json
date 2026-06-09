@@ -1,0 +1,544 @@
+{
+    "responseStatus": {
+        "statusCode": 200,
+        "statusMessage": "OK",
+        "informationUnavailableMessage": "The information that usually appears here is currently unavailable."
+    },
+    "choosePaymentOptionHeader": {
+        "flowTitle": "Make Your Retirement Choices",
+        "pageTitle": "Choose a Payment Option",
+        "pageHeaderIntroduction": "Choose the form of payment you want to receive on <strong class=\"ah-noWrap\">2018-07-01</strong>. You can change your form of payment up to the last business day before your benefits begin. The forms of payment are based on other retirement choices you've made:",
+        "pageHeaderBulletList": [
+            "Your last day of employment will be <strong class=\"ah-noWrap\">2018-06-30</strong>.",
+            "You'll begin receiving the payment you choose on <strong class=\"ah-noWrap\">2018-07-01</strong>.",
+            "<strong>No beneficiary</strong> chosen for this payment option."
+        ],
+        "pageHeaderLegalNote": "<small><strong>Note:</strong> The Alight Company reserves the right to correct any errors. If it's determined at any time that the information provided on this site conflicts with the benefit defined by the Employee Pension and Retirement Plan, the Employee Pension and Retirement Plan will prevail. Under the law, a plan must be operated in accordance with its terms.</small>",
+        "pageHeaderReviewPaymentOptions": "Review the details of all your payment options. If you have any questions, specialists are ready to help at <strong class=\"ah-noWrap\"><b class=\"nobr\">1-888-123-4567</b></strong> <span class=\"nobr\">(8 a.m. to</span> <span class=\"nobr\">4:30 p.m. CT,</span> Monday through Friday)."
+    },
+    "buttonLabels": {
+        "defer": "Defer",
+        "choose": "Choose",
+        "chosen": "Chosen",
+        "hypotheticalNotApplicable": "N/A",
+        "modalYesNo": "Yes:No"
+    },
+    "choosePaymentOptionTable": {
+        "paymentTableHeader": "Employee Pension and Retirement Plan&mdash;Simply a Simple Election - 2",
+        "multipleOptionalFormGroupHeaderText": "You must choose 1 payment options for this benefit.",
+        "paymentTableDeferSecton": {
+            "deferSectionHeader": "Defer All Payments For This Benefit",
+            "deferPanelHeader": "You can skip (defer) making a pension choice and come back to make that choice later.",
+            "deferPanelChooseText": "You may choose to defer payment of a pension benefit if:",
+            "deferBulletList": [
+                "You want to make your health care choices and prefer to begin pension benefits later.",
+                "You want to review your savings options and prefer to begin pension benefits later.",
+                "You (or your spouse, if applicable) have other sources of income and don't need your pension benefits now.",
+                "You don't want to pay taxes (if applicable) on your benefits until later."
+            ],
+            "deferModalHeader": "Do you want to defer your payments for this benefit?",
+            "deferModalBody": "If you want to begin these pension benefits at a later date, choose Yes."
+        },
+        "paymentOptionGroupDetailList": [
+            {
+                "selectedOptionalFormId": 1000000000,
+                "elecGroupId": 0,
+                "planId": 8744,
+                "electionId": 10,
+                "optionalFormGroupId": 2325,
+                "optionalFormGroupDescription": "Main Forms",
+                "multipleOptionalFormPaymentHeader": "Choose From This Form of Payment List (1 of 2)&mdash;Main Forms",
+                "primaryOptionalFormPaymentList": [
+                    {
+                        "optionalFormGroupId": 2325,
+                        "optionalFormId": 3010,
+                        "lableFrequencyId": "L",
+                        "optionalFormPanelHeader": "Lump Sum Distribution",
+                        "optionalFormPanelLeadinText": "A one-time payment to you only",
+                        "optionalFormPanelText": "<li><strong>No</strong> payment to your beneficiary</li> <li>If married, your spouse must consent</li> <li>Entire value of your pension benefit (or, in some cases, a portion of the entire value)</li> <li>Subject to taxation, and the Internal Revenue Service requires 20% be automatically withheld</li> <li>May be subject to 10% penalty tax on early distributions</li>",
+                        "optionalFormPanelLearnMoreLink": "<A onclick=\"if(isUACrossEnabled()){try{ga('trackerUa1.send','event', 'Internal Link' ,'Link click','LinkId:DB_PAYMENT_OPTION_DESC_LINK LinkDest:/web/${friendlyURL}/payment-option-description'); } catch(err){}} if(isUAClientEnabled()){ try{if(isGTMEnabled()){dataLayer.push({'event':'UPointLinkEvent','linkCategory':'Internal Link','linkAction':'Link Click','linkLabel':'LinkId:DB_PAYMENT_OPTION_DESC_LINK LinkDest:/web/${friendlyURL}/payment-option-description'});}else{ga('trackerUa2.send','event', 'Internal Link' ,'Link click','LinkId:DB_PAYMENT_OPTION_DESC_LINK LinkDest:/web/${friendlyURL}/payment-option-description'); }} catch(err){}}try{setTimeout(function() {}, 100);}catch(err){}window.winHandle = window.open('/web/${friendlyURL}/payment-option-description#/?planId=8744&electionId=10&electionGroupId=0&opFmId=3010&calcRefId=null&linkId=DB_PAYMENT_OPTION_DESC_LINK&technicalNameForLink=DB_PAYMENT_OPTION_DESC_LINK&userFriendlyNameForLink=DB_PAYMENT_OPTION_DESC_LINK&domain=Ben-DB&baseClientIndicator=Base','DB_PAYMENT_OPTION_DESC_LINK','titlebar=yes,scrollbars=yes,resizable=yes,width=980,height=560');if(typeof XD != 'undefined'){XD.registerWindow('DB_PAYMENT_OPTION_DESC_LINK',window.winHandle);}try{setSessionTimeOut()}catch(err){};return false;\" href=\"/web/${friendlyURL}/payment-option-description#/?planId=8744&electionId=10&electionGroupId=0&opFmId=3010&calcRefId=null&linkId=DB_PAYMENT_OPTION_DESC_LINK&technicalNameForLink=DB_PAYMENT_OPTION_DESC_LINK&userFriendlyNameForLink=DB_PAYMENT_OPTION_DESC_LINK&domain=Ben-DB&baseClientIndicator=Base\" class=\"ah-secondaryWindow\">Learn More</A>",
+                        "optionalFormToYouAmountList": [
+                            {
+                                "optionalFormAmount": 274063.06,
+                                "optionalFormFrequencyDescription": "(one-time)"
+                            }
+                        ],
+                        "optionalFormBeneficiaryList": [
+                            {
+                                "beneficiaryText": "Beneficiary Benefit (for payments after your death)",
+                                "benefitFrequency": "(one-time)"
+                            }
+                        ],
+                        "optionalFormPanelRelativeValueSection": {},
+                        "autoSelectedFormsOfPaymentList": [],
+                        "hypotheticalOptionalForm": false,
+                        "optionalFormSelected": false
+                    },
+                    {
+                        "optionalFormGroupId": 2325,
+                        "optionalFormId": 3000,
+                        "lableFrequencyId": "M",
+                        "optionalFormPanelPlusText": "Plus",
+                        "optionalFormPanelHeader": "Single Life Annuity",
+                        "optionalFormPanelLeadinText": "A monthly payment to you only, until you die",
+                        "optionalFormPanelText": "<li><strong>No</strong> payment to your beneficiary</li><li>If married, your spouse must consent</li>",
+                        "optionalFormPanelLearnMoreLink": "<A onclick=\"if(isUACrossEnabled()){try{ga('trackerUa1.send','event', 'Internal Link' ,'Link click','LinkId:DB_PAYMENT_OPTION_DESC_LINK LinkDest:/web/${friendlyURL}/payment-option-description'); } catch(err){}} if(isUAClientEnabled()){ try{if(isGTMEnabled()){dataLayer.push({'event':'UPointLinkEvent','linkCategory':'Internal Link','linkAction':'Link Click','linkLabel':'LinkId:DB_PAYMENT_OPTION_DESC_LINK LinkDest:/web/${friendlyURL}/payment-option-description'});}else{ga('trackerUa2.send','event', 'Internal Link' ,'Link click','LinkId:DB_PAYMENT_OPTION_DESC_LINK LinkDest:/web/${friendlyURL}/payment-option-description'); }} catch(err){}}try{setTimeout(function() {}, 100);}catch(err){}window.winHandle = window.open('/web/${friendlyURL}/payment-option-description#/?planId=8744&electionId=10&electionGroupId=0&opFmId=3000&calcRefId=null&linkId=DB_PAYMENT_OPTION_DESC_LINK&technicalNameForLink=DB_PAYMENT_OPTION_DESC_LINK&userFriendlyNameForLink=DB_PAYMENT_OPTION_DESC_LINK&domain=Ben-DB&baseClientIndicator=Base','DB_PAYMENT_OPTION_DESC_LINK','titlebar=yes,scrollbars=yes,resizable=yes,width=980,height=560');if(typeof XD != 'undefined'){XD.registerWindow('DB_PAYMENT_OPTION_DESC_LINK',window.winHandle);}try{setSessionTimeOut()}catch(err){};return false;\" href=\"/web/${friendlyURL}/payment-option-description#/?planId=8744&electionId=10&electionGroupId=0&opFmId=3000&calcRefId=null&linkId=DB_PAYMENT_OPTION_DESC_LINK&technicalNameForLink=DB_PAYMENT_OPTION_DESC_LINK&userFriendlyNameForLink=DB_PAYMENT_OPTION_DESC_LINK&domain=Ben-DB&baseClientIndicator=Base\" class=\"ah-secondaryWindow\">Learn More</A>",
+                        "optionalFormToYouAmountList": [
+                            {
+                                "optionalFormAmount": 1956.78,
+                                "optionalFormFrequencyDescription": "(monthly)"
+                            }
+                        ],
+                        "optionalFormBeneficiaryList": [
+                            {
+                                "beneficiaryText": "Beneficiary Benefit (for payments after your death)",
+                                "beneficiaryAmount": 0,
+                                "benefitFrequency": "(monthly)"
+                            }
+                        ],
+                        "optionalFormPanelRelativeValueSection": {},
+                        "autoSelectedFormsOfPaymentList": [
+                            {
+                                "planId": 8744,
+                                "electionId": 10,
+                                "optionalFormGroupId": 2325,
+                                "optionalFormId": 1110,
+                                "lableFrequencyId": "M",
+                                "primaryOprionalFormId": 3000,
+                                "primaryOptionalFormGroupId": 2325,
+                                "optionalFormPanelHeader": "Single Life Annuity - AS",
+                                "optionalFormPanelLeadinText": "UNRESOLVED_ASSET",
+                                "optionalFormPanelText": "UNRESOLVED_ASSET",
+                                "optionalFormPanelLearnMoreLink": "<A onclick=\"if(isUACrossEnabled()){try{ga('trackerUa1.send','event', 'Internal Link' ,'Link click','LinkId:DB_PAYMENT_OPTION_DESC_LINK LinkDest:/web/${friendlyURL}/payment-option-description'); } catch(err){}} if(isUAClientEnabled()){ try{if(isGTMEnabled()){dataLayer.push({'event':'UPointLinkEvent','linkCategory':'Internal Link','linkAction':'Link Click','linkLabel':'LinkId:DB_PAYMENT_OPTION_DESC_LINK LinkDest:/web/${friendlyURL}/payment-option-description'});}else{ga('trackerUa2.send','event', 'Internal Link' ,'Link click','LinkId:DB_PAYMENT_OPTION_DESC_LINK LinkDest:/web/${friendlyURL}/payment-option-description'); }} catch(err){}}try{setTimeout(function() {}, 100);}catch(err){}window.winHandle = window.open('/web/${friendlyURL}/payment-option-description#/?planId=8744&electionId=10&electionGroupId=0&opFmId=3000&calcRefId=null&linkId=DB_PAYMENT_OPTION_DESC_LINK&technicalNameForLink=DB_PAYMENT_OPTION_DESC_LINK&userFriendlyNameForLink=DB_PAYMENT_OPTION_DESC_LINK&domain=Ben-DB&baseClientIndicator=Base','DB_PAYMENT_OPTION_DESC_LINK','titlebar=yes,scrollbars=yes,resizable=yes,width=980,height=560');if(typeof XD != 'undefined'){XD.registerWindow('DB_PAYMENT_OPTION_DESC_LINK',window.winHandle);}try{setSessionTimeOut()}catch(err){};return false;\" href=\"/web/${friendlyURL}/payment-option-description#/?planId=8744&electionId=10&electionGroupId=0&opFmId=3000&calcRefId=null&linkId=DB_PAYMENT_OPTION_DESC_LINK&technicalNameForLink=DB_PAYMENT_OPTION_DESC_LINK&userFriendlyNameForLink=DB_PAYMENT_OPTION_DESC_LINK&domain=Ben-DB&baseClientIndicator=Base\" class=\"ah-secondaryWindow\">Learn More</A>",
+                                "optionalFormToYouAmountList": [
+                                    {
+                                        "optionalFormAmount": 4356.78,
+                                        "optionalFormFrequencyDescription": "(monthly, <strong>before</strong> <span class=\"ah-noWrap\">UNRESOLVED_TEXT</span>)"
+                                    },
+                                    {
+                                        "optionalFormAmount": 4133.67,
+                                        "optionalFormFrequencyDescription": "(monthly, <strong>on or after</strong> <span class=\"ah-noWrap\">UNRESOLVED_TEXT</span>)"
+                                    }
+                                ],
+                                "optionalFormBeneficiaryList": [
+                                    {
+                                        "beneficiaryText": "Beneficiary Benefit (after your death, for payments <strong>before</strong> <span class=\"ah-noWrap\">UNRESOLVED_TEXT</span>)",
+                                        "beneficiaryAmount": 0,
+                                        "benefitFrequency": "(monthly)"
+                                    },
+                                    {
+                                        "beneficiaryText": "Beneficiary Benefit (after your death, for payments <strong>on or after</strong> <span class=\"ah-noWrap\">UNRESOLVED_TEXT</span>)",
+                                        "beneficiaryAmount": 0,
+                                        "benefitFrequency": "(monthly)"
+                                    }
+                                ],
+                                "hypotheticalOptionalForm": false
+                            }
+                        ],
+                        "hypotheticalOptionalForm": false,
+                        "optionalFormSelected": false
+                    },
+                    {
+                        "optionalFormGroupId": 2325,
+                        "optionalFormId": 3020,
+                        "lableFrequencyId": "M",
+                        "optionalFormPanelHeader": "10 Year Certain and Life",
+                        "optionalFormPanelLeadinText": "A monthly payment to you until you die, then your monthly payment to your beneficiary until the cutoff date <span class=\"ah-nowrap\">(<strong>December 1, 2025</strong>)</span>",
+                        "optionalFormPanelText": "<li>If you die before 10-year cutoff date, your monthly payments will continue to your beneficiary until the 10-year cutoff date</li><li>If you die after 10-year cutoff date, no payment to your beneficiary</li><li>If married, your spouse must consent</li><li>Beneficiary can be added after you retire</li><li>Contingent beneficiary can be named (in case your beneficiary dies before the 10-year cutoff date)</li><li>If no beneficiary when you die, remaining payments made per plan rules</li>",
+                        "optionalFormPanelLearnMoreLink": "<A onclick=\"if(isUACrossEnabled()){try{ga('trackerUa1.send','event', 'Internal Link' ,'Link click','LinkId:DB_PAYMENT_OPTION_DESC_LINK LinkDest:/web/${friendlyURL}/payment-option-description'); } catch(err){}} if(isUAClientEnabled()){ try{if(isGTMEnabled()){dataLayer.push({'event':'UPointLinkEvent','linkCategory':'Internal Link','linkAction':'Link Click','linkLabel':'LinkId:DB_PAYMENT_OPTION_DESC_LINK LinkDest:/web/${friendlyURL}/payment-option-description'});}else{ga('trackerUa2.send','event', 'Internal Link' ,'Link click','LinkId:DB_PAYMENT_OPTION_DESC_LINK LinkDest:/web/${friendlyURL}/payment-option-description'); }} catch(err){}}try{setTimeout(function() {}, 100);}catch(err){}window.winHandle = window.open('/web/${friendlyURL}/payment-option-description#/?planId=8744&electionId=10&electionGroupId=0&opFmId=3020&calcRefId=null&linkId=DB_PAYMENT_OPTION_DESC_LINK&technicalNameForLink=DB_PAYMENT_OPTION_DESC_LINK&userFriendlyNameForLink=DB_PAYMENT_OPTION_DESC_LINK&domain=Ben-DB&baseClientIndicator=Base','DB_PAYMENT_OPTION_DESC_LINK','titlebar=yes,scrollbars=yes,resizable=yes,width=980,height=560');if(typeof XD != 'undefined'){XD.registerWindow('DB_PAYMENT_OPTION_DESC_LINK',window.winHandle);}try{setSessionTimeOut()}catch(err){};return false;\" href=\"/web/${friendlyURL}/payment-option-description#/?planId=8744&electionId=10&electionGroupId=0&opFmId=3020&calcRefId=null&linkId=DB_PAYMENT_OPTION_DESC_LINK&technicalNameForLink=DB_PAYMENT_OPTION_DESC_LINK&userFriendlyNameForLink=DB_PAYMENT_OPTION_DESC_LINK&domain=Ben-DB&baseClientIndicator=Base\" class=\"ah-secondaryWindow\">Learn More</A>",
+                        "optionalFormToYouAmountList": [
+                            {
+                                "optionalFormAmount": 1925.11,
+                                "optionalFormFrequencyDescription": "(monthly, <strong>before</strong> <span class=\"ah-noWrap\">December 1, 2025</span>)"
+                            },
+                            {
+                                "optionalFormAmount": 1925.11,
+                                "optionalFormFrequencyDescription": "(monthly, <strong>on or after</strong> <span class=\"ah-noWrap\">December 1, 2025</span>)"
+                            }
+                        ],
+                        "optionalFormBeneficiaryList": [
+                            {
+                                "beneficiaryText": "Beneficiary Benefit (after your death, for payments <strong>before</strong> <span class=\"ah-noWrap\">December 1, 2025</span>)",
+                                "beneficiaryAmount": 1925.11,
+                                "benefitFrequency": "(monthly)"
+                            },
+                            {
+                                "beneficiaryText": "Beneficiary Benefit (after your death, for payments <strong>on or after</strong> <span class=\"ah-noWrap\">December 1, 2025</span>)",
+                                "beneficiaryAmount": 0,
+                                "benefitFrequency": "(monthly)"
+                            }
+                        ],
+                        "optionalFormPanelRelativeValueSection": {},
+                        "autoSelectedFormsOfPaymentList": [],
+                        "hypotheticalOptionalForm": false,
+                        "optionalFormSelected": false
+                    },
+                    {
+                        "optionalFormGroupId": 2325,
+                        "optionalFormId": 3140,
+                        "lableFrequencyId": "M",
+                        "optionalFormPanelHeader": "Joint & Survivor w/Pop Up",
+                        "optionalFormPanelLeadinText": "A monthly payment to you until you die (which <strong>increases</strong>, if your beneficiary dies before you), then <strong>50 1/3%</strong> of your monthly payment to your beneficiary until your beneficiary dies",
+                        "optionalFormPanelText": "<li>After you die, <strong>50 1/3%</strong> benefit payment to your beneficiary until he or she dies</li><li>If married and beneficiary is <strong>not</strong> your spouse, your spouse must consent</li><li>If beneficiary dies before you, the amount paid to you increases</li>",
+                        "optionalFormPanelLearnMoreLink": "<A onclick=\"if(isUACrossEnabled()){try{ga('trackerUa1.send','event', 'Internal Link' ,'Link click','LinkId:DB_PAYMENT_OPTION_DESC_LINK LinkDest:/web/${friendlyURL}/payment-option-description'); } catch(err){}} if(isUAClientEnabled()){ try{if(isGTMEnabled()){dataLayer.push({'event':'UPointLinkEvent','linkCategory':'Internal Link','linkAction':'Link Click','linkLabel':'LinkId:DB_PAYMENT_OPTION_DESC_LINK LinkDest:/web/${friendlyURL}/payment-option-description'});}else{ga('trackerUa2.send','event', 'Internal Link' ,'Link click','LinkId:DB_PAYMENT_OPTION_DESC_LINK LinkDest:/web/${friendlyURL}/payment-option-description'); }} catch(err){}}try{setTimeout(function() {}, 100);}catch(err){}window.winHandle = window.open('/web/${friendlyURL}/payment-option-description#/?planId=8744&electionId=10&electionGroupId=0&opFmId=3140&calcRefId=null&linkId=DB_PAYMENT_OPTION_DESC_LINK&technicalNameForLink=DB_PAYMENT_OPTION_DESC_LINK&userFriendlyNameForLink=DB_PAYMENT_OPTION_DESC_LINK&domain=Ben-DB&baseClientIndicator=Base','DB_PAYMENT_OPTION_DESC_LINK','titlebar=yes,scrollbars=yes,resizable=yes,width=980,height=560');if(typeof XD != 'undefined'){XD.registerWindow('DB_PAYMENT_OPTION_DESC_LINK',window.winHandle);}try{setSessionTimeOut()}catch(err){};return false;\" href=\"/web/${friendlyURL}/payment-option-description#/?planId=8744&electionId=10&electionGroupId=0&opFmId=3140&calcRefId=null&linkId=DB_PAYMENT_OPTION_DESC_LINK&technicalNameForLink=DB_PAYMENT_OPTION_DESC_LINK&userFriendlyNameForLink=DB_PAYMENT_OPTION_DESC_LINK&domain=Ben-DB&baseClientIndicator=Base\" class=\"ah-secondaryWindow\">Learn More</A>",
+                        "optionalFormToYouAmountList": [
+                            {
+                                "optionalFormAmount": 1956.71,
+                                "optionalFormFrequencyDescription": "(monthly)",
+                                "popUpAmountText": "If your beneficiary dies before you, your payments will increase to $1,234.00."
+                            }
+                        ],
+                        "optionalFormBeneficiaryList": [
+                            {
+                                "beneficiaryText": "Beneficiary Benefit (for payments after your death)",
+                                "beneficiaryAmount": 111.11,
+                                "benefitFrequency": "(monthly)"
+                            }
+                        ],
+                        "optionalFormPanelRelativeValueSection": {},
+                        "autoSelectedFormsOfPaymentList": [],
+                        "hypotheticalOptionalForm": false,
+                        "optionalFormSelected": false
+                    },
+                    {
+                        "optionalFormGroupId": 2325,
+                        "optionalFormId": 3130,
+                        "lableFrequencyId": "M",
+                        "optionalFormPanelHeader": "50% Joint and Survivor Annuity",
+                        "optionalFormPanelLeadinText": "UNRESOLVED_ASSET",
+                        "optionalFormPanelText": "UNRESOLVED_ASSET",
+                        "optionalFormPanelLearnMoreLink": "<A onclick=\"if(isUACrossEnabled()){try{ga('trackerUa1.send','event', 'Internal Link' ,'Link click','LinkId:DB_PAYMENT_OPTION_DESC_LINK LinkDest:/web/${friendlyURL}/payment-option-description'); } catch(err){}} if(isUAClientEnabled()){ try{if(isGTMEnabled()){dataLayer.push({'event':'UPointLinkEvent','linkCategory':'Internal Link','linkAction':'Link Click','linkLabel':'LinkId:DB_PAYMENT_OPTION_DESC_LINK LinkDest:/web/${friendlyURL}/payment-option-description'});}else{ga('trackerUa2.send','event', 'Internal Link' ,'Link click','LinkId:DB_PAYMENT_OPTION_DESC_LINK LinkDest:/web/${friendlyURL}/payment-option-description'); }} catch(err){}}try{setTimeout(function() {}, 100);}catch(err){}window.winHandle = window.open('/web/${friendlyURL}/payment-option-description#/?planId=8744&electionId=10&electionGroupId=0&opFmId=3130&calcRefId=null&linkId=DB_PAYMENT_OPTION_DESC_LINK&technicalNameForLink=DB_PAYMENT_OPTION_DESC_LINK&userFriendlyNameForLink=DB_PAYMENT_OPTION_DESC_LINK&domain=Ben-DB&baseClientIndicator=Base','DB_PAYMENT_OPTION_DESC_LINK','titlebar=yes,scrollbars=yes,resizable=yes,width=980,height=560');if(typeof XD != 'undefined'){XD.registerWindow('DB_PAYMENT_OPTION_DESC_LINK',window.winHandle);}try{setSessionTimeOut()}catch(err){};return false;\" href=\"/web/${friendlyURL}/payment-option-description#/?planId=8744&electionId=10&electionGroupId=0&opFmId=3130&calcRefId=null&linkId=DB_PAYMENT_OPTION_DESC_LINK&technicalNameForLink=DB_PAYMENT_OPTION_DESC_LINK&userFriendlyNameForLink=DB_PAYMENT_OPTION_DESC_LINK&domain=Ben-DB&baseClientIndicator=Base\" class=\"ah-secondaryWindow\">Learn More</A>",
+                        "optionalFormToYouAmountList": [
+                            {
+                                "optionalFormAmount": 1789.45,
+                                "optionalFormFrequencyDescription": "(monthly)"
+                            }
+                        ],
+                        "optionalFormBeneficiaryList": [
+                            {
+                                "beneficiaryText": "Beneficiary Benefit (for payments after your death)",
+                                "beneficiaryAmount": 818.24,
+                                "benefitFrequency": "(monthly)"
+                            }
+                        ],
+                        "optionalFormPanelRelativeValueSection": {},
+                        "autoSelectedFormsOfPaymentList": [],
+                        "hypotheticalOptionalForm": false,
+                        "optionalFormSelected": false
+                    },
+                    {
+                        "optionalFormGroupId": 2325,
+                        "optionalFormId": 3030,
+                        "lableFrequencyId": "M",
+                        "optionalFormPanelHeader": "Single Life Annuity",
+                        "optionalFormPanelLeadinText": "A monthly payment to you only, until you die",
+                        "optionalFormPanelText": "<li><strong>No</strong> payment to your beneficiary</li><li>If married, your spouse must consent</li>",
+                        "optionalFormPanelLearnMoreLink": "<A onclick=\"if(isUACrossEnabled()){try{ga('trackerUa1.send','event', 'Internal Link' ,'Link click','LinkId:DB_PAYMENT_OPTION_DESC_LINK LinkDest:/web/${friendlyURL}/payment-option-description'); } catch(err){}} if(isUAClientEnabled()){ try{if(isGTMEnabled()){dataLayer.push({'event':'UPointLinkEvent','linkCategory':'Internal Link','linkAction':'Link Click','linkLabel':'LinkId:DB_PAYMENT_OPTION_DESC_LINK LinkDest:/web/${friendlyURL}/payment-option-description'});}else{ga('trackerUa2.send','event', 'Internal Link' ,'Link click','LinkId:DB_PAYMENT_OPTION_DESC_LINK LinkDest:/web/${friendlyURL}/payment-option-description'); }} catch(err){}}try{setTimeout(function() {}, 100);}catch(err){}window.winHandle = window.open('/web/${friendlyURL}/payment-option-description#/?planId=8744&electionId=10&electionGroupId=0&opFmId=3030&calcRefId=null&linkId=DB_PAYMENT_OPTION_DESC_LINK&technicalNameForLink=DB_PAYMENT_OPTION_DESC_LINK&userFriendlyNameForLink=DB_PAYMENT_OPTION_DESC_LINK&domain=Ben-DB&baseClientIndicator=Base','DB_PAYMENT_OPTION_DESC_LINK','titlebar=yes,scrollbars=yes,resizable=yes,width=980,height=560');if(typeof XD != 'undefined'){XD.registerWindow('DB_PAYMENT_OPTION_DESC_LINK',window.winHandle);}try{setSessionTimeOut()}catch(err){};return false;\" href=\"/web/${friendlyURL}/payment-option-description#/?planId=8744&electionId=10&electionGroupId=0&opFmId=3030&calcRefId=null&linkId=DB_PAYMENT_OPTION_DESC_LINK&technicalNameForLink=DB_PAYMENT_OPTION_DESC_LINK&userFriendlyNameForLink=DB_PAYMENT_OPTION_DESC_LINK&domain=Ben-DB&baseClientIndicator=Base\" class=\"ah-secondaryWindow\">Learn More</A>",
+                        "optionalFormToYouAmountList": [
+                            {
+                                "optionalFormAmount": 1976.21,
+                                "optionalFormFrequencyDescription": "(monthly)"
+                            }
+                        ],
+                        "optionalFormBeneficiaryList": [
+                            {
+                                "beneficiaryText": "Beneficiary Benefit (for payments after your death)",
+                                "beneficiaryAmount": 0,
+                                "benefitFrequency": "(monthly)"
+                            }
+                        ],
+                        "optionalFormPanelRelativeValueSection": {},
+                        "autoSelectedFormsOfPaymentList": [],
+                        "hypotheticalOptionalForm": false,
+                        "optionalFormSelected": false
+                    },
+                    {
+                        "optionalFormGroupId": 2325,
+                        "optionalFormId": 3130,
+                        "lableFrequencyId": "M",
+                        "optionalFormPanelHeader": "True Joint & Survivor",
+                        "optionalFormPanelLeadinText": "A monthly payment to you until you die, then to your beneficiary until your beneficiary dies",
+                        "optionalFormPanelText": "<li>After you die, benefit payment continues to your beneficiary until he or she dies</li><li>If married and beneficiary is <strong>not</strong> your spouse, your spouse must consent</li>",
+                        "optionalFormPanelLearnMoreLink": "<A onclick=\"if(isUACrossEnabled()){try{ga('trackerUa1.send','event', 'Internal Link' ,'Link click','LinkId:DB_PAYMENT_OPTION_DESC_LINK LinkDest:/web/${friendlyURL}/payment-option-description'); } catch(err){}} if(isUAClientEnabled()){ try{if(isGTMEnabled()){dataLayer.push({'event':'UPointLinkEvent','linkCategory':'Internal Link','linkAction':'Link Click','linkLabel':'LinkId:DB_PAYMENT_OPTION_DESC_LINK LinkDest:/web/${friendlyURL}/payment-option-description'});}else{ga('trackerUa2.send','event', 'Internal Link' ,'Link click','LinkId:DB_PAYMENT_OPTION_DESC_LINK LinkDest:/web/${friendlyURL}/payment-option-description'); }} catch(err){}}try{setTimeout(function() {}, 100);}catch(err){}window.winHandle = window.open('/web/${friendlyURL}/payment-option-description#/?planId=8744&electionId=10&electionGroupId=0&opFmId=3130&calcRefId=null&linkId=DB_PAYMENT_OPTION_DESC_LINK&technicalNameForLink=DB_PAYMENT_OPTION_DESC_LINK&userFriendlyNameForLink=DB_PAYMENT_OPTION_DESC_LINK&domain=Ben-DB&baseClientIndicator=Base','DB_PAYMENT_OPTION_DESC_LINK','titlebar=yes,scrollbars=yes,resizable=yes,width=980,height=560');if(typeof XD != 'undefined'){XD.registerWindow('DB_PAYMENT_OPTION_DESC_LINK',window.winHandle);}try{setSessionTimeOut()}catch(err){};return false;\" href=\"/web/${friendlyURL}/payment-option-description#/?planId=8744&electionId=10&electionGroupId=0&opFmId=3130&calcRefId=null&linkId=DB_PAYMENT_OPTION_DESC_LINK&technicalNameForLink=DB_PAYMENT_OPTION_DESC_LINK&userFriendlyNameForLink=DB_PAYMENT_OPTION_DESC_LINK&domain=Ben-DB&baseClientIndicator=Base\" class=\"ah-secondaryWindow\">Learn More</A>",
+                        "optionalFormToYouAmountList": [
+                            {
+                                "optionalFormAmount": 1653.42,
+                                "optionalFormFrequencyDescription": "(monthly)",
+                                "popUpAmountText": "If your beneficiary dies before you, your payments will decrease to $1,234.00."
+                            }
+                        ],
+                        "optionalFormBeneficiaryList": [
+                            {
+                                "beneficiaryText": "Beneficiary Benefit (for payments after your death)",
+                                "beneficiaryAmount": 1397.14,
+                                "benefitFrequency": "(monthly)"
+                            }
+                        ],
+                        "optionalFormPanelRelativeValueSection": {},
+                        "autoSelectedFormsOfPaymentList": [],
+                        "hypotheticalOptionalForm": false,
+                        "optionalFormSelected": false
+                    },
+                    {
+                        "optionalFormGroupId": 2325,
+                        "optionalFormId": 3170,
+                        "lableFrequencyId": "M",
+                        "optionalFormPanelHeader": "x% J&S Annuity w/ N Yr Crt",
+                        "optionalFormPanelLeadinText": "A monthly payment to you until you die, then to your beneficiary until your beneficiary dies",
+                        "optionalFormPanelText": "<li>If you die <strong>before</strong> 10-year cutoff date, your monthly payments will continue to your beneficiary <strong>until</strong> the 10-year cutoff date, or until your beneficiary dies</li><li>If you die <strong>after</strong> 10-year cutoff date, <strong>no</strong> payment to your beneficiary</li><li>If married, your spouse must consent</li><li>If married and beneficiary is <strong>not</strong> your spouse, your spouse must consent</li><li>Beneficiary can be added after you retire</li><li>If no beneficiary when you die, remaining payments made per plan rules</li>",
+                        "optionalFormPanelLearnMoreLink": "<A onclick=\"if(isUACrossEnabled()){try{ga('trackerUa1.send','event', 'Internal Link' ,'Link click','LinkId:DB_PAYMENT_OPTION_DESC_LINK LinkDest:/web/${friendlyURL}/payment-option-description'); } catch(err){}} if(isUAClientEnabled()){ try{if(isGTMEnabled()){dataLayer.push({'event':'UPointLinkEvent','linkCategory':'Internal Link','linkAction':'Link Click','linkLabel':'LinkId:DB_PAYMENT_OPTION_DESC_LINK LinkDest:/web/${friendlyURL}/payment-option-description'});}else{ga('trackerUa2.send','event', 'Internal Link' ,'Link click','LinkId:DB_PAYMENT_OPTION_DESC_LINK LinkDest:/web/${friendlyURL}/payment-option-description'); }} catch(err){}}try{setTimeout(function() {}, 100);}catch(err){}window.winHandle = window.open('/web/${friendlyURL}/payment-option-description#/?planId=8744&electionId=10&electionGroupId=0&opFmId=3170&calcRefId=null&linkId=DB_PAYMENT_OPTION_DESC_LINK&technicalNameForLink=DB_PAYMENT_OPTION_DESC_LINK&userFriendlyNameForLink=DB_PAYMENT_OPTION_DESC_LINK&domain=Ben-DB&baseClientIndicator=Base','DB_PAYMENT_OPTION_DESC_LINK','titlebar=yes,scrollbars=yes,resizable=yes,width=980,height=560');if(typeof XD != 'undefined'){XD.registerWindow('DB_PAYMENT_OPTION_DESC_LINK',window.winHandle);}try{setSessionTimeOut()}catch(err){};return false;\" href=\"/web/${friendlyURL}/payment-option-description#/?planId=8744&electionId=10&electionGroupId=0&opFmId=3170&calcRefId=null&linkId=DB_PAYMENT_OPTION_DESC_LINK&technicalNameForLink=DB_PAYMENT_OPTION_DESC_LINK&userFriendlyNameForLink=DB_PAYMENT_OPTION_DESC_LINK&domain=Ben-DB&baseClientIndicator=Base\" class=\"ah-secondaryWindow\">Learn More</A>",
+                        "optionalFormToYouAmountList": [
+                            {
+                                "optionalFormAmount": 1803.7,
+                                "optionalFormFrequencyDescription": "(monthly, <strong>before</strong> <span class=\"ah-noWrap\">June 1, 2018</span>)"
+                            },
+                            {
+                                "optionalFormAmount": 1803.7,
+                                "optionalFormFrequencyDescription": "(monthly, <strong>on or after</strong> <span class=\"ah-noWrap\">June 1, 2018</span>)"
+                            }
+                        ],
+                        "optionalFormBeneficiaryList": [
+                            {
+                                "beneficiaryText": "Beneficiary Benefit (after your death, for payments <strong>before</strong> <span class=\"ah-noWrap\">June 1, 2018</span>)",
+                                "beneficiaryAmount": 1803.7,
+                                "benefitFrequency": "(monthly)"
+                            },
+                            {
+                                "beneficiaryText": "Beneficiary Benefit (after your death, for payments <strong>on or after</strong> <span class=\"ah-noWrap\">June 1, 2018</span>)",
+                                "beneficiaryAmount": 1320.1,
+                                "benefitFrequency": "(monthly)"
+                            }
+                        ],
+                        "optionalFormPanelRelativeValueSection": {},
+                        "autoSelectedFormsOfPaymentList": [],
+                        "hypotheticalOptionalForm": false,
+                        "optionalFormSelected": false
+                    },
+                    {
+                        "optionalFormGroupId": 2325,
+                        "optionalFormId": 3210,
+                        "lableFrequencyId": "M",
+                        "optionalFormPanelHeader": "N Year Certain",
+                        "optionalFormPanelLeadinText": "A monthly payment to you until the cutoff date <span class=\"ah-nowrap\">(<strong>December 1, 2025</strong>)</span>",
+                        "optionalFormPanelText": "<li>If you die <strong>before</strong> 10-year cutoff date, your monthly payments will continue to your beneficiary <strong>until</strong> the 10-year cutoff date</li><li>If you die <strong>after</strong> 10-year cutoff date, <strong>no</strong> payment to your beneficiary</li><li>If married, your spouse must consent</li><li>Beneficiary can be added after you retire</li><li>Contingent beneficiary can be named (in case your beneficiary dies before the 10-year cutoff date)</li><li>If no beneficiary when you die, remaining payments made per plan rules</li>",
+                        "optionalFormPanelLearnMoreLink": "<A onclick=\"if(isUACrossEnabled()){try{ga('trackerUa1.send','event', 'Internal Link' ,'Link click','LinkId:DB_PAYMENT_OPTION_DESC_LINK LinkDest:/web/${friendlyURL}/payment-option-description'); } catch(err){}} if(isUAClientEnabled()){ try{if(isGTMEnabled()){dataLayer.push({'event':'UPointLinkEvent','linkCategory':'Internal Link','linkAction':'Link Click','linkLabel':'LinkId:DB_PAYMENT_OPTION_DESC_LINK LinkDest:/web/${friendlyURL}/payment-option-description'});}else{ga('trackerUa2.send','event', 'Internal Link' ,'Link click','LinkId:DB_PAYMENT_OPTION_DESC_LINK LinkDest:/web/${friendlyURL}/payment-option-description'); }} catch(err){}}try{setTimeout(function() {}, 100);}catch(err){}window.winHandle = window.open('/web/${friendlyURL}/payment-option-description#/?planId=8744&electionId=10&electionGroupId=0&opFmId=3210&calcRefId=null&linkId=DB_PAYMENT_OPTION_DESC_LINK&technicalNameForLink=DB_PAYMENT_OPTION_DESC_LINK&userFriendlyNameForLink=DB_PAYMENT_OPTION_DESC_LINK&domain=Ben-DB&baseClientIndicator=Base','DB_PAYMENT_OPTION_DESC_LINK','titlebar=yes,scrollbars=yes,resizable=yes,width=980,height=560');if(typeof XD != 'undefined'){XD.registerWindow('DB_PAYMENT_OPTION_DESC_LINK',window.winHandle);}try{setSessionTimeOut()}catch(err){};return false;\" href=\"/web/${friendlyURL}/payment-option-description#/?planId=8744&electionId=10&electionGroupId=0&opFmId=3210&calcRefId=null&linkId=DB_PAYMENT_OPTION_DESC_LINK&technicalNameForLink=DB_PAYMENT_OPTION_DESC_LINK&userFriendlyNameForLink=DB_PAYMENT_OPTION_DESC_LINK&domain=Ben-DB&baseClientIndicator=Base\" class=\"ah-secondaryWindow\">Learn More</A>",
+                        "optionalFormToYouAmountList": [
+                            {
+                                "optionalFormAmount": 1882.26,
+                                "optionalFormFrequencyDescription": "(monthly, <strong>before</strong> <span class=\"ah-noWrap\">December 1, 2025</span>)"
+                            },
+                            {
+                                "optionalFormAmount": 0,
+                                "optionalFormFrequencyDescription": "(monthly, <strong>on or after</strong> <span class=\"ah-noWrap\">December 1, 2025</span>)"
+                            }
+                        ],
+                        "optionalFormBeneficiaryList": [
+                            {
+                                "beneficiaryText": "Beneficiary Benefit (after your death, for payments <strong>before</strong> <span class=\"ah-noWrap\">December 1, 2025</span>)",
+                                "beneficiaryAmount": 1882.26,
+                                "benefitFrequency": "(monthly)"
+                            },
+                            {
+                                "beneficiaryText": "Beneficiary Benefit (after your death, for payments <strong>on or after</strong> <span class=\"ah-noWrap\">December 1, 2025</span>)",
+                                "beneficiaryAmount": 0,
+                                "benefitFrequency": "(monthly)"
+                            }
+                        ],
+                        "optionalFormPanelRelativeValueSection": {},
+                        "autoSelectedFormsOfPaymentList": [],
+                        "hypotheticalOptionalForm": false,
+                        "optionalFormSelected": false
+                    },
+                    {
+                        "optionalFormGroupId": 2325,
+                        "optionalFormId": 3160,
+                        "lableFrequencyId": "M",
+                        "optionalFormPanelHeader": "Indexed Life Annuity",
+                        "optionalFormPanelLeadinText": "A monthly payment to you only, until you die",
+                        "optionalFormPanelText": "<li><strong>No</strong> payment to your beneficiary</li><li>If married, your spouse must consent</li>",
+                        "optionalFormPanelLearnMoreLink": "<A onclick=\"if(isUACrossEnabled()){try{ga('trackerUa1.send','event', 'Internal Link' ,'Link click','LinkId:DB_PAYMENT_OPTION_DESC_LINK LinkDest:/web/${friendlyURL}/payment-option-description'); } catch(err){}} if(isUAClientEnabled()){ try{if(isGTMEnabled()){dataLayer.push({'event':'UPointLinkEvent','linkCategory':'Internal Link','linkAction':'Link Click','linkLabel':'LinkId:DB_PAYMENT_OPTION_DESC_LINK LinkDest:/web/${friendlyURL}/payment-option-description'});}else{ga('trackerUa2.send','event', 'Internal Link' ,'Link click','LinkId:DB_PAYMENT_OPTION_DESC_LINK LinkDest:/web/${friendlyURL}/payment-option-description'); }} catch(err){}}try{setTimeout(function() {}, 100);}catch(err){}window.winHandle = window.open('/web/${friendlyURL}/payment-option-description#/?planId=8744&electionId=10&electionGroupId=0&opFmId=3160&calcRefId=null&linkId=DB_PAYMENT_OPTION_DESC_LINK&technicalNameForLink=DB_PAYMENT_OPTION_DESC_LINK&userFriendlyNameForLink=DB_PAYMENT_OPTION_DESC_LINK&domain=Ben-DB&baseClientIndicator=Base','DB_PAYMENT_OPTION_DESC_LINK','titlebar=yes,scrollbars=yes,resizable=yes,width=980,height=560');if(typeof XD != 'undefined'){XD.registerWindow('DB_PAYMENT_OPTION_DESC_LINK',window.winHandle);}try{setSessionTimeOut()}catch(err){};return false;\" href=\"/web/${friendlyURL}/payment-option-description#/?planId=8744&electionId=10&electionGroupId=0&opFmId=3160&calcRefId=null&linkId=DB_PAYMENT_OPTION_DESC_LINK&technicalNameForLink=DB_PAYMENT_OPTION_DESC_LINK&userFriendlyNameForLink=DB_PAYMENT_OPTION_DESC_LINK&domain=Ben-DB&baseClientIndicator=Base\" class=\"ah-secondaryWindow\">Learn More</A>",
+                        "optionalFormToYouAmountList": [
+                            {
+                                "optionalFormAmount": 1956.71,
+                                "optionalFormFrequencyDescription": "(monthly)"
+                            }
+                        ],
+                        "optionalFormBeneficiaryList": [
+                            {
+                                "beneficiaryText": "Beneficiary Benefit (for payments after your death)",
+                                "beneficiaryAmount": 0,
+                                "benefitFrequency": "(monthly)"
+                            }
+                        ],
+                        "optionalFormPanelRelativeValueSection": {},
+                        "autoSelectedFormsOfPaymentList": [],
+                        "hypotheticalOptionalForm": false,
+                        "optionalFormSelected": false
+                    }
+                ],
+                "customTextBelowEachOptionalFormGroup": "",
+                "hypotheticalOptionalFormPanel": {},
+                "relativeValuePanelSection": {
+                    "relativeValuePanelHeader": "Relative Value",
+                    "relativeValueParagraphList": [
+                        "Retirement4X is legally required to provide you with relative value information for the payment options available to you. This information will help you compare the values of your payment options, relative to each other.",
+                        "It's difficult to compare all your options because they may be paid over different periods of time. For example, some are paid monthly for only your lifetime and some are paid monthly for the lifetime of you and your spouse.",
+                        "While you must choose an option based on your personal situation, the relative value information shows how the value of each payment option compares to the values of the others. The relative value information is only an estimate because the true relative value depends on how long you live.",
+                        "The payment option amounts are all about equal in relative value to the HARDCODED Normal OpFm. This relative value comparison is made by comparing the value of each available payment option to the value of the HARDCODED Normal OpFm. This comparison uses interest and average life expectancy assumptions.",
+                        " An interest rate assumption of 10.0 was used for all other optional forms of payment. The actual relative value of payments made to you will depend on how long you live. If you want more information on the average life expectancies used in this calculation, contact the Premier Benefits Center at 1-800-XXX-XXX.",
+                        "For the relative values comparison, we calculated your HARDCODED Normal OpFm using your spouse as a beneficiary and using an estimated birth date of <strong>1970-01-01</strong> for your spouse. You can provide the actual birth date for your spouse and receive an updated calculation. However, this request would require a recalculation of your payment options, which could change your benefit amount and may delay your payment."
+                    ]
+                },
+                "hasHypoOptionalFormInGroup": false,
+                "hasSelectedPrimaryPayment": false,
+                "hasLumpSum": true,
+                "hasDecreasingAnnuity": false,
+                "cntPctHypOpfm": false,
+                "chngDtHypOpfm": false,
+                "deferElectionSelected": false
+            },
+            {
+                "selectedOptionalFormId": 1000000000,
+                "elecGroupId": 0,
+                "planId": 8744,
+                "electionId": 10,
+                "optionalFormGroupId": 2345,
+                "optionalFormGroupDescription": "Main Forms",
+                "multipleOptionalFormPaymentHeader": "Choose From This Form of Payment List (2 of 2)&mdash;Main Forms",
+                "primaryOptionalFormPaymentList": [
+                    {
+                        "optionalFormGroupId": 2345,
+                        "optionalFormId": 3011,
+                        "lableFrequencyId": "L",
+                        "optionalFormPanelHeader": "Lump Sum Distribution - 2",
+                        "optionalFormPanelLeadinText": "UNRESOLVED_ASSET",
+                        "optionalFormPanelText": "UNRESOLVED_ASSET",
+                        "optionalFormPanelLearnMoreLink": "<A onclick=\"if(isUACrossEnabled()){try{ga('trackerUa1.send','event', 'Internal Link' ,'Link click','LinkId:DB_PAYMENT_OPTION_DESC_LINK LinkDest:/web/${friendlyURL}/payment-option-description'); } catch(err){}} if(isUAClientEnabled()){ try{if(isGTMEnabled()){dataLayer.push({'event':'UPointLinkEvent','linkCategory':'Internal Link','linkAction':'Link Click','linkLabel':'LinkId:DB_PAYMENT_OPTION_DESC_LINK LinkDest:/web/${friendlyURL}/payment-option-description'});}else{ga('trackerUa2.send','event', 'Internal Link' ,'Link click','LinkId:DB_PAYMENT_OPTION_DESC_LINK LinkDest:/web/${friendlyURL}/payment-option-description'); }} catch(err){}}try{setTimeout(function() {}, 100);}catch(err){}window.winHandle = window.open('/web/${friendlyURL}/payment-option-description#/?planId=8744&electionId=10&electionGroupId=0&opFmId=3011&calcRefId=null&linkId=DB_PAYMENT_OPTION_DESC_LINK&technicalNameForLink=DB_PAYMENT_OPTION_DESC_LINK&userFriendlyNameForLink=DB_PAYMENT_OPTION_DESC_LINK&domain=Ben-DB&baseClientIndicator=Base','DB_PAYMENT_OPTION_DESC_LINK','titlebar=yes,scrollbars=yes,resizable=yes,width=980,height=560');if(typeof XD != 'undefined'){XD.registerWindow('DB_PAYMENT_OPTION_DESC_LINK',window.winHandle);}try{setSessionTimeOut()}catch(err){};return false;\" href=\"/web/${friendlyURL}/payment-option-description#/?planId=8744&electionId=10&electionGroupId=0&opFmId=3011&calcRefId=null&linkId=DB_PAYMENT_OPTION_DESC_LINK&technicalNameForLink=DB_PAYMENT_OPTION_DESC_LINK&userFriendlyNameForLink=DB_PAYMENT_OPTION_DESC_LINK&domain=Ben-DB&baseClientIndicator=Base\" class=\"ah-secondaryWindow\">Learn More</A>",
+                        "optionalFormToYouAmountList": [
+                            {
+                                "optionalFormAmount": 274063.06,
+                                "optionalFormFrequencyDescription": "(one-time)"
+                            }
+                        ],
+                        "optionalFormBeneficiaryList": [
+                            {
+                                "beneficiaryText": "UNRESOLVED_ASSET",
+                                "benefitFrequency": "(one-time)"
+                            }
+                        ],
+                        "optionalFormPanelRelativeValueSection": {},
+                        "autoSelectedFormsOfPaymentList": [],
+                        "hypotheticalOptionalForm": false,
+                        "optionalFormSelected": false
+                    },
+                    {
+                        "optionalFormGroupId": 2345,
+                        "optionalFormId": 3030,
+                        "lableFrequencyId": "M",
+                        "optionalFormPanelHeader": "Single Life Annuity - 2",
+                        "optionalFormPanelLeadinText": "UNRESOLVED_ASSET",
+                        "optionalFormPanelText": "UNRESOLVED_ASSET",
+                        "optionalFormPanelLearnMoreLink": "<A onclick=\"if(isUACrossEnabled()){try{ga('trackerUa1.send','event', 'Internal Link' ,'Link click','LinkId:DB_PAYMENT_OPTION_DESC_LINK LinkDest:/web/${friendlyURL}/payment-option-description'); } catch(err){}} if(isUAClientEnabled()){ try{if(isGTMEnabled()){dataLayer.push({'event':'UPointLinkEvent','linkCategory':'Internal Link','linkAction':'Link Click','linkLabel':'LinkId:DB_PAYMENT_OPTION_DESC_LINK LinkDest:/web/${friendlyURL}/payment-option-description'});}else{ga('trackerUa2.send','event', 'Internal Link' ,'Link click','LinkId:DB_PAYMENT_OPTION_DESC_LINK LinkDest:/web/${friendlyURL}/payment-option-description'); }} catch(err){}}try{setTimeout(function() {}, 100);}catch(err){}window.winHandle = window.open('/web/${friendlyURL}/payment-option-description#/?planId=8744&electionId=10&electionGroupId=0&opFmId=3030&calcRefId=null&linkId=DB_PAYMENT_OPTION_DESC_LINK&technicalNameForLink=DB_PAYMENT_OPTION_DESC_LINK&userFriendlyNameForLink=DB_PAYMENT_OPTION_DESC_LINK&domain=Ben-DB&baseClientIndicator=Base','DB_PAYMENT_OPTION_DESC_LINK','titlebar=yes,scrollbars=yes,resizable=yes,width=980,height=560');if(typeof XD != 'undefined'){XD.registerWindow('DB_PAYMENT_OPTION_DESC_LINK',window.winHandle);}try{setSessionTimeOut()}catch(err){};return false;\" href=\"/web/${friendlyURL}/payment-option-description#/?planId=8744&electionId=10&electionGroupId=0&opFmId=3030&calcRefId=null&linkId=DB_PAYMENT_OPTION_DESC_LINK&technicalNameForLink=DB_PAYMENT_OPTION_DESC_LINK&userFriendlyNameForLink=DB_PAYMENT_OPTION_DESC_LINK&domain=Ben-DB&baseClientIndicator=Base\" class=\"ah-secondaryWindow\">Learn More</A>",
+                        "optionalFormToYouAmountList": [
+                            {
+                                "optionalFormAmount": 1976.21,
+                                "optionalFormFrequencyDescription": "(monthly)"
+                            }
+                        ],
+                        "optionalFormBeneficiaryList": [
+                            {
+                                "beneficiaryText": "UNRESOLVED_ASSET",
+                                "beneficiaryAmount": 0,
+                                "benefitFrequency": "(monthly)"
+                            }
+                        ],
+                        "optionalFormPanelRelativeValueSection": {},
+                        "autoSelectedFormsOfPaymentList": [],
+                        "hypotheticalOptionalForm": false,
+                        "optionalFormSelected": false
+                    }
+                ],
+                "customTextBelowEachOptionalFormGroup": "",
+                "hypotheticalOptionalFormPanel": {},
+                "relativeValuePanelSection": {
+                    "relativeValuePanelHeader": "Relative Value",
+                    "relativeValueParagraphList": [
+                        "Retirement4X is legally required to provide you with relative value information for the payment options available to you. This information will help you compare the values of your payment options, relative to each other.",
+                        "It's difficult to compare all your options because they may be paid over different periods of time. For example, some are paid monthly for only your lifetime and some are paid monthly for the lifetime of you and your spouse.",
+                        "While you must choose an option based on your personal situation, the relative value information shows how the value of each payment option compares to the values of the others. The relative value information is only an estimate because the true relative value depends on how long you live.",
+                        "The payment option amounts are all about equal in relative value to the HARDCODED Normal OpFm. This relative value comparison is made by comparing the value of each available payment option to the value of the HARDCODED Normal OpFm. This comparison uses interest and average life expectancy assumptions.",
+                        " An interest rate assumption of 10.0 was used for all other optional forms of payment. The actual relative value of payments made to you will depend on how long you live. If you want more information on the average life expectancies used in this calculation, contact the Premier Benefits Center at 1-800-XXX-XXX.",
+                        "For the relative values comparison, we calculated your HARDCODED Normal OpFm using your spouse as a beneficiary and using an estimated birth date of <strong>1970-01-01</strong> for your spouse. You can provide the actual birth date for your spouse and receive an updated calculation. However, this request would require a recalculation of your payment options, which could change your benefit amount and may delay your payment."
+                    ]
+                },
+                "hasHypoOptionalFormInGroup": false,
+                "hasSelectedPrimaryPayment": false,
+                "hasLumpSum": true,
+                "hasDecreasingAnnuity": false,
+                "cntPctHypOpfm": false,
+                "chngDtHypOpfm": false,
+                "deferElectionSelected": false
+            }
+        ]
+    },
+    "customTextBelowAllPayments": "",
+    "paymentChoicePanelList": [],
+    "flowButtonNavigation": {
+        "buttonList": [
+            {
+                "action": "continue",
+                "label": "Continue"
+            },
+            {
+                "action": "comeBackLater",
+                "label": "Come Back Later"
+            },
+            {
+                "action": "quit",
+                "label": "Quit"
+            }
+        ],
+        "quitModalContent": {
+            "title": "What do you want to do?",
+            "bodyList": [
+                {
+                    "heading": "Save",
+                    "paragraph": "Keep the choices you've made, so far. Finish making pension choices later."
+                },
+                {
+                    "heading": "Quit",
+                    "paragraph": "Cancel your pension request and lose all the pension choices you've made, so far."
+                },
+                {
+                    "heading": "Return",
+                    "paragraph": "Go back to the current page without quitting."
+                }
+            ],
+            "buttonList": [
+                {
+                    "action": "comeBackLater",
+                    "label": "Save"
+                },
+                {
+                    "action": "quit",
+                    "label": "Quit"
+                },
+                {
+                    "action": "return",
+                    "label": "Return"
+                }
+            ]
+        }
+    },
+    "choosePaymentOptionPageFootnoteSection": {
+        "choosePaymentOptionPageFootnoteText": "Footnotes",
+        "footnoteHeader": "",
+        "choosePaymentOptionFootnoteList": []
+    },
+    "editList": [
+        {
+            "editId": "91000102",
+            "editMessage": "You must choose a form of payment before continuing."
+        }
+    ]
+}

@@ -1,0 +1,88 @@
+{
+    "status": {
+        "statusCode": 200,
+        "statusMessage": "OK"
+    },
+    "paymentModalBean": {
+        "pageNameText": "5. Pension Payments",
+        "changeText":"Change",
+        "reviewText":"Review",
+        "paymentTable": [
+            {
+                "paymentDescription": "Premier Pension Plan One-Time Payments",
+                "paymentTableContent": [
+                    {
+                        "planDescriptionText": "Plan",
+                        "electionDescriptionText": "Benefit",
+                        "optionalFormGroupDescriptionText": "Form of Payment",
+                        "PaymentToYouText": "Payment to you"
+                    }
+                ],
+                "paymentTableContentdata": [
+                    {
+                        "planDescription": "Premier Pension Plan B—",
+                        "electionDescription": "Non-Union Benefit",
+                        "optionalFormDescription": "Lump Sum Option",
+                        "optionalFormGrossAmount": "$73,157.50",
+                        "labelFrequency":"(one-time)"
+                    },
+                    {
+                        "planDescription": "Premier Pension Plan B—",
+                        "electionDescription": "Grandfathered Benefit",
+                        "optionalFormDescription": "Lump Sum Option",
+                        "optionalFormGrossAmount": "$24,425.50",
+                        "labelFrequency":"(one-time)"
+                    }
+                ],
+                "deductionsRollAmount": "$97,582.50",
+                "totalAmountText": "Total Payment Before Deductions",
+                "totalRolloverAmount": "-$89,425.50",
+                "rolloverAmountText": "Rollover Amount"
+            },
+            {
+                "paymentDescription": "Cash Balance Plan Annuity Payments",
+                "paymentTableContent": [
+                    {
+                        "planDescriptionText": "Plan",
+                        "electionDescriptionText": "Benefit",
+                        "optionalFormGroupDescriptionText": "Form of Payment",
+                        "PaymentToYouText": "Payment to you"
+                    }
+                ],
+                "paymentTableContentdata": [
+                    {
+                        "planDescription": "Premier Pension Plan—",
+                        "electionDescription": "Cash Balance Benefit",
+                        "optionalFormDescription": "Straight Life Annuity",
+                        "optionalFormGrossAmount": "$876.34",
+                        "labelFrequency":"(monthly)"
+                    }
+                ],
+                "totalRolloverAmount": "$876.34",
+                "rolloverAmountText": "Rollover Amount"
+            },
+            {
+                "paymentDescription": "Premier Pension Plan Deferred Payments",
+                "paymentTableContent": [
+                    {
+                        "planDescriptionText": "Plan",
+                        "electionDescriptionText": "Benefit",
+                        "optionalFormGroupDescriptionText": "Form of Payment",
+                        "PaymentToYouText": "Payment to you"
+                    }
+                ],
+                "paymentTableContentdata": [
+                    {
+                        "planDescription": "Premier Pension Plan—",
+                        "electionDescription": "Cash Balance Benefit",
+                        "optionalFormDescription": "Deferred",
+                        "optionalFormGrossAmount": "$0.00",
+                         "labelFrequency":"(monthly)"
+                    }
+                ],
+                "totalRolloverAmount": "$0.00",
+                "rolloverAmountText": "Rollover Amount"
+            }
+        ]
+    }
+}

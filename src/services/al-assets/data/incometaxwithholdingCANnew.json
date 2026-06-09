@@ -1,0 +1,96 @@
+{
+    "status": {
+        "statusCode": 200,
+        "statusMessage": "OK"
+    },
+    "changeIncomeTaxWithholding": {
+        "flowNameText": "Make Your Retirement Choices",
+        "pageNameText": "Change Your Income Tax Withholding",
+        "introText": "Review your state and federal income tax withholding.",
+        "tipBadgeText": "tip",
+        "tipHeaderText": "Consider All Your Income",
+        "tipContentText": "<p>Make sure you're withholding enough to avoid any tax penalties.</p>",
+        "taxHeaderText": "Consider All Your Income",
+        "taxContentText": "Review the <A onclick=\"if(isUACrossEnabled()){try{ga('trackerUa1.send','event', 'Internal Link' ,'Link click','LinkId:DB_ELEC_NOR_PAGE LinkDest:/web/retirement4x/db-notice-of-rights'); } catch(err){}} if(isUAClientEnabled()){ try{if(isGTMEnabled()){dataLayer.push({'event':'UPointLinkEvent','linkCategory':'Internal Link','linkAction':'Link Click','linkLabel':'LinkId:DB_ELEC_NOR_PAGE LinkDest:/web/retirement4x/db-notice-of-rights'});}else{ga('trackerUa2.send','event', 'Internal Link' ,'Link click','LinkId:DB_ELEC_NOR_PAGE LinkDest:/web/retirement4x/db-notice-of-rights'); }} catch(err){}}try{setTimeout(function() {}, 100);}catch(err){}window.winHandle = window.open('/web/retirement4x/db-notice-of-rights?linkId=DB_ELEC_NOR_PAGE&technicalNameForLink=DB_ELEC_NOR_PAGE&userFriendlyNameForLink=DB Notice of Rights in Secondary Window&domain=Ben-DB&baseClientIndicator=Base','DB_ELEC_NOR_PAGE','titlebar=yes,scrollbars=yes,resizable=yes,width=980,height=560');if(typeof XD != 'undefined'){XD.registerWindow('DB_ELEC_NOR_PAGE',window.winHandle);}try{setSessionTimeOut()}catch(err){};return false;\" href=\"/web/retirement4x/db-notice-of-rights?linkId=DB_ELEC_NOR_PAGE&technicalNameForLink=DB_ELEC_NOR_PAGE&userFriendlyNameForLink=DB Notice of Rights in Secondary Window&domain=Ben-DB&baseClientIndicator=Base\" class=\"ah-secondaryWindow\">Notice of Your Rights</A> for general tax information about payments from the plan.",
+        "paymentNameText": "FAP Annuity Payment",
+        "paymentDescriptionText": "You can make changes to your withholdings.",
+        "incomeTaxWithholdingTables": [
+            {
+                "id": "CAN_FEDERAL",
+                "tableHeaderText": "Federal Income Tax Withholding",
+                "rowList": [
+                    {
+                        "labelList": [
+                            "Taxable Income"
+                        ],
+                        "displayValue": "$10,726.64"
+                    },
+                    {
+                        "accessibilityText": "Enter a specific amount (in 0.00 format) that you want withheld.",
+                        "labelList": [
+                            "<strong>Federal Personal Tax Credit Amount (TD1)</strong>",
+                            "(minimum <span class=\"al-noWrap\">$0.00</span>)"
+                        ],
+                        "defaultValue": 0,
+                        "fieldType": "amount"
+                    },
+                    {
+                        "accessibilityText": "Enter a specific additional amount (in 0.00 format) that you want withheld for federal taxes.",
+                        "labelList": [
+                            "<strong>Withhold Additional Amount</strong>"
+                        ],
+                        "defaultValue": 0,
+                        "fieldType": "amount"
+                    }
+                ]
+            },
+            {
+                "id": "CAN_STATE",
+                "tableHeaderText": "Provincial Income Tax Withholding",
+                "rowList": [
+                    {
+                        "labelList": [
+                            "Taxable Income"
+                        ],
+                        "displayValue": "$10,726.64"
+                    },
+                    {
+                        "labelList": [
+                            "Province"
+                        ],
+                        "displayValue": "CA"
+                    },
+                    {
+                        "accessibilityText": "Enter a specific amount (in 0.00 format) that you want withheld.",
+                        "labelList": [
+                            "<strong>Provincial Personal Tax Credit Amount (TD1)</strong>",
+                            "(minimum <span class=\"al-noWrap\">$0.00</span>)"
+                        ],
+                        "defaultValue": 0,
+                        "fieldType": "amount"
+                    },
+                    {
+                        "accessibilityText": "Enter a specific additional amount (in 0.00 format) that you want withheld for provincial taxes.",
+                        "labelList": [
+                            "<strong>Withhold Additional Amount</strong>"
+                        ],
+                        "defaultValue": 569.23,
+                        "fieldType": "amount"
+                    }
+                ]
+            }
+        ],
+        "flowButtonNavigation": {
+            "buttonList": [
+                {
+                    "action": "saveReturn",
+                    "label": "Save & Return"
+                },
+                {
+                    "action": "cancel",
+                    "label": "Cancel"
+                }
+            ]
+        }
+    }
+}

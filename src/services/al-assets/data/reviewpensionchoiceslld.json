@@ -1,0 +1,1017 @@
+{
+    "responseStatus": {
+        "statusCode": 200,
+        "statusMessage": "OK"
+    },
+    "transactionTitle": "Make Your Retirement Choices",
+    "pageTitle": "Review Your Pension Choices",
+    "pageSummary": "Below is a summary of your pension choices. Review your choices closely and make any needed changes. When you are satisfied with your pension choices, submit them.",
+    "changeDateBeneModalContent": {
+        "heading": "Do you want to change your choices?",
+        "introContent": "<p>Youll need to start the retirement process again if you change one or more of these choices:</p>",
+        "listedContent": "<ul><li>Your last day of employment</li><li>Date you begin receiving benefits</li><li>Your beneficiaries</li></ul>",
+        "endingContent": "<p>This is because the benefits options available and amounts may change, too.</p>",
+        "buttonList": [
+            {
+                "action": "continue",
+                "label": ""
+            },
+            {
+                "action": "return",
+                "label": ""
+            }
+        ]
+    },
+    "retirementDatesContent": {
+        "heading": "Your Retirement Dates",
+        "changeButtonAltText": "Select this button to change your retirement dates.",
+        "yourLastDayLabel": "Your Last Day",
+        "yourLastDayDate": "2018-06-30",
+        "beginBenefitDateLabel": "Date You May Begin Receiving Benefits",
+        "beginBenefitDate": "2018-07-01"
+    },
+    "paymentElections": [
+        {
+            "paymentId": "1000",
+            "paymentDescription": "Premier Lump Sum Payment",
+            "paymentElectionBenefits": [
+                {
+                    "planId": "8744",
+                    "benefitDescription": "Premier Simple Election",
+                    "planDescription": "Premier Final Average Pay Plan",
+                    "elecId": "10",
+                    "elecDescription": "Premier Simple Election",
+                    "elecGroupId": "0",
+                    "paymentOptionId": "3010",
+                    "paymentOptionDescription": "Single Life Annuity",
+                    "paymentOptionToYouAmt": "$76,324.32",
+                    "paymentOptionFrequency": "M",
+                    "showChangeButton": true,
+                    "showPaymentOption": true
+                },
+                {
+                    "planId": "8744",
+                    "benefitDescription": "Premier Simple Election2",
+                    "planDescription": "Premier Final Average Pay Plan",
+                    "elecId": "15",
+                    "elecDescription": "Premier Simple Election2",
+                    "elecGroupId": "0",
+                    "paymentOptionId": "3015",
+                    "paymentOptionDescription": "Joint and Surv",
+                    "paymentOptionToYouAmt": "$76,324.32",
+                    "paymentOptionFrequency": "M",
+                    "showChangeButton": true,
+                    "showPaymentOption": true
+                },
+                {
+                    "planId": "8744",
+                    "benefitDescription": "Premier Simple Election3",
+                    "planDescription": "Premier Final Average Pay Plan",
+                    "elecId": "20",
+                    "elecDescription": "Premier Simple Election3",
+                    "elecGroupId": "0",
+                    "paymentOptionId": "3020",
+                    "paymentOptionDescription": "Joint Surv popup",
+                    "paymentOptionToYouAmt": "$76,324.32",
+                    "paymentOptionFrequency": "M",
+                    "showChangeButton": true,
+                    "showPaymentOption": true
+                },
+                {
+                    "planId": "8744",
+                    "benefitDescription": "Premier Simple Election4",
+                    "planDescription": "Premier Final Average Pay Plan",
+                    "elecId": "25",
+                    "elecDescription": "Premier Simple Election4",
+                    "elecGroupId": "0",
+                    "paymentOptionId": "3025",
+                    "paymentOptionDescription": "Joint Surv year certain",
+                    "paymentOptionToYouAmt": "$76,324.32",
+                    "paymentOptionFrequency": "M",
+                    "showChangeButton": true,
+                    "showPaymentOption": true
+                },
+                {
+                    "planId": "8744",
+                    "benefitDescription": "Premier Simple Election5",
+                    "planDescription": "Premier Final Average Pay Plan",
+                    "elecId": "30",
+                    "elecDescription": "Premier Simple Election5",
+                    "elecGroupId": "0",
+                    "paymentOptionId": "3030",
+                    "paymentOptionDescription": "Level income joint survivor",
+                    "paymentOptionToYouAmt": "$76,324.32",
+                    "paymentOptionFrequency": "M",
+                    "showChangeButton": true,
+                    "showPaymentOption": true
+                },
+                {
+                    "planId": "8744",
+                    "benefitDescription": "Premier Simple Election6",
+                    "planDescription": "Premier Final Average Pay Plan",
+                    "elecId": "35",
+                    "elecDescription": "Premier Simple Election6",
+                    "elecGroupId": "0",
+                    "paymentOptionId": "3035",
+                    "paymentOptionDescription": "Level income joint survivor pop up",
+                    "paymentOptionToYouAmt": "$76,324.32",
+                    "paymentOptionFrequency": "M",
+                    "showChangeButton": true,
+                    "showPaymentOption": true
+                },
+                {
+                    "planId": "8744",
+                    "benefitDescription": "Premier Simple Election7",
+                    "planDescription": "Premier Final Average Pay Plan",
+                    "elecId": "40",
+                    "elecDescription": "Premier Simple Election7",
+                    "elecGroupId": "0",
+                    "paymentOptionId": "3040",
+                    "paymentOptionDescription": "Level income",
+                    "paymentOptionToYouAmt": "$76,324.32",
+                    "paymentOptionFrequency": "M",
+                    "showChangeButton": true,
+                    "showPaymentOption": true
+                },
+                {
+                    "planId": "8744",
+                    "benefitDescription": "Premier Simple Election8",
+                    "planDescription": "Premier Final Average Pay Plan",
+                    "elecId": "45",
+                    "elecDescription": "Premier Simple Election8",
+                    "elecGroupId": "0",
+                    "paymentOptionId": "3045",
+                    "paymentOptionDescription": "Year Certain",
+                    "paymentOptionToYouAmt": "$76,324.32",
+                    "paymentOptionFrequency": "M",
+                    "showChangeButton": true,
+                    "showPaymentOption": true
+                },
+                {
+                    "planId": "8744",
+                    "benefitDescription": "Premier Simple Election9",
+                    "planDescription": "Premier Final Average Pay Plan",
+                    "elecId": "50",
+                    "elecDescription": "Premier Simple Election9",
+                    "elecGroupId": "0",
+                    "paymentOptionId": "3050",
+                    "paymentOptionDescription": "Year Certain Level",
+                    "paymentOptionToYouAmt": "$76,324.32",
+                    "paymentOptionFrequency": "M",
+                    "showChangeButton": true,
+                    "showPaymentOption": true
+                },
+                {
+                    "planId": "8744",
+                    "benefitDescription": "Premier Simple Election10",
+                    "planDescription": "Premier Final Average Pay Plan",
+                    "elecId": "55",
+                    "elecDescription": "Premier Simple Election10",
+                    "elecGroupId": "0",
+                    "paymentOptionId": "3055",
+                    "paymentOptionDescription": "Lump Sum",
+                    "paymentOptionToYouAmt": "$76,324.32",
+                    "paymentOptionFrequency": "M",
+                    "showChangeButton": true,
+                    "showPaymentOption": true
+                }
+            ],
+            "paymentTotalsLabel": "Total Payment Before Deductions",
+            "paymentDeductions": [
+                {
+                    "description": "Rollover Amount",
+                    "deductionAmount": "$76,324.32",
+                    "showChangeButton": true,
+                    "rolloverDeduction": true
+                },
+                {
+                    "description": "Federal Withholding",
+                    "deductionAmount": "$76,324.32",
+                    "showChangeButton": true,
+                    "rolloverDeduction": false
+                },
+                {
+                    "description": "State WIthholding",
+                    "deductionAmount": "$76,324.32",
+                    "showChangeButton": true,
+                    "rolloverDeduction": false
+                }
+            ],
+            "paymentDetailsContent": {
+                "primaryOptionalFormPaymentList": [
+                    {
+                        "optionalFormPanelHeader": "Single Life Annuity",
+                        "optionalFormPanelLeadinText": "A monthly payment to you only, until you die",
+                        "optionalFormPanelText": "<li><strong>No</strong> payment to your beneficiary</li><li>If married, your spouse must consent</li>",
+                        "optionalFormPanelLearnMoreLink": "<A onclick=\"if(isUACrossEnabled()){try{ga('trackerUa1.send','event', 'Internal Link' ,'Link click','LinkId:DB_PAYMENT_OPTION_DESC_LINK LinkDest:/web/retirement4x/payment-option-description'); } catch(err){}} if(isUAClientEnabled()){ try{if(isGTMEnabled()){dataLayer.push({'event':'UPointLinkEvent','linkCategory':'Internal Link','linkAction':'Link Click','linkLabel':'LinkId:DB_PAYMENT_OPTION_DESC_LINK LinkDest:/web/retirement4x/payment-option-description'});}else{ga('trackerUa2.send','event', 'Internal Link' ,'Link click','LinkId:DB_PAYMENT_OPTION_DESC_LINK LinkDest:/web/retirement4x/payment-option-description'); }} catch(err){}}try{setTimeout(function() {}, 100);}catch(err){}window.winHandle = window.open('/web/retirement4x/payment-option-description#/?planId=8744&electionId=10&electionGroupId=0&opFmId=3010&calcRefId=null&linkId=DB_PAYMENT_OPTION_DESC_LINK&technicalNameForLink=DB_PAYMENT_OPTION_DESC_LINK&userFriendlyNameForLink=DB_PAYMENT_OPTION_DESC_LINK&domain=Ben-DB&baseClientIndicator=Base','DB_PAYMENT_OPTION_DESC_LINK','titlebar=yes,scrollbars=yes,resizable=yes,width=980,height=560');if(typeof XD != 'undefined'){XD.registerWindow('DB_PAYMENT_OPTION_DESC_LINK',window.winHandle);}try{setSessionTimeOut()}catch(err){};return false;\" href=\"/web/retirement4x/payment-option-description#/?planId=8744&electionId=10&electionGroupId=0&opFmId=3010&calcRefId=null&linkId=DB_PAYMENT_OPTION_DESC_LINK&technicalNameForLink=DB_PAYMENT_OPTION_DESC_LINK&userFriendlyNameForLink=DB_PAYMENT_OPTION_DESC_LINK&domain=Ben-DB&baseClientIndicator=Base\" class=\"ah-secondaryWindow\">Learn More</A>",
+                        "optionalFormToYouAmountList": [
+                            {
+                                "optionalFormAmount": "$76,344.32",
+                                "optionalFormFrequencyDescription": "(monthly)"
+                            }
+                        ],
+                        "optionalFormBeneficiaryList": [
+                            {
+                                "beneficiaryText": "Beneficiary Benefit (for payments after your death)",
+                                "beneficiaryAmount": "$0.00",
+                                "benefitFrequency": "(monthly)"
+                            }
+                        ],
+                        "optionalFormPanelRelativeValueSection": {},
+                        "autoSelectedFormsOfPaymentList": [],
+                        "optionalFormSelected": false,
+                        "hypotheticalOptionalForm": false
+                    },
+                    {
+                        "optionalFormPanelHeader": "Joint and Surv",
+                        "optionalFormPanelLeadinText": "A monthly payment to you until you die, then <strong>50 1/3%</strong> of your monthly payment to your beneficiary until your beneficiary dies",
+                        "optionalFormPanelText": "<li>After you die, <strong>50 1/3%</strong> benefit payment to your beneficiary until he or she dies</li><li>If married and beneficiary is <strong>not</strong> your spouse, your spouse must consent</li>",
+                        "optionalFormPanelLearnMoreLink": "<A onclick=\"if(isUACrossEnabled()){try{ga('trackerUa1.send','event', 'Internal Link' ,'Link click','LinkId:DB_PAYMENT_OPTION_DESC_LINK LinkDest:/web/retirement4x/payment-option-description'); } catch(err){}} if(isUAClientEnabled()){ try{if(isGTMEnabled()){dataLayer.push({'event':'UPointLinkEvent','linkCategory':'Internal Link','linkAction':'Link Click','linkLabel':'LinkId:DB_PAYMENT_OPTION_DESC_LINK LinkDest:/web/retirement4x/payment-option-description'});}else{ga('trackerUa2.send','event', 'Internal Link' ,'Link click','LinkId:DB_PAYMENT_OPTION_DESC_LINK LinkDest:/web/retirement4x/payment-option-description'); }} catch(err){}}try{setTimeout(function() {}, 100);}catch(err){}window.winHandle = window.open('/web/retirement4x/payment-option-description#/?planId=8744&electionId=15&electionGroupId=0&opFmId=3015&calcRefId=null&linkId=DB_PAYMENT_OPTION_DESC_LINK&technicalNameForLink=DB_PAYMENT_OPTION_DESC_LINK&userFriendlyNameForLink=DB_PAYMENT_OPTION_DESC_LINK&domain=Ben-DB&baseClientIndicator=Base','DB_PAYMENT_OPTION_DESC_LINK','titlebar=yes,scrollbars=yes,resizable=yes,width=980,height=560');if(typeof XD != 'undefined'){XD.registerWindow('DB_PAYMENT_OPTION_DESC_LINK',window.winHandle);}try{setSessionTimeOut()}catch(err){};return false;\" href=\"/web/retirement4x/payment-option-description#/?planId=8744&electionId=15&electionGroupId=0&opFmId=3015&calcRefId=null&linkId=DB_PAYMENT_OPTION_DESC_LINK&technicalNameForLink=DB_PAYMENT_OPTION_DESC_LINK&userFriendlyNameForLink=DB_PAYMENT_OPTION_DESC_LINK&domain=Ben-DB&baseClientIndicator=Base\" class=\"ah-secondaryWindow\">Learn More</A>",
+                        "optionalFormToYouAmountList": [
+                            {
+                                "optionalFormAmount": "$7,654.32",
+                                "optionalFormFrequencyDescription": "(monthly)"
+                            }
+                        ],
+                        "optionalFormBeneficiaryList": [
+                            {
+                                "beneficiaryText": "Beneficiary Benefit (for payments after your death)",
+                                "beneficiaryAmount": "$76,324.32",
+                                "benefitFrequency": "(monthly)"
+                            }
+                        ],
+                        "optionalFormPanelRelativeValueSection": {},
+                        "autoSelectedFormsOfPaymentList": [],
+                        "optionalFormSelected": false,
+                        "hypotheticalOptionalForm": false
+                    },
+                    {
+                        "optionalFormPanelHeader": "Joint Surv popup",
+                        "optionalFormPanelLeadinText": "A monthly payment to you until you die (which <strong>increases</strong>, if your beneficiary dies before you), then <strong>50 1/3%</strong> of your monthly payment to your beneficiary until your beneficiary dies",
+                        "optionalFormPanelText": "<li>After you die, <strong>50 1/3%</strong> benefit payment to your beneficiary until he or she dies</li><li>If married and beneficiary is <strong>not</strong> your spouse, your spouse must consent</li><li>If beneficiary dies before you, the amount paid to you increases</li>",
+                        "optionalFormPanelLearnMoreLink": "<A onclick=\"if(isUACrossEnabled()){try{ga('trackerUa1.send','event', 'Internal Link' ,'Link click','LinkId:DB_PAYMENT_OPTION_DESC_LINK LinkDest:/web/retirement4x/payment-option-description'); } catch(err){}} if(isUAClientEnabled()){ try{if(isGTMEnabled()){dataLayer.push({'event':'UPointLinkEvent','linkCategory':'Internal Link','linkAction':'Link Click','linkLabel':'LinkId:DB_PAYMENT_OPTION_DESC_LINK LinkDest:/web/retirement4x/payment-option-description'});}else{ga('trackerUa2.send','event', 'Internal Link' ,'Link click','LinkId:DB_PAYMENT_OPTION_DESC_LINK LinkDest:/web/retirement4x/payment-option-description'); }} catch(err){}}try{setTimeout(function() {}, 100);}catch(err){}window.winHandle = window.open('/web/retirement4x/payment-option-description#/?planId=8744&electionId=20&electionGroupId=0&opFmId=3020&calcRefId=null&linkId=DB_PAYMENT_OPTION_DESC_LINK&technicalNameForLink=DB_PAYMENT_OPTION_DESC_LINK&userFriendlyNameForLink=DB_PAYMENT_OPTION_DESC_LINK&domain=Ben-DB&baseClientIndicator=Base','DB_PAYMENT_OPTION_DESC_LINK','titlebar=yes,scrollbars=yes,resizable=yes,width=980,height=560');if(typeof XD != 'undefined'){XD.registerWindow('DB_PAYMENT_OPTION_DESC_LINK',window.winHandle);}try{setSessionTimeOut()}catch(err){};return false;\" href=\"/web/retirement4x/payment-option-description#/?planId=8744&electionId=20&electionGroupId=0&opFmId=3020&calcRefId=null&linkId=DB_PAYMENT_OPTION_DESC_LINK&technicalNameForLink=DB_PAYMENT_OPTION_DESC_LINK&userFriendlyNameForLink=DB_PAYMENT_OPTION_DESC_LINK&domain=Ben-DB&baseClientIndicator=Base\" class=\"ah-secondaryWindow\">Learn More</A>",
+                        "optionalFormToYouAmountList": [
+                            {
+                                "optionalFormAmount": "$7,654.32",
+                                "optionalFormFrequencyDescription": "(monthly)",
+                                "popUpAmountText": "If your beneficiary dies before you, your payments will increase to $116.32."
+                            }
+                        ],
+                        "optionalFormBeneficiaryList": [
+                            {
+                                "beneficiaryText": "Beneficiary Benefit (for payments after your death)",
+                                "beneficiaryAmount": "$76,324.32",
+                                "benefitFrequency": "(monthly)"
+                            }
+                        ],
+                        "optionalFormPanelRelativeValueSection": {},
+                        "autoSelectedFormsOfPaymentList": [],
+                        "optionalFormSelected": false,
+                        "hypotheticalOptionalForm": false
+                    },
+                    {
+                        "optionalFormPanelHeader": "Joint Surv year certain",
+                        "optionalFormPanelLeadinText": "A monthly payment to you until you die, then to your beneficiary until your beneficiary dies",
+                        "optionalFormPanelText": "<li>If you die <strong>before</strong> 10-year cutoff date, your monthly payments will continue to your beneficiary <strong>until</strong> the 10-year cutoff date, or until your beneficiary dies</li><li>If you die <strong>after</strong> 10-year cutoff date, <strong>no</strong> payment to your beneficiary</li><li>If married, your spouse must consent</li><li>If married and beneficiary is <strong>not</strong> your spouse, your spouse must consent</li><li>Beneficiary can be added after you retire</li><li>If no beneficiary when you die, remaining payments made per plan rules</li>",
+                        "optionalFormPanelLearnMoreLink": "<A onclick=\"if(isUACrossEnabled()){try{ga('trackerUa1.send','event', 'Internal Link' ,'Link click','LinkId:DB_PAYMENT_OPTION_DESC_LINK LinkDest:/web/retirement4x/payment-option-description'); } catch(err){}} if(isUAClientEnabled()){ try{if(isGTMEnabled()){dataLayer.push({'event':'UPointLinkEvent','linkCategory':'Internal Link','linkAction':'Link Click','linkLabel':'LinkId:DB_PAYMENT_OPTION_DESC_LINK LinkDest:/web/retirement4x/payment-option-description'});}else{ga('trackerUa2.send','event', 'Internal Link' ,'Link click','LinkId:DB_PAYMENT_OPTION_DESC_LINK LinkDest:/web/retirement4x/payment-option-description'); }} catch(err){}}try{setTimeout(function() {}, 100);}catch(err){}window.winHandle = window.open('/web/retirement4x/payment-option-description#/?planId=8744&electionId=25&electionGroupId=0&opFmId=3025&calcRefId=null&linkId=DB_PAYMENT_OPTION_DESC_LINK&technicalNameForLink=DB_PAYMENT_OPTION_DESC_LINK&userFriendlyNameForLink=DB_PAYMENT_OPTION_DESC_LINK&domain=Ben-DB&baseClientIndicator=Base','DB_PAYMENT_OPTION_DESC_LINK','titlebar=yes,scrollbars=yes,resizable=yes,width=980,height=560');if(typeof XD != 'undefined'){XD.registerWindow('DB_PAYMENT_OPTION_DESC_LINK',window.winHandle);}try{setSessionTimeOut()}catch(err){};return false;\" href=\"/web/retirement4x/payment-option-description#/?planId=8744&electionId=25&electionGroupId=0&opFmId=3025&calcRefId=null&linkId=DB_PAYMENT_OPTION_DESC_LINK&technicalNameForLink=DB_PAYMENT_OPTION_DESC_LINK&userFriendlyNameForLink=DB_PAYMENT_OPTION_DESC_LINK&domain=Ben-DB&baseClientIndicator=Base\" class=\"ah-secondaryWindow\">Learn More</A>",
+                        "optionalFormToYouAmountList": [
+                            {
+                                "optionalFormAmount": "$7,654.32",
+                                "optionalFormFrequencyDescription": "(monthly)"
+                            }
+                        ],
+                        "optionalFormBeneficiaryList": [
+                            {
+                                "beneficiaryText": "Beneficiary Benefit (after your death, for payments <strong>before</strong> <span class=\"ah-noWrap\">May 1, 2019</span>)",
+                                "beneficiaryAmount": "$76,324.32",
+                                "benefitFrequency": "(monthly)"
+                            },
+                            {
+                                "beneficiaryText": "Beneficiary Benefit (after your death, for payments <strong>on or after</strong> <span class=\"ah-noWrap\">May 1, 2019</span>)",
+                                "beneficiaryAmount": "$76,324.32",
+                                "benefitFrequency": "(monthly)"
+                            }
+                        ],
+                        "optionalFormPanelRelativeValueSection": {},
+                        "autoSelectedFormsOfPaymentList": [],
+                        "optionalFormSelected": false,
+                        "hypotheticalOptionalForm": false
+                    },
+                    {
+                        "optionalFormPanelHeader": "Level income joint survivor",
+                        "optionalFormPanelLeadinText": "A monthly payment to you until you die, then to a beneficiary, with an <strong>increased</strong> benefit <strong>until you reach (or would have reached) age 62</strong>, when your payment is <strong>reduced</strong> (because you can take or could have taken your Social Security benefit)",
+                        "optionalFormPanelText": "<li>Receive retirement payments immediately if you retire early (between ages 55 and 62)</li><li><strong>Increased</strong> benefit <strong>until</strong> you reach age 62 (and until you are eligible to start your Social Security benefit)</li><li><strong>Reduced</strong> benefit <strong>when</strong> you reach age 62 (because you can take your Social Security benefit)</li><li>If you die <strong>before</strong> age 62, beneficiary receives <strong>50 1/3%</strong> of your payment, <strong>until</strong> you would have reached age 62 (when payment will be <strong>reduced</strong>, as it would have if you were still living)</li><li>If you die <strong>after</strong> age 62, <strong>50 1/3%</strong> of what you would have received if you had chosen the regular <strong>50 1/3% Joint and Survivor</strong> payment option will be paid to your beneficiary</li><li>If married, your spouse must consent</li>",
+                        "optionalFormPanelLearnMoreLink": "<A onclick=\"if(isUACrossEnabled()){try{ga('trackerUa1.send','event', 'Internal Link' ,'Link click','LinkId:DB_PAYMENT_OPTION_DESC_LINK LinkDest:/web/retirement4x/payment-option-description'); } catch(err){}} if(isUAClientEnabled()){ try{if(isGTMEnabled()){dataLayer.push({'event':'UPointLinkEvent','linkCategory':'Internal Link','linkAction':'Link Click','linkLabel':'LinkId:DB_PAYMENT_OPTION_DESC_LINK LinkDest:/web/retirement4x/payment-option-description'});}else{ga('trackerUa2.send','event', 'Internal Link' ,'Link click','LinkId:DB_PAYMENT_OPTION_DESC_LINK LinkDest:/web/retirement4x/payment-option-description'); }} catch(err){}}try{setTimeout(function() {}, 100);}catch(err){}window.winHandle = window.open('/web/retirement4x/payment-option-description#/?planId=8744&electionId=30&electionGroupId=0&opFmId=3030&calcRefId=null&linkId=DB_PAYMENT_OPTION_DESC_LINK&technicalNameForLink=DB_PAYMENT_OPTION_DESC_LINK&userFriendlyNameForLink=DB_PAYMENT_OPTION_DESC_LINK&domain=Ben-DB&baseClientIndicator=Base','DB_PAYMENT_OPTION_DESC_LINK','titlebar=yes,scrollbars=yes,resizable=yes,width=980,height=560');if(typeof XD != 'undefined'){XD.registerWindow('DB_PAYMENT_OPTION_DESC_LINK',window.winHandle);}try{setSessionTimeOut()}catch(err){};return false;\" href=\"/web/retirement4x/payment-option-description#/?planId=8744&electionId=30&electionGroupId=0&opFmId=3030&calcRefId=null&linkId=DB_PAYMENT_OPTION_DESC_LINK&technicalNameForLink=DB_PAYMENT_OPTION_DESC_LINK&userFriendlyNameForLink=DB_PAYMENT_OPTION_DESC_LINK&domain=Ben-DB&baseClientIndicator=Base\" class=\"ah-secondaryWindow\">Learn More</A>",
+                        "optionalFormToYouAmountList": [
+                            {
+                                "optionalFormAmount": "$7,654.32",
+                                "optionalFormFrequencyDescription": "((monthly), <strong>before</strong> <span class=\"ah-noWrap\">May 1, 2019</span>)"
+                            },
+                            {
+                                "optionalFormAmount": "$7,664.32",
+                                "optionalFormFrequencyDescription": "((monthly), <strong>on or after</strong> <span class=\"ah-noWrap\">May 1, 2019</span>)"
+                            }
+                        ],
+                        "optionalFormBeneficiaryList": [
+                            {
+                                "beneficiaryText": "Beneficiary Benefit (after your death, for payments <strong>before</strong> <span class=\"ah-noWrap\">May 1, 2019</span>)",
+                                "beneficiaryAmount": "$76,324.32",
+                                "benefitFrequency": "(monthly)"
+                            },
+                            {
+                                "beneficiaryText": "Beneficiary Benefit (after your death, for payments <strong>on or after</strong> <span class=\"ah-noWrap\">May 1, 2019</span>)",
+                                "beneficiaryAmount": "$76,324.32",
+                                "benefitFrequency": "(monthly)"
+                            }
+                        ],
+                        "optionalFormPanelRelativeValueSection": {},
+                        "autoSelectedFormsOfPaymentList": [],
+                        "optionalFormSelected": false,
+                        "hypotheticalOptionalForm": false
+                    },
+                    {
+                        "optionalFormPanelHeader": "Level income joint survivor pop up",
+                        "optionalFormPanelLeadinText": "A monthly payment to you until you die (which <strong>increases</strong>, if your beneficiary dies before you), then to a beneficiary, with an <strong>increased</strong> benefit <strong>until you reach (or would have reached) age 62</strong>, when the payment is <strong>reduced</strong> (because you can take or could have taken your Social Security benefit)",
+                        "optionalFormPanelText": "<li>Receive retirement payments immediately if you retire early (between ages 55 and 62)</li><li><strong>Increased</strong> benefit <strong>until</strong> you reach age 62 (and until you are eligible to start your Social Security benefit)</li><li><strong>Reduced</strong> benefit <strong>when</strong> you reach age 62 (because you can take your Social Security benefit)</li><li>If you die <strong>before</strong> age 62, beneficiary receives <strong>50 1/3%</strong> of your payment, <strong>until</strong> you would have reached age 62 (when payment will be <strong>reduced</strong>, as it would have if you were still living)</li><li>If you die <strong>after</strong> age 62, <strong>50 1/3%</strong> of what you would have received if you had chosen the regular <strong>100% Joint and Survivor</strong> payment option will be paid to your beneficiary</li><li>If married, your spouse must consent</li><li>If beneficiary dies before you, the amount paid to you increases</li>",
+                        "optionalFormPanelLearnMoreLink": "<A onclick=\"if(isUACrossEnabled()){try{ga('trackerUa1.send','event', 'Internal Link' ,'Link click','LinkId:DB_PAYMENT_OPTION_DESC_LINK LinkDest:/web/retirement4x/payment-option-description'); } catch(err){}} if(isUAClientEnabled()){ try{if(isGTMEnabled()){dataLayer.push({'event':'UPointLinkEvent','linkCategory':'Internal Link','linkAction':'Link Click','linkLabel':'LinkId:DB_PAYMENT_OPTION_DESC_LINK LinkDest:/web/retirement4x/payment-option-description'});}else{ga('trackerUa2.send','event', 'Internal Link' ,'Link click','LinkId:DB_PAYMENT_OPTION_DESC_LINK LinkDest:/web/retirement4x/payment-option-description'); }} catch(err){}}try{setTimeout(function() {}, 100);}catch(err){}window.winHandle = window.open('/web/retirement4x/payment-option-description#/?planId=8744&electionId=35&electionGroupId=0&opFmId=3035&calcRefId=null&linkId=DB_PAYMENT_OPTION_DESC_LINK&technicalNameForLink=DB_PAYMENT_OPTION_DESC_LINK&userFriendlyNameForLink=DB_PAYMENT_OPTION_DESC_LINK&domain=Ben-DB&baseClientIndicator=Base','DB_PAYMENT_OPTION_DESC_LINK','titlebar=yes,scrollbars=yes,resizable=yes,width=980,height=560');if(typeof XD != 'undefined'){XD.registerWindow('DB_PAYMENT_OPTION_DESC_LINK',window.winHandle);}try{setSessionTimeOut()}catch(err){};return false;\" href=\"/web/retirement4x/payment-option-description#/?planId=8744&electionId=35&electionGroupId=0&opFmId=3035&calcRefId=null&linkId=DB_PAYMENT_OPTION_DESC_LINK&technicalNameForLink=DB_PAYMENT_OPTION_DESC_LINK&userFriendlyNameForLink=DB_PAYMENT_OPTION_DESC_LINK&domain=Ben-DB&baseClientIndicator=Base\" class=\"ah-secondaryWindow\">Learn More</A>",
+                        "optionalFormToYouAmountList": [
+                            {
+                                "optionalFormAmount": "$7,654.32",
+                                "optionalFormFrequencyDescription": "((monthly), <strong>before</strong> <span class=\"ah-noWrap\">May 1, 2019</span>)",
+                                "popUpAmountText": "If your beneficiary dies before you, your payments will increase to $7,324.32."
+                            },
+                            {
+                                "optionalFormAmount": "$7,664.32",
+                                "optionalFormFrequencyDescription": "((monthly), <strong>on or after</strong> <span class=\"ah-noWrap\">May 1, 2019</span>)",
+                                "popUpAmountText": "If your beneficiary dies before you, your payments will increase to $7,324.32."
+                            }
+                        ],
+                        "optionalFormBeneficiaryList": [
+                            {
+                                "beneficiaryText": "Beneficiary Benefit (after your death, for payments <strong>before</strong> <span class=\"ah-noWrap\">May 1, 2019</span>)",
+                                "beneficiaryAmount": "$76,324.32",
+                                "benefitFrequency": "(monthly)"
+                            },
+                            {
+                                "beneficiaryText": "Beneficiary Benefit (after your death, for payments <strong>on or after</strong> <span class=\"ah-noWrap\">May 1, 2019</span>)",
+                                "beneficiaryAmount": "$76,324.32",
+                                "benefitFrequency": "(monthly)"
+                            }
+                        ],
+                        "optionalFormPanelRelativeValueSection": {},
+                        "autoSelectedFormsOfPaymentList": [],
+                        "optionalFormSelected": false,
+                        "hypotheticalOptionalForm": false
+                    },
+                    {
+                        "optionalFormPanelHeader": "Level income",
+                        "optionalFormPanelLeadinText": "A monthly payment to you only, until you die, with an increased benefit <strong>until you reach age 62</strong>, when your payment is <strong>reduced</strong> (because you can take your Social Security benefit)",
+                        "optionalFormPanelText": "<li>Receive retirement payments immediately if you retire early (between ages 55 and 62)</li><li>No payment to your beneficiary</li><li>If married, your spouse must consent</li><li>Increased benefit until you reach age 62 (and until you are eligible to start your Social Security benefit)</li><li>Reduced benefit when you reach age 62 (because you can take your Social Security benefit)</li>",
+                        "optionalFormPanelLearnMoreLink": "<A onclick=\"if(isUACrossEnabled()){try{ga('trackerUa1.send','event', 'Internal Link' ,'Link click','LinkId:DB_PAYMENT_OPTION_DESC_LINK LinkDest:/web/retirement4x/payment-option-description'); } catch(err){}} if(isUAClientEnabled()){ try{if(isGTMEnabled()){dataLayer.push({'event':'UPointLinkEvent','linkCategory':'Internal Link','linkAction':'Link Click','linkLabel':'LinkId:DB_PAYMENT_OPTION_DESC_LINK LinkDest:/web/retirement4x/payment-option-description'});}else{ga('trackerUa2.send','event', 'Internal Link' ,'Link click','LinkId:DB_PAYMENT_OPTION_DESC_LINK LinkDest:/web/retirement4x/payment-option-description'); }} catch(err){}}try{setTimeout(function() {}, 100);}catch(err){}window.winHandle = window.open('/web/retirement4x/payment-option-description#/?planId=8744&electionId=40&electionGroupId=0&opFmId=3040&calcRefId=null&linkId=DB_PAYMENT_OPTION_DESC_LINK&technicalNameForLink=DB_PAYMENT_OPTION_DESC_LINK&userFriendlyNameForLink=DB_PAYMENT_OPTION_DESC_LINK&domain=Ben-DB&baseClientIndicator=Base','DB_PAYMENT_OPTION_DESC_LINK','titlebar=yes,scrollbars=yes,resizable=yes,width=980,height=560');if(typeof XD != 'undefined'){XD.registerWindow('DB_PAYMENT_OPTION_DESC_LINK',window.winHandle);}try{setSessionTimeOut()}catch(err){};return false;\" href=\"/web/retirement4x/payment-option-description#/?planId=8744&electionId=40&electionGroupId=0&opFmId=3040&calcRefId=null&linkId=DB_PAYMENT_OPTION_DESC_LINK&technicalNameForLink=DB_PAYMENT_OPTION_DESC_LINK&userFriendlyNameForLink=DB_PAYMENT_OPTION_DESC_LINK&domain=Ben-DB&baseClientIndicator=Base\" class=\"ah-secondaryWindow\">Learn More</A>",
+                        "optionalFormToYouAmountList": [
+                            {
+                                "optionalFormAmount": "$7,654.32",
+                                "optionalFormFrequencyDescription": "((monthly), <strong>before</strong> <span class=\"ah-noWrap\">May 1, 2019</span>)"
+                            },
+                            {
+                                "optionalFormAmount": "$7,664.32",
+                                "optionalFormFrequencyDescription": "((monthly), <strong>on or after</strong> <span class=\"ah-noWrap\">May 1, 2019</span>)"
+                            }
+                        ],
+                        "optionalFormBeneficiaryList": [
+                            {
+                                "beneficiaryText": "Beneficiary Benefit (after your death, for payments <strong>before</strong> <span class=\"ah-noWrap\">May 1, 2019</span>)",
+                                "beneficiaryAmount": "$0.00",
+                                "benefitFrequency": "(monthly)"
+                            },
+                            {
+                                "beneficiaryText": "Beneficiary Benefit (after your death, for payments <strong>on or after</strong> <span class=\"ah-noWrap\">May 1, 2019</span>)",
+                                "beneficiaryAmount": "$0.00",
+                                "benefitFrequency": "(monthly)"
+                            }
+                        ],
+                        "optionalFormPanelRelativeValueSection": {},
+                        "autoSelectedFormsOfPaymentList": [],
+                        "optionalFormSelected": false,
+                        "hypotheticalOptionalForm": false
+                    },
+                    {
+                        "optionalFormPanelHeader": "Year Certain",
+                        "optionalFormPanelLeadinText": "A monthly payment to you until the cutoff date <span class=\"ah-nowrap\">(<strong>May 1, 2020</strong>)</span>",
+                        "optionalFormPanelText": "<li>If you die <strong>before</strong> 10-year cutoff date, your monthly payments will continue to your beneficiary <strong>until</strong> the 10-year cutoff date</li><li>If you die <strong>after</strong> 10-year cutoff date, <strong>no</strong> payment to your beneficiary</li><li>If married, your spouse must consent</li><li>Beneficiary can be added after you retire</li><li>Contingent beneficiary can be named (in case your beneficiary dies before the 10-year cutoff date)</li><li>If no beneficiary when you die, remaining payments made per plan rules</li>",
+                        "optionalFormPanelLearnMoreLink": "<A onclick=\"if(isUACrossEnabled()){try{ga('trackerUa1.send','event', 'Internal Link' ,'Link click','LinkId:DB_PAYMENT_OPTION_DESC_LINK LinkDest:/web/retirement4x/payment-option-description'); } catch(err){}} if(isUAClientEnabled()){ try{if(isGTMEnabled()){dataLayer.push({'event':'UPointLinkEvent','linkCategory':'Internal Link','linkAction':'Link Click','linkLabel':'LinkId:DB_PAYMENT_OPTION_DESC_LINK LinkDest:/web/retirement4x/payment-option-description'});}else{ga('trackerUa2.send','event', 'Internal Link' ,'Link click','LinkId:DB_PAYMENT_OPTION_DESC_LINK LinkDest:/web/retirement4x/payment-option-description'); }} catch(err){}}try{setTimeout(function() {}, 100);}catch(err){}window.winHandle = window.open('/web/retirement4x/payment-option-description#/?planId=8744&electionId=45&electionGroupId=0&opFmId=3045&calcRefId=null&linkId=DB_PAYMENT_OPTION_DESC_LINK&technicalNameForLink=DB_PAYMENT_OPTION_DESC_LINK&userFriendlyNameForLink=DB_PAYMENT_OPTION_DESC_LINK&domain=Ben-DB&baseClientIndicator=Base','DB_PAYMENT_OPTION_DESC_LINK','titlebar=yes,scrollbars=yes,resizable=yes,width=980,height=560');if(typeof XD != 'undefined'){XD.registerWindow('DB_PAYMENT_OPTION_DESC_LINK',window.winHandle);}try{setSessionTimeOut()}catch(err){};return false;\" href=\"/web/retirement4x/payment-option-description#/?planId=8744&electionId=45&electionGroupId=0&opFmId=3045&calcRefId=null&linkId=DB_PAYMENT_OPTION_DESC_LINK&technicalNameForLink=DB_PAYMENT_OPTION_DESC_LINK&userFriendlyNameForLink=DB_PAYMENT_OPTION_DESC_LINK&domain=Ben-DB&baseClientIndicator=Base\" class=\"ah-secondaryWindow\">Learn More</A>",
+                        "optionalFormToYouAmountList": [
+                            {
+                                "optionalFormAmount": "$7,654.32",
+                                "optionalFormFrequencyDescription": "((monthly), <strong>before</strong> <span class=\"ah-noWrap\">May 1, 2020</span>)"
+                            },
+                            {
+                                "optionalFormAmount": "$0.00",
+                                "optionalFormFrequencyDescription": "((monthly), <strong>on or after</strong> <span class=\"ah-noWrap\">May 1, 2020</span>)"
+                            }
+                        ],
+                        "optionalFormBeneficiaryList": [
+                            {
+                                "beneficiaryText": "Beneficiary Benefit (after your death, for payments <strong>before</strong> <span class=\"ah-noWrap\">May 1, 2020</span>)",
+                                "beneficiaryAmount": "$7,654.32",
+                                "benefitFrequency": "(monthly)"
+                            },
+                            {
+                                "beneficiaryText": "Beneficiary Benefit (after your death, for payments <strong>on or after</strong> <span class=\"ah-noWrap\">May 1, 2020</span>)",
+                                "beneficiaryAmount": "$0.00",
+                                "benefitFrequency": "(monthly)"
+                            }
+                        ],
+                        "optionalFormPanelRelativeValueSection": {},
+                        "autoSelectedFormsOfPaymentList": [],
+                        "optionalFormSelected": false,
+                        "hypotheticalOptionalForm": false
+                    },
+                    {
+                        "optionalFormPanelHeader": "Year Certain Level",
+                        "optionalFormPanelLeadinText": "A monthly payment to you until you die, then your monthly payment to your beneficiary until the cutoff date <span class=\"ah-nowrap\">(<strong>May 1, 2020</strong>)</span>",
+                        "optionalFormPanelText": "<li>If you die before 10-year cutoff date, your monthly payments will continue to your beneficiary until the 10-year cutoff date</li><li>If you die after 10-year cutoff date, no payment to your beneficiary</li><li>If married, your spouse must consent</li><li>Beneficiary can be added after you retire</li><li>Contingent beneficiary can be named (in case your beneficiary dies before the 10-year cutoff date)</li><li>If no beneficiary when you die, remaining payments made per plan rules</li>",
+                        "optionalFormPanelLearnMoreLink": "<A onclick=\"if(isUACrossEnabled()){try{ga('trackerUa1.send','event', 'Internal Link' ,'Link click','LinkId:DB_PAYMENT_OPTION_DESC_LINK LinkDest:/web/retirement4x/payment-option-description'); } catch(err){}} if(isUAClientEnabled()){ try{if(isGTMEnabled()){dataLayer.push({'event':'UPointLinkEvent','linkCategory':'Internal Link','linkAction':'Link Click','linkLabel':'LinkId:DB_PAYMENT_OPTION_DESC_LINK LinkDest:/web/retirement4x/payment-option-description'});}else{ga('trackerUa2.send','event', 'Internal Link' ,'Link click','LinkId:DB_PAYMENT_OPTION_DESC_LINK LinkDest:/web/retirement4x/payment-option-description'); }} catch(err){}}try{setTimeout(function() {}, 100);}catch(err){}window.winHandle = window.open('/web/retirement4x/payment-option-description#/?planId=8744&electionId=50&electionGroupId=0&opFmId=3050&calcRefId=null&linkId=DB_PAYMENT_OPTION_DESC_LINK&technicalNameForLink=DB_PAYMENT_OPTION_DESC_LINK&userFriendlyNameForLink=DB_PAYMENT_OPTION_DESC_LINK&domain=Ben-DB&baseClientIndicator=Base','DB_PAYMENT_OPTION_DESC_LINK','titlebar=yes,scrollbars=yes,resizable=yes,width=980,height=560');if(typeof XD != 'undefined'){XD.registerWindow('DB_PAYMENT_OPTION_DESC_LINK',window.winHandle);}try{setSessionTimeOut()}catch(err){};return false;\" href=\"/web/retirement4x/payment-option-description#/?planId=8744&electionId=50&electionGroupId=0&opFmId=3050&calcRefId=null&linkId=DB_PAYMENT_OPTION_DESC_LINK&technicalNameForLink=DB_PAYMENT_OPTION_DESC_LINK&userFriendlyNameForLink=DB_PAYMENT_OPTION_DESC_LINK&domain=Ben-DB&baseClientIndicator=Base\" class=\"ah-secondaryWindow\">Learn More</A>",
+                        "optionalFormToYouAmountList": [
+                            {
+                                "optionalFormAmount": "$7,654.32",
+                                "optionalFormFrequencyDescription": "((monthly), <strong>before</strong> <span class=\"ah-noWrap\">May 1, 2020</span>)"
+                            },
+                            {
+                                "optionalFormAmount": "$7,654.32",
+                                "optionalFormFrequencyDescription": "((monthly), <strong>on or after</strong> <span class=\"ah-noWrap\">May 1, 2020</span>)"
+                            }
+                        ],
+                        "optionalFormBeneficiaryList": [
+                            {
+                                "beneficiaryText": "Beneficiary Benefit (after your death, for payments <strong>before</strong> <span class=\"ah-noWrap\">May 1, 2020</span>)",
+                                "beneficiaryAmount": "$7,654.32",
+                                "benefitFrequency": "(monthly)"
+                            },
+                            {
+                                "beneficiaryText": "Beneficiary Benefit (after your death, for payments <strong>on or after</strong> <span class=\"ah-noWrap\">May 1, 2020</span>)",
+                                "beneficiaryAmount": "$0.00",
+                                "benefitFrequency": "(monthly)"
+                            }
+                        ],
+                        "optionalFormPanelRelativeValueSection": {},
+                        "autoSelectedFormsOfPaymentList": [],
+                        "optionalFormSelected": false,
+                        "hypotheticalOptionalForm": false
+                    },
+                    {
+                        "optionalFormPanelHeader": "Lump Sum",
+                        "optionalFormPanelLeadinText": "A one-time payment to you only",
+                        "optionalFormPanelText": "<li><strong>No</strong> payment to your beneficiary</li> <li>If married, your spouse must consent</li> <li>Entire value of your pension benefit (or, in some cases, a portion of the entire value)</li> <li>Subject to taxation, and the Internal Revenue Service requires 20% be automatically withheld</li> <li>May be subject to 10% penalty tax on early distributions</li>",
+                        "optionalFormPanelLearnMoreLink": "<A onclick=\"if(isUACrossEnabled()){try{ga('trackerUa1.send','event', 'Internal Link' ,'Link click','LinkId:DB_PAYMENT_OPTION_DESC_LINK LinkDest:/web/retirement4x/payment-option-description'); } catch(err){}} if(isUAClientEnabled()){ try{if(isGTMEnabled()){dataLayer.push({'event':'UPointLinkEvent','linkCategory':'Internal Link','linkAction':'Link Click','linkLabel':'LinkId:DB_PAYMENT_OPTION_DESC_LINK LinkDest:/web/retirement4x/payment-option-description'});}else{ga('trackerUa2.send','event', 'Internal Link' ,'Link click','LinkId:DB_PAYMENT_OPTION_DESC_LINK LinkDest:/web/retirement4x/payment-option-description'); }} catch(err){}}try{setTimeout(function() {}, 100);}catch(err){}window.winHandle = window.open('/web/retirement4x/payment-option-description#/?planId=8744&electionId=55&electionGroupId=0&opFmId=3055&calcRefId=null&linkId=DB_PAYMENT_OPTION_DESC_LINK&technicalNameForLink=DB_PAYMENT_OPTION_DESC_LINK&userFriendlyNameForLink=DB_PAYMENT_OPTION_DESC_LINK&domain=Ben-DB&baseClientIndicator=Base','DB_PAYMENT_OPTION_DESC_LINK','titlebar=yes,scrollbars=yes,resizable=yes,width=980,height=560');if(typeof XD != 'undefined'){XD.registerWindow('DB_PAYMENT_OPTION_DESC_LINK',window.winHandle);}try{setSessionTimeOut()}catch(err){};return false;\" href=\"/web/retirement4x/payment-option-description#/?planId=8744&electionId=55&electionGroupId=0&opFmId=3055&calcRefId=null&linkId=DB_PAYMENT_OPTION_DESC_LINK&technicalNameForLink=DB_PAYMENT_OPTION_DESC_LINK&userFriendlyNameForLink=DB_PAYMENT_OPTION_DESC_LINK&domain=Ben-DB&baseClientIndicator=Base\" class=\"ah-secondaryWindow\">Learn More</A>",
+                        "optionalFormToYouAmountList": [
+                            {
+                                "optionalFormAmount": "$7,654.32",
+                                "optionalFormFrequencyDescription": "(monthly)"
+                            }
+                        ],
+                        "optionalFormBeneficiaryList": [
+                            {
+                                "beneficiaryText": "Beneficiary Benefit (for payments after your death)",
+                                "beneficiaryAmount": "$0.00",
+                                "benefitFrequency": "(monthly)"
+                            }
+                        ],
+                        "optionalFormPanelRelativeValueSection": {},
+                        "autoSelectedFormsOfPaymentList": [],
+                        "optionalFormSelected": false,
+                        "hypotheticalOptionalForm": false
+                    }
+                ]
+            },
+            "taxationContent": {
+                "contentHeading": "Taxation Information",
+                "benefitLabel": "Benefit",
+                "taxableAmtLabel": "Taxable Amount",
+                "nonTaxAmtLabel": "Nontaxable Amount",
+                "totalGrossLabel": "Total Gross Benefit Amount",
+                "paymentTaxDetails": [
+                    {
+                        "electionDescription": "Premier Simple Election",
+                        "taxableAmount": 76324.3203125,
+                        "nonTaxableAmount": 0,
+                        "totalGrossAmount": 76324.3203125
+                    },
+                    {
+                        "electionDescription": "Premier Simple Election2",
+                        "taxableAmount": 76114.3203125,
+                        "nonTaxableAmount": 0,
+                        "totalGrossAmount": 76324.3203125
+                    },
+                    {
+                        "electionDescription": "Premier Simple Election3",
+                        "taxableAmount": 76114.3203125,
+                        "nonTaxableAmount": 0,
+                        "totalGrossAmount": 76324.3203125
+                    },
+                    {
+                        "electionDescription": "Premier Simple Election4",
+                        "taxableAmount": 76114.3203125,
+                        "nonTaxableAmount": 0,
+                        "totalGrossAmount": 76324.3203125
+                    },
+                    {
+                        "electionDescription": "Premier Simple Election5",
+                        "taxableAmount": 76114.3203125,
+                        "nonTaxableAmount": 0,
+                        "totalGrossAmount": 76324.3203125
+                    },
+                    {
+                        "electionDescription": "Premier Simple Election6",
+                        "taxableAmount": 76114.3203125,
+                        "nonTaxableAmount": 0,
+                        "totalGrossAmount": 76324.3203125
+                    },
+                    {
+                        "electionDescription": "Premier Simple Election7",
+                        "taxableAmount": 76114.3203125,
+                        "nonTaxableAmount": 0,
+                        "totalGrossAmount": 76324.3203125
+                    },
+                    {
+                        "electionDescription": "Premier Simple Election8",
+                        "taxableAmount": 76114.3203125,
+                        "nonTaxableAmount": 0,
+                        "totalGrossAmount": 76324.3203125
+                    },
+                    {
+                        "electionDescription": "Premier Simple Election9",
+                        "taxableAmount": 76114.3203125,
+                        "nonTaxableAmount": 0,
+                        "totalGrossAmount": 76324.3203125
+                    },
+                    {
+                        "electionDescription": "Premier Simple Election10",
+                        "taxableAmount": 76114.3203125,
+                        "nonTaxableAmount": 0,
+                        "totalGrossAmount": 76324.3203125
+                    }
+                ]
+            },
+            "paymentDestinationsContent": {
+                "contentHeading": "Payment Destination(s)",
+                "toYouHeading": "Payment to You",
+                "rolloverHeading": "Rollover Payment",
+                "paymentDestinations": [
+                    {
+                        "showChangeButton": true,
+                        "paymentAmount": "$76,324.32",
+                        "paymentAddresses": [
+                            {
+                                "description": "-ADDRESS NOT FOUND-"
+                            }
+                        ],
+                        "rollover": false
+                    },
+                    {
+                        "showChangeButton": true,
+                        "paymentAmount": "$76,324.32",
+                        "paymentAddresses": [
+                            {
+                                "description": "-ADDRESS NOT FOUND-"
+                            }
+                        ],
+                        "rollover": false
+                    },
+                    {
+                        "showChangeButton": true,
+                        "paymentAmount": "$76,324.32",
+                        "paymentAddresses": [
+                            {
+                                "description": "-ADDRESS NOT FOUND-"
+                            }
+                        ],
+                        "rollover": true
+                    }
+                ]
+            },
+            "withholdingContent": {
+                "contentHeading": "Estimated Income Tax Withholding",
+                "showChangeButton": true,
+                "fedWithholdingDetailList": [
+                    {
+                        "detailDescription": "Taxable Income",
+                        "detailValue": "$76,324.32",
+                        "isTotalsItem": false
+                    },
+                    {
+                        "detailDescription": "Percentage Withheld",
+                        "detailValue": "25%",
+                        "isTotalsItem": false
+                    },
+                    {
+                        "detailDescription": "Marital Status",
+                        "detailValue": "M",
+                        "isTotalsItem": false
+                    },
+                    {
+                        "detailDescription": "Number of Allowances",
+                        "detailValue": "25",
+                        "isTotalsItem": false
+                    },
+                    {
+                        "detailDescription": "Additional Amount Withheld",
+                        "detailValue": "$76,324.32",
+                        "isTotalsItem": false
+                    },
+                    {
+                        "detailDescription": "<strong>Federal Withholding</strong> <small>(estimated)</small>",
+                        "detailValue": "$76,324.32",
+                        "isTotalsItem": true
+                    }
+                ],
+                "stateWithholdingDetailList": [
+                    {
+                        "detailDescription": "Taxable Income",
+                        "detailValue": "$76,324.32",
+                        "isTotalsItem": false
+                    },
+                    {
+                        "detailDescription": "State",
+                        "detailValue": "WA",
+                        "isTotalsItem": false
+                    },
+                    {
+                        "detailDescription": "State income tax withholding is not supported for this payment.",
+                        "detailValue": "",
+                        "isTotalsItem": false
+                    },
+                    {
+                        "detailDescription": "<strong>State Withholding</strong> <small>(estimated)</small>",
+                        "detailValue": "$76,324.32",
+                        "isTotalsItem": true
+                    }
+                ]
+            }
+        },
+        {
+            "paymentId": "1001",
+            "paymentDescription": "Premier Lump Sum Payment Number 2",
+            "paymentElectionBenefits": [
+                {
+                    "planId": "8744",
+                    "benefitDescription": "Premier Simple Election",
+                    "planDescription": "Premier Final Average Pay Plan",
+                    "elecId": "10",
+                    "elecDescription": "Premier Simple Election",
+                    "elecGroupId": "0",
+                    "paymentOptionId": "3010",
+                    "paymentOptionDescription": "Single Life Annuity",
+                    "paymentOptionToYouAmt": "$76,324.32",
+                    "paymentOptionFrequency": "M",
+                    "showChangeButton": true,
+                    "showPaymentOption": true
+                },
+                {
+                    "planId": "8744",
+                    "benefitDescription": "Premier Simple Election2",
+                    "planDescription": "Premier Final Average Pay Plan",
+                    "elecId": "15",
+                    "elecDescription": "Premier Simple Election2",
+                    "elecGroupId": "0",
+                    "paymentOptionId": "3015",
+                    "paymentOptionDescription": "Joint and Surv",
+                    "paymentOptionToYouAmt": "$76,324.32",
+                    "paymentOptionFrequency": "M",
+                    "showChangeButton": true,
+                    "showPaymentOption": true
+                },
+                {
+                    "planId": "8744",
+                    "benefitDescription": "Premier Simple Election3",
+                    "planDescription": "Premier Final Average Pay Plan",
+                    "elecId": "20",
+                    "elecDescription": "Premier Simple Election3",
+                    "elecGroupId": "0",
+                    "paymentOptionId": "3020",
+                    "paymentOptionDescription": "Joint Surv popup",
+                    "paymentOptionToYouAmt": "$76,324.32",
+                    "paymentOptionFrequency": "M",
+                    "showChangeButton": true,
+                    "showPaymentOption": true
+                },
+                {
+                    "planId": "8744",
+                    "benefitDescription": "Premier Simple Election4",
+                    "planDescription": "Premier Final Average Pay Plan",
+                    "elecId": "25",
+                    "elecDescription": "Premier Simple Election4",
+                    "elecGroupId": "0",
+                    "paymentOptionId": "3025",
+                    "paymentOptionDescription": "Joint Surv year certain",
+                    "paymentOptionToYouAmt": "$76,324.32",
+                    "paymentOptionFrequency": "M",
+                    "showChangeButton": true,
+                    "showPaymentOption": true
+                }
+            ],
+            "paymentTotalsLabel": "Total Payment Before Deductions",
+            "paymentDeductions": [
+                {
+                    "description": "Rollover Amount",
+                    "deductionAmount": "$76,324.32",
+                    "showChangeButton": true,
+                    "rolloverDeduction": true
+                },
+                {
+                    "description": "Federal Withholding",
+                    "deductionAmount": "$76,324.32",
+                    "showChangeButton": true,
+                    "rolloverDeduction": false
+                },
+                {
+                    "description": "State WIthholding",
+                    "deductionAmount": "$76,324.32",
+                    "showChangeButton": true,
+                    "rolloverDeduction": false
+                }
+            ],
+            "paymentDetailsContent": {
+                "primaryOptionalFormPaymentList": [
+                    {
+                        "optionalFormPanelHeader": "Single Life Annuity",
+                        "optionalFormPanelLeadinText": "A monthly payment to you only, until you die",
+                        "optionalFormPanelText": "<li><strong>No</strong> payment to your beneficiary</li><li>If married, your spouse must consent</li>",
+                        "optionalFormPanelLearnMoreLink": "<A onclick=\"if(isUACrossEnabled()){try{ga('trackerUa1.send','event', 'Internal Link' ,'Link click','LinkId:DB_PAYMENT_OPTION_DESC_LINK LinkDest:/web/retirement4x/payment-option-description'); } catch(err){}} if(isUAClientEnabled()){ try{if(isGTMEnabled()){dataLayer.push({'event':'UPointLinkEvent','linkCategory':'Internal Link','linkAction':'Link Click','linkLabel':'LinkId:DB_PAYMENT_OPTION_DESC_LINK LinkDest:/web/retirement4x/payment-option-description'});}else{ga('trackerUa2.send','event', 'Internal Link' ,'Link click','LinkId:DB_PAYMENT_OPTION_DESC_LINK LinkDest:/web/retirement4x/payment-option-description'); }} catch(err){}}try{setTimeout(function() {}, 100);}catch(err){}window.winHandle = window.open('/web/retirement4x/payment-option-description#/?planId=8744&electionId=10&electionGroupId=0&opFmId=3010&calcRefId=null&linkId=DB_PAYMENT_OPTION_DESC_LINK&technicalNameForLink=DB_PAYMENT_OPTION_DESC_LINK&userFriendlyNameForLink=DB_PAYMENT_OPTION_DESC_LINK&domain=Ben-DB&baseClientIndicator=Base','DB_PAYMENT_OPTION_DESC_LINK','titlebar=yes,scrollbars=yes,resizable=yes,width=980,height=560');if(typeof XD != 'undefined'){XD.registerWindow('DB_PAYMENT_OPTION_DESC_LINK',window.winHandle);}try{setSessionTimeOut()}catch(err){};return false;\" href=\"/web/retirement4x/payment-option-description#/?planId=8744&electionId=10&electionGroupId=0&opFmId=3010&calcRefId=null&linkId=DB_PAYMENT_OPTION_DESC_LINK&technicalNameForLink=DB_PAYMENT_OPTION_DESC_LINK&userFriendlyNameForLink=DB_PAYMENT_OPTION_DESC_LINK&domain=Ben-DB&baseClientIndicator=Base\" class=\"ah-secondaryWindow\">Learn More</A>",
+                        "optionalFormToYouAmountList": [
+                            {
+                                "optionalFormAmount": "$76,344.32",
+                                "optionalFormFrequencyDescription": "(monthly)"
+                            }
+                        ],
+                        "optionalFormBeneficiaryList": [
+                            {
+                                "beneficiaryText": "Beneficiary Benefit (for payments after your death)",
+                                "beneficiaryAmount": "$0.00",
+                                "benefitFrequency": "(monthly)"
+                            }
+                        ],
+                        "optionalFormPanelRelativeValueSection": {},
+                        "autoSelectedFormsOfPaymentList": [],
+                        "optionalFormSelected": false,
+                        "hypotheticalOptionalForm": false
+                    },
+                    {
+                        "optionalFormPanelHeader": "Joint and Surv",
+                        "optionalFormPanelLeadinText": "A monthly payment to you until you die, then <strong>50 1/3%</strong> of your monthly payment to your beneficiary until your beneficiary dies",
+                        "optionalFormPanelText": "<li>After you die, <strong>50 1/3%</strong> benefit payment to your beneficiary until he or she dies</li><li>If married and beneficiary is <strong>not</strong> your spouse, your spouse must consent</li>",
+                        "optionalFormPanelLearnMoreLink": "<A onclick=\"if(isUACrossEnabled()){try{ga('trackerUa1.send','event', 'Internal Link' ,'Link click','LinkId:DB_PAYMENT_OPTION_DESC_LINK LinkDest:/web/retirement4x/payment-option-description'); } catch(err){}} if(isUAClientEnabled()){ try{if(isGTMEnabled()){dataLayer.push({'event':'UPointLinkEvent','linkCategory':'Internal Link','linkAction':'Link Click','linkLabel':'LinkId:DB_PAYMENT_OPTION_DESC_LINK LinkDest:/web/retirement4x/payment-option-description'});}else{ga('trackerUa2.send','event', 'Internal Link' ,'Link click','LinkId:DB_PAYMENT_OPTION_DESC_LINK LinkDest:/web/retirement4x/payment-option-description'); }} catch(err){}}try{setTimeout(function() {}, 100);}catch(err){}window.winHandle = window.open('/web/retirement4x/payment-option-description#/?planId=8744&electionId=15&electionGroupId=0&opFmId=3015&calcRefId=null&linkId=DB_PAYMENT_OPTION_DESC_LINK&technicalNameForLink=DB_PAYMENT_OPTION_DESC_LINK&userFriendlyNameForLink=DB_PAYMENT_OPTION_DESC_LINK&domain=Ben-DB&baseClientIndicator=Base','DB_PAYMENT_OPTION_DESC_LINK','titlebar=yes,scrollbars=yes,resizable=yes,width=980,height=560');if(typeof XD != 'undefined'){XD.registerWindow('DB_PAYMENT_OPTION_DESC_LINK',window.winHandle);}try{setSessionTimeOut()}catch(err){};return false;\" href=\"/web/retirement4x/payment-option-description#/?planId=8744&electionId=15&electionGroupId=0&opFmId=3015&calcRefId=null&linkId=DB_PAYMENT_OPTION_DESC_LINK&technicalNameForLink=DB_PAYMENT_OPTION_DESC_LINK&userFriendlyNameForLink=DB_PAYMENT_OPTION_DESC_LINK&domain=Ben-DB&baseClientIndicator=Base\" class=\"ah-secondaryWindow\">Learn More</A>",
+                        "optionalFormToYouAmountList": [
+                            {
+                                "optionalFormAmount": "$7,654.32",
+                                "optionalFormFrequencyDescription": "(monthly)"
+                            }
+                        ],
+                        "optionalFormBeneficiaryList": [
+                            {
+                                "beneficiaryText": "Beneficiary Benefit (for payments after your death)",
+                                "beneficiaryAmount": "$76,324.32",
+                                "benefitFrequency": "(monthly)"
+                            }
+                        ],
+                        "optionalFormPanelRelativeValueSection": {},
+                        "autoSelectedFormsOfPaymentList": [],
+                        "optionalFormSelected": false,
+                        "hypotheticalOptionalForm": false
+                    },
+                    {
+                        "optionalFormPanelHeader": "Joint Surv popup",
+                        "optionalFormPanelLeadinText": "A monthly payment to you until you die (which <strong>increases</strong>, if your beneficiary dies before you), then <strong>50 1/3%</strong> of your monthly payment to your beneficiary until your beneficiary dies",
+                        "optionalFormPanelText": "<li>After you die, <strong>50 1/3%</strong> benefit payment to your beneficiary until he or she dies</li><li>If married and beneficiary is <strong>not</strong> your spouse, your spouse must consent</li><li>If beneficiary dies before you, the amount paid to you increases</li>",
+                        "optionalFormPanelLearnMoreLink": "<A onclick=\"if(isUACrossEnabled()){try{ga('trackerUa1.send','event', 'Internal Link' ,'Link click','LinkId:DB_PAYMENT_OPTION_DESC_LINK LinkDest:/web/retirement4x/payment-option-description'); } catch(err){}} if(isUAClientEnabled()){ try{if(isGTMEnabled()){dataLayer.push({'event':'UPointLinkEvent','linkCategory':'Internal Link','linkAction':'Link Click','linkLabel':'LinkId:DB_PAYMENT_OPTION_DESC_LINK LinkDest:/web/retirement4x/payment-option-description'});}else{ga('trackerUa2.send','event', 'Internal Link' ,'Link click','LinkId:DB_PAYMENT_OPTION_DESC_LINK LinkDest:/web/retirement4x/payment-option-description'); }} catch(err){}}try{setTimeout(function() {}, 100);}catch(err){}window.winHandle = window.open('/web/retirement4x/payment-option-description#/?planId=8744&electionId=20&electionGroupId=0&opFmId=3020&calcRefId=null&linkId=DB_PAYMENT_OPTION_DESC_LINK&technicalNameForLink=DB_PAYMENT_OPTION_DESC_LINK&userFriendlyNameForLink=DB_PAYMENT_OPTION_DESC_LINK&domain=Ben-DB&baseClientIndicator=Base','DB_PAYMENT_OPTION_DESC_LINK','titlebar=yes,scrollbars=yes,resizable=yes,width=980,height=560');if(typeof XD != 'undefined'){XD.registerWindow('DB_PAYMENT_OPTION_DESC_LINK',window.winHandle);}try{setSessionTimeOut()}catch(err){};return false;\" href=\"/web/retirement4x/payment-option-description#/?planId=8744&electionId=20&electionGroupId=0&opFmId=3020&calcRefId=null&linkId=DB_PAYMENT_OPTION_DESC_LINK&technicalNameForLink=DB_PAYMENT_OPTION_DESC_LINK&userFriendlyNameForLink=DB_PAYMENT_OPTION_DESC_LINK&domain=Ben-DB&baseClientIndicator=Base\" class=\"ah-secondaryWindow\">Learn More</A>",
+                        "optionalFormToYouAmountList": [
+                            {
+                                "optionalFormAmount": "$7,654.32",
+                                "optionalFormFrequencyDescription": "(monthly)",
+                                "popUpAmountText": "If your beneficiary dies before you, your payments will increase to $116.32."
+                            }
+                        ],
+                        "optionalFormBeneficiaryList": [
+                            {
+                                "beneficiaryText": "Beneficiary Benefit (for payments after your death)",
+                                "beneficiaryAmount": "$76,324.32",
+                                "benefitFrequency": "(monthly)"
+                            }
+                        ],
+                        "optionalFormPanelRelativeValueSection": {},
+                        "autoSelectedFormsOfPaymentList": [],
+                        "optionalFormSelected": false,
+                        "hypotheticalOptionalForm": false
+                    },
+                    {
+                        "optionalFormPanelHeader": "Joint Surv year certain",
+                        "optionalFormPanelLeadinText": "A monthly payment to you until you die, then to your beneficiary until your beneficiary dies",
+                        "optionalFormPanelText": "<li>If you die <strong>before</strong> 10-year cutoff date, your monthly payments will continue to your beneficiary <strong>until</strong> the 10-year cutoff date, or until your beneficiary dies</li><li>If you die <strong>after</strong> 10-year cutoff date, <strong>no</strong> payment to your beneficiary</li><li>If married, your spouse must consent</li><li>If married and beneficiary is <strong>not</strong> your spouse, your spouse must consent</li><li>Beneficiary can be added after you retire</li><li>If no beneficiary when you die, remaining payments made per plan rules</li>",
+                        "optionalFormPanelLearnMoreLink": "<A onclick=\"if(isUACrossEnabled()){try{ga('trackerUa1.send','event', 'Internal Link' ,'Link click','LinkId:DB_PAYMENT_OPTION_DESC_LINK LinkDest:/web/retirement4x/payment-option-description'); } catch(err){}} if(isUAClientEnabled()){ try{if(isGTMEnabled()){dataLayer.push({'event':'UPointLinkEvent','linkCategory':'Internal Link','linkAction':'Link Click','linkLabel':'LinkId:DB_PAYMENT_OPTION_DESC_LINK LinkDest:/web/retirement4x/payment-option-description'});}else{ga('trackerUa2.send','event', 'Internal Link' ,'Link click','LinkId:DB_PAYMENT_OPTION_DESC_LINK LinkDest:/web/retirement4x/payment-option-description'); }} catch(err){}}try{setTimeout(function() {}, 100);}catch(err){}window.winHandle = window.open('/web/retirement4x/payment-option-description#/?planId=8744&electionId=25&electionGroupId=0&opFmId=3025&calcRefId=null&linkId=DB_PAYMENT_OPTION_DESC_LINK&technicalNameForLink=DB_PAYMENT_OPTION_DESC_LINK&userFriendlyNameForLink=DB_PAYMENT_OPTION_DESC_LINK&domain=Ben-DB&baseClientIndicator=Base','DB_PAYMENT_OPTION_DESC_LINK','titlebar=yes,scrollbars=yes,resizable=yes,width=980,height=560');if(typeof XD != 'undefined'){XD.registerWindow('DB_PAYMENT_OPTION_DESC_LINK',window.winHandle);}try{setSessionTimeOut()}catch(err){};return false;\" href=\"/web/retirement4x/payment-option-description#/?planId=8744&electionId=25&electionGroupId=0&opFmId=3025&calcRefId=null&linkId=DB_PAYMENT_OPTION_DESC_LINK&technicalNameForLink=DB_PAYMENT_OPTION_DESC_LINK&userFriendlyNameForLink=DB_PAYMENT_OPTION_DESC_LINK&domain=Ben-DB&baseClientIndicator=Base\" class=\"ah-secondaryWindow\">Learn More</A>",
+                        "optionalFormToYouAmountList": [
+                            {
+                                "optionalFormAmount": "$7,654.32",
+                                "optionalFormFrequencyDescription": "(monthly)"
+                            }
+                        ],
+                        "optionalFormBeneficiaryList": [
+                            {
+                                "beneficiaryText": "Beneficiary Benefit (after your death, for payments <strong>before</strong> <span class=\"ah-noWrap\">May 1, 2019</span>)",
+                                "beneficiaryAmount": "$76,324.32",
+                                "benefitFrequency": "(monthly)"
+                            },
+                            {
+                                "beneficiaryText": "Beneficiary Benefit (after your death, for payments <strong>on or after</strong> <span class=\"ah-noWrap\">May 1, 2019</span>)",
+                                "beneficiaryAmount": "$76,324.32",
+                                "benefitFrequency": "(monthly)"
+                            }
+                        ],
+                        "optionalFormPanelRelativeValueSection": {},
+                        "autoSelectedFormsOfPaymentList": [],
+                        "optionalFormSelected": false,
+                        "hypotheticalOptionalForm": false
+                    }
+                ]
+            },
+            "taxationContent": {
+                "contentHeading": "Taxation Information",
+                "benefitLabel": "Benefit",
+                "taxableAmtLabel": "Taxable Amount",
+                "nonTaxAmtLabel": "Nontaxable Amount",
+                "totalGrossLabel": "Total Gross Benefit Amount",
+                "paymentTaxDetails": [
+                    {
+                        "electionDescription": "Premier Simple Election",
+                        "taxableAmount": 76324.3203125,
+                        "nonTaxableAmount": 0,
+                        "totalGrossAmount": 76324.3203125
+                    },
+                    {
+                        "electionDescription": "Premier Simple Election2",
+                        "taxableAmount": 76114.3203125,
+                        "nonTaxableAmount": 0,
+                        "totalGrossAmount": 76324.3203125
+                    },
+                    {
+                        "electionDescription": "Premier Simple Election3",
+                        "taxableAmount": 76114.3203125,
+                        "nonTaxableAmount": 0,
+                        "totalGrossAmount": 76324.3203125
+                    },
+                    {
+                        "electionDescription": "Premier Simple Election4",
+                        "taxableAmount": 76114.3203125,
+                        "nonTaxableAmount": 0,
+                        "totalGrossAmount": 76324.3203125
+                    }
+                ]
+            },
+            "paymentDestinationsContent": {
+                "contentHeading": "Payment Destination(s)",
+                "toYouHeading": "Payment to You",
+                "rolloverHeading": "Rollover Payment",
+                "paymentDestinations": [
+                    {
+                        "showChangeButton": true,
+                        "paymentAmount": "$76,324.32",
+                        "paymentAddresses": [
+                            {
+                                "description": "-ADDRESS NOT FOUND-"
+                            }
+                        ],
+                        "rollover": false
+                    },
+                    {
+                        "showChangeButton": true,
+                        "paymentAmount": "$76,324.32",
+                        "paymentAddresses": [
+                            {
+                                "description": "-ADDRESS NOT FOUND-"
+                            }
+                        ],
+                        "rollover": false
+                    },
+                    {
+                        "showChangeButton": true,
+                        "paymentAmount": "$76,324.32",
+                        "paymentAddresses": [
+                            {
+                                "description": "-ADDRESS NOT FOUND-"
+                            }
+                        ],
+                        "rollover": true
+                    }
+                ]
+            },
+            "withholdingContent": {
+                "contentHeading": "Estimated Income Tax Withholding",
+                "showChangeButton": true,
+                "fedWithholdingDetailList": [
+                    {
+                        "detailDescription": "Taxable Income",
+                        "detailValue": "$76,324.32",
+                        "isTotalsItem": false
+                    },
+                    {
+                        "detailDescription": "Percentage Withheld",
+                        "detailValue": "25%",
+                        "isTotalsItem": false
+                    },
+                    {
+                        "detailDescription": "Marital Status",
+                        "detailValue": "M",
+                        "isTotalsItem": false
+                    },
+                    {
+                        "detailDescription": "Number of Allowances",
+                        "detailValue": "25",
+                        "isTotalsItem": false
+                    },
+                    {
+                        "detailDescription": "Additional Amount Withheld",
+                        "detailValue": "$76,324.32",
+                        "isTotalsItem": false
+                    },
+                    {
+                        "detailDescription": "<strong>Federal Withholding</strong> <small>(estimated)</small>",
+                        "detailValue": "$76,324.32",
+                        "isTotalsItem": true
+                    }
+                ],
+                "stateWithholdingDetailList": [
+                    {
+                        "detailDescription": "Taxable Income",
+                        "detailValue": "$76,324.32",
+                        "isTotalsItem": false
+                    },
+                    {
+                        "detailDescription": "State",
+                        "detailValue": "WA",
+                        "isTotalsItem": false
+                    },
+                    {
+                        "detailDescription": "State income tax withholding is not supported for this payment.",
+                        "detailValue": "",
+                        "isTotalsItem": false
+                    },
+                    {
+                        "detailDescription": "<strong>State Withholding</strong> <small>(estimated)</small>",
+                        "detailValue": "$76,324.32",
+                        "isTotalsItem": true
+                    }
+                ]
+            }
+        }
+    ],
+    "submitContentTitle": "Submit Your Choices",
+    "submitContentIntro": "When you <strong>Submit</strong>, you acknowledge that you've read and understand <A onclick=\"if(isUACrossEnabled()){try{ga('trackerUa1.send','event', 'Internal Link' ,'Link click','LinkId:DB_ELEC_NOR_RVW_LNK LinkDest:/web/retirement4x/db-notice-of-rights'); } catch(err){}} if(isUAClientEnabled()){ try{if(isGTMEnabled()){dataLayer.push({'event':'UPointLinkEvent','linkCategory':'Internal Link','linkAction':'Link Click','linkLabel':'LinkId:DB_ELEC_NOR_RVW_LNK LinkDest:/web/retirement4x/db-notice-of-rights'});}else{ga('trackerUa2.send','event', 'Internal Link' ,'Link click','LinkId:DB_ELEC_NOR_RVW_LNK LinkDest:/web/retirement4x/db-notice-of-rights'); }} catch(err){}}try{setTimeout(function() {}, 100);}catch(err){}window.winHandle = window.open('/web/retirement4x/db-notice-of-rights?linkId=DB_ELEC_NOR_RVW_LNK&technicalNameForLink=DB_ELEC_NOR_RVW_LNK&userFriendlyNameForLink=Link to the db notice of rights&domain=Ben-DB&baseClientIndicator=Base','DB_ELEC_NOR_RVW_LNK','titlebar=yes,scrollbars=yes,resizable=yes,width=980,height=560');if(typeof XD != 'undefined'){XD.registerWindow('DB_ELEC_NOR_RVW_LNK',window.winHandle);}try{setSessionTimeOut()}catch(err){};return false;\" href=\"/web/retirement4x/db-notice-of-rights?linkId=DB_ELEC_NOR_RVW_LNK&technicalNameForLink=DB_ELEC_NOR_RVW_LNK&userFriendlyNameForLink=Link to the db notice of rights&domain=Ben-DB&baseClientIndicator=Base\" class=\"ah-secondaryWindow\">Your Notice of Rights</A> and that your choices may result in the waiver of the applicable",
+    "submitContentIntroTipRollover": "By law, you have at least 30 days to think about your pension choices and decide if you want to consent to receiving benefits.After you start your benefit, you can't change the payment option. You can waive your right to this 30-day period by choosing Submit below. If you're not ready now to consent to receiving benefits, do not submit your choices.You can choose Come Back Later and return to this site when you're ready to submit your pension choices.",
+    "submitContentNote": "<strong>Note:</strong> After you submit your pension choices, your authorization is required to finalize them.",
+    "flowButtonNavigation": {
+        "buttonList": [
+            {
+                "action": "continue",
+                "label": "Continue"
+            },
+            {
+                "action": "comeBackLater",
+                "label": "Come Back Later"
+            },
+            {
+                "action": "quit",
+                "label": "Quit"
+            }
+        ],
+        "quitModalContent": {
+            "title": "What do you want to do?",
+            "bodyList": [
+                {
+                    "heading": "Save",
+                    "paragraph": "Keep the choices you've made, so far. Finish making pension choices later."
+                },
+                {
+                    "heading": "Quit",
+                    "paragraph": "Cancel your pension request and lose all the pension choices you've made, so far."
+                },
+                {
+                    "heading": "Return",
+                    "paragraph": "Go back to the current page without quitting."
+                }
+            ],
+            "buttonList": [
+                {
+                    "action": "comeBackLater",
+                    "label": "Save"
+                },
+                {
+                    "action": "quit",
+                    "label": "Quit"
+                },
+                {
+                    "action": "return",
+                    "label": "Return"
+                }
+            ]
+        }
+    }
+}

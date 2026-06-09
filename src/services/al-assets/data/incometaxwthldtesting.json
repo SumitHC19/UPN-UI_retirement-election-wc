@@ -1,0 +1,456 @@
+[
+    {
+        "id": "US_FEDERAL",
+        "tableHeaderText": "Federal Income Tax Withholding",
+        "withholdChoicesAccessibilityText": "Choose what you want to withhold for Federal taxes:",
+        "rowList": [
+            {
+                "name": "fedTaxableIncome",
+                "labelList": [
+                    "Taxable Income"
+                ],
+                "displayValue": "$1,000.00"
+            },
+            {
+                "name": "fedWithholdDefault",
+                "showRadio": true,
+                "radioSelected": true,
+                "radioValue": "DFLT",
+                "labelList": [
+                    "<strong>Withhold Default Amount</strong>"
+                ],
+                "displayValue": "$200.00"
+            },
+            {
+                "name": "fedWithholdAmount",
+                "showRadio": true,
+                "radioValue": "RPLC",
+                "labelList": [
+                    "<strong>Withhold This Amount</strong>",
+                    "(minimum <span class=\"al-noWrap\">$200.00</span>)"
+                ],
+                "accessibilityText": "Enter a specific amount (in 0.00 format) that you want withheld for federal taxes.",
+                "fieldType": "amount",
+                "fieldEditList": [
+                    {
+                        "editId": "edit9910093500",
+                        "editMessage": "This is a required field.",
+                        "validatorType": "required"
+                    },
+                    {
+                        "editId": "editDbRtrmChcFedWthlVldAmt",
+                        "editMessage": "You must enter a valid amount (between 200.00 and 1000.00) for Federal Withholding.",
+                        "validatorType": "validformat",
+                        "constraintDataList": [
+                            {
+                                "name": "pattern",
+                                "value": "^([$]?((((\\d{1,3}[,]?\\d{3}[,]?\\d{3})|(\\d{1,3}[,]?\\d{3})|(\\d{1,9}))((\\.\\d{0,2})?|((\\.\\d{0,10})?[eE][+-]?\\p{Digit}?)))|(\\.\\d{1,2})))$"
+                            }
+                        ]
+                    },
+                    {
+                        "editId": "editDbRtrmChcFedWthlVldAmt",
+                        "editMessage": "You must enter a valid amount (between 200.00 and 1000.00) for Federal Withholding.",
+                        "validatorType": "range",
+                        "constraintDataList": [
+                            {
+                                "name": "min",
+                                "value": "200.0"
+                            },
+                            {
+                                "name": "max",
+                                "value": "1000.0"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "fedWithholdPercent",
+                "showRadio": true,
+                "radioValue": "RPPT",
+                "labelList": [
+                    "<strong>Withhold This Percent</strong>",
+                    "(minimum 20%)"
+                ],
+                "accessibilityText": "Enter a specific percentage that you want withheld for federal taxes.",
+                "fieldType": "percent",
+                "fieldEditList": [
+                    {
+                        "editId": "edit9910093500",
+                        "editMessage": "This is a required field.",
+                        "validatorType": "required"
+                    },
+                    {
+                        "editId": "editDbRtrmChcFedWthlVldPct",
+                        "editMessage": "You must enter a valid percent (between 20 and 100) for Federal Withholding.",
+                        "validatorType": "validformat",
+                        "constraintDataList": [
+                            {
+                                "name": "pattern",
+                                "value": "^(\\d+)$"
+                            }
+                        ]
+                    },
+                    {
+                        "editId": "editDbRtrmChcFedWthlVldPct",
+                        "editMessage": "You must enter a valid percent (between 20 and 100) for Federal Withholding.",
+                        "validatorType": "range",
+                        "constraintDataList": [
+                            {
+                                "name": "min",
+                                "value": "20"
+                            },
+                            {
+                                "name": "max",
+                                "value": "100"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "US_STATE",
+        "tableHeaderText": "State Income Tax Withholding",
+        "withholdChoicesAccessibilityText": "Choose what you want to withhold for State taxes:",
+        "rowList": [
+            {
+                "name": "stTaxableIncome",
+                "labelList": [
+                    "Taxable Income"
+                ],
+                "displayValue": "$1,000.00"
+            },
+            {
+                "name": "state",
+                "labelList": [
+                    "State"
+                ],
+                "useThisStateButton": "Use This State",
+                "fieldType": "dropdown",
+                "dropDownValidValues": [
+                    {
+                        "value": "AL",
+                        "valueDescription": "AL"
+                    },
+                    {
+                        "value": "AK",
+                        "valueDescription": "AK"
+                    },
+                    {
+                        "value": "AS",
+                        "valueDescription": "AS"
+                    },
+                    {
+                        "value": "AZ",
+                        "valueDescription": "AZ"
+                    },
+                    {
+                        "value": "AR",
+                        "valueDescription": "AR"
+                    },
+                    {
+                        "value": "AA",
+                        "valueDescription": "AA"
+                    },
+                    {
+                        "value": "AE",
+                        "valueDescription": "AE"
+                    },
+                    {
+                        "value": "AP",
+                        "valueDescription": "AP"
+                    },
+                    {
+                        "value": "CA",
+                        "valueDescription": "CA"
+                    },
+                    {
+                        "value": "CO",
+                        "valueDescription": "CO"
+                    },
+                    {
+                        "value": "CT",
+                        "valueDescription": "CT"
+                    },
+                    {
+                        "value": "DE",
+                        "valueDescription": "DE"
+                    },
+                    {
+                        "value": "DC",
+                        "valueDescription": "DC"
+                    },
+                    {
+                        "value": "FL",
+                        "valueDescription": "FL"
+                    },
+                    {
+                        "value": "FM",
+                        "valueDescription": "FM"
+                    },
+                    {
+                        "value": "GA",
+                        "valueDescription": "GA"
+                    },
+                    {
+                        "value": "GU",
+                        "valueDescription": "GU"
+                    },
+                    {
+                        "value": "HI",
+                        "valueDescription": "HI"
+                    },
+                    {
+                        "value": "ID",
+                        "valueDescription": "ID"
+                    },
+                    {
+                        "value": "IL",
+                        "valueDescription": "IL",
+                        "isSelected": true
+                    },
+                    {
+                        "value": "IN",
+                        "valueDescription": "IN"
+                    },
+                    {
+                        "value": "IA",
+                        "valueDescription": "IA"
+                    },
+                    {
+                        "value": "KS",
+                        "valueDescription": "KS"
+                    },
+                    {
+                        "value": "KY",
+                        "valueDescription": "KY"
+                    },
+                    {
+                        "value": "LA",
+                        "valueDescription": "LA"
+                    },
+                    {
+                        "value": "ME",
+                        "valueDescription": "ME"
+                    },
+                    {
+                        "value": "MH",
+                        "valueDescription": "MH"
+                    },
+                    {
+                        "value": "MD",
+                        "valueDescription": "MD"
+                    },
+                    {
+                        "value": "MA",
+                        "valueDescription": "MA"
+                    },
+                    {
+                        "value": "MI",
+                        "valueDescription": "MI"
+                    },
+                    {
+                        "value": "MN",
+                        "valueDescription": "MN"
+                    },
+                    {
+                        "value": "MS",
+                        "valueDescription": "MS"
+                    },
+                    {
+                        "value": "MO",
+                        "valueDescription": "MO"
+                    },
+                    {
+                        "value": "MT",
+                        "valueDescription": "MT"
+                    },
+                    {
+                        "value": "NE",
+                        "valueDescription": "NE"
+                    },
+                    {
+                        "value": "NV",
+                        "valueDescription": "NV"
+                    },
+                    {
+                        "value": "NH",
+                        "valueDescription": "NH"
+                    },
+                    {
+                        "value": "NJ",
+                        "valueDescription": "NJ"
+                    },
+                    {
+                        "value": "NM",
+                        "valueDescription": "NM"
+                    },
+                    {
+                        "value": "NY",
+                        "valueDescription": "NY"
+                    },
+                    {
+                        "value": "NC",
+                        "valueDescription": "NC"
+                    },
+                    {
+                        "value": "ND",
+                        "valueDescription": "ND"
+                    },
+                    {
+                        "value": "MP",
+                        "valueDescription": "MP"
+                    },
+                    {
+                        "value": "OH",
+                        "valueDescription": "OH"
+                    },
+                    {
+                        "value": "OK",
+                        "valueDescription": "OK"
+                    },
+                    {
+                        "value": "OR",
+                        "valueDescription": "OR"
+                    },
+                    {
+                        "value": "PW",
+                        "valueDescription": "PW"
+                    },
+                    {
+                        "value": "PA",
+                        "valueDescription": "PA"
+                    },
+                    {
+                        "value": "RI",
+                        "valueDescription": "RI"
+                    },
+                    {
+                        "value": "SC",
+                        "valueDescription": "SC"
+                    },
+                    {
+                        "value": "SD",
+                        "valueDescription": "SD"
+                    },
+                    {
+                        "value": "TN",
+                        "valueDescription": "TN"
+                    },
+                    {
+                        "value": "TX",
+                        "valueDescription": "TX"
+                    },
+                    {
+                        "value": "UT",
+                        "valueDescription": "UT"
+                    },
+                    {
+                        "value": "VT",
+                        "valueDescription": "VT"
+                    },
+                    {
+                        "value": "VI",
+                        "valueDescription": "VI"
+                    },
+                    {
+                        "value": "VA",
+                        "valueDescription": "VA"
+                    },
+                    {
+                        "value": "WA",
+                        "valueDescription": "WA"
+                    },
+                    {
+                        "value": "WV",
+                        "valueDescription": "WV"
+                    },
+                    {
+                        "value": "WI",
+                        "valueDescription": "WI"
+                    },
+                    {
+                        "value": "WY",
+                        "valueDescription": "WY"
+                    }
+                ],
+                "fieldEditList": [
+                    {
+                        "editId": "edit9910093500",
+                        "editMessage": "This is a required field.",
+                        "validatorType": "required"
+                    },
+                    {
+                        "editId": "edit99540904",
+                        "editMessage": "Your entry is invalid. Enter a valid alphanumeric value before continuing.",
+                        "validatorType": "validformat",
+                        "constraintDataList": [
+                            {
+                                "name": "pattern",
+                                "value": "^([A-Za-z0-9]+)$"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "stWithholdNothing",
+                "showRadio": true,
+                "radioSelected": true,
+                "radioValue": "NOWT",
+                "labelList": [
+                    "<strong>Withhold Nothing</strong>"
+                ],
+                "displayValue": "$0.00"
+            },
+            {
+                "name": "stWithholdAmount",
+                "showRadio": true,
+                "radioValue": "RPLC",
+                "labelList": [
+                    "<strong>Withhold This Amount</strong>",
+                    "(minimums may apply)"
+                ],
+                "defaultValue": 0,
+                "accessibilityText": "Enter a specific amount (in 0.00 format) that you want withheld for state taxes.",
+                "fieldType": "amount",
+                "fieldEditList": [
+                    {
+                        "editId": "edit9910093500",
+                        "editMessage": "This is a required field.",
+                        "validatorType": "required"
+                    },
+                    {
+                        "editId": "editDbRtrmChcStWthlVldAmt",
+                        "editMessage": "You must enter a valid amount (between 0.00 and 1000.00) for State Withholding.",
+                        "validatorType": "validformat",
+                        "constraintDataList": [
+                            {
+                                "name": "pattern",
+                                "value": "^([$]?((((\\d{1,3}[,]?\\d{3}[,]?\\d{3})|(\\d{1,3}[,]?\\d{3})|(\\d{1,9}))((\\.\\d{0,2})?|((\\.\\d{0,10})?[eE][+-]?\\p{Digit}?)))|(\\.\\d{1,2})))$"
+                            }
+                        ]
+                    },
+                    {
+                        "editId": "editDbRtrmChcStWthlVldAmt",
+                        "editMessage": "You must enter a valid amount (between 0.00 and 1000.00) for State Withholding.",
+                        "validatorType": "range",
+                        "constraintDataList": [
+                            {
+                                "name": "min",
+                                "value": "0.0"
+                            },
+                            {
+                                "name": "max",
+                                "value": "1000.0"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+]

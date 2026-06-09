@@ -1,0 +1,43 @@
+{
+    "responseStatus": {
+      "statusCode": 200,
+      "statusMessage": "OK"
+    },
+    "deferredSuccessfullyHeader": {
+      "flowNameText": "Make Your Retirement Choices",
+      "pageNameText": "Deferred Successfully",
+      "confirmationNumberText": "Your confirmation number is <strong>350010089</strong>.",
+      "headerConfirmationNumber": "350010089",
+      "completeEmailText": "",
+      "completePrintText": "Print this page",
+      "completeRecordsText": "for your records.",
+      "successfulDeferrredText": "You've successfully deferred your pension benefits.",
+      "waitPenaltiesTitle": "Don’t Wait Too Long, Though",
+      "waitPenaltiesTaxTxt": "You could be subject to significant tax penalties if you postpone your benefit past the IRS-required start date. That date is generally April 1 after the year you reach age 72 (or 70&frac12; if you turned 70&frac12; prior to January 1, 2020) or you retire—whichever is later. If you’re a 5% owner, though, the required start date is April 1 after the year you reach age 72 (or 70&frac12; if you turned 70&frac12; prior to January 1, 2020) (even if you’re still working).",
+      "waitPenaltiesNRDTxt": "Once you separate from employment, the plan might require you to start receiving your benefit before the required start date. This could be as early as your <A onclick=\"if(isUACrossEnabled()){try{ga('trackerUa1.send','event', 'Internal Link' ,'Link click','LinkId:DB_ELEC_DEFER_NRD_DATES_LINK LinkDest:/web/retirement3x/dbyourkybnftpmtdt'); } catch(err){}} if(isUAClientEnabled()){ try{if(isGTMEnabled()){dataLayer.push({'event':'UPointLinkEvent','linkCategory':'Internal Link','linkAction':'Link Click','linkLabel':'LinkId:DB_ELEC_DEFER_NRD_DATES_LINK LinkDest:/web/retirement3x/dbyourkybnftpmtdt'});}else{ga('trackerUa2.send','event', 'Internal Link' ,'Link click','LinkId:DB_ELEC_DEFER_NRD_DATES_LINK LinkDest:/web/retirement3x/dbyourkybnftpmtdt'); }} catch(err){}}try{setTimeout(function() {}, 100);}catch(err){}window.winHandle = window.open('/web/retirement3x/dbyourkybnftpmtdt?linkId=DB_ELEC_DEFER_NRD_DATES_LINK&technicalNameForLink=DB_ELEC_DEFER_NRD_DATES_LINK&userFriendlyNameForLink=null&domain=Ben-DB&baseClientIndicator=Base','DB_ELEC_DEFER_NRD_DATES_LINK','titlebar=yes,scrollbars=yes,resizable=yes,width=980,height=560');if(typeof XD != 'undefined'){XD.registerWindow('DB_ELEC_DEFER_NRD_DATES_LINK',window.winHandle);}try{setSessionTimeOut()}catch(err){};return false;\" href=\"/web/retirement3x/dbyourkybnftpmtdt?linkId=DB_ELEC_DEFER_NRD_DATES_LINK&technicalNameForLink=DB_ELEC_DEFER_NRD_DATES_LINK&userFriendlyNameForLink=null&domain=Ben-DB&baseClientIndicator=Base\" class=\"ah-secondaryWindow\">normal retirement date</A>.",
+      "completeReturnTitle": "Return When You're Ready to Take Your Pension Benefits",
+      "completeReturnTxt": "Come back to the site or call the Benefits Center <strong>45</strong> to <strong>90</strong> days before you want to begin receiving the benefits you chose to defer."
+    },
+    "nextStepsSection": {
+      "nextStepsTitle": "Your Next Steps",
+      "nextStepsHMHeader": "Retiree Health Benefits",
+      "nextStepsHMEnroll": "You can enroll in Premier Retiree medical coverage <strong>up to 90 days before</strong> you retire or <strong>within 31 days after</strong> you retire.",
+      "nextStepsHMNote": "<strong>Note:</strong> If you don’t enroll within these dates, you will lose eligibility for coverage and won't be able to enroll in the future.",
+      "nextStepsHMEnrollLink": "<A onclick=\"if(isUACrossEnabled()){try{ga('trackerUa1.send','event', 'External Link' ,'Link click','LinkId:HM_ENRL_010_LINK_ENROLL LinkDest:YBR'); } catch(err){}} if(isUAClientEnabled()){ try{if(isGTMEnabled()){dataLayer.push({'event':'UPointLinkEvent','linkCategory':'External Link','linkAction':'Link Click','linkLabel':'LinkId:HM_ENRL_010_LINK_ENROLL LinkDest:YBR'});}else{ga('trackerUa2.send','event', 'External Link' ,'Link click','LinkId:HM_ENRL_010_LINK_ENROLL LinkDest:YBR'); }} catch(err){}}setTimeout(function() {document.location.href = href;}, 100);return false;\" href=\"/web/retirement3x/ybr?iframeDest=%2Fdelegate%2Fhfim%3Fpartner%3DYBR%26lng%3D19939_1.0%26pgNm%3DpageName%26svcNm%3DHM%26srvcLng%3D19939_1.0%26pageCd%3DHM_ENRL_PORTAL_WELCOME%26render%3Dportlet%26target%3DYBRQA%26linkName%3DHM_ENRL_010_LINK_ENROLL&destHash=P0E7-CDRrDHBRjjZ5H2utKiYmwLB7Y0QHGUvo1FnWd8A&destName=IFrame&technicalNameForLink=HM_ENRL_010_LINK_ENROLL&userFriendlyNameForLink=null&domain=Ben-HM&baseClientIndicator=Base\">enroll</A>",
+      "nextStepsHMEnrollButton": "Research and Enroll",
+      "nextStepsAnswerLink": "<A onclick=\"if(isUACrossEnabled()){try{ga('trackerUa1.send','event', 'Internal Link' ,'Link click','LinkId:DB_ELEC_NXT_STEPS_ANS_LNK LinkDest:/web/${friendlyUrl}/retirement-answers?articleId=RA_INCOME_TAXES_RTRM_SAVINGS'); } catch(err){}} if(isUAClientEnabled()){ try{if(isGTMEnabled()){dataLayer.push({'event':'UPointLinkEvent','linkCategory':'Internal Link','linkAction':'Link Click','linkLabel':'LinkId:DB_ELEC_NXT_STEPS_ANS_LNK LinkDest:/web/${friendlyUrl}/retirement-answers?articleId=RA_INCOME_TAXES_RTRM_SAVINGS'});}else{ga('trackerUa2.send','event', 'Internal Link' ,'Link click','LinkId:DB_ELEC_NXT_STEPS_ANS_LNK LinkDest:/web/${friendlyUrl}/retirement-answers?articleId=RA_INCOME_TAXES_RTRM_SAVINGS'); }} catch(err){}}setTimeout(function() {document.location.href = href;}, 100);return false;\" href=\"/web/retirement3x/retirement-answers?articleId=RA_INCOME_TAXES_RTRM_SAVINGS&linkId=DB_ELEC_NXT_STEPS_ANS_LNK&technicalNameForLink=DB_ELEC_NXT_STEPS_ANS_LNK&userFriendlyNameForLink=Link to Retirement Answers\\/Income and Taxes\\/Retirement Savings Plan topic&domain=Ben-CM&baseClientIndicator=Base\">Review Your Savings Plan Options</A>",
+      "nextStepsConsiderOptions": "Consider all your options when it comes to accessing your retirement savings.",
+      "nextStepsHubLink": "<A onclick=\"if(isUACrossEnabled()){try{ga('trackerUa1.send','event', 'Internal Link' ,'Link click','LinkId:DB_ELEC_NXT_STEPS_HUB_LNK LinkDest:/web/retirement3x/retirement-hub'); } catch(err){}} if(isUAClientEnabled()){ try{if(isGTMEnabled()){dataLayer.push({'event':'UPointLinkEvent','linkCategory':'Internal Link','linkAction':'Link Click','linkLabel':'LinkId:DB_ELEC_NXT_STEPS_HUB_LNK LinkDest:/web/retirement3x/retirement-hub'});}else{ga('trackerUa2.send','event', 'Internal Link' ,'Link click','LinkId:DB_ELEC_NXT_STEPS_HUB_LNK LinkDest:/web/retirement3x/retirement-hub'); }} catch(err){}}setTimeout(function() {document.location.href = href;}, 100);return false;\" href=\"/web/retirement3x/retirement-hub?linkId=DB_ELEC_NXT_STEPS_HUB_LNK&technicalNameForLink=DB_ELEC_NXT_STEPS_HUB_LNK&userFriendlyNameForLink=Retirement Hub on UPoint&domain=Ben-DB&baseClientIndicator=Base\">Still have questions?</A>",
+      "nextStepsHubText": "Check out all the information on the <A onclick=\"if(isUACrossEnabled()){try{ga('trackerUa1.send','event', 'Internal Link' ,'Link click','LinkId:CS_RETIREMENT_HUB_NAV LinkDest:/web/retirement3x/retirement-hub'); } catch(err){}} if(isUAClientEnabled()){ try{if(isGTMEnabled()){dataLayer.push({'event':'UPointLinkEvent','linkCategory':'Internal Link','linkAction':'Link Click','linkLabel':'LinkId:CS_RETIREMENT_HUB_NAV LinkDest:/web/retirement3x/retirement-hub'});}else{ga('trackerUa2.send','event', 'Internal Link' ,'Link click','LinkId:CS_RETIREMENT_HUB_NAV LinkDest:/web/retirement3x/retirement-hub'); }} catch(err){}}setTimeout(function() {document.location.href = href;}, 100);return false;\" href=\"/web/retirement3x/retirement-hub?linkId=CS_RETIREMENT_HUB_NAV&technicalNameForLink=CS_RETIREMENT_HUB_NAV&userFriendlyNameForLink=Retirement Hub on UPoint&domain=Ben-DB&baseClientIndicator=Base\">Retirement Hub</A>."
+    },
+    "deferredSuccessfullySummary": {
+      "summaryTitle": "Summary of Your Request",
+      "summaryConfirmationText": "Confirmation Number",
+      "summaryConfirmationNumber": "350010089",
+      "summaryRequestText": "Request",
+      "summaryDescriptionText": "Defer Your Pension Retirement Choices",
+      "summaryPlansText": "Plans",
+      "summaryEffectiveDateText": "Effective Date"
+    },
+    "httpStatus": "OK"
+  }

@@ -1,0 +1,1535 @@
+[
+    {
+      "asset": {
+        "DB_ELEC_MATRIX_BELOW_TABLE_PLACEHOLDER": {
+          
+        },
+        "DB_ELEC_AUTH_AG": {
+          "DB_ELEC_AUTH_PAGE_TITLE": {
+            "assetType": "text",
+            "assetValue": "Authorize Your Choices",
+            "assetKey": "DB_ELEC_AUTH_PAGE_TITLE"
+          },
+          "DB_ELEC_AUTH_ALERT_TITLE": {
+            "assetType": "text",
+            "assetValue": "To begin your pension benefit, you must authorize your choices.",
+            "assetKey": "DB_ELEC_AUTH_ALERT_TITLE"
+          },
+          "DB_ELEC_AUTH_ALERT_BODY": {
+            "assetType": "text",
+            "assetValue": "<p>Review your <A onclick=\"if(isUACrossEnabled()){try{ga('trackerUa1.send','event', 'Internal Link' ,'Link click','LinkId:DB_ELEC_RVW_SEC_LNK LinkDest:/web/retirement3x/db-election-review'); } catch(err){}} if(isUAClientEnabled()){ try{if(isGTMEnabled()){dataLayer.push({'event':'UPointLinkEvent','linkCategory':'Internal Link','linkAction':'Link Click','linkLabel':'LinkId:DB_ELEC_RVW_SEC_LNK LinkDest:/web/retirement3x/db-election-review'});}else{ga('trackerUa2.send','event', 'Internal Link' ,'Link click','LinkId:DB_ELEC_RVW_SEC_LNK LinkDest:/web/retirement3x/db-election-review'); }} catch(err){}}try{setTimeout(function() {}, 100);}catch(err){}window.winHandle = window.open('/web/retirement3x/db-election-review?linkId=DB_ELEC_RVW_SEC_LNK&technicalNameForLink=DB_ELEC_RVW_SEC_LNK&userFriendlyNameForLink=Link to the db election review page&domain=Ben-DB&baseClientIndicator=Base','DB_ELEC_RVW_SEC_LNK','titlebar=yes,scrollbars=yes,resizable=yes,width=980,height=560');if(typeof XD != 'undefined'){XD.registerWindow('DB_ELEC_RVW_SEC_LNK',window.winHandle);}try{setSessionTimeOut()}catch(err){};return false;\" href=\"/web/retirement3x/db-election-review?linkId=DB_ELEC_RVW_SEC_LNK&technicalNameForLink=DB_ELEC_RVW_SEC_LNK&userFriendlyNameForLink=Link to the db election review page&domain=Ben-DB&baseClientIndicator=Base\" class=\"ah-secondaryWindow\">pension choices</A>.</p>",
+            "assetKey": "DB_ELEC_AUTH_ALERT_BODY"
+          },
+          "DB_ELEC_AUTH_RD_STMT": {
+            "assetType": "text",
+            "assetValue": "Read the statement below carefully. Then check the box at the bottom of the page to authorize your choices and electronically sign the statement.",
+            "assetKey": "DB_ELEC_AUTH_RD_STMT"
+          },
+          "DB_ELEC_AUTH_YR_RIGHTS": {
+            "assetType": "text",
+            "assetValue": "Your Rights",
+            "assetKey": "DB_ELEC_AUTH_YR_RIGHTS"
+          },
+          "DB_ELEC_AUTH_ACKNOWLEDGE": {
+            "assetType": "text",
+            "assetValue": "Acknowledgement",
+            "assetKey": "DB_ELEC_AUTH_ACKNOWLEDGE"
+          },
+          "DB_ELEC_AUTH_CHC_AND_CRTFY": {
+            "assetType": "text",
+            "assetValue": "I <strong>authorize</strong> all of my <A onclick=\"if(isUACrossEnabled()){try{ga('trackerUa1.send','event', 'Internal Link' ,'Link click','LinkId:DB_ELEC_RVW_SEC_LNK LinkDest:/web/retirement3x/db-election-review'); } catch(err){}} if(isUAClientEnabled()){ try{if(isGTMEnabled()){dataLayer.push({'event':'UPointLinkEvent','linkCategory':'Internal Link','linkAction':'Link Click','linkLabel':'LinkId:DB_ELEC_RVW_SEC_LNK LinkDest:/web/retirement3x/db-election-review'});}else{ga('trackerUa2.send','event', 'Internal Link' ,'Link click','LinkId:DB_ELEC_RVW_SEC_LNK LinkDest:/web/retirement3x/db-election-review'); }} catch(err){}}try{setTimeout(function() {}, 100);}catch(err){}window.winHandle = window.open('/web/retirement3x/db-election-review?linkId=DB_ELEC_RVW_SEC_LNK&technicalNameForLink=DB_ELEC_RVW_SEC_LNK&userFriendlyNameForLink=Link to the db election review page&domain=Ben-DB&baseClientIndicator=Base','DB_ELEC_RVW_SEC_LNK','titlebar=yes,scrollbars=yes,resizable=yes,width=980,height=560');if(typeof XD != 'undefined'){XD.registerWindow('DB_ELEC_RVW_SEC_LNK',window.winHandle);}try{setSessionTimeOut()}catch(err){};return false;\" href=\"/web/retirement3x/db-election-review?linkId=DB_ELEC_RVW_SEC_LNK&technicalNameForLink=DB_ELEC_RVW_SEC_LNK&userFriendlyNameForLink=Link to the db election review page&domain=Ben-DB&baseClientIndicator=Base\" class=\"ah-secondaryWindow\">pension choices</A> and certify the statements above are accurate.",
+            "assetKey": "DB_ELEC_AUTH_CHC_AND_CRTFY"
+          },
+          "DB_ELEC_AUTH_ACS_CHKBOX": {
+            "assetType": "text",
+            "assetValue": "Choose to authorize your choices and certify that your statements are accurate.",
+            "assetKey": "DB_ELEC_AUTH_ACS_CHKBOX"
+          },
+          "DB_ELEC_AUTH_PRINT": {
+            "assetType": "text",
+            "assetValue": "<a href=javascript:void(0); onclick='window.print();'>Print a copy</a> of your authorization statement for your records.",
+            "assetKey": "DB_ELEC_AUTH_PRINT"
+          },
+          "DB_ELEC_AUTH_BUTTON": {
+            "assetType": "text",
+            "assetValue": "Sign and Authorize",
+            "assetKey": "DB_ELEC_AUTH_BUTTON"
+          }
+        },
+        "DB_ELEC_AUTH_PLAN_AG": {
+          "DB_ELEC_AUTH_PLAN_HEAD": {
+            "assetType": "text",
+            "assetValue": "Authorization for ${token:planNm} Benefits",
+            "assetKey": "DB_ELEC_AUTH_PLAN_HEAD"
+          },
+          "DB_ELEC_AUTH_PLAN_INTRO": {
+            "assetType": "text",
+            "assetValue": "By electronically authorizing my ${token:planNm} benefits on this site, I:",
+            "assetKey": "DB_ELEC_AUTH_PLAN_INTRO"
+          },
+          "DB_ELEC_AUTH_PLAN_QUAL_RTRO_ASD": {
+            "assetType": "text",
+            "assetValue": "Certify that I've chosen to have my benefit calculated as of ${token:bcdDt} instead of a current date. I understand that if I choose a current date, my benefit amount may increase or decrease.",
+            "assetKey": "DB_ELEC_AUTH_PLAN_QUAL_RTRO_ASD"
+          },
+          "DB_ELEC_AUTH_PLAN_QUAL": {
+            "assetType": "text",
+            "assetValue": "Certify that I received a <A onclick=\"if(isUACrossEnabled()){try{ga('trackerUa1.send','event', 'Internal Link' ,'Link click','LinkId:DB_ELEC_AUTH_NOR LinkDest:/web/retirement3x/db-notice-of-rights'); } catch(err){}} if(isUAClientEnabled()){ try{if(isGTMEnabled()){dataLayer.push({'event':'UPointLinkEvent','linkCategory':'Internal Link','linkAction':'Link Click','linkLabel':'LinkId:DB_ELEC_AUTH_NOR LinkDest:/web/retirement3x/db-notice-of-rights'});}else{ga('trackerUa2.send','event', 'Internal Link' ,'Link click','LinkId:DB_ELEC_AUTH_NOR LinkDest:/web/retirement3x/db-notice-of-rights'); }} catch(err){}}try{setTimeout(function() {}, 100);}catch(err){}window.winHandle = window.open('/ah-angular-afirst-web/#/web/retirement3x/db-notice-of-rights?linkId=DB_ELEC_AUTH_NOR&technicalNameForLink=DB_ELEC_AUTH_NOR&userFriendlyNameForLink=Notice of Rights secondary page link&domain=Ben-DB&baseClientIndicator=Base','DB_ELEC_AUTH_NOR','titlebar=yes,scrollbars=yes,resizable=yes,width=980,height=560');if(typeof XD != 'undefined'){XD.registerWindow('DB_ELEC_AUTH_NOR',window.winHandle);}try{setSessionTimeOut()}catch(err){};return false;\" href=\"/web/retirement3x/db-notice-of-rights?linkId=DB_ELEC_AUTH_NOR&technicalNameForLink=DB_ELEC_AUTH_NOR&userFriendlyNameForLink=Notice of Rights secondary page link&domain=Ben-DB&baseClientIndicator=Base\" class=\"ah-secondaryWindow\">Notice of Rights</A>, and  a description of my pension options,  and amounts payable.",
+            "assetKey": "DB_ELEC_AUTH_PLAN_QUAL"
+          },
+          "DB_ELEC_AUTH_PLAN_30_DAY_NTC_TITLE": {
+            "assetType": "text",
+            "assetValue": "30-Day Notification Period",
+            "assetKey": "DB_ELEC_AUTH_PLAN_30_DAY_NTC_TITLE"
+          },
+          "DB_ELEC_AUTH_PLAN_30_DAY_NTC_CONTENT": {
+            "assetType": "text",
+            "assetValue": "By law, you have at least 30 days to think about your pension choices and decide if you want to consent to receiving benefits. After you start your benefit, you can't change the payment option. You can waive your right to this 30-day period by choosing <strong>Sign and Authorize</strong>. If you're not ready now to consent to receiving benefits, choose <strong>Come Back Later</strong> and return to this site when you're ready to submit your pension choices.",
+            "assetKey": "DB_ELEC_AUTH_PLAN_30_DAY_NTC_CONTENT"
+          },
+          "DB_ELEC_AUTH_PLAN_NRLVR_PMT": {
+            "assetType": "text",
+            "assetValue": "Certify, under penalties of perjury, that I'm entitled to the number of withholding allowances claimed or to choose no withholding for my nonrollover-eligible payment.",
+            "assetKey": "DB_ELEC_AUTH_PLAN_NRLVR_PMT"
+          },
+          "DB_ELEC_AUTH_PLAN_CLM_EXMPT": {
+            "assetType": "text",
+            "assetValue": "Certify, under penalties of perjury, that I'm entitled to the number of withholding allowances claimed or that I'm entitled to claim exempt status.",
+            "assetKey": "DB_ELEC_AUTH_PLAN_CLM_EXMPT"
+          },
+          "DB_ELEC_AUTH_PLAN_UNDRSTND_AMT_CHG": {
+            "assetType": "text",
+            "assetValue": "Certify that I understand the amounts in this statement may change based on final calculations that apply Internal Revenue Code required limitations.",
+            "assetKey": "DB_ELEC_AUTH_PLAN_UNDRSTND_AMT_CHG"
+          },
+          "DB_ELEC_AUTH_PLAN_CTRB": {
+            "assetType": "text",
+            "assetValue": "Certify that I've chosen to .",
+            "assetKey": "DB_ELEC_AUTH_PLAN_CTRB"
+          },
+          "DB_ELEC_AUTH_PLAN_CRCT_ERR": {
+            "assetType": "text",
+            "assetValue": "Certify that I understand that the Premier reserves the right to correct any errors. If it's determined at any time that the information provided on this statement conflicts with the benefit defined by the ${token:planNm}, the ${token:planNm} will prevail. Under the law, a plan must be operated in accordance with its terms.",
+            "assetKey": "DB_ELEC_AUTH_PLAN_CRCT_ERR"
+          },
+          "UPN_DB_ELEC_AUTH_PLAN_QUAL": {
+            "assetType": "text",
+            "assetValue": "Certify that I received a <A onclick=\"if(isUACrossEnabled()){try{ga('trackerUa1.send','event', 'Internal Link' ,'Link click','LinkId:UPN_DB_ELEC_AUTH_NOR LinkDest:/web/retirement3x/db-notice-of-rights'); } catch(err){}} if(isUAClientEnabled()){ try{if(isGTMEnabled()){dataLayer.push({'event':'UPointLinkEvent','linkCategory':'Internal Link','linkAction':'Link Click','linkLabel':'LinkId:UPN_DB_ELEC_AUTH_NOR LinkDest:/web/retirement3x/db-notice-of-rights'});}else{ga('trackerUa2.send','event', 'Internal Link' ,'Link click','LinkId:UPN_DB_ELEC_AUTH_NOR LinkDest:/web/retirement3x/db-notice-of-rights'); }} catch(err){}}try{setTimeout(function() {}, 100);}catch(err){}window.winHandle = window.open('/ah-angular-afirst-web/#/web/retirement3x/db-notice-of-rights?linkId=UPN_DB_ELEC_AUTH_NOR&technicalNameForLink=UPN_DB_ELEC_AUTH_NOR&userFriendlyNameForLink=Notice of Rights secondary page link&domain=Ben-DB&baseClientIndicator=Base','UPN_DB_ELEC_AUTH_NOR','titlebar=yes,scrollbars=yes,resizable=yes,width=980,height=560');if(typeof XD != 'undefined'){XD.registerWindow('UPN_DB_ELEC_AUTH_NOR',window.winHandle);}try{setSessionTimeOut()}catch(err){};return false;\" href=\"/web/retirement3x/db-notice-of-rights?linkId=UPN_DB_ELEC_AUTH_NOR&technicalNameForLink=UPN_DB_ELEC_AUTH_NOR&userFriendlyNameForLink=Notice of Rights secondary page link&domain=Ben-DB&baseClientIndicator=Base\" class=\"ah-secondaryWindow\">Notice of Rights</A>, and a description of my pension options, and amounts payable.",
+            "assetKey": "UPN_DB_ELEC_AUTH_PLAN_QUAL"
+          }
+        },
+        "DB_ELEC_REVIEW_WTHL_AG": {
+          "DB_ELEC_REVIEW_WTHL_PT_WTHL": {
+            "assetType": "text",
+            "assetValue": "Percentage Withheld",
+            "assetKey": "DB_ELEC_REVIEW_WTHL_PT_WTHL"
+          },
+          "DB_ELEC_REVIEW_WTHL_ADDL_AMT_WTHL": {
+            "assetType": "text",
+            "assetValue": "Additional Amount Withheld",
+            "assetKey": "DB_ELEC_REVIEW_WTHL_ADDL_AMT_WTHL"
+          },
+          "DB_ELEC_REVIEW_WTHL_ESTM_FED": {
+            "assetType": "text",
+            "assetValue": "<strong>Federal Withholding</strong> <small>(estimated)</small>",
+            "assetKey": "DB_ELEC_REVIEW_WTHL_ESTM_FED"
+          },
+          "DB_ELEC_REVIEW_WTHL_NOTHING": {
+            "assetType": "text",
+            "assetValue": "Nothing Withheld",
+            "assetKey": "DB_ELEC_REVIEW_WTHL_NOTHING"
+          },
+          "DB_ELEC_REVIEW_WTHL_FED_TD1": {
+            "assetType": "text",
+            "assetValue": "Federal Personal Tax Credit Amount (TD1)",
+            "assetKey": "DB_ELEC_REVIEW_WTHL_FED_TD1"
+          },
+          "DB_ELEC_REVIEW_WTHL_USE_ST_DFLT": {
+            "assetType": "text",
+            "assetValue": "Withhold Using State Defaults",
+            "assetKey": "DB_ELEC_REVIEW_WTHL_USE_ST_DFLT"
+          },
+          "DB_ELEC_REVIEW_WTHL_ESTM_ST": {
+            "assetType": "text",
+            "assetValue": "<strong>State Withholding</strong> <small>(estimated)</small>",
+            "assetKey": "DB_ELEC_REVIEW_WTHL_ESTM_ST"
+          },
+          "DB_ELEC_REVIEW_WTHL_AMT_WTHL": {
+            "assetType": "text",
+            "assetValue": "This Amount Withheld",
+            "assetKey": "DB_ELEC_REVIEW_WTHL_AMT_WTHL"
+          },
+          "DB_ELEC_REVIEW_WTHL_ST_TD1": {
+            "assetType": "text",
+            "assetValue": "Provincial Personal Tax Credit Amount (TD1)",
+            "assetKey": "DB_ELEC_REVIEW_WTHL_ST_TD1"
+          },
+          "DB_ELEC_REVIEW_WTHL_ESTM_PROV": {
+            "assetType": "text",
+            "assetValue": "<strong>Provincial Withholding</strong> <small>(estimated)</small>",
+            "assetKey": "DB_ELEC_REVIEW_WTHL_ESTM_PROV"
+          },
+          "DB_ELEC_REVIEW_WTHL_SECTION_HDR": {
+            "assetType": "text",
+            "assetValue": "Estimated Income Tax Withholding",
+            "assetKey": "DB_ELEC_REVIEW_WTHL_SECTION_HDR"
+          },
+          "DB_ELEC_REVIEW_WTHL_CHG_BTN_TITLE": {
+            "assetType": "text",
+            "assetValue": "Choose to change your withholding details for ${token:name}.",
+            "assetKey": "DB_ELEC_REVIEW_WTHL_CHG_BTN_TITLE"
+          },
+          "DB_ELEC_REVIEW_WTHL_ADDL_PT_WTHL": {
+            "assetType": "text",
+            "assetValue": "Additional Percent Withheld",
+            "assetKey": "DB_ELEC_REVIEW_WTHL_ADDL_PT_WTHL"
+          },
+          "DB_ELEC_REVIEW_WTHL_PT_OF_FED_WTHL": {
+            "assetType": "text",
+            "assetValue": "(<span class=\"ah-noWrap\">${token:pt}</span> of ${token:type})",
+            "assetKey": "DB_ELEC_REVIEW_WTHL_PT_OF_FED_WTHL"
+          },
+          "DB_ELEC_CHG_WTHL_PT_FED": {
+            "assetType": "text",
+            "assetValue": "federal withholding",
+            "assetKey": "DB_ELEC_CHG_WTHL_PT_FED"
+          },
+          "DB_ELEC_CHG_WTHL_PT_TB": {
+            "assetType": "text",
+            "assetValue": "taxable benefits",
+            "assetKey": "DB_ELEC_CHG_WTHL_PT_TB"
+          },
+          "DB_ELEC_REVIEW_WTHL_NRA_SPRT": {
+            "assetType": "text",
+            "assetValue": "You can't make tax withholding changes on this site. If you need to provide a new Form W-8BEN, see the <span class=\"ah-nowrap\"> <A onclick=\"if(isUACrossEnabled()){try{ga('trackerUa1.send','event', 'Document' ,'Link Click','DBResidencyCertification'); } catch(err){}} if(isUAClientEnabled()){ try{if(isGTMEnabled()){dataLayer.push({'event':'UPointLinkEvent','linkCategory':'Document','linkAction':'Link Click',linkLabel:'DBResidencyCertification'});}else{ga('trackerUa2.send','event', 'Document' ,'Link Click','DBResidencyCertification');  }} catch(err){}}try{setTimeout(function() {}, 100);}catch(err){}window.winHandle = window.open('/api/secure/webdav/retirement3x/document_library/Custom_PDF//DBResidencyCertification?linkId=DB_RESIDENCY_CERT_PDF&technicalNameForLink=DB_RESIDENCY_CERT_PDF&userFriendlyNameForLink=null&domain=Ben-DB&baseClientIndicator=Client','DB_RESIDENCY_CERT_PDF','titlebar=yes,scrollbars=yes,resizable=yes,width=980,height=560');if(typeof XD != 'undefined'){XD.registerWindow('DB_RESIDENCY_CERT_PDF',window.winHandle);}try{setSessionTimeOut()}catch(err){};return false;\" href=\"/api/secure/webdav/retirement3x/document_library/Custom_PDF//DBResidencyCertification?linkId=DB_RESIDENCY_CERT_PDF&technicalNameForLink=DB_RESIDENCY_CERT_PDF&userFriendlyNameForLink=null&domain=Ben-DB&baseClientIndicator=Client\" class=\"ah-secondaryWindow\">Residency Certification</A></span> <span class=\"ah-nowrap\"> (PDF, ${token:pdfFileSize} MB)</span> for further instruction, or contact the The Syndicate Emporium of Benefits.",
+            "assetKey": "DB_ELEC_REVIEW_WTHL_NRA_SPRT"
+          },
+          "DB_ELEC_REVIEW_WTHL_NRA_NOT_SPRT": {
+            "assetType": "text",
+            "assetValue": "You can't make tax withholding changes on this site. Contact the The Syndicate Emporium of Benefits to make changes.",
+            "assetKey": "DB_ELEC_REVIEW_WTHL_NRA_NOT_SPRT"
+          }
+        },
+        "DB_ELEC_CHOOSE_PEN_PMT_OPFM_GROUP_TABLE_PLACEHOLDER": {
+          "RH_PENSION_DEFER_CAMPAIGN_PLACEHOLDER_TEXT": {
+            "assetType": "text",
+            "assetValue": "Defer campaign text",
+            "assetKey": "RH_PENSION_DEFER_CAMPAIGN_PLACEHOLDER_TEXT"
+          }
+        },
+        "DB_ELEC_CHG_WTHL_INTRO_AG": {
+          "DB_ELEC_CHG_WTHL_PAGE_TITLE": {
+            "assetType": "text",
+            "assetValue": "Change Your Income Tax Withholding",
+            "assetKey": "DB_ELEC_CHG_WTHL_PAGE_TITLE"
+          },
+          "DB_ELEC_CHG_WTHL_INTRO_TX": {
+            "assetType": "text",
+            "assetValue": "Review your state and federal income tax withholding.",
+            "assetKey": "DB_ELEC_CHG_WTHL_INTRO_TX"
+          },
+          "DB_ELEC_CHG_WTHL_TIP_HDR": {
+            "assetType": "text",
+            "assetValue": "Consider All Your Income",
+            "assetKey": "DB_ELEC_CHG_WTHL_TIP_HDR"
+          },
+          "DB_ELEC_CHG_WTHL_TIP_TX": {
+            "assetType": "text",
+            "assetValue": "<p>Make sure you're withholding enough to avoid any tax penalties.</p>",
+            "assetKey": "DB_ELEC_CHG_WTHL_TIP_TX"
+          },
+          "DB_ELEC_CHG_WTHL_TAX_HDR": {
+            "assetType": "text",
+            "assetValue": "Tax Considerations",
+            "assetKey": "DB_ELEC_CHG_WTHL_TAX_HDR"
+          },
+          "DB_ELEC_CHG_WTHL_TAX_TX": {
+            "assetType": "text",
+            "assetValue": "Review the <A onclick=\"if(isUACrossEnabled()){try{ga('trackerUa1.send','event', 'Internal Link' ,'Link click','LinkId:DB_ELEC_NOR_PAGE LinkDest:/web/retirement3x/db-notice-of-rights'); } catch(err){}} if(isUAClientEnabled()){ try{if(isGTMEnabled()){dataLayer.push({'event':'UPointLinkEvent','linkCategory':'Internal Link','linkAction':'Link Click','linkLabel':'LinkId:DB_ELEC_NOR_PAGE LinkDest:/web/retirement3x/db-notice-of-rights'});}else{ga('trackerUa2.send','event', 'Internal Link' ,'Link click','LinkId:DB_ELEC_NOR_PAGE LinkDest:/web/retirement3x/db-notice-of-rights'); }} catch(err){}}try{setTimeout(function() {}, 100);}catch(err){}window.winHandle = window.open('/ah-angular-afirst-web/#/web/retirement3x/db-notice-of-rights?linkId=DB_ELEC_NOR_PAGE&technicalNameForLink=DB_ELEC_NOR_PAGE&userFriendlyNameForLink=DB Notice of Rights in Secondary Window&domain=Ben-DB&baseClientIndicator=Base','DB_ELEC_NOR_PAGE','titlebar=yes,scrollbars=yes,resizable=yes,width=980,height=560');if(typeof XD != 'undefined'){XD.registerWindow('DB_ELEC_NOR_PAGE',window.winHandle);}try{setSessionTimeOut()}catch(err){};return false;\" href=\"/web/retirement3x/db-notice-of-rights?linkId=DB_ELEC_NOR_PAGE&technicalNameForLink=DB_ELEC_NOR_PAGE&userFriendlyNameForLink=DB Notice of Rights in Secondary Window&domain=Ben-DB&baseClientIndicator=Base\" class=\"ah-secondaryWindow\">Notice of Your Rights</A> for general tax information about payments from the plan.",
+            "assetKey": "DB_ELEC_CHG_WTHL_TAX_TX"
+          },
+          "DB_ELEC_CHG_WTHL_SAVE_BTN_LBL": {
+            "assetType": "text",
+            "assetValue": "Save & Return",
+            "assetKey": "DB_ELEC_CHG_WTHL_SAVE_BTN_LBL"
+          },
+          "DB_ELEC_CHG_WTHL_CNCL_BTN_LBL": {
+            "assetType": "text",
+            "assetValue": "Cancel",
+            "assetKey": "DB_ELEC_CHG_WTHL_CNCL_BTN_LBL"
+          },
+          "DB_ELEC_CHG_WTHL_PMT_DESC_TXT": {
+            "assetType": "text",
+            "assetValue": "You can make changes to your withholdings.",
+            "assetKey": "DB_ELEC_CHG_WTHL_PMT_DESC_TXT"
+          },
+          "UPN_DB_ELEC_CHG_WTHL_TAX_TX": {
+            "assetType": "text",
+            "assetValue": "Review the <A onclick=\"if(isUACrossEnabled()){try{ga('trackerUa1.send','event', 'Internal Link' ,'Link click','LinkId:UPN_DB_ELEC_NOR_PAGE LinkDest:/web/retirement3x/db-notice-of-rights'); } catch(err){}} if(isUAClientEnabled()){ try{if(isGTMEnabled()){dataLayer.push({'event':'UPointLinkEvent','linkCategory':'Internal Link','linkAction':'Link Click','linkLabel':'LinkId:UPN_DB_ELEC_NOR_PAGE LinkDest:/web/retirement3x/db-notice-of-rights'});}else{ga('trackerUa2.send','event', 'Internal Link' ,'Link click','LinkId:UPN_DB_ELEC_NOR_PAGE LinkDest:/web/retirement3x/db-notice-of-rights'); }} catch(err){}}try{setTimeout(function() {}, 100);}catch(err){}window.winHandle = window.open('/ah-angular-afirst-web/#/web/retirement3x/db-notice-of-rights?linkId=UPN_DB_ELEC_NOR_PAGE&technicalNameForLink=UPN_DB_ELEC_NOR_PAGE&userFriendlyNameForLink=Link to the db notice of rights page&domain=Ben-DB&baseClientIndicator=Base','UPN_DB_ELEC_NOR_PAGE','titlebar=yes,scrollbars=yes,resizable=yes,width=980,height=560');if(typeof XD != 'undefined'){XD.registerWindow('UPN_DB_ELEC_NOR_PAGE',window.winHandle);}try{setSessionTimeOut()}catch(err){};return false;\" href=\"/web/retirement3x/db-notice-of-rights?linkId=UPN_DB_ELEC_NOR_PAGE&technicalNameForLink=UPN_DB_ELEC_NOR_PAGE&userFriendlyNameForLink=Link to the db notice of rights page&domain=Ben-DB&baseClientIndicator=Base\" class=\"ah-secondaryWindow\">Notice of Your Rights</A> for general tax information about payments from the plan.",
+            "assetKey": "UPN_DB_ELEC_CHG_WTHL_TAX_TX"
+          }
+        },
+        "DB_ELEC_PEN_RIGHT_RAIL_CONFIG": {
+          "SECTIONS": {
+            "assetType": "assetgroup",
+            "assetValue": {
+              "Documents and Resources": {
+                "assetType": "assetgroup",
+                "assetValue": {
+                  "HEADER": {
+                    "assetType": "text",
+                    "assetValue": "Documents and Resources",
+                    "assetKey": "DOC_AND_RSRCS"
+                  },
+                  "LINKS": {
+                    "assetType": "assetgroup",
+                    "assetValue": {
+                      "Notice of Your Rights": {
+                        "assetType": "assetgroup",
+                        "assetValue": {
+                          "LINK": {
+                            "assetType": "link",
+                            "assetValue": "<A onclick=\"if(isUACrossEnabled()){try{ga('trackerUa1.send','event', 'Internal Link' ,'Link click','LinkId:DB_ELEC_NOR_PAGE LinkDest:/web/retirement3x/db-notice-of-rights'); } catch(err){}} if(isUAClientEnabled()){ try{if(isGTMEnabled()){dataLayer.push({'event':'UPointLinkEvent','linkCategory':'Internal Link','linkAction':'Link Click','linkLabel':'LinkId:DB_ELEC_NOR_PAGE LinkDest:/web/retirement3x/db-notice-of-rights'});}else{ga('trackerUa2.send','event', 'Internal Link' ,'Link click','LinkId:DB_ELEC_NOR_PAGE LinkDest:/web/retirement3x/db-notice-of-rights'); }} catch(err){}}try{setTimeout(function() {}, 100);}catch(err){}window.winHandle = window.open('/ah-angular-afirst-web/#/web/retirement3x/db-notice-of-rights?linkId=DB_ELEC_NOR_PAGE&technicalNameForLink=DB_ELEC_NOR_PAGE&userFriendlyNameForLink=DB Notice of Rights in Secondary Window&domain=Ben-DB&baseClientIndicator=Base','DB_ELEC_NOR_PAGE','titlebar=yes,scrollbars=yes,resizable=yes,width=980,height=560');if(typeof XD != 'undefined'){XD.registerWindow('DB_ELEC_NOR_PAGE',window.winHandle);}try{setSessionTimeOut()}catch(err){};return false;\" href=\"/web/retirement3x/db-notice-of-rights?linkId=DB_ELEC_NOR_PAGE&technicalNameForLink=DB_ELEC_NOR_PAGE&userFriendlyNameForLink=DB Notice of Rights in Secondary Window&domain=Ben-DB&baseClientIndicator=Base\" class=\"ah-secondaryWindow\">Notice of Your Rights</A>",
+                            "assetKey": "DB_ELEC_NOR_PAGE"
+                          }
+                        },
+                        "assetKey": "NOTICE_OF_YOUR_RIGHTS__5ae202a9_9d7e_4a7e_93c7_4c0588574781"
+                      }
+                    },
+                    "assetKey": "DB_ELEC_PEN_RIGHT_RAIL_LINKS"
+                  }
+                },
+                "assetKey": "DOCUMENTS_AND_RESOURCES__3b9cbde7_6fec_415b_9e3b_e55be5a191a7"
+              }
+            },
+            "assetKey": "DB_ELEC_PEN_RIGHT_RAIL_SECTIONS"
+          }
+        },
+        "DB_PEOPLE_LK_ME_AG": {
+          "DB_PEOPLE_LK_ME_HDR": {
+            "assetType": "text",
+            "assetValue": "<A onclick=\"if(isUACrossEnabled()){try{ga('trackerUa1.send','event', 'External Link' ,'Link click','LinkId:DB_PEOPLE_LK_ME_LINK LinkDest:https://www.retirementplm.com/'); } catch(err){}} if(isUAClientEnabled()){ try{if(isGTMEnabled()){dataLayer.push({'event':'UPointLinkEvent','linkCategory':'External Link','linkAction':'Link Click','linkLabel':'LinkId:DB_PEOPLE_LK_ME_LINK LinkDest:https://www.retirementplm.com/'});}else{ga('trackerUa2.send','event', 'External Link' ,'Link click','LinkId:DB_PEOPLE_LK_ME_LINK LinkDest:https://www.retirementplm.com/'); }} catch(err){}}try{setTimeout(function() {}, 100);}catch(err){} doExternalLinkLogging('/delegate/logging?linkTypeNm=New Window With a Scroll, No Information Passed&lnkNm=DB_PEOPLE_LK_ME_LINK&linkId=DB_PEOPLE_LK_ME_LINK&lng=19939_1.0&pgNm=pageName&technicalNameForLink=DB_PEOPLE_LK_ME_LINK&userFriendlyNameForLink=Link to People Like Me site&domain=Ben-DB&baseClientIndicator=Base'); window.winHandle = window.open('https://www.retirementplm.com/','DB_PEOPLE_LK_ME_LINK','titlebar=yes,scrollbars=yes,resizable=yes,width=980,height=560');if(typeof XD != 'undefined'){XD.registerWindow('DB_PEOPLE_LK_ME_LINK',window.winHandle);}try{setSessionTimeOut()}catch(err){};return false;\" href=\"/delegate/logging?linkTypeNm=New Window With a Scroll, No Information Passed&lnkNm=DB_PEOPLE_LK_ME_LINK&linkId=DB_PEOPLE_LK_ME_LINK&lng=19939_1.0&pgNm=pageName&technicalNameForLink=DB_PEOPLE_LK_ME_LINK&userFriendlyNameForLink=Link to People Like Me site&domain=Ben-DB&baseClientIndicator=Base\" class=\"ah-secondaryWindow\">People Like Me</A>&#8482; ",
+            "assetKey": "DB_PEOPLE_LK_ME_HDR"
+          },
+          "DB_PEOPLE_LK_ME_BODY": {
+            "assetType": "text",
+            "assetValue": "Find out what choices others are making.",
+            "assetKey": "DB_PEOPLE_LK_ME_BODY"
+          },
+          "PEOPLE_LK_ME_LINK_TXT": {
+            "assetType": "text",
+            "assetValue": "People Like Me",
+            "assetKey": "PEOPLE_LK_ME_LINK_TXT"
+          },
+          "DB_PEOPLE_LK_ME_LINK": {
+            "assetType": "link",
+            "assetValue": "<A onclick=\"if(isUACrossEnabled()){try{ga('trackerUa1.send','event', 'External Link' ,'Link click','LinkId:DB_PEOPLE_LK_ME_LINK LinkDest:https://www.retirementplm.com/'); } catch(err){}} if(isUAClientEnabled()){ try{if(isGTMEnabled()){dataLayer.push({'event':'UPointLinkEvent','linkCategory':'External Link','linkAction':'Link Click','linkLabel':'LinkId:DB_PEOPLE_LK_ME_LINK LinkDest:https://www.retirementplm.com/'});}else{ga('trackerUa2.send','event', 'External Link' ,'Link click','LinkId:DB_PEOPLE_LK_ME_LINK LinkDest:https://www.retirementplm.com/'); }} catch(err){}}try{setTimeout(function() {}, 100);}catch(err){} doExternalLinkLogging('/delegate/logging?linkTypeNm=New Window With a Scroll, No Information Passed&lnkNm=DB_PEOPLE_LK_ME_LINK&linkId=DB_PEOPLE_LK_ME_LINK&lng=19939_1.0&pgNm=pageName&technicalNameForLink=DB_PEOPLE_LK_ME_LINK&userFriendlyNameForLink=Link to People Like Me site&domain=Ben-DB&baseClientIndicator=Base'); window.winHandle = window.open('https://www.retirementplm.com/','DB_PEOPLE_LK_ME_LINK','titlebar=yes,scrollbars=yes,resizable=yes,width=980,height=560');if(typeof XD != 'undefined'){XD.registerWindow('DB_PEOPLE_LK_ME_LINK',window.winHandle);}try{setSessionTimeOut()}catch(err){};return false;\" href=\"/delegate/logging?linkTypeNm=New Window With a Scroll, No Information Passed&lnkNm=DB_PEOPLE_LK_ME_LINK&linkId=DB_PEOPLE_LK_ME_LINK&lng=19939_1.0&pgNm=pageName&technicalNameForLink=DB_PEOPLE_LK_ME_LINK&userFriendlyNameForLink=Link to People Like Me site&domain=Ben-DB&baseClientIndicator=Base\" class=\"ah-secondaryWindow\">People Like Me</A>",
+            "assetKey": "DB_PEOPLE_LK_ME_LINK"
+          },
+          "DB_PEOPLE_LK_ME_01_LINK": {
+            "assetType": "link",
+            "assetValue": "<A onclick=\"if(isUACrossEnabled()){try{ga('trackerUa1.send','event', 'Internal Link' ,'Link click','LinkId:DB_PEOPLE_LK_ME_01_LINK LinkDest:https://www.retirementplm.com/01'); } catch(err){}} if(isUAClientEnabled()){ try{if(isGTMEnabled()){dataLayer.push({'event':'UPointLinkEvent','linkCategory':'Internal Link','linkAction':'Link Click','linkLabel':'LinkId:DB_PEOPLE_LK_ME_01_LINK LinkDest:https://www.retirementplm.com/01'});}else{ga('trackerUa2.send','event', 'Internal Link' ,'Link click','LinkId:DB_PEOPLE_LK_ME_01_LINK LinkDest:https://www.retirementplm.com/01'); }} catch(err){}}try{setTimeout(function() {}, 100);}catch(err){}window.winHandle = window.open('https://www.retirementplm.com/01?linkId=DB_PEOPLE_LK_ME_01_LINK&technicalNameForLink=DB_PEOPLE_LK_ME_01_LINK&userFriendlyNameForLink=Link to People Like Me site&domain=Ben-DB&baseClientIndicator=Base','DB_PEOPLE_LK_ME_01_LINK','titlebar=yes,scrollbars=yes,resizable=yes,width=980,height=560');if(typeof XD != 'undefined'){XD.registerWindow('DB_PEOPLE_LK_ME_01_LINK',window.winHandle);}try{setSessionTimeOut()}catch(err){};return false;\" href=\"https://www.retirementplm.com/01?linkId=DB_PEOPLE_LK_ME_01_LINK&technicalNameForLink=DB_PEOPLE_LK_ME_01_LINK&userFriendlyNameForLink=Link to People Like Me site&domain=Ben-DB&baseClientIndicator=Base\" class=\"ah-secondaryWindow\">People Like Me</A>",
+            "assetKey": "DB_PEOPLE_LK_ME_01_LINK"
+          },
+          "DB_PEOPLE_LK_ME_02_LINK": {
+            "assetType": "link",
+            "assetValue": "<A onclick=\"if(isUACrossEnabled()){try{ga('trackerUa1.send','event', 'Internal Link' ,'Link click','LinkId:DB_PEOPLE_LK_ME_02_LINK LinkDest:https://www.retirementplm.com/02'); } catch(err){}} if(isUAClientEnabled()){ try{if(isGTMEnabled()){dataLayer.push({'event':'UPointLinkEvent','linkCategory':'Internal Link','linkAction':'Link Click','linkLabel':'LinkId:DB_PEOPLE_LK_ME_02_LINK LinkDest:https://www.retirementplm.com/02'});}else{ga('trackerUa2.send','event', 'Internal Link' ,'Link click','LinkId:DB_PEOPLE_LK_ME_02_LINK LinkDest:https://www.retirementplm.com/02'); }} catch(err){}}try{setTimeout(function() {}, 100);}catch(err){}window.winHandle = window.open('https://www.retirementplm.com/02?linkId=DB_PEOPLE_LK_ME_02_LINK&technicalNameForLink=DB_PEOPLE_LK_ME_02_LINK&userFriendlyNameForLink=Link to People Like Me site&domain=Ben-DB&baseClientIndicator=Base','DB_PEOPLE_LK_ME_02_LINK','titlebar=yes,scrollbars=yes,resizable=yes,width=980,height=560');if(typeof XD != 'undefined'){XD.registerWindow('DB_PEOPLE_LK_ME_02_LINK',window.winHandle);}try{setSessionTimeOut()}catch(err){};return false;\" href=\"https://www.retirementplm.com/02?linkId=DB_PEOPLE_LK_ME_02_LINK&technicalNameForLink=DB_PEOPLE_LK_ME_02_LINK&userFriendlyNameForLink=Link to People Like Me site&domain=Ben-DB&baseClientIndicator=Base\" class=\"ah-secondaryWindow\">People Like Me</A>",
+            "assetKey": "DB_PEOPLE_LK_ME_02_LINK"
+          }
+        },
+        "DB_ELEC_HYP_OPFM_FOOTNOTE": {
+          "DB_ELEC_HYP_OPFM_FOOTNOTE": {
+            "assetType": "text",
+            "assetValue": "This is a hypothetical estimate. Refer to the Hypothetical Payment Options section for a further explanation. ",
+            "assetKey": "DB_ELEC_HYP_OPFM_FOOTNOTE"
+          }
+        },
+        "DB_ELEC_CHOOSE_PEN_RIGHT_RAIL_CONFIG": {
+          "SECTIONS": {
+            "assetType": "assetgroup",
+            "assetValue": {
+              "Documents and Resources": {
+                "assetType": "assetgroup",
+                "assetValue": {
+                  "HEADER": {
+                    "assetType": "text",
+                    "assetValue": "Documents and Resources",
+                    "assetKey": "DOC_AND_RSRCS"
+                  },
+                  "LINKS": {
+                    "assetType": "assetgroup",
+                    "assetValue": {
+                      "Notice of Your Rights": {
+                        "assetType": "assetgroup",
+                        "assetValue": {
+                          "LINK": {
+                            "assetType": "link",
+                            "assetValue": "<A onclick=\"if(isUACrossEnabled()){try{ga('trackerUa1.send','event', 'Internal Link' ,'Link click','LinkId:DB_ELEC_NOR_PAGE LinkDest:/web/retirement3x/db-notice-of-rights'); } catch(err){}} if(isUAClientEnabled()){ try{if(isGTMEnabled()){dataLayer.push({'event':'UPointLinkEvent','linkCategory':'Internal Link','linkAction':'Link Click','linkLabel':'LinkId:DB_ELEC_NOR_PAGE LinkDest:/web/retirement3x/db-notice-of-rights'});}else{ga('trackerUa2.send','event', 'Internal Link' ,'Link click','LinkId:DB_ELEC_NOR_PAGE LinkDest:/web/retirement3x/db-notice-of-rights'); }} catch(err){}}try{setTimeout(function() {}, 100);}catch(err){}window.winHandle = window.open('/ah-angular-afirst-web/#/web/retirement3x/db-notice-of-rights?linkId=DB_ELEC_NOR_PAGE&technicalNameForLink=DB_ELEC_NOR_PAGE&userFriendlyNameForLink=DB Notice of Rights in Secondary Window&domain=Ben-DB&baseClientIndicator=Base','DB_ELEC_NOR_PAGE','titlebar=yes,scrollbars=yes,resizable=yes,width=980,height=560');if(typeof XD != 'undefined'){XD.registerWindow('DB_ELEC_NOR_PAGE',window.winHandle);}try{setSessionTimeOut()}catch(err){};return false;\" href=\"/web/retirement3x/db-notice-of-rights?linkId=DB_ELEC_NOR_PAGE&technicalNameForLink=DB_ELEC_NOR_PAGE&userFriendlyNameForLink=DB Notice of Rights in Secondary Window&domain=Ben-DB&baseClientIndicator=Base\" class=\"ah-secondaryWindow\">Notice of Your Rights</A>",
+                            "assetKey": "DB_ELEC_NOR_PAGE"
+                          }
+                        },
+                        "assetKey": "NOTICE_OF_YOUR_RIGHTS__0af5fa1d_85bb_4e4e_a13b_0f9c5748c5bc"
+                      }
+                    },
+                    "assetKey": "DB_ELEC_CHOOSE_PEN_RIGHT_RAIL_LINKS"
+                  }
+                },
+                "assetKey": "DOCUMENTS_AND_RESOURCES__2ddd3139_e530_45b8_be40_45e2abfbe093"
+              }
+            },
+            "assetKey": "DB_ELEC_CHOOSE_PEN_RIGHT_RAIL_SECTIONS"
+          }
+        },
+        "DB_ELEC_REVIEW_RIGHT_RAIL_CONFIG": {
+          "SECTIONS": {
+            "assetType": "assetgroup",
+            "assetValue": {
+              "Other Resource": {
+                "assetType": "assetgroup",
+                "assetValue": {
+                  "LINKS": {
+                    "assetType": "assetgroup",
+                    "assetValue": {
+                      "Notice of Your Rights": {
+                        "assetType": "assetgroup",
+                        "assetValue": {
+                          "LINK": {
+                            "assetType": "link",
+                            "assetValue": "<A onclick=\"if(isUACrossEnabled()){try{ga('trackerUa1.send','event', 'Internal Link' ,'Link click','LinkId:DB_ELEC_NOR_PAGE LinkDest:/web/retirement3x/db-notice-of-rights'); } catch(err){}} if(isUAClientEnabled()){ try{if(isGTMEnabled()){dataLayer.push({'event':'UPointLinkEvent','linkCategory':'Internal Link','linkAction':'Link Click','linkLabel':'LinkId:DB_ELEC_NOR_PAGE LinkDest:/web/retirement3x/db-notice-of-rights'});}else{ga('trackerUa2.send','event', 'Internal Link' ,'Link click','LinkId:DB_ELEC_NOR_PAGE LinkDest:/web/retirement3x/db-notice-of-rights'); }} catch(err){}}try{setTimeout(function() {}, 100);}catch(err){}window.winHandle = window.open('/ah-angular-afirst-web/#/web/retirement3x/db-notice-of-rights?linkId=DB_ELEC_NOR_PAGE&technicalNameForLink=DB_ELEC_NOR_PAGE&userFriendlyNameForLink=DB Notice of Rights in Secondary Window&domain=Ben-DB&baseClientIndicator=Base','DB_ELEC_NOR_PAGE','titlebar=yes,scrollbars=yes,resizable=yes,width=980,height=560');if(typeof XD != 'undefined'){XD.registerWindow('DB_ELEC_NOR_PAGE',window.winHandle);}try{setSessionTimeOut()}catch(err){};return false;\" href=\"/web/retirement3x/db-notice-of-rights?linkId=DB_ELEC_NOR_PAGE&technicalNameForLink=DB_ELEC_NOR_PAGE&userFriendlyNameForLink=DB Notice of Rights in Secondary Window&domain=Ben-DB&baseClientIndicator=Base\" class=\"ah-secondaryWindow\">Notice of Your Rights</A>",
+                            "assetKey": "DB_ELEC_NOR_PAGE"
+                          }
+                        },
+                        "assetKey": "NOTICE_OF_YOUR_RIGHTS__0c69e13c_39cd_48ed_be84_c1dc26f034c2"
+                      }
+                    },
+                    "assetKey": "DB_ELEC_REVIEW_RIGHT_RAIL_LINKS"
+                  }
+                },
+                "assetKey": "OTHER_RESOURCE__462bd280_6705_408f_a247_6da06fef22c7"
+              }
+            },
+            "assetKey": "DB_ELEC_REVIEW_RIGHT_RAIL_SECTIONS"
+          }
+        },
+        "RTRM_CHOICES_NOTICE_OF_RIGHTS_INTRO_GROUP": {
+          "RTRM_CHOICES_NOTICE_OF_RIGHTS_TXT": {
+            "assetType": "text",
+            "assetValue": "Your Notice of Rights",
+            "assetKey": "RTRM_CHOICES_NOTICE_OF_RIGHTS_TXT"
+          },
+          "RTRM_CHOICES_NOTICE_OF_RIGHTS_INTRO_TXT": {
+            "assetType": "text",
+            "assetValue": "You and your spouse (if you're married) have legal rights under the Pension Plan (the \"Plan\") and you must be notified of them. Review your rights below before choosing your benefits.",
+            "assetKey": "RTRM_CHOICES_NOTICE_OF_RIGHTS_INTRO_TXT"
+          },
+          "RTRM_CHOICES_NOTICE_OF_RIGHTS_HM_TIP_LEADIN_TXT": {
+            "assetType": "text",
+            "assetValue": "Just want to enroll in retiree health care?",
+            "assetKey": "RTRM_CHOICES_NOTICE_OF_RIGHTS_HM_TIP_LEADIN_TXT"
+          },
+          "RTRM_CHOICES_NOTICE_OF_RIGHTS_HM_TIP_TXT": {
+            "assetType": "text",
+            "assetValue": "Acknowledge that you've read your rights now. If you defer, you will have the opportunity to revisit and review this information.",
+            "assetKey": "RTRM_CHOICES_NOTICE_OF_RIGHTS_HM_TIP_TXT"
+          }
+        },
+        "DB_ELEC_AUTH_ELECTION_AG": {
+          "DB_ELEC_AUTH_ELECTION_HEAD": {
+            "assetType": "text",
+            "assetValue": "Authorization for the ${token:electionNm}",
+            "assetKey": "DB_ELEC_AUTH_ELECTION_HEAD"
+          },
+          "DB_ELEC_AUTH_ELECTION_INTRO": {
+            "assetType": "text",
+            "assetValue": "By electronically authorizing ${token:electionNm} on this site, I:",
+            "assetKey": "DB_ELEC_AUTH_ELECTION_INTRO"
+          },
+          "DB_ELEC_AUTH_ELECTION_PMT_BEGIN": {
+            "assetType": "text",
+            "assetValue": "Certify that I've chosen the ${token:opfmNm} to begin on <strong>${token:bcdDt}</strong>.",
+            "assetKey": "DB_ELEC_AUTH_ELECTION_PMT_BEGIN"
+          },
+          "DB_ELEC_AUTH_ELECTION_PMT_AMT": {
+            "assetType": "text",
+            "assetValue": "Certify that I understand this payment option pays <strong>${token:totBnftStarAt}</strong> until <strong>${token:opfmChgDt}</strong>, <strong>${token:totBnftChgAt}</strong> thereafter until <strong>${token:opfmEndDt}</strong>.",
+            "assetKey": "DB_ELEC_AUTH_ELECTION_PMT_AMT"
+          },
+          "DB_ELEC_AUTH_ELECTION_PMT_BENE_AMT": {
+            "assetType": "text",
+            "assetValue": "Certify that I understand my beneficiary will receive upon my death <strong>${token:wnngSrvrBnftAt}</strong> until <strong>${token:opfmChgDt}</strong>, <strong>${token:totBnftContChgAt}</strong> thereafter until <strong>${token:opfmEndDt}</strong>, <strong>$0.00</strong> thereafter. If I die after <strong>${token:opfmEndDt}</strong>, no benefit will be payable to my beneficiary.",
+            "assetKey": "DB_ELEC_AUTH_ELECTION_PMT_BENE_AMT"
+          },
+          "DB_ELEC_AUTH_ELECTION_PMT_BENE_DIES_BFOR": {
+            "assetType": "text",
+            "assetValue": "Certify that I understand that, if my beneficiary dies before me, my benefit amount will change to <strong>${token:totBnftPopAt}</strong>.",
+            "assetKey": "DB_ELEC_AUTH_ELECTION_PMT_BENE_DIES_BFOR"
+          },
+          "DB_ELEC_AUTH_ELECTION_PMT_DIE_BFOR_PRD_END": {
+            "assetType": "text",
+            "assetValue": "Certify that I understand that if I die after the payment certain period ends, no benefit will be paid to my beneficiary upon my death.",
+            "assetKey": "DB_ELEC_AUTH_ELECTION_PMT_DIE_BFOR_PRD_END"
+          }
+        },
+        "RTRM_CHOICES_CHOOSE_RECEIVE_PAYMENT_INTRO_GROUP": {
+          "IS_RTRM_CHOICES_DIRECT_DEPOSIT_AVAILABLE": {
+            "assetType": "expression",
+            "assetValue": "false",
+            "assetKey": "IS_RTRM_CHOICES_DIRECT_DEPOSIT_AVAILABLE"
+          },
+          "RTRM_CHOICES_CHOOSE_RECEIVE_PAYMENT_TXT": {
+            "assetType": "text",
+            "assetValue": "Choose Where to Receive Your Payment(s)",
+            "assetKey": "RTRM_CHOICES_CHOOSE_RECEIVE_PAYMENT_TXT"
+          },
+          "RTRM_CHOICES_CHOOSE_RECEIVE_PAYMENT_INTRO_TXT": {
+            "assetType": "text",
+            "assetValue": "Choose where and how you want to receive your payment(s).",
+            "assetKey": "RTRM_CHOICES_CHOOSE_RECEIVE_PAYMENT_INTRO_TXT"
+          },
+          "RTRM_CHOICES_TIP_TXT": {
+            "assetType": "text",
+            "assetValue": "tip",
+            "assetKey": "RTRM_CHOICES_TIP_TXT"
+          },
+          "RTRM_CHOICES_CHOOSE_RECEIVE_PAYMENT_DIRECT_DEPOSIT_TIP_TXT": {
+            "assetType": "text",
+            "assetValue": "Get your payment faster when you choose direct deposit.",
+            "assetKey": "RTRM_CHOICES_CHOOSE_RECEIVE_PAYMENT_DIRECT_DEPOSIT_TIP_TXT"
+          },
+          "RTRM_CHOICES_CHOOSE_RECEIVE_PAYMENT_DIRECT_DEPOSIT_LEGAL_TXT": {
+            "assetType": "text",
+            "assetValue": "<b>Note:</b> If you choose direct deposit, you confirm that you won't transfer your total payment(s) to a bank or financial agency located outside the United States. If you cannot confirm this, then choose to have a paper check mailed to you.",
+            "assetKey": "RTRM_CHOICES_CHOOSE_RECEIVE_PAYMENT_DIRECT_DEPOSIT_LEGAL_TXT"
+          },
+          "RTRM_CHOICES_CHOOSE_RECEIVE_PAYMENT_APP_HDR": {
+            "assetType": "text",
+            "assetValue": "Adding a new address to your account?",
+            "assetKey": "RTRM_CHOICES_CHOOSE_RECEIVE_PAYMENT_APP_HDR"
+          },
+          "RTRM_CHOICES_CHOOSE_RECEIVE_PAYMENT_APP_TXT": {
+            "assetType": "text",
+            "assetValue": "As a security precaution, your lump sum payment will be made on the next available payment date after your new address has been on file for at least 7 days.",
+            "assetKey": "RTRM_CHOICES_CHOOSE_RECEIVE_PAYMENT_APP_TXT"
+          }
+        },
+        "DB_ELEC_NOR_WEB_CONTENT_AG": {
+          "DB_ELEC_NOR_WEB_CONTENT_LIST": {
+            "assetType": "assetgroup",
+            "assetValue": {
+              "DB_ELEC_NOR_WEB_CONTENT_ITEM": {
+                "assetType": "assetgroup",
+                "assetValue": {
+                  "DB_ELEC_NOR_RIGHTS_TO_WAIVE_QJSA": {
+                    "assetType": "assetgroup",
+                    "assetValue": {
+                      "WEB_CONTENT_ID": {
+                        "assetType": "string",
+                        "assetValue": "DB_ELEC_NOR_RIGHTS_TO_WAIVE_QJSA",
+                        "assetKey": "DB_ELEC_NOR_RIGHTS_TO_WAIVE_QJSA"
+                      },
+                      "ITEM_KEY": {
+                        "assetType": "string",
+                        "assetValue": "RIGHTS_TO_WAIVE_QJSA",
+                        "assetKey": "RIGHTS_TO_WAIVE_QJSA"
+                      },
+                      "ELIGIBILITY": {
+                        "assetType": "expression",
+                        "assetValue": "false",
+                        "assetKey": "HAS_NON_FINANCIAL_EFFECT_QJSA_RIGHTS"
+                      }
+                    },
+                    "assetKey": "DB_ELEC_NOR_RIGHTS_TO_WAIVE_QJSA__658f1afa_edc1_4013_8f05_66f3761aba48"
+                  },
+                  "DB_ELEC_NOR_RIGHTS_TO_WAIVE_QJSA_RELATIVE_VALUE": {
+                    "assetType": "assetgroup",
+                    "assetValue": {
+                      "WEB_CONTENT_ID": {
+                        "assetType": "string",
+                        "assetValue": "DB_ELEC_NOR_RIGHTS_TO_WAIVE_QJSA_RELATIVE_VALUE",
+                        "assetKey": "DB_ELEC_NOR_RIGHTS_TO_WAIVE_QJSA_RELATIVE_VALUE"
+                      },
+                      "ITEM_KEY": {
+                        "assetType": "string",
+                        "assetValue": "RIGHTS_TO_WAIVE_QJSA",
+                        "assetKey": "RIGHTS_TO_WAIVE_QJSA"
+                      },
+                      "ELIGIBILITY": {
+                        "assetType": "expression",
+                        "assetValue": "false",
+                        "assetKey": "HAS_FINANCIAL_EFFECT_QJSA_RIGHTS"
+                      }
+                    },
+                    "assetKey": "DB_ELEC_NOR_RIGHTS_TO_WAIVE_QJSA_RELATIVE_VALUE__e59e2041_167f_430c_a735_821d0fdf2384"
+                  },
+                  "DB_ELEC_NOR_DATE_BEGIN_BENEFIT": {
+                    "assetType": "assetgroup",
+                    "assetValue": {
+                      "WEB_CONTENT_ID": {
+                        "assetType": "string",
+                        "assetValue": "DB_ELEC_NOR_DATE_BEGIN_BENEFIT",
+                        "assetKey": "DB_ELEC_NOR_DATE_BEGIN_BENEFIT"
+                      },
+                      "ITEM_KEY": {
+                        "assetType": "string",
+                        "assetValue": "DATE_BEGIN_BENEFIT",
+                        "assetKey": "DATE_BEGIN_BENEFIT"
+                      },
+                      "ELIGIBILITY": {
+                        "assetType": "expression",
+                        "assetValue": "false",
+                        "assetKey": "HAS_NOR_BCD_SECTION"
+                      }
+                    },
+                    "assetKey": "DB_ELEC_NOR_DATE_BEGIN_BENEFIT__de6f7226_97ec_49c3_8334_add2c2948004"
+                  },
+                  "DB_ELEC_NOR_NOTIFICATION_PERIOD": {
+                    "assetType": "assetgroup",
+                    "assetValue": {
+                      "WEB_CONTENT_ID": {
+                        "assetType": "string",
+                        "assetValue": "DB_ELEC_NOR_NOTIFICATION_PERIOD",
+                        "assetKey": "DB_ELEC_NOR_NOTIFICATION_PERIOD"
+                      },
+                      "ITEM_KEY": {
+                        "assetType": "string",
+                        "assetValue": "NOTIFICATION_PERIOD",
+                        "assetKey": "NOTIFICATION_PERIOD"
+                      },
+                      "ELIGIBILITY": {
+                        "assetType": "expression",
+                        "assetValue": "false",
+                        "assetKey": "HAS_QUALIFID_BENEFIT"
+                      }
+                    },
+                    "assetKey": "DB_ELEC_NOR_NOTIFICATION_PERIOD__3712a31c_79fa_40b1_b1ce_bfe6d05d74e9"
+                  },
+                  "DB_ELEC_NOR_SOCIAL_SECURITY_EARNINGS": {
+                    "assetType": "assetgroup",
+                    "assetValue": {
+                      "WEB_CONTENT_ID": {
+                        "assetType": "string",
+                        "assetValue": "DB_ELEC_NOR_SOCIAL_SECURITY_EARNINGS",
+                        "assetKey": "DB_ELEC_NOR_SOCIAL_SECURITY_EARNINGS"
+                      },
+                      "ITEM_KEY": {
+                        "assetType": "string",
+                        "assetValue": "SOCIAL_SECURITY_EARNINGS",
+                        "assetKey": "SOCIAL_SECURITY_EARNINGS"
+                      },
+                      "ELIGIBILITY": {
+                        "assetType": "expression",
+                        "assetValue": "false",
+                        "assetKey": "HAS_SOCIAL_SECURITY_OFFSET"
+                      }
+                    },
+                    "assetKey": "DB_ELEC_NOR_SOCIAL_SECURITY_EARNINGS__3f68b914_343b_4bec_8db4_7d92fe658654"
+                  },
+                  "DB_ELEC_NOR_SPECIAL_TAX_NOTICE": {
+                    "assetType": "assetgroup",
+                    "assetValue": {
+                      "WEB_CONTENT_ID": {
+                        "assetType": "string",
+                        "assetValue": "DB_ELEC_NOR_SPECIAL_TAX_NOTICE",
+                        "assetKey": "DB_ELEC_NOR_SPECIAL_TAX_NOTICE"
+                      },
+                      "ITEM_KEY": {
+                        "assetType": "string",
+                        "assetValue": "SPECIAL_TAX_NOTICE",
+                        "assetKey": "SPECIAL_TAX_NOTICE"
+                      },
+                      "ELIGIBILITY": {
+                        "assetType": "expression",
+                        "assetValue": "false",
+                        "assetKey": "IS_PENSION_ROLLOVER_ALLOWED"
+                      }
+                    },
+                    "assetKey": "DB_ELEC_NOR_SPECIAL_TAX_NOTICE__6e315408_5406_4691_8a93_48d2e773eb53"
+                  },
+                  "DB_ELEC_NOR_RETIREE_HEALTH_BENEFIT": {
+                    "assetType": "assetgroup",
+                    "assetValue": {
+                      "WEB_CONTENT_ID": {
+                        "assetType": "string",
+                        "assetValue": "DB_ELEC_NOR_RETIREE_HEALTH_BENEFIT",
+                        "assetKey": "DB_ELEC_NOR_RETIREE_HEALTH_BENEFIT"
+                      },
+                      "ITEM_KEY": {
+                        "assetType": "string",
+                        "assetValue": "RETIREE_HEALTH_BENEFIT",
+                        "assetKey": "RETIREE_HEALTH_BENEFIT"
+                      },
+                      "ELIGIBILITY": {
+                        "assetType": "expression",
+                        "assetValue": "false",
+                        "assetKey": "IS_DB_HM_RETIREMENT_CD"
+                      }
+                    },
+                    "assetKey": "DB_ELEC_NOR_RETIREE_HEALTH_BENEFIT__4da50888_9f29_4138_8232_c51ac86f733a"
+                  },
+                  "DB_ELEC_NOR_FEDERAL_WITHHOLDING_PR": {
+                    "assetType": "assetgroup",
+                    "assetValue": {
+                      "WEB_CONTENT_ID": {
+                        "assetType": "string",
+                        "assetValue": "DB_ELEC_NOR_FEDERAL_WITHHOLDING_PR",
+                        "assetKey": "DB_ELEC_NOR_FEDERAL_WITHHOLDING_PR"
+                      },
+                      "ITEM_KEY": {
+                        "assetType": "string",
+                        "assetValue": "FEDERAL_WITHHOLDING",
+                        "assetKey": "FEDERAL_WITHHOLDING"
+                      },
+                      "ELIGIBILITY": {
+                        "assetType": "expression",
+                        "assetValue": "false",
+                        "assetKey": "IS_DB_US_FED_WTHL_CD_AND_PR_RESIDENT"
+                      }
+                    },
+                    "assetKey": "DB_ELEC_NOR_FEDERAL_WITHHOLDING_PR__a44cfc71_36f6_4e1a_b9a4_f160df916f9b"
+                  },
+                  "DB_ELEC_NOR_FEDERAL_WITHHOLDING_US": {
+                    "assetType": "assetgroup",
+                    "assetValue": {
+                      "WEB_CONTENT_ID": {
+                        "assetType": "string",
+                        "assetValue": "DB_ELEC_NOR_FEDERAL_WITHHOLDING_US",
+                        "assetKey": "DB_ELEC_NOR_FEDERAL_WITHHOLDING_US"
+                      },
+                      "ITEM_KEY": {
+                        "assetType": "string",
+                        "assetValue": "FEDERAL_WITHHOLDING",
+                        "assetKey": "FEDERAL_WITHHOLDING"
+                      },
+                      "ELIGIBILITY": {
+                        "assetType": "expression",
+                        "assetValue": "false",
+                        "assetKey": "IS_DB_US_FED_WTHL_CD_AND_US_RESIDENT"
+                      }
+                    },
+                    "assetKey": "DB_ELEC_NOR_FEDERAL_WITHHOLDING_US__644b3b46_cdad_483a_be0b_0d5d8c5a85e0"
+                  },
+                  "DB_ELEC_NOR_STATE_WITHHOLDING": {
+                    "assetType": "assetgroup",
+                    "assetValue": {
+                      "WEB_CONTENT_ID": {
+                        "assetType": "string",
+                        "assetValue": "DB_ELEC_NOR_STATE_WITHHOLDING",
+                        "assetKey": "DB_ELEC_NOR_STATE_WITHHOLDING"
+                      },
+                      "ITEM_KEY": {
+                        "assetType": "string",
+                        "assetValue": "STATE_WITHHOLDING",
+                        "assetKey": "STATE_WITHHOLDING"
+                      },
+                      "ELIGIBILITY": {
+                        "assetType": "expression",
+                        "assetValue": "false",
+                        "assetKey": "IS_DB_US_STATE_WTHL_CD"
+                      }
+                    },
+                    "assetKey": "DB_ELEC_NOR_STATE_WITHHOLDING__ffc5cbe2_cf1e_482c_8cd8_891e70f01013"
+                  },
+                  "DB_ELEC_NOR_PUERTO_RICO_WITHHOLDING": {
+                    "assetType": "assetgroup",
+                    "assetValue": {
+                      "WEB_CONTENT_ID": {
+                        "assetType": "string",
+                        "assetValue": "DB_ELEC_NOR_PUERTO_RICO_WITHHOLDING",
+                        "assetKey": "DB_ELEC_NOR_PUERTO_RICO_WITHHOLDING"
+                      },
+                      "ITEM_KEY": {
+                        "assetType": "string",
+                        "assetValue": "PUERTO_RICO_WITHHOLDING",
+                        "assetKey": "PUERTO_RICO_WITHHOLDING"
+                      },
+                      "ELIGIBILITY": {
+                        "assetType": "expression",
+                        "assetValue": "false",
+                        "assetKey": "IS_PUERTO_RICO_STATE_WITHHOLD_CODE"
+                      }
+                    },
+                    "assetKey": "DB_ELEC_NOR_PUERTO_RICO_WITHHOLDING__b782c7a4_a1d8_40fc_abb8_9c54e79b129b"
+                  },
+                  "DB_ELEC_NOR_WITHHOLDING_INFO": {
+                    "assetType": "assetgroup",
+                    "assetValue": {
+                      "WEB_CONTENT_ID": {
+                        "assetType": "string",
+                        "assetValue": "DB_ELEC_NOR_WITHHOLDING_INFO",
+                        "assetKey": "DB_ELEC_NOR_WITHHOLDING_INFO"
+                      },
+                      "ITEM_KEY": {
+                        "assetType": "string",
+                        "assetValue": "WITHHOLDING_INFO",
+                        "assetKey": "WITHHOLDING_INFO"
+                      },
+                      "ELIGIBILITY": {
+                        "assetType": "expression",
+                        "assetValue": "false",
+                        "assetKey": "IS_NON_USPR_WITHHOLDING_INFO"
+                      }
+                    },
+                    "assetKey": "DB_ELEC_NOR_WITHHOLDING_INFO__98569b9e_8f30_4cdb_a47f_06dbb37eec86"
+                  }
+                },
+                "assetKey": "DB_ELEC_NOR_WEB_CONTENT_ITEM"
+              }
+            },
+            "assetKey": "DB_ELEC_NOR_WEB_CONTENT_LIST"
+          }
+        },
+        "RTRM_CHOICES_NOTICE_OF_RIGHTS_YOUR_RIGHTS_GROUP": {
+          "RTRM_CHOICES_NOTICE_OF_RIGHTS_YOUR_RIGHTS_HEADER": {
+            "assetType": "text",
+            "assetValue": "Your Rights",
+            "assetKey": "RTRM_CHOICES_NOTICE_OF_RIGHTS_YOUR_RIGHTS_HEADER"
+          },
+          "HAS_RTRM_CHOICES_QUALIFIED_BENEFIT": {
+            "assetType": "expression",
+            "assetValue": "false",
+            "assetKey": "HAS_RTRM_CHOICES_QUALIFIED_BENEFIT"
+          },
+          "RTRM_CHOICES_NOTICE_OF_RIGHTS_COMMENCE_BENEFITS_PANEL_GROUP": {
+            "assetType": "assetgroup",
+            "assetValue": {
+              "RTRM_CHOICES_NOTICE_OF_RIGHTS_COMMENCE_BENEFITS_PANEL_LABEL": {
+                "assetType": "text",
+                "assetValue": "Commencement of Benefits",
+                "assetKey": "RTRM_CHOICES_NOTICE_OF_RIGHTS_COMMENCE_BENEFITS_PANEL_LABEL"
+              },
+              "IS_RTRM_CHOICES_EARLY_RTRM_DATE": {
+                "assetType": "expression",
+                "assetValue": "false",
+                "assetKey": "IS_RTRM_CHOICES_EARLY_RTRM_DATE"
+              },
+              "RTRM_CHOICES_NOTICE_OF_RIGHTS_COMMENCE_BENEFITS_PANEL_EARLY_RTRM_TXT": {
+                "assetType": "text",
+                "assetValue": "You can always choose to delay the start of your pension benefits until at least Normal Retirement Date. If you choose to start your benefit before your Normal Retirement Date, the Plan may reduce the amount you receive to account for the longer period of time that a life annuity would be paid. ${token:lumpSumTxt}In addition, when your benefit is paid, it will be subject to income taxes. Choosing to start your benefit now will result in immediate taxation, but delaying the start of your benefit will also delay taxation.",
+                "assetKey": "RTRM_CHOICES_NOTICE_OF_RIGHTS_COMMENCE_BENEFITS_PANEL_EARLY_RTRM_TXT"
+              },
+              "IS_RTRM_CHOICES_LUMP_SUM_AVAILABLE": {
+                "assetType": "expression",
+                "assetValue": "false",
+                "assetKey": "IS_RTRM_CHOICES_LUMP_SUM_AVAILABLE"
+              },
+              "RTRM_CHOICES_NOTICE_OF_RIGHTS_COMMENCE_BENEFITS_PANEL_LUMPSUM_TXT": {
+                "assetType": "text",
+                "assetValue": "Even if you don't choose an annuity form of payment, your benefit may be lower because all forms of payment are based on a life annuity payable at Normal Retirement Date.",
+                "assetKey": "RTRM_CHOICES_NOTICE_OF_RIGHTS_COMMENCE_BENEFITS_PANEL_LUMPSUM_TXT"
+              },
+              "RTRM_CHOICES_NOTICE_OF_RIGHTS_COMMENCE_BENEFITS_PANEL_TXT": {
+                "assetType": "text",
+                "assetValue": "You have the right to at least 30 days to consider whether to consent to begin receiving benefits.",
+                "assetKey": "RTRM_CHOICES_NOTICE_OF_RIGHTS_COMMENCE_BENEFITS_PANEL_TXT"
+              },
+              "IS_RTRM_CHOICES_WAIVER_ALLOWED": {
+                "assetType": "expression",
+                "assetValue": "false",
+                "assetKey": "IS_RTRM_CHOICES_WAIVER_ALLOWED"
+              },
+              "RTRM_CHOICES_NOTICE_OF_RIGHTS_COMMENCE_BENEFITS_PANEL_WAIVE_WAIT_PERIOD_TXT": {
+                "assetType": "text",
+                "assetValue": "You may waive this 30-day period by electing to begin your benefits.",
+                "assetKey": "RTRM_CHOICES_NOTICE_OF_RIGHTS_COMMENCE_BENEFITS_PANEL_WAIVE_WAIT_PERIOD_TXT"
+              }
+            },
+            "assetKey": "RTRM_CHOICES_NOTICE_OF_RIGHTS_COMMENCE_BENEFITS_PANEL_GROUP"
+          },
+          "IS_RTRM_CHOICES_CTRB_INTR_WITHDRAWAL_ALLOWED": {
+            "assetType": "expression",
+            "assetValue": "false",
+            "assetKey": "IS_RTRM_CHOICES_CTRB_INTR_WITHDRAWAL_ALLOWED"
+          },
+          "RTRM_CHOICES_NOTICE_OF_RIGHTS_CTRB_INTR_WITHDRAWAL_PANEL_GROUP": {
+            "assetType": "assetgroup",
+            "assetValue": {
+              "RTRM_CHOICES_NOTICE_OF_RIGHTS_CTRB_INTR_WITHDRAWAL_PANEL_LABEL": {
+                "assetType": "text",
+                "assetValue": "Withdrawal of Contributions and Interest",
+                "assetKey": "RTRM_CHOICES_NOTICE_OF_RIGHTS_CTRB_INTR_WITHDRAWAL_PANEL_LABEL"
+              },
+              "HAS_RTRM_CHOICES_SINGLE_NORMAL_FORM": {
+                "assetType": "expression",
+                "assetValue": "false",
+                "assetKey": "HAS_RTRM_CHOICES_SINGLE_NORMAL_FORM"
+              },
+              "HAS_RTRM_CHOICES_MARRIED_NORMAL_FORM": {
+                "assetType": "expression",
+                "assetValue": "false",
+                "assetKey": "HAS_RTRM_CHOICES_MARRIED_NORMAL_FORM"
+              },
+              "RTRM_CHOICES_NOTICE_OF_RIGHTS_CTRB_INTR_WITHDRAWAL_PANEL_PARA1_TXT": {
+                "assetType": "text",
+                "assetValue": "<p>You've made contributions to the Plan which have earned interest. You may choose to withdraw these contributions and interest. If you choose to withdraw your contributions and interest, you and your spouse (if you're married) must waive the Qualified Joint and Survivor Annuity under the Plan. If you're single, the Qualified Joint and Survivor Annuity is the ${token:snglFormTxt}. If you're married, the Qualified Joint and Survivor Annuity is the ${token:marriedFormTxt} with the spouse as the joint annuitant.</p>",
+                "assetKey": "RTRM_CHOICES_NOTICE_OF_RIGHTS_CTRB_INTR_WITHDRAWAL_PANEL_PARA1_TXT"
+              },
+              "RTRM_CHOICES_NOTICE_OF_RIGHTS_CTRB_INTR_WITHDRAWAL_PANEL_SINGLE_FORM_TXT": {
+                "assetType": "text",
+                "assetValue": "Single Life Annuity",
+                "assetKey": "RTRM_CHOICES_NOTICE_OF_RIGHTS_CTRB_INTR_WITHDRAWAL_PANEL_SINGLE_FORM_TXT"
+              },
+              "RTRM_CHOICES_NOTICE_OF_RIGHTS_CTRB_INTR_WITHDRAWAL_PANEL_MARRIED_FORM_TXT": {
+                "assetType": "text",
+                "assetValue": "50% Joint and Survivor Annuity",
+                "assetKey": "RTRM_CHOICES_NOTICE_OF_RIGHTS_CTRB_INTR_WITHDRAWAL_PANEL_MARRIED_FORM_TXT"
+              },
+              "IS_RTRM_CHOICES_NON_VESTED_REFUND_ALLOWED": {
+                "assetType": "expression",
+                "assetValue": "false",
+                "assetKey": "IS_RTRM_CHOICES_NON_VESTED_REFUND_ALLOWED"
+              },
+              "RTRM_CHOICES_NOTICE_OF_RIGHTS_CTRB_INTR_WITHDRAWAL_PANEL_NON_VESTED_REFUND_TRUE_TXT": {
+                "assetType": "text",
+                "assetValue": "<p>In addition, if you elect to withdraw your contributions and interest, you'll not be entitled to any remaining benefit.</p>",
+                "assetKey": "RTRM_CHOICES_NOTICE_OF_RIGHTS_CTRB_INTR_WITHDRAWAL_PANEL_NON_VESTED_REFUND_TRUE_TXT"
+              },
+              "RTRM_CHOICES_NOTICE_OF_RIGHTS_CTRB_INTR_WITHDRAWAL_PANEL_NON_VESTED_REFUND_FALSE_TXT": {
+                "assetType": "text",
+                "assetValue": "<p>In addition, if you elect to withdraw your contributions and interest, your monthly retirement benefit will be reduced by the value of your contributions and interest.</p>",
+                "assetKey": "RTRM_CHOICES_NOTICE_OF_RIGHTS_CTRB_INTR_WITHDRAWAL_PANEL_NON_VESTED_REFUND_FALSE_TXT"
+              }
+            },
+            "assetKey": "RTRM_CHOICES_NOTICE_OF_RIGHTS_CTRB_INTR_WITHDRAWAL_PANEL_GROUP"
+          },
+          "RTRM_CHOICES_NOTICE_OF_RIGHTS_EXPAND_ALL": {
+            "assetType": "text",
+            "assetValue": "Expand All",
+            "assetKey": "RTRM_CHOICES_NOTICE_OF_RIGHTS_EXPAND_ALL"
+          },
+          "RTRM_CHOICES_NOTICE_OF_RIGHTS_COLLAPSE_ALL": {
+            "assetType": "text",
+            "assetValue": "Collapse All",
+            "assetKey": "RTRM_CHOICES_NOTICE_OF_RIGHTS_COLLAPSE_ALL"
+          }
+        },
+        "RTRM_CHOICES_CHOOSE_RECEIVE_PAYMENT_PAYMENT_GROUP": {
+          "IS_SPLIT_DLVR_PAYMENT": {
+            "assetType": "expression",
+            "assetValue": "false",
+            "assetKey": "IS_SPLIT_DLVR_PAYMENT"
+          },
+          "HAS_SPLIT_DELIVERY_OPTION": {
+            "assetType": "expression",
+            "assetValue": "false",
+            "assetKey": "HAS_SPLIT_DELIVERY_OPTION"
+          },
+          "RTRM_CHOICES_CHOOSE_RECEIVE_PAYMENT_GROSS_PAYMENT_TABLE_SUMMARY": {
+            "assetType": "text",
+            "assetValue": "Review the gross payment amount and frequency for your ${token:pmtDesc}.",
+            "assetKey": "RTRM_CHOICES_CHOOSE_RECEIVE_PAYMENT_GROSS_PAYMENT_TABLE_SUMMARY"
+          },
+          "RTRM_CHOICES_CHOOSE_RECEIVE_PAYMENT_GROSS_PAYMENT_AMOUNT_TXT": {
+            "assetType": "text",
+            "assetValue": "Gross Payment Amount",
+            "assetKey": "RTRM_CHOICES_CHOOSE_RECEIVE_PAYMENT_GROSS_PAYMENT_AMOUNT_TXT"
+          },
+          "RTRM_CHOICES_CHOOSE_RECEIVE_PAYMENT_SPLIT_PAYMENT_INSTRUCTIONS_INTRO": {
+            "assetType": "text",
+            "assetValue": "<p>You are allowed to split your ${token:pmtDesc} between two destinations.</p>",
+            "assetKey": "RTRM_CHOICES_CHOOSE_RECEIVE_PAYMENT_SPLIT_PAYMENT_INSTRUCTIONS_INTRO"
+          },
+          "RTRM_CHOICES_CHOOSE_RECEIVE_PAYMENT_SPLIT_PAYMENT_INSTRUCTIONS_LIST_INTRO": {
+            "assetType": "text",
+            "assetValue": "<p>To split your payment: </p><ol>",
+            "assetKey": "RTRM_CHOICES_CHOOSE_RECEIVE_PAYMENT_SPLIT_PAYMENT_INSTRUCTIONS_LIST_INTRO"
+          },
+          "RTRM_CHOICES_CHOOSE_RECEIVE_PAYMENT_SPLIT_PAYMENT_INSTRUCTIONS_LIST_ITEM_ONE": {
+            "assetType": "text",
+            "assetValue": "<li>Choose your first destination. </li>",
+            "assetKey": "RTRM_CHOICES_CHOOSE_RECEIVE_PAYMENT_SPLIT_PAYMENT_INSTRUCTIONS_LIST_ITEM_ONE"
+          },
+          "RTRM_CHOICES_CHOOSE_RECEIVE_PAYMENT_SPLIT_PAYMENT_INSTRUCTIONS_LIST_ITEM_TWO": {
+            "assetType": "text",
+            "assetValue": "<li>Enter the amount you want sent to a second destination. The remainder of the available amount will be sent to your first destination.</li>",
+            "assetKey": "RTRM_CHOICES_CHOOSE_RECEIVE_PAYMENT_SPLIT_PAYMENT_INSTRUCTIONS_LIST_ITEM_TWO"
+          },
+          "RTRM_CHOICES_CHOOSE_RECEIVE_PAYMENT_SPLIT_PAYMENT_INSTRUCTIONS_LIST_ITEM_THREE": {
+            "assetType": "text",
+            "assetValue": "<li>Choose second destination.</li></ol>",
+            "assetKey": "RTRM_CHOICES_CHOOSE_RECEIVE_PAYMENT_SPLIT_PAYMENT_INSTRUCTIONS_LIST_ITEM_THREE"
+          },
+          "RTRM_CHOICES_CHOOSE_RECEIVE_PAYMENT_NET_DELIVERY_TABLE_SUMMARY": {
+            "assetType": "text",
+            "assetValue": "Review the gross payment amount and frequency for your ${token:pmtDesc}. Choose the destination (such as an address or direct deposit account) where you want your ${token:pmtDesc} to be sent. You may change the details of each destination option.",
+            "assetKey": "RTRM_CHOICES_CHOOSE_RECEIVE_PAYMENT_NET_DELIVERY_TABLE_SUMMARY"
+          },
+          "RTRM_CHOICES_CHOOSE_RECEIVE_PAYMENT_AMOUNT_LABEL": {
+            "assetType": "text",
+            "assetValue": "Amount Available",
+            "assetKey": "RTRM_CHOICES_CHOOSE_RECEIVE_PAYMENT_AMOUNT_LABEL"
+          },
+          "RTRM_CHOICES_CHOOSE_RECEIVE_PAYMENT_RADIOBUTTON_GROUP_LEGEND_TXT": {
+            "assetType": "text",
+            "assetValue": "Choose where to receive your payment from the ${token:pmtDesc}.",
+            "assetKey": "RTRM_CHOICES_CHOOSE_RECEIVE_PAYMENT_RADIOBUTTON_GROUP_LEGEND_TXT"
+          },
+          "RTRM_CHOICES_CHOOSE_RECEIVE_PAYMENT_SPLIT_PAYMENT_HDR": {
+            "assetType": "text",
+            "assetValue": "Second Destination for ${token:pmtDesc}",
+            "assetKey": "RTRM_CHOICES_CHOOSE_RECEIVE_PAYMENT_SPLIT_PAYMENT_HDR"
+          },
+          "RTRM_CHOICES_CHOOSE_RECEIVE_PAYMENT_SPLIT_PAYMENT_TXT": {
+            "assetType": "text",
+            "assetValue": "You can also choose to receive a portion of your payment at a second mailing address or financial institution.",
+            "assetKey": "RTRM_CHOICES_CHOOSE_RECEIVE_PAYMENT_SPLIT_PAYMENT_TXT"
+          },
+          "RTRM_CHOICES_CHOOSE_RECEIVE_PAYMENT_SPLIT_DELIVERY_TABLE_SUMMARY": {
+            "assetType": "text",
+            "assetValue": "Enter the amount of your ${token:pmtDesc} you want sent to a second destination. You may enter a portion of the amount available. Choose the second destination (such as an address or direct deposit account) where you want this second portion of your ${token:pmtDesc} to be sent. You may change the details of each destination option.",
+            "assetKey": "RTRM_CHOICES_CHOOSE_RECEIVE_PAYMENT_SPLIT_DELIVERY_TABLE_SUMMARY"
+          },
+          "RTRM_CHOICES_CHOOSE_RECEIVE_PAYMENT_SPLIT_AMOUNT_LABEL": {
+            "assetType": "text",
+            "assetValue": "Amount to Second Destination",
+            "assetKey": "RTRM_CHOICES_CHOOSE_RECEIVE_PAYMENT_SPLIT_AMOUNT_LABEL"
+          },
+          "RTRM_CHOICES_CHOOSE_RECEIVE_PAYMENT_SPLIT_AMOUNT_LABEL_DETAIL": {
+            "assetType": "text",
+            "assetValue": "(amount available: ${token:amt})",
+            "assetKey": "RTRM_CHOICES_CHOOSE_RECEIVE_PAYMENT_SPLIT_AMOUNT_LABEL_DETAIL"
+          },
+          "RTRM_CHOICES_CHOOSE_RECEIVE_PAYMENT_SPLIT_FOOTNOTE_TXT": {
+            "assetType": "text",
+            "assetValue": "Enter 0.00 if you don't want to send an amount to a second destination.",
+            "assetKey": "RTRM_CHOICES_CHOOSE_RECEIVE_PAYMENT_SPLIT_FOOTNOTE_TXT"
+          },
+          "RTRM_CHOICES_CHOOSE_RECEIVE_PAYMENT_SPLIT_INPUT_TITLE": {
+            "assetType": "text",
+            "assetValue": "Enter the amount you want sent to a second destination.",
+            "assetKey": "RTRM_CHOICES_CHOOSE_RECEIVE_PAYMENT_SPLIT_INPUT_TITLE"
+          },
+          "RTRM_CHOICES_CHOOSE_RECEIVE_PAYMENT_NOT_ON_FILE_TXT": {
+            "assetType": "text",
+            "assetValue": "&mdash;Not on File&mdash;",
+            "assetKey": "RTRM_CHOICES_CHOOSE_RECEIVE_PAYMENT_NOT_ON_FILE_TXT"
+          },
+          "RTRM_CHOICES_CHOOSE_RECEIVE_PAYMENT_CHANGE_ADDRESS_BUTTON_TITLE": {
+            "assetType": "text",
+            "assetValue": "Choose this button to change the ${token:addrDesc} destination details.",
+            "assetKey": "RTRM_CHOICES_CHOOSE_RECEIVE_PAYMENT_CHANGE_ADDRESS_BUTTON_TITLE"
+          },
+          "RTRM_CHOICES_CHOOSE_RECEIVE_PAYMENT_TOTAL_PAYMENT_TXT": {
+            "assetType": "text",
+            "assetValue": "Total Payment Before Deductions",
+            "assetKey": "RTRM_CHOICES_CHOOSE_RECEIVE_PAYMENT_TOTAL_PAYMENT_TXT"
+          },
+          "RTRM_CHOICES_CHOOSE_RECEIVE_PAYMENT_CHSE_TO_RCVE_TXT": {
+            "assetType": "text",
+            "assetValue": "Enter the amount and then choose where to receive that portion of your payment.",
+            "assetKey": "RTRM_CHOICES_CHOOSE_RECEIVE_PAYMENT_CHSE_TO_RCVE_TXT"
+          },
+          "RTRM_CHOICES_CHOOSE_RECEIVE_PAYMENT_DED_TAKEN_TXT": {
+            "assetType": "text",
+            "assetValue": "Deductions may be taken from the payment.",
+            "assetKey": "RTRM_CHOICES_CHOOSE_RECEIVE_PAYMENT_DED_TAKEN_TXT"
+          },
+          "RTRM_CHOICES_CHOOSE_RECEIVE_PAYMENT_SCNDRY_PMT_TXT": {
+            "assetType": "text",
+            "assetValue": "Secondary Payment Destination",
+            "assetKey": "RTRM_CHOICES_CHOOSE_RECEIVE_PAYMENT_SCNDRY_PMT_TXT"
+          },
+          "RTRM_CHOICES_CHOOSE_RECEIVE_PAYMENT_PRIME_PMT_TXT": {
+            "assetType": "text",
+            "assetValue": "Primary Payment Destination",
+            "assetKey": "RTRM_CHOICES_CHOOSE_RECEIVE_PAYMENT_PRIME_PMT_TXT"
+          },
+          "RTRM_CHOICES_CHOOSE_RECEIVE_PAYMENT_CHSE_ONE_TXT": {
+            "assetType": "text",
+            "assetValue": "Choose <strong>1</strong> destination for this payment. Deductions may be taken from the payment.",
+            "assetKey": "RTRM_CHOICES_CHOOSE_RECEIVE_PAYMENT_CHSE_ONE_TXT"
+          },
+          "RTRM_CHOICES_CHOOSE_RECEIVE_PAYMENT_CHSE_TWO_TXT": {
+            "assetType": "text",
+            "assetValue": "You may choose up to <strong>2</strong> destinations for this payment. Deductions may be taken from the payment.",
+            "assetKey": "RTRM_CHOICES_CHOOSE_RECEIVE_PAYMENT_CHSE_TWO_TXT"
+          },
+          "DB_ELEC_PMTDSTTABLE_TITLE_TA_TXT": {
+            "assetType": "text",
+            "assetValue": "Choose a destination for your payment:",
+            "assetKey": "DB_ELEC_PMTDSTTABLE_TITLE_TA_TXT"
+          },
+          "DB_ELEC_SPLIT_AMT_TEXTBOX_TA_TXT": {
+            "assetType": "text",
+            "assetValue": "Enter the amount you want sent to a second destination (0.00  if you don't want to send an amount to the second destination)",
+            "assetKey": "DB_ELEC_SPLIT_AMT_TEXTBOX_TA_TXT"
+          }
+        },
+        "DB_ELEC_SAVED_SUCC_AG": {
+          "DB_ELEC_SAVED_SUCC_PAGE_TITLE": {
+            "assetType": "text",
+            "assetValue": "Saved Successfully",
+            "assetKey": "DB_ELEC_SAVED_SUCC_PAGE_TITLE"
+          },
+          "DB_ELEC_SAVED_SUCC_PENS_CHC": {
+            "assetType": "text",
+            "assetValue": "The pension choices you've made so far have been saved. You may return to this site at any time to review your choices.",
+            "assetKey": "DB_ELEC_SAVED_SUCC_PENS_CHC"
+          },
+          "DB_ELEC_SAVED_SUCC_TO_RCV_PMT": {
+            "assetType": "text",
+            "assetValue": "Finish making your <A onclick=\"if(isUACrossEnabled()){try{ga('trackerUa1.send','event', 'Internal Link' ,'Link click','LinkId:UPN_DB_ELEC_PENS_CHC_LNK LinkDest:/web/retirement3x/retirement-action'); } catch(err){}} if(isUAClientEnabled()){ try{if(isGTMEnabled()){dataLayer.push({'event':'UPointLinkEvent','linkCategory':'Internal Link','linkAction':'Link Click','linkLabel':'LinkId:UPN_DB_ELEC_PENS_CHC_LNK LinkDest:/web/retirement3x/retirement-action'});}else{ga('trackerUa2.send','event', 'Internal Link' ,'Link click','LinkId:UPN_DB_ELEC_PENS_CHC_LNK LinkDest:/web/retirement3x/retirement-action'); }} catch(err){}}setTimeout(function() {document.location.href = href;}, 100);return false;\" href=\"/web/retirement3x/retirement-action?linkId=UPN_DB_ELEC_PENS_CHC_LNK&technicalNameForLink=UPN_DB_ELEC_PENS_CHC_LNK&userFriendlyNameForLink=UPN_DB_ELEC_PENS_CHC_LNK&domain=Ben-DB&baseClientIndicator=Client\">pension choices</A> by ${token:pmtRcvDt2} to receive your payment.",
+            "assetKey": "DB_ELEC_SAVED_SUCC_TO_RCV_PMT"
+          },
+          "DB_ELEC_MK_HLTH_CHC": {
+            "assetType": "text",
+            "assetValue": "You can also make your <A onclick=\"if(isUACrossEnabled()){try{ga('trackerUa1.send','event', 'Internal Link' ,'Link click','LinkId:DB_ELEC_HLTH_CHC_LNK LinkDest:/web/retirement3x/retirement-hub'); } catch(err){}} if(isUAClientEnabled()){ try{if(isGTMEnabled()){dataLayer.push({'event':'UPointLinkEvent','linkCategory':'Internal Link','linkAction':'Link Click','linkLabel':'LinkId:DB_ELEC_HLTH_CHC_LNK LinkDest:/web/retirement3x/retirement-hub'});}else{ga('trackerUa2.send','event', 'Internal Link' ,'Link click','LinkId:DB_ELEC_HLTH_CHC_LNK LinkDest:/web/retirement3x/retirement-hub'); }} catch(err){}}setTimeout(function() {document.location.href = href;}, 100);return false;\" href=\"/web/retirement3x/retirement-hub?linkId=DB_ELEC_HLTH_CHC_LNK&technicalNameForLink=DB_ELEC_HLTH_CHC_LNK&userFriendlyNameForLink=Retirement Hub on UPoint&domain=Ben-DB&baseClientIndicator=Base\">health choices</A>.",
+            "assetKey": "DB_ELEC_MK_HLTH_CHC"
+          },
+          "DB_ELEC_HLTH_CHC_LNK_TXT": {
+            "assetType": "text",
+            "assetValue": "health choices",
+            "assetKey": "DB_ELEC_HLTH_CHC_LNK_TXT"
+          },
+          "DB_ELEC_PENS_CHC_LNK_TXT": {
+            "assetType": "text",
+            "assetValue": "pension choices",
+            "assetKey": "DB_ELEC_PENS_CHC_LNK_TXT"
+          },
+          "DB_ELEC_CALL_US_TO_CPLT_RTRM": {
+            "assetType": "text",
+            "assetValue": "Call Us to Complete Your Retirement",
+            "assetKey": "DB_ELEC_CALL_US_TO_CPLT_RTRM"
+          },
+          "DB_ELEC_CPLT_RTRM_BY_PHN": {
+            "assetType": "text",
+            "assetValue": "Because you're close to your retirement date, you must complete the retirement process by phone.",
+            "assetKey": "DB_ELEC_CPLT_RTRM_BY_PHN"
+          },
+          "DB_ELEC_CPLT_RTM_CNTCT_BNFT_CTR": {
+            "assetType": "text",
+            "assetValue": "Contact the The Syndicate Emporium of Benefits at 1-800-4-SYNDCT <span class=\"nobr\">(8 a.m. to</span> <span class=\"nobr\">4:30 p.m. CT,</span> Monday through Friday).",
+            "assetKey": "DB_ELEC_CPLT_RTM_CNTCT_BNFT_CTR"
+          }
+        },
+        "DB_ELEC_CHOOSE_PEN_PMT_BELOW_TABLE_PLACEHOLDER": {
+          
+        },
+        "DB_ELEC_CHG_WTHL_FED_AG": {
+          "DB_ELEC_CHG_WTHL_FED_HDR": {
+            "assetType": "text",
+            "assetValue": "Federal Income Tax Withholding",
+            "assetKey": "DB_ELEC_CHG_WTHL_FED_HDR"
+          },
+          "DB_ELEC_CHG_WTHL_TAX_INCM": {
+            "assetType": "text",
+            "assetValue": "Taxable Income",
+            "assetKey": "DB_ELEC_CHG_WTHL_TAX_INCM"
+          },
+          "DB_ELEC_CHG_WTHL_FED_ACSBLTY_TX": {
+            "assetType": "text",
+            "assetValue": "Choose what you want to withhold for Federal taxes:",
+            "assetKey": "DB_ELEC_CHG_WTHL_FED_ACSBLTY_TX"
+          },
+          "DB_ELEC_CHG_WTHL_WTHL_NOTHING": {
+            "assetType": "text",
+            "assetValue": "<strong>Withhold Nothing</strong>",
+            "assetKey": "DB_ELEC_CHG_WTHL_WTHL_NOTHING"
+          },
+          "DB_ELEC_CHG_WTHL_WTHL_DFLT": {
+            "assetType": "text",
+            "assetValue": "<strong>Withhold Default Amount</strong>",
+            "assetKey": "DB_ELEC_CHG_WTHL_WTHL_DFLT"
+          },
+          "DB_ELEC_CHG_WTHL_WTHL_MIN": {
+            "assetType": "text",
+            "assetValue": "<strong>Withhold Minimum Amount</strong>",
+            "assetKey": "DB_ELEC_CHG_WTHL_WTHL_MIN"
+          },
+          "DB_ELEC_CHG_WTHL_WTHL_THIS_AMT_WITH_MIN": {
+            "assetType": "text",
+            "assetValue": "<strong>Withhold This Amount</strong> <span class=\"ah-displayBlock\">(minimum <span class=\"ah-noWrap\">${token:amt}</span>)</span>",
+            "assetKey": "DB_ELEC_CHG_WTHL_WTHL_THIS_AMT_WITH_MIN"
+          },
+          "DB_ELEC_CHG_WTHL_FED_AMT_ACSBLTY_TX": {
+            "assetType": "text",
+            "assetValue": "Enter a specific amount (in 0.00 format) that you want withheld for federal taxes.",
+            "assetKey": "DB_ELEC_CHG_WTHL_FED_AMT_ACSBLTY_TX"
+          },
+          "DB_ELEC_CHG_WTHL_WTHL_PT": {
+            "assetType": "text",
+            "assetValue": "<strong>Withhold This Percent</strong>",
+            "assetKey": "DB_ELEC_CHG_WTHL_WTHL_PT"
+          },
+          "DB_ELEC_CHG_WTHL_WTHL_PT_MIN": {
+            "assetType": "text",
+            "assetValue": "<span class=\"ah-displayBlock\">(minimum ${token:pt})</span>",
+            "assetKey": "DB_ELEC_CHG_WTHL_WTHL_PT_MIN"
+          },
+          "DB_ELEC_CHG_WTHL_FED_PT_ACSBLTY_TX": {
+            "assetType": "text",
+            "assetValue": "Enter a specific percentage that you want withheld for federal taxes.",
+            "assetKey": "DB_ELEC_CHG_WTHL_FED_PT_ACSBLTY_TX"
+          },
+          "DB_ELEC_CHG_WTHL_MIN_APLY": {
+            "assetType": "text",
+            "assetValue": "<span class=\"ah-displayBlock\">(minimums may apply)</span>",
+            "assetKey": "DB_ELEC_CHG_WTHL_MIN_APLY"
+          },
+          "DB_ELEC_CHG_WTHL_USE_CHOICES": {
+            "assetType": "text",
+            "assetValue": "<strong>Withhold Using These Choices:</strong>",
+            "assetKey": "DB_ELEC_CHG_WTHL_USE_CHOICES"
+          },
+          "DB_ELEC_CHG_WTHL_MRTL_STAT": {
+            "assetType": "text",
+            "assetValue": "Marital Status",
+            "assetKey": "DB_ELEC_CHG_WTHL_MRTL_STAT"
+          },
+          "DB_ELEC_CHG_WTHL_NMBR_ALWN": {
+            "assetType": "text",
+            "assetValue": "Number of Allowances",
+            "assetKey": "DB_ELEC_CHG_WTHL_NMBR_ALWN"
+          },
+          "DB_ELEC_CHG_WTHL_ADDL_AMT": {
+            "assetType": "text",
+            "assetValue": "Additional Amount",
+            "assetKey": "DB_ELEC_CHG_WTHL_ADDL_AMT"
+          },
+          "DB_ELEC_CHG_WTHL_FED_ADDL_AMT_ACSBLTY_TX": {
+            "assetType": "text",
+            "assetValue": "Enter a specific additional amount (in 0.00 format) that you want withheld for federal taxes.",
+            "assetKey": "DB_ELEC_CHG_WTHL_FED_ADDL_AMT_ACSBLTY_TX"
+          },
+          "DB_ELEC_CHG_WTHL_NMBR_ALWN_ACSBLTY_TX": {
+            "assetType": "text",
+            "assetValue": "Enter the number of allowances (exemptions) you want to claim.",
+            "assetKey": "DB_ELEC_CHG_WTHL_NMBR_ALWN_ACSBLTY_TX"
+          },
+          "DB_ELEC_CHG_WTHL_NMBR_ALWN_TIP_TX": {
+            "assetType": "text",
+            "assetValue": "The more allowances you claim, the less tax will be withheld from your payment.",
+            "assetKey": "DB_ELEC_CHG_WTHL_NMBR_ALWN_TIP_TX"
+          },
+          "DB_ELEC_CHG_WTHL_ESTM_FED_AMT_WTHL": {
+            "assetType": "text",
+            "assetValue": "Estimated Federal Amount Withheld",
+            "assetKey": "DB_ELEC_CHG_WTHL_ESTM_FED_AMT_WTHL"
+          },
+          "DB_ELEC_CHG_WTHL_FED_WTHL_NOT_SPRT": {
+            "assetType": "text",
+            "assetValue": "Federal income tax withholding is not supported for this payment.",
+            "assetKey": "DB_ELEC_CHG_WTHL_FED_WTHL_NOT_SPRT"
+          },
+          "DB_ELEC_CHG_WTHL_FED_TD1": {
+            "assetType": "text",
+            "assetValue": "<strong>Federal Personal Tax Credit Amount (TD1)</strong> <span class=\"ah-displayBlock\">(minimum  <span class=\"ah-noWrap\">${token:amt}</span>)</span>",
+            "assetKey": "DB_ELEC_CHG_WTHL_FED_TD1"
+          },
+          "DB_ELEC_CHG_WTHL_FED_TD1_ACSBLTY_TX": {
+            "assetType": "text",
+            "assetValue": "Enter a specific amount (in 0.00 format) that you want withheld.",
+            "assetKey": "DB_ELEC_CHG_WTHL_FED_TD1_ACSBLTY_TX"
+          },
+          "DB_ELEC_CHG_WTHL_WTHL_ADDL_AMT": {
+            "assetType": "text",
+            "assetValue": "<strong>Withhold Additional Amount</strong>",
+            "assetKey": "DB_ELEC_CHG_WTHL_WTHL_ADDL_AMT"
+          },
+          "DB_ELEC_CHG_WTHL_WTHL_ADDL_AMT_ACSBLTY_TX": {
+            "assetType": "text",
+            "assetValue": "Enter a specific additional amount (in 0.00 format) that you want withheld for federal taxes.",
+            "assetKey": "DB_ELEC_CHG_WTHL_WTHL_ADDL_AMT_ACSBLTY_TX"
+          },
+          "DB_ELEC_CHG_WTHL_ESTM_FED_TAX_WTHL": {
+            "assetType": "text",
+            "assetValue": "Estimated Federal Tax Withheld",
+            "assetKey": "DB_ELEC_CHG_WTHL_ESTM_FED_TAX_WTHL"
+          },
+          "DB_ELEC_FED_TX_FLNG_STAT_CD": {
+            "assetType": "text",
+            "assetValue": "M,S",
+            "assetKey": "DB_ELEC_FED_TX_FLNG_STAT_CD"
+          },
+          "UPN_DB_ELEC_CHG_WTHL_WTHL_THIS_AMT": {
+            "assetType": "text",
+            "assetValue": "<strong>Withhold This Amount</strong>",
+            "assetKey": "UPN_DB_ELEC_CHG_WTHL_WTHL_THIS_AMT"
+          },
+          "UPN_DB_ELEC_CHG_WTHL_FED_TD1": {
+            "assetType": "text",
+            "assetValue": "<strong>Federal Personal Tax Credit Amount (TD1)</strong>",
+            "assetKey": "UPN_DB_ELEC_CHG_WTHL_FED_TD1"
+          },
+          "UPN_DB_ELEC_CHG_WTHL_MIN_APLY": {
+            "assetType": "text",
+            "assetValue": "(minimums may apply)",
+            "assetKey": "UPN_DB_ELEC_CHG_WTHL_MIN_APLY"
+          },
+          "UPN_DB_ELEC_CHG_WTHL_MIN_AMT": {
+            "assetType": "text",
+            "assetValue": "(minimum <span class=\"al-noWrap\">${token:amt}</span>)",
+            "assetKey": "UPN_DB_ELEC_CHG_WTHL_MIN_AMT"
+          },
+          "UPN_DB_ELEC_CHG_WTHL_MIN_PCT": {
+            "assetType": "text",
+            "assetValue": "(minimum ${token:pt})",
+            "assetKey": "UPN_DB_ELEC_CHG_WTHL_MIN_PCT"
+          }
+        },
+        "DB_ELEC_CHG_WTHL_ST_AG": {
+          "DB_ELEC_CHG_WTHL_ST_ACSBLTY_TX": {
+            "assetType": "text",
+            "assetValue": "Choose what you want to withhold for State taxes:",
+            "assetKey": "DB_ELEC_CHG_WTHL_ST_ACSBLTY_TX"
+          },
+          "DB_ELEC_CHG_WTHL_ST_TAX": {
+            "assetType": "text",
+            "assetValue": "State Income Tax Withholding",
+            "assetKey": "DB_ELEC_CHG_WTHL_ST_TAX"
+          },
+          "DB_ELEC_CHG_WTHL_ST": {
+            "assetType": "text",
+            "assetValue": "State",
+            "assetKey": "DB_ELEC_CHG_WTHL_ST"
+          },
+          "DB_ELEC_CHG_WTHL_ST_BTN_LABEL": {
+            "assetType": "text",
+            "assetValue": "Use This State",
+            "assetKey": "DB_ELEC_CHG_WTHL_ST_BTN_LABEL"
+          },
+          "DB_ELEC_CHG_WTHL_ST_NOT_SPRT": {
+            "assetType": "text",
+            "assetValue": "State income tax withholding is not supported for this payment.",
+            "assetKey": "DB_ELEC_CHG_WTHL_ST_NOT_SPRT"
+          },
+          "DB_ELEC_CHG_WTHL_ST_WTHL_NOTHING_NO_FED": {
+            "assetType": "text",
+            "assetValue": "<strong>Withhold Nothing</strong><span class=\"ah-displayBlock\">(if no federal income tax withheld)</span>",
+            "assetKey": "DB_ELEC_CHG_WTHL_ST_WTHL_NOTHING_NO_FED"
+          },
+          "DB_ELEC_CHG_WTHL_PT_OF_FED_WTHL": {
+            "assetType": "text",
+            "assetValue": "<span class=\"ah-displayBlock\">(<span class=\"ah-noWrap\">${token:pt}</span> of ${token:type})</span>",
+            "assetKey": "DB_ELEC_CHG_WTHL_PT_OF_FED_WTHL"
+          },
+          "DB_ELEC_CHG_WTHL_WTHL_THIS_AMT": {
+            "assetType": "text",
+            "assetValue": "<strong>Withhold This Amount</strong>",
+            "assetKey": "DB_ELEC_CHG_WTHL_WTHL_THIS_AMT"
+          },
+          "DB_ELEC_CHG_WTHL_ST_MIN": {
+            "assetType": "text",
+            "assetValue": "<span class=\"ah-displayBlock\">(minimum <span class=\"ah-noWrap\">${token:amt}</span>)</span>",
+            "assetKey": "DB_ELEC_CHG_WTHL_ST_MIN"
+          },
+          "DB_ELEC_CHG_WTHL_ADDL_PT": {
+            "assetType": "text",
+            "assetValue": "Additional Percent",
+            "assetKey": "DB_ELEC_CHG_WTHL_ADDL_PT"
+          },
+          "DB_ELEC_CHG_WTHL_PT_TAX_BNFT_AMT": {
+            "assetType": "text",
+            "assetValue": "Percentage of Your Taxable Benefit Amount",
+            "assetKey": "DB_ELEC_CHG_WTHL_PT_TAX_BNFT_AMT"
+          },
+          "DB_ELEC_CHG_WTHL_ESTM_ST_AMT_WTHL": {
+            "assetType": "text",
+            "assetValue": "Estimated State Amount Withheld",
+            "assetKey": "DB_ELEC_CHG_WTHL_ESTM_ST_AMT_WTHL"
+          },
+          "DB_ELEC_CHG_WTHL_ST_ADDL_AMT_ACSBLTY_TX": {
+            "assetType": "text",
+            "assetValue": "Enter a specific additional amount (in 0.00 format) that you want withheld for state taxes.",
+            "assetKey": "DB_ELEC_CHG_WTHL_ST_ADDL_AMT_ACSBLTY_TX"
+          },
+          "DB_ELEC_CHG_WTHL_ST_PT_ACSBLTY_TX": {
+            "assetType": "text",
+            "assetValue": "Enter a specific additional percent that you want withheld for state taxes.",
+            "assetKey": "DB_ELEC_CHG_WTHL_ST_PT_ACSBLTY_TX"
+          },
+          "DB_ELEC_CHG_WTHL_ST_AMT_ACSBLTY_TX": {
+            "assetType": "text",
+            "assetValue": "Enter a specific amount (in 0.00 format) that you want withheld for state taxes.",
+            "assetKey": "DB_ELEC_CHG_WTHL_ST_AMT_ACSBLTY_TX"
+          },
+          "DB_ELEC_CHG_WTHL_PR_ACSBLTY_TX": {
+            "assetType": "text",
+            "assetValue": "Choose what you want to withhold for Puerto Rico taxes:",
+            "assetKey": "DB_ELEC_CHG_WTHL_PR_ACSBLTY_TX"
+          },
+          "DB_ELEC_CHG_WTHL_US_TERR_WTHL": {
+            "assetType": "text",
+            "assetValue": "U.S. Territory Income Tax Withholding",
+            "assetKey": "DB_ELEC_CHG_WTHL_US_TERR_WTHL"
+          },
+          "DB_ELEC_CHG_WTHL_US_TERR": {
+            "assetType": "text",
+            "assetValue": "U.S. Territory",
+            "assetKey": "DB_ELEC_CHG_WTHL_US_TERR"
+          },
+          "DB_ELEC_CHG_WTHL_US_TERR_NOT_SPRT": {
+            "assetType": "text",
+            "assetValue": "U.S. territory income tax withholding is not supported for this payment.",
+            "assetKey": "DB_ELEC_CHG_WTHL_US_TERR_NOT_SPRT"
+          },
+          "DB_ELEC_CHG_WTHL_PROV_WTHL": {
+            "assetType": "text",
+            "assetValue": "Provincial Income Tax Withholding",
+            "assetKey": "DB_ELEC_CHG_WTHL_PROV_WTHL"
+          },
+          "DB_ELEC_CHG_WTHL_PROV": {
+            "assetType": "text",
+            "assetValue": "Province",
+            "assetKey": "DB_ELEC_CHG_WTHL_PROV"
+          },
+          "DB_ELEC_CHG_WTHL_ST_TD1": {
+            "assetType": "text",
+            "assetValue": "<strong>Provincial Personal Tax Credit Amount (TD1)</strong> <span class=\"ah-displayBlock\">(minimum <span class=\"ah-noWrap\">${token:amt}</span>)</span>",
+            "assetKey": "DB_ELEC_CHG_WTHL_ST_TD1"
+          },
+          "DB_ELEC_CHG_WTHL_ST_TD1_ACSBLTY_TX": {
+            "assetType": "text",
+            "assetValue": "Enter a specific amount (in 0.00 format) that you want withheld.",
+            "assetKey": "DB_ELEC_CHG_WTHL_ST_TD1_ACSBLTY_TX"
+          },
+          "DB_ELEC_CHG_WTHL_ESTM_PROV": {
+            "assetType": "text",
+            "assetValue": "Estimated Provincial Tax Withheld",
+            "assetKey": "DB_ELEC_CHG_WTHL_ESTM_PROV"
+          },
+          "DB_ELEC_CHG_WTHL_WTHL_PROV_ADDL_AMT_ACSBLTY_TX": {
+            "assetType": "text",
+            "assetValue": "Enter a specific additional amount (in 0.00 format) that you want withheld for provincial taxes.",
+            "assetKey": "DB_ELEC_CHG_WTHL_WTHL_PROV_ADDL_AMT_ACSBLTY_TX"
+          },
+          "DB_ELEC_CHG_WTHL_TAX_INCM": {
+            "assetType": "text",
+            "assetValue": "Taxable Income",
+            "assetKey": "DB_ELEC_CHG_WTHL_TAX_INCM"
+          },
+          "DB_ELEC_CHG_WTHL_WTHL_NOTHING": {
+            "assetType": "text",
+            "assetValue": "<strong>Withhold Nothing</strong>",
+            "assetKey": "DB_ELEC_CHG_WTHL_WTHL_NOTHING"
+          },
+          "DB_ELEC_CHG_WTHL_WTHL_DFLT": {
+            "assetType": "text",
+            "assetValue": "<strong>Withhold Default Amount</strong>",
+            "assetKey": "DB_ELEC_CHG_WTHL_WTHL_DFLT"
+          },
+          "DB_ELEC_CHG_WTHL_USE_CHOICES": {
+            "assetType": "text",
+            "assetValue": "<strong>Withhold Using These Choices:</strong>",
+            "assetKey": "DB_ELEC_CHG_WTHL_USE_CHOICES"
+          },
+          "DB_ELEC_CHG_WTHL_WTHL_ADDL_AMT": {
+            "assetType": "text",
+            "assetValue": "<strong>Withhold Additional Amount</strong>",
+            "assetKey": "DB_ELEC_CHG_WTHL_WTHL_ADDL_AMT"
+          },
+          "DB_ELEC_CHG_WTHL_NMBR_ALWN_ACSBLTY_TX": {
+            "assetType": "text",
+            "assetValue": "Enter the number of allowances (exemptions) you want to claim.",
+            "assetKey": "DB_ELEC_CHG_WTHL_NMBR_ALWN_ACSBLTY_TX"
+          },
+          "DB_ELEC_CHG_WTHL_NMBR_ALWN": {
+            "assetType": "text",
+            "assetValue": "Number of Allowances",
+            "assetKey": "DB_ELEC_CHG_WTHL_NMBR_ALWN"
+          },
+          "DB_ELEC_CHG_WTHL_NMBR_ALWN_TIP_TX": {
+            "assetType": "text",
+            "assetValue": "The more allowances you claim, the less tax will be withheld from your payment.",
+            "assetKey": "DB_ELEC_CHG_WTHL_NMBR_ALWN_TIP_TX"
+          },
+          "DB_ELEC_CHG_WTHL_MRTL_STAT": {
+            "assetType": "text",
+            "assetValue": "Marital Status",
+            "assetKey": "DB_ELEC_CHG_WTHL_MRTL_STAT"
+          },
+          "DB_ELEC_CHG_WTHL_MIN_APLY": {
+            "assetType": "text",
+            "assetValue": "<span class=\"ah-displayBlock\">(minimums may apply)</span>",
+            "assetKey": "DB_ELEC_CHG_WTHL_MIN_APLY"
+          },
+          "DB_ELEC_CHG_WTHL_ADDL_AMT": {
+            "assetType": "text",
+            "assetValue": "Additional Amount",
+            "assetKey": "DB_ELEC_CHG_WTHL_ADDL_AMT"
+          },
+          "DB_ELEC_CHG_WTHL_PT_FED": {
+            "assetType": "text",
+            "assetValue": "federal withholding",
+            "assetKey": "DB_ELEC_CHG_WTHL_PT_FED"
+          },
+          "DB_ELEC_CHG_WTHL_PT_TB": {
+            "assetType": "text",
+            "assetValue": "taxable benefits",
+            "assetKey": "DB_ELEC_CHG_WTHL_PT_TB"
+          },
+          "UPN_DB_ELEC_CHG_WTHL_ST_WTHL_NOTHING": {
+            "assetType": "text",
+            "assetValue": "<strong>Withhold Nothing</strong>",
+            "assetKey": "UPN_DB_ELEC_CHG_WTHL_ST_WTHL_NOTHING"
+          },
+          "UPN_DB_ELEC_CHG_WTHL_ST_WTHL_NOTHING_NO_FED": {
+            "assetType": "text",
+            "assetValue": "(if no federal income tax withheld)",
+            "assetKey": "UPN_DB_ELEC_CHG_WTHL_ST_WTHL_NOTHING_NO_FED"
+          },
+          "UPN_DB_ELEC_CHG_WTHL_ST_TD1": {
+            "assetType": "text",
+            "assetValue": "<strong>Provincial Personal Tax Credit Amount (TD1)</strong>",
+            "assetKey": "UPN_DB_ELEC_CHG_WTHL_ST_TD1"
+          },
+          "UPN_DB_ELEC_CHG_WTHL_MIN_AMT": {
+            "assetType": "text",
+            "assetValue": "(minimum <span class=\"al-noWrap\">${token:amt}</span>)",
+            "assetKey": "UPN_DB_ELEC_CHG_WTHL_MIN_AMT"
+          },
+          "UPN_DB_ELEC_CHG_WTHL_MIN_PCT": {
+            "assetType": "text",
+            "assetValue": "(minimum ${token:pt})",
+            "assetKey": "UPN_DB_ELEC_CHG_WTHL_MIN_PCT"
+          },
+          "UPN_DB_ELEC_CHG_WTHL_PT_OF_FED_WTHL": {
+            "assetType": "text",
+            "assetValue": "(<span class=\"al-noWrap\">${token:pt}</span> of ${token:type})</span>",
+            "assetKey": "UPN_DB_ELEC_CHG_WTHL_PT_OF_FED_WTHL"
+          },
+          "UPN_DB_ELEC_CHG_WTHL_MIN_APLY": {
+            "assetType": "text",
+            "assetValue": "(minimums may apply)",
+            "assetKey": "UPN_DB_ELEC_CHG_WTHL_MIN_APLY"
+          }
+        },
+        "DB_ELEC_AUTH_GNRL_AG": {
+          "DB_ELEC_AUTH_GNRL_HEAD": {
+            "assetType": "text",
+            "assetValue": "General Authorization",
+            "assetKey": "DB_ELEC_AUTH_GNRL_HEAD"
+          },
+          "DB_ELEC_AUTH_GNRL_INTRO": {
+            "assetType": "text",
+            "assetValue": "By electronically authorizing my pension benefit choices on this site, I:",
+            "assetKey": "DB_ELEC_AUTH_GNRL_INTRO"
+          },
+          "DB_ELEC_AUTH_GNRL_CRTFY_BDATE": {
+            "assetType": "text",
+            "assetValue": "Certify that my birth date is ${token:brthDt} and that either I'm not married or I'm legally separated by court order.",
+            "assetKey": "DB_ELEC_AUTH_GNRL_CRTFY_BDATE"
+          },
+          "DB_ELEC_AUTH_GNRL_SNGL_RETRO_ASD": {
+            "assetType": "text",
+            "assetValue": "Certify that if my marital status changes before I receive my first payment, I'll contact the The Syndicate Emporium of Benefits.",
+            "assetKey": "DB_ELEC_AUTH_GNRL_SNGL_RETRO_ASD"
+          },
+          "DB_ELEC_AUTH_GNRL_MRD_RTRO_ASD": {
+            "assetType": "text",
+            "assetValue": "Certify that I'm married and that ${token:spsNm} is my spouse on ${token:estmDstrDt}. If my marital status changes before I receive my first payment, I'll contact the The Syndicate Emporium of Benefits.",
+            "assetKey": "DB_ELEC_AUTH_GNRL_MRD_RTRO_ASD"
+          },
+          "DB_ELEC_AUTH_GNRL_HM_ELIG": {
+            "assetType": "text",
+            "assetValue": "Authorize the The Syndicate Emporium of Benefits to deduct any premiums for retiree health and group benefit coverage from my monthly pension benefit. If the deductions are more than my benefit, I'll be billed instead.",
+            "assetKey": "DB_ELEC_AUTH_GNRL_HM_ELIG"
+          },
+          "DB_ELEC_AUTH_GNRL_CNCL": {
+            "assetType": "text",
+            "assetValue": "Cancel any prior choices. My choices can be changed up to the last business day before my benefits begin.",
+            "assetKey": "DB_ELEC_AUTH_GNRL_CNCL"
+          }
+        }
+      }
+    }
+  ]

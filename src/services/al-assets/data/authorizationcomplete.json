@@ -1,0 +1,633 @@
+{
+    "status": {
+      "statusCode": 200,
+      "statusMessage": "OK",
+      "errorMessage": "The information that usually displays here is currently unavailable."
+    },
+    "authoruzationRequiredBean": {
+      "transactionTitle": "Make Your Retirement Choices",
+      "pageTitle": "Submitted Successfully",
+      "pageSubTitle": "Authorization Complete",
+      "pageTitleAuthReqd": "Authorization Required",
+      "confirmationNumberTxt": "Your confirmation number is <strong>1234567890.</strong>",
+      "emailConfirmationTxt": "You'll receive a confirmation email to your preferred email address (usually, within 30 minutes). For your privacy, some details won't be in the email.",
+      "printPageTxt": "Print this page ",
+      "forYourTxt": "for your records",
+      "postalConfirmationTxt": "Your confirmation statement and authorization form will be mailed to you within 2 business days. Allow an additional 1 to 3 days for postal delivery.",
+      "receiveTxt": "You'll also receive:",
+      "receiveThruEmailTxt": "Ongoing updates about your pension through your preferred email address",
+      "receiveThruSmsTxt": "A text message confirming your first pension payment",
+      "receiveNoticeDlvryTxt": "A notification to your personal email and mailing addresses if your payment amounts change",
+      "dbRtrmTxtNtfyEligTxt": "You'll receive a text message confirming your first ${text-item:GLOBAL,CROSS_PAGE_PENSION_LABEL} payment.",
+      "dbRtrmEmailNtfyEligTxt": "You'll receive ongoing updates about your ${text-item:GLOBAL,CROSS_PAGE_PENSION_LABEL} through your preferred email address.",
+      "specialistContactTxt": "If you want to cancel or make changes, contact a specialist at <strong class=\"al-nowrap\">888-123-4567</strong>.",
+      "benefitsCenterContactTxt": "If you want to cancel or make changes, contact the benefits center at 888-XXX-XXXX.",
+      "pageNm": "svChc",
+      "showRtrmSpclstCntc": true,
+      "isChangeButtonAvailable": false,
+      "isSpanishLocale": false,
+      "isRtrmTxtMsgSprt": true,
+      "isDbRtrmTxtNtfyElig": true,
+      "isDbRtrmEmlAvlbAndTxtNtfyElig": true,
+      "isClntSprtSPMRtrmKit": false,
+      "isPostalDeliveryPreference": false,
+      "isRtrmKit2SpmPrfrd": true,
+      "isRtrmPmtDescLrnMrLnkSprt": true,
+      "isHlthChcElig": true,
+      "isSvngOptElig": true,
+      "isRouteFromActionTabs": true,
+      "learnMoreTxt": "Learn More",
+      "followUpDetails": {
+        "followUpHeadTxt": "Required Follow-Ups",
+        "followUpFinishTxt": "To finish the pension retirement process, complete these steps.",
+        "followUpSignHeadingTxt": "Sign and Return Your Authorization Form  <span class=\"al-nowrap\">Before October 1, 2017</span>",
+        "followUpMailbox": "Access the email in your <a href=\"javascript:void(0);\">Secure Mailbox</a> in the Message Center on this site. It contains your confirmation statement and important forms that require follow-up.",
+        "followUpPostal": "Your confirmation statement and authorization form will be mailed to you within 2 business days. Allow an additional 1 to 3 days for postal delivery.",
+        "followUpCfrmStmt": "Review the confirmation statement to make sure your pension choices are correct.",
+        "followUpPrintSign": "Print, sign, and date the authorization form.",
+        "followUpPrintSpouse": "Your spouse must also sign the consent of spouse section in the presence of a notary public.",
+        "followUpDirectionTxt": "Follow the directions about:",
+        "followUpDirectionDetails": {
+          "followUpDirectionElse": "What else you need to do",
+          "followUpDirectionSend": "Where and how to send any documentation"
+        },
+        "followUpSendDt": "Send documentation, as specified on the form. It must be received before <strong>received before</strong>."
+      },
+      "yourNextStepDetails": {
+        "yourNextStepTitle": "Your Next Steps",
+        "retireeHlthBnfts": {
+          "retireeHlthBnftsHeading": "Retiree Health Benefits",
+          "retireeHlthBnftsEnroll": "You can enroll in Premier Retiree medical coverage <strong>up to 90 days before</strong> you retire or <strong>within 31 days after</strong> you retire.",
+          "retireeHlthBnftsNote": "<strong>Note:</strong> If you don't enroll within these dates, you will lose eligibility for coverage and won't be able to enroll in the future.",
+          "retireeHlthBnftsBtnTxt": "Research and Enroll",
+          "retireeHlthBnftsBtnEnrollLink": "/web/retirement4x/ybr/HM_ENRL_PORTAL_WELCOME",
+          "retireeHlthBnftsBtnLastDayLink": "/web/retirement4x/ybr/HM_RTRM_010"
+        },
+        "nqRecvBenefitDetails": {
+          "nqRecvBenefitsHeading": "NQ BENEFITS",
+          "nqRecvBenefitsSaveChngs": "You'll also receive these  ${text-item:GLOBAL,CROSS_PAGE_NONQUAL_LABEL} benefits.",
+          "nqRecvBenefits": "You'll also receive these ${text-item:GLOBAL,CROSS_PAGE_NONQUAL_LABEL} benefits, which aren't listed here.",
+          "nqPlanItems": [
+            {
+              "nqBenefit": "${text-item:GLOBAL,CROSS_PAGE_NONQUAL_CAP_LABEL} Benefit",
+              "nqRcvAddBnftSv": "You'll also receive an additional ${text-item:GLOBAL,CROSS_PAGE_NONQUAL_LABEL} benefit from ${token:nqPlan}.",
+              "nqRcvBnftSv": "You'll also receive a ${text-item:GLOBAL,CROSS_PAGE_NONQUAL_LABEL} benefit from ${token:nqPlan}.",
+              "nqRcvAddBnft": "You'll also receive an additional ${text-item:GLOBAL,CROSS_PAGE_NONQUAL_LABEL} benefit from ${token:nqPlan}, which isn't listed here.",
+              "nqRcvBnft": "You'll also receive a ${text-item:GLOBAL,CROSS_PAGE_NONQUAL_LABEL} benefit from ${token:nqPlan}, which isn't listed here.",
+              "nqEligBnftDt": "You're eligible for this benefit on ${token:date}.",
+              "nqHomeMsg": "You'll see a message on the home page of this site when you can make payment choices.",
+              "nqMkPmtChoices": "You can make ${link:Portal, DB_ELEC_NQ_PMT_CHC_LNK} now.",
+              "nqMkPmtChoicesLinkTxt": "payment choices",
+              "nqMkPmtChoicesLink": "/web/retirement4x/ybr/DB_NQ_RTRM_010",
+              "nqMkPmtChoicesBgnTxt": "You can make payment choices beginning ${token:date}."
+            }
+          ]
+        },
+        "reviewSavingsPlanOpts": {
+          "reviewSavingsPlanOptsLink": "/web/${friendlyUrl}/retirement-answers?articleId=RA_INCOME_TAXES_RTRM_SAVINGS",
+          "reviewSavingsPlanOptsTxt": "Review Your Savings Plan Options",
+          "reviewSavingsPlanOptsDesc": "Consider all your options when it comes to accessing your retirement savings."
+        },
+        "stillHaveQns": {
+          "stillHaveQnsLink": "/web/${friendlyUrl}/retirement-hub",
+          "stillHaveQnsTxt": "Still have questions?",
+          "stillHaveQnsDesc": "Check out all the information on the <a href=\"javascript:void(0);\">Retirement Hub</a>.",
+          "retirementHubLink": "/web/${friendlyUrl}/retirement-action",
+          "retirementHubTxt": "Retirement Hub"
+        }
+      },
+      "SummaryRequest": {
+        "summaryRequestTitle": "Summary of Your Request",
+        "summaryRequestConfirmationNoTxt": "Confirmation Number",
+        "summaryRequestConfirmationNoVal": "1234567890",
+        "summaryRequestTxt": "Request",
+        "summaryRequestDesc": "Make Your Pension Retirement Choices",
+        "summaryRequestAuthDtTxt": "Authorization Date",
+        "summaryRequestAuthDt": "Jul 1, 2017",
+        "summaryRequestLastDayTxt": "Your Last Day of Employment",
+        "summaryRequestLastDayDt": "Sep 18, 2017",
+        "summaryRequestBeginDtTxt": "Date You May Begin Receiving Benefits",
+        "summaryRequestBeginDt": "Oct 1, 2017",
+        "footnoteList": [
+          {
+            "footnoteId": "BenefitsBeginDate",
+            "footnoteTitle": "Footnote",
+            "footnoteMessage": "Assumes you have completed all the required notifications, paperwork, and authorizations within the required timeframe. It may take up to 30 days to process your payments."
+          }
+        ]
+      },
+      "reviewBeneficiaries": {
+        "reviewBeneficiariesTitle": "Beneficiaries",
+        "reviewBeneficiariesHeader1": "Benefit",
+        "reviewBeneficiariesHeader2": "Beneficiary",
+        "reviewBeneficiariesContents": [
+          {
+            "planElecDesc": "Cash Balance Benefit",
+            "beneficiaryName": "Chris M. Alvarez"
+          },
+          {
+            "planElecDesc": "Pension Plan Benefit",
+            "beneficiaryName": "Patricia Alvarez"
+          }
+        ]
+      },
+      "paymentSummaryList": 
+        {
+          "isMultiPlanPmtSupport": false,
+          "paymentDescription": "One-Time Payments",
+          "multiPlanPaymentDescription": "You'll receive one combined payment that includes all of your ${token:paymentDescription} benefits.",
+          "isQualifiedPlan": false,
+          "qualifiedPlanPayTxt": "This payment will be made from a plan that's intended to be qualified under section 401(a) of Internal Revenue Code.",
+          "finalDataNoticeTxt": "All amounts shown below may change based on your final employment data. ${if:IS_DB_ELEC_ADDITIONAL_DEDUCTION }The final amount paid to you may include other deductions that aren't shown.${endif}",
+          "planHeader": "Plan",
+          "benefitHeader": "Benefit",
+          "formOfPaymentHeader": "Form of Payment",
+          "benefitLabelHeader": "Payment to You",
+          "paymentElectionDetailItem": [
+            {
+              "pmtId": "1002",
+              "elecId": "1",
+              "retroPaymentHeader": "One-Time Payment",
+              "planDescription": "Premier Pension Plan",
+              "electionDescription": "Non Union Benefit",
+              "optionalFormDescription": "Lump Sum Option",
+              "opfmGrssAt": "$73,510.50",
+              "opfmFreqCd": "(one-time)"
+            },
+            {
+              "pmtId": "1002",
+              "elecId": "1",
+              "retroPaymentHeader": "One-Time Payment",
+              "planDescription": "Premier Pension Plan",
+              "electionDescription": "Grandfathered Benefit",
+              "optionalFormDescription": "Lump Sum Option",
+              "opfmGrssAt": "$24,425.50",
+              "opfmFreqCd": "(one-time)"
+            }
+          ],
+          "totalPmtBeforeDeductionsTxt": "Total Payment Before Deductions",
+          "totGrssAt": "$1360.50",
+          "totRlvrAvlbAt": "-$23,345.50",
+          "deductionsTableText": [
+            {
+              "deductionrowText": "Rollover Amount",
+              "deductionAmountText": "-$1360.50"
+            },
+            {
+              "deductionrowText": "Federal Withholding",
+              "deductionAmountText": "-$360.50"
+            },
+            {
+              "deductionAmountText": "-$360.50",
+              "deductionrowText": "State Withholding"
+            }
+          ],
+          "estimatedPmtTxt": "Estimated One-Time Payment to You",
+          "estimatedPmtAmt": "$32,234",
+          "otherDetailsTxt": "Other Details",
+          "paymentAmtsPanel": {
+            "paymentAmtsPanelTxt": "Payment Amounts to You and Your Beneficiary",
+            "optionalFormDescriptionTable1": [
+              {
+                "paymentTableHeader": "Premier Pension Plan—Non-Union Benefit",
+                "paymentTableHeader2": "Premier Pension Plan—Grandfathered Benefit",
+                "optionalFormDescription": "Lump Sum Option",
+                "rollOverText": "(Part or all of this payment option can be <b class='al-nowrap'>rolled over</b> in a later step.)",
+                "panelHeaderText": "One-time payment for you only ",
+                "panelText": [
+                  {
+                    "point": "Part or all of this payment option can be rolled over"
+                  },
+                  {
+                    "point": "<b>No</b> payment to your beneficiary"
+                  },
+                  {
+                    "point": "If married, your spouse must consent"
+                  },
+                  {
+                    "point": "Entire value of your pension benefit (or, in some cases, a portion of the entire value)"
+                  }
+                ],
+                "learnMoreLinkText": "Learn More",
+                "PaymentAmount": [
+                  {
+                    "optionalFormPaymentAmount": "$47,875.00",
+                    "paymentFrequencyText": "(one time)"
+                  }
+                ],
+                "paymentOptionBeneficiaryText": [
+                  {
+                    "paymentOptionBeneficiaryContentText": "Beneficiary Benefit (for payments after your death)",
+                    "amountText": "$0.00"
+                  }
+                ]
+              },
+              {
+                "paymentTableHeader": "Premier Pension Plan—Non-Union Benefit",
+                "paymentTableHeader": "Premier Pension Plan—Grandfathered Benefit",
+                "optionalFormDescription": "Lump Sum Option",
+                "rollOverText": "(Part or all of this payment option can be <b class='al-nowrap'>rolled over</b> in a later step.)",
+                "panelHeaderText": "One-time payment for you only ",
+                "panelText": [
+                  {
+                    "point": "Part or all of this payment option can be rolled over"
+                  },
+                  {
+                    "point": "<b>No</b> payment to your beneficiary"
+                  },
+                  {
+                    "point": "If married, your spouse must consent"
+                  },
+                  {
+                    "point": "Entire value of your pension benefit (or, in some cases, a portion of the entire value)"
+                  }
+                ],
+                "learnMoreLinkText": "Learn More",
+                "PaymentAmount": [
+                  {
+                    "optionalFormPaymentAmount": "$47,875.00",
+                    "paymentFrequencyText": "(one time)"
+                  }
+                ],
+                "paymentOptionBeneficiaryText": [
+                  {
+                    "paymentOptionBeneficiaryContentText": "Beneficiary Benefit (for payments after your death)",
+                    "amountText": "$0.00"
+                  }
+                ]
+              }
+            ]
+          },
+          "taxationInformationPanel": {
+            "taxationInformationPanelTxt": "Taxation Information",
+            "planBenefitHeader": "Plan Benefit",
+            "taxableAmtHeader": "Taxable Amount",
+            "nontaxableAmtHeader": "NonTaxable Amount",
+            "totGrossBeneAmtHeader": "Total Gross Benefit Amount",
+            "taxInformationDetails": [
+              {
+                "planDescription": "Premier Pension Plan",
+                "benefitDescription": "Non-Union Benefit",
+                "paymentTableHeader": "Premier Pension Plan—Non-Union Benefit",
+                "taxAmt": "$8500.00",
+                "nonTaxAmt": "$65000.00",
+                "totGrossBenefitAmt": "$73500.00"
+              }
+            ]
+          },
+          "estdIncomeTaxWithHldgPanel": {
+            "isUSFedWthlCd": true,
+            "isPRFedWthlCd": true,
+            "isCANFedWthlCd": true,
+            "isUSStWthlCd": true,
+            "isPRStWthlCd": true,
+            "isCANStWthlCd": true,
+            "isWthlSprtCd": true,
+            "nraSprt": false,
+            "estdIncomeTaxWithHldgPanelTxt": "Estimated Income Tax Withholding",
+            "estdFedIncTaxWithHldgDetails": {
+              "fedIncomeTaxWithHldgHdr": "Federal Income Tax Withholding",
+              "isFedWthlPt": true,
+              "hasFedTaxFlngStatCd": true,
+              "hasFedWthlForAnty": true,
+              "isFedWthlAvlb": true,
+              "hasFedWthl": true,
+              "isCanFedWthlPt": true,
+              "isAnty": true,
+              "hasEstmStWthlElCalc": true,
+              "fedIncTaxWithHldgNotSprtTxt": "Federal income tax withholding is not supported for this payment.",
+              "fedIncomeTaxWithHldList": [
+                {
+                  "text": "Taxable Income",
+                  "value": "$6,280.78"
+                },
+                {
+                  "text": "Percentage Withheld",
+                  "value": "20%"
+                },
+                {
+                  "text": "Marital Status",
+                  "value": "Married"
+                },
+                {
+                  "text": "Number of Allowances",
+                  "value": "3"
+                },
+                {
+                  "text": "Additional Amount Withheld",
+                  "value": "$0.00"
+                },
+                {
+                  "text": "Federal Withholding (Estimated)",
+                  "value": "-$1,631.50"
+                },
+                {
+                  "text": "Nothing Withheld",
+                  "value": ""
+                },
+                {
+                  "text": "Federal Personal Tax Credit Amount (TD1)",
+                  "value": "31.50"
+                }
+              ]
+            },
+            "estdStIncTaxWithHldgDetails": {
+              "StIncomeTaxWithHldgHdr": "State Income Tax Withholding",
+              "isStWthlAlwd": true,
+              "hasStTaxFlngStatCd": true,
+              "hasWthlEl": true,
+              "hasPtFedIntxWthlAddlAmt": true,
+              "isAddlWthlAmtAlwd": true,
+              "isAddlWthlPctAlwd": true,
+              "hasStWthlDflt": true,
+              "hasPtFedIntxWthl": true,
+              "isStWthlCalc": true,
+              "isStRplcWthl": true,
+              "isStWthlNone": true,
+              "stIncTaxWithHldgNotSprtTxt": "State income tax withholding is not supported for this payment.",
+              "fedIncomeTaxWithHldList": [
+                {
+                  "text": "Taxable Income",
+                  "value": "$6,280.78"
+                },
+                {
+                  "text": "State",
+                  "value": "IL"
+                },
+                {
+                  "text": "Marital Status",
+                  "value": "Married"
+                },
+                {
+                  "text": "Number of Allowances",
+                  "value": "3"
+                },
+                {
+                  "text": "Additional Amount Withheld",
+                  "value": "$0.00"
+                },
+                {
+                  "text": "State Withholding (estimated)",
+                  "value": "-$1,631.50"
+                },
+                {
+                  "text": "Nothing Withheld",
+                  "value": ""
+                },
+                {
+                  "text": "Additional Percent Withheld",
+                  "value": "31.50"
+                },
+                {
+                  "text": "Percentage of Your Taxable Benefit Amount",
+                  "value": "32.50"
+                },
+                {
+                  "text": "This Amount Withheld",
+                  "value": "$30.00"
+                }
+              ]
+            },
+            "estdUstIncTaxWithHldgDetails": {
+              "ustIncomeTaxWithHldgHdr": "U.S. Territory Income Tax Withholding",
+              "isStWthlAlwd": true,
+              "hasEstmStWthlForPr": true,
+              "ustIncTaxWithHldgNotSprtTxt": "U.S. territory income tax withholding is not supported for this payment.",
+              "fedIncomeTaxWithHldList": [
+                {
+                  "text": "Taxable Income",
+                  "value": "$6,280.78"
+                },
+                {
+                  "text": "U.S. Territory",
+                  "value": "IL"
+                },
+                {
+                  "text": "Percentage Withheld",
+                  "value": "20%"
+                },
+                {
+                  "text": "Provincial Personal Tax Credit Amount (TD1)",
+                  "value": "$20.56"
+                },
+                {
+                  "text": "State Withholding (estimated)",
+                  "value": "-$1,631.50"
+                },
+                {
+                  "text": "Nothing Withheld",
+                  "value": ""
+                }
+              ]
+            },
+            "estdProvIncTaxWithHldgDetails": {
+              "provIncomeTaxWithHldgHdr": "Provincial Income Tax Withholding",
+              "isLsum": true,
+              "isAnty": true,
+              "hasEstmStWthlElCalc": true,
+              "provIncTaxWithHldgNotSprtTxt": "",
+              "provIncomeTaxWithHldList": [
+                {
+                  "text": "Taxable Income",
+                  "value": "$6,280.78"
+                },
+                {
+                  "text": "Province",
+                  "value": "IL"
+                },
+                {
+                  "text": "Provincial Withholding (estimated)",
+                  "value": "-$1,631.50"
+                },
+                {
+                  "text": "Nothing Withheld",
+                  "value": ""
+                },
+                {
+                  "text": "Additional Amount Withheld",
+                  "value": "$0.00"
+                },
+                {
+                  "text": "Provincial Personal Tax Credit Amount (TD1)",
+                  "value": "$20.00"
+                }
+              ]
+            },
+            "estdNraIncTaxWithHldgDetails": {
+              "nraIncomeTaxWithHldgHdr": "You can't make tax withholding changes on this site. If you need to provide a new Form W-8BEN, see the <span class=ah-nowrap> ${link: Portal,DB_RESIDENCY_CERT_PDF, global,DB_RESIDENCY_CERT_PDF_TX}</span> (PDF, ${token:pdfFileSize} MB)</span> for further instruction, or contact the ${text-item:global,clntBeneCntrKey}.",
+              "nraSprt": true,
+              "nraIncTaxWithHldgNotSprtTxt": "You can't make tax withholding changes on this site. Contact the ${text-item:global,clntBeneCntrKey} to make changes."
+            }
+          },
+          "pmtDestinationPanel": {
+            "pmtDestinationPanelTxt": "Payment Destination(s)",
+            "addressDetails": [
+              {
+                "paymentText": "Payment to You",
+                "ChangeButtonText": "Change",
+                "directDepositText": "Direct Deposit",
+                "directDepositAmountText": "$6,280.78",
+                "NameText": "J.P. Morgan Chase Bank",
+                "accountTypeText": "Account Type:",
+                "accountTypeDataText": "Savings",
+                "routingNumberText": "Routing Number:",
+                "routingNumberDataText": "09090909",
+                "accountNumberText": "Account Number:",
+                "accountNumberDataText": "xxxxxxxx1111",
+                "dtcNumberText": "DTC Number:",
+                "dtcNumberDataText": "32323232"
+              },
+              {
+                "paymentText": "Rollover Payment",
+                "ChangeButtonText": "Change",
+                "directDepositText": "Traditional IRA",
+                "directDepositAmountText": "$89,425.50",
+                "NameText": "E*TRADE Securities",
+                "routingNumberText": "Routing Number:",
+                "routingNumberDataText": "09090909",
+                "accountTypeText": "For Further Credit:",
+                "accountTypeDataText": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx9999",
+                "accountNumberText": "Account Number:",
+                "accountNumberDataText": "xxxxxxxxxxxx5678",
+                "dtcNumberText": "Rollover Type:",
+                "dtcNumberDataText": "Traditional IRA"
+              }
+            ]
+          },
+          "annuityTableHeaderText": "Annuity Payments",
+          "PlanBenefitTextHeader1": "Plan Benefit",
+          "BenefitTextHeader1": null,
+          "FormofPaymentTextHeader1": "Form of Payment",
+          "PaymenttoYouTextHeader1": "Payment to You",
+          "frequencyTextHeader1": null,
+          "ChangeButtonTextHeader1": null,
+          "annuitytableContentText": [
+            {
+              "PlanBenefitText": "Cash Balance Plan—",
+              "BenefitText": "Cash Balance Benefit",
+              "FormofPaymentText": "Straight Life Annuity",
+              "PaymenttoYouText": "$876.34"
+            },
+            {
+              "PlanBenefitText": "Premier Pension Plan—",
+              "BenefitText": "Cash Balance Benefit",
+              "FormofPaymentText": "Straight Life Annuity",
+              "PaymenttoYouText": "$405.81"
+            }
+          ],
+          "deductionsText1": "Total Payment Before Deductions",
+          "amountText1": "$97,582.50",
+          "deductionsTableText1": [
+            {
+              "deductionrowText": "Federal Withholding",
+              "deductionAmountText": "-$89,425.50"
+            },
+            {
+              "deductionrowText": "State Withholding",
+              "deductionAmountText": "-$1,631.50"
+            }
+          ],
+          "estimatedPaymentText": "Estimated One-Time Payment to You",
+          "estimatedPaymentAmountText": "$6,280.78",
+          "otherDetailsText1": "Other Details",
+          "expandAllText1": "Expand All",
+          "collapseAllText1": "Collapse All"
+        },
+        "otherDetailsText1": "Other Details",
+    "expandAllText1": "Expand All",
+    "collapseAllText1": "Collapse All",
+    "paymentAmtsPanel1": {
+      "paymentAmtsPanelTxt": "Payment Amounts to You and Your Beneficiary",
+      "optionalFormDescriptionTable1": [
+        {
+          "paymentTableHeader": "Cash Balance Plan—Cash Balance Benefit",
+          "optionalFormDescription": "Straight Life Annuity",
+          "panelHeaderText": "A monthly payment to you only, until you die",
+          "panelText": [
+            {
+              "point": "<b>No</b> payment to your beneficiary"
+            },
+            {
+              "point": "If married, your spouse must consent"
+            },
+            {
+              "point": "If single, considered \"standard\" form of pension payment"
+            }
+          ],
+          "learnMoreLinkText": "Learn More",
+          "PaymentAmount": [
+            {
+              "optionalFormPaymentAmount": "$47,875.00",
+              "paymentFrequencyText": "(monthly)"
+            }
+          ],
+          "paymentOptionBeneficiaryText": [
+            {
+              "paymentOptionBeneficiaryContentText": "Beneficiary Benefit (for payments after your death)",
+              "amountText": "$0.00"
+            }
+          ]
+        },
+        {
+          "paymentTableHeader": "Premier Pension Plan—Cash Balance Benefit",
+          "optionalFormDescription": "Straight Life Annuity",
+          "panelHeaderText": "A monthly payment to you only, until you die",
+          "panelText": [
+            {
+              "point": "<b>No</b> payment to your beneficiary"
+            },
+            {
+              "point": "If married, your spouse must consent"
+            },
+            {
+              "point": "Entire value of your pension benefit (or, in some cases, a portion of the entire value)"
+            }
+          ],
+          "learnMoreLinkText": "Learn More",
+          "PaymentAmount": [
+            {
+              "optionalFormPaymentAmount": "$47,875.00",
+              "paymentFrequencyText": "(monthly)"
+            }
+          ],
+          "paymentOptionBeneficiaryText": [
+            {
+              "paymentOptionBeneficiaryContentText": "Beneficiary Benefit (for payments after your death)",
+              "amountText": "$0.00"
+            }
+          ]
+        }
+      ]
+    },
+    "pmtDestinationPanel1": {
+      "pmtDestinationPanelTxt1": "Payment Destination(s)",
+      "addressDetails": [
+        {
+          "paymentText": "Payment to You",
+          "ChangeButtonText": "Change",
+          "directDepositText": "Direct Deposit",
+          "directDepositAmountText": "$6,280.78",
+          "NameText": "J.P. Morgan Chase Bank",
+          "accountTypeText": "Account Type:",
+          "accountTypeDataText": "Savings",
+          "routingNumberText": "Routing Number:",
+          "routingNumberDataText": "09090909",
+          "accountNumberText": "Account Number:",
+          "accountNumberDataText": "xxxxxxxx1111",
+          "dtcNumberText": "DTC Number:",
+          "dtcNumberDataText": "32323232"
+        }
+      ]
+    },
+      "multBeneAlwdCd": true,
+      "addAnotherBeneBox": {
+        "addAnotherBeneHdrTxt": "Want to add another beneficiary? Contact a retirement specialist at <span><strong>800-###-####</strong></span>.",
+        "addAnotherBeneCntTxt": ""
+      },
+      "isRtrmSpclstMdlElig": true,
+      "rtrmSpclstQnsBox": {
+        "rtrmSpclstQnsBoxHdrTxt": "Questions?",
+        "rtrmSpclstQnsBoxTxt": "If or when you have questions, specialists are ready to help at ${text-item:GLOBAL,DB_RETIREMENT_SPECIALISTS_PHONE_NUMBER} ${text-item:GLOBAL,DB_RETIREMENT_SPECIALISTS_HOURS}"
+      }
+    }
+  }

@@ -1,0 +1,119 @@
+{
+    "data": {
+        "nextRedirect": "",
+        "onQuit": "http://localhost:4200/#/",
+        "beneficiariesInformations": {
+            "header": "Pension Beneficiaries",
+            "description": "A beneficiary may receive benefits after your death. This impacts which payment options are available to you and the calculations for those payments.",
+            "isPersonRetirementEligible": true,
+            "isActive": true,
+            "nonQualBeneCd": true,
+            "additionalBeneTxt": "You're eligible for an additional benefit(s). Review your beneficiary choices below and make changes, if necessary.",
+            "tipsLabel": "tip",
+            "tipsShortDescription": "Just want to enroll in retiree health care?",
+            "tipsLongDiscription": "You must first confirm your beneficiaries, and then defer your pension benefits when your payment options are displayed. Any beneficiary choices you make won't be saved for deferred benefits.",
+            "moreLable": "More",
+            "lessLabel": "Less",
+            "spouseBeneTxt": "For this plan, your spouse <strong>must</strong> be your beneficiary.",
+            "noBeneSpouseOnlyTxt": "You have no beneficiary for this benefit because our records indicate you aren't married. The plan only allows a spouse to be a beneficiary for this benefit.",
+            "beneChoiceTxt": "Make one beneficiary choice for this benefit.",
+            "beneChoiceNoteTxt": "<strong>Note:</strong> Depending on the choices you make, you may be able to update, change, or add additional beneficiaries. This can be done once you have completed the retirement process.",
+            "planBenefits": [
+                {
+                    "isMrrdMndtSpsDsgn": false,
+                    "isAddBeneInfoLnkElig": true,
+                    "hasBeneChoices": true,
+                    "isNotMrrdMndtSpsDsgnQWoSameSexSps": false,
+                    "isPrimaryBeneficiaryAllowed": true,
+                    "planId": "8747",
+                    "planDescription": "Employee Pension and Retirement Plan",
+                    "planShortDescription": "Employee Pension Plan",
+                    "elecId": "10",
+                    "elecDescription": "Simply a Simple Election",
+                    "elecShortDescription": "Simple Election",
+                    "elecGroupId": "10",
+                    "elecGroupDescription": "Contributions Retained",
+                    "elecGroupShortDescription": "Contributions Retained",
+                    "rdoPropId": "8747_10_10",
+                    "servicePeriodEndDate": "Nov 25, 1992",
+                    "beneficiaries": [
+                        {
+                            "frmtBrthDt": "1961-01-01",
+                            "relationshipDescTx": "Domestic Partner",
+                            "frmtNm": "Christopher M. Alvarez",
+                            "brthDt": "1961-01-01",
+                            "rltnSq": 2,
+                            "rltnTypeCd": "DP",
+                            "personInternalId": "9971099223",
+                            "beneRdoBttnSlct": false,
+                            "beneEditAllow": true
+                        },
+                        {
+                            "frmtBrthDt": "No Beneficiary",
+                            "relationshipDescTx": "N/A",
+                            "frmtNm": "N/A",
+                            "brthDt": null,
+                            "rltnSq": null,
+                            "rltnTypeCd": null,
+                            "personInternalId": "0",
+                            "beneRdoBttnSlct": false,
+                            "beneEditAllow": false
+                        }
+                    ]
+                },
+                {
+                    "isMrrdMndtSpsDsgn": false,
+                    "isAddBeneInfoLnkElig": true,
+                    "hasBeneChoices": true,
+                    "isNotMrrdMndtSpsDsgnQWoSameSexSps": false,
+                    "isPrimaryBeneficiaryAllowed": true,
+                    "planId": "8745",
+                    "planDescription": "Employee Pension and Retirement Plan",
+                    "planShortDescription": "Employee Pension Plan",
+                    "elecId": "11",
+                    "elecDescription": "FP Simple Election2",
+                    "elecShortDescription": "FP Simple Election2",
+                    "elecGroupId": "10",
+                    "elecGroupDescription": "Contributions Retained",
+                    "elecGroupShortDescription": "Contributions Retained",
+                    "rdoPropId": "8745_10_11",
+                    "servicePeriodEndDate": "Nov 25, 1990",
+                    "beneficiaries": [
+                        {
+                            "frmtBrthDt": "1961-01-01",
+                            "relationshipDescTx": "Domestic Partner",
+                            "frmtNm": "Christopher M. Alvarez",
+                            "brthDt": "1961-01-01",
+                            "rltnSq": 2,
+                            "rltnTypeCd": "DP",
+                            "personInternalId": "9971099223",
+                            "beneRdoBttnSlct": false,
+                            "beneEditAllow": true
+                        },
+                        {
+                            "frmtBrthDt": "No Beneficiary",
+                            "relationshipDescTx": "N/A",
+                            "frmtNm": "N/A",
+                            "brthDt": null,
+                            "rltnSq": null,
+                            "rltnTypeCd": null,
+                            "personInternalId": "0",
+                            "beneRdoBttnSlct": false,
+                            "beneEditAllow": false
+                        }
+                    ]
+                }
+            ],
+            "beneficiaryColTxt": "Beneficiary",
+            "relationshipColTxt": "Relationship",
+            "birthDateColTxt": "Birth Date",
+            "editbeneficiaryTxt": "Edit Beneficiary",
+            "addbeneficiaryTxt": "Add Beneficiary",
+            "noBeneficiarySelectErrorMessage": "You must make a beneficiary choice for each of your benefits.",
+            "addBeneficiaryUrl": "/beneficiaries?linkId=RTRM_HUB_LINK_ADD_BENEFICIARY&technicalNameForLink=RTRM_HUB_LINK_ADD_BENEFICIARY&userFriendlyNameForLink=null&domain=Ben-CM&baseClientIndicator=Base",
+            "editBeneficiaryUrl": "/beneficiaries?linkId=RTRM_HUB_LINK_EDIT_BENEFICIARY&technicalNameForLink=RTRM_HUB_LINK_EDIT_BENEFICIARY&userFriendlyNameForLink=null&domain=Ben-CM&baseClientIndicator=Base",
+            "addEditBeneficiary": false
+        },
+        "statusCode": 200
+    }
+}

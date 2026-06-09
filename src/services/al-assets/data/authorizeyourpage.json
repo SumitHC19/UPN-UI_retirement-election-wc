@@ -1,0 +1,230 @@
+{
+    "body": {
+    "status": {
+        "statusCode": 200,
+        "statusMessage": "OK"
+    },
+    "authorizeYourChoices": {
+        "flowNameText": "Make Your Retirement Choices",
+        "pageNameText": "Authorize Your Choices",
+        "alertHeaderText": "To begin your pension benefit, you must authorize your choices.",
+        "alertContentText": "<p>Review your <A onclick=\"if(isUACrossEnabled()){try{ga('trackerUa1.send','event', 'Internal Link' ,'Link click','LinkId:DB_ELEC_RVW_SEC_LNK LinkDest:/web/${friendlyUrl}/db-election-review'); } catch(err){}} if(isUAClientEnabled()){ try{if(isGTMEnabled()){dataLayer.push({'event':'UPointLinkEvent','linkCategory':'Internal Link','linkAction':'Link Click','linkLabel':'LinkId:DB_ELEC_RVW_SEC_LNK LinkDest:/web/${friendlyUrl}/db-election-review'});}else{ga('trackerUa2.send','event', 'Internal Link' ,'Link click','LinkId:DB_ELEC_RVW_SEC_LNK LinkDest:/web/${friendlyUrl}/db-election-review'); }} catch(err){}}try{setTimeout(function() {}, 100);}catch(err){}window.winHandle = window.open('/web/${friendlyUrl}/db-election-review?linkId=DB_ELEC_RVW_SEC_LNK&technicalNameForLink=DB_ELEC_RVW_SEC_LNK&userFriendlyNameForLink=Link to the db election review page&domain=Ben-DB&baseClientIndicator=Base','DB_ELEC_RVW_SEC_LNK','titlebar=yes,scrollbars=yes,resizable=yes,width=980,height=560');if(typeof XD != 'undefined'){XD.registerWindow('DB_ELEC_RVW_SEC_LNK',window.winHandle);}try{setSessionTimeOut()}catch(err){};return false;\" href=\"/web/${friendlyUrl}/db-election-review?linkId=DB_ELEC_RVW_SEC_LNK&technicalNameForLink=DB_ELEC_RVW_SEC_LNK&userFriendlyNameForLink=Link to the db election review page&domain=Ben-DB&baseClientIndicator=Base\" class=\"ah-secondaryWindow\">pension choices</A>.</p>",
+        "authReadStmtText": "Read the statement below carefully. Then check the box at the bottom of the page to authorize your choices and electronically sign the statement.",
+        "yourRightsText": "Your Rights",
+        "expandText": "Expand All",
+        "collapseText": "Collapse All",
+        "generalAuthorization": {
+            "titleText": "General Authorization",
+            "contentText": "By electronically authorizing my pension benefit choices on this site, I:",
+            "certifyBirthDateText": "Certify that my birth date is Jan 01, 1961 and that either I'm not married or I'm legally separated by court order.",
+            "hmEligibleText": "Authorize the The Syndicate Emporium of Benefits to deduct any premiums for retiree health and group benefit coverage from my monthly pension benefit. If the deductions are more than my benefit, I'll be billed instead.",
+            "cancelText": "Cancel any prior choices. My choices can be changed up to the last business day before my benefits begin."
+        },
+        "authorizationDetailData": [
+            {
+                "pensionPlanAuthorization": {
+                    "titleText": "Authorization for DB FAP Pension Plan Benefits",
+                    "planIntroText": "By electronically authorizing my DB FAP Pension Plan benefits on this site, I:",
+                    "qualifiedRetroASDText": "Certify that I've chosen to have my benefit calculated as of Jul 01, 2019 instead of a current date. I understand that if I choose a current date, my benefit amount may increase or decrease, .",
+                    "noticeText": "30-Day Notification Period",
+                    "tooltipText": "By law, you have at least 30 days to think about your pension choices and decide if you want to consent to receiving benefits. After you start your benefit, you can't change the payment option. You can waive your right to this 30-day period by choosing <strong>Sign and Authorize</strong>. If you're not ready now to consent to receiving benefits, choose <strong>Come Back Later</strong> and return to this site when you're ready to submit your pension choices.",
+                    "qualifiedPlanText": "Certify that I received a <A onclick=\"if(isUACrossEnabled()){try{ga('trackerUa1.send','event', 'Internal Link' ,'Link click','LinkId:DB_ELEC_AUTH_NOR LinkDest:/web/${friendlyUrl}/db-notice-of-rights'); } catch(err){}} if(isUAClientEnabled()){ try{if(isGTMEnabled()){dataLayer.push({'event':'UPointLinkEvent','linkCategory':'Internal Link','linkAction':'Link Click','linkLabel':'LinkId:DB_ELEC_AUTH_NOR LinkDest:/web/${friendlyUrl}/db-notice-of-rights'});}else{ga('trackerUa2.send','event', 'Internal Link' ,'Link click','LinkId:DB_ELEC_AUTH_NOR LinkDest:/web/${friendlyUrl}/db-notice-of-rights'); }} catch(err){}}try{setTimeout(function() {}, 100);}catch(err){}window.winHandle = window.open('/web/${friendlyUrl}/db-notice-of-rights?linkId=DB_ELEC_AUTH_NOR&technicalNameForLink=DB_ELEC_AUTH_NOR&userFriendlyNameForLink=Notice of Rights secondary page link&domain=Ben-DB&baseClientIndicator=Base','DB_ELEC_AUTH_NOR','titlebar=yes,scrollbars=yes,resizable=yes,width=980,height=560');if(typeof XD != 'undefined'){XD.registerWindow('DB_ELEC_AUTH_NOR',window.winHandle);}try{setSessionTimeOut()}catch(err){};return false;\" href=\"/web/${friendlyUrl}/db-notice-of-rights?linkId=DB_ELEC_AUTH_NOR&technicalNameForLink=DB_ELEC_AUTH_NOR&userFriendlyNameForLink=Notice of Rights secondary page link&domain=Ben-DB&baseClientIndicator=Base\" class=\"ah-secondaryWindow\">Notice of Rights</A>, and  a description of my pension options,  and amounts payable.",
+                    "amountChangeText": "Certify that I understand the amounts in this statement may change based on final calculations that apply Internal Revenue Code required limitations.",
+                    "contributionsText": "Certify that I've chosen to .",
+                    "correctErrorText": "Certify that I understand that the Premier reserves the right to correct any errors. If it's determined at any time that the information provided on this statement conflicts with the benefit defined by the DB FAP Pension Plan, the DB FAP Pension Plan will prevail. Under the law, a plan must be operated in accordance with its terms.",
+                    "pensionElectionAuthorization": [
+                        {
+                            "titleText": "Authorization for the Simple Election Alternate",
+                            "introText": "By electronically authorizing Simple Election Alternate on this site, I:",
+                            "beginPaymentText": "Certify that I've chosen the Lump Sum Distribution to begin on <strong>2019-07-01</strong>.",
+                            "amountPaymentText": "Certify that I understand this payment option pays <strong>0.0</strong> until <strong>2299-12-31</strong>, <strong>0.0</strong> thereafter until <strong>2299-12-31</strong>."
+                        },
+                        {
+                            "titleText": "Authorization for the Simple Election Alternate",
+                            "introText": "By electronically authorizing Simple Election Alternate on this site, I:",
+                            "beginPaymentText": "Certify that I've chosen the Lump Sum Distribution to begin on <strong>2019-07-01</strong>.",
+                            "amountPaymentText": "Certify that I understand this payment option pays <strong>0.0</strong> until <strong>2299-12-31</strong>, <strong>0.0</strong> thereafter until <strong>2299-12-31</strong>."
+                        }
+                    ]
+                }
+            },
+            {
+                "pensionPlanAuthorization": {
+                    "titleText": "Authorization for DB FAP Pension Plan Benefits",
+                    "planIntroText": "By electronically authorizing my DB FAP Pension Plan benefits on this site, I:",
+                    "qualifiedRetroASDText": "Certify that I've chosen to have my benefit calculated as of Jul 01, 2019 instead of a current date. I understand that if I choose a current date, my benefit amount may increase or decrease, .",
+                    "noticeText": "30-Day Notification Period",
+                    "tooltipText": "By law, you have at least 30 days to think about your pension choices and decide if you want to consent to receiving benefits. After you start your benefit, you can't change the payment option. You can waive your right to this 30-day period by choosing <strong>Sign and Authorize</strong>. If you're not ready now to consent to receiving benefits, choose <strong>Come Back Later</strong> and return to this site when you're ready to submit your pension choices.",
+                    "qualifiedPlanText": "Certify that I received a <A onclick=\"if(isUACrossEnabled()){try{ga('trackerUa1.send','event', 'Internal Link' ,'Link click','LinkId:DB_ELEC_AUTH_NOR LinkDest:/web/${friendlyUrl}/db-notice-of-rights'); } catch(err){}} if(isUAClientEnabled()){ try{if(isGTMEnabled()){dataLayer.push({'event':'UPointLinkEvent','linkCategory':'Internal Link','linkAction':'Link Click','linkLabel':'LinkId:DB_ELEC_AUTH_NOR LinkDest:/web/${friendlyUrl}/db-notice-of-rights'});}else{ga('trackerUa2.send','event', 'Internal Link' ,'Link click','LinkId:DB_ELEC_AUTH_NOR LinkDest:/web/${friendlyUrl}/db-notice-of-rights'); }} catch(err){}}try{setTimeout(function() {}, 100);}catch(err){}window.winHandle = window.open('/web/${friendlyUrl}/db-notice-of-rights?linkId=DB_ELEC_AUTH_NOR&technicalNameForLink=DB_ELEC_AUTH_NOR&userFriendlyNameForLink=Notice of Rights secondary page link&domain=Ben-DB&baseClientIndicator=Base','DB_ELEC_AUTH_NOR','titlebar=yes,scrollbars=yes,resizable=yes,width=980,height=560');if(typeof XD != 'undefined'){XD.registerWindow('DB_ELEC_AUTH_NOR',window.winHandle);}try{setSessionTimeOut()}catch(err){};return false;\" href=\"/web/${friendlyUrl}/db-notice-of-rights?linkId=DB_ELEC_AUTH_NOR&technicalNameForLink=DB_ELEC_AUTH_NOR&userFriendlyNameForLink=Notice of Rights secondary page link&domain=Ben-DB&baseClientIndicator=Base\" class=\"ah-secondaryWindow\">Notice of Rights</A>, and  a description of my pension options,  and amounts payable.",
+                    "amountChangeText": "Certify that I understand the amounts in this statement may change based on final calculations that apply Internal Revenue Code required limitations.",
+                    "contributionsText": "Certify that I've chosen to .",
+                    "correctErrorText": "Certify that I understand that the Premier reserves the right to correct any errors. If it's determined at any time that the information provided on this statement conflicts with the benefit defined by the DB FAP Pension Plan, the DB FAP Pension Plan will prevail. Under the law, a plan must be operated in accordance with its terms.",
+                    "pensionElectionAuthorization": [
+                        {
+                            "titleText": "Authorization for the Simple Election Alternate",
+                            "introText": "By electronically authorizing Simple Election Alternate on this site, I:",
+                            "beginPaymentText": "Certify that I've chosen the Lump Sum Distribution to begin on <strong>2019-07-01</strong>.",
+                            "amountPaymentText": "Certify that I understand this payment option pays <strong>0.0</strong> until <strong>2299-12-31</strong>, <strong>0.0</strong> thereafter until <strong>2299-12-31</strong>."
+                        },
+                        {
+                            "titleText": "Authorization for the Simple Election Alternate",
+                            "introText": "By electronically authorizing Simple Election Alternate on this site, I:",
+                            "beginPaymentText": "Certify that I've chosen the Lump Sum Distribution to begin on <strong>2019-07-01</strong>.",
+                            "amountPaymentText": "Certify that I understand this payment option pays <strong>0.0</strong> until <strong>2299-12-31</strong>, <strong>0.0</strong> thereafter until <strong>2299-12-31</strong>."
+                        }
+                    ]
+                }
+            }
+        ],
+        "acknowledgement": {
+            "acknowledgementText": "Acknowledgement",
+            "accessibilityText": "Choose to authorize your choices and certify that your statements are accurate.",
+            "authCertifyText": "I <strong>authorize</strong> all of my <A onclick=\"if(isUACrossEnabled()){try{ga('trackerUa1.send','event', 'Internal Link' ,'Link click','LinkId:DB_ELEC_RVW_SEC_LNK LinkDest:/web/${friendlyUrl}/db-election-review'); } catch(err){}} if(isUAClientEnabled()){ try{if(isGTMEnabled()){dataLayer.push({'event':'UPointLinkEvent','linkCategory':'Internal Link','linkAction':'Link Click','linkLabel':'LinkId:DB_ELEC_RVW_SEC_LNK LinkDest:/web/${friendlyUrl}/db-election-review'});}else{ga('trackerUa2.send','event', 'Internal Link' ,'Link click','LinkId:DB_ELEC_RVW_SEC_LNK LinkDest:/web/${friendlyUrl}/db-election-review'); }} catch(err){}}try{setTimeout(function() {}, 100);}catch(err){}window.winHandle = window.open('/web/${friendlyUrl}/db-election-review?linkId=DB_ELEC_RVW_SEC_LNK&technicalNameForLink=DB_ELEC_RVW_SEC_LNK&userFriendlyNameForLink=Link to the db election review page&domain=Ben-DB&baseClientIndicator=Base','DB_ELEC_RVW_SEC_LNK','titlebar=yes,scrollbars=yes,resizable=yes,width=980,height=560');if(typeof XD != 'undefined'){XD.registerWindow('DB_ELEC_RVW_SEC_LNK',window.winHandle);}try{setSessionTimeOut()}catch(err){};return false;\" href=\"/web/${friendlyUrl}/db-election-review?linkId=DB_ELEC_RVW_SEC_LNK&technicalNameForLink=DB_ELEC_RVW_SEC_LNK&userFriendlyNameForLink=Link to the db election review page&domain=Ben-DB&baseClientIndicator=Base\" class=\"ah-secondaryWindow\">pension choices</A> and certify the statements above are accurate.",
+            "printText": "<a href=javascript:void(0); onclick='window.print();'>Print a copy</a> of your authorization statement for your records."
+        },
+        "accessibilityTexts": {
+            "chkboxAcknowledge": "Choose to authorize your choices and certify that your statements are accurate."
+        },
+        "editList": [
+            {
+                "editId": "96500302",
+                "editMessage": "Your entry is invalid. Enter a valid alphanumeric value before continuing. (Message Number&#58; 96500302)"
+            },
+            {
+                "editId": "91000396",
+                "editMessage": "To complete the retirement process, you must authorize your choices and electronically sign the statement by checking the box on this page."
+            }
+        ],
+        "flowButtonNavigation": {
+            "buttonList": [
+                {
+                    "action": "save",
+                    "label": "Sign and Authorize"
+                },
+                {
+                    "action": "comeBackLater",
+                    "label": "Come Back Later"
+                },
+                {
+                    "action": "quit",
+                    "label": "Quit"
+                }
+            ],
+            "quitModalContent": {
+                "title": "What do you want to do?",
+                "bodyList": [
+                    {
+                        "heading": "Save",
+                        "paragraph": "Keep the choices you've made, so far. Finish making pension choices later."
+                    },
+                    {
+                        "heading": "Quit",
+                        "paragraph": "Cancel your pension request and lose all the pension choices you've made, so far."
+                    },
+                    {
+                        "heading": "Return",
+                        "paragraph": "Go back to the current page without quitting."
+                    }
+                ],
+                "buttonList": [
+                    {
+                        "action": "comeBackLater",
+                        "label": "Save"
+                    },
+                    {
+                        "action": "quit",
+                        "label": "Quit"
+                    },
+                    {
+                        "action": "return",
+                        "label": "Return"
+                    }
+                ]
+            }
+        }
+    },
+    "progressBarPopovers": [
+		{
+			"hasError": false,
+			"stepId": 3,
+			"stepName": "beneficiaries",
+			"stepCode": "BENE",
+			"title": "3. Beneficiaries",
+			"linkText": "Change",
+			"contentList": [
+				{
+					"contentData": [
+						"DB FAP Pension Plan",
+						"No Beneficiary"
+					]
+				}
+			],
+			"changeModal": {
+				"changeModalText": "Do you want to change your choices?<br><br> You’ll need to start the retirement process again from the beginning. That’s because making changes to this information may impact your benefits options and payment amounts.",
+				"yesBtn": "Yes",
+				"noBtn": "No"
+			}
+		},
+		{
+			"hasError": false,
+			"stepId": 4,
+			"stepName": "rights",
+			"stepCode": "NORS",
+			"title": "4. Your Notice of Rights",
+			"linkText": "Review",
+			"contentList": [
+				{
+					"contentData": [
+						"Acknowledged receiving and reviewing notice of rights."
+					]
+				}
+			]
+		},
+		{
+			"hasError": false,
+			"stepId": 5,
+			"stepName": "payment",
+			"stepCode": "PAYT",
+			"title": "5. Pension Payments",
+			"linkText": "Review/Change",
+			"contentList": [
+				{
+					"contentData": [
+						"Made your choices."
+					]
+				}
+			]
+		},
+		{
+			"hasError": false,
+			"stepId": 6,
+			"stepName": "destination",
+			"stepCode": "DEST",
+			"title": "6. Destination",
+			"linkText": "Change",
+			"contentList": [
+				{
+					"contentData": [
+						"Selected your payment destination."
+					]
+				}
+			]
+		},
+		{
+			"hasError": false,
+			"stepId": 7,
+			"stepName": "review",
+			"stepCode": "REVW",
+			"title": "7. Review",
+			"linkText": "Review",
+			"contentList": [
+				{
+					"contentData": [
+						"Reviewed a list of all the choices you made."
+					]
+				}
+			]
+		}
+	]
+}
+}

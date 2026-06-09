@@ -1,0 +1,261 @@
+{
+  "body": {
+  "responseStatus": {
+    "statusCode": 200,
+    "statusMessage": "OK"
+  },
+  "chooseHowMuchToRollOver": {
+    "flowNameText": "Make Your Retirement Choices",
+    "pageNameText": "Choose How Much to Roll Over",
+    "rollOverContentText": "You can roll over all or some of your benefit directly to a single traditional individual retirement account (IRA), a Roth IRA, another qualified plan, a 403(b) plan, or a governmental plan.",
+    "alertHeaderText": "Rolling over money to a Roth IRA?",
+    "alertContentText": "<p>Any taxable amount must be included in your taxable income for the year. If you want income tax withholding taken from this rollover, contact the Benefits Center at <strong class=\"ah-noWrap\">800-123-4567</strong> to request the rollover.</p>",
+    "taxConsiderationHeaderText": "Tax Considerations",
+    "taxConsiderationContentText": "Review <A onclick=\"if(isUACrossEnabled()){try{ga('trackerUa1.send','event', 'Internal Link' ,'Link click','LinkId:UPN_DB_ELEC_NOR_LNK LinkDest:/web/retirement3x/db-notice-of-rights'); } catch(err){}} if(isUAClientEnabled()){ try{if(isGTMEnabled()){dataLayer.push({'event':'UPointLinkEvent','linkCategory':'Internal Link','linkAction':'Link Click','linkLabel':'LinkId:UPN_DB_ELEC_NOR_LNK LinkDest:/web/retirement3x/db-notice-of-rights'});}else{ga('trackerUa2.send','event', 'Internal Link' ,'Link click','LinkId:UPN_DB_ELEC_NOR_LNK LinkDest:/web/retirement3x/db-notice-of-rights'); }} catch(err){}}try{setTimeout(function() {}, 100);}catch(err){}window.winHandle = window.open('/ah-angular-afirst-web/#/web/retirement3x/db-notice-of-rights?linkId=UPN_DB_ELEC_NOR_LNK&technicalNameForLink=UPN_DB_ELEC_NOR_LNK&userFriendlyNameForLink=Link to the db notice of rights page&domain=Ben-DB&baseClientIndicator=Base','UPN_DB_ELEC_NOR_LNK','titlebar=yes,scrollbars=yes,resizable=yes,width=980,height=560');if(typeof XD != 'undefined'){XD.registerWindow('UPN_DB_ELEC_NOR_LNK',window.winHandle);}try{setSessionTimeOut()}catch(err){};return false;\" href=\"/web/retirement3x/db-notice-of-rights?linkId=UPN_DB_ELEC_NOR_LNK&technicalNameForLink=UPN_DB_ELEC_NOR_LNK&userFriendlyNameForLink=Link to the db notice of rights page&domain=Ben-DB&baseClientIndicator=Base\" class=\"ah-secondaryWindow\">Your Notice of Rights</A> for general tax information about payments from the plan that can be rolled over.",
+    "taxConsiderationNORLink": "<A onclick=\"if(isUACrossEnabled()){try{ga('trackerUa1.send','event', 'Internal Link' ,'Link click','LinkId:UPN_DB_ELEC_NOR_LNK LinkDest:/web/retirement3x/db-notice-of-rights'); } catch(err){}} if(isUAClientEnabled()){ try{if(isGTMEnabled()){dataLayer.push({'event':'UPointLinkEvent','linkCategory':'Internal Link','linkAction':'Link Click','linkLabel':'LinkId:UPN_DB_ELEC_NOR_LNK LinkDest:/web/retirement3x/db-notice-of-rights'});}else{ga('trackerUa2.send','event', 'Internal Link' ,'Link click','LinkId:UPN_DB_ELEC_NOR_LNK LinkDest:/web/retirement3x/db-notice-of-rights'); }} catch(err){}}try{setTimeout(function() {}, 100);}catch(err){}window.winHandle = window.open('/ah-angular-afirst-web/#/web/retirement3x/db-notice-of-rights?linkId=UPN_DB_ELEC_NOR_LNK&technicalNameForLink=UPN_DB_ELEC_NOR_LNK&userFriendlyNameForLink=Link to the db notice of rights page&domain=Ben-DB&baseClientIndicator=Base','UPN_DB_ELEC_NOR_LNK','titlebar=yes,scrollbars=yes,resizable=yes,width=980,height=560');if(typeof XD != 'undefined'){XD.registerWindow('UPN_DB_ELEC_NOR_LNK',window.winHandle);}try{setSessionTimeOut()}catch(err){};return false;\" href=\"/web/retirement3x/db-notice-of-rights?linkId=UPN_DB_ELEC_NOR_LNK&technicalNameForLink=UPN_DB_ELEC_NOR_LNK&userFriendlyNameForLink=Link to the db notice of rights page&domain=Ben-DB&baseClientIndicator=Base\" class=\"ah-secondaryWindow\">Your Notice of Rights</A>",
+    "otherDeductionsHeaderText": "Other Deductions",
+    "otherDeductionsContentText": "The final amount paid to you may include other deductions that aren't on this page.",
+    "rollOverAlertHeaderText": "You don't have a rollover account on file yet.",
+    "rollOverAlertContentText": "<p>You must set up an individual retirement account (IRA) or add another employer's plan to roll over your money.</p>",
+    "accountButtonText": "Set Up an Account",
+    "hasRlvrAddrOnFile": false,
+    "rolloverAlertContent": {
+      "rollOverAlertTitleText": "You don't have a rollover account on file yet.",
+      "rollOverAlertBodyText": "<p>You must set up an individual retirement account (IRA) or add another employer's plan to roll over your money.</p>",
+      "setUpAcctWMSIButtonText": "Set Up an Account",
+      "setUpAcctWMSILink": "<A onclick=\"if(isUACrossEnabled()){try{ga('trackerUa1.send','event', 'External Link' ,'Link click','LinkId:DB_ELEC_SET_UP_ACCT_WMSI_LNK LinkDest:WMSI'); } catch(err){}} if(isUAClientEnabled()){ try{if(isGTMEnabled()){dataLayer.push({'event':'UPointLinkEvent','linkCategory':'External Link','linkAction':'Link Click','linkLabel':'LinkId:DB_ELEC_SET_UP_ACCT_WMSI_LNK LinkDest:WMSI'});}else{ga('trackerUa2.send','event', 'External Link' ,'Link click','LinkId:DB_ELEC_SET_UP_ACCT_WMSI_LNK LinkDest:WMSI'); }} catch(err){}}try{setTimeout(function() {}, 100);}catch(err){}window.winHandle = window.open('/delegate/hfim?partner=WMSI&dpi=0&lng=19939_1.0&pgNm=pageName&svcNm=CM&srvcLng=19939_1.0&linkName=DB_ELEC_SET_UP_ACCT_WMSI_LNK&tokenmap=555EB2EBBB29B2CF80755DB18755B605167A00F0CC222417A724456EED22CB3C7AF3BE030EB34D551C96988474C20294&technicalNameForLink=DB_ELEC_SET_UP_ACCT_WMSI_LNK&userFriendlyNameForLink=Link to WMSI&domain=Ben-DB&baseClientIndicator=Base','DB_ELEC_SET_UP_ACCT_WMSI_LNK','titlebar=yes,scrollbars=yes,resizable=yes,width=980,height=560');if(typeof XD != 'undefined'){XD.registerWindow('DB_ELEC_SET_UP_ACCT_WMSI_LNK',window.winHandle);}try{setSessionTimeOut()}catch(err){};return false;\" href=\"/delegate/hfim?partner=WMSI&dpi=0&lng=19939_1.0&pgNm=pageName&svcNm=CM&srvcLng=19939_1.0&linkName=DB_ELEC_SET_UP_ACCT_WMSI_LNK&tokenmap=555EB2EBBB29B2CF80755DB18755B605167A00F0CC222417A724456EED22CB3C7AF3BE030EB34D551C96988474C20294&technicalNameForLink=DB_ELEC_SET_UP_ACCT_WMSI_LNK&userFriendlyNameForLink=Link to WMSI&domain=Ben-DB&baseClientIndicator=Base\" class=\"ah-secondaryWindow\">Set Up an Account</A>"
+    },
+    "setUpAcctWMSILink": "<A onclick=\"if(isUACrossEnabled()){try{ga('trackerUa1.send','event', 'External Link' ,'Link click','LinkId:DB_ELEC_SET_UP_ACCT_WMSI_LNK LinkDest:WMSI'); } catch(err){}} if(isUAClientEnabled()){ try{if(isGTMEnabled()){dataLayer.push({'event':'UPointLinkEvent','linkCategory':'External Link','linkAction':'Link Click','linkLabel':'LinkId:DB_ELEC_SET_UP_ACCT_WMSI_LNK LinkDest:WMSI'});}else{ga('trackerUa2.send','event', 'External Link' ,'Link click','LinkId:DB_ELEC_SET_UP_ACCT_WMSI_LNK LinkDest:WMSI'); }} catch(err){}}try{setTimeout(function() {}, 100);}catch(err){}window.winHandle = window.open('/delegate/hfim?partner=WMSI&dpi=0&lng=19939_1.0&pgNm=pageName&svcNm=CM&srvcLng=19939_1.0&linkName=DB_ELEC_SET_UP_ACCT_WMSI_LNK&tokenmap=555EB2EBBB29B2CF80755DB18755B605167A00F0CC222417A724456EED22CB3C7AF3BE030EB34D551C96988474C20294&technicalNameForLink=DB_ELEC_SET_UP_ACCT_WMSI_LNK&userFriendlyNameForLink=Link to WMSI&domain=Ben-DB&baseClientIndicator=Base','DB_ELEC_SET_UP_ACCT_WMSI_LNK','titlebar=yes,scrollbars=yes,resizable=yes,width=980,height=560');if(typeof XD != 'undefined'){XD.registerWindow('DB_ELEC_SET_UP_ACCT_WMSI_LNK',window.winHandle);}try{setSessionTimeOut()}catch(err){};return false;\" href=\"/delegate/hfim?partner=WMSI&dpi=0&lng=19939_1.0&pgNm=pageName&svcNm=CM&srvcLng=19939_1.0&linkName=DB_ELEC_SET_UP_ACCT_WMSI_LNK&tokenmap=555EB2EBBB29B2CF80755DB18755B605167A00F0CC222417A724456EED22CB3C7AF3BE030EB34D551C96988474C20294&technicalNameForLink=DB_ELEC_SET_UP_ACCT_WMSI_LNK&userFriendlyNameForLink=Link to WMSI&domain=Ben-DB&baseClientIndicator=Base\" class=\"ah-secondaryWindow\">Set Up an Account</A>",
+    "rolloverNoteText": "<strong>Note:</strong> If you're rolling over your benefit, your next step is to Choose Where to Receive Your Rollover Payment.",
+    "isMultPlanPmt": true,
+    "isRtrmChPrtlRlvrAlwd": true,
+    "isRlvrNtwrElig": true,
+    "isNewDBElecPrgrBar": false,
+    "notAvailableText": "N/A",
+    "oneTimePmtText": "One-Time Payment",
+    "defaultAmt": 0.0,
+    "paymentTable": [
+      {
+        "paymentDescription": "FAP Lump Sum Payment",
+        "paymentId": 1000,
+        "planHeaderText": "Plan",
+        "electionHeaderText": "Benefit",
+        "optionalFormHeaderText": "Form of Payment",
+        "paymentHeaderText": "Payment to You",
+        "rowHeaderText": "Gross Amount",
+        "totalGrossAmount": "$319,008.46",
+        "rowContentText": "Total Amount Available for Rollover",
+        "totalRollOverAvailableAmount": "$319,008.46",
+        "unformatTotalRollOverAvailableAmount": 319008.46,
+        "sectionTitleText": "Rollover Amount",
+        "sectionContentText": "Choose how much money to roll over.",
+        "allAmountRadioButtonText": "<strong>All of the Amount Available</strong>",
+        "specificAmountRadioButtonText": "<strong>Specific Amount</strong>",
+        "noneRadioButtonText": "<strong>None</strong>",
+        "noneEnabled": true,
+        "allAmountEnabled": false,
+        "specificAmountEnabled": false,
+        "selectedRadioButton": "<strong>None</strong>",
+        "hasGrssAt": false,
+        "electedRolloverAmount": "$0.00",
+        "unformatElectedRolloverAmount": 0.0,
+        "electedRolloverPercent": 0.0,
+        "paymentTableContentData": [
+          {
+            "planId": 8744,
+            "electionId": 10,
+            "electionGroupId": 0,
+            "optionalFormId": 3010,
+            "planDescription": "DB FAP Pension Plan",
+            "electionDescription": "Simple Election Alternate",
+            "optionalFormDescription": "Lump Sum Distribution",
+            "optionalFormGrossAmt": "$319,008.46",
+            "optionalFormFrequency": "L",
+            "labelFrequencyId": "(one-time)",
+            "hasRtroAdj": false
+          }
+        ]
+      }
+    ],
+    "flowButtonNavigation": {
+      "buttonList": [
+        {
+          "action": "continue",
+          "label": "Continue"
+        },
+        {
+          "action": "comeBackLater",
+          "label": "Come Back Later"
+        },
+        {
+          "action": "quit",
+          "label": "Quit"
+        },
+        {
+          "action": "back",
+          "label": "Back"
+        }
+      ],
+      "quitModalContent": {
+        "title": "What do you want to do?",
+        "bodyList": [
+          {
+            "heading": "Save",
+            "paragraph": "Keep the choices you've made, so far. Finish making pension choices later."
+          },
+          {
+            "heading": "Quit",
+            "paragraph": "Cancel your pension request and lose all the pension choices you've made, so far."
+          },
+          {
+            "heading": "Return",
+            "paragraph": "Go back to the current page without quitting."
+          }
+        ],
+        "buttonList": [
+          {
+            "action": "comeBackLater",
+            "label": "Save"
+          },
+          {
+            "action": "quit",
+            "label": "Quit"
+          },
+          {
+            "action": "return",
+            "label": "Return"
+          }
+        ]
+      }
+    },
+    "accessibilityTexts": {
+      "btnContinue": "Choose this button to continue on to the next step in the process.",
+      "btnComeBackLater": "Choose this button to save all the changes and choices you have made so far, but exit the flow at this time.",
+      "btnQuit": "Choose this button to exit the flow and save none of the choices you made up to this point.",
+      "btnBack": "Choose this button to return to the prior page without saving any changes or choices you made on this page.",
+      "titlePlanTable": "Review the benefits you are to receive, the form and amount of each payment, the total amount (before deductions), and the amount you may roll over into another qualified retirement account.",
+      "textboxSpecificAmt": "Enter a specific dollar amount you want to roll over into another qualified retirement account."
+    },
+    "editList": [
+      {
+        "editId": "96500100",
+        "editMessage": "Your entry is invalid. Enter a valid numeric value before continuing."
+      },
+      {
+        "editId": "96500302",
+        "editMessage": "Your entry is invalid. Enter a valid alphanumeric value before continuing. (Message Number&#58; 96500302)"
+      },
+      {
+        "editId": "19500101",
+        "editMessage": "You can't continue because you don't have a rollover account on file.  You must set up a rollover account (either an IRA or an employer's plan) to continue with your request."
+      },
+      {
+        "editId": "91500021",
+        "editMessage": "Roll Over Specific Amount field is blank. Enter information before continuing."
+      },
+      {
+        "editId": "93500103",
+        "editMessage": "You entered an invalid amount. Enter a valid amount before continuing."
+      },
+      {
+        "editId": "91000160",
+        "editMessage": "The amount to roll over is required. Choose an item before continuing."
+      },
+      {
+        "editId": "0",
+        "editMessage": "The specific amount to roll over"
+      },
+      {
+        "editId": "1",
+        "editMessage": "The amount to roll over"
+      }
+    ],
+    "systemTickets": "[{\"key\":\"$T6B\",\"value\":\"CT6B - 0062324 - 62326 - B1B5UOgMWKB - CT6B0062324\"}]",
+    "iralandingLink":"<A onclick=\"if(isUACrossEnabled()){try{ga('trackerUa1.send','event', 'Internal Link' ,'Link click','LinkId:ALIGHT_IRA_LANDING_PAGE_LINK LinkDest:/web/retirement4x/iralanding'); } catch(err){}}if(isUAClientEnabled() || isGA4TrackingEnabled()){try{dataLayer.push({'event':'UPointLinkEvent','linkCategory':'Internal Link','linkAction':'Link Click','linkLabel':'LinkId:ALIGHT_IRA_LANDING_PAGE_LINK LinkDest:/web/retirement4x/iralanding'});} catch(err){}}setTimeout(function() {document.location.href = href;}, 100);return false;\" href=\"/web/retirement4x/iralanding?linkId=ALIGHT_IRA_LANDING_PAGE_LINK&technicalNameForLink=ALIGHT_IRA_LANDING_PAGE_LINK&userFriendlyNameForLink=null&domain=Ben-DC&baseClientIndicator=Base\">Learn more and find out which Alight IRA is right for you.</A>",
+    "rcPageLink":"https://rsn30-uat.ssnc.cloud"
+  },
+  "progressBarPopovers": [
+    {
+      "hasError": false,
+      "stepId": 3,
+      "stepName": "beneficiaries",
+      "stepCode": "BENE",
+      "title": "3. Beneficiaries",
+      "linkText": "Change",
+      "contentList": [
+        {
+          "contentData": [
+            "DB FAP Pension Plan",
+            "No Beneficiary"
+          ]
+        }
+      ],
+      "changeModal": {
+        "changeModalText": "Do you want to change your choices?<br><br> You’ll need to start the retirement process again from the beginning. That’s because making changes to this information may impact your benefits options and payment amounts.",
+        "yesBtn": "Yes",
+        "noBtn": "No"
+      }
+    },
+    {
+      "hasError": false,
+      "stepId": 4,
+      "stepName": "rights",
+      "stepCode": "NORS",
+      "title": "4. Your Notice of Rights",
+      "linkText": "Review",
+      "contentList": [
+        {
+          "contentData": [
+            "Acknowledged receiving and reviewing notice of rights."
+          ]
+        }
+      ]
+    },
+    {
+      "hasError": false,
+      "stepId": 5,
+      "stepName": "payment",
+      "stepCode": "PAYT",
+      "title": "5. Pension Payments",
+      "linkText": "Review/Change",
+      "contentList": [
+        {
+          "contentData": [
+            "Made your choices."
+          ]
+        }
+      ]
+    },
+    {
+      "hasError": false,
+      "stepId": 6,
+      "stepName": "destination",
+      "stepCode": "DEST",
+      "title": "6. Destination",
+      "linkText": "Change",
+      "contentList": [
+        {
+          "contentData": [
+            "Selected your payment destination."
+          ]
+        }
+      ]
+    },
+    {
+      "hasError": false,
+      "stepId": 7,
+      "stepName": "review",
+      "stepCode": "REVW",
+      "title": "7. Review",
+      "linkText": "Review",
+      "contentList": [
+        {
+          "contentData": [
+            "Reviewed a list of all the choices you made."
+          ]
+        }
+      ]
+    }
+  ]
+}
+}

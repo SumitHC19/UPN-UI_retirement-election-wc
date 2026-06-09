@@ -1,0 +1,155 @@
+[
+    {
+      "isError": false,
+      "stepId": 1,
+      "stepName": "yourinfo",
+      "stepCode": "VRYI",
+      "title": "1. Your Contact Information",
+      "linkText": "Change",
+      "routeLink": "https://l8sita09:9711/ah-angular-afirst-web/#/web/retirement4x/retirement-election",
+      "changeModal": {
+        "changeModalTitle": "Do you want to change your choices?",
+        "changeModalText": "You'll need to start the retirement process again from the beginning. That's because making changes to this information may impact your benefits options and payment amounts.",
+        "yesBtn": "Yes",
+        "NoBtn": "No"
+      },
+      "contentList": [
+        {
+          "contentData": [
+            "Married",
+            "palvarez@gmail.com",
+            "110 Main St.<br/> Apt 1A <br/> Walla Walla, WA 10100",
+            "999-999-9999"
+          ]
+        }
+      ]
+    },
+    {
+      "isError": false,
+      "stepId": 2,
+      "stepName": "dates",
+      "stepCode": "DATS",
+      "title": "2. Retirement Dates",
+      "linkText": "Change",
+      "routeLink": "https://l8sita09:9711/ah-angular-afirst-web/#/web/retirement4x/retirement-election",
+      "changeModal": {
+        "changeModalTitle": "Do you want to change your choices?",
+        "changeModalText": "You'll need to start the retirement process again from the beginning. That's because making changes to this information may impact your benefits options and payment amounts.",
+        "yesBtn": "Yes",
+        "NoBtn": "No"
+      },
+      "contentList": [
+        {
+          "contentData": [
+            "Last Date of Employment",
+            "Sep 18, 2018"
+          ]
+        },
+        {
+          "contentData": [
+            "Date Benefits Begin",
+            "Oct 1, 2018"
+          ]
+        }
+      ]
+    },
+    {
+      "isError": false,
+      "stepId": 3,
+      "stepName": "beneficiaries",
+      "stepCode": "BENE",
+      "title": "3. Beneficiaries",
+      "linkText": "Change",
+      "routeLink": "https://l8sita09:9711/ah-angular-afirst-web/#/web/retirement4x/retirement-election",
+      "changeModal": {
+        "changeModalTitle": "Do you want to change your choices?",
+        "changeModalText": "You'll need to start the retirement process again from the beginning. That's because making changes to this information may impact your benefits options and payment amounts.",
+        "yesBtn": "Yes",
+        "NoBtn": "No"
+      },
+      "contentList": [
+        {
+          "contentData": [
+            "FAP Pension Plan",
+            "Christopher Alvarez",
+            "Spouse",
+            "Oct 20, 1973"
+          ]
+        },
+        {
+          "contentData": [
+            "Cash Balance Plan Benefit",
+            "Christopher Alvarez",
+            "Spouse",
+            "Oct 20, 1973"
+          ]
+        },
+        {
+          "contentData": [
+            "ABC Pension Plan",
+            "No Beneficiary"
+          ]
+        }
+      ]
+    },
+    {
+      "isError": false,
+      "stepId": 4,
+      "stepName": "rights",
+      "stepCode": "NORS",
+      "title": "4. Your Notice of Rights",
+      "linkText": "Review",
+      "contentList": [
+        {
+          "contentData": [
+            "Acknowledged receiving and reviewing notice of rights."
+          ]
+        }
+      ]
+    },
+    {
+      "isError": false,
+      "stepId": 5,
+      "stepName": "payment",
+      "stepCode": "PAYT",
+      "title": "5. Pension Payments",
+      "linkText": "Review/Change",
+      "contentList": [
+        {
+          "contentData": [
+            "Made your choices."
+          ]
+        }
+      ]
+    },
+    {
+      "isError": false,
+      "stepId": 6,
+      "stepName": "destination",
+      "stepCode": "DEST",
+      "title": "6. Destination",
+      "linkText": "Change",
+      "contentList": [
+        {
+          "contentData": [
+            "Selected your payment destination."
+          ]
+        }
+      ]
+    },
+    {
+      "isError": false,
+      "stepId": 7,
+      "stepName": "review",
+      "stepCode": "REVW",
+      "title": "7. Review",
+      "linkText": "Review",
+      "contentList": [
+        {
+          "contentData": [
+            "A list of all the choices you made."
+          ]
+        }
+      ]
+    }
+  ]

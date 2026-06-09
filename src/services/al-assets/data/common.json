@@ -1,0 +1,1034 @@
+[
+    {
+      "link": {
+        "DB_PAYMENT_OPTION_COMPARE_LINK": {
+          "displayText": "Compare Payment Options",
+          "additionalTags": null,
+          "attributes": {
+            "onclick": "if(isUACrossEnabled()){try{ga('trackerUa1.send','event', 'Internal Link' ,'Link click','LinkId:DB_PAYMENT_OPTION_COMPARE_LINK LinkDest:/web/retirement3x/payment-option-compare'); } catch(err){}} if(isUAClientEnabled()){ try{if(isGTMEnabled()){dataLayer.push({'event':'UPointLinkEvent','linkCategory':'Internal Link','linkAction':'Link Click','linkLabel':'LinkId:DB_PAYMENT_OPTION_COMPARE_LINK LinkDest:/web/retirement3x/payment-option-compare'});}else{ga('trackerUa2.send','event', 'Internal Link' ,'Link click','LinkId:DB_PAYMENT_OPTION_COMPARE_LINK LinkDest:/web/retirement3x/payment-option-compare'); }} catch(err){}}try{setTimeout(function() {}, 100);}catch(err){}window.winHandle = window.open('/web/retirement3x/payment-option-compare?linkId=DB_PAYMENT_OPTION_COMPARE_LINK&technicalNameForLink=DB_PAYMENT_OPTION_COMPARE_LINK&userFriendlyNameForLink=DB_PAYMENT_OPTION_COMPARE_LINK&domain=Ben-DB&baseClientIndicator=Base','DB_PAYMENT_OPTION_COMPARE_LINK','titlebar=yes,scrollbars=yes,resizable=yes,width=980,height=560');if(typeof XD != 'undefined'){XD.registerWindow('DB_PAYMENT_OPTION_COMPARE_LINK',window.winHandle);}try{setSessionTimeOut()}catch(err){};return false;",
+            "href": "/web/retirement3x/payment-option-compare?linkId=DB_PAYMENT_OPTION_COMPARE_LINK&technicalNameForLink=DB_PAYMENT_OPTION_COMPARE_LINK&userFriendlyNameForLink=DB_PAYMENT_OPTION_COMPARE_LINK&domain=Ben-DB&baseClientIndicator=Base",
+            "class": "ah-secondaryWindow"
+          },
+          "tag": "<A onclick=\"if(isUACrossEnabled()){try{ga('trackerUa1.send','event', 'Internal Link' ,'Link click','LinkId:DB_PAYMENT_OPTION_COMPARE_LINK LinkDest:/web/retirement3x/payment-option-compare'); } catch(err){}} if(isUAClientEnabled()){ try{if(isGTMEnabled()){dataLayer.push({'event':'UPointLinkEvent','linkCategory':'Internal Link','linkAction':'Link Click','linkLabel':'LinkId:DB_PAYMENT_OPTION_COMPARE_LINK LinkDest:/web/retirement3x/payment-option-compare'});}else{ga('trackerUa2.send','event', 'Internal Link' ,'Link click','LinkId:DB_PAYMENT_OPTION_COMPARE_LINK LinkDest:/web/retirement3x/payment-option-compare'); }} catch(err){}}try{setTimeout(function() {}, 100);}catch(err){}window.winHandle = window.open('/web/retirement3x/payment-option-compare?linkId=DB_PAYMENT_OPTION_COMPARE_LINK&technicalNameForLink=DB_PAYMENT_OPTION_COMPARE_LINK&userFriendlyNameForLink=DB_PAYMENT_OPTION_COMPARE_LINK&domain=Ben-DB&baseClientIndicator=Base','DB_PAYMENT_OPTION_COMPARE_LINK','titlebar=yes,scrollbars=yes,resizable=yes,width=980,height=560');if(typeof XD != 'undefined'){XD.registerWindow('DB_PAYMENT_OPTION_COMPARE_LINK',window.winHandle);}try{setSessionTimeOut()}catch(err){};return false;\" href=\"/web/retirement3x/payment-option-compare?linkId=DB_PAYMENT_OPTION_COMPARE_LINK&technicalNameForLink=DB_PAYMENT_OPTION_COMPARE_LINK&userFriendlyNameForLink=DB_PAYMENT_OPTION_COMPARE_LINK&domain=Ben-DB&baseClientIndicator=Base\" class=\"ah-secondaryWindow\">Compare Payment Options</A>"
+        },
+        "DB_YBR_RTRM_FORMULA": {
+          "displayText": "How Your Benefit is Calculated",
+          "additionalTags": "<script type=\"text/javascript\">AUI().use('get', function(A){A.Get.script('/html/js/aonhewitt/coreVisual.js');});</script>",
+          "attributes": {
+            "onclick": "if(isUACrossEnabled()){try{ga('trackerUa1.send','event', 'External Link' ,'Link click','LinkId:DB_YBR_RTRM_FORMULA LinkDest:YBR'); } catch(err){}} if(isUAClientEnabled()){ try{if(isGTMEnabled()){dataLayer.push({'event':'UPointLinkEvent','linkCategory':'External Link','linkAction':'Link Click','linkLabel':'LinkId:DB_YBR_RTRM_FORMULA LinkDest:YBR'});}else{ga('trackerUa2.send','event', 'External Link' ,'Link click','LinkId:DB_YBR_RTRM_FORMULA LinkDest:YBR'); }} catch(err){}}try{setTimeout(function() {}, 100);}catch(err){}if(typeof  lightBoxVersion == 'undefined'){showLightbox('/web/retirement3x/ybrlightbox?iframeDest=%2Fdelegate%2Fhfim%3Fpartner%3DYBR%26lng%3D19939_1.0%26pgNm%3Dretirement-action%26svcNm%3DDB%26srvcLng%3D19939_1.0%26pageCd%3DDB_RTRM_260%26render%3Dportlet%26target%3DYBRQA%26linkName%3DDB_YBR_RTRM_FORMULA&destHash=CjEynGflIZ_CG-gp0-g81YRmpi-W3NOVQx4PODe0SDkA&destName=IFrame&technicalNameForLink=DB_YBR_RTRM_FORMULA&userFriendlyNameForLink=Link to the YBR DB_RTRM_260&domain=Ben-DB&baseClientIndicator=Base','${portletnamespace}DB_YBR_RTRM_FORMULA','null','null','50%','','false');}else{showLightboxForTag('/web/retirement3x/ybrlightbox?iframeDest=%2Fdelegate%2Fhfim%3Fpartner%3DYBR%26lng%3D19939_1.0%26pgNm%3Dretirement-action%26svcNm%3DDB%26srvcLng%3D19939_1.0%26pageCd%3DDB_RTRM_260%26render%3Dportlet%26target%3DYBRQA%26linkName%3DDB_YBR_RTRM_FORMULA&destHash=CjEynGflIZ_CG-gp0-g81YRmpi-W3NOVQx4PODe0SDkA&destName=IFrame&technicalNameForLink=DB_YBR_RTRM_FORMULA&userFriendlyNameForLink=Link to the YBR DB_RTRM_260&domain=Ben-DB&baseClientIndicator=Base','${portletnamespace}DB_YBR_RTRM_FORMULA','null','null','50%','','false','true','©2020 Alight Solutions','Feedback','Print','','true','true','Loading...','false');}",
+            "href": "javascript:void(0);"
+          },
+          "tag": "<script type=\"text/javascript\">AUI().use('get', function(A){A.Get.script('/html/js/aonhewitt/coreVisual.js');});</script><A onclick=\"if(isUACrossEnabled()){try{ga('trackerUa1.send','event', 'External Link' ,'Link click','LinkId:DB_YBR_RTRM_FORMULA LinkDest:YBR'); } catch(err){}} if(isUAClientEnabled()){ try{if(isGTMEnabled()){dataLayer.push({'event':'UPointLinkEvent','linkCategory':'External Link','linkAction':'Link Click','linkLabel':'LinkId:DB_YBR_RTRM_FORMULA LinkDest:YBR'});}else{ga('trackerUa2.send','event', 'External Link' ,'Link click','LinkId:DB_YBR_RTRM_FORMULA LinkDest:YBR'); }} catch(err){}}try{setTimeout(function() {}, 100);}catch(err){}if(typeof  lightBoxVersion == 'undefined'){showLightbox('/web/retirement3x/ybrlightbox?iframeDest=%2Fdelegate%2Fhfim%3Fpartner%3DYBR%26lng%3D19939_1.0%26pgNm%3Dretirement-action%26svcNm%3DDB%26srvcLng%3D19939_1.0%26pageCd%3DDB_RTRM_260%26render%3Dportlet%26target%3DYBRQA%26linkName%3DDB_YBR_RTRM_FORMULA&destHash=CjEynGflIZ_CG-gp0-g81YRmpi-W3NOVQx4PODe0SDkA&destName=IFrame&technicalNameForLink=DB_YBR_RTRM_FORMULA&userFriendlyNameForLink=Link to the YBR DB_RTRM_260&domain=Ben-DB&baseClientIndicator=Base','${portletnamespace}DB_YBR_RTRM_FORMULA','null','null','50%','','false');}else{showLightboxForTag('/web/retirement3x/ybrlightbox?iframeDest=%2Fdelegate%2Fhfim%3Fpartner%3DYBR%26lng%3D19939_1.0%26pgNm%3Dretirement-action%26svcNm%3DDB%26srvcLng%3D19939_1.0%26pageCd%3DDB_RTRM_260%26render%3Dportlet%26target%3DYBRQA%26linkName%3DDB_YBR_RTRM_FORMULA&destHash=CjEynGflIZ_CG-gp0-g81YRmpi-W3NOVQx4PODe0SDkA&destName=IFrame&technicalNameForLink=DB_YBR_RTRM_FORMULA&userFriendlyNameForLink=Link to the YBR DB_RTRM_260&domain=Ben-DB&baseClientIndicator=Base','${portletnamespace}DB_YBR_RTRM_FORMULA','null','null','50%','','false','true','©2020 Alight Solutions','Feedback','Print','','true','true','Loading...','false');}\" href=\"javascript:void(0);\">How Your Benefit is Calculated</A>"
+        },
+        "DB_PENSION_CALC_INFO_LINK": {
+          "displayText": "Information Used to Calculate Your Pension Benefit",
+          "additionalTags": null,
+          "attributes": {
+            "onclick": "if(isUACrossEnabled()){try{ga('trackerUa1.send','event', 'Internal Link' ,'Link click','LinkId:DB_PENSION_CALC_INFO_LINK LinkDest:/web/retirement3x/retirement-calc-info'); } catch(err){}} if(isUAClientEnabled()){ try{if(isGTMEnabled()){dataLayer.push({'event':'UPointLinkEvent','linkCategory':'Internal Link','linkAction':'Link Click','linkLabel':'LinkId:DB_PENSION_CALC_INFO_LINK LinkDest:/web/retirement3x/retirement-calc-info'});}else{ga('trackerUa2.send','event', 'Internal Link' ,'Link click','LinkId:DB_PENSION_CALC_INFO_LINK LinkDest:/web/retirement3x/retirement-calc-info'); }} catch(err){}}try{setTimeout(function() {}, 100);}catch(err){}window.winHandle = window.open('/ah-angular-afirst-web/#/web/retirement3x/retirement-calc-info?linkId=DB_PENSION_CALC_INFO_LINK&technicalNameForLink=DB_PENSION_CALC_INFO_LINK&userFriendlyNameForLink=DB_PENSION_CALC_INFO_LINK&domain=Ben-DB&baseClientIndicator=Base','DB_PENSION_CALC_INFO_LINK','titlebar=yes,scrollbars=yes,resizable=yes,width=980,height=560');if(typeof XD != 'undefined'){XD.registerWindow('DB_PENSION_CALC_INFO_LINK',window.winHandle);}try{setSessionTimeOut()}catch(err){};return false;",
+            "href": "/web/retirement3x/retirement-calc-info?linkId=DB_PENSION_CALC_INFO_LINK&technicalNameForLink=DB_PENSION_CALC_INFO_LINK&userFriendlyNameForLink=DB_PENSION_CALC_INFO_LINK&domain=Ben-DB&baseClientIndicator=Base",
+            "class": "ah-secondaryWindow"
+          },
+          "tag": "<A onclick=\"if(isUACrossEnabled()){try{ga('trackerUa1.send','event', 'Internal Link' ,'Link click','LinkId:DB_PENSION_CALC_INFO_LINK LinkDest:/web/retirement3x/retirement-calc-info'); } catch(err){}} if(isUAClientEnabled()){ try{if(isGTMEnabled()){dataLayer.push({'event':'UPointLinkEvent','linkCategory':'Internal Link','linkAction':'Link Click','linkLabel':'LinkId:DB_PENSION_CALC_INFO_LINK LinkDest:/web/retirement3x/retirement-calc-info'});}else{ga('trackerUa2.send','event', 'Internal Link' ,'Link click','LinkId:DB_PENSION_CALC_INFO_LINK LinkDest:/web/retirement3x/retirement-calc-info'); }} catch(err){}}try{setTimeout(function() {}, 100);}catch(err){}window.winHandle = window.open('/ah-angular-afirst-web/#/web/retirement3x/retirement-calc-info?linkId=DB_PENSION_CALC_INFO_LINK&technicalNameForLink=DB_PENSION_CALC_INFO_LINK&userFriendlyNameForLink=DB_PENSION_CALC_INFO_LINK&domain=Ben-DB&baseClientIndicator=Base','DB_PENSION_CALC_INFO_LINK','titlebar=yes,scrollbars=yes,resizable=yes,width=980,height=560');if(typeof XD != 'undefined'){XD.registerWindow('DB_PENSION_CALC_INFO_LINK',window.winHandle);}try{setSessionTimeOut()}catch(err){};return false;\" href=\"/web/retirement3x/retirement-calc-info?linkId=DB_PENSION_CALC_INFO_LINK&technicalNameForLink=DB_PENSION_CALC_INFO_LINK&userFriendlyNameForLink=DB_PENSION_CALC_INFO_LINK&domain=Ben-DB&baseClientIndicator=Base\" class=\"ah-secondaryWindow\">Information Used to Calculate Your Pension Benefit</A>"
+        },
+        "DB_PENSION_FORMULA_LINK": {
+          "displayText": "How Your Benefit is Calculated",
+          "additionalTags": null,
+          "attributes": {
+            "onclick": "if(isUACrossEnabled()){try{ga('trackerUa1.send','event', 'Internal Link' ,'Link click','LinkId:DB_PENSION_FORMULA_LINK LinkDest:/web/retirement3x/retirement-pension-formula'); } catch(err){}} if(isUAClientEnabled()){ try{if(isGTMEnabled()){dataLayer.push({'event':'UPointLinkEvent','linkCategory':'Internal Link','linkAction':'Link Click','linkLabel':'LinkId:DB_PENSION_FORMULA_LINK LinkDest:/web/retirement3x/retirement-pension-formula'});}else{ga('trackerUa2.send','event', 'Internal Link' ,'Link click','LinkId:DB_PENSION_FORMULA_LINK LinkDest:/web/retirement3x/retirement-pension-formula'); }} catch(err){}}try{setTimeout(function() {}, 100);}catch(err){}window.winHandle = window.open('/ah-angular-afirst-web/#/web/retirement3x/retirement-pension-formula?linkId=DB_PENSION_FORMULA_LINK&technicalNameForLink=DB_PENSION_FORMULA_LINK&userFriendlyNameForLink=DB_PENSION_FORMULA_LINK&domain=Ben-DB&baseClientIndicator=Base','DB_PENSION_FORMULA_LINK','titlebar=yes,scrollbars=yes,resizable=yes,width=980,height=560');if(typeof XD != 'undefined'){XD.registerWindow('DB_PENSION_FORMULA_LINK',window.winHandle);}try{setSessionTimeOut()}catch(err){};return false;",
+            "href": "/web/retirement3x/retirement-pension-formula?linkId=DB_PENSION_FORMULA_LINK&technicalNameForLink=DB_PENSION_FORMULA_LINK&userFriendlyNameForLink=DB_PENSION_FORMULA_LINK&domain=Ben-DB&baseClientIndicator=Base",
+            "class": "ah-secondaryWindow"
+          },
+          "tag": "<A onclick=\"if(isUACrossEnabled()){try{ga('trackerUa1.send','event', 'Internal Link' ,'Link click','LinkId:DB_PENSION_FORMULA_LINK LinkDest:/web/retirement3x/retirement-pension-formula'); } catch(err){}} if(isUAClientEnabled()){ try{if(isGTMEnabled()){dataLayer.push({'event':'UPointLinkEvent','linkCategory':'Internal Link','linkAction':'Link Click','linkLabel':'LinkId:DB_PENSION_FORMULA_LINK LinkDest:/web/retirement3x/retirement-pension-formula'});}else{ga('trackerUa2.send','event', 'Internal Link' ,'Link click','LinkId:DB_PENSION_FORMULA_LINK LinkDest:/web/retirement3x/retirement-pension-formula'); }} catch(err){}}try{setTimeout(function() {}, 100);}catch(err){}window.winHandle = window.open('/ah-angular-afirst-web/#/web/retirement3x/retirement-pension-formula?linkId=DB_PENSION_FORMULA_LINK&technicalNameForLink=DB_PENSION_FORMULA_LINK&userFriendlyNameForLink=DB_PENSION_FORMULA_LINK&domain=Ben-DB&baseClientIndicator=Base','DB_PENSION_FORMULA_LINK','titlebar=yes,scrollbars=yes,resizable=yes,width=980,height=560');if(typeof XD != 'undefined'){XD.registerWindow('DB_PENSION_FORMULA_LINK',window.winHandle);}try{setSessionTimeOut()}catch(err){};return false;\" href=\"/web/retirement3x/retirement-pension-formula?linkId=DB_PENSION_FORMULA_LINK&technicalNameForLink=DB_PENSION_FORMULA_LINK&userFriendlyNameForLink=DB_PENSION_FORMULA_LINK&domain=Ben-DB&baseClientIndicator=Base\" class=\"ah-secondaryWindow\">How Your Benefit is Calculated</A>"
+        }
+      },
+      "expr": {
+        "isShowDbRtrmPlm": true,
+        "FEAT_SWITCH_RTRM_PENSION_CALC_DTL_UPN": false,
+        "DB_RETIREMENT_SPECIALISTS_ELIG": false,
+        "FEAT_SWITCH_RTRM_PAYMENTOPTCOMPARE_UPN": false,
+        "IS_WMSI_RLVR_NTWR": false,
+        "CLNT_USES_OPFORM_CMPR": true
+      },
+      "asset": {
+        "DB_ELEC_OTHR_RESOURCS": {
+          "DB_ELEC_NOR_PAGE": {
+            "assetType": "link",
+            "assetValue": "<A onclick=\"if(isUACrossEnabled()){try{ga('trackerUa1.send','event', 'Internal Link' ,'Link click','LinkId:DB_ELEC_NOR_PAGE LinkDest:/web/retirement3x/db-notice-of-rights'); } catch(err){}} if(isUAClientEnabled()){ try{if(isGTMEnabled()){dataLayer.push({'event':'UPointLinkEvent','linkCategory':'Internal Link','linkAction':'Link Click','linkLabel':'LinkId:DB_ELEC_NOR_PAGE LinkDest:/web/retirement3x/db-notice-of-rights'});}else{ga('trackerUa2.send','event', 'Internal Link' ,'Link click','LinkId:DB_ELEC_NOR_PAGE LinkDest:/web/retirement3x/db-notice-of-rights'); }} catch(err){}}try{setTimeout(function() {}, 100);}catch(err){}window.winHandle = window.open('/ah-angular-afirst-web/#/web/retirement3x/db-notice-of-rights?linkId=DB_ELEC_NOR_PAGE&technicalNameForLink=DB_ELEC_NOR_PAGE&userFriendlyNameForLink=DB Notice of Rights in Secondary Window&domain=Ben-DB&baseClientIndicator=Base','DB_ELEC_NOR_PAGE','titlebar=yes,scrollbars=yes,resizable=yes,width=980,height=560');if(typeof XD != 'undefined'){XD.registerWindow('DB_ELEC_NOR_PAGE',window.winHandle);}try{setSessionTimeOut()}catch(err){};return false;\" href=\"/web/retirement3x/db-notice-of-rights?linkId=DB_ELEC_NOR_PAGE&technicalNameForLink=DB_ELEC_NOR_PAGE&userFriendlyNameForLink=DB Notice of Rights in Secondary Window&domain=Ben-DB&baseClientIndicator=Base\" class=\"ah-secondaryWindow\">Notice of Your Rights</A>",
+            "assetKey": "DB_ELEC_NOR_PAGE"
+          },
+          "DOC_AND_RSRCS": {
+            "assetType": "text",
+            "assetValue": "Documents and Resources",
+            "assetKey": "DOC_AND_RSRCS"
+          },
+          "DB_ELEC_OTHER_RSRCS_HEAD": {
+            "assetType": "text",
+            "assetValue": "Other Resources",
+            "assetKey": "DB_ELEC_OTHER_RSRCS_HEAD"
+          }
+        },
+        "DB_RETIREMENT_SPECIALISTS_GROUP": {
+          "DB_RETIREMENT_SPECIALISTS_QUESTIONS_BOX_HEADING_TXT": {
+            "assetType": "text",
+            "assetValue": "Questions?",
+            "assetKey": "DB_RETIREMENT_SPECIALISTS_QUESTIONS_BOX_HEADING_TXT"
+          },
+          "DB_RETIREMENT_SPECIALISTS_QUESTIONS_BOX_TXT": {
+            "assetType": "text",
+            "assetValue": "If or when you have questions, specialists are ready to help at <b class=\"nobr\">1-888-123-4567</b> <span class=\"nobr\">(8 a.m. to</span> <span class=\"nobr\">4:30 p.m. CT,</span> Monday through Friday).",
+            "assetKey": "DB_RETIREMENT_SPECIALISTS_QUESTIONS_BOX_TXT"
+          }
+        },
+        "DB_ELEC_PEN_FRMPMT_AG": {
+          "DB_ELEC_PEN_FRMPMT_TITLE": {
+            "assetType": "text",
+            "assetValue": "Pension Payment Summary",
+            "assetKey": "DB_ELEC_PEN_FRMPMT_TITLE"
+          },
+          "DB_ELEC_PEN_HM_TIP_HEAD": {
+            "assetType": "text",
+            "assetValue": "Just want to enroll in retiree health care?",
+            "assetKey": "DB_ELEC_PEN_HM_TIP_HEAD"
+          },
+          "DB_ELEC_PEN_HM_TIP_BODY": {
+            "assetType": "text",
+            "assetValue": "Defer All your pension payment options.",
+            "assetKey": "DB_ELEC_PEN_HM_TIP_BODY"
+          },
+          "DB_ELEC_PEN_DFRALL_BTN": {
+            "assetType": "text",
+            "assetValue": "Defer All",
+            "assetKey": "DB_ELEC_PEN_DFRALL_BTN"
+          },
+          "DB_ELEC_PEN_LRN_BEN_CALC": {
+            "assetType": "text",
+            "assetValue": "To learn what determines the amount of your benefit, review  <A>INVALID LINK [lineage=19939_1.0, linkName=DB_ELEC_BENFT_CALC_LNK ]<br/>Possible Reasons:<br/> a)Invalid link name <br/> b)Link cannot be found for a given lineage.</A>. For information about your legal rights, review the  <A onclick=\"if(isUACrossEnabled()){try{ga('trackerUa1.send','event', 'Internal Link' ,'Link click','LinkId:DB_ELEC_NOR_LNK LinkDest:/web/retirement3x/db-notice-of-rights'); } catch(err){}} if(isUAClientEnabled()){ try{if(isGTMEnabled()){dataLayer.push({'event':'UPointLinkEvent','linkCategory':'Internal Link','linkAction':'Link Click','linkLabel':'LinkId:DB_ELEC_NOR_LNK LinkDest:/web/retirement3x/db-notice-of-rights'});}else{ga('trackerUa2.send','event', 'Internal Link' ,'Link click','LinkId:DB_ELEC_NOR_LNK LinkDest:/web/retirement3x/db-notice-of-rights'); }} catch(err){}}try{setTimeout(function() {}, 100);}catch(err){}window.winHandle = window.open('/ah-angular-afirst-web/#/web/retirement3x/db-notice-of-rights?linkId=DB_ELEC_NOR_LNK&technicalNameForLink=DB_ELEC_NOR_LNK&userFriendlyNameForLink=Notice of Rights secondary page link&domain=Ben-DB&baseClientIndicator=Base','DB_ELEC_NOR_LNK','titlebar=yes,scrollbars=yes,resizable=yes,width=980,height=560');if(typeof XD != 'undefined'){XD.registerWindow('DB_ELEC_NOR_LNK',window.winHandle);}try{setSessionTimeOut()}catch(err){};return false;\" href=\"/web/retirement3x/db-notice-of-rights?linkId=DB_ELEC_NOR_LNK&technicalNameForLink=DB_ELEC_NOR_LNK&userFriendlyNameForLink=Notice of Rights secondary page link&domain=Ben-DB&baseClientIndicator=Base\" class=\"ah-secondaryWindow\">Your Notice of Rights</A>.",
+            "assetKey": "DB_ELEC_PEN_LRN_BEN_CALC"
+          },
+          "DB_ELEC_PEN_EACH_BNFT": {
+            "assetType": "text",
+            "assetValue": "This provides a summary of any payment choices you make for your benefit beginning <strong>${token:date}</strong>.",
+            "assetKey": "DB_ELEC_PEN_EACH_BNFT"
+          },
+          "DB_ELEC_PEN_DNTRCV_DFR": {
+            "assetType": "text",
+            "assetValue": "If you don't want to receive benefits on that date, you may choose to Defer.",
+            "assetKey": "DB_ELEC_PEN_DNTRCV_DFR"
+          },
+          "DB_ELEC_PEN_RSNS": {
+            "assetType": "text",
+            "assetValue": "There are several reasons",
+            "assetKey": "DB_ELEC_PEN_RSNS"
+          },
+          "DB_ELEC_PEN_DFR_TIP_HEAD": {
+            "assetType": "text",
+            "assetValue": "why you may wish to defer",
+            "assetKey": "DB_ELEC_PEN_DFR_TIP_HEAD"
+          },
+          "DB_ELEC_PEN_OPP_CHNG": {
+            "assetType": "text",
+            "assetValue": "You can change your form of payment (up to the last business day before your benefits begin).",
+            "assetKey": "DB_ELEC_PEN_OPP_CHNG"
+          },
+          "DB_ELEC_PEN_PRFX_PLN": {
+            "assetType": "text",
+            "assetValue": "Your Form of Payment Choices",
+            "assetKey": "DB_ELEC_PEN_PRFX_PLN"
+          },
+          "DB_ELEC_PEN_AMT_BEFTAX": {
+            "assetType": "text",
+            "assetValue": "<strong>Note:</strong> Amounts are before tax, and don't include any payments to your beneficiary after you die (if applicable).",
+            "assetKey": "DB_ELEC_PEN_AMT_BEFTAX"
+          },
+          "DB_ELEC_PEN_PMTTBL_BNFT": {
+            "assetType": "text",
+            "assetValue": "Benefit",
+            "assetKey": "DB_ELEC_PEN_PMTTBL_BNFT"
+          },
+          "DB_ELEC_PEN_PMTTBL_FMPMT": {
+            "assetType": "text",
+            "assetValue": "Form of Payment",
+            "assetKey": "DB_ELEC_PEN_PMTTBL_FMPMT"
+          },
+          "DB_ELEC_PEN_PMTTBL_MNTHPMT": {
+            "assetType": "text",
+            "assetValue": "Payment to You",
+            "assetKey": "DB_ELEC_PEN_PMTTBL_MNTHPMT"
+          },
+          "DB_ELEC_PEN_PMTTBL_ACTN": {
+            "assetType": "text",
+            "assetValue": "Action",
+            "assetKey": "DB_ELEC_PEN_PMTTBL_ACTN"
+          },
+          "DB_ELEC_PEN_PMTTBL_NOF": {
+            "assetType": "text",
+            "assetValue": "Not on File",
+            "assetKey": "DB_ELEC_PEN_PMTTBL_NOF"
+          },
+          "DB_ELEC_PEN_PMTTBL_NA": {
+            "assetType": "text",
+            "assetValue": "N/A",
+            "assetKey": "DB_ELEC_PEN_PMTTBL_NA"
+          },
+          "DB_ELEC_PEN_RVW_BTN": {
+            "assetType": "text",
+            "assetValue": "Review Options",
+            "assetKey": "DB_ELEC_PEN_RVW_BTN"
+          },
+          "DB_ELEC_PEN_CNG_BTN": {
+            "assetType": "text",
+            "assetValue": "Change",
+            "assetKey": "DB_ELEC_PEN_CNG_BTN"
+          },
+          "DB_ELEC_PEN_DFR_TIP_TTL": {
+            "assetType": "text",
+            "assetValue": "Defer",
+            "assetKey": "DB_ELEC_PEN_DFR_TIP_TTL"
+          },
+          "DB_ELEC_PEN_DFR_TIP_SKIP": {
+            "assetType": "text",
+            "assetValue": "You can skip (defer) making a pension choice and come back to make that choice later.",
+            "assetKey": "DB_ELEC_PEN_DFR_TIP_SKIP"
+          },
+          "DB_ELEC_PEN_DFR_TIP_CHS": {
+            "assetType": "text",
+            "assetValue": "You may choose to defer payment of a pension benefit if:",
+            "assetKey": "DB_ELEC_PEN_DFR_TIP_CHS"
+          },
+          "DB_ELEC_PEN_DFR_TIP_HM": {
+            "assetType": "text",
+            "assetValue": "You want to make your health care choices and prefer to begin pension benefits later.",
+            "assetKey": "DB_ELEC_PEN_DFR_TIP_HM"
+          },
+          "DB_ELEC_PEN_DFR_TIP_LTR": {
+            "assetType": "text",
+            "assetValue": "You want to review your savings options and prefer to begin pension benefits later.",
+            "assetKey": "DB_ELEC_PEN_DFR_TIP_LTR"
+          },
+          "DB_ELEC_PEN_DFR_TIP_TAX": {
+            "assetType": "text",
+            "assetValue": "You don't want to pay taxes (if applicable) on your benefits until later.",
+            "assetKey": "DB_ELEC_PEN_DFR_TIP_TAX"
+          },
+          "DB_ELEC_PEN_TOT_PMTS": {
+            "assetType": "text",
+            "assetValue": "Total Estimated Payments",
+            "assetKey": "DB_ELEC_PEN_TOT_PMTS"
+          },
+          "DB_ELEC_PEN_TOT_QRTLY": {
+            "assetType": "text",
+            "assetValue": "Quarterly Amount",
+            "assetKey": "DB_ELEC_PEN_TOT_QRTLY"
+          },
+          "DB_ELEC_PEN_TOT_ONETM": {
+            "assetType": "text",
+            "assetValue": "One-Time Payment",
+            "assetKey": "DB_ELEC_PEN_TOT_ONETM"
+          },
+          "DB_ELEC_PEN_TOT_MNTHLY": {
+            "assetType": "text",
+            "assetValue": "Monthly Amount",
+            "assetKey": "DB_ELEC_PEN_TOT_MNTHLY"
+          },
+          "DB_ELEC_PEN_PMT_DEST_DCSN": {
+            "assetType": "text",
+            "assetValue": "<strong>Payment destination</strong> decisions are part of the next step. Continue once you’ve made all your payment option choices.",
+            "assetKey": "DB_ELEC_PEN_PMT_DEST_DCSN"
+          },
+          "DB_ELEC_PEN_TAXPNL_HEAD": {
+            "assetType": "text",
+            "assetValue": "Taxes",
+            "assetKey": "DB_ELEC_PEN_TAXPNL_HEAD"
+          },
+          "DB_ELEC_PEN_TAXPNL_RQ": {
+            "assetType": "text",
+            "assetValue": "You may be required to pay Social Security and Medicare taxes on the nonqualified pension payments that are shown on this site. These taxes, which are required by the Internal Revenue Service, are often called FICA (Federal Insurance Contributions Act) taxes. If FICA taxes apply to you, they'll be deducted from your active payroll, if applicable, or your payment. The timing of the withholding may vary.",
+            "assetKey": "DB_ELEC_PEN_TAXPNL_RQ"
+          },
+          "DB_ELEC_PEN_TAXPNL_ADD": {
+            "assetType": "text",
+            "assetValue": "In addition to FICA taxes, federal and state tax withholding may also apply to your nonqualified pension payment.",
+            "assetKey": "DB_ELEC_PEN_TAXPNL_ADD"
+          },
+          "DB_ELEC_PEN_CSHBAL_PNL_CALC": {
+            "assetType": "text",
+            "assetValue": "Your cash balance benefit has been calculated using current interest rates. Your actual cash balance benefit will be converted to the annuity options based on the interest rate in effect on your payment start date. If the interest rate at the time your payment begins is different from the current rate, your annuity options may be higher or lower than the amounts shown on this site.",
+            "assetKey": "DB_ELEC_PEN_CSHBAL_PNL_CALC"
+          },
+          "DB_ELEC_PEN_CSHBAL_PNL_BASE": {
+            "assetType": "text",
+            "assetValue": "Your cash balance benefit has been calculated based on:",
+            "assetKey": "DB_ELEC_PEN_CSHBAL_PNL_BASE"
+          },
+          "DB_ELEC_PEN_CSHBAL_PNL_VAL": {
+            "assetType": "text",
+            "assetValue": "The value of your account from this plan",
+            "assetKey": "DB_ELEC_PEN_CSHBAL_PNL_VAL"
+          },
+          "DB_ELEC_PEN_CSHBAL_PNL_PRV": {
+            "assetType": "text",
+            "assetValue": "Any benefit you accrued from a previous plan",
+            "assetKey": "DB_ELEC_PEN_CSHBAL_PNL_PRV"
+          },
+          "DB_ELEC_PEN_CSHBAL_PNL_GRND": {
+            "assetType": "text",
+            "assetValue": "Any grandfathered benefits",
+            "assetKey": "DB_ELEC_PEN_CSHBAL_PNL_GRND"
+          },
+          "DB_ELEC_PEN_QDRO_PNL_HEAD": {
+            "assetType": "text",
+            "assetValue": "Qualified Domestic Relations Order (QDRO) Adjustment",
+            "assetKey": "DB_ELEC_PEN_QDRO_PNL_HEAD"
+          },
+          "DB_ELEC_PEN_QDRO_PNL_ACCA": {
+            "assetType": "text",
+            "assetValue": "According to our records, a portion of your benefit has been assigned to an alternate payee due to a Qualified Domestic Relations Order (QDRO). The benefit shown has been adjusted to reflect this QDRO. ",
+            "assetKey": "DB_ELEC_PEN_QDRO_PNL_ACCA"
+          },
+          "DB_ELEC_PEN_CASHBAL_HEAD": {
+            "assetType": "text",
+            "assetValue": "Cash Balance Benefit",
+            "assetKey": "DB_ELEC_PEN_CASHBAL_HEAD"
+          },
+          "DB_ELEC_PEN_QDRO_PNL_ACC": {
+            "assetType": "text",
+            "assetValue": "According to our records, a portion of your benefit may be assigned to an alternate payee due to a Qualified Domestic Relations Order (QDRO). The benefit shown hasn't been adjusted to reflect this QDRO.",
+            "assetKey": "DB_ELEC_PEN_QDRO_PNL_ACC"
+          },
+          "DB_ELEC_CHS_QTR_TOT_LABEL": {
+            "assetType": "text",
+            "assetValue": "Quarterly Amount",
+            "assetKey": "DB_ELEC_CHS_QTR_TOT_LABEL"
+          },
+          "DB_ELEC_CHS_LUMP_TOT_LABEL": {
+            "assetType": "text",
+            "assetValue": "One-Time Payment Amount",
+            "assetKey": "DB_ELEC_CHS_LUMP_TOT_LABEL"
+          },
+          "DB_ELEC_CHS_MNTH_TOT_LABEL": {
+            "assetType": "text",
+            "assetValue": "Monthly Amount",
+            "assetKey": "DB_ELEC_CHS_MNTH_TOT_LABEL"
+          },
+          "DB_ELEC_CHS_ANN_TOT_LABEL": {
+            "assetType": "text",
+            "assetValue": "Annual Payment",
+            "assetKey": "DB_ELEC_CHS_ANN_TOT_LABEL"
+          },
+          "DB_ELEC_CHS_DEFER_ALL_BTN": {
+            "assetType": "text",
+            "assetValue": "Defer All",
+            "assetKey": "DB_ELEC_CHS_DEFER_ALL_BTN"
+          },
+          "DB_ELEC_CHS_DEFER_BTN": {
+            "assetType": "text",
+            "assetValue": "Defer",
+            "assetKey": "DB_ELEC_CHS_DEFER_BTN"
+          },
+          "DB_ELEC_CHS_DEFER_ALL_ALT_BTN": {
+            "assetType": "text",
+            "assetValue": "Choose this button to delay making payment choices until sometime in the future.",
+            "assetKey": "DB_ELEC_CHS_DEFER_ALL_ALT_BTN"
+          },
+          "DB_ELEC_CHS_DEFER_HEAD": {
+            "assetType": "text",
+            "assetValue": "Do you want to defer all your payments?",
+            "assetKey": "DB_ELEC_CHS_DEFER_HEAD"
+          },
+          "DB_ELEC_CHS_DEFER_BODY": {
+            "assetType": "text",
+            "assetValue": "If you want to receive all your pension benefits at a later date, choose Yes.",
+            "assetKey": "DB_ELEC_CHS_DEFER_BODY"
+          },
+          "DB_ELEC_CHS_DEFERRED": {
+            "assetType": "text",
+            "assetValue": "Deferred",
+            "assetKey": "DB_ELEC_CHS_DEFERRED"
+          },
+          "DB_ELEC_CHS_TOT_HEAD": {
+            "assetType": "text",
+            "assetValue": "Total Estimated Payments",
+            "assetKey": "DB_ELEC_CHS_TOT_HEAD"
+          },
+          "DB_ELEC_DEFER_TIP_DESC": {
+            "assetType": "text",
+            "assetValue": "<p>Defer All your pension payment options.</p>",
+            "assetKey": "DB_ELEC_DEFER_TIP_DESC"
+          },
+          "DB_ELEC_DEFER_TIP_HM_TXT": {
+            "assetType": "text",
+            "assetValue": "Just want to enroll in retiree health care?",
+            "assetKey": "DB_ELEC_DEFER_TIP_HM_TXT"
+          },
+          "DB_ELEC_PEN_DFR_TIP_INCM": {
+            "assetType": "text",
+            "assetValue": "You (or your spouse, if applicable) have other sources of income and don't need your pension benefits now.",
+            "assetKey": "DB_ELEC_PEN_DFR_TIP_INCM"
+          },
+          "DB_RTRM_030_OPFMCMPR_RTRMCMPR": {
+            "assetType": "link",
+            "assetValue": "<script type=\"text/javascript\">AUI().use('get', function(A){A.Get.script('/html/js/aonhewitt/coreVisual.js');});</script><A onclick=\"if(isUACrossEnabled()){try{ga('trackerUa1.send','event', 'External Link' ,'Link click','LinkId:DB_RTRM_030_OPFMCMPR_RTRMCMPR LinkDest:YBR'); } catch(err){}} if(isUAClientEnabled()){ try{if(isGTMEnabled()){dataLayer.push({'event':'UPointLinkEvent','linkCategory':'External Link','linkAction':'Link Click','linkLabel':'LinkId:DB_RTRM_030_OPFMCMPR_RTRMCMPR LinkDest:YBR'});}else{ga('trackerUa2.send','event', 'External Link' ,'Link click','LinkId:DB_RTRM_030_OPFMCMPR_RTRMCMPR LinkDest:YBR'); }} catch(err){}}try{setTimeout(function() {}, 100);}catch(err){}if(typeof  lightBoxVersion == 'undefined'){showLightbox('/web/retirement3x/ybrlightbox?iframeDest=%2Fdelegate%2Fhfim%3Fpartner%3DYBR%26lng%3D19939_1.0%26pgNm%3Dretirement-action%26svcNm%3DDB%26srvcLng%3D19939_1.0%26pageCd%3DDB_RTRM_030_OPFMCMPR_RTRMCMPR%26render%3Dportlet%26target%3DYBRQA%26linkName%3DDB_RTRM_030_OPFMCMPR_RTRMCMPR&destHash=h7ZLpzqDpcdHW4rC5qlEAPxrNvwFPcdCVskY8nYTpUsA&destName=IFrame&technicalNameForLink=DB_RTRM_030_OPFMCMPR_RTRMCMPR&userFriendlyNameForLink=DB link to the DB_RTRM_030_OPFMCMPR_RTRMCMPR YBR page&domain=Ben-DB&baseClientIndicator=Base','${portletnamespace}DB_RTRM_030_OPFMCMPR_RTRMCMPR','null','null','50%','','false');}else{showLightboxForTag('/web/retirement3x/ybrlightbox?iframeDest=%2Fdelegate%2Fhfim%3Fpartner%3DYBR%26lng%3D19939_1.0%26pgNm%3Dretirement-action%26svcNm%3DDB%26srvcLng%3D19939_1.0%26pageCd%3DDB_RTRM_030_OPFMCMPR_RTRMCMPR%26render%3Dportlet%26target%3DYBRQA%26linkName%3DDB_RTRM_030_OPFMCMPR_RTRMCMPR&destHash=h7ZLpzqDpcdHW4rC5qlEAPxrNvwFPcdCVskY8nYTpUsA&destName=IFrame&technicalNameForLink=DB_RTRM_030_OPFMCMPR_RTRMCMPR&userFriendlyNameForLink=DB link to the DB_RTRM_030_OPFMCMPR_RTRMCMPR YBR page&domain=Ben-DB&baseClientIndicator=Base','${portletnamespace}DB_RTRM_030_OPFMCMPR_RTRMCMPR','null','null','50%','','false','true','©2020 Alight Solutions','Feedback','Print','','true','true','Loading...','false');}\" href=\"javascript:void(0);\">Compare Payment Options</A>",
+            "assetKey": "DB_RTRM_030_OPFMCMPR_RTRMCMPR"
+          },
+          "DB_ELEC_DEFER_TIP_BADGE": {
+            "assetType": "text",
+            "assetValue": "tip",
+            "assetKey": "DB_ELEC_DEFER_TIP_BADGE"
+          },
+          "DB_ELEC_DEFER_TIP_MORE_TXT": {
+            "assetType": "text",
+            "assetValue": "More",
+            "assetKey": "DB_ELEC_DEFER_TIP_MORE_TXT"
+          },
+          "DB_ELEC_DEFER_TIP_LESS_TXT": {
+            "assetType": "text",
+            "assetValue": "Less",
+            "assetKey": "DB_ELEC_DEFER_TIP_LESS_TXT"
+          },
+          "DB_ELEC_CHS_DEFER_PLAN_TITLE": {
+            "assetType": "text",
+            "assetValue": "Do you want to defer your payments for the plan?",
+            "assetKey": "DB_ELEC_CHS_DEFER_PLAN_TITLE"
+          },
+          "DB_ELEC_CHS_DEFER_PLAN_BODY": {
+            "assetType": "text",
+            "assetValue": "If you want to receive these pension benefits at a later date, choose Yes.",
+            "assetKey": "DB_ELEC_CHS_DEFER_PLAN_BODY"
+          },
+          "DB_ELEC_CHS_DEFER_MODAL_YES": {
+            "assetType": "text",
+            "assetValue": "Yes",
+            "assetKey": "DB_ELEC_CHS_DEFER_MODAL_YES"
+          },
+          "DB_ELEC_CHS_DEFER_MODAL_NO": {
+            "assetType": "text",
+            "assetValue": "No",
+            "assetKey": "DB_ELEC_CHS_DEFER_MODAL_NO"
+          },
+          "DB_ELEC_CHS_PMT_OPTS_MATRIX_TITLE": {
+            "assetType": "text",
+            "assetValue": "Choose Payment Options",
+            "assetKey": "DB_ELEC_CHS_PMT_OPTS_MATRIX_TITLE"
+          },
+          "DB_ELEC_PEN_DEFAULT_ELECTION_TXT": {
+            "assetType": "text",
+            "assetValue": "Election",
+            "assetKey": "DB_ELEC_PEN_DEFAULT_ELECTION_TXT"
+          },
+          "DB_ELEC_PEN_DEFAULT_ELECTIONGRP_TXT": {
+            "assetType": "text",
+            "assetValue": "Election Group",
+            "assetKey": "DB_ELEC_PEN_DEFAULT_ELECTIONGRP_TXT"
+          },
+          "DB_ELEC_PEN_DEFAULT_FORMOFPMTGRP_TXT": {
+            "assetType": "text",
+            "assetValue": "Form of Payment Group",
+            "assetKey": "DB_ELEC_PEN_DEFAULT_FORMOFPMTGRP_TXT"
+          },
+          "DB_ELEC_CHS_DEFERRED_AMT": {
+            "assetType": "text",
+            "assetValue": "$0.00",
+            "assetKey": "DB_ELEC_CHS_DEFERRED_AMT"
+          },
+          "DB_ELEC_NOT_ON_FILE_TXT": {
+            "assetType": "text",
+            "assetValue": "--NOT ON FILE--",
+            "assetKey": "DB_ELEC_NOT_ON_FILE_TXT"
+          },
+          "DB_ELEC_BENEFIT_GROUP_TXT": {
+            "assetType": "text",
+            "assetValue": "Benefit Group",
+            "assetKey": "DB_ELEC_BENEFIT_GROUP_TXT"
+          },
+          "DB_ELEC_BEGIN_POPOVER_TXT": {
+            "assetType": "text",
+            "assetValue": "Beginning of popover content",
+            "assetKey": "DB_ELEC_BEGIN_POPOVER_TXT"
+          },
+          "DB_ELEC_END_POPOVER_TXT": {
+            "assetType": "text",
+            "assetValue": "End of popover content",
+            "assetKey": "DB_ELEC_END_POPOVER_TXT"
+          },
+          "DB_ELEC_CHANGE_BTN_ACCESSIBILITY_TXT": {
+            "assetType": "text",
+            "assetValue": "Choose to change your payment choice for Union Benefit available from Premier Pension Plan.",
+            "assetKey": "DB_ELEC_CHANGE_BTN_ACCESSIBILITY_TXT"
+          },
+          "DB_ELEC_REVIEWOPTIONS_BTN_ACCESSIBILITY_TXT": {
+            "assetType": "text",
+            "assetValue": "Review options and make payment choices for Cash Balance Benefit available from Premier Cash Balance Plan.",
+            "assetKey": "DB_ELEC_REVIEWOPTIONS_BTN_ACCESSIBILITY_TXT"
+          },
+          "DB_ELEC_DEFER_BTN_ACCESSIBILITY_TXT": {
+            "assetType": "text",
+            "assetValue": "Choose to defer payment choices for Premier Cash Balance Plan.",
+            "assetKey": "DB_ELEC_DEFER_BTN_ACCESSIBILITY_TXT"
+          },
+          "DB_ELEC_PMTTABLE_HEADER_ACCESSIBILITY_TXT": {
+            "assetType": "text",
+            "assetValue": "Review options and make or change payment choices for the benefits available in Premier Cash Balance Plan.",
+            "assetKey": "DB_ELEC_PMTTABLE_HEADER_ACCESSIBILITY_TXT"
+          },
+          "DB_ELEC_TIP_ALERT_ACCESSIBILITY_TXT": {
+            "assetType": "text",
+            "assetValue": "Tip",
+            "assetKey": "DB_ELEC_TIP_ALERT_ACCESSIBILITY_TXT"
+          },
+          "DB_ELEC_DEFERALL_BTN_ALT_TXT": {
+            "assetType": "text",
+            "assetValue": "Choose to defer all payment choices for all pensions.",
+            "assetKey": "DB_ELEC_DEFERALL_BTN_ALT_TXT"
+          },
+          "DB_ELEC_CHS_MNTH_FIRST_TOT_LABEL": {
+            "assetType": "text",
+            "assetValue": "Monthly Amount (first payment)",
+            "assetKey": "DB_ELEC_CHS_MNTH_FIRST_TOT_LABEL"
+          },
+          "UPN_DB_ELEC_PEN_LRN_BEN_CALC": {
+            "assetType": "text",
+            "assetValue": "To learn what determines the amount of your benefit, review <A>INVALID LINK [lineage=19939_1.0, linkName=DB_ELEC_BENFT_CALC_LNK ]<br/>Possible Reasons:<br/> a)Invalid link name <br/> b)Link cannot be found for a given lineage.</A>. For information about your legal rights, review the <A onclick=\"if(isUACrossEnabled()){try{ga('trackerUa1.send','event', 'Internal Link' ,'Link click','LinkId:UPN_DB_ELEC_NOR_LNK LinkDest:/web/retirement3x/db-notice-of-rights'); } catch(err){}} if(isUAClientEnabled()){ try{if(isGTMEnabled()){dataLayer.push({'event':'UPointLinkEvent','linkCategory':'Internal Link','linkAction':'Link Click','linkLabel':'LinkId:UPN_DB_ELEC_NOR_LNK LinkDest:/web/retirement3x/db-notice-of-rights'});}else{ga('trackerUa2.send','event', 'Internal Link' ,'Link click','LinkId:UPN_DB_ELEC_NOR_LNK LinkDest:/web/retirement3x/db-notice-of-rights'); }} catch(err){}}try{setTimeout(function() {}, 100);}catch(err){}window.winHandle = window.open('/ah-angular-afirst-web/#/web/retirement3x/db-notice-of-rights?linkId=UPN_DB_ELEC_NOR_LNK&technicalNameForLink=UPN_DB_ELEC_NOR_LNK&userFriendlyNameForLink=Link to the db notice of rights page&domain=Ben-DB&baseClientIndicator=Base','UPN_DB_ELEC_NOR_LNK','titlebar=yes,scrollbars=yes,resizable=yes,width=980,height=560');if(typeof XD != 'undefined'){XD.registerWindow('UPN_DB_ELEC_NOR_LNK',window.winHandle);}try{setSessionTimeOut()}catch(err){};return false;\" href=\"/web/retirement3x/db-notice-of-rights?linkId=UPN_DB_ELEC_NOR_LNK&technicalNameForLink=UPN_DB_ELEC_NOR_LNK&userFriendlyNameForLink=Link to the db notice of rights page&domain=Ben-DB&baseClientIndicator=Base\" class=\"ah-secondaryWindow\">Your Notice of Rights</A>.",
+            "assetKey": "UPN_DB_ELEC_PEN_LRN_BEN_CALC"
+          }
+        },
+        "DB_PEOPLE_LK_ME_AG": {
+          "DB_PEOPLE_LK_ME_HDR": {
+            "assetType": "text",
+            "assetValue": "<A onclick=\"if(isUACrossEnabled()){try{ga('trackerUa1.send','event', 'External Link' ,'Link click','LinkId:DB_PEOPLE_LK_ME_LINK LinkDest:https://www.retirementplm.com/'); } catch(err){}} if(isUAClientEnabled()){ try{if(isGTMEnabled()){dataLayer.push({'event':'UPointLinkEvent','linkCategory':'External Link','linkAction':'Link Click','linkLabel':'LinkId:DB_PEOPLE_LK_ME_LINK LinkDest:https://www.retirementplm.com/'});}else{ga('trackerUa2.send','event', 'External Link' ,'Link click','LinkId:DB_PEOPLE_LK_ME_LINK LinkDest:https://www.retirementplm.com/'); }} catch(err){}}try{setTimeout(function() {}, 100);}catch(err){} doExternalLinkLogging('/delegate/logging?linkTypeNm=New Window With a Scroll, No Information Passed&lnkNm=DB_PEOPLE_LK_ME_LINK&linkId=DB_PEOPLE_LK_ME_LINK&lng=19939_1.0&pgNm=retirement-action&technicalNameForLink=DB_PEOPLE_LK_ME_LINK&userFriendlyNameForLink=Link to People Like Me site&domain=Ben-DB&baseClientIndicator=Base'); window.winHandle = window.open('https://www.retirementplm.com/','DB_PEOPLE_LK_ME_LINK','titlebar=yes,scrollbars=yes,resizable=yes,width=980,height=560');if(typeof XD != 'undefined'){XD.registerWindow('DB_PEOPLE_LK_ME_LINK',window.winHandle);}try{setSessionTimeOut()}catch(err){};return false;\" href=\"/delegate/logging?linkTypeNm=New Window With a Scroll, No Information Passed&lnkNm=DB_PEOPLE_LK_ME_LINK&linkId=DB_PEOPLE_LK_ME_LINK&lng=19939_1.0&pgNm=retirement-action&technicalNameForLink=DB_PEOPLE_LK_ME_LINK&userFriendlyNameForLink=Link to People Like Me site&domain=Ben-DB&baseClientIndicator=Base\" class=\"ah-secondaryWindow\">People Like Me</A>&#8482; ",
+            "assetKey": "DB_PEOPLE_LK_ME_HDR"
+          },
+          "DB_PEOPLE_LK_ME_BODY": {
+            "assetType": "text",
+            "assetValue": "Find out what choices others are making.",
+            "assetKey": "DB_PEOPLE_LK_ME_BODY"
+          },
+          "PEOPLE_LK_ME_LINK_TXT": {
+            "assetType": "text",
+            "assetValue": "People Like Me",
+            "assetKey": "PEOPLE_LK_ME_LINK_TXT"
+          },
+          "DB_PEOPLE_LK_ME_LINK": {
+            "assetType": "link",
+            "assetValue": "<A onclick=\"if(isUACrossEnabled()){try{ga('trackerUa1.send','event', 'External Link' ,'Link click','LinkId:DB_PEOPLE_LK_ME_LINK LinkDest:https://www.retirementplm.com/'); } catch(err){}} if(isUAClientEnabled()){ try{if(isGTMEnabled()){dataLayer.push({'event':'UPointLinkEvent','linkCategory':'External Link','linkAction':'Link Click','linkLabel':'LinkId:DB_PEOPLE_LK_ME_LINK LinkDest:https://www.retirementplm.com/'});}else{ga('trackerUa2.send','event', 'External Link' ,'Link click','LinkId:DB_PEOPLE_LK_ME_LINK LinkDest:https://www.retirementplm.com/'); }} catch(err){}}try{setTimeout(function() {}, 100);}catch(err){} doExternalLinkLogging('/delegate/logging?linkTypeNm=New Window With a Scroll, No Information Passed&lnkNm=DB_PEOPLE_LK_ME_LINK&linkId=DB_PEOPLE_LK_ME_LINK&lng=19939_1.0&pgNm=retirement-action&technicalNameForLink=DB_PEOPLE_LK_ME_LINK&userFriendlyNameForLink=Link to People Like Me site&domain=Ben-DB&baseClientIndicator=Base'); window.winHandle = window.open('https://www.retirementplm.com/','DB_PEOPLE_LK_ME_LINK','titlebar=yes,scrollbars=yes,resizable=yes,width=980,height=560');if(typeof XD != 'undefined'){XD.registerWindow('DB_PEOPLE_LK_ME_LINK',window.winHandle);}try{setSessionTimeOut()}catch(err){};return false;\" href=\"/delegate/logging?linkTypeNm=New Window With a Scroll, No Information Passed&lnkNm=DB_PEOPLE_LK_ME_LINK&linkId=DB_PEOPLE_LK_ME_LINK&lng=19939_1.0&pgNm=retirement-action&technicalNameForLink=DB_PEOPLE_LK_ME_LINK&userFriendlyNameForLink=Link to People Like Me site&domain=Ben-DB&baseClientIndicator=Base\" class=\"ah-secondaryWindow\">People Like Me</A>",
+            "assetKey": "DB_PEOPLE_LK_ME_LINK"
+          },
+          "DB_PEOPLE_LK_ME_01_LINK": {
+            "assetType": "link",
+            "assetValue": "<A onclick=\"if(isUACrossEnabled()){try{ga('trackerUa1.send','event', 'Internal Link' ,'Link click','LinkId:DB_PEOPLE_LK_ME_01_LINK LinkDest:https://www.retirementplm.com/01'); } catch(err){}} if(isUAClientEnabled()){ try{if(isGTMEnabled()){dataLayer.push({'event':'UPointLinkEvent','linkCategory':'Internal Link','linkAction':'Link Click','linkLabel':'LinkId:DB_PEOPLE_LK_ME_01_LINK LinkDest:https://www.retirementplm.com/01'});}else{ga('trackerUa2.send','event', 'Internal Link' ,'Link click','LinkId:DB_PEOPLE_LK_ME_01_LINK LinkDest:https://www.retirementplm.com/01'); }} catch(err){}}try{setTimeout(function() {}, 100);}catch(err){}window.winHandle = window.open('https://www.retirementplm.com/01?linkId=DB_PEOPLE_LK_ME_01_LINK&technicalNameForLink=DB_PEOPLE_LK_ME_01_LINK&userFriendlyNameForLink=Link to People Like Me site&domain=Ben-DB&baseClientIndicator=Base','DB_PEOPLE_LK_ME_01_LINK','titlebar=yes,scrollbars=yes,resizable=yes,width=980,height=560');if(typeof XD != 'undefined'){XD.registerWindow('DB_PEOPLE_LK_ME_01_LINK',window.winHandle);}try{setSessionTimeOut()}catch(err){};return false;\" href=\"https://www.retirementplm.com/01?linkId=DB_PEOPLE_LK_ME_01_LINK&technicalNameForLink=DB_PEOPLE_LK_ME_01_LINK&userFriendlyNameForLink=Link to People Like Me site&domain=Ben-DB&baseClientIndicator=Base\" class=\"ah-secondaryWindow\">People Like Me</A>",
+            "assetKey": "DB_PEOPLE_LK_ME_01_LINK"
+          },
+          "DB_PEOPLE_LK_ME_02_LINK": {
+            "assetType": "link",
+            "assetValue": "<A onclick=\"if(isUACrossEnabled()){try{ga('trackerUa1.send','event', 'Internal Link' ,'Link click','LinkId:DB_PEOPLE_LK_ME_02_LINK LinkDest:https://www.retirementplm.com/02'); } catch(err){}} if(isUAClientEnabled()){ try{if(isGTMEnabled()){dataLayer.push({'event':'UPointLinkEvent','linkCategory':'Internal Link','linkAction':'Link Click','linkLabel':'LinkId:DB_PEOPLE_LK_ME_02_LINK LinkDest:https://www.retirementplm.com/02'});}else{ga('trackerUa2.send','event', 'Internal Link' ,'Link click','LinkId:DB_PEOPLE_LK_ME_02_LINK LinkDest:https://www.retirementplm.com/02'); }} catch(err){}}try{setTimeout(function() {}, 100);}catch(err){}window.winHandle = window.open('https://www.retirementplm.com/02?linkId=DB_PEOPLE_LK_ME_02_LINK&technicalNameForLink=DB_PEOPLE_LK_ME_02_LINK&userFriendlyNameForLink=Link to People Like Me site&domain=Ben-DB&baseClientIndicator=Base','DB_PEOPLE_LK_ME_02_LINK','titlebar=yes,scrollbars=yes,resizable=yes,width=980,height=560');if(typeof XD != 'undefined'){XD.registerWindow('DB_PEOPLE_LK_ME_02_LINK',window.winHandle);}try{setSessionTimeOut()}catch(err){};return false;\" href=\"https://www.retirementplm.com/02?linkId=DB_PEOPLE_LK_ME_02_LINK&technicalNameForLink=DB_PEOPLE_LK_ME_02_LINK&userFriendlyNameForLink=Link to People Like Me site&domain=Ben-DB&baseClientIndicator=Base\" class=\"ah-secondaryWindow\">People Like Me</A>",
+            "assetKey": "DB_PEOPLE_LK_ME_02_LINK"
+          }
+        },
+        "DB_ELEC_CHS_HOW_MUCH_RLVR_AG": {
+          "UPN_DB_ELEC_CHS_TAX_CONSIDER_BODY_TXT": {
+            "assetType": "text",
+            "assetValue": "Review <A onclick=\"if(isUACrossEnabled()){try{ga('trackerUa1.send','event', 'Internal Link' ,'Link click','LinkId:UPN_DB_ELEC_NOR_LNK LinkDest:/web/retirement3x/db-notice-of-rights'); } catch(err){}} if(isUAClientEnabled()){ try{if(isGTMEnabled()){dataLayer.push({'event':'UPointLinkEvent','linkCategory':'Internal Link','linkAction':'Link Click','linkLabel':'LinkId:UPN_DB_ELEC_NOR_LNK LinkDest:/web/retirement3x/db-notice-of-rights'});}else{ga('trackerUa2.send','event', 'Internal Link' ,'Link click','LinkId:UPN_DB_ELEC_NOR_LNK LinkDest:/web/retirement3x/db-notice-of-rights'); }} catch(err){}}try{setTimeout(function() {}, 100);}catch(err){}window.winHandle = window.open('/ah-angular-afirst-web/#/web/retirement3x/db-notice-of-rights?linkId=UPN_DB_ELEC_NOR_LNK&technicalNameForLink=UPN_DB_ELEC_NOR_LNK&userFriendlyNameForLink=Link to the db notice of rights page&domain=Ben-DB&baseClientIndicator=Base','UPN_DB_ELEC_NOR_LNK','titlebar=yes,scrollbars=yes,resizable=yes,width=980,height=560');if(typeof XD != 'undefined'){XD.registerWindow('UPN_DB_ELEC_NOR_LNK',window.winHandle);}try{setSessionTimeOut()}catch(err){};return false;\" href=\"/web/retirement3x/db-notice-of-rights?linkId=UPN_DB_ELEC_NOR_LNK&technicalNameForLink=UPN_DB_ELEC_NOR_LNK&userFriendlyNameForLink=Link to the db notice of rights page&domain=Ben-DB&baseClientIndicator=Base\" class=\"ah-secondaryWindow\">Your Notice of Rights</A> for general tax information about payments from the plan that can be rolled over.",
+            "assetKey": "UPN_DB_ELEC_CHS_TAX_CONSIDER_BODY_TXT"
+          },
+          "DB_ELEC_CHS_HEADER_TXT": {
+            "assetType": "text",
+            "assetValue": "Choose How Much to Roll Over",
+            "assetKey": "DB_ELEC_CHS_HEADER_TXT"
+          },
+          "DB_ELEC_CHS_HEADER_PARA_TXT": {
+            "assetType": "text",
+            "assetValue": "You can roll over all or some of your benefit directly to a single traditional individual retirement account (IRA), a Roth IRA, another qualified plan, a 403(b) plan, or a governmental plan.",
+            "assetKey": "DB_ELEC_CHS_HEADER_PARA_TXT"
+          },
+          "DB_ELEC_CHS_TOP_TIP_TITLE_TXT": {
+            "assetType": "text",
+            "assetValue": "Rolling over money to a Roth IRA?",
+            "assetKey": "DB_ELEC_CHS_TOP_TIP_TITLE_TXT"
+          },
+          "DB_ELEC_CHS_TOP_TIP_BODY_TXT": {
+            "assetType": "text",
+            "assetValue": "<p>Any taxable amount must be included in your taxable income for the year. If you want income tax withholding taken from this rollover, contact the Benefits Center at <strong class=\"ah-noWrap\">800-123-4567</strong> to request the rollover.</p>",
+            "assetKey": "DB_ELEC_CHS_TOP_TIP_BODY_TXT"
+          },
+          "DB_ELEC_CHS_TAX_CONSIDER_HDR_TXT": {
+            "assetType": "text",
+            "assetValue": "Tax Considerations",
+            "assetKey": "DB_ELEC_CHS_TAX_CONSIDER_HDR_TXT"
+          },
+          "DB_ELEC_CHS_TAX_CONSIDER_BODY_TXT": {
+            "assetType": "text",
+            "assetValue": "Review <A onclick=\"if(isUACrossEnabled()){try{ga('trackerUa1.send','event', 'Internal Link' ,'Link click','LinkId:DB_ELEC_NOR_LNK LinkDest:/web/retirement3x/db-notice-of-rights'); } catch(err){}} if(isUAClientEnabled()){ try{if(isGTMEnabled()){dataLayer.push({'event':'UPointLinkEvent','linkCategory':'Internal Link','linkAction':'Link Click','linkLabel':'LinkId:DB_ELEC_NOR_LNK LinkDest:/web/retirement3x/db-notice-of-rights'});}else{ga('trackerUa2.send','event', 'Internal Link' ,'Link click','LinkId:DB_ELEC_NOR_LNK LinkDest:/web/retirement3x/db-notice-of-rights'); }} catch(err){}}try{setTimeout(function() {}, 100);}catch(err){}window.winHandle = window.open('/ah-angular-afirst-web/#/web/retirement3x/db-notice-of-rights?linkId=DB_ELEC_NOR_LNK&technicalNameForLink=DB_ELEC_NOR_LNK&userFriendlyNameForLink=Notice of Rights secondary page link&domain=Ben-DB&baseClientIndicator=Base','DB_ELEC_NOR_LNK','titlebar=yes,scrollbars=yes,resizable=yes,width=980,height=560');if(typeof XD != 'undefined'){XD.registerWindow('DB_ELEC_NOR_LNK',window.winHandle);}try{setSessionTimeOut()}catch(err){};return false;\" href=\"/web/retirement3x/db-notice-of-rights?linkId=DB_ELEC_NOR_LNK&technicalNameForLink=DB_ELEC_NOR_LNK&userFriendlyNameForLink=Notice of Rights secondary page link&domain=Ben-DB&baseClientIndicator=Base\" class=\"ah-secondaryWindow\">Your Notice of Rights</A> for general tax information about payments from the plan that can be rolled over.",
+            "assetKey": "DB_ELEC_CHS_TAX_CONSIDER_BODY_TXT"
+          },
+          "DB_ELEC_CHS_TAX_OTHR_DED_HDR_TXT": {
+            "assetType": "text",
+            "assetValue": "Other Deductions",
+            "assetKey": "DB_ELEC_CHS_TAX_OTHR_DED_HDR_TXT"
+          },
+          "DB_ELEC_CHS_TAX_OTHR_DED_BODY_TXT": {
+            "assetType": "text",
+            "assetValue": "The final amount paid to you may include other deductions that aren't on this page.",
+            "assetKey": "DB_ELEC_CHS_TAX_OTHR_DED_BODY_TXT"
+          },
+          "DB_ELEC_CHS_RLVR_AMT_TXT": {
+            "assetType": "text",
+            "assetValue": "Rollover Amount",
+            "assetKey": "DB_ELEC_CHS_RLVR_AMT_TXT"
+          },
+          "DB_ELEC_CHS_CHOOSE_HOW_MUCH_TXT": {
+            "assetType": "text",
+            "assetValue": "Choose how much money to roll over.",
+            "assetKey": "DB_ELEC_CHS_CHOOSE_HOW_MUCH_TXT"
+          },
+          "DB_ELEC_CHS_ALL_AVAIL_TXT": {
+            "assetType": "text",
+            "assetValue": "<strong>All of the Amount Available</strong>",
+            "assetKey": "DB_ELEC_CHS_ALL_AVAIL_TXT"
+          },
+          "DB_ELEC_CHS_SPCF_AMOUNT_TXT": {
+            "assetType": "text",
+            "assetValue": "<strong>Specific Amount</strong>",
+            "assetKey": "DB_ELEC_CHS_SPCF_AMOUNT_TXT"
+          },
+          "DB_ELEC_CHS_NONE_TXT": {
+            "assetType": "text",
+            "assetValue": "<strong>None</strong>",
+            "assetKey": "DB_ELEC_CHS_NONE_TXT"
+          },
+          "DB_ELEC_CHS_BOTTOM_TIP_TITLE_TXT": {
+            "assetType": "text",
+            "assetValue": "You don't have a rollover account on file yet.",
+            "assetKey": "DB_ELEC_CHS_BOTTOM_TIP_TITLE_TXT"
+          },
+          "DB_ELEC_CHS_BOTTOM_TIP_BODY_TXT": {
+            "assetType": "text",
+            "assetValue": "<p>You must set up an individual retirement account (IRA) or add another employer's plan to roll over your money.</p>",
+            "assetKey": "DB_ELEC_CHS_BOTTOM_TIP_BODY_TXT"
+          },
+          "DB_ELEC_CHS_BOTTOM_TIP_LINK_TXT": {
+            "assetType": "text",
+            "assetValue": "Set Up an Account",
+            "assetKey": "DB_ELEC_CHS_BOTTOM_TIP_LINK_TXT"
+          },
+          "DB_ELEC_CHS_NOTE_TXT": {
+            "assetType": "text",
+            "assetValue": "<strong>Note:</strong> If you're rolling over your benefit, your next step is to Choose Where to Receive Your Rollover Payment.",
+            "assetKey": "DB_ELEC_CHS_NOTE_TXT"
+          },
+          "DB_ELEC_CHS_CONSDR_IRA_HDR_TXT": {
+            "assetType": "text",
+            "assetValue": "<h3>Consider IRA Rollover Impact</h3>",
+            "assetKey": "DB_ELEC_CHS_CONSDR_IRA_HDR_TXT"
+          },
+          "DB_ELEC_CHS_CONSDR_IRA_PARA1_TXT": {
+            "assetType": "text",
+            "assetValue": "<p>If you roll over your benefits to an IRA:</p>",
+            "assetKey": "DB_ELEC_CHS_CONSDR_IRA_PARA1_TXT"
+          },
+          "DB_ELEC_CHS_CONSDR_IRA_PARA1_LNK_TXT": {
+            "assetType": "text",
+            "assetValue": "<p>If you <A onclick=\"if(isUACrossEnabled()){try{ga('trackerUa1.send','event', 'External Link' ,'Link click','LinkId:DB_ELEC_SET_UP_IRA_WMSI_LNK LinkDest:WMSI'); } catch(err){}} if(isUAClientEnabled()){ try{if(isGTMEnabled()){dataLayer.push({'event':'UPointLinkEvent','linkCategory':'External Link','linkAction':'Link Click','linkLabel':'LinkId:DB_ELEC_SET_UP_IRA_WMSI_LNK LinkDest:WMSI'});}else{ga('trackerUa2.send','event', 'External Link' ,'Link click','LinkId:DB_ELEC_SET_UP_IRA_WMSI_LNK LinkDest:WMSI'); }} catch(err){}}try{setTimeout(function() {}, 100);}catch(err){}window.winHandle = window.open('/delegate/hfim?partner=WMSI&dpi=0&lng=19939_1.0&pgNm=retirement-action&svcNm=CM&srvcLng=19939_1.0&linkName=DB_ELEC_SET_UP_IRA_WMSI_LNK&tokenmap=626A0F67A43E64631E0DD265B16D1F4DF7D88433D12CC9B7C7C5C80D7E5C6210DA9D5ABDDBF7B59B74CCFD5698CA7529&technicalNameForLink=DB_ELEC_SET_UP_IRA_WMSI_LNK&userFriendlyNameForLink=Link to WMSI&domain=Ben-DB&baseClientIndicator=Base','DB_ELEC_SET_UP_IRA_WMSI_LNK','titlebar=yes,scrollbars=yes,resizable=yes,width=980,height=560');if(typeof XD != 'undefined'){XD.registerWindow('DB_ELEC_SET_UP_IRA_WMSI_LNK',window.winHandle);}try{setSessionTimeOut()}catch(err){};return false;\" href=\"/delegate/hfim?partner=WMSI&dpi=0&lng=19939_1.0&pgNm=retirement-action&svcNm=CM&srvcLng=19939_1.0&linkName=DB_ELEC_SET_UP_IRA_WMSI_LNK&tokenmap=626A0F67A43E64631E0DD265B16D1F4DF7D88433D12CC9B7C7C5C80D7E5C6210DA9D5ABDDBF7B59B74CCFD5698CA7529&technicalNameForLink=DB_ELEC_SET_UP_IRA_WMSI_LNK&userFriendlyNameForLink=Link to WMSI&domain=Ben-DB&baseClientIndicator=Base\" class=\"ah-secondaryWindow\">set up an IRA</A> and roll over your benefits:</p>",
+            "assetKey": "DB_ELEC_CHS_CONSDR_IRA_PARA1_LNK_TXT"
+          },
+          "DB_ELEC_CHS_CONSDR_IRA_LIST_TXT": {
+            "assetType": "text",
+            "assetValue": "<ul> <li>You'll have many investment choices and can defer taxes.</li> <li>You may have fewer payment options.</li>  <li>The IRA fees may be more than another employer's plan fees.</li> </ul>",
+            "assetKey": "DB_ELEC_CHS_CONSDR_IRA_LIST_TXT"
+          },
+          "DB_ELEC_CHS_CONSDR_IRA_PARA2_TXT": {
+            "assetType": "text",
+            "assetValue": "<p>If you don't need the money now, you may be able to defer payment instead of rolling it over.</p>",
+            "assetKey": "DB_ELEC_CHS_CONSDR_IRA_PARA2_TXT"
+          },
+          "DB_ELEC_PLANTABLE_TITLE_ACCESSIBILITY_TXT": {
+            "assetType": "text",
+            "assetValue": "Review the benefits you are to receive, the form and amount of each payment, the total amount (before deductions), and the amount you may roll over into another qualified retirement account.",
+            "assetKey": "DB_ELEC_PLANTABLE_TITLE_ACCESSIBILITY_TXT"
+          },
+          "DB_ELEC_SPECIFICAMT_TEXTBOX_ACCESSIBILITY_TXT": {
+            "assetType": "text",
+            "assetValue": "Enter a specific dollar amount you want to roll over into another qualified retirement account.",
+            "assetKey": "DB_ELEC_SPECIFICAMT_TEXTBOX_ACCESSIBILITY_TXT"
+          }
+        },
+        "DB_ELEC_CMPLT_AG": {
+          "DB_ELEC_CMPLT_BENE_CONTACT": {
+            "assetType": "text",
+            "assetValue": "Contact a retirement specialist at <b class=\"nobr\">1-888-123-4567</b>.",
+            "assetKey": "DB_ELEC_CMPLT_BENE_CONTACT"
+          },
+          "DB_ELEC_CMPLT_TITLE": {
+            "assetType": "text",
+            "assetValue": "Submitted Successfully",
+            "assetKey": "DB_ELEC_CMPLT_TITLE"
+          },
+          "DB_ELEC_CMPLT_TITLE_AUTH": {
+            "assetType": "text",
+            "assetValue": "Authorization Complete",
+            "assetKey": "DB_ELEC_CMPLT_TITLE_AUTH"
+          },
+          "DB_ELEC_CMPLT_TITLE_AUTH_RQD": {
+            "assetType": "text",
+            "assetValue": "Authorization Required",
+            "assetKey": "DB_ELEC_CMPLT_TITLE_AUTH_RQD"
+          },
+          "DB_ELEC_CMPLT_ALSO_RCV": {
+            "assetType": "text",
+            "assetValue": "You'll also receive:",
+            "assetKey": "DB_ELEC_CMPLT_ALSO_RCV"
+          },
+          "DB_ELEC_CMPLT_ALSO_RCV_EMAIL": {
+            "assetType": "text",
+            "assetValue": "Ongoing updates about your pension through your preferred email address",
+            "assetKey": "DB_ELEC_CMPLT_ALSO_RCV_EMAIL"
+          },
+          "DB_ELEC_CMPLT_ALSO_RCV_TXT": {
+            "assetType": "text",
+            "assetValue": "A text message confirming your first pension payment",
+            "assetKey": "DB_ELEC_CMPLT_ALSO_RCV_TXT"
+          },
+          "DB_ELEC_CMPLT_ALSO_CNCL": {
+            "assetType": "text",
+            "assetValue": "If you want to cancel or make changes, contact a specialist at <b class=\"nobr\">1-888-123-4567</b>.",
+            "assetKey": "DB_ELEC_CMPLT_ALSO_CNCL"
+          },
+          "DB_ELEC_FOLLOWUP_HEAD": {
+            "assetType": "text",
+            "assetValue": "Required Follow-Ups",
+            "assetKey": "DB_ELEC_FOLLOWUP_HEAD"
+          },
+          "DB_ELEC_FOLLOWUP_FNSH": {
+            "assetType": "text",
+            "assetValue": "To finish the pension  retirement process, complete these steps.",
+            "assetKey": "DB_ELEC_FOLLOWUP_FNSH"
+          },
+          "DB_ELEC_FOLLOWUP_SIGN": {
+            "assetType": "text",
+            "assetValue": "Sign and Return Your Authorization Form Before <span class=\"ah-nowrap\">${token:date}</span>",
+            "assetKey": "DB_ELEC_FOLLOWUP_SIGN"
+          },
+          "DB_ELEC_FOLLOWUP_MAILBOX": {
+            "assetType": "text",
+            "assetValue": "Access the email in your <A onclick=\"if(isUACrossEnabled()){try{ga('trackerUa1.send','event', 'Internal Link' ,'Link click','LinkId:DC_WTHD_SECURE_MAILBOX_LNK LinkDest:/web/${friendlyUrl}/gmc#secureMailbox?selecttab=1'); } catch(err){}} if(isUAClientEnabled()){ try{if(isGTMEnabled()){dataLayer.push({'event':'UPointLinkEvent','linkCategory':'Internal Link','linkAction':'Link Click','linkLabel':'LinkId:DC_WTHD_SECURE_MAILBOX_LNK LinkDest:/web/${friendlyUrl}/gmc#secureMailbox?selecttab=1'});}else{ga('trackerUa2.send','event', 'Internal Link' ,'Link click','LinkId:DC_WTHD_SECURE_MAILBOX_LNK LinkDest:/web/${friendlyUrl}/gmc#secureMailbox?selecttab=1'); }} catch(err){}}setTimeout(function() {document.location.href = href;}, 100);return false;\" href=\"/web/retirement3x/gmc?selecttab=1&linkId=DC_WTHD_SECURE_MAILBOX_LNK&technicalNameForLink=DC_WTHD_SECURE_MAILBOX_LNK&userFriendlyNameForLink=Link for Secure Mailbox&domain=Ben-DC&baseClientIndicator=Base#secureMailbox\">Secure Mailbox</A> in the Message Center on this site. It contains your confirmation statement and important forms that require follow-up.",
+            "assetKey": "DB_ELEC_FOLLOWUP_MAILBOX"
+          },
+          "DB_ELEC_FOLLOWUP_CFMSTMNT": {
+            "assetType": "text",
+            "assetValue": "Review the confirmation statement to make sure your pension choices are correct.",
+            "assetKey": "DB_ELEC_FOLLOWUP_CFMSTMNT"
+          },
+          "DB_ELEC_FOLLOWUP_PRNTSIGN": {
+            "assetType": "text",
+            "assetValue": "Print, sign, and date the authorization form.",
+            "assetKey": "DB_ELEC_FOLLOWUP_PRNTSIGN"
+          },
+          "DB_ELEC_FOLLOWUP_SPOUSE": {
+            "assetType": "text",
+            "assetValue": "Your spouse must also sign the consent of spouse section in the presence of a notary public.",
+            "assetKey": "DB_ELEC_FOLLOWUP_SPOUSE"
+          },
+          "DB_ELEC_FOLLOWUP_DIR": {
+            "assetType": "text",
+            "assetValue": "Follow the directions about:",
+            "assetKey": "DB_ELEC_FOLLOWUP_DIR"
+          },
+          "DB_ELEC_FOLLOWUP_SEND": {
+            "assetType": "text",
+            "assetValue": "Where and how to send any documentation",
+            "assetKey": "DB_ELEC_FOLLOWUP_SEND"
+          },
+          "DB_ELEC_FOLLOWUP_SEND_DT": {
+            "assetType": "text",
+            "assetValue": "Send documentation, as specified on the form. It must be <strong>received before</strong> ${token:date}.",
+            "assetKey": "DB_ELEC_FOLLOWUP_SEND_DT"
+          },
+          "DB_ELEC_CMPLT_BENE_ADD": {
+            "assetType": "text",
+            "assetValue": "Want to add another beneficiary?",
+            "assetKey": "DB_ELEC_CMPLT_BENE_ADD"
+          },
+          "DB_ELEC_CMPLT_BENE_ADD_CONTACT": {
+            "assetType": "text",
+            "assetValue": "If you'd like to name additional beneficiaries, contact a retirement specialist at <b class=\"nobr\">1-888-123-4567</b>.",
+            "assetKey": "DB_ELEC_CMPLT_BENE_ADD_CONTACT"
+          },
+          "DB_ELEC_CMPLT_NLST_ALSO_RCV_EMAIL": {
+            "assetType": "text",
+            "assetValue": "You'll receive a text message confirming your first pension payment.",
+            "assetKey": "DB_ELEC_CMPLT_NLST_ALSO_RCV_EMAIL"
+          },
+          "DB_ELEC_CMPLT_NLST_ALSO_RCV_TXT": {
+            "assetType": "text",
+            "assetValue": "You'll receive ongoing updates about your pension through your preferred email address.",
+            "assetKey": "DB_ELEC_CMPLT_NLST_ALSO_RCV_TXT"
+          },
+          "DB_ELEC_CMPLT_CNTCT_BNFTSCNTR": {
+            "assetType": "text",
+            "assetValue": "If you want to cancel or make changes, contact the benefits center at 1-800-4-SYNDCT.",
+            "assetKey": "DB_ELEC_CMPLT_CNTCT_BNFTSCNTR"
+          },
+          "DB_ELEC_FOLLOWUP_ELSE": {
+            "assetType": "text",
+            "assetValue": "What else you need to do",
+            "assetKey": "DB_ELEC_FOLLOWUP_ELSE"
+          },
+          "DB_ELEC_CMPLT_ALSO_RCV_NOTICE_DLVRY": {
+            "assetType": "text",
+            "assetValue": "<li>A notification will be sent to your mailing address if your payment amounts change</li>",
+            "assetKey": "DB_ELEC_CMPLT_ALSO_RCV_NOTICE_DLVRY"
+          },
+          "DB_ELEC_FOLLOWUP_POSTAL": {
+            "assetType": "text",
+            "assetValue": "Your confirmation statement and authorization form will be mailed to you within 2 business days. Allow an additional 1 to 3 days for postal delivery.",
+            "assetKey": "DB_ELEC_FOLLOWUP_POSTAL"
+          },
+          "DB_ELEC_FOLLOWUP_IMPORTANT_FORMS": {
+            "assetType": "text",
+            "assetValue": "Get the important forms and statements that require follow up.",
+            "assetKey": "DB_ELEC_FOLLOWUP_IMPORTANT_FORMS"
+          },
+          "DB_ELEC_FOLLOWUP_PDF_AUTH_KIT": {
+            "assetType": "text",
+            "assetValue": "Authorization Kit (PDF)",
+            "assetKey": "DB_ELEC_FOLLOWUP_PDF_AUTH_KIT"
+          },
+          "DB_ELEC_FOLLOWUP_IMPORTANT_DOCS": {
+            "assetType": "text",
+            "assetValue": "Important documents that require follow-up are ready for download now.",
+            "assetKey": "DB_ELEC_FOLLOWUP_IMPORTANT_DOCS"
+          },
+          "DB_ELEC_FOLLOWUP_IMPORTANT_DOCS_OR_TXT": {
+            "assetType": "text",
+            "assetValue": "or",
+            "assetKey": "DB_ELEC_FOLLOWUP_IMPORTANT_DOCS_OR_TXT"
+          },
+          "DB_ELEC_FOLLOWUP_IMPORTANT_DOCS_ACCESS_SM_TXT": {
+            "assetType": "text",
+            "assetValue": "Access them later in your <A onclick=\"if(isUACrossEnabled()){try{ga('trackerUa1.send','event', 'Internal Link' ,'Link click','LinkId:DC_WTHD_SECURE_MAILBOX_LNK LinkDest:/web/${friendlyUrl}/gmc#secureMailbox?selecttab=1'); } catch(err){}} if(isUAClientEnabled()){ try{if(isGTMEnabled()){dataLayer.push({'event':'UPointLinkEvent','linkCategory':'Internal Link','linkAction':'Link Click','linkLabel':'LinkId:DC_WTHD_SECURE_MAILBOX_LNK LinkDest:/web/${friendlyUrl}/gmc#secureMailbox?selecttab=1'});}else{ga('trackerUa2.send','event', 'Internal Link' ,'Link click','LinkId:DC_WTHD_SECURE_MAILBOX_LNK LinkDest:/web/${friendlyUrl}/gmc#secureMailbox?selecttab=1'); }} catch(err){}}setTimeout(function() {document.location.href = href;}, 100);return false;\" href=\"/web/retirement3x/gmc?selecttab=1&linkId=DC_WTHD_SECURE_MAILBOX_LNK&technicalNameForLink=DC_WTHD_SECURE_MAILBOX_LNK&userFriendlyNameForLink=Link for Secure Mailbox&domain=Ben-DC&baseClientIndicator=Base#secureMailbox\">Secure Mailbox</A> in the Message Center on this site.",
+            "assetKey": "DB_ELEC_FOLLOWUP_IMPORTANT_DOCS_ACCESS_SM_TXT"
+          }
+        },
+        "DB_ELEC_MATRIX_AG": {
+          "DB_ELEC_MATRIX_OR_TXT": {
+            "assetType": "text",
+            "assetValue": "Or",
+            "assetKey": "DB_ELEC_MATRIX_OR_TXT"
+          },
+          "DB_ELEC_MATRIX_AND_TXT": {
+            "assetType": "text",
+            "assetValue": "And",
+            "assetKey": "DB_ELEC_MATRIX_AND_TXT"
+          },
+          "DB_ELEC_MATRIX_TITLE": {
+            "assetType": "text",
+            "assetValue": "Excellent Choose Payment Options",
+            "assetKey": "DB_ELEC_MATRIX_TITLE"
+          },
+          "DB_ELEC_MATRIX_RET_PANEL_TITLE": {
+            "assetType": "text",
+            "assetValue": "Your Retirement Choices Used to Calculate Payment Options",
+            "assetKey": "DB_ELEC_MATRIX_RET_PANEL_TITLE"
+          },
+          "DB_ELEC_MATRIX_RET_PANEL_HEADING": {
+            "assetType": "text",
+            "assetValue": "The forms of payment are based on other retirement choices you've made:",
+            "assetKey": "DB_ELEC_MATRIX_RET_PANEL_HEADING"
+          },
+          "DB_ELEC_MATRIX_RET_PANEL_LSTDT": {
+            "assetType": "text",
+            "assetValue": "Your last day of employment of",
+            "assetKey": "DB_ELEC_MATRIX_RET_PANEL_LSTDT"
+          },
+          "DB_ELEC_MATRIX_RET_PANEL_RCVDT": {
+            "assetType": "text",
+            "assetValue": "You'll begin receiving the payment you choose on",
+            "assetKey": "DB_ELEC_MATRIX_RET_PANEL_RCVDT"
+          },
+          "DB_ELEC_MATRIX_RET_PANEL_BENE": {
+            "assetType": "text",
+            "assetValue": "Beneficiaries you chose for each benefit:",
+            "assetKey": "DB_ELEC_MATRIX_RET_PANEL_BENE"
+          },
+          "DB_ELEC_MATRIX_RET_PANEL_BENEFIT_COL": {
+            "assetType": "text",
+            "assetValue": "Benefit",
+            "assetKey": "DB_ELEC_MATRIX_RET_PANEL_BENEFIT_COL"
+          },
+          "DB_ELEC_MATRIX_RET_PANEL_BENE_COL": {
+            "assetType": "text",
+            "assetValue": "Beneficiary",
+            "assetKey": "DB_ELEC_MATRIX_RET_PANEL_BENE_COL"
+          },
+          "DB_ELEC_MATRIX_RET_PANEL_NO_BENE": {
+            "assetType": "text",
+            "assetValue": "No Beneficiary",
+            "assetKey": "DB_ELEC_MATRIX_RET_PANEL_NO_BENE"
+          },
+          "DB_ELEC_MATRIX_MAKE_PMT_CHC_HDR": {
+            "assetType": "text",
+            "assetValue": "Make Your Payment Choices",
+            "assetKey": "DB_ELEC_MATRIX_MAKE_PMT_CHC_HDR"
+          },
+          "DB_ELEC_MATRIX_MAKE_PMT_CHC_BODY": {
+            "assetType": "text",
+            "assetValue": "For each plan, make your payment option choice (or choices, if the plan offers multiple benefits). Be sure to review the content in the whole table (scroll up and down or right and left if you need to) to make sure you know all your options.",
+            "assetKey": "DB_ELEC_MATRIX_MAKE_PMT_CHC_BODY"
+          },
+          "DB_ELEC_MATRIX_PAGE_INTRO_TXT": {
+            "assetType": "text",
+            "assetValue": "Choose a form of payment for each benefit you want to receive on <strong>${token:date}</strong>. You can change your forms of payment up to the last business day before your benefits begin.",
+            "assetKey": "DB_ELEC_MATRIX_PAGE_INTRO_TXT"
+          },
+          "DB_ELEC_MATRIX_TOT_SEC_HEAD": {
+            "assetType": "text",
+            "assetValue": "Estimated Totals for All Plans",
+            "assetKey": "DB_ELEC_MATRIX_TOT_SEC_HEAD"
+          },
+          "DB_ELEC_MATRIX_ALL_BTN": {
+            "assetType": "text",
+            "assetValue": "All",
+            "assetKey": "DB_ELEC_MATRIX_ALL_BTN"
+          },
+          "DB_ELEC_MATRIX_ALL_UNAVAIL_HEAD": {
+            "assetType": "text",
+            "assetValue": "Option(s) Not Available",
+            "assetKey": "DB_ELEC_MATRIX_ALL_UNAVAIL_HEAD"
+          },
+          "DB_ELEC_MATRIX_ALL_UNAVAIL_BODY": {
+            "assetType": "text",
+            "assetValue": "This payment option isn't available for all of your benefits. Choose other payment options for your other benefits.",
+            "assetKey": "DB_ELEC_MATRIX_ALL_UNAVAIL_BODY"
+          },
+          "DB_ELEC_MATRIX_ALL_UNAVAIL_CELL": {
+            "assetType": "text",
+            "assetValue": "Make a choice for this benefit.",
+            "assetKey": "DB_ELEC_MATRIX_ALL_UNAVAIL_CELL"
+          },
+          "DB_ELEC_MATRIX_TOT_COL_HEAD": {
+            "assetType": "text",
+            "assetValue": "Estimated Payment Totals",
+            "assetKey": "DB_ELEC_MATRIX_TOT_COL_HEAD"
+          },
+          "DB_ELEC_MATRIX_RET_PANEL_RVEW_TXT": {
+            "assetType": "text",
+            "assetValue": "Review",
+            "assetKey": "DB_ELEC_MATRIX_RET_PANEL_RVEW_TXT"
+          },
+          "DB_ELEC_MATRIX_RET_PANEL_RVEW_THE_TXT": {
+            "assetType": "text",
+            "assetValue": "Review the",
+            "assetKey": "DB_ELEC_MATRIX_RET_PANEL_RVEW_THE_TXT"
+          },
+          "DB_ELEC_MATRIX_OPFM_GRP_CHANGE_HEADER": {
+            "assetType": "text",
+            "assetValue": "You Have Switched Option Groups",
+            "assetKey": "DB_ELEC_MATRIX_OPFM_GRP_CHANGE_HEADER"
+          },
+          "DB_ELEC_MATRIX_OPFM_GRP_CHANGE_TEXT": {
+            "assetType": "text",
+            "assetValue": "Choose your benefit option for this group.",
+            "assetKey": "DB_ELEC_MATRIX_OPFM_GRP_CHANGE_TEXT"
+          },
+          "DB_ELEC_MATRIX_RELATIVE_VALUE_ROLLOVER_TXT": {
+            "assetType": "text",
+            "assetValue": "<p>It's difficult to compare all of your payment options because they may be paid over different periods of time. For example, some are paid monthly for only your lifetime and some are paid monthly for the lifetime of you and your spouse. Relative Values are provided to help you compare the values of your payment options, relative to each other.</p><p>While you must choose an option based on your personal situation, the relative value information shows how the value of each payment option compares to the values of the others. The relative value is determined by comparing each payment option to the normal form within the Premier pension plans. The relative value is only an estimate because the true relative value depends on how long you live.</p><p>If a relative value is not shown for a payment option, see Learn More for relative value details.</p>",
+            "assetKey": "DB_ELEC_MATRIX_RELATIVE_VALUE_ROLLOVER_TXT"
+          },
+          "DB_ELEC_MATRIX_HYPOTHTETICAL_TEXT": {
+            "assetType": "text",
+            "assetValue": "Hypothetical",
+            "assetKey": "DB_ELEC_MATRIX_HYPOTHTETICAL_TEXT"
+          },
+          "DB_ELEC_MATRIX_BENE_LABEL_TEXT": {
+            "assetType": "text",
+            "assetValue": "beneficiary",
+            "assetKey": "DB_ELEC_MATRIX_BENE_LABEL_TEXT"
+          },
+          "DB_ELEC_MATRIX_REL_VALUE_LABEL_TEXT": {
+            "assetType": "text",
+            "assetValue": "rel. value",
+            "assetKey": "DB_ELEC_MATRIX_REL_VALUE_LABEL_TEXT"
+          },
+          "DB_ELEC_MATRIX_BEFORE_DATE_PAYMENT_LABEL": {
+            "assetType": "text",
+            "assetValue": "Before ${token:beforeDate}",
+            "assetKey": "DB_ELEC_MATRIX_BEFORE_DATE_PAYMENT_LABEL"
+          },
+          "DB_ELEC_MATRIX_BEGIN_BEFORE_DATE_PAYMENT_LABEL": {
+            "assetType": "text",
+            "assetValue": "Beginning ${token:beforeDate} and Before ${token:additionalChangeDate}",
+            "assetKey": "DB_ELEC_MATRIX_BEGIN_BEFORE_DATE_PAYMENT_LABEL"
+          },
+          "DB_ELEC_MATRIX_BEGINNING_DATE_PAYMENT_LABEL": {
+            "assetType": "text",
+            "assetValue": "Beginning ${token:beforeDate}",
+            "assetKey": "DB_ELEC_MATRIX_BEGINNING_DATE_PAYMENT_LABEL"
+          },
+          "DB_ELEC_MATRIX_BENE_BENEFIT_TIP_HEADER": {
+            "assetType": "text",
+            "assetValue": "Beneficiary Benefit",
+            "assetKey": "DB_ELEC_MATRIX_BENE_BENEFIT_TIP_HEADER"
+          },
+          "DB_ELEC_MATRIX_BENE_BENEFIT_TIP_TEXT": {
+            "assetType": "text",
+            "assetValue": "If you have a designated beneficiary and your chosen payment option supports it, he or she will receive a benefit after your death.",
+            "assetKey": "DB_ELEC_MATRIX_BENE_BENEFIT_TIP_TEXT"
+          },
+          "DB_ELEC_MATRIX_DATA_ACCURACY_NOTE": {
+            "assetType": "text",
+            "assetValue": "<strong>Note:</strong> The The Syndicate reserves the right to correct any errors. If it's determined at any time that the information provided on this site conflicts with the benefit defined by the The Syndicate Pension plan(s), the The Syndicate Pension plan(s) will prevail. Under the law, a plan must be operated in accordance with its terms.",
+            "assetKey": "DB_ELEC_MATRIX_DATA_ACCURACY_NOTE"
+          },
+          "DB_ELEC_MATRIX_OPFM_CMPR_REVIEW_ADV_TEXT": {
+            "assetType": "text",
+            "assetValue": "Review advantages and considerations.",
+            "assetKey": "DB_ELEC_MATRIX_OPFM_CMPR_REVIEW_ADV_TEXT"
+          },
+          "DB_ELEC_PEN_DFR_BENEFIT_TXT": {
+            "assetType": "text",
+            "assetValue": "Defer Benefit",
+            "assetKey": "DB_ELEC_PEN_DFR_BENEFIT_TXT"
+          },
+          "DB_ELEC_MATRIX_PLUS_LUMP_SUM_TXT": {
+            "assetType": "text",
+            "assetValue": "Plus One-time Lump Sum Payment",
+            "assetKey": "DB_ELEC_MATRIX_PLUS_LUMP_SUM_TXT"
+          },
+          "DB_ELEC_MATRIX_DATE_RANGE_TXT": {
+            "assetType": "text",
+            "assetValue": "${token:startDate} thru ${token:endDate}",
+            "assetKey": "DB_ELEC_MATRIX_DATE_RANGE_TXT"
+          },
+          "DB_ELEC_MATRIX_DETAIL_PANEL_HEADER_TXT": {
+            "assetType": "text",
+            "assetValue": "Details",
+            "assetKey": "DB_ELEC_MATRIX_DETAIL_PANEL_HEADER_TXT"
+          },
+          "DB_ELEC_MATRIX_OPTION_UNAVAILABLE_TXT": {
+            "assetType": "text",
+            "assetValue": "Payment Option not available for this election. Make sure you review all payment options in this column",
+            "assetKey": "DB_ELEC_MATRIX_OPTION_UNAVAILABLE_TXT"
+          },
+          "DB_ELEC_MATRIX_PAYMENT_CHANGED_HEADER_TXT": {
+            "assetType": "text",
+            "assetValue": "Payment Option Changed",
+            "assetKey": "DB_ELEC_MATRIX_PAYMENT_CHANGED_HEADER_TXT"
+          },
+          "DB_ELEC_MATRIX_PAYMENT_CHANGED_TXT": {
+            "assetType": "text",
+            "assetValue": "Payment Option Changed",
+            "assetKey": "DB_ELEC_MATRIX_PAYMENT_CHANGED_TXT"
+          },
+          "DB_ELEC_MATRIX_MNTHLY_PMT_TXT": {
+            "assetType": "text",
+            "assetValue": "Monthly Payment Amount",
+            "assetKey": "DB_ELEC_MATRIX_MNTHLY_PMT_TXT"
+          },
+          "DB_ELEC_MATRIX_OK_TXT": {
+            "assetType": "text",
+            "assetValue": "OK",
+            "assetKey": "DB_ELEC_MATRIX_OK_TXT"
+          }
+        }
+      }
+    }
+  ]

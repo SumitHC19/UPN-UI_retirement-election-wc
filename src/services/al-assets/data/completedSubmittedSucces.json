@@ -1,0 +1,16 @@
+{
+  "value" : {
+      "status": {
+        "statusCode": 200,
+        "statusMessage": "OK"
+      },
+      "isAcctLockSpr": true,
+      "showLock": true,
+      "showUnlock": false,
+      "lockedAccountText": "Your account is locked. ",
+      "unlockAccountLink": "<A onclick=\"if(isUACrossEnabled()){try{ga('trackerUa1.send','event', 'Internal Link' ,'Link click','LinkId:DB_FUTURE_PMT_ACCOUNT_UNLOCK_LINK LinkDest:/ah-angular-afirst-web/#/web/${friendlyUrl}/accountlock/accountLocked?returnLink=DB_FUT_PMT_NAV_UPN'); } catch(err){}} if(isUAClientEnabled()){ try{if(isGTMEnabled()){dataLayer.push({'event':'UPointLinkEvent','linkCategory':'Internal Link','linkAction':'Link Click','linkLabel':'LinkId:DB_FUTURE_PMT_ACCOUNT_UNLOCK_LINK LinkDest:/ah-angular-afirst-web/#/web/${friendlyUrl}/accountlock/accountLocked?returnLink=DB_FUT_PMT_NAV_UPN'});}else{ga('trackerUa2.send','event', 'Internal Link' ,'Link click','LinkId:DB_FUTURE_PMT_ACCOUNT_UNLOCK_LINK LinkDest:/ah-angular-afirst-web/#/web/${friendlyUrl}/accountlock/accountLocked?returnLink=DB_FUT_PMT_NAV_UPN'); }} catch(err){}}setTimeout(function() {document.location.href = href;}, 100);return false;\" href=\"/ah-angular-afirst-web/#/web/retirement4x/accountlock/accountLocked?returnLink=DB_FUT_PMT_NAV_UPN&linkId=DB_FUTURE_PMT_ACCOUNT_UNLOCK_LINK&technicalNameForLink=DB_FUTURE_PMT_ACCOUNT_UNLOCK_LINK&userFriendlyNameForLink=null&domain=Ben-DB&baseClientIndicator=Base#/web/${friendlyUrl}/accountlock/accountLocked?returnLink=DB_FUT_PMT_NAV_UPN\">Unlock your account.</A> ",
+      "unlockedAccountText": "Your account is temporarily unlocked.",
+      "lockAccountLink": "We'll lock your account again when you log out, or you can <A onclick=\"if(isUACrossEnabled()){try{ga('trackerUa1.send','event', 'Internal Link' ,'Link click','LinkId:DB_FUTURE_PMT_ACCOUNT_LOCK_LINK LinkDest:/ah-angular-afirst-web/#/web/${friendlyUrl}/accountlock/accountLocked?returnLink=GLBL_NAV_HOME'); } catch(err){}} if(isUAClientEnabled()){ try{if(isGTMEnabled()){dataLayer.push({'event':'UPointLinkEvent','linkCategory':'Internal Link','linkAction':'Link Click','linkLabel':'LinkId:DB_FUTURE_PMT_ACCOUNT_LOCK_LINK LinkDest:/ah-angular-afirst-web/#/web/${friendlyUrl}/accountlock/accountLocked?returnLink=GLBL_NAV_HOME'});}else{ga('trackerUa2.send','event', 'Internal Link' ,'Link click','LinkId:DB_FUTURE_PMT_ACCOUNT_LOCK_LINK LinkDest:/ah-angular-afirst-web/#/web/${friendlyUrl}/accountlock/accountLocked?returnLink=GLBL_NAV_HOME'); }} catch(err){}}setTimeout(function() {document.location.href = href;}, 100);return false;\" href=\"/ah-angular-afirst-web/#/web/retirement4x/accountlock/accountLocked?returnLink=GLBL_NAV_HOME&linkId=DB_FUTURE_PMT_ACCOUNT_LOCK_LINK&technicalNameForLink=DB_FUTURE_PMT_ACCOUNT_LOCK_LINK&userFriendlyNameForLink=lock it yourself now.&domain=Ben-DB&baseClientIndicator=Base#/web/${friendlyUrl}/accountlock/accountLocked?returnLink=GLBL_NAV_HOME\">lock it yourself now.</A>."
+    }
+  }
+  

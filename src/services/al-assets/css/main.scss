@@ -1,0 +1,78 @@
+ .al-view-lt720 {
+    .indent-mobile{ 
+        margin-left: 28px;
+    }
+} 
+
+
+
+.al-view-lt720 .al-progressbar ul li.ui-steps-item.ui-state-completed .ui-steps-number.ui-rwd-steps-number {
+        background-image: url("../images/icon-progbar-down-arrow.png");
+        background-position: center center;
+        background-repeat: no-repeat;
+        text-indent: -200000px;
+        height: 15px;
+         width: 15px;
+         top: 5px; }
+  
+         .al-view-lt720 .al-progressbar ul li.ui-steps-item.ui-state-completed:first-child .ui-steps-number.ui-rwd-steps-number{
+            left: 0px;
+           }
+           .al-view-lt720 .al-progressbar ul li.ui-steps-item.ui-state-completed .ui-steps-number.ui-rwd-steps-number{
+            left: 11px;
+           }
+           .al-view-lt720 .al-progressbar ul li.ui-steps-item span.ui-steps-number
+           {
+               padding-top: 2px; 
+           }
+           .al-view-lt480 .al-progressbar ul li.ui-steps-item span.ui-steps-number
+           {
+               padding-top: 4px; 
+           }
+           .al-progressbar ul li.ui-steps-item span.ui-steps-number{
+               font-weight: bold;
+           }
+
+ .ui-steps .ui-steps-title.ui-rwd-steps-number {
+   display: inline;
+ }
+
+ .al-view-lt720 .ui-steps-item.ui-state-default.ui-state-disabled{
+    background-color: transparent !important;
+    border-width: 0 !important;
+    text-indent: -9999px !important;
+ }
+ .al-view-lt720 .ui-steps-item.ui-state-default.ui-state-disabled:last-child{
+    border: 1px !important;
+    text-indent: 0 !important;
+ }
+ .al-view-lt720 .al-progressbar ul li.ui-steps-item.ui-state-completed span.ui-steps-number.ui-rwd-steps-number,
+ .al-view-lt720 .ui-steps-item.ui-state-completed.ui-state-default.ui-state-disabled, .al-view-lt720 .ui-steps-item.ui-state-highlight
+  {
+  display:block }
+
+/*-popover----*/
+.al-popover-add {
+    margin-top: -14px ;
+    margin-left: 0px !important;
+    }
+    .al-m-popover
+    {
+        
+        padding: 20px;
+       
+
+    }
+    .al-popover-scroll
+    {
+        overflow-y: auto !important;
+    }
+    .al-popover.al-no-padding
+    {
+        padding:0px;
+    }
+
+    .al-m-popover .changeDiv
+    {
+        padding-top:2px;
+    }

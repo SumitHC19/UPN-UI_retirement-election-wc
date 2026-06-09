@@ -1,0 +1,325 @@
+{
+	"body": {
+		"transactionTitle": "Make Your Retirement Choices",
+		"pageTitle": "Pension Payment Summary",
+		"introContentList": [
+			"This provides a summary of any payment choices you make for your benefit beginning <strong>March 1, 2021</strong>.",
+			"You can change your form of payment (up to the last business day before your benefits begin)."
+		],
+		"hmTipAlert": {
+			"tipBadge": "tip",
+			"tipHeading": "Just want to enroll in retiree health care?",
+			"tipBody": "Defer All your pension payment options.",
+			"tipButtonText": "Defer All",
+			"tipMoreTxt": "More",
+			"tipLessTxt": "Less"
+		},
+		"deferToolTip": {
+			"tipIntro": "If you don't want to receive benefits on that date, you may choose to Defer. There are several reasons",
+			"tipRollover": "why you may wish to defer",
+			"tipContentHeading": "Defer",
+			"tipContentList": [{
+					"tipContent": "You can skip (defer) making a pension choice and come back to make that choice later."
+				},
+				{
+					"tipContent": "You may choose to defer payment of a pension benefit if:",
+					"tipContentBulletList": [
+						"You want to make your health care choices and prefer to begin pension benefits later.",
+						"You (or your spouse, if applicable) have other sources of income and don't need your pension benefits now.",
+						"You don't want to pay taxes (if applicable) on your benefits until later."
+					]
+				}
+			]
+		},
+		"calculationReferenceNumber": 368110042,
+		"areCalculationFormulasSupported": true,
+		"hasOpfmMatrixEligCd": false,
+		"hasPaymentAmountColumn": true,
+		"hasActionColumn": false,
+		"hasNonQualifiedPlan": false,
+		"hasCashBalPlan": false,
+		"isOpFmMatrixEligible": true,
+		"isDeferAlwd": true,
+		"benefitGroupTxt": "Benefit Group",
+		"planTableTitle": "Your Form of Payment Choices",
+		"paymentTableHeading1": "Benefit",
+		"paymentTableHeading2": "Form of Payment",
+		"paymentTableHeading3": "Payment to You",
+		"paymentTableHeading4": "Action",
+		"paymentTableNotOnFileTxt": "Not on File",
+		"paymentTableNATxt": "N/A",
+		"notOnFileTxtWithDash": "—Not on File—",
+		"hyphenTxt": "—",
+		"deferredTxt": "Deferred",
+		"deferredAmt": "$0.00",
+		"buttonLabels": {
+			"reviewOption": "Review Options",
+			"defer": "Defer",
+			"change": "Change",
+			"deferAll": "Defer All",
+			"matrixOptions": "Choose Payment Options"
+		},
+		"planList": [{
+			"planId": "8744",
+			"planDescription": "DB FAP Pension Plan",
+			"planNote": "<strong>Note:</strong> Amounts are before tax, and don't include any payments to your beneficiary after you die (if applicable).",
+			"hasDeferOption": true,
+			"isQualifiedPlan": true,
+			"isCashBalancePlan": false,
+			"electionGroupList": [{
+				"displayElecGroup": false,
+				"elecGroupId": "0",
+				"elecGroupDescription": "Election Group",
+				"elecGroupSelected": true,
+				"benefitList": [{
+						"elecId": "10",
+						"opformGroupId": 2325,
+						"electionDescription": "Simple Election Alternate",
+						"opfmGrpDescription": "Simple Election Opfm Gp",
+						"benefitDescription": "Simple Election Alternate—Simple Election Opfm Gp",
+						"isDeferred": false,
+						"paymentOption": {
+							"paymentOptionId": 3010,
+							"paymentOptionDescription": "Lump Sum Distribution",
+							"paymentOptionToYouAmt": "$318,643.03",
+							"paymentOptionFrequency": "(one-time)",
+							"labelFrequencyId": "L"
+						}
+					},
+					{
+						"elecId": "190",
+						"opformGroupId": 2325,
+						"electionDescription": "Simple Election 2",
+						"opfmGrpDescription": "Simple Election Opfm Gp",
+						"benefitDescription": "Simple Election 2—Simple Election Opfm Gp",
+						"isDeferred": false,
+						"paymentOption": {
+							"paymentOptionId": 3040,
+							"paymentOptionDescription": "Single Life Annuity",
+							"paymentOptionToYouAmt": "$2,202.09",
+							"paymentOptionFrequency": "(monthly)",
+							"labelFrequencyId": "M"
+						}
+					}
+				],
+				"defaultElectionGroupDeferredElection": [
+
+				]
+			}]
+		}],
+		"totalsContent": {
+			"totalsTitle": "Total Estimated Payments",
+			"totalsLabelList": [{
+					"labelFrequencyId": "A",
+					"labelFrequency": "(annual)",
+					"labelTxt": "Annual Payment"
+				},
+				{
+					"labelFrequencyId": "L",
+					"labelFrequency": "(one-time)",
+					"labelTxt": "One-Time Payment Amount"
+				},
+				{
+					"labelFrequencyId": "M",
+					"labelFrequency": "(monthly)",
+					"labelTxt": "Monthly Amount"
+				},
+				{
+					"labelFrequencyId": "Q",
+					"labelFrequency": "(quarterly)",
+					"labelTxt": "Quarterly Amount"
+				}
+			]
+		},
+		"summaryContentList": [
+			"<strong>Payment destination</strong> decisions are part of the next step. Continue once you’ve made all your payment option choices."
+		],
+		"paymentChoicePanelList": [
+
+		],
+		"deferModalContent": {
+			"deferAllTitle": "Do you want to defer all your payments?",
+			"deferAllBody": "If you want to receive all your pension benefits at a later date, choose Yes.",
+			"deferPlanTitle": "Do you want to defer your payments for the plan?",
+			"deferPlanBody": "If you want to receive these pension benefits at a later date, choose Yes.",
+			"modalYes": "Yes",
+			"modalNo": "No"
+		},
+		"flowButtonNavigation": {
+			"buttonList": [{
+					"action": "continue",
+					"label": "Continue"
+				},
+				{
+					"action": "comeBackLater",
+					"label": "Come Back Later"
+				},
+				{
+					"action": "quit",
+					"label": "Quit"
+				},
+				{
+					"action": "back",
+					"label": "Back"
+				}
+			],
+			"quitModalContent": {
+				"title": "What do you want to do?",
+				"bodyList": [{
+						"heading": "Save",
+						"paragraph": "Keep the choices you've made, so far. Finish making pension choices later."
+					},
+					{
+						"heading": "Quit",
+						"paragraph": "Cancel your pension request and lose all the pension choices you've made, so far."
+					},
+					{
+						"heading": "Return",
+						"paragraph": "Go back to the current page without quitting."
+					}
+				],
+				"buttonList": [{
+						"action": "comeBackLater",
+						"label": "Save"
+					},
+					{
+						"action": "quit",
+						"label": "Quit"
+					},
+					{
+						"action": "return",
+						"label": "Return"
+					}
+				]
+			},
+			"editButtonList": [{
+					"action": "continue",
+					"label": "Continue"
+				},
+				{
+					"action": "return",
+					"label": "Return"
+				}
+			]
+		},
+		"accessibilityTexts": {
+			"btnContinue": "Choose this button to continue on to the next step in the process.",
+			"btnComeBackLater": "Choose this button to save all the changes and choices you have made so far, but exit the flow at this time.",
+			"btnQuit": "Choose this button to exit the flow and save none of the choices you made up to this point.",
+			"btnBack": "Choose this button to return to the prior page without saving any changes or choices you made on this page.",
+			"btnChange": "Choose to change your payment choice for Union Benefit available from Premier Pension Plan.",
+			"btnReviewOptions": "Review options and make payment choices for Cash Balance Benefit available from Premier Cash Balance Plan.",
+			"btnDefer": "Choose to defer payment choices for Premier Cash Balance Plan.",
+			"btnDeferAlt": "Choose this button to delay making payment choices until sometime in the future.",
+			"btnDeferAllAlt": "Choose to defer all payment choices for all pensions.",
+			"headerPmtTable": "Review options and make or change payment choices for the benefits available in Premier Cash Balance Plan.",
+			"alertTip": "Tip",
+			"contentBeginPopOver": "Beginning of popover content",
+			"contentEndPopOver": "End of popover content"
+		},
+		"editList": [{
+			"editId": "18000300",
+			"editMessage": "Make a choice for all of the benefits that appear. You must choose a form of payment for each benefit or choose to defer all of the benefits."
+		}],
+		"progressBarPopovers": [
+			{
+			  "hasError": false,
+			  "stepId": 3,
+			  "stepName": "beneficiaries",
+			  "stepCode": "BENE",
+			  "title": "3. Beneficiaries",
+			  "linkText": "Change",
+			  "contentList": [
+				{
+				  "contentData": [
+					"DB FAP Pension Plan",
+					"No Beneficiary"
+				  ]
+				}
+			  ],
+			  "changeModal": {
+				"changeModalText": "Do you want to change your choices?<br><br> You’ll need to start the retirement process again from the beginning. That’s because making changes to this information may impact your benefits options and payment amounts.",
+				"yesBtn": "Yes",
+				"noBtn": "No"
+			  }
+			},
+			{
+			  "hasError": false,
+			  "stepId": 4,
+			  "stepName": "rights",
+			  "stepCode": "NORS",
+			  "title": "4. Your Notice of Rights",
+			  "linkText": "Review",
+			  "contentList": [
+				{
+				  "contentData": [
+					"Acknowledged receiving and reviewing notice of rights."
+				  ]
+				}
+			  ]
+			},
+			{
+			  "hasError": false,
+			  "stepId": 5,
+			  "stepName": "payment",
+			  "stepCode": "PAYT",
+			  "title": "5. Pension Payments",
+			  "linkText": "Review/Change",
+			  "contentList": [
+				{
+				  "contentData": [
+					"Made your choices."
+				  ]
+				}
+			  ]
+			},
+			{
+			  "hasError": false,
+			  "stepId": 6,
+			  "stepName": "destination",
+			  "stepCode": "DEST",
+			  "title": "6. Destination",
+			  "linkText": "Change",
+			  "contentList": [
+				{
+				  "contentData": [
+					"Selected your payment destination."
+				  ]
+				}
+			  ]
+			},
+			{
+			  "hasError": false,
+			  "stepId": 7,
+			  "stepName": "review",
+			  "stepCode": "REVW",
+			  "title": "7. Review",
+			  "linkText": "Review",
+			  "contentList": [
+				{
+				  "contentData": [
+					"Reviewed a list of all the choices you made."
+				  ]
+				}
+			  ]
+			}
+		  ],
+		"footnoteContent": {
+			"modalLinkText": "Read Footnotes",
+			"modalHeading": "Footnotes",
+			"footnoteLocations": [{
+				"footnotes": [{
+						"footnoteId": 1,
+						"footnoteMessage": "This is a custom footnote",
+						"assetConfigKey": "CUSTOM_FOOTNOTE_1"
+					},
+					{
+						"footnoteId": 2,
+						"footnoteMessage": "This is the amount you'll receive before taxes. It doesn't include any payments to your beneficiary (if applicable).",
+						"assetConfigKey": "DB_ELEC_PEN_PMT_TO_YOU_FTNT"
+					}
+				]
+			}]
+		}
+	}
+}
