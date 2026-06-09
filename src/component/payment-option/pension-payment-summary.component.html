@@ -1,0 +1,609 @@
+<!-- DB CASHOUT COMPONENT START -->
+<ng-container *ngIf="checkresponse && isDbCashoutFlag">
+	<h4>
+	  <strong>{{data?.progressBarInfo?.pageTitle}}</strong>
+	</h4>
+	<div *ngIf="data?.progressBarInfo?.stepDetail">
+	  <al-progressbar class="al-print-no" [model]="data?.progressBarInfo?.stepDetail" [ofText]='data?.progressBarInfo?.ofLabel'
+		styleClass="al-progressbar" [activeIndex]="3" [readonly]="true">
+	  </al-progressbar>
+	</div>
+  </ng-container>
+  <!-- DB CASHOUT COMPONENT END -->
+  
+  <ng-container *ngIf="!checkresponse">
+	  <al-loading-indicator
+		  id="pagelevel"
+		  loadingType="pageLevel"
+		  [initialShow]="true"
+		  loadingText="loading">
+	  </al-loading-indicator>
+  </ng-container>
+  
+  <div *ngIf="checkresponse" id="pensionpaymentsummary" class="al-font-change al-spacing">
+  
+	  <div class="al-u-10-16 al-480-w100 al-320-w100 al-720-w100">
+			  <h1 *ngIf="data?.pageTitle"> {{data?.pageTitle}} </h1>
+			  <al-dynamic-edit-loader (continueEdit)="cancontinue($event)" (cancelEdit)="onCancel()"></al-dynamic-edit-loader>
+		  <div *ngIf="showError"> <al-error></al-error> </div>
+		  <!-- start tip tooltip and content here  -->
+		  <div *ngIf="!showError"> 
+				  <div class="al-margin-bottom-1x" *ngIf="data?.hmTipAlert?.tipBadge">
+					  <al-tips-alerts [tipText]="data?.hmTipAlert?.tipBadge" [tipSize]="'medium'" [displayText]="data?.hmTipAlert?.tipHeading"
+					   [moreLess]="true" [moreText]="data?.hmTipAlert?.tipMoreTxt" [lessText]="data?.hmTipAlert?.tipLessTxt">
+						  <p class="al-margin-bottom-1x al-margin-top-1x" [innerHTML]="data?.hmTipAlert?.tipBody | UISafe: 'html'">
+						  </p>
+						  <p>
+							  <button pButton type="button" *ngIf="data?.hmTipAlert?.tipButtonText" [label]="data?.hmTipAlert?.tipButtonText" (click)="deferalleach.showDialog($event)"
+							   title="data.hmTipAlert.tipButtonText" class="al-button-neutral al-button-small"></button>
+						  </p>
+					  </al-tips-alerts>
+				  </div>
+				  <al-dialog #deferalleach [(visible)]="display">
+					  <h3 class="al-padding-top-2x al-padding-left-2x al-padding-right-3x" *ngIf="data?.deferModalContent?.deferAllTitle" [innerHTML]="data.deferModalContent.deferAllTitle | UISafe: 'html'"></h3>
+					  <p class="al-padding-left-2x al-padding-right-3x al-padding-bottom-1x" *ngIf="data?.deferModalContent?.deferAllBody" [innerHTML]="data.deferModalContent.deferAllBody | UISafe: 'html'"></p>
+					  <button pButton type="button" *ngIf="data?.deferModalContent?.modalYes" [label]="data?.deferModalContent?.modalYes" title="data?.deferModalContent?.modalYes"
+					   class="al-button-positive al-button-large al-margin-left-2x" (click)="deferalleach.hideDialog($event); deferAllFunc();"></button>
+					  <button pButton type="button" *ngIf="data?.deferModalContent?.modalNo" [label]="data?.deferModalContent?.modalNo" title="data?.deferModalContent?.modalNo"
+					   class="al-button-neutral al-button-large" (click)="deferalleach.hideDialog($event)"></button>
+				  </al-dialog>
+				  <div class="al-margin-bottom-1x">
+					  <p class="al-margin-bottom-1x" *ngIf="data?.introContentList[0]" [innerHTML]="data?.introContentList[0] | UISafe: 'html'">
+					  </p>
+					  <p *ngIf="data?.deferToolTip?.tipIntro" class="al-margin-bottom-1x">
+						<span [innerHTML]="data?.deferToolTip?.tipIntro | UISafe: 'html'"></span>&nbsp;<al-popover #TooltipMouseOver position="top" contentClass="al-font-change al-pps-outline" 
+						[endPopoverAccessibilityText]="data?.accessibilityTexts?.contentEndPopOver" [beginPopoverAccessibilityText]="data?.accessibilityTexts?.contentBeginPopOver">
+							  <h5 *ngIf="data?.deferToolTip?.tipContentHeading" [innerHTML]="data?.deferToolTip.tipContentHeading"> </h5>
+							  <div *ngFor="let tipRollOverModal of data?.deferToolTip?.tipContentList">
+								  <p>
+									  {{tipRollOverModal?.tipContent}}
+								  </p>
+								  <ul *ngIf="tipRollOverModal?.tipContentBulletList">
+									  <li *ngFor="let items of tipRollOverModal?.tipContentBulletList">
+										  {{ items }}
+									  </li>
+								  </ul>
+							  </div>
+						</al-popover>
+						<a aria-haspopup="true" href="javaScript:void(0);" class="cursors al-tooltip" (mouseenter)="TooltipMouseOver.showPopOver($event)"
+						   (mouseleave)="TooltipMouseOver.hidePopOver($event)" *ngIf="data?.deferToolTip?.tipRollover">{{data.deferToolTip.tipRollover}}</a>.
+					  </p>
+					  
+					  
+					  <p class="al-margin-bottom-0" *ngIf="data?.introContentList[1]" [innerHTML]="data?.introContentList[1] | UISafe: 'html'">
+						  </p>
+				  </div>
+				  <div class="al-margin-bottom-2x" *ngIf="isRetirementKitPdfAvailable()">
+					  <al-content-box [contentBoxType]="'neutral'" [contentBoxBrand]="'brand-1'" [hasArrow]="false" [arrowPosition]="">
+						<ng-container *ngIf="loader">
+						  	<h4><i class="pi pi-file-pdf"></i>&nbsp;<strong><span [innerHTML]="loadingText | UISafe:'html'"></span></strong></h4>
+						  	<p class="al-padding-top-1x" [innerHTML]="kitInformation | UISafe:'html'"></p>
+						  	<p [innerHTML]="plsWaitText | UISafe:'html'"></p>
+						  	<ng-container>
+								<al-loading-indicator
+									[initialShow]="true"
+									loadingText="{{uploadText}}">
+								</al-loading-indicator>
+						  	</ng-container>
+						</ng-container>
+						<ng-container *ngIf="!pdfNotAvailable && !loader">
+							<h4 *ngIf="data.retirementKitPdfContent.retirementKitHeaderText"><i class="pi pi-file-pdf"></i>&nbsp;<strong><span [innerHTML]="data?.retirementKitPdfContent?.retirementKitHeaderText | UISafe:'html'"></span></strong></h4>
+						  	<div class="al-padding-left-2x">
+								<p *ngIf="data?.retirementKitPdfContent?.retirementKitSubText" [innerHTML]="data?.retirementKitPdfContent?.retirementKitSubText | UISafe:'html'"></p>
+								<ul class="al-padding-left-1x" *ngIf="data?.retirementKitPdfContent?.retirementKitPdfForms">
+									<li *ngFor="let pdfItems of data?.retirementKitPdfContent?.retirementKitPdfForms">
+										<a href="javascript:void(0);" (click)="downloadPDFFile($event,pdfItems)" >{{pdfItems?.name}} ({{pdfItems?.type}})</a>
+									</li>
+								</ul>
+						    </div>
+						</ng-container>
+						<ng-container *ngIf="pdfNotAvailable">
+							<h4><i class="pi pi-file-pdf"></i>&nbsp;<strong><span [innerHTML]="pdfDeliverText | UISafe:'html'"></span></strong></h4>
+							<p class="al-padding-top-1x" [innerHTML]="pdfNotAvailableText | UISafe:'html'"></p>
+							<p [innerHTML]="pdfSecureMailBoxText | UISafe:'html'"></p>	
+						</ng-container>
+					  </al-content-box>                              
+					</div>
+																			  
+		  <!-- Matrix page buttons -->
+		  <button pButton type="button" *ngIf="isOpFmMatrixEligible" [label]="data.buttonLabels.matrixOptions" [title]="data.buttonLabels.matrixOptions" class="al-button-positive al-button-large" (click)="setMatrixPageDetails()"></button>
+		  <button pButton type="button" *ngIf="isOpFmMatrixEligible && data?.isDeferAlwd && (!data.isDeferAllBtnSuprsInNQPlan || (data.isDeferAllBtnSuprsInNQPlan && !data.hasNonQualifiedPlan))" [label]="data.buttonLabels.deferAll" [title]="data.buttonLabels.deferAll" class="al-button-neutral al-button-large" (click)="deferalleach.showDialog($event)"></button>
+  
+		  <!-- start Your Form of Payment Choices here plandata -->
+		  <h3 class="al-margin-bottom-1x" *ngIf="(data.planList).length > 0"><strong>{{data?.planTableTitle}}</strong></h3>
+		  <div *ngIf="data?.nqBenefit">
+		  <al-non-qualified-benefit [nqData]="data.nqBenefit"></al-non-qualified-benefit>
+		   </div>
+		  <div *ngFor="let plandata of data?.planList; let j = index">
+			  <div class="al-gutter-row clearfix al-no-margin">
+				  <div class="al-float-left-720 al-mar al-u-13-16 al-720-w13-16 al-480-w100 al-320-w100">
+					  <p class="al-priority al-margin-bottom-0" id="planTitle_{{plandata?.planId}}" [innerHTML]="plandata?.planDescription | UISafe: 'html'"></p>
+					  <p class="al-margin-bottom-1x">
+						  <small [innerHTML]="plandata?.planNote | UISafe: 'html'"></small>
+					  </p>
+				  </div>
+				  <div class="al-float-left-720 al-u-3-16 al-720-w3-16 al-480-w100 al-text-align-left-lt480 al-text-align-left-480 al-text-align-right">
+					  <button pButton type="button" *ngIf="!isOpFmMatrixEligible && data?.buttonLabels?.defer && plandata?.hasDeferOption" (click)="defereach.showDialog($event)" [label]="data.buttonLabels.defer"
+					   [title]="data.buttonLabels.defer" id="deferBtn_{{plandata?.planId}}" class="al-button-neutral al-margin-top-1x al-margin-right-1x"></button>
+					  <al-dialog #defereach [(visible)]="display">
+						  <h3 class="al-padding-top-2x al-padding-left-2x al-padding-right-3x" *ngIf="data?.deferModalContent?.deferPlanTitle">{{data.deferModalContent.deferPlanTitle}}</h3>
+						  <p class="al-padding-left-2x al-padding-right-3x al-padding-bottom-1x" *ngIf="data?.deferModalContent?.deferPlanBody">{{data.deferModalContent.deferPlanBody}} </p>
+						  <button pButton type="button" *ngIf="data?.deferModalContent?.modalYes" [label]="data?.deferModalContent?.modalYes" title="data?.deferModalContent?.modalYes"
+						   class="al-button-positive al-button-large al-margin-left-2x" (click)="defereach.hideDialog($event); deferEachFunc(j)"></button>
+						  <button pButton type="button" *ngIf="data?.deferModalContent?.modalNo" [label]="data?.deferModalContent?.modalNo" title="data?.deferModalContent?.modalNo"
+						   class="al-button-neutral al-button-large" (click)="defereach.hideDialog($event)"></button>
+					  </al-dialog>
+				  </div>
+			  </div>
+			  <table class="al-table al-table-responsive brand-1">
+				  <thead>
+					  <tr>
+						  <th class="al-w25 al-float-none" *ngIf="data?.paymentTableHeading1">{{data.paymentTableHeading1}}</th>
+						  <th class="al-w25 al-float-none" *ngIf="data?.paymentTableHeading2">{{data.paymentTableHeading2}}</th>
+						  <th *ngIf="isOpFmMatrixEligible"></th>
+						  <th class="al-w25 al-text-align-right" *ngIf="data?.paymentTableHeading3">{{data.paymentTableHeading3}} 
+								  <ng-container *ngFor="let footnoteItems of data?.footnoteContent?.footnoteLocations; let x = index">
+									  <ng-container *ngIf="footnoteItems?.footnotes?.length">
+										  <span *ngFor="let footnotetxt of footnoteItems?.footnotes; let j = index; let last=last"> 
+									  <sup>
+										  <a href="javascript:void(0);" *ngIf="footnotetxt?.footnoteId"  (click)="showFootnoteSup()"  [title]="footnotetxt?.footnoteId">{{footnotetxt?.footnoteId}}<span *ngIf="!last">,</span></a></sup></span>
+									  </ng-container>
+									  </ng-container>
+								  </th>
+						  <th class="al-w25 al-text-align-right" *ngIf="!isOpFmMatrixEligible && data?.paymentTableHeading4">{{data.paymentTableHeading4}}</th>
+					  </tr>
+				  </thead>
+				  <ng-container *ngFor="let elecGrpData of plandata.electionGroupList; let t = index">
+  
+						  <tbody *ngIf="elecGrpData.displayElecGroup">
+								  <tr>
+										  <td>
+												  <div class="al-gutter-row">
+											  <div class="al-gutter-col al-w50 al-480-w50 al-320-w50 al-hidden-gt720" *ngIf="data?.paymentTableHeading1">
+												  <strong> {{data.paymentTableHeading1}} </strong>
+											  </div>
+											  <div class="al-gutter-col al-w100 al-480-w50 al-320-w50" *ngIf="elecGrpData?.elecGroupDescription"> 
+												  <strong> {{elecGrpData?.elecGroupDescription}} </strong>
+											  </div>
+											  </div>
+										  </td>
+										  <td></td>
+										  <td></td>
+										  <td *ngIf="!isOpFmMatrixEligible" class="al-text-align-right">
+											  <div class="al-gutter-row">
+												  <div class="al-gutter-col al-w50 al-480-w50 al-320-w50 al-hidden-gt720" *ngIf="data?.paymentTableHeading4">
+													  <strong>{{data.paymentTableHeading4}}</strong>
+												  </div>
+												  <div class="al-gutter-col al-w100 al-480-w50 al-320-w50">
+													  <button pButton type="button" *ngIf="data?.buttonLabels?.reviewOption" (click)="comeBackServices();setChosenGroupPlan(j,t,false)" [label]="data?.buttonLabels?.reviewOption"
+													   [title]="data.buttonLabels.reviewOption" class="al-button-positive">
+													  </button>
+												  </div>
+											  </div>
+										  </td>
+										  <td *ngIf="isOpFmMatrixEligible"></td>
+									  </tr>
+									  <tr *ngIf="!elecGrpData?.benefitList[0]">
+										  <td>
+											  <div class="al-gutter-row">
+													  <div class="al-gutter-col al-w50 al-480-w50 al-320-w50 al-hidden-gt720">
+															  <strong>{{data?.paymentTableHeading1}}{{data?.hyphenTxt}}{{elecGrpData?.elecGroupDescription}} </strong>
+															  </div>
+													  <div class="al-gutter-col al-w100 al-480-w50 al-320-w50 al-padding-left-notrwd2x">
+															  <span *ngIf="data?.paymentTableNotOnFileTxt"> --{{data?.paymentTableNotOnFileTxt}}-- </span>
+														  </div>
+													  
+												  </div>
+											  </td>
+											  <td></td>
+											  <td></td>
+											  <td></td>
+										  </tr>
+						  </tbody>
+					  <ng-container *ngFor="let benefitData of elecGrpData.benefitList; let r = index">
+						  <tbody *ngIf="!elecGrpData.displayElecGroup">
+							  <tr class="al-border-bottom-none">
+								  <td id="BenefitLbl_{{plandata?.planId}}_{{benefitData?.elecId}}">
+									  <div class="al-gutter-row">
+										  <div class="al-gutter-col al-w50 al-480-w50 al-320-w50 al-hidden-gt720" *ngIf="data?.paymentTableHeading1">
+											  <strong> {{data.paymentTableHeading1}} </strong>
+										  </div>
+										  <div class="al-gutter-col al-w100 al-480-w50 al-320-w50" *ngIf="elecGrpData.elecGroupSelected">
+  
+											  <span *ngIf="benefitData.benefitDescription">{{benefitData.benefitDescription}}</span>
+											  <span *ngIf="!benefitData.benefitDescription && benefitData.electionDescription">{{benefitData.electionDescription}}</span>
+										  </div>
+										  <div class="al-gutter-col al-w100 al-480-w50 al-320-w50" *ngIf="!elecGrpData.elecGroupSelected">
+											  <span *ngIf="elecGrpData.elecGroupDescription">{{elecGrpData.elecGroupDescription}} </span>
+										  </div>
+									  </div>
+  
+								  </td>
+  
+								  <td id="paymentForm_{{plandata?.planId}}_{{benefitData?.elecId}}">
+									  <div class="al-gutter-row">
+										  <div class="al-gutter-col al-w50 al-480-w50 al-320-w50 al-hidden-gt720" *ngIf="data?.paymentTableHeading2">
+												  <strong>{{data.paymentTableHeading2}}</strong>
+										  </div>
+										  <div class="al-gutter-col al-w100 al-480-w50 al-320-w50" *ngIf="benefitData?.isDeferred">
+											  {{data?.deferredTxt}}
+										  </div>
+										  <div *ngIf="!benefitData?.isDeferred">
+											  <div class="al-gutter-col al-w100 al-480-w50 al-320-w50" *ngIf="benefitData?.paymentOption?.paymentOptionId">
+												  <span *ngIf="benefitData?.paymentOption?.paymentOptionDescription"> {{benefitData.paymentOption.paymentOptionDescription}} </span>
+											  </div>
+											  <div class="al-gutter-col al-w100 al-480-w50 al-320-w50" *ngIf="!benefitData?.paymentOption?.paymentOptionId">
+												  <span *ngIf="data?.notOnFileTxtWithDash"> {{data?.notOnFileTxtWithDash}} </span>
+											  </div>
+										  </div>
+									  </div>
+								  </td>
+								  <td *ngIf="isOpFmMatrixEligible"></td>
+								  <td  id="paymentAmt_{{plandata?.planId}}_{{benefitData?.elecId}}" class="al-text-align-right">
+									  <div class="al-gutter-row">
+										  <div class="al-gutter-col al-w50 al-480-w50 al-320-w50 al-hidden-gt720" *ngIf="data?.paymentTableHeading3">
+											  <strong>{{data.paymentTableHeading3}}</strong>
+										  </div>
+										  <div class="al-gutter-col al-w100 al-480-w50 al-320-w50" *ngIf="benefitData?.isDeferred && data?.deferredAmt">
+											  <strong> {{data?.hyphenTxt}} </strong>
+										  </div>
+										  <div *ngIf="!benefitData?.isDeferred">
+											  <div class="al-gutter-col al-w100 al-480-w50 al-320-w50" *ngIf="benefitData?.paymentOption?.paymentOptionId">
+												  <div *ngIf="benefitData?.paymentOption?.paymentOptionToYouAmt">
+													  <strong>{{benefitData?.paymentOption?.paymentOptionToYouAmt}} </strong>
+													  <br>
+													  <div *ngFor="let tableplandata of data?.totalsContent?.totalsLabelList">
+														  <ng-container *ngIf="benefitData?.paymentOption?.labelFrequencyId === tableplandata?.labelFrequencyId">
+															  {{tableplandata?.labelFrequency}}
+														  </ng-container>
+													  </div>
+												  </div>
+  
+											  </div>
+											  <div class="al-gutter-col al-w100 al-480-w50 al-320-w50" *ngIf="!benefitData?.paymentOption?.paymentOptionId">
+												  {{data?.hyphenTxt}}
+											  </div>
+										  </div>
+									  </div>
+								  </td>
+								  <td *ngIf="!isOpFmMatrixEligible" class="al-text-align-right">
+									  <div class="al-gutter-row">
+										  <div class="al-gutter-col al-w50 al-480-w50 al-320-w50 al-hidden-gt720" *ngIf="data?.paymentTableHeading4">
+											  <strong>{{data.paymentTableHeading4}}</strong>
+										  </div>
+										  <div class="al-gutter-col al-w100 al-480-w50 al-320-w50" *ngIf="!benefitData?.isDeferred">
+											  <span *ngIf="!benefitData?.isDeferred">
+												  <button pButton type="button" *ngIf="!benefitData?.paymentOption?.paymentOptionId && data?.buttonLabels?.reviewOption" (click)="comeBackServices();setChosenPlan(j,t,r,true)"
+												   [label]="data?.buttonLabels?.reviewOption" id="changeBnft_{{plandata?.planId}}_{{elecGrpData?.elecGroupId}}_{{benefitData.elecId}}" 
+												   [title]="data.buttonLabels.reviewOption" class="al-button-positive">
+												  </button>
+											  </span>
+											  <span>
+												  <button pButton type="button" *ngIf="benefitData?.paymentOption?.paymentOptionId && data?.buttonLabels?.change" (click)="comeBackServices();setChosenPlan(j,t,r,true)"
+												   [label]="data?.buttonLabels?.change" id="changeBnft_{{plandata?.planId}}_{{elecGrpData?.elecGroupId}}_{{benefitData.elecId}}"
+												   [title]="data?.buttonLabels?.change" class="al-button-neutral">
+												  </button>
+											  </span>
+										  </div>
+										  <div class="al-gutter-col al-w100 al-480-w50 al-320-w50" *ngIf="benefitData?.isDeferred">
+											  <button pButton type="button" *ngIf="data?.buttonLabels?.change" (click)="comeBackServices();setChosenPlan(j,t,r, true)" [label]="data?.buttonLabels?.change"
+											  id="changeBnft_{{plandata?.planId}}_{{elecGrpData?.elecGroupId}}_{{benefitData.elecId}}"
+											   [title]="data?.buttonLabels?.change" class="al-button-neutral">
+											  </button>
+										  </div>
+									  </div>
+								  </td>
+							  </tr>
+							  
+							  <tr *ngFor="let autoSelectedData of benefitData?.paymentOption?.autoSelectedFormsOfPaymentList; let s = index">
+								  <td *ngIf="!benefitData?.isDeferred" class="al-border-bottom-zero">
+								  </td>
+								  <td id="autoPaymentForm_{{plandata?.planId}}_{{benefitData?.elecId}}" *ngIf="!benefitData?.isDeferred">
+									  <div class="al-gutter-row">
+										  <div class="al-gutter-col al-w50 al-480-w50 al-320-w50 al-hidden-gt720" *ngIf="data.paymentTableHeading2">
+											  <strong>{{data.paymentTableHeading2}}</strong>
+										  </div>
+										  <div class="al-gutter-col al-w100 al-480-w50 al-320-w50" *ngIf="benefitData?.isDeferred">
+											  {{data?.deferredTxt}}
+										  </div>
+										  <div *ngIf="!benefitData?.isDeferred">
+											  <div class="al-gutter-col al-w100 al-480-w50 al-320-w50" *ngIf="autoSelectedData?.autoSelectOpFormId && autoSelectedData?.autoSelectedFormOfPayment">
+												  {{autoSelectedData?.autoSelectedFormOfPayment}}
+											  </div>
+											  <div class="al-gutter-col al-w100 al-480-w50 al-320-w50" *ngIf="!autoSelectedData?.autoSelectOpFormId && data?.notOnFileTxtWithDash">
+												  {{data?.notOnFileTxtWithDash}}
+											  </div>
+										  </div>
+									  </div>
+								  </td>
+								  <td *ngIf="!benefitData?.isDeferred && isOpFmMatrixEligible"></td>
+								  <td id="autoPaymentAmt_{{plandata?.planId}}_{{benefitData?.elecId}}" class="al-text-align-right" *ngIf="!benefitData?.isDeferred">
+									  <div class="al-gutter-row">
+										  <div class="al-gutter-col al-w50 al-480-w50 al-320-w50 al-hidden-gt720" *ngIf="data?.paymentTableHeading3">
+											  <strong>{{data.paymentTableHeading3}}</strong>
+										  </div>
+										  <div class="al-gutter-col al-w100 al-480-w50 al-320-w50" *ngIf="benefitData?.isDeferred && data?.deferredAmt">
+											  <strong> {{data?.hyphenTxt}}  </strong>
+										  </div>
+										  <div *ngIf="!benefitData?.isDeferred">
+											  <div class="al-gutter-col al-w100 al-480-w50 al-320-w50" *ngIf="autoSelectedData?.autoSelectedFormOfPayment">
+												  <div *ngIf="autoSelectedData?.autoSelectedPaymentToYouAmt">
+													  <strong>{{autoSelectedData?.autoSelectedPaymentToYouAmt}} </strong>
+													  <br>
+													  <div *ngFor="let tableplandata1 of data?.totalsContent?.totalsLabelList">
+														  <ng-container *ngIf="autoSelectedData?.labelFrequencyId === tableplandata1?.labelFrequencyId">
+															  {{tableplandata1?.labelFrequency}}
+														  </ng-container>
+													  </div>
+												  </div>
+											  </div>
+											  <div class="al-gutter-col al-w100 al-480-w50 al-320-w50" *ngIf="!autoSelectedData?.autoSelectedFormOfPayment">
+												  {{data?.hyphenTxt}}
+											  </div>
+										  </div>
+									  </div>
+								  </td>
+								  <td *ngIf="!benefitData?.isDeferred && !isOpFmMatrixEligible" class="al-border-bottom-zero"></td>
+							  </tr>
+						  </tbody>
+						  <tbody *ngIf="elecGrpData.displayElecGroup">
+							  <tr> 
+								  <td>
+								  <div class="al-gutter-row">
+									  <div class="al-gutter-col al-w50 al-480-w50 al-320-w50 al-hidden-gt720">
+										  <strong>{{data?.paymentTableHeading1}}{{data?.hyphenTxt}}{{elecGrpData?.elecGroupDescription}} </strong>
+										  </div>
+										  <div class="al-gutter-col al-w100 al-480-w50 al-320-w50 al-padding-left-notrwd2x" *ngIf="benefitData?.isDeferred || benefitData?.paymentOption?.paymentOptionId">
+											  <!-- <span *ngIf="benefitData?.electionDescription && benefitData?.benefitDescription"> {{benefitData.benefitDescription}} </span> -->
+											  <span *ngIf="benefitData?.electionDescription && benefitData?.benefitDescription" [innerHTML]="benefitData?.benefitDescription | UISafe:'html'"></span>
+											  <span *ngIf="!benefitData?.benefitDescription && benefitData?.electionDescription">{{benefitData.electionDescription}}</span>
+										  </div>
+										  <div class="al-gutter-col al-w100 al-480-w50 al-320-w50 al-padding-left-notrwd2x" *ngIf="!benefitData?.isDeferred && !benefitData?.paymentOption?.paymentOptionId">
+												  <span *ngIf="data?.notOnFileTxtWithDash"> {{data?.notOnFileTxtWithDash}} </span>
+											  </div>
+										  
+									  </div>
+								  </td>
+								  <td>
+									  <div class="al-gutter-row">
+										  <div class="al-gutter-col al-w50 al-480-w50 al-320-w50 al-hidden-gt720" *ngIf="data?.paymentTableHeading2">
+											  <strong>{{data.paymentTableHeading2}}</strong>
+										  </div>
+										  <div class="al-gutter-col al-w100 al-480-w50 al-320-w50" *ngIf="benefitData?.isDeferred">
+											  {{data?.deferredTxt}}
+										  </div>
+										  <div *ngIf="!benefitData?.isDeferred">
+											  <div class="al-gutter-col al-w100 al-480-w50 al-320-w50" *ngIf="benefitData?.paymentOption?.paymentOptionId">
+												  <span *ngIf="benefitData?.paymentOption?.paymentOptionDescription"> {{benefitData.paymentOption.paymentOptionDescription}} </span>
+											  </div>
+											  
+										  </div>
+									  </div>
+								  </td>
+								  <td *ngIf="isOpFmMatrixEligible"></td>
+								  <td class="al-text-align-right">
+										  <div class="al-gutter-row">
+									  <div class="al-gutter-col al-w50 al-480-w50 al-320-w50 al-hidden-gt720" *ngIf="data?.paymentTableHeading3">
+										  <strong>{{data.paymentTableHeading3}}</strong>
+									  </div>
+									  <div class="al-gutter-col al-w100 al-480-w50 al-320-w50" *ngIf="benefitData?.isDeferred && data?.deferredAmt">
+										  <strong> {{data?.hyphenTxt}}  </strong>
+									  </div>
+									  <div *ngIf="!benefitData?.isDeferred">
+										  <div class="al-gutter-col al-w100 al-480-w50 al-320-w50" *ngIf="benefitData?.paymentOption?.paymentOptionId">
+											  <div *ngIf="benefitData?.paymentOption?.paymentOptionToYouAmt">
+												  <strong>{{benefitData?.paymentOption?.paymentOptionToYouAmt}} </strong>
+												  <br>
+												  <div *ngFor="let tableplandata of data?.totalsContent?.totalsLabelList">
+													  <ng-container *ngIf="benefitData?.paymentOption?.labelFrequencyId === tableplandata?.labelFrequencyId">
+														  {{tableplandata?.labelFrequency}}
+													  </ng-container>
+												  </div>
+											  </div>
+  
+										  </div>
+										  <div class="al-gutter-col al-w100 al-480-w50 al-320-w50" *ngIf="!benefitData?.paymentOption?.paymentOptionId">
+											  <strong> — </strong>
+										  </div>
+									  </div>
+									  </div>
+								  </td>
+								  <td *ngIf="!isOpFmMatrixEligible"></td>
+							  </tr>
+							  <tr *ngFor="let autoSelectedData of benefitData?.paymentOption?.autoSelectedFormsOfPaymentList; let s = index">
+								  <td *ngIf="!benefitData?.isDeferred" class="al-border-bottom-zero">
+								  </td>
+								  <td *ngIf="!benefitData?.isDeferred">
+									  <div class="al-gutter-row">
+										  <div class="al-gutter-col al-w50 al-480-w50 al-320-w50 al-hidden-gt720" *ngIf="data?.paymentTableHeading2">
+											  <strong>{{data.paymentTableHeading2}}</strong>
+										  </div>
+										  <div class="al-gutter-col al-w100 al-480-w50 al-320-w50" *ngIf="benefitData?.isDeferred">
+											  {{data?.deferredTxt}}
+										  </div>
+										  <div *ngIf="!benefitData?.isDeferred">
+											  <div class="al-gutter-col al-w100 al-480-w50 al-320-w50" *ngIf="autoSelectedData?.autoSelectOpFormId && autoSelectedData?.autoSelectedFormOfPayment">
+												  {{autoSelectedData?.autoSelectedFormOfPayment}}
+											  </div>
+											  <div class="al-gutter-col al-w100 al-480-w50 al-320-w50" *ngIf="!autoSelectedData?.autoSelectOpFormId && data?.notOnFileTxtWithDash">
+												  {{data?.notOnFileTxtWithDash}}
+											  </div>
+										  </div>
+									  </div>
+								  </td>
+								  <td *ngIf="!benefitData?.isDeferred && isOpFmMatrixEligible"></td>
+								  <td class="al-text-align-right" *ngIf="!benefitData?.isDeferred">
+									  <div class="al-gutter-row">
+										  <div class="al-gutter-col al-w50 al-480-w50 al-320-w50 al-hidden-gt720" *ngIf="data?.paymentTableHeading3">
+											  <strong>{{data.paymentTableHeading3}}</strong>
+										  </div>
+										  <div class="al-gutter-col al-w100 al-480-w50 al-320-w50" *ngIf="benefitData?.isDeferred && data?.deferredAmt">
+											  <strong> {{data?.hyphenTxt}} </strong>
+										  </div>
+										  <div *ngIf="!benefitData?.isDeferred">
+											  <div class="al-gutter-col al-w100 al-480-w50 al-320-w50" *ngIf="autoSelectedData?.autoSelectedFormOfPayment">
+												  <div *ngIf="autoSelectedData?.autoSelectedPaymentToYouAmt">
+													  <strong>{{autoSelectedData?.autoSelectedPaymentToYouAmt}} </strong>
+													  <br>
+													  <div *ngFor="let tableplandata1 of data?.totalsContent?.totalsLabelList">
+														  <ng-container *ngIf="autoSelectedData?.labelFrequencyId === tableplandata1?.labelFrequencyId">
+															  {{tableplandata1?.labelFrequency}}
+														  </ng-container>
+													  </div>
+												  </div>
+  
+											  </div>
+											  <div class="al-gutter-col al-w100 al-480-w50 al-320-w50" *ngIf="!autoSelectedData?.autoSelectedFormOfPayment">
+												  <strong> {{data?.hyphenTxt}} </strong>
+											  </div>
+										  </div>
+									  </div>
+  
+								  </td>
+								  <td *ngIf="!benefitData?.isDeferred && !isOpFmMatrixEligible" class="al-border-bottom-zero"></td>
+							  </tr>
+						  </tbody>
+					  </ng-container>
+				  </ng-container>
+			  </table>
+		  </div>
+	  
+		  
+  
+		  <!-- Start Total Estimated Payments here-->
+  
+		  <div *ngIf="quarterlytotalAmt !== 0 || onetimetotalAmt !== 0  || annualtotalAmt !== 0  || monthlytotalAmt !== 0 || semimonthlytotalAmt !== 0">
+			  <h2 *ngIf="data?.totalsContent?.totalsLabelList">{{data?.totalsContent?.totalsTitle}}</h2>
+		  <div *ngIf="data?.totalsContent?.totalsLabelList">
+			  <table class="al-table brand-1 al-table-responsive al-margin-bottom-0 al-total-estimated">
+				  <tbody>
+					  <ng-container *ngFor="let tableplandata of data?.totalsContent?.totalsLabelList; let n = index">
+					  <tr class="brand-highlight-5" *ngIf="tableplandata.labelFrequencyId === 'L' && onetimetotalAmt!== 0">
+								  <td class="ui-g-5 al-480-w100 al-320-w100 al-float-none"> 	
+										  <p *ngIf="tableplandata?.labelTxt" class="al-lead-in"> {{tableplandata.labelTxt}}</p>
+									  </td>
+										  <td class="al-basic-w30 al-480-w100 al-320-w100 al-text-align-right al-padding-right-0 al-float-none">
+												  <p *ngIf="defaultLocale"  class="al-lead-in ">
+													  {{onetimetotalAmt | currency:'USD':'symbol-narrow'}}
+												  </p>
+													  <p *ngIf="!defaultLocale"  class="al-lead-in ">
+														  {{onetimetotalAmt | currency:'USD':'symbol-narrow':'1.2-4':'fr'}}
+													  </p>
+											  </td>
+										  <td class="al-w25 al-480-w100 al-320-w100"></td>
+						  </tr>
+						  <tr class="brand-highlight-5" *ngIf="tableplandata.labelFrequencyId === 'Q' && quarterlytotalAmt !== 0">
+					  
+								  <td class="ui-g-5 al-480-w100 al-320-w100 al-float-none"> 	
+										  <p *ngIf="tableplandata?.labelTxt" class="al-lead-in"> {{tableplandata.labelTxt}}</p>
+									  </td>
+									  <td class="al-basic-w30 al-480-w100 al-320-w100 al-text-align-right al-padding-right-0 al-float-none">
+											  <p *ngIf="defaultLocale"  class="al-lead-in ">
+												  {{quarterlytotalAmt | currency:'USD':'symbol-narrow'}}
+											  </p>
+											  <p *ngIf="!defaultLocale"  class="al-lead-in ">
+												  {{quarterlytotalAmt | currency:'USD':'symbol-narrow':'1.2-4':'fr'}}
+											  </p>
+										  </td>
+										  <td class="al-w25 al-480-w100 al-320-w100"></td>
+						  </tr>
+						  <tr class="brand-highlight-5" *ngIf="tableplandata.labelFrequencyId === 'A' && annualtotalAmt!== 0">
+								  <td class="ui-g-5 al-480-w100 al-320-w100 al-float-none"> 	
+										  <p *ngIf="tableplandata?.labelTxt" class="al-lead-in"> {{tableplandata.labelTxt}}</p>
+									  </td>
+									  <td class="al-basic-w30 al-480-w100 al-320-w100 al-text-align-right al-padding-right-0 al-float-none">
+											  <p *ngIf="defaultLocale" class="al-lead-in ">
+												  {{annualtotalAmt | currency:'USD':'symbol-narrow'}}
+											  </p>
+											  <p *ngIf="!defaultLocale"  class="al-lead-in ">
+												  {{annualtotalAmt | currency:'USD':'symbol-narrow':'1.2-4':'fr'}}
+											  </p>
+										  </td>
+										  <td class="al-w25 al-480-w100 al-320-w100"></td>
+						  </tr>
+						  <tr class="brand-highlight-5" *ngIf="tableplandata.labelFrequencyId === 'S' && semimonthlytotalAmt!== 0"> 
+							  <td class="ui-g-5 al-480-w100 al-320-w100 al-float-none"> 	
+									  <p *ngIf="tableplandata?.labelTxt" class="al-lead-in"> {{tableplandata.labelTxt}}</p>
+								  </td>
+								  <td class="al-basic-w30 al-480-w100 al-320-w100 al-text-align-right al-padding-right-0 al-float-none">
+										  <p *ngIf="defaultLocale" class="al-lead-in ">
+											  {{semimonthlytotalAmt | currency:'USD':'symbol-narrow'}}
+										  </p>
+										  <p *ngIf="!defaultLocale"  class="al-lead-in ">
+											  {{semimonthlytotalAmt | currency:'USD':'symbol-narrow':'1.2-4':'fr'}}
+										  </p>
+									  </td>
+									  <td class="al-w25 al-480-w100 al-320-w100"></td>
+					  </tr>
+						  <tr class="brand-highlight-5" *ngIf="tableplandata.labelFrequencyId === 'M' && monthlytotalAmt!== 0"> 
+								  <td class="ui-g-5 al-480-w100 al-320-w100 al-float-none"> 	
+										  <p *ngIf="tableplandata?.labelTxt" class="al-lead-in"> {{tableplandata.labelTxt}}</p>
+									  </td>
+									  <td class="al-basic-w30 al-480-w100 al-320-w100 al-text-align-right al-padding-right-0 al-float-none">
+											  <p *ngIf="defaultLocale" class="al-lead-in ">
+												  {{monthlytotalAmt | currency:'USD':'symbol-narrow'}}
+											  </p>
+											  <p *ngIf="!defaultLocale"  class="al-lead-in ">
+												  {{monthlytotalAmt | currency:'USD':'symbol-narrow':'1.2-4':'fr'}}
+											  </p>
+										  </td>
+										  <td class="al-w25 al-480-w100 al-320-w100"></td>
+						  </tr>
+											  </ng-container>
+				  </tbody>
+				  <br>
+			  </table>
+  
+		  </div>
+	  </div>
+			  <p [innerHTML]="data?.summaryContentList"> </p>
+			  <!-- Start panel section here -->
+			  <div *ngIf="data?.paymentChoicePanelList">
+				  <al-panel-section></al-panel-section>
+			  </div>
+			  <hr>
+			  <al-footnote></al-footnote>
+		  <!-- Start continue button section here -->
+		  <div>
+				  <button pButton type="button" (click)="redirectNext(true)" [label]="data?.flowButtonNavigation?.buttonList[0]?.label" [title]="data?.flowButtonNavigation?.buttonList[0]?.label"
+				   class="al-button-positive al-button-large al-margin-bottom-1x"></button>
+		  
+				  <button pButton *ngIf = "!isBackButton && showCBLButton" type="button" (click)="redirectNext(false)" [label]="data?.flowButtonNavigation?.buttonList[1]?.label" [title]="data?.flowButtonNavigation?.buttonList[1]?.label"
+				   class="al-button-neutral al-button-large al-margin-bottom-1x al-margin-lft-rit-8">
+				  </button>
+  
+				  <button pButton *ngIf = "isBackButton" type="button" (click)="redirectBack()" [label]="data?.flowButtonNavigation?.buttonList[3]?.label" [title]="data?.flowButtonNavigation?.buttonList[3]?.label"
+				  class="al-button-neutral al-button-large al-margin-bottom-1x al-margin-lft-rit-8">
+			   </button>
+  
+  
+			  <button *ngIf="showQuitButton" pButton type="button" [label]="data?.flowButtonNavigation?.buttonList[2]?.label" [title]="data?.flowButtonNavigation?.buttonList[2]?.label"
+			   class="al-button-neutral al-button-large al-margin-bottom-1x" (click)="quitModal.showDialog($event)"></button>
+  
+			   <al-loading-indicator id="saveServiceLoader" loadingType="pageLevel" [initialShow]="false" loadingText="loading"></al-loading-indicator>
+			  <!-- Start quitModal here -->
+			  <al-dialog #quitModal [(visible)]="display" width="650" height="auto" >
+				  <h2 class="al-padding-bottom-1x" *ngIf="data?.flowButtonNavigation?.quitModalContent?.title">{{data.flowButtonNavigation.quitModalContent.title}}</h2>
+				  <div *ngFor="let quitModaltext of data?.flowButtonNavigation?.quitModalContent?.bodyList; let r = index">
+					  <ng-container *ngIf="!showCBLButton && quitModaltext?.action === 'comeBackLater' else elseBlock"></ng-container>
+					  <ng-template #elseBlock>
+						  <h5><b [innerHTML]="quitModaltext?.heading"></b></h5>
+						  <p [innerHTML]="quitModaltext?.paragraph"></p>
+					  </ng-template>
+				  </div>
+				  <hr class="al-padding-bottom-1x">
+					  <button *ngIf="showCBLButton && data?.flowButtonNavigation?.quitModalContent?.buttonList[0]?.label" type="button" class="al-button-positive al-rew-pointer al-button-large al-margin-top-1x al-rew-pointer" pButton (click)="redirectNext(false);quitModal.hideDialog($event)"
+					   [label]="data?.flowButtonNavigation?.quitModalContent?.buttonList[0]?.label" [title]="data?.flowButtonNavigation?.quitModalContent?.buttonList[0]?.label"></button>
+					  <button pButton type="button" *ngIf="data?.flowButtonNavigation?.quitModalContent?.buttonList[1]?.label" (click)="checkPreActivityEdit();quitModal.hideDialog($event)" [label]="data?.flowButtonNavigation?.quitModalContent?.buttonList[1]?.label" [title]="data?.flowButtonNavigation?.quitModalContent?.buttonList[1]?.label"
+					   class="al-button-neutral al-button-large al-margin-top-1x al-rew-pointer"></button>
+				  <button pButton type="button" (click)="quitModal.hideDialog($event)" *ngIf="data?.flowButtonNavigation?.quitModalContent?.buttonList[2]?.label"
+				   [label]="data?.flowButtonNavigation.quitModalContent?.buttonList[2]?.label" [title]="data?.flowButtonNavigation.quitModalContent?.buttonList[2]?.label" class="al-button-neutral al-button-large al-margin-top-1x al-rew-pointer"></button>
+			  </al-dialog>
+			  <!-- END quitModal here -->
+		  </div>
+		  </div>
+  
+	  </div>	
+	  <al-right-side-components></al-right-side-components>
+  </div>
+  

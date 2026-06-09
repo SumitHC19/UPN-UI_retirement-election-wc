@@ -1,0 +1,471 @@
+<!-- DB CASHOUT AND DB NQE COMPONENT PROGRESS BAR START -->
+<ng-container *ngIf="checkresponse && !showError && (isDbCashoutFlag || isDbNQFlag)">
+    <al-dbcnq-progress-bar></al-dbcnq-progress-bar>
+</ng-container>
+<al-loading-indicator *ngIf="isDbCashoutFlag || isDbNQFlag" id="pagelevel" loadingType="pageLevel" [initialShow]="isDbCashoutOrNQPageLoading"
+    loadingText="loading"></al-loading-indicator>
+
+<ng-container *ngIf="(isDbCashoutFlag || isDbNQFlag) && showError && checkresponse">
+    <al-error></al-error>
+</ng-container>
+<!-- DB CASHOUT AND DB NQE COMPONENT PROGRESS BAR END -->
+<ng-container *ngIf="!checkresponse">
+    <al-loading-indicator id="pagelevel" loadingType="pageLevel" [initialShow]="true" loadingText="loading">
+    </al-loading-indicator>
+</ng-container>
+<div *ngIf="checkresponse" id="incomeTaxWithholding" class="al-font-change al-spacing">
+    <div class="al-u-10-16 al-480-w100 al-320-w100 al-720-w100">
+    <div *ngIf="showError && !isDbCashoutFlag && !isDbNQFlag ">
+        <al-error></al-error>
+    </div>
+    <div *ngIf="!showError">
+        <form *ngIf="incomeTaxWthlForm" [formGroup]="incomeTaxWthlForm"
+            (ngSubmit)="continueClick(incomeTaxWthlForm, incomeTaxWthlForm.valid, true, isDbCashoutFlag, isDbNQFlag)">
+                <div id="incomeTaxHeader">
+                    <h1 class="al-margin-bottom-0">{{data?.changeIncomeTaxWithholding?.pageNameText}}</h1>
+                </div>
+   <al-dynamic-edit-loader (continueEdit) = "continueEdit($event)"></al-dynamic-edit-loader>
+                <p *ngIf="isDbNQFlag && data?.headerPlaceHolder" [innerHTML]="data?.headerPlaceHolder | UISafe: 'html'"></p>
+                <p>{{data?.changeIncomeTaxWithholding?.introText}}</p>
+                <div class="al-padding-bottom-1x">
+                    <al-tips-alerts [tipText]="data?.changeIncomeTaxWithholding?.tipBadgeText" [tipSize]="'medium'"
+                        [displayText]="data?.changeIncomeTaxWithholding?.tipHeaderText">
+                        <p [innerHTML]="data?.changeIncomeTaxWithholding?.tipContentText"></p>
+                    </al-tips-alerts>
+                </div>
+                <h3>{{data?.changeIncomeTaxWithholding?.taxHeaderText}}</h3>
+                <p [innerHtml]="data?.changeIncomeTaxWithholding?.taxContentText | UISafe:'html'"></p>
+                <h2>{{data?.changeIncomeTaxWithholding?.paymentNameText}}</h2>
+                <p *ngIf="isDbNQFlag">{{data?.changeIncomeTaxWithholding?.paymentDescriptionText}}</p>
+                <div class="clearfix">
+                    <ng-container
+                        *ngFor="let incomeTaxWithholdingTableItem of data?.changeIncomeTaxWithholding?.incomeTaxWithholdingTables; let i = index; let even=even;">
+                        <div class="al-w50 al-480-w100" [class.al-margin-bottom-1x]="even"
+                            [class.al-padding-zero-720]="even" [class.al-padding-right-2x]="even"
+                            [id]="incomeTaxWithholdingTableItem.id" *ngIf="showTable(incomeTaxWithholdingTableItem.id)">
+                            <h3 class="al-margin-bottom-1x">{{incomeTaxWithholdingTableItem.tableHeaderText}}</h3>
+                            <table class="al-table"
+                                [summary]="incomeTaxWithholdingTableItem?.withholdChoicesAccessibilityText">
+                                <ng-container *ngFor="let row of incomeTaxWithholdingTableItem?.rowList | slice:0:1;">
+                                    <thead>
+                                        <tr>
+                                            <th>
+                                                <ng-container *ngFor="let labelItem of row?.labelList;">
+                                                    <div [innerHTML]="labelItem"></div>
+                                                </ng-container>
+                                            </th>
+                                            <th class="al-text-align-right">{{row.displayValue}}</th>
+                                        </tr>
+                                    </thead>
+                                </ng-container>
+                                <tbody>
+                                    <tr>
+                                        <td colspan="2">
+                                            <ng-container
+                                                *ngFor="let row of incomeTaxWithholdingTableItem?.rowList; let first = first; let last = last;let radioIndex= index">
+                                                <div *ngIf="!first" [class.al-padding-left-2x]="row.isNestedOption">
+                                                    <ng-container *ngIf="!row.showRadio">
+                                                        <ng-container *ngIf="row.fieldType">
+                                                            <ng-container *ngIf="!(row.fieldType === 'dropdown')">
+                                                                <div class="clearfix">
+                                                                    <al-popover #TooltipMouseOver1 position="top"
+                                                                        contentClass="al-font-change"
+                                                                        [endPopoverAccessibilityText]="'End of popover content'"
+                                                                        [beginPopoverAccessibilityText]="'Beginning of popover content'">
+                                                                        <ng-container
+                                                                            *ngFor="let labelItem of row?.labelList;">
+                                                                            <h2 [innerHTML]="labelItem"></h2>
+                                                                        </ng-container>
+                                                                        <p [innerHTML]="row.tooltip"></p>
+                                                                    </al-popover>
+                                                                    <div class="al-display-inline-flex left">
+                                                                        <ng-container *ngIf="row.tooltip">
+                                                                            <ng-container
+                                                                                *ngFor="let labelItem of row?.labelList;">
+                                                                                <a aria-haspopup="true"
+                                                                                    href="javaScript:void(0);"
+                                                                                    (mouseenter)="TooltipMouseOver1.showPopOver($event)"
+                                                                                    (mouseleave)="TooltipMouseOver1.hidePopOver($event)"
+                                                                                    class="al-tooltip al-display-inline"
+                                                                                    [innerHTML]="labelItem"></a>
+                                                                            </ng-container>
+                                                                        </ng-container>
+                                                                        <ng-container *ngIf="!row.tooltip">
+                                                                            <ng-container
+                                                                                *ngFor="let labelItem of row?.labelList;">
+                                                                                <div class="al-display-inline"
+                                                                                    [innerHTML]="labelItem"></div>
+                                                                            </ng-container>
+                                                                        </ng-container>
+                                                                    </div>
+                                                                    <div class="al-display-inline-flex al-float-right">
+                                                                        <ng-container
+                                                                            *ngIf="row.fieldType === 'percent'">
+                                                                            <input class="al-input-4-char" type="text"
+                                                                                pInputText
+                                                                                [attr.aria-label]="row?.accessibilityText"
+                                                                                [formControlName]="'field'+incomeTaxWithholdingTableItem.id+row.name"
+                                                                                [value]="row?.defaultValue != null ? row.defaultValue : '' " />
+                                                                            <span class="percent">%</span>
+                                                                        </ng-container>
+                                                                        <ng-container
+                                                                            *ngIf="row.fieldType === 'amount' && defaultLocale">
+                                                                           <span class="dollar" *ngIf="data?.changeIncomeTaxWithholding?.symbolText && defaultLocale" [innerHTML]="data?.changeIncomeTaxWithholding?.symbolText | UISafe: 'html'"></span>
+                                                                            <input class="al-input-6-char" type="text"
+                                                                                pInputText
+                                                                                [attr.aria-label]="row?.accessibilityText"
+                                                                                [formControlName]="'field'+incomeTaxWithholdingTableItem.id+row.name"
+                                                                                [value]="row?.defaultValue != null ? row.defaultValue : '' " />
+                                                                            <span class="dollar al-padding-left-1x" *ngIf="data?.changeIncomeTaxWithholding?.symbolText && !defaultLocale" [innerHTML]="data?.changeIncomeTaxWithholding?.symbolText | UISafe: 'html'"></span>
+                                                                        </ng-container>
+                                                                        <ng-container
+                                                                        *ngIf="row.fieldType === 'amount' && !defaultLocale">
+                                                                       <span class="dollar" *ngIf="data?.changeIncomeTaxWithholding?.symbolText && defaultLocale" [innerHTML]="data?.changeIncomeTaxWithholding?.symbolText | UISafe: 'html'"></span>
+                                                                        <input class="al-input-6-char" type="text"
+                                                                            pInputText
+                                                                            [attr.aria-label]="row?.accessibilityText"
+                                                                            [formControlName]="'field'+incomeTaxWithholdingTableItem.id+row.name"
+                                                                            [value]="row?.formattedDefaultValue != null ? row.formattedDefaultValue : '' " />
+                                                                        <span class="dollar al-padding-left-1x" *ngIf="data?.changeIncomeTaxWithholding?.symbolText && !defaultLocale" [innerHTML]="data?.changeIncomeTaxWithholding?.symbolText | UISafe: 'html'"></span>
+                                                                    </ng-container>
+                                                                        <ng-container
+                                                                            *ngIf="row.fieldType === 'number'">
+                                                                            <input class="al-input-4-char" type="text"
+                                                                                pInputText
+                                                                                [attr.aria-label]="row?.accessibilityText"
+                                                                                [formControlName]="'field'+incomeTaxWithholdingTableItem.id+row.name"
+                                                                                [value]="row?.defaultValue != null ? row.defaultValue : '' " />
+                                                                        </ng-container>
+                                                                    </div>
+                                                                    <div *ngIf="incomeTaxWthlForm.controls['field' + incomeTaxWithholdingTableItem.id + row.name].errors?.required"
+                                                                        class="al-field-content error-container al-padding-top-2x">
+                                                                        <ng-container
+                                                                            *ngFor="let fieldItem of row?.fieldEditList;">
+                                                                            <ng-container
+                                                                                *ngIf="fieldItem?.validatorType === 'required'">
+                                                                                <p class="field-error al-float-right"
+                                                                                    aria-live="assertive"
+                                                                                    *ngIf="incomeTaxWthlForm.controls['field' + incomeTaxWithholdingTableItem.id + row.name].errors?.required">
+                                                                                    {{fieldItem.editMessage}}</p>
+                                                                            </ng-container>
+                                                                        </ng-container>
+                                                                    </div>
+                                                                    <div *ngIf="incomeTaxWthlForm.controls['field' + incomeTaxWithholdingTableItem.id + row.name].errors?.pattern"
+                                                                        class="al-field-content error-container al-padding-top-2x">
+                                                                        <ng-container
+                                                                            *ngFor="let fieldItem of row?.fieldEditList;">
+                                                                            <ng-container
+                                                                                *ngIf="fieldItem?.validatorType === 'validformat'">
+                                                                                <p class="field-error al-float-right"
+                                                                                    aria-live="assertive"
+                                                                                    *ngIf="incomeTaxWthlForm.controls['field' + incomeTaxWithholdingTableItem.id + row.name].errors?.pattern">
+                                                                                    {{fieldItem.editMessage}}</p>
+                                                                            </ng-container>
+                                                                        </ng-container>
+                                                                    </div>
+																	<div *ngIf="incomeTaxWthlForm.controls['field' + incomeTaxWithholdingTableItem.id + row.name].errors?.min && !incomeTaxWthlForm.controls['field' + incomeTaxWithholdingTableItem.id + row.name].errors?.pattern"
+                                                                        class="al-field-content error-container al-padding-top-2x">
+                                                                        <ng-container
+                                                                            *ngFor="let fieldItem of row?.fieldEditList;">
+                                                                            <ng-container
+                                                                                *ngIf="fieldItem?.validatorType === 'range'">
+                                                                                <p class="field-error al-float-right"
+                                                                                    aria-live="assertive"
+                                                                                    *ngIf="incomeTaxWthlForm.controls['field' + incomeTaxWithholdingTableItem.id + row.name].errors?.min">
+                                                                                    {{fieldItem.editMessage}}</p>
+                                                                            </ng-container>
+                                                                        </ng-container>
+                                                                    </div>
+                                                                    <div *ngIf="!incomeTaxWthlForm.controls['field' + incomeTaxWithholdingTableItem.id + row.name].errors?.pattern && !incomeTaxWthlForm.controls['field' + incomeTaxWithholdingTableItem.id + row.name].errors?.min && this.defaultLocale ? incomeTaxWthlForm.controls['field' + incomeTaxWithholdingTableItem.id + row.name].errors?.range : incomeTaxWthlForm.controls['field' + incomeTaxWithholdingTableItem.id + row.name].errors?.forbiddenAmount"
+                                                                        class="al-field-content error-container al-padding-top-2x">
+                                                                        <ng-container
+                                                                            *ngFor="let fieldItem of row?.fieldEditList;">
+                                                                            <ng-container
+                                                                                *ngIf="fieldItem?.validatorType === 'range'">
+                                                                                <p class="field-error al-float-right"
+                                                                                    aria-live="assertive"
+                                                                                    *ngIf="!incomeTaxWthlForm.controls['field' + incomeTaxWithholdingTableItem.id + row.name].errors?.pattern && this.defaultLocale ? incomeTaxWthlForm.controls['field' + incomeTaxWithholdingTableItem.id + row.name].errors?.range : incomeTaxWthlForm.controls['field' + incomeTaxWithholdingTableItem.id + row.name].errors?.forbiddenAmount">
+                                                                                    {{fieldItem.editMessage}}
+                                                                                </p>
+                                                                            </ng-container>
+                                                                        </ng-container>
+                                                                    </div>
+
+                                                                    <div>
+
+                                                                    </div>
+                                                                </div>
+                                                            </ng-container>
+                                                            <ng-container *ngIf="row.fieldType === 'dropdown'">
+                                                                <div class="clearfix">
+                                                                    <ng-container
+                                                                        *ngFor="let labelItem of row?.labelList;">
+                                                                        <p class="al-display-inline"
+                                                                            [innerHTML]="labelItem"></p>
+                                                                    </ng-container>
+                                                                    <div class=" al-display-inline al-float-right">
+                                                                        <select class="al-select-box-small"
+                                                                            (change)="row?.useThisStateButton ? onSelectChange() : null"
+                                                                            [formControlName]="'field'+incomeTaxWithholdingTableItem.id+row.name">
+                                                                            <option
+                                                                                *ngFor="let dropDownValidValue of row?.dropDownValidValues;"
+                                                                                [selected]="dropDownValidValue.isSelected==true"
+                                                                                [value]="dropDownValidValue.value"
+                                                                                [innerHTML]="dropDownValidValue.valueDescription">
+                                                                            </option>
+                                                                        </select>
+                                                                    </div>
+                                                                    <div *ngIf="incomeTaxWthlForm.controls['field' + incomeTaxWithholdingTableItem.id + row.name].errors?.required"
+                                                                        class="al-field-content error-container al-padding-top-2x">
+                                                                        <ng-container
+                                                                            *ngFor="let fieldItem of row?.fieldEditList;">
+                                                                            <ng-container
+                                                                                *ngIf="fieldItem?.validatorType === 'required'">
+                                                                                <p class="field-error al-float-right"
+                                                                                    aria-live="assertive"
+                                                                                    *ngIf="incomeTaxWthlForm.controls['field' + incomeTaxWithholdingTableItem.id + row.name].errors?.required">
+                                                                                    {{fieldItem.editMessage}}
+                                                                                </p>
+                                                                            </ng-container>
+                                                                        </ng-container>
+                                                                    </div>
+                                                                    <div *ngIf="incomeTaxWthlForm.controls['field' + incomeTaxWithholdingTableItem.id + row.name].errors?.pattern"
+                                                                        class="al-field-content error-container al-padding-top-2x">
+                                                                        <ng-container
+                                                                            *ngFor="let fieldItem of row?.fieldEditList;">
+                                                                            <ng-container
+                                                                                *ngIf="fieldItem?.validatorType === 'validformat'">
+                                                                                <p class="field-error al-float-right"
+                                                                                    aria-live="assertive"
+                                                                                    *ngIf="incomeTaxWthlForm.controls['field' + incomeTaxWithholdingTableItem.id + row.name].errors?.pattern">
+                                                                                    {{fieldItem.editMessage}}
+                                                                                </p>
+                                                                            </ng-container>
+                                                                        </ng-container>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="al-text-align-right al-padding-top-2x"
+                                                                    *ngIf="row.useThisStateButton">
+                                                                    <button pButton type="button"
+                                                                        [label]="row.useThisStateButton"
+                                                                        [title]="row.useThisStateButton"
+                                                                        (click)="useThisStateBtnClick(isDbCashoutFlag, isDbNQFlag)"
+                                                                        class="al-button-neutral al-margin-bottom-1x"></button>
+                                                                </div>
+                                                                <div *ngIf="row.useThisStateButton">
+                                                                    <hr>
+                                                                    <ng-container
+                                                                        *ngFor="let labelItem of row?.labelList;">
+                                                                        <p class="al-display-inline ">
+                                                                            <strong [innerHTML]="labelItem"></strong>
+                                                                        </p>
+                                                                    </ng-container>
+                                                                    <div class=" al-display-inline al-float-right">
+                                                                        <div
+                                                                            *ngFor="let dropDownValidValue of row?.dropDownValidValues;">
+                                                                            <span *ngIf="dropDownValidValue.isSelected"
+                                                                                [innerHTML]="dropDownValidValue.valueDescription">
+                                                                            </span>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </ng-container>
+                                                        </ng-container>
+                                                        <ng-container *ngIf="!row.fieldType">
+                                                            <div class="al-display-inline-flex">
+                                                                <ng-container *ngFor="let labelItem of row?.labelList;">
+                                                                    <div [innerHTML]="labelItem"></div>
+                                                                </ng-container>
+                                                            </div>
+                                                            <div class="al-display-inline-flex al-float-right">
+                                                                {{row.displayValue}}</div>
+                                                        </ng-container>
+                                                    </ng-container>
+                                                    <ng-container *ngIf="row.showRadio">
+                                                        <div class="clearfix">
+                                                            <ng-container *ngIf="!row.fieldType">
+                                                                <div class="al-display-inline-flex">
+                                                                    <p-radioButton class="label-inline"
+                                                                        name="{{incomeTaxWithholdingTableItem.id}}"
+                                                                        formControlName="{{incomeTaxWithholdingTableItem.id}}"
+                                                                        [value]="row.name"
+                                                                        (ngModelChange)="onChange($event, incomeTaxWithholdingTableItem.id)"
+                                                                        inputId="radio_{{radioIndex}}_{{incomeTaxWithholdingTableItem.id}}">
+                                                                    </p-radioButton>
+                                                                    <div>
+                                                                        <ng-container
+                                                                            *ngFor="let labelItem of row?.labelList;">
+                                                                            <label class="label-inline"
+                                                                                for="radio_{{radioIndex}}_{{incomeTaxWithholdingTableItem.id}}">
+                                                                                <span
+                                                                                    [innerHTML]="labelItem"></span><br>
+                                                                            </label>
+                                                                        </ng-container>
+                                                                    </div>
+                                                                </div>
+
+                                                                <div class="al-display-inline-flex al-float-right">
+                                                                    {{row.displayValue}}</div>
+                                                            </ng-container>
+                                                            <ng-container *ngIf="row.fieldType">
+                                                                <div class="al-display-inline-flex">
+                                                                    <p-radioButton class="label-inline"
+                                                                        name="{{incomeTaxWithholdingTableItem.id}}"
+                                                                        formControlName="{{incomeTaxWithholdingTableItem.id}}"
+                                                                        [value]="row.name"
+                                                                        (ngModelChange)="onChange($event, incomeTaxWithholdingTableItem.id)"
+                                                                        inputId="radio_{{radioIndex}}_{{incomeTaxWithholdingTableItem.id}}">
+                                                                    </p-radioButton>
+                                                                    <div
+                                                                        [class.al-padding-bottom-2x]="row?.labelList.length === 1">
+                                                                        <ng-container
+                                                                            *ngFor="let labelItem of row?.labelList;">
+                                                                            <label class="label-inline"
+                                                                                [innerHTML]="labelItem"
+                                                                                for="radio_{{radioIndex}}_{{incomeTaxWithholdingTableItem.id}}">
+                                                                            </label><br>
+                                                                        </ng-container>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="al-display-inline-flex al-float-right">
+                                                                    <ng-container *ngIf="row.fieldType === 'percent'">
+                                                                        <input class="al-input-4-char" type="text"
+                                                                            pInputText
+                                                                            [formControlName]="'field'+incomeTaxWithholdingTableItem.id+row.name"
+                                                                            [attr.aria-label]="row?.accessibilityText"
+                                                                            [value]="row?.defaultValue != null ? row.defaultValue : '' " />
+                                                                        <span class="percent">%</span>
+                                                                    </ng-container>
+                                                                    <ng-container *ngIf="row.fieldType === 'amount' && defaultLocale">
+                                                                       <span class="dollar" *ngIf="data?.changeIncomeTaxWithholding?.symbolText && defaultLocale" [innerHTML]="data?.changeIncomeTaxWithholding?.symbolText | UISafe: 'html'"></span>
+                                                                        <input
+                                                                            [attr.aria-label]="row?.accessibilityText"
+                                                                            class="al-input-6-char" type="text"
+                                                                            pInputText
+                                                                            [formControlName]="'field'+incomeTaxWithholdingTableItem.id+row.name"
+                                                                            [value]="row?.defaultValue != null ? row.defaultValue : '' " />
+                                                                            <span class="dollar al-padding-left-1x" *ngIf="data?.changeIncomeTaxWithholding?.symbolText && !defaultLocale" [innerHTML]="data?.changeIncomeTaxWithholding?.symbolText | UISafe: 'html'"></span>
+                                                                   </ng-container>
+                                                                   <ng-container *ngIf="row.fieldType === 'amount' && !defaultLocale">
+                                                                    <span class="dollar" *ngIf="data?.changeIncomeTaxWithholding?.symbolText && defaultLocale" [innerHTML]="data?.changeIncomeTaxWithholding?.symbolText | UISafe: 'html'"></span>
+                                                                     <input
+                                                                         [attr.aria-label]="row?.accessibilityText"
+                                                                         class="al-input-6-char" type="text"
+                                                                         pInputText
+                                                                         [formControlName]="'field'+incomeTaxWithholdingTableItem.id+row.name"
+                                                                         [value]="row?.formattedDefaultValue != null ? row.formattedDefaultValue : '' "  />
+                                                                         <span class="dollar al-padding-left-1x" *ngIf="data?.changeIncomeTaxWithholding?.symbolText && !defaultLocale" [innerHTML]="data?.changeIncomeTaxWithholding?.symbolText | UISafe: 'html'"></span>
+                                                                </ng-container>
+                                                                    <ng-container *ngIf="row.fieldType === 'number'">
+                                                                        <input
+                                                                            [attr.aria-label]="row?.accessibilityText"
+                                                                            class="al-input-4-char" type="text"
+                                                                            pInputText
+                                                                            [formControlName]="'field'+incomeTaxWithholdingTableItem.id+row.name"
+                                                                            [value]="row?.defaultValue != null ? row.defaultValue : '' " />
+                                                                    </ng-container>
+                                                                    <br>
+                                                                </div>
+                                                                <div *ngIf="incomeTaxWthlForm.controls['field' + incomeTaxWithholdingTableItem.id + row.name].errors?.required"
+                                                                    class="al-field-content error-container">
+                                                                    <ng-container
+                                                                        *ngFor="let fieldItem of row?.fieldEditList;">
+                                                                        <ng-container
+                                                                            *ngIf="fieldItem?.validatorType === 'required'">
+                                                                            <p class="field-error al-float-right"
+                                                                                aria-live="assertive"
+                                                                                *ngIf="incomeTaxWthlForm.controls['field' + incomeTaxWithholdingTableItem.id + row.name].errors?.required">
+                                                                                {{fieldItem.editMessage}}</p>
+                                                                        </ng-container>
+                                                                        <!-- <ng-container *ngIf="fieldItem?.validatorType === 'range'">
+                                                                            <p class="field-error" aria-live="assertive"
+                                                                            *ngIf="incomeTaxWthlForm.controls['field' + incomeTaxWithholdingTableItem.id + row.name].errors?.range">
+                                                                            {{fieldItem.editMessage}}</p>
+                                                                        </ng-container>
+                                                                        <ng-container *ngIf="fieldItem?.validatorType === 'validformat'">
+                                                                            <p class="field-error" aria-live="assertive"
+                                                                            *ngIf="incomeTaxWthlForm.controls['field' + incomeTaxWithholdingTableItem.id + row.name].errors?.pattern">
+                                                                            {{fieldItem.editMessage}}</p>
+                                                                        </ng-container> -->
+                                                                    </ng-container>
+                                                                </div>
+                                                              
+                                                                <div *ngIf="incomeTaxWthlForm.controls['field' + incomeTaxWithholdingTableItem.id + row.name].errors?.pattern"
+                                                                    class="al-field-content error-container">
+                                                                    <ng-container
+                                                                        *ngFor="let fieldItem of row?.fieldEditList;">
+                                                                        <ng-container
+                                                                            *ngIf="fieldItem?.validatorType === 'validformat'">
+                                                                            <p class="field-error al-float-right"
+                                                                                aria-live="assertive"
+                                                                                *ngIf="incomeTaxWthlForm.controls['field' + incomeTaxWithholdingTableItem.id + row.name].errors?.pattern">
+                                                                                {{fieldItem.editMessage}} 
+                                                                            </p>
+                                                                        </ng-container>
+                                                                    </ng-container>
+                                                                </div>
+                                                                  <div *ngIf="!incomeTaxWthlForm.controls['field' + incomeTaxWithholdingTableItem.id + row.name].errors?.pattern && this.defaultLocale ? incomeTaxWthlForm.controls['field' + incomeTaxWithholdingTableItem.id + row.name].errors?.range : incomeTaxWthlForm.controls['field' + incomeTaxWithholdingTableItem.id + row.name].errors?.forbiddenAmount"
+                                                                class="al-field-content error-container al-padding-top-2x">
+                                                                <ng-container
+                                                                    *ngFor="let fieldItem of row?.fieldEditList;">
+                                                                    <ng-container
+                                                                        *ngIf="fieldItem?.validatorType === 'range'">
+                                                                        <p class="field-error al-float-right"
+                                                                            aria-live="assertive"
+                                                                            *ngIf="!incomeTaxWthlForm.controls['field' + incomeTaxWithholdingTableItem.id + row.name].errors?.pattern && this.defaultLocale ? incomeTaxWthlForm.controls['field' + incomeTaxWithholdingTableItem.id + row.name].errors?.range : incomeTaxWthlForm.controls['field' + incomeTaxWithholdingTableItem.id + row.name].errors?.forbiddenAmount">
+                                                                            {{fieldItem.editMessage}} 
+                                                                        </p>
+                                                                    </ng-container>
+                                                                </ng-container>
+                                                            </div>
+                                                            </ng-container>
+                                                        </div>
+                                                    </ng-container>
+                                                    <ng-container *ngIf="!last">
+                                                        <hr>
+                                                    </ng-container>
+                                                </div>
+                                            </ng-container>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </ng-container>
+                </div>
+                <p *ngIf="isDbCashoutFlag" [innerHTML]="data?.disclaimer"></p>
+                <hr>
+                <!-- DB CASHOUT/ NQ ENROLLMENT  COMPONENT BUTTON START -->
+                <div *ngIf="isDbCashoutFlag || isDbNQFlag">
+                        <p *ngIf="isDbNQFlag && data?.footerPlaceHolder" [innerHTML]="data?.footerPlaceHolder | UISafe: 'html'"></p>
+                    <button *ngIf="data?.continueButtonLabel" pButton type="submit" label="{{data?.continueButtonLabel}}" title="{{data?.continueButtonLabel}}"
+                        class="al-button-positive al-button-large"></button>
+                    <button *ngIf="data?.cancelButtonLabel" pButton type="button" label="{{data?.cancelButtonLabel}}" title="{{data?.cancelButtonLabel}}"
+                        (click)="redirectToReviewPage($event)" class="al-button-neutral al-button-large"></button>
+                </div>
+                <!-- DB CASHOUT/ NQ ENROLLMENT COMPONENT BUTTON END -->
+                <!-- Start continue button section here -->
+                <div *ngIf="!isDbCashoutFlag && !isDbNQFlag" class="al-margin-top-2x">
+                    <button pButton type="submit"
+                        [label]="data?.changeIncomeTaxWithholding?.flowButtonNavigation?.buttonList[0]?.label"
+                        [title]="data?.changeIncomeTaxWithholding?.flowButtonNavigation?.buttonList[0]?.label"
+                        class="al-button-positive al-button-large al-margin-bottom-1x"></button>
+                        <button pButton type="button"
+                            [label]="data?.changeIncomeTaxWithholding?.flowButtonNavigation?.buttonList[1]?.label"
+                            [title]="data?.changeIncomeTaxWithholding?.flowButtonNavigation?.buttonList[1]?.label"
+                            class="al-button-neutral al-button-large al-margin-bottom-1x al-margin-lft-rit-8"
+                            (click)="cancelClick()">
+                        </button>
+                        <al-loading-indicator id="saveServiceLoader" loadingType="pageLevel" [initialShow]="false"
+                        loadingText="loading"></al-loading-indicator>
+                </div>
+        </form>
+        </div>
+        </div>
+        <!-- DB CASHOUT AND DB NQE COMPONENT RIGHT RAIL START -->
+        <div *ngIf="!showError && (isDbCashoutFlag || isDbNQFlag)" class="portlet-column al-u-6-16 al-u-2-2 al-u-4-4">
+            <al-dbcnq-right-rail></al-dbcnq-right-rail>
+        </div>
+        <!-- DB CASHOUT AND DB NQE COMPONENT RIGHT RAIL END -->
+    <al-right-side-components *ngIf="!isDbCashoutFlag && !isDbNQFlag"></al-right-side-components>
+</div>

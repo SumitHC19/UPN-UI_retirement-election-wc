@@ -1,0 +1,76 @@
+<div *ngIf="checkResponse" id="authorizationrequired" class="al-font-change al-spacing">
+    <div class="al-u-10-16 al-480-w100 al-320-w100 al-720-w100">
+        <div id="submittedHeader">
+            <h1 class="al-margin-bottom-0" [innerHTML]="data?.submittedSuccessfullyHeader?.pageNameText"></h1>
+        </div>
+        <div *ngIf="showError">
+            <al-error></al-error>
+        </div>
+        <!-- start tip tooltip and content here  -->
+        <div *ngIf="!showError">
+                <p class="al-lead-in al-padding-bottom-0" [innerHTML]="data?.submittedSuccessfullyHeader?.confirmationNumberText | UISafe:'html'"></p>
+                <p *ngIf="data?.submittedSuccessfullyHeader?.completeEmailText || data.submittedSuccessfullyHeader.completePrintText || data?.submittedSuccessfullyHeader?.completeRecordsText"
+                    class="al-padding-bottom-0">
+                    {{data?.submittedSuccessfullyHeader?.completeEmailText}}
+                    <a [title]="data.submittedSuccessfullyHeader.completePrintText" href="javascript:window.print();" (click)="authToggleAll()">{{ data?.submittedSuccessfullyHeader?.completePrintText }}</a>
+                    {{data?.submittedSuccessfullyHeader?.completeRecordsText}}
+                </p>
+                <p *ngIf="data?.submittedSuccessfullyHeader?.completePostalText"  [innerHTML]="data?.submittedSuccessfullyHeader?.completePostalText | UISafe:'html'" class="al-padding-bottom-0">
+                </p>
+                <p *ngIf="data?.submittedSuccessfullyHeader?.alsoReceiveHeader"  [innerHTML]="data?.submittedSuccessfullyHeader?.alsoReceiveHeader | UISafe:'html'"></p>
+                <ul>
+                    <li *ngIf="data?.submittedSuccessfullyHeader?.alsoReceiveEmail">{{data?.submittedSuccessfullyHeader?.alsoReceiveEmail}}</li>
+                    <li *ngIf="data?.submittedSuccessfullyHeader?.alsoReceiveText">{{data?.submittedSuccessfullyHeader?.alsoReceiveText}}</li>
+                    <li *ngIf="data?.submittedSuccessfullyHeader?.alsoReceiveDeliveryNotice" [outerHTML]="data?.submittedSuccessfullyHeader?.alsoReceiveDeliveryNotice"></li>
+                </ul>
+                <p *ngIf="data?.submittedSuccessfullyHeader?.alsoReceiveEmailNotice" [innerHTML]="data?.submittedSuccessfullyHeader?.alsoReceiveEmailNotice | UISafe: 'html'"></p>
+                <p *ngIf="data?.submittedSuccessfullyHeader?.alsoReceiveTextNotice">{{data?.submittedSuccessfullyHeader?.alsoReceiveTextNotice}}</p>
+                <p class="al-padding-1x" [innerHTML]="data?.submittedSuccessfullyHeader?.cancelText | UISafe:'html'"></p>
+                <p *ngIf="data?.submittedSuccessfullyHeader?.statusTrackerTextLink" [innerHTML]="data?.submittedSuccessfullyHeader?.statusTrackerTextLink | UISafe: 'html'"></p>
+                <h2 *ngIf="data?.submittedSuccessfullyFollowUps?.followUpHeader"  [innerHTML]="data?.submittedSuccessfullyFollowUps?.followUpHeader | UISafe:'html'"></h2>
+                <p *ngIf="data?.submittedSuccessfullyFollowUps?.finishText"  [innerHTML]="data?.submittedSuccessfullyFollowUps?.finishText | UISafe:'html'"></p>
+                <al-content-box [contentBoxType]="'tertiary'" [contentBoxBrand]="'brand-4'" [hasArrow]="false" [arrowPosition]="">
+                    <h4>
+                        <strong>
+                            <span [innerHTML]="data?.submittedSuccessfullyFollowUps?.signReturnText | UISafe:'html'"></span>
+                        </strong>
+                    </h4>
+                    <ng-container *ngIf="loader">
+                        <p class="al-padding-top-1x"><i class="al-icon-alert"></i>&nbsp;<span [innerHTML]="loadingPdfText | UISafe:'html'"></span></p>
+						<al-loading-indicator
+							[initialShow]="true"
+							loadingText="{{uploadingPdfText}}">
+                        </al-loading-indicator>
+                    </ng-container>
+                    <ol class="al-padding-top-0" *ngIf="!loader">
+                    <ng-container *ngIf="data?.submittedSuccessfullyFollowUps?.authorizationFormDetails && data?.submittedSuccessfullyFollowUps?.confirmationStatementDetails">
+                        <li *ngIf="data?.submittedSuccessfullyFollowUps?.confirmationStatementText" [innerHTML]="data?.submittedSuccessfullyFollowUps?.confirmationStatementText | UISafe:'html'"(click)="downloadPdf($event)"></li>
+                        <li *ngIf="data?.submittedSuccessfullyFollowUps?.reviewConfirmationStatementText" [innerHTML]="data?.submittedSuccessfullyFollowUps?.reviewConfirmationStatementText | UISafe:'html'"(click)="downloadPdf($event)"></li>  
+                    </ng-container>
+                    <ng-container *ngIf="!data?.submittedSuccessfullyFollowUps?.authorizationFormDetails && !data?.submittedSuccessfullyFollowUps?.confirmationStatementDetails">
+                        <li *ngIf="data?.submittedSuccessfullyFollowUps?.confirmationStatementText" [innerHTML]="data?.submittedSuccessfullyFollowUps?.confirmationStatementText | UISafe:'html'"></li>
+                        <li *ngIf="data?.submittedSuccessfullyFollowUps?.reviewConfirmationStatementText" [innerHTML]="data?.submittedSuccessfullyFollowUps?.reviewConfirmationStatementText | UISafe:'html'"></li>
+                    </ng-container>
+                        <li *ngIf="data?.submittedSuccessfullyFollowUps?.printSignDateText" [innerHTML]="data?.submittedSuccessfullyFollowUps?.printSignDateText | UISafe:'html'"></li>
+                        <li *ngIf="data?.submittedSuccessfullyFollowUps?.spousalConsentText" [innerHTML]="data?.submittedSuccessfullyFollowUps?.spousalConsentText | UISafe:'html'"></li>
+                        <li *ngIf="data?.submittedSuccessfullyFollowUps?.directionsText">
+                            {{data?.submittedSuccessfullyFollowUps?.directionsText}}
+                            <ul class="al-circleList">
+                                <li *ngIf="data?.submittedSuccessfullyFollowUps?.whatElseText">{{data?.submittedSuccessfullyFollowUps?.whatElseText}}</li>
+                                <li *ngIf="data?.submittedSuccessfullyFollowUps?.whereHowText">{{data?.submittedSuccessfullyFollowUps?.whereHowText}}</li>
+                            </ul>
+                        </li>
+                        <li [innerHTML]="data?.submittedSuccessfullyFollowUps?.sendDocumentationText | UISafe:'html'"></li>
+                    </ol>
+                </al-content-box>
+            <al-authorization-common></al-authorization-common>
+            <al-beneficiaries></al-beneficiaries>
+            <al-payment-review [showLearnLink]=false></al-payment-review>
+            <div #rtrAcctLock>                
+                <al-accountlock-status [attr.pageInputParam] = pageInputParam (servCallStatus) ="getAccountLockData($event)"></al-accountlock-status>
+            </div>
+            <al-footnote></al-footnote>
+        </div>
+    </div>
+    <al-right-side-components></al-right-side-components>
+</div>

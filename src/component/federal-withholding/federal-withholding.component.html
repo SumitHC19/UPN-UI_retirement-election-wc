@@ -1,0 +1,19 @@
+<ng-container *ngIf="loaded === null">
+    <al-loading-indicator 
+    id="pageLevel"
+    loadingType="pageLevel"
+    [initialShow]="true" 
+    loadingText="loading"    
+    ></al-loading-indicator>
+</ng-container>
+<ng-container *ngIf="widgetData">
+    <income-tax-withholding-wc
+    [selectedForm]="paymentWithholdingFormType"
+    [widgetData]="widgetData"
+    (byLoaded)="onLoaded($event)"
+    (byBackClicked)="back()"
+    (bySaved)="save()"
+    >
+    </income-tax-withholding-wc>
+</ng-container>
+

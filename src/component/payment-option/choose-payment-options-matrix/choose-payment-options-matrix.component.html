@@ -1,0 +1,209 @@
+<ng-container *ngIf="showError" class="al-font-change al-spacing">
+    <div class="al-u-10-16 al-480-w100 al-320-w100 al-720-w100">
+    <al-error></al-error>
+    </div>
+ <al-right-side-components></al-right-side-components>
+</ng-container>
+<ng-container *ngIf="!showError">
+<ng-container *ngIf="showHeader">
+    <div id="choosepaymentoptionmatrix" class="al-font-change al-spacing">
+        <div class="al-u-10-16 al-480-w100 al-320-w100 al-720-w100">
+            <h1 *ngIf="opfmHeaderData?.pageTitle">{{opfmHeaderData?.pageTitle}}</h1>
+           <al-dynamic-edit-loader (cancelEdit)="onCancel()"></al-dynamic-edit-loader>
+            <div>
+                <p *ngIf="opfmHeaderData?.pageHeaderIntroduction"
+                    [innerHTML]="opfmHeaderData?.pageHeaderIntroduction | UISafe: 'html'"> </p>
+            </div>
+            <div *ngFor="let panelItems of opfmHeaderData?.headerPanelList; let i = index">
+                <al-panel title={{panelItems?.panelTitle}} [active]="panelListExpand[i] ? true : false"
+                    (click)="setactive(panelListExpand[i], i)">
+                    <ng-container *ngIf="i === 0 else otherPanel">
+                        <div (click)="$event.stopPropagation()">
+                            <p *ngIf="panelItems?.panelContent?.panelDescription">
+                                {{panelItems?.panelContent?.panelDescription}}</p>
+                            <ul class="al-margin-left-3x">
+                                <li *ngFor="let listItems of panelItems?.panelContent?.pageHeaderBulletList"
+                                    [innerHTML]="listItems | UISafe: 'html'"></li>
+                            </ul>
+                            <div class="al-margin-left-3x">
+                                <table class="al-table al-table-responsive">
+                                    <thead>
+                                        <tr>
+                                            <th>{{panelItems?.panelContent?.beneficiaryTableHeading1}}</th>
+                                            <th>{{panelItems?.panelContent?.beneficiaryTableHeading2}}</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr *ngFor="let tableItems of panelItems?.panelContent?.beneficiaryList">
+                                            <td>
+                                                <div class="al-gutter-row">
+                                                    <div
+                                                        class="al-gutter-col al-w50 al-480-w50 al-320-w50 al-hidden-gt720 al-hidden-960">
+                                                        <strong>{{panelItems?.panelContent?.beneficiaryTableHeading1}}</strong>
+                                                    </div>
+                                                    <div class="al-gutter-col al-w100 al-480-w50 al-320-w50">
+                                                        <span [innerHTML]="tableItems?.benefitDesc | UISafe: 'html'"></span>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="al-gutter-row">
+                                                    <div
+                                                        class="al-gutter-col al-w50 al-480-w50 al-320-w50 al-hidden-gt720 al-hidden-960">
+                                                        <strong>{{panelItems?.panelContent?.beneficiaryTableHeading2}}</strong>
+                                                    </div>
+                                                    <div class="al-gutter-col al-w100 al-480-w50 al-320-w50">
+                                                        {{tableItems?.beneficiaryDesc}}</div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <p *ngIf="panelItems?.panelContent?.reviewLabel"
+                                [innerHTML]="panelItems?.panelContent?.reviewLabel | UISafe: 'html'"> </p>
+                        </div>
+                    </ng-container>
+                    <ng-template #otherPanel>
+                        <div class="al-gutter-row clearfix" (click)="$event.stopPropagation()">
+                            <div class="al-gutter-col"
+                                *ngFor="let gridItems of panelItems?.panelContent?.panelContentBoxList">
+                                <al-content-box [contentBoxType]="'neutral'" [contentBoxBrand]="'brand-1'"
+                                    [hasArrow]="false" [arrowPosition]="">
+                                    <h3 *ngIf="gridItems?.panelLink" [innerHTML]="gridItems?.panelLink | UISafe:'html'">
+                                    </h3>
+                                    <p *ngIf="gridItems.panelText">{{gridItems.panelText}}</p>
+                                </al-content-box>
+                            </div>
+                        </div>
+                    </ng-template>
+                </al-panel>
+            </div>
+            <div class="al-margin-top-2x">
+                <h2>{{opfmHeaderData?.titleAboveMatrixTable}}</h2>
+                <p *ngIf="opfmHeaderData?.contentAboveMatrixTable" [innerHTML]="opfmHeaderData?.contentAboveMatrixTable | UISafe:'html'"></p>
+            </div>
+        </div>
+        <al-right-side-components></al-right-side-components>
+    </div>
+</ng-container>
+
+<!-- <div #dbProjOpfmMatrix>
+    <db-opfm-matrix-wc [attr.calcRefNo]=calculationReferenceNumber [attr.retirementFlow]=retirementFlow (retirementFlowService)="getOpfmMtarixData()"></db-opfm-matrix-wc>
+</div> -->
+<div id="opfmMatrixComponent"></div>
+
+<ng-container *ngIf="(expandedParaFeatEnbled || customParaFeatEnbled) && clientParaList?.length > 0">
+    <div class="al-view-gt960 al-font-change al-spacing">
+        <div class="al-u-10-16 al-480-w100 al-320-w100 al-720-w100">
+            <div *ngFor="let paraList of clientParaList">
+                <p [innerHTML] ="paraList?.text | UISafe : 'html'"></p>
+            </div>        
+        </div>
+    </div>            
+</ng-container>
+
+<al-loading-indicator id="saveServiceLoader" loadingType="pageLevel" [initialShow]="false" loadingText="loading"></al-loading-indicator>
+<ng-container *ngIf="showHeader">
+    <div class="al-view-gt960 al-font-change al-spacing">
+        <div class="al-u-10-16 al-480-w100 al-320-w100 al-720-w100">
+            <!-- panel code starts -->
+            <ng-container *ngIf="hypotheticalPanelContent.length !== 0">
+                <al-panel title={{hypotheticalPanelContent[0]?.panelTitle}} [active]="false">
+                    <ng-container *ngFor="let item of hypotheticalPanelContent[0]?.panelContentList">
+                        <p *ngIf="item?.hypotheticalPanelContent?.overviewText"
+                            [innerHTML]="item?.hypotheticalPanelContent?.overviewText | UISafe:'html'"></p>
+                        <p *ngIf="item?.hypotheticalPanelContent?.survivorText">
+                            <span *ngIf="beneficiaryText" [innerHTML]="beneficiaryText | UISafe: 'html'"></span>
+                            <span *ngIf="beneficiaryLink" [innerHTML]="beneficiaryLink | UISafe: 'html'"
+                                (click)="aldialogWithWidth.showDialog($event)"></span>
+                        </p>
+                        <p *ngIf="item?.hypotheticalPanelContent?.socialSecurityText"
+                            [innerHTML]="item?.hypotheticalPanelContent?.socialSecurityText | UISafe:'html'"></p>
+
+                        <al-dialog #aldialogWithWidth width="650">
+                            <p *ngIf="item?.hypotheticalPanelContent?.nameBeneficiaryModalHeader"
+                                [innerHTML]="item?.hypotheticalPanelContent?.nameBeneficiaryModalHeader | UISafe:'html'">
+                            </p>
+                            <p *ngIf="item?.hypotheticalPanelContent?.nameBeneficiaryModalBody"
+                                [innerHTML]="item?.hypotheticalPanelContent?.nameBeneficiaryModalBody | UISafe:'html'">
+                            </p>
+                            <div class="al-padding-top-1x">
+                                <button type="button" class="al-button-positive al-button-large" pButton
+                                    (click)="checkPreActivityEdit();aldialogWithWidth.hideDialog($event)"
+                                    [label]="item?.hypotheticalPanelContent?.nameBeneficiaryModalYes"></button>
+                                <button type="button" class="al-button-neutral al-button-large" pButton
+                                    (click)="aldialogWithWidth.hideDialog($event)"
+                                    [label]="item?.hypotheticalPanelContent?.nameBeneficiaryModalNo"></button>
+                            </div>
+                        </al-dialog>
+                    </ng-container>
+                </al-panel>
+            </ng-container>
+            <ng-container *ngIf="allPanelContent.length !== 0">
+                <al-panel-section></al-panel-section>
+            </ng-container>
+            <!-- panel code ends -->
+            <al-footnote></al-footnote>
+        </div>
+    </div>
+
+    <div class="al-view-gt960 al-font-change al-spacing">
+        <div class="al-u-16-16 al-480-w100 al-320-w100 al-720-w100">
+            <hr>
+        </div>
+    </div>
+
+    <div class="al-view-gt960 al-font-change al-spacing">
+        <div class="al-u-10-16 al-480-w100 al-320-w100 al-720-w100">
+            <p *ngIf="pageLegalNote" [innerHTML]="pageLegalNote | UISafe:'html'"></p>
+            <!-- Button code starts -->
+            <div class="al-margin-bottom-2x al-padding-top-1x">
+                <button type="button" class="al-button-positive al-button-large al-margin-top-1x"
+                    [label]="buttonData?.buttonList[0]?.label" [title]="buttonData?.buttonList[0]?.label" pButton
+                    (click)="canContinue(true)">
+                </button>
+
+                <button *ngIf="showCBLButton" pButton type="button" [label]="buttonData?.buttonList[1]?.label"
+                    [title]="buttonData?.buttonList[1]?.label" (click)="canContinue(false)"
+                    class="al-button-neutral al-margin-lft-rit-8 al-button-large al-margin-top-1x"></button>
+
+                <button *ngIf="showQuitButton" pButton type="button" (click)="aldialogWithWidth.showDialog($event)"
+                    [label]="buttonData?.buttonList[2]?.label" [title]="buttonData?.buttonList[2]?.label"
+                    class="al-button-neutral al-button-large al-margin-top-1x"></button>
+
+                <al-dialog #aldialogWithWidth width="650">
+                    <h2 class="al-padding-bottom-1x" *ngIf="buttonData?.quitModalContent?.title">
+                        {{buttonData?.quitModalContent?.title}}</h2>
+                        <div *ngFor="let quitModaltext of buttonData?.quitModalContent?.bodyList; let r = index">
+                            <ng-container *ngIf="!showCBLButton && quitModaltext?.action === 'comeBackLater' else elseBlock"></ng-container>
+                            <ng-template #elseBlock>
+                                <h5><b [innerHTML]="quitModaltext?.heading"></b></h5>
+                                <p [innerHTML]="quitModaltext?.paragraph"></p>
+                            </ng-template>
+                        </div>
+                    <hr class="al-padding-bottom-1x">
+                    <button type="button" class="al-button-positive al-button-large"
+                        *ngIf="showCBLButton && buttonData?.quitModalContent?.buttonList[0]?.label" pButton
+                        (click)="canContinue(false);aldialogWithWidth.hideDialog($event)"
+                        [label]="buttonData?.quitModalContent?.buttonList[0]?.label"
+                        [title]="buttonData?.quitModalContent?.buttonList[0]?.label"></button>
+
+                    <button type="button" *ngIf="buttonData?.quitModalContent?.buttonList[1]?.label" pButton
+                        (click)="checkPreActivityEdit();aldialogWithWidth.hideDialog($event)"
+                        [label]="buttonData?.quitModalContent?.buttonList[1]?.label"
+                        [title]="buttonData?.quitModalContent?.buttonList[1]?.label"
+                        class="al-button-neutral al-button-large al-margin-top-1x al-rew-pointer"></button>
+
+                    <button pButton type="button" (click)="aldialogWithWidth.hideDialog($event)"
+                        *ngIf="buttonData?.quitModalContent?.buttonList[2]?.label"
+                        [label]="buttonData?.quitModalContent?.buttonList[2]?.label"
+                        [title]="buttonData?.quitModalContent?.buttonList[2]?.label"
+                        class="al-button-neutral al-button-large al-margin-top-1x al-rew-pointer"></button>
+                </al-dialog>
+            </div>
+            <!-- Button code ends -->
+        </div>
+    </div>
+</ng-container>
+</ng-container>

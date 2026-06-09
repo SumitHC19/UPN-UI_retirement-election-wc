@@ -1,0 +1,65 @@
+<ng-container *ngIf="!checkresponse">
+	<al-loading-indicator
+    	id="pagelevel"
+    	loadingType="pageLevel"
+    	[initialShow]="true"
+    	loadingText="loading">
+	</al-loading-indicator>
+</ng-container>
+  <div *ngIf="checkresponse" id="choosepaymentoption" class="al-view-gt960 al-font-change al-spacing">
+    <div class="al-u-10-16 al-480-w100 al-320-w100 al-720-w100">
+      <ng-container *ngIf="showError">
+          <al-error></al-error>
+      </ng-container>
+      <ng-container *ngIf="!showError">
+          <h1 [innerHTML]="data?.choosePaymentOptionHeader?.pageTitle"></h1>
+          <al-dynamic-edit-loader (continueEdit)="cancontinue($event)" (cancelEdit)="onCancel()"></al-dynamic-edit-loader>
+          <p [innerHTML]="data?.choosePaymentOptionHeader?.pageHeaderIntroduction"></p>
+          <ul *ngIf="data?.choosePaymentOptionHeader?.pageHeaderBulletList !== undefined">
+            <li *ngFor="let item of data?.choosePaymentOptionHeader?.pageHeaderBulletList">
+                <span [innerHTML]="item"></span>
+            </li>
+          </ul>
+          <p>
+            <small [innerHTML]="data?.choosePaymentOptionHeader?.pageHeaderLegalNote"></small>
+          </p>
+          <p [innerHTML]="data?.choosePaymentOptionHeader?.pageHeaderReviewPaymentOptions"></p>
+          <al-choose-payment-option-benefit-section (valueSelected)='enableContinue($event)'></al-choose-payment-option-benefit-section>
+           <al-panel-section></al-panel-section>
+           <al-footnote></al-footnote>
+            <div>
+                <button pButton type="button" [label]="data.flowButtonNavigation?.buttonList[0].label" [title]="data.flowButtonNavigation?.buttonList[0].label"
+                 class="al-button-positive al-button-large al-margin-bottom-1x"  (click)="continue(true)"></button>
+             
+                <button *ngIf="showCBLButton" pButton type="button" [label]="data.flowButtonNavigation?.buttonList[1].label" [title]="data.flowButtonNavigation?.buttonList[1].label"
+                 class="al-button-neutral al-button-large al-margin-bottom-1x al-margin-lft-rit-8" (click)="continue(false)">
+                </button>
+      
+                <button *ngIf="showQuitButton" pButton type="button" [label]="data.flowButtonNavigation?.buttonList[2].label" [title]="data.flowButtonNavigation?.buttonList[2].label"
+                 class="al-button-neutral al-button-large al-margin-bottom-1x" (click)="quitModal.showDialog($event)">
+                </button>
+                <al-loading-indicator id="saveServiceLoader" loadingType="pageLevel" [initialShow]="false" loadingText="loading"></al-loading-indicator>
+              <al-dialog #quitModal [(visible)]="display" width="650">
+                <h2 class="al-padding-bottom-1x" *ngIf="data?.flowButtonNavigation?.quitModalContent?.title">{{data.flowButtonNavigation.quitModalContent.title}}</h2>
+                <div class="" *ngFor="let quitModaltext of data?.flowButtonNavigation?.quitModalContent?.bodyList; let r = index">
+                  <ng-container *ngIf="!showCBLButton && quitModaltext?.action === 'comeBackLater' else elseBlock"></ng-container>
+                  <ng-template #elseBlock>
+                      <h5><b [innerHTML]="quitModaltext?.heading"></b></h5>
+                      <p [innerHTML]="quitModaltext?.paragraph"></p>
+                  </ng-template>
+                </div>
+                <hr class="al-padding-bottom-1x">
+
+                  <button type="button" *ngIf="showCBLButton && data?.flowButtonNavigation?.quitModalContent?.buttonList[0]?.label" class="al-button-positive al-button-large al-margin-top-1x al-rew-pointer" pButton (click)="continue(false);quitModal.hideDialog($event)"
+                   [label]="data?.flowButtonNavigation?.quitModalContent?.buttonList[0]?.label" [title]="data?.flowButtonNavigation?.quitModalContent?.buttonList[0]?.label"></button>
+                  <button pButton type="button"  *ngIf="data?.flowButtonNavigation?.quitModalContent?.buttonList[1]?.label" (click)="checkPreActivityEdit();quitModal.hideDialog($event)" [label]="data?.flowButtonNavigation?.quitModalContent?.buttonList[1]?.label" [title]="data?.flowButtonNavigation?.quitModalContent?.buttonList[1]?.label"
+                   class="al-button-neutral al-button-large al-margin-top-1x al-rew-pointer"></button>
+
+                <button pButton type="button" (click)="quitModal.hideDialog($event)" *ngIf="data?.flowButtonNavigation?.quitModalContent?.buttonList[2]?.label"
+                 [label]="data?.flowButtonNavigation?.quitModalContent?.buttonList[2]?.label" [title]="data?.flowButtonNavigation?.quitModalContent?.buttonList[2]?.label" class="al-button-neutral al-button-large al-margin-top-1x al-rew-pointer"></button>
+              </al-dialog>
+            </div>
+      </ng-container>
+    </div>
+    <al-right-side-components></al-right-side-components>
+</div>

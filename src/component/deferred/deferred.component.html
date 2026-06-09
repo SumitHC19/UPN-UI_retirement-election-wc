@@ -1,0 +1,48 @@
+<ng-container *ngIf="!checkResponse">
+    <al-loading-indicator id="pagelevel" loadingType="pageLevel" [initialShow]="true" loadingText="loading">
+    </al-loading-indicator>
+</ng-container>
+<ng-container *ngIf="checkResponse">
+    <div id="deferredSuccessfully" class="al-font-change al-spacing al-margin-top-neg2x">
+        <!--Header Part-->       
+        <div class="al-u-10-16 al-480-w100 al-320-w100 al-720-w100">
+            <ng-container *ngIf="showError">
+                <al-error></al-error>
+            </ng-container>
+            <ng-container *ngIf="!showError"> 
+                <h1 *ngIf="data?.deferredSuccessfullyHeader?.pageNameText">
+                    {{data?.deferredSuccessfullyHeader?.pageNameText}}
+                </h1>
+                <p *ngIf="data?.deferredSuccessfullyHeader?.confirmationNumberText"
+                    class="al-margin-bottom-1x al-lead-in"
+                    [innerHTML]="data?.deferredSuccessfullyHeader?.confirmationNumberText| UISafe:'html'">
+                </p>
+                <p class="al-margin-bottom-1x" *ngIf="data?.deferredSuccessfullyHeader?.successfulDeferrredText">
+                    {{data?.deferredSuccessfullyHeader?.successfulDeferrredText}}
+                </p>
+                <p class="al-margin-bottom-1x">
+                    {{data?.deferredSuccessfullyHeader?.completeEmailText}}
+                    <a [title]="data.deferredSuccessfullyHeader.completePrintText" (click)="printPage()">{{ data?.deferredSuccessfullyHeader?.completePrintText }}</a>
+                    {{data?.deferredSuccessfullyHeader?.completeRecordsText}}
+                </p>
+                <h3 *ngIf="data?.deferredSuccessfullyHeader?.waitPenaltiesTitle">
+                    {{data?.deferredSuccessfullyHeader?.waitPenaltiesTitle}}
+                </h3>
+                <p class="al-margin-bottom-1x" *ngIf="data?.deferredSuccessfullyHeader?.waitPenaltiesTaxTxt"
+                    [innerHTML]="data?.deferredSuccessfullyHeader?.waitPenaltiesTaxTxt | UISafe:'html'">
+                </p>
+                <p class="al-margin-bottom-1x" *ngIf="data?.deferredSuccessfullyHeader?.waitPenaltiesNRDTxt"
+                    [innerHTML]="data?.deferredSuccessfullyHeader?.waitPenaltiesNRDTxt | UISafe:'html'">
+                </p>
+                <h3 *ngIf="data?.deferredSuccessfullyHeader?.completeReturnTitle">
+                    {{data?.deferredSuccessfullyHeader?.completeReturnTitle}}
+                </h3>
+                <p class="al-margin-bottom-1x" *ngIf="data?.deferredSuccessfullyHeader?.completeReturnTxt"
+                    [innerHTML]="data?.deferredSuccessfullyHeader?.completeReturnTxt | UISafe:'html'">
+                </p>
+                <al-authorization-common [isFromDeferPage]="isFromDeferPage"></al-authorization-common>
+            </ng-container>
+        </div>
+        <al-right-side-components></al-right-side-components>
+    </div>
+</ng-container>

@@ -1,0 +1,178 @@
+<!-- DB CASHOUT AND DB NQE COMPONENT PROGRESS BAR START -->
+<ng-container *ngIf="checkresponse && !showError && (isDbCashoutFlag || isDbNQFlag)">
+    <al-dbcnq-progress-bar></al-dbcnq-progress-bar>
+</ng-container>
+
+<al-loading-indicator *ngIf="isDbCashoutFlag || isDbNQFlag" id="pagelevel" loadingType="pageLevel" [initialShow]="isDbCashoutPageLoading" loadingText="loading"></al-loading-indicator>
+
+<ng-container *ngIf="showError && (isDbCashoutFlag || isDbNQFlag) && checkresponse">
+    <al-error></al-error>
+</ng-container>
+<!-- DB CASHOUT AND DB NQE COMPONENT PROGRESS BAR END -->
+<ng-container *ngIf="!checkresponse">
+    <al-loading-indicator id="pagelevel" loadingType="pageLevel" [initialShow]="true" loadingText="loading">
+    </al-loading-indicator>
+</ng-container>
+<ng-container *ngIf="checkresponse">
+<div id="paymentdestination" class="al-view-gt960 al-font-change al-spacing">
+        <div class="al-u-10-16 al-480-w100 al-320-w100 al-720-w100">
+            <div class="al-margin-bottom-neg1x">
+                <h1> {{data?.paymentDestination?.pageNameText}} </h1>
+                <al-dynamic-edit-loader (continueEdit) = "continueEdit($event)" (cancelEdit) = "onCancel()"></al-dynamic-edit-loader>
+            </div>
+            <p *ngIf="isDbNQFlag && data?.headerPlaceHolder" [innerHTML]="data?.headerPlaceHolder | UISafe: 'html'"></p>
+            <div *ngIf="showError && !isDbCashoutFlag && !isDbNQFlag"> <al-error></al-error> </div>
+            <div *ngIf="!showError"> 
+            <form [formGroup]="form">
+            <p *ngIf="data?.paymentDestination?.pageContentText" [innerHTML]="data?.paymentDestination?.pageContentText | UISafe: 'html'"></p>
+            <!-- DB CASHOUT COMPONENT START FOR 7-DAY ALERT -->
+            <div *ngIf="data?.paymentDestination?.appHdrText">
+                <al-tips-alerts [tipText]="'!'" [tipType]="'action'" [tipSize]="'medium'" [displayText]="data?.paymentDestination?.appHdrText"
+                    [tipMessage]="data?.paymentDestination?.appParaText"></al-tips-alerts>
+            </div>
+            <!-- DB CASHOUT COMPONENT END FOR 7-DAY ALERT -->
+            <div *ngIf="data?.paymentDestination?.tipBadgeText">
+        <al-tips-alerts [tipText]="data?.paymentDestination?.tipBadgeText" [tipSize]="'medium'" [displayText]="">
+            <strong customDisplayText> {{data?.paymentDestination?.tipHeaderText}} </strong>
+        </al-tips-alerts>
+        </div>
+        <p [ngClass]="data?.paymentDestination?.tipBadgeText ? 'al-padding-top-1x' : ''" [innerHTML]="data.paymentDestination?.pageNoteText"> </p>
+        <div *ngFor="let paymentTableItem of data.paymentDestination?.paymentTable" class=""> <!-- al-hr-hide-elmt -->
+            <h2 class="al-margin-top-1x" id="planTitle_{{paymentTableItem?.paymentId}}"> {{paymentTableItem?.tableHeaderText}} </h2>
+            <p [innerHTML]="paymentTableItem?.choosePaymentText"> </p>
+            <table width="100%" class="al-table brand-1">
+                <tbody>
+                    <tr class="brand-highlight-5" *ngIf="paymentTableItem?.paymentDetailData">
+                        <td class="al-w75 leadin" id="paymentDeducsTitle_{{paymentTableItem?.paymentId}}"> {{paymentTableItem?.paymentDetailData?.rowHeaderText }} </td>
+                        <td class="al-w25 leadin" id="paymentDeducsAmt_{{paymentTableItem?.paymentId}}"> {{paymentTableItem?.paymentDetailData?.primaryPaymentAmountText }}
+                            <small> {{paymentTableItem?.paymentDetailData?.paymentFrequencyText}} </small> </td>
+                    </tr>
+                    <tr class="brand-highlight-4"
+                        *ngIf="paymentTableItem.primaryPaymentDetails?.primaryPaymentDestinationText">
+                        <td class="leadin" id="Payment_{{paymentTableItem?.paymentId}}_{{paymentTableItem?.primaryPaymentDetails?.primaryDeliveryTypeId}}" > {{paymentTableItem.primaryPaymentDetails?.primaryPaymentDestinationText}}
+                        </td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <al-addressdetails [isCashoutFlag]="isDbCashoutFlag" [isNQFlag]="isDbNQFlag" [splitPayment]="paymentTableItem?.splitPayment" [parentForm]="form" [controlName]="paymentTableItem.primaryPaymentDetails?.primaryDeliveryTypeId" [addressDetails]="paymentTableItem.primaryPaymentDetails?.addressDestinationDetailData"></al-addressdetails>
+
+            <ng-container *ngIf="paymentTableItem.splitPayment">
+                <table width="100%" class="al-table brand-1">
+                    <tbody>
+                        <tr class="brand-highlight-4"
+                            *ngIf="paymentTableItem.secondaryPaymentDetails?.secondaryPaymentDestinationText">
+                            <td class="leadin">
+                                {{paymentTableItem.secondaryPaymentDetails?.secondaryPaymentDestinationText}} </td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td colspan="2" class="al-480-w100 al-320-w100 al-720-w100">
+                                    <p> {{paymentTableItem.secondaryPaymentDetails?.secondaryPaymentOneText}} </p>
+                                    <p> {{paymentTableItem.secondaryPaymentDetails?.secondaryPaymentTwoText}} </p>
+                                    <p> {{paymentTableItem.secondaryPaymentDetails?.secondaryPaymentThirdText}} </p>
+                                    <p></p>
+                            </td>
+                        </tr>
+                        <tr>
+                        </tr>
+                    </tbody>
+                </table>
+                <div class="al-gutter-row">
+                    <div class="al-gutter-col al-w5-8 al-480-w100 al-320-w100 al-padding-top-0 al-padding-left-1x al-padding-bottom-0">
+                        <h3 class="al-padding-left-1x">
+                            {{paymentTableItem.secondaryPaymentDetails?.secondaryDeliveryPaymentAmountText}} </h3>
+                        <p class="al-padding-left-1x">
+                            {{paymentTableItem.secondaryPaymentDetails?.secondaryDeliveryPaymentEnterText}} </p>
+                    </div>
+                    <div class="al-gutter-col al-w3-8 al-480-w100 al-320-w100 al-text-align-right al-padding-top-0 al-padding-right-0">
+                        <div id="splitAmt_{{paymentTableItem.secondaryPaymentDetails?.secondaryDeliveryTypeId}}" class="al-field-content al-padding-left-2x" [class.error-container]="form.controls['amount_'+paymentTableItem.secondaryPaymentDetails?.secondaryDeliveryTypeId].errors?.number || form.controls['amount_'+paymentTableItem.secondaryPaymentDetails?.secondaryDeliveryTypeId].errors?.pattern">
+                           <span *ngIf="data?.paymentDestination?.symbolText && defaultLocale" [innerHTML]="data?.paymentDestination?.symbolText | UISafe: 'html'"></span>&nbsp;
+                            <input pInputText type="text" class="al-input-12-char" [formControlName]="'amount_'+paymentTableItem.secondaryPaymentDetails?.secondaryDeliveryTypeId" 
+                                [ngModel]="paymentTableItem.secondaryPaymentDetails?.secondaryDeliveryPaymentAmount"  (change)="onChange()">&nbsp;
+                               <span *ngIf="data?.paymentDestination?.symbolText && !defaultLocale" [innerHTML]="data?.paymentDestination?.symbolText | UISafe: 'html'"></span>
+                                <p class="field-error" aria-live="assertive" *ngIf="(form.controls['amount_'+paymentTableItem.secondaryPaymentDetails?.secondaryDeliveryTypeId].errors?.number && defaultLocale) || (form.controls['amount_'+paymentTableItem.secondaryPaymentDetails?.secondaryDeliveryTypeId].errors?.pattern && !defaultLocale)">{{numberValidEdit.editMessage
+                                }}</p>
+                        </div>
+                    </div>
+                </div>
+                <hr class="al-border-top-solid">
+
+                <al-addressdetails [isCashoutFlag]="isDbCashoutFlag" [isNQFlag]="isDbNQFlag" [splitPayment]="paymentTableItem?.splitPayment" [parentForm]="form" [controlName]="paymentTableItem.secondaryPaymentDetails?.secondaryDeliveryTypeId" [addressDetails]="paymentTableItem.secondaryPaymentDetails?.addressDestinationDetailData"></al-addressdetails>
+            </ng-container>
+        </div>
+
+
+        <!-- DB CASHOUT COMPONENT BUTTON START -->
+        <div *ngIf="isDbCashoutFlag || isDbNQFlag">
+                <p *ngIf="isDbNQFlag && data?.footerPlaceHolder" [innerHTML]="data?.footerPlaceHolder | UISafe: 'html'"></p>
+            <button *ngIf="data?.continueButtonLabel" pButton type="button" label="{{data?.continueButtonLabel}}" title="{{data?.continueButtonLabel}}"
+                (click)="continueClick(form, form.valid, true, isDbCashoutFlag,isDbNQFlag)" class="al-button-positive al-button-large"></button>
+            <button *ngIf="data?.cancelButtonLabel" pButton type="button" label="{{data?.cancelButtonLabel}}" title="{{data?.cancelButtonLabel}}"
+                (click)="aldialogCancel.showDialog($event)" class="al-button-neutral al-button-large"></button>
+        
+            <al-dialog #aldialogCancel [(visible)]="display" styleClass="al-spacing al-font-change" width="506">
+                <div class="al-margin-bottom-1x">
+                    <h3 *ngIf="data?.cancelModalContent?.cancelHeading">{{data?.cancelModalContent?.cancelHeading}}</h3>
+                </div>
+                
+                <button *ngIf="data?.cancelModalContent?.yesButton" pButton type="button" class="al-button-positive al-button-large" title="{{data?.cancelModalContent?.yesButton}}"
+                    label="{{data?.cancelModalContent?.yesButton}}" (click)="redirectToCancelledPage($event)"></button>
+                <button *ngIf="data?.cancelModalContent?.noButton" pButton type="button" label="{{data?.cancelModalContent?.noButton}}" title="{{data?.cancelModalContent?.noButton}}"
+                    (click)="aldialogCancel.hideDialog($event)" class="al-button-neutral al-button-large"></button>
+            </al-dialog>
+        </div>
+        <!-- DB CASHOUT COMPONENT BUTTON END -->
+        <!-- Start continue button section here -->
+        <div *ngIf="!isDbCashoutFlag && !isDbNQFlag" class="al-margin-top-2x">
+		
+				<button pButton type="submit" (click)="continueClick(form, form.valid, true, false, false)" [label]="data?.paymentDestination.flowButtonNavigation?.buttonList[0].label" [title]="data?.paymentDestination.flowButtonNavigation?.buttonList[0].label"
+				 class="al-button-positive al-button-large al-margin-bottom-1x"></button>
+		
+				<button pButton *ngIf="!isBackButton && showCBLButton" type="button" (click)="continueClick(form, form.valid,false, false, false)" [label]="data?.paymentDestination.flowButtonNavigation?.buttonList[1].label" [title]="data?.paymentDestination.flowButtonNavigation?.buttonList[1].label"
+				 class="al-button-neutral al-button-large al-margin-bottom-1x al-margin-lft-rit-8">
+				</button>
+
+                <button pButton *ngIf="isBackButton" type="button" (click)="redirectBack()" [label] = "data?.paymentDestination.flowButtonNavigation?.buttonList[3].label" [title]="data?.paymentDestination.flowButtonNavigation?.buttonList[3].labell"
+                class="al-button-neutral al-button-large al-margin-bottom-1x al-margin-lft-rit-8">
+               </button>
+
+			<button *ngIf="showQuitButton" pButton type="button" [label]="data?.paymentDestination.flowButtonNavigation?.buttonList[2].label" [title]="data?.paymentDestination.flowButtonNavigation?.buttonList[2].label"
+			 class="al-button-neutral al-button-large al-margin-bottom-1x" (click)="quitModal.showDialog($event)"></button>
+
+             <al-loading-indicator id="saveServiceLoader" loadingType="pageLevel" [initialShow]="false" loadingText="loading"></al-loading-indicator>
+
+			<!-- Start quitModal here -->
+			<al-dialog #quitModal [(visible)]="display" width="650">
+				<h2 class="al-padding-bottom-1x" *ngIf="data?.paymentDestination.flowButtonNavigation?.quitModalContent?.title">{{data?.paymentDestination.flowButtonNavigation?.quitModalContent.title}}</h2>
+				<div *ngFor="let quitModaltext of data?.paymentDestination.flowButtonNavigation?.quitModalContent?.bodyList; let r = index">
+                    <ng-container *ngIf="!showCBLButton && quitModaltext?.action === 'comeBackLater' else elseBlock"></ng-container>
+                    <ng-template #elseBlock>
+                        <h5><b [innerHTML]="quitModaltext?.heading"></b></h5>
+                        <p [innerHTML]="quitModaltext?.paragraph"></p>
+                    </ng-template>
+				</div>
+				<hr class="al-padding-bottom-1x">
+					<button *ngIf="showCBLButton && data?.paymentDestination?.flowButtonNavigation?.quitModalContent?.buttonList[0].label" type="button" class="al-button-positive al-button-large al-margin-top-1x al-rew-pointer" pButton (click)="continueClick(form, form.valid,false, false, false);quitModal.hideDialog($event)"
+					 [label]="data?.paymentDestination?.flowButtonNavigation?.quitModalContent?.buttonList[0].label" [title]="data?.paymentDestination?.flowButtonNavigation?.quitModalContent?.buttonList[0].label"></button>
+
+					<button pButton type="button" *ngIf="data?.paymentDestination?.flowButtonNavigation?.quitModalContent?.buttonList[1].label" (click)="checkPreActivityEdit();quitModal.hideDialog($event)" [label]="data?.paymentDestination.flowButtonNavigation?.quitModalContent?.buttonList[1].label" [title]="data?.paymentDestination.flowButtonNavigation?.quitModalContent?.buttonList[1].label"
+					 class="al-button-neutral al-button-large al-margin-top-1x al-rew-pointer"></button>
+
+				<button pButton type="button" (click)="quitModal.hideDialog($event)" *ngIf="data?.paymentDestination?.flowButtonNavigation?.quitModalContent?.buttonList[2].label"
+				 [label]="data?.paymentDestination?.flowButtonNavigation?.quitModalContent?.buttonList[2].label" [title]="data?.paymentDestination?.flowButtonNavigation?.quitModalContent?.buttonList[2].label" class="al-button-neutral al-button-large al-margin-top-1x al-rew-pointer"></button>
+			</al-dialog>
+			<!-- END quitModal here -->
+        </div>
+    </form>
+    </div>
+    </div>
+    <!-- DB CASHOUT AND DB NQE COMPONENT RIGHT RAIL START -->
+    <div *ngIf="!showError && (isDbCashoutFlag || isDbNQFlag)" class="portlet-column al-u-6-16 al-u-2-2 al-u-4-4">
+        <al-dbcnq-right-rail></al-dbcnq-right-rail>
+    </div>
+    <!-- DB CASHOUT AND DB NQE COMPONENT RIGHT RAIL END -->
+<al-right-side-components *ngIf="!isDbCashoutFlag && !isDbNQFlag"></al-right-side-components>
+</div>
+</ng-container>

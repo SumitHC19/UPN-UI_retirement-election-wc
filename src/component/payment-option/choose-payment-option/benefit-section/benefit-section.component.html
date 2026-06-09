@@ -1,0 +1,237 @@
+<h2 id="planTitle_{{data?.choosePaymentOptionTable?.paymentOptionGroupDetailList[0]?.planId}}" [innerHTML]="data?.choosePaymentOptionTable?.paymentTableHeader"></h2>
+<p class="al-padding-bottom-1x" [innerHTML]="data?.choosePaymentOptionTable?.multipleOptionalFormGroupHeaderText"></p>
+<ng-container *ngIf="data?.choosePaymentOptionTable?.hasDeferOption">
+<al-content-box [contentBoxType]="'light'" [contentBoxBrand]="'brand-3'" [hasArrow]="false" [arrowPosition]="">
+  <div id="deferSection" class="al-gutter-row ">
+    <div class="al-gutter-col al-w7-8 al-480-w100 al-320-w100">
+      <div class="ui-g-6 al-480-w50 al-320-w100 al-padding-top-0 al-view-lt480 al-w100 al-view-gt480 al-w50">
+        <h3>
+          <b [innerHTML]="data?.choosePaymentOptionTable?.paymentTableDeferSecton?.deferSectionHeader"></b>
+        </h3>
+        <al-panel [title]="data?.choosePaymentOptionTable?.paymentTableDeferSecton?.deferPanelHeader" [active]="false">
+          <p [innerHTML]="data?.choosePaymentOptionTable?.paymentTableDeferSecton?.deferPanelChooseText"></p>
+          <ul *ngFor="let item of data?.choosePaymentOptionTable?.paymentTableDeferSecton?.deferBulletList">
+            <li [innerHTML]="item"></li>
+          </ul>
+        </al-panel>
+      </div>
+      <div class=" al-gutter-col ui-g-6 al-480-w100 al-320-w100 al-padding-top-0">
+        &nbsp;
+      </div>
+    </div>
+    <div class="al-gutter-col al-w1-8 al-480-w100 al-320-w100">
+      <button id="deferBtn_{{data?.choosePaymentOptionTable?.paymentOptionGroupDetailList[0]?.planId}}_{{data?.choosePaymentOptionTable?.paymentOptionGroupDetailList[0]?.elecGroupId}}_{{data?.choosePaymentOptionTable?.paymentOptionGroupDetailList[0]?.electionId}}"
+      *ngIf="!defer" pButton type="button" [label]="data?.buttonLabels?.defer" [title]="data?.buttonLabels?.defer"
+        class="al-button-neutral al-button-small" (click)="deferdialog.showDialog($event)"></button>
+      <al-dialog #deferdialog [(visible)]="display">
+        <h3 class="al-padding-top-2x al-padding-left-2x al-padding-right-3x"
+          [innerHTML]="data?.choosePaymentOptionTable?.paymentTableDeferSecton?.deferModalHeader"></h3>
+        <p class="al-padding-left-2x al-padding-right-3x al-padding-bottom-1x"
+          [innerHTML]="data?.choosePaymentOptionTable?.paymentTableDeferSecton?.deferModalBody"></p>
+        <button type="button" class="al-button-positive al-button-large al-margin-left-2x" pButton
+          (click)="deferdialog.hideDialog($event);deferbutton($event)" [label]="data?.buttonLabels?.modalYes"></button>
+        <button type="button" class="al-button-neutral al-button-large" pButton (click)="deferdialog.hideDialog($event)"
+        [label]="data?.buttonLabels?.modalNo"></button>
+      </al-dialog>
+      <span  *ngIf="defer" id="deferBtn_{{data?.choosePaymentOptionTable?.paymentOptionGroupDetailList[0]?.planId}}_{{data?.choosePaymentOptionTable?.paymentOptionGroupDetailList[0]?.elecGroupId}}_{{data?.choosePaymentOptionTable?.paymentOptionGroupDetailList[0]?.electionId}}">
+        <al-badges [type]="'tip'" [size]="'large'">
+          <span class="al-padding-bottom-0">
+            <span class="al-icon-done "></span>
+          </span>
+        </al-badges>
+        <strong class="brand-clr2-c" [innerHTML]="data?.buttonLabels?.chosen"></strong>
+      </span>
+    </div>
+  </div>
+</al-content-box>
+</ng-container>
+<div *ngFor="let itemtext of data?.choosePaymentOptionTable?.paymentOptionGroupDetailList; let i = index">
+  <h3 *ngIf="itemtext?.multipleOptionalFormPaymentHeader" id ="multiFormPaymentTitle_{{itemtext.planId}}_{{itemtext.elecGroupId}}_{{itemtext.electionId}}_{{itemtext.optionalFormGroupId}}" >
+    <b [innerHTML]="itemtext?.multipleOptionalFormPaymentHeader"></b>
+  </h3>
+  <br *ngIf="itemtext?.multipleOptionalFormPaymentHeader">
+  <div class="opfmSection" *ngFor="let opfmpaymentlist of itemtext?.primaryOptionalFormPaymentList;let j = index;">
+    <al-content-box [contentBoxType]="'light'"
+      [contentBoxBrand]="opfmpaymentlist.hypotheticalOptionalForm?'brand-1':'brand-3'" [hasArrow]="false"
+      [arrowPosition]="">
+      <div id="choose{{j}}" class="al-gutter-row clearfix">
+        <div class="al-gutter-col al-w7-8 al-480-w100 al-320-w100">
+          <div id ="beneFit_{{itemtext?.planId}}_{{itemtext?.elecGroupId}}_{{itemtext?.electionId}}_{{opfmpaymentlist?.optionalFormId}}" 
+          class="al-padding-top-0 al-u-9-16 al-view-lt480 al-w100 al-view-gt480 al-w50">
+            <h3>
+              <strong [innerHTML]="opfmpaymentlist?.optionalFormPanelHeader"></strong>
+            </h3>
+            <custom-al-panel #panelleadintext [title]="opfmpaymentlist?.optionalFormPanelLeadinText" [active]="false">
+              <ul [innerHTML]="opfmpaymentlist?.optionalFormPanelText"></ul>
+              <br>
+              <p *ngIf="opfmpaymentlist?.optionalFormPanelLearnMoreLink" [innerHTML]="opfmpaymentlist?.optionalFormPanelLearnMoreLink | UISafe:'html'"></p>
+            </custom-al-panel>
+          </div>
+          <div class="al-gutter-col al-u-7-16" id ="paymentAmt_{{itemtext?.planId}}_{{itemtext?.elecGroupId}}_{{itemtext?.electionId}}_{{opfmpaymentlist?.optionalFormId}}">
+            <div class="al-320-w100 al-padding-top-0 al-padding-bottom-0">
+              <div *ngFor="let amount of opfmpaymentlist?.optionalFormToYouAmountList"
+                class="al-320-w100 al-text-align-right-480">
+                <h3>
+                  <span [innerHTML]="amount?.optionalFormAmount"></span> &nbsp;
+                  <span><small [innerHTML]="amount?.optionalFormFrequencyDescription"></small></span>
+                  <br>
+                  <small *ngIf="amount?.popUpAmountText" [innerHTML]="amount.popUpAmountText"></small>
+                </h3>
+              </div>
+            </div>
+            <div class="al-480-w100 al-320-w100 al-padding-top-0">
+              <hr>
+              <div *ngFor="let beneficiarytext of opfmpaymentlist?.optionalFormBeneficiaryList; let last = last;">
+                <div class="p-grid">
+                <small class="p-col-6" [innerHTML]="beneficiarytext?.beneficiaryText"></small>
+                <div class="p-col-6 al-text-align-right">
+                  <small class="al-text-align-right" [innerHTML]="beneficiarytext?.beneficiaryAmount"></small><br>
+                  <small class="al-text-align-right" [innerHTML]="beneficiarytext?.benefitFrequency"></small>
+                </div>
+                <br>
+                <br>
+                <br>
+             </div>
+             <hr *ngIf="!last" class="clear">
+              </div>
+              
+              <al-popover #TooltipMouseOver position="top" contentClass="al-font-change"
+                [endPopoverAccessibilityText]="data?.accessibilityTexts?.contentEndPopOver"
+                [beginPopoverAccessibilityText]="data?.accessibilityTexts?.contentBeginPopOver">
+                <div *ngFor="let relativehoverlist of opfmpaymentlist?.optionalFormPanelRelativeValueSection?.optionalFormPanelRelativeValueHoverList">
+                  <h5 [innerHTML]="opfmpaymentlist?.optionalFormPanelRelativeValueSection?.optionalFormPanelRelativeValueText | UISafe:'html'"></h5>
+                  <p [innerHTML]="relativehoverlist"></p>
+                  <p *ngIf="opfmpaymentlist?.optionalFormPanelRelativeValueSection?.optionalFormPanelRelativeValueLearnMoreLink " [innerHTML]="opfmpaymentlist?.optionalFormPanelRelativeValueSection?.optionalFormPanelRelativeValueLearnMoreLink | UISafe:'html'"></p>
+                </div>
+              </al-popover>
+
+              <hr *ngIf="opfmpaymentlist?.optionalFormPanelRelativeValueSection?.optionalFormPanelRelativeValueText && relativeValueTxt" class="clear">
+              <div class="p-grid" *ngIf="relativeValueTxt">
+              <span class="p-col-6" *ngIf="opfmpaymentlist?.optionalFormPanelRelativeValueSection?.optionalFormPanelRelativeValueText">
+                <a class="al-tooltip relativevalue" aria-haspopup="true" href="javaScript:void(0);"
+                  (mouseenter)="TooltipMouseOver.showPopOver($event)"
+                  (mouseleave)="TooltipMouseOver.hidePopOver($event)">{{opfmpaymentlist?.optionalFormPanelRelativeValueSection?.optionalFormPanelRelativeValueText}}</a>
+              </span>
+              <span  class="p-col-6 al-text-align-right" *ngIf="opfmpaymentlist?.optionalFormPanelRelativeValueSection?.optionalFormPanelRelativeValuePercent">
+                <small>
+                  {{opfmpaymentlist?.optionalFormPanelRelativeValueSection?.optionalFormPanelRelativeValuePercent}}%
+                </small>
+              </span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="al-gutter-col al-w1-8">
+        <!--  -->
+        <div *ngIf="opfmpaymentlist.hypotheticalOptionalForm" 
+        id ="NA_{{itemtext?.planId}}_{{itemtext?.elecGroupId}}_{{itemtext?.electionId}}_{{opfmpaymentlist?.optionalFormId}}">
+         <span *ngIf="data?.buttonLabels?.hypotheticalNotApplicable"> {{data?.buttonLabels?.hypotheticalNotApplicable}} </span> &nbsp;
+         <ng-container *ngFor="let footnoteItems of data?.footnoteContent?.footnoteLocations; let x = index">
+            <ng-container *ngIf="footnoteItems?.footnotes?.length">
+          <span *ngFor="let footnotetxt of footnoteItems?.footnotes; let j = index; let last=last">
+         <sup>
+          <a href="javascript:void(0);" *ngIf="footnotetxt?.footnoteId"  (click)="showFootnoteSup()"  [title]="footnotetxt?.footnoteId">{{footnotetxt?.footnoteId}}<span *ngIf="!last">,</span></a>
+        </sup> </span>
+        <span hidden> <al-footnote></al-footnote> </span>
+        </ng-container>
+      </ng-container>
+        </div>
+        <div *ngIf="!opfmpaymentlist.hypotheticalOptionalForm">
+            <ng-container *ngIf="selectedChosenArray.length < 1;then choose else checkchosen"></ng-container>
+            <ng-template #checkchosen>
+              <ng-container *ngIf="selectedChosenArray[i] == undefined;then choose else checkopfmchosen">
+              </ng-container>
+            </ng-template>
+            <ng-template #checkopfmchosen>
+              <ng-container *ngIf="selectedChosenArray[i][j];then chosen else choose"></ng-container>
+            </ng-template>
+            <ng-template #chosen>
+              <span class="" id ="chosenBtn_{{itemtext?.planId}}_{{itemtext?.elecGroupId}}_{{itemtext?.electionId}}_{{opfmpaymentlist?.optionalFormId}}">
+                  <div class="al-float-left chosen">
+                    <al-badges [type]="'tip'" [size]="'small'">
+                  <span class="al-padding-bottom-0">
+                    <span class="al-icon-done "></span>
+                  </span>
+                </al-badges>
+                </div>
+                <p class="brand-clr2-c"><small><strong>{{data?.buttonLabels?.chosen}}</strong></small></p>
+              </span>
+            </ng-template>
+            <ng-template #choose>
+              <div><!--   class=" al-gutter-col al-w1-8" -->
+                <button pButton type="button" label="{{data?.buttonLabels?.choose}}" [title]="data?.buttonLabels?.choose" class="al-button-positive al-button-small"
+                  (click)="enableDisableRule(j,i,data?.choosePaymentOptionTable?.paymentOptionGroupDetailList.length)" id ="chosenBtn_{{itemtext?.planId}}_{{itemtext?.elecGroupId}}_{{itemtext?.electionId}}_{{opfmpaymentlist?.optionalFormId}}"></button>
+              </div>
+            </ng-template>
+        </div>
+      </div>
+      </div>
+      <!-- Auto Selection payment List -->
+      <div *ngIf="opfmpaymentlist.autoSelectedFormsOfPaymentList.length" class="al-gutter-row clearfix">
+        <ng-container *ngFor="let autoSelectList of opfmpaymentlist.autoSelectedFormsOfPaymentList; let first = first;">
+        <div *ngIf="!autoSelectList?.hideAutoSelect">
+          <span class="al-nowrap al-highlight">{{opfmpaymentlist.optionalFormPanelPlusText}}</span>
+          <hr *ngIf="first"/>
+          <div class="al-gutter-row">
+          <div class="al-gutter-col al-w7-8 al-480-w100 al-320-w100">
+            <div class="al-u-9-16 al-padding-top-0 al-view-lt480 al-w100 al-view-gt480 al-w50"
+            id ="autoBeneFit_{{itemtext?.planId}}_{{itemtext?.elecGroupId}}_{{itemtext?.electionId}}_{{opfmpaymentlist?.optionalFormId}}">
+              <h3>
+                <strong [innerHTML]="autoSelectList.optionalFormPanelHeader"></strong>
+                <small class="supplementalPaymentTxt">{{data?.supplementalPaymentTxt}}</small>
+              </h3>
+              <custom-al-panel [title]="autoSelectList.optionalFormPanelLeadinText" [active]="false">
+                <ul [innerHTML]="autoSelectList.optionalFormPanelText"></ul>
+                <br />
+                <p *ngIf="autoSelectList.optionalFormPanelLearnMoreLink" [innerHTML]="autoSelectList.optionalFormPanelLearnMoreLink | UISafe:'html'"></p>
+              </custom-al-panel>
+            </div>
+            <div class="al-gutter-col al-u-7-16" id ="autoPaymentAmt_{{itemtext?.planId}}_{{itemtext?.elecGroupId}}_{{itemtext?.electionId}}_{{opfmpaymentlist?.optionalFormId}}">
+              <div *ngFor="let amountList of autoSelectList.optionalFormToYouAmountList"
+                class="al-320-w100 al-text-align-right-480">
+                <h3>
+                  <span [innerHTML]="amountList.optionalFormAmount"></span> &nbsp;
+                  <span><small
+                      [innerHTML]="amountList.optionalFormFrequencyDescription"></small></span>
+                      <br>
+                      <small *ngIf="amountList?.popUpAmountText" [innerHTML]="amountList.popUpAmountText"></small>
+                </h3>
+              </div>
+              <div class="al-480-w100 al-320-w100 al-padding-top-0">
+                <hr>
+                <div *ngFor="let beneficiarytextList of autoSelectList.optionalFormBeneficiaryList;  let last = last;">
+                 <div class="p-grid">
+                  <small class="p-col-6" [innerHTML]="beneficiarytextList.beneficiaryText"></small>
+                  <div class="p-col-6 al-text-align-right">
+                  <small class="al-text-align-right"
+                    [innerHTML]="beneficiarytextList.beneficiaryAmount"></small>
+                    <small class="al-text-align-right"
+                    [innerHTML]="beneficiarytextList.benefitFrequency"></small>
+                    </div>
+                  <br />
+                  <br />
+                  <br />
+                </div>
+                  <hr *ngIf="!last" class="clear" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="al-gutter-col al-w7-4" *ngIf="opfmpaymentlist?.optionalFormPanelPlusText"></div>
+        </div>
+        </div>
+      </ng-container>
+      </div>
+    </al-content-box>
+  </div>
+  <p *ngIf="itemtext?.customTextBelowEachOptionalFormGroup" [innerHTML]="itemtext?.customTextBelowEachOptionalFormGroup | UISafe:'html'"></p>
+  <ng-container  *ngIf="((data?.choosePaymentOptionTable?.paymentOptionGroupDetailList.length > 0) && (data?.choosePaymentOptionTable?.paymentOptionGroupDetailList.length == i+1) && data?.expandedParaFeatEnbled)">
+    <ng-container *ngFor="let expandedParaList of data?.expandedParaList">
+      <div *ngIf="expandedParaList?.key == electionDetailKey">
+        <span [outerHTML] ="expandedParaList?.text | UISafe : 'html'"></span>
+      </div>
+    </ng-container>
+  </ng-container>
+  <al-choose-payment-option-hypothetical-panel-section optionalFormGroupId="{{itemtext.optionalFormGroupId}}"></al-choose-payment-option-hypothetical-panel-section>
+</div>
+<p *ngIf="data?.customTextBelowAllPayments" [innerHTML]="data?.customTextBelowAllPayments | UISafe:'html'"></p>

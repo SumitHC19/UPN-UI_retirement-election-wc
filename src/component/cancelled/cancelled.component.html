@@ -1,0 +1,22 @@
+<ng-container *ngIf="!checkResponse">
+	<al-loading-indicator
+    	id="pagelevel"
+    	loadingType="pageLevel"
+    	[initialShow]="true"
+    	loadingText="loading">
+	</al-loading-indicator>
+</ng-container>
+<ng-container *ngIf="checkResponse">
+    <div class="al-gutter-row al-padding-left-neg3x al-padding-bottom-3x al-padding-top-3x">
+        <div class="al-gutter-col al-w5-8 al-320-w100 al-480-w100 al-720-w100">
+            <ng-container *ngIf="showError">
+                <al-error></al-error>
+            </ng-container>
+            <ng-container *ngIf="!showError">
+                <h1 *ngIf="cancelContent?.cancelText">{{cancelContent?.cancelText}}</h1>
+                <p *ngIf="cancelContent?.cancelIntroText" [innerHTML]="cancelContent?.cancelIntroText  | UISafe:'html'"></p>
+            </ng-container>
+        </div>
+        <al-right-side-components></al-right-side-components>
+    </div>
+</ng-container>

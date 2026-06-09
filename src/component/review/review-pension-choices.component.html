@@ -1,0 +1,211 @@
+<!-- DB CASHOUT AND DB NQE COMPONENT PROGRESS BAR START -->
+<ng-container *ngIf="checkresponse && !showError && (isDbCashoutFlag || isDbNQFlag)">
+    <al-dbcnq-progress-bar></al-dbcnq-progress-bar>
+</ng-container>
+<al-loading-indicator *ngIf="isDbCashoutFlag" id="pagelevel" loadingType="pageLevel"	[initialShow]="isDbCashoutPageLoading" 	loadingText="loading"></al-loading-indicator>
+
+<ng-container *ngIf="showError && isDbCashoutFlag && checkresponse">
+    <al-error></al-error>
+</ng-container>
+<!-- DB CASHOUT AND DB NQE COMPONENT PROGRESS BAR END -->
+<ng-container *ngIf="!checkresponse">
+    <al-loading-indicator id="pagelevel" loadingType="pageLevel" [initialShow]="true" loadingText="loading">
+    </al-loading-indicator>
+</ng-container>
+<ng-container *ngIf="checkresponse">
+    <div id="pensionchoices" class="al-font-change al-spacing">
+        <div class="al-u-10-16">
+            <ng-container *ngIf="showError && !isDbCashoutFlag">
+                <al-error></al-error>
+            </ng-container>
+            <ng-container *ngIf="!showError">
+                    <h1> {{data?.pageTitle}} </h1>
+                    <al-dynamic-edit-loader (continueEdit)="continueEdit($event)" (cancelEdit) ="onCancel()"></al-dynamic-edit-loader>
+                    <p *ngIf="isDbNQFlag && data?.headerPlaceHolder" [innerHTML]="data?.headerPlaceHolder | UISafe: 'html'"></p>
+                    <p *ngIf="data?.pageSummary" [innerHTML]="data?.pageSummary | UISafe: 'html'"></p>
+                    <p  *ngIf="data?.wthdPageSummary"  [innerHTML]="data?.wthdPageSummary | UISafe: 'html'"></p>
+                    <!-- retirementDatesContent -->
+                    <div *ngIf="!isDbCashoutFlag" class="al-gutter-row al-margin-left-0 al-basic-w100">
+                        <div class="al-gutter-col al-basic-w75 al-lead-in al-border-left-0">
+                            <h2 id="rtmtDateLabel">{{data?.retirementDatesContent?.heading}}</h2>
+                        </div>
+                        <div *ngIf="!isDbNQFlag" class="al-gutter-col al-basic-w25 al-lead-in al-text-align-right">
+                            <span>
+                                <button *ngIf="showQuitButton" pButton type="button" [label]="data?.changeButtonLabel"
+                                    id="changeRtmtDate"
+                                    [title]="data?.retirementDatesContent?.changeButtonAltText"
+                                    class="al-button-neutral al-button-small"
+                                    (click)="changeModal.showDialog($event)"
+                                >
+                                </button>
+                            </span>
+                        </div>
+                        
+                    </div>
+                    <al-dialog #changeModal [(visible)]="display" width="40%">
+                        <h3 class="al-padding-bottom-1x"
+                            *ngIf="data?.changeDateBeneModalContent?.heading">
+                            {{data?.changeDateBeneModalContent?.heading}}
+                        </h3>
+                        <div class="al-font-size" [innerHTML]="data?.changeDateBeneModalContent?.introContent | UISafe:'html'"></div>
+                        <ul *ngIf="data?.changeDateBeneModalContent?.listedContent" [innerHTML]="data?.changeDateBeneModalContent?.listedContent | UISafe:'html'" class="al-padding-left-1x"></ul>
+                        <div *ngIf="data?.changeDateBeneModalContent?.endingContent" class="al-padding-bottom-2x" [innerHTML]="data?.changeDateBeneModalContent?.endingContent | UISafe:'html'"></div>
+                        <button type="button" class="al-button-positive" pButton
+                            id="contChgRtmtDate"
+                            [label]="data?.changeDateBeneModalContent?.buttonList[0].label"
+                            [title]="data?.changeDateBeneModalContent?.buttonList[0].label"
+                            (click)="changeModal.hideDialog($event);callCancelAndReroute()">
+                        </button>
+                        <button type="button" class="al-button-neutral" pButton
+                        id="retChgRtmtDate"
+                        [label]="data?.changeDateBeneModalContent?.buttonList[1].label"
+                        [title]="data?.changeDateBeneModalContent?.buttonList[1].label"
+                        (click)="changeModal.hideDialog($event)">
+                    </button>
+                    </al-dialog>
+                    <span id="datesCmiretRouteLink" [innerHTML]="data?.changeDateBeneModalContent?.routeLink | UISafe:'html'" hidden></span>
+                    <table *ngIf="!isDbCashoutFlag" class="al-table al-table-responsive" id="your-retirement-dates">
+                        <tbody>
+                            <tr *ngIf="showLDWDate">
+                                <td>
+                                    <div class="al-gutter-row">
+                                        <div id="termDateLabel" class="al-gutter-col al-basic-w50 al-320-w100 al-480-w100">
+                                            <h5 class="al-font-xsmall al-margin-bottom-0">
+                                                <strong>{{data?.retirementDatesContent?.yourLastDayLabel}}</strong>
+                                            </h5>
+                                        </div>
+                                        <div id="termDate" class="al-gutter-col al-basic-w50 paddingtableleft">
+                                            <span class="al-font-xsmall">
+                                                {{data?.retirementDatesContent?.yourLastDayDate}}
+                                            </span>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="al-gutter-row ">
+                                        <div id="commencementDateLabel" class="al-gutter-col al-basic-w50  al-320-w100 al-480-w100">
+                                            <h5 class="al-font-xsmall al-padding-top-4 al-margin-bottom-0">
+                                                <strong [innerHTML]="data?.retirementDatesContent?.beginBenefitDateLabel"></strong>
+                                            </h5>
+                                        </div>
+                                        <div id="commencementDate" class="al-gutter-col al-basic-w50 paddingtableleft">
+                                         <span class="al-font-xsmall">{{data?.retirementDatesContent?.beginBenefitDate}}</span>
+                                        <ng-container *ngIf="!isDbNQFlag && !isPPOSupported">
+                                         <ng-container *ngFor="let footnoteItems of data?.footnoteContent?.footnoteLocations; let x = index">
+                                                <ng-container *ngIf="footnoteItems && footnoteItems?.footnotes?.length">
+                                            <span *ngFor="let footnotetxt of footnoteItems?.footnotes; let j = index; let last=last"> <sup><a href="javascript:void(0);" *ngIf="footnotetxt?.footnoteId"  (click)="showFootnoteSup()"  [title]="footnotetxt?.footnoteId">
+                                                    {{footnotetxt?.footnoteId}}<span *ngIf="!last">,</span>
+                                             </a></sup></span>
+                                        </ng-container>
+                                        </ng-container>
+                                    </ng-container>
+                                            </div>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    
+                    <al-retirement-review-details [isNQFlag]=isDbNQFlag [isCashoutFlag]=isDbCashoutFlag></al-retirement-review-details>
+        <!-- submit section  -->
+        <div *ngIf="!isDbCashoutFlag && !isDbNQFlag">
+        <h2 [innerHTML]="data?.submitContentTitle  | UISafe:'html'"></h2>
+        <p><span [innerHTML]="data?.submitContentIntro  | UISafe:'html'"></span>
+            <span *ngIf="data?.submitContentIntroTipRollover">&nbsp;</span>
+        <span *ngIf="!isPPOSupported">
+                <a class="al-tooltip" aria-haspopup="true" href="javaScript:void(0);"
+                (mouseenter)="TooltipMouseOver.showPopOver($event)"
+                (mouseleave)="TooltipMouseOver.hidePopOver($event)">{{data?.submitContentIntroTipRollover}}</a>
+        </span>.</p>
+        <p [innerHTML]="data?.submitContentNote | UISafe:'html'" ></p>
+        <al-popover #TooltipMouseOver position="top" contentClass="al-font-change" [endPopoverAccessibilityText]="''"
+            [beginPopoverAccessibilityText]="''">
+            <h5 [innerHTML]="data?.submitContentIntroTipRollover"></h5>
+            <p class="al-margin-bottom-0" [innerHTML]="data?.submitContentTipContent"></p>
+        </al-popover> </div>
+        
+        <al-footnote *ngIf="!isDbCashoutFlag && !isDbNQFlag && !isPPOSupported"></al-footnote>
+                <!-- DB CASHOUT AND DB NQE COMPONENT BUTTON START -->
+                <div *ngIf="isDbCashoutFlag || isDbNQFlag">
+                        <p *ngIf="isDbNQFlag && data?.footerPlaceHolder" [innerHTML]="data?.footerPlaceHolder | UISafe: 'html'"></p>
+                    <button *ngIf="data?.continueButtonLabel" pButton type="button" [disabled]="data?.isECS" label="{{data?.continueButtonLabel}}" title="{{data?.continueButtonLabel}}"
+                        (click)="continueClick(true, isDbCashoutFlag, isDbNQFlag)" class="al-button-positive al-button-large"></button>
+                    <button *ngIf="data?.cancelButtonLabel" pButton type="button" label="{{data?.cancelButtonLabel}}" title="{{data?.cancelButtonLabel}}"
+                        (click)="aldialogCancel.showDialog($event)" class="al-button-neutral al-button-large"></button>
+                
+                    <al-dialog #aldialogCancel [(visible)]="display" styleClass="al-spacing al-font-change" width="506">
+                        <div class="al-margin-bottom-1x">
+                            <h3 *ngIf="data?.cancelModalContent?.cancelHeading">{{data?.cancelModalContent?.cancelHeading}}</h3>
+                        </div>
+                        
+                        <button *ngIf="data?.cancelModalContent?.yesButton" pButton type="button" class="al-button-positive al-button-large" title="{{data?.cancelModalContent?.yesButton}}"
+                            label="{{data?.cancelModalContent?.yesButton}}" (click)="redirectToCancelledPage($event)"></button>
+                        <button *ngIf="data?.cancelModalContent?.noButton" pButton type="button" label="{{data?.cancelModalContent?.noButton}}" title="{{data?.cancelModalContent?.noButton}}"
+                            (click)="aldialogCancel.hideDialog($event)" class="al-button-neutral al-button-large"></button>
+                    </al-dialog>
+                </div>
+                <!-- DB CASHOUT AND DB NQE COMPONENT BUTTON END -->
+                <div *ngIf="!isDbCashoutFlag && !isDbNQFlag" class="al-margin-top-2x">
+        
+                        <button pButton type="submit" [label]="data?.flowButtonNavigation?.buttonList[0].label"
+                            [title]="data?.flowButtonNavigation?.buttonList[0].label"
+                            class="al-button-positive al-button-large al-margin-bottom-1x al-rew-pointer"
+                            (click)="continueClick(true, false, false)" [disabled]="disableSubmit">
+                        </button>
+        
+                            <button *ngIf="showCBLButton" pButton type="button"
+                                [label]="data?.flowButtonNavigation?.buttonList[1].label"
+                                [title]="data?.flowButtonNavigation?.buttonList[1].label"
+                                class="al-button-neutral al-button-large al-margin-bottom-1x al-rew-pointer al-margin-lft-rit-8"
+                                (click)="continueClick(false, false, false)">
+                            </button>
+        
+                        <button *ngIf="showQuitButton" pButton type="button" [label]="data?.flowButtonNavigation?.buttonList[2].label"
+                            [title]="data?.flowButtonNavigation?.buttonList[2].label"
+                            class="al-button-neutral al-button-large al-margin-bottom-1x al-rew-pointer"
+                            (click)="quitModal.showDialog($event)"></button>
+                            <al-loading-indicator id="saveServiceLoader" loadingType="pageLevel" [initialShow]="false" loadingText="loading"></al-loading-indicator>
+                        <al-dialog #quitModal [(visible)]="display" width="650">
+                            <h2 class="al-padding-bottom-1x"
+                                *ngIf="data?.flowButtonNavigation?.quitModalContent?.title">
+                                {{data?.flowButtonNavigation?.quitModalContent.title}}</h2>
+                                <div *ngFor="let quitModaltext of data?.flowButtonNavigation?.quitModalContent?.bodyList; let r = index">
+                                <ng-container *ngIf="!showCBLButton && quitModaltext?.action === 'comeBackLater' else elseBlock"></ng-container>
+                                <ng-template #elseBlock>
+                                    <h5><b [innerHTML]="quitModaltext?.heading"></b></h5>
+                                    <p [innerHTML]="quitModaltext?.paragraph"></p>
+                                </ng-template>
+                            </div>
+                            <hr class="al-padding-bottom-1x">
+
+                                <button type="button" *ngIf="showCBLButton && data?.flowButtonNavigation?.quitModalContent?.buttonList[0].label" class="al-button-positive al-button-large al-margin-top-1x al-rew-pointer" pButton
+                                    (click)="onClickContinue(false, false, false);quitModal.hideDialog($event)"
+                                    [label]="data?.flowButtonNavigation?.quitModalContent?.buttonList[0].label"
+                                    [title]="data?.flowButtonNavigation?.quitModalContent?.buttonList[0].label"></button>
+                               
+                                    <button pButton type="button" *ngIf="data?.flowButtonNavigation?.quitModalContent?.buttonList[1].label" (click)="checkPreActivityEdit();quitModal.hideDialog($event)"
+                                    [label]="data?.flowButtonNavigation?.quitModalContent?.buttonList[1].label"
+                                    [title]="data?.flowButtonNavigation?.quitModalContent?.buttonList[1].label"
+                                    class="al-button-neutral al-button-large al-margin-top-1x al-rew-pointer"></button>
+
+                            <button pButton type="button" (click)="quitModal.hideDialog($event)"
+                                *ngIf="data?.flowButtonNavigation?.quitModalContent?.buttonList[2].label"
+                                [label]="data?.flowButtonNavigation?.quitModalContent?.buttonList[2].label"
+                                [title]="data?.flowButtonNavigation?.quitModalContent?.buttonList[2].label"
+                                class="al-button-neutral al-button-large al-margin-top-1x al-rew-pointer"></button>
+                        </al-dialog>
+                    </div>
+            </ng-container>
+        </div>
+        <!-- DB CASHOUT AND DB NQE COMPONENT RIGHT RAIL START -->
+        <div *ngIf="!showError && (isDbCashoutFlag || isDbNQFlag)" class="portlet-column al-u-6-16 al-u-2-2 al-u-4-4">
+            <al-dbcnq-right-rail></al-dbcnq-right-rail>
+        </div>
+        <!-- DB CASHOUT AND DB NQE COMPONENT RIGHT RAIL END -->
+        <al-right-side-components *ngIf="!isDbCashoutFlag && !isDbNQFlag"></al-right-side-components>
+    </div>
+</ng-container>
+<span id="suadynamicredirecttag" hidden="true"></span>

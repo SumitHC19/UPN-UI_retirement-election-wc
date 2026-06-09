@@ -1,0 +1,75 @@
+<ng-container *ngIf="!checkresponse">
+    <al-loading-indicator id="pagelevel" loadingType="pageLevel" [initialShow]="true" loadingText="loading">
+    </al-loading-indicator>
+</ng-container>
+<ng-container *ngIf="checkresponse">
+    <div class="base-responsive_full" id="main-content" role="main">
+        <div class="portlet-layout">
+            <header id="banner" role="banner">
+                <div class="al-u-2-2 al-u-4-4 al-u-8-8 al-u-16-16 portlet-column portlet-column-first" id="column-1">
+                    <al-secondary-window-header-wc auto-id="al-secondary-window-header-wc"></al-secondary-window-header-wc>
+                </div>
+            </header>
+            <div id="content" class="al-page-wrapper al-spacing al-font-change al-pension-review-readonly">
+                <div class="portlet-row">
+                    <div class="al-u-2-2 al-u-4-4 al-u-8-8 al-u-16-16 portlet-column" id="column-3">
+                        <div id="pensionchoices">
+                            <ng-container *ngIf="showError && !isDbCashoutFlag">
+                                <al-error></al-error>
+                            </ng-container>
+                            <ng-container *ngIf="!showError">
+                                <h1> {{data?.pageTitle}} </h1>
+                                <al-dynamic-edit-loader></al-dynamic-edit-loader>
+                                <p *ngIf="data?.pageSummary" [innerHTML]="data?.pageSummary | UISafe: 'html'"></p>
+                                <p *ngIf="data?.wthdPageSummary"  [innerHTML]="data?.wthdPageSummary | UISafe: 'html'"></p>
+                                <!-- retirementDatesContent -->
+                                <div *ngIf="!isDbCashoutFlag" class="al-gutter-row al-margin-left-0 al-basic-w100">
+                                    <div class="al-gutter-col al-basic-w75 al-lead-in al-border-left-0">
+                                        <h2 id="rtmtDateLabel">{{data?.retirementDatesContent?.heading}}</h2>
+                                    </div>
+
+                                </div>
+
+                                <table *ngIf="!isDbCashoutFlag" class="al-table al-table-responsive" id="your-retirement-dates">
+                                    <tbody>
+                                        <tr *ngIf="showLDWDate">
+                                            <td>
+                                                <div class="al-gutter-row">
+                                                    <div id="termDateLabel" class="al-gutter-col al-basic-w50 al-320-w100 al-480-w100">
+                                                        <h5 class="al-font-xsmall al-margin-bottom-0">
+                                                            <strong>{{data?.retirementDatesContent?.yourLastDayLabel}}</strong>
+                                                        </h5>
+                                                    </div>
+                                                    <div id="termDate" class="al-gutter-col al-basic-w50 paddingtableleft">
+                                                        <span class="al-font-xsmall">
+                                                            {{data?.retirementDatesContent?.yourLastDayDate}}
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="al-gutter-row ">
+                                                    <div id="commencementDateLabel" class="al-gutter-col al-basic-w50  al-320-w100 al-480-w100">
+                                                        <h5 class="al-font-xsmall al-margin-bottom-0">
+                                                            <strong [innerHTML]="data?.retirementDatesContent?.beginBenefitDateLabel"></strong>
+                                                        </h5>
+                                                    </div>
+                                                    <div id="commencementDate" class="al-gutter-col al-basic-w50 paddingtableleft">
+                                                        <span class="al-font-xsmall">{{data?.retirementDatesContent?.beginBenefitDate}}</span>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <al-retirement-review-details [isCashoutFlag]=isDbCashoutFlag></al-retirement-review-details>
+                            </ng-container>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</ng-container>

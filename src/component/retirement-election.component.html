@@ -1,0 +1,74 @@
+<div class="base-responsive_full" id="main-content" role="main">
+   <div class="portlet-layout">
+      <header id="banner" role="banner">
+         <div class="al-u-2-2 al-u-4-4 al-u-8-8 al-u-16-16 portlet-column portlet-column-first" id="column-1">
+            <al-layout-header-wc auto-id="al-layout-header-wc"></al-layout-header-wc>
+         </div>
+      </header>
+      <div id="content" class="al-page-wrapper al-spacing al-font-change">
+         <div class="portlet-row">
+            <div class="al-u-2-2 al-u-4-4 al-u-8-8 al-u-16-16 portlet-column" id="column-3">
+               <div class="al-gutter-row clearfix">
+                  <div
+                     class="al-view-720 al-float-right-720 al-view-960 al-float-right-960 al-padding-top-1x al-margin-left-1x">
+                     <button pButton type="button" icon="al-icon-printer" label={{printButtonText}}
+                        title={{printButtonText}} class="al-button-neutral" (click)="printBtnClick()"></button>
+                  </div>
+               </div>
+
+               <div class="al-margin-bottom-3x">
+                  <p><strong>{{ pageTitle }}</strong></p>
+               </div>
+               <ng-container *ngIf="readyToLoadProgressBar">
+                  <ng-container *ngIf="progressBarDisplay">
+                     <progress-bar [showPopOver]="showPopOver" [changeModal]="changeModal"
+                        (changeModalContent)="setChangeModalContent($event);"></progress-bar>
+                  </ng-container>
+
+                  <al-dialog #changeModal [(visible)]="display" styleClass="al-spacing al-font-change" width="506">
+                     <div class="al-margin-bottom-1x">
+                        <div [innerHtml]="changeModalContent?.changeModalText | UISafe:'html'"></div>
+                     </div>
+                     <button *ngIf="changeModalContent?.yesBtn" title="{{changeModalContent?.yesBtn}}" type="button"
+                        class="al-button-negative"
+                        (click)="changeModal.hideDialog($event); checkPreActivityEdit($event);" pButton
+                        [label]="changeModalContent?.yesBtn"></button>
+                     <button *ngIf="changeModalContent?.noBtn" title="{{changeModalContent?.noBtn}}" type="button"
+                        class="al-button-neutral" (click)="changeModal.hideDialog($event)" pButton
+                        [label]="changeModalContent?.noBtn"></button>
+                  </al-dialog>
+
+                  <al-dialog #editModal [(visible)]="display" styleClass="al-spacing al-font-change" width="506">
+                     <div class="al-margin-bottom-1x">
+                        <p *ngIf="preactivityEditData?.editTextOne"
+                           [innerHtml]="preactivityEditData?.editTextOne  | UISafe:'html'">
+                        </p>
+                        <p *ngIf="preactivityEditData?.editTextTwo"
+                           [innerHtml]="preactivityEditData?.editTextTwo | UISafe:'html'"></p>
+                     </div>
+                     <button *ngIf="preactivityEditData?.buttonLabel" title="{{preactivityEditData?.buttonLabel}}"
+                        type="button" class="al-button-positive" (click)="editModal.hideDialog($event);" pButton
+                        [label]="preactivityEditData?.buttonLabel"></button>
+                  </al-dialog>
+
+                  <al-dialog #errorModal [(visible)]="display" styleClass="al-spacing al-font-change" width="506">
+                     <div class="al-margin-bottom-1x">
+                        <p *ngIf="errorModalContent?.errorMessage">{{errorModalContent?.errorMessage}}</p>
+                     </div>
+                     <button *ngIf="errorModalContent?.buttonLabel" title="{{errorModalContent?.buttonLabel}}"
+                        type="button" class="al-button-positive" (click)="errorModal.hideDialog($event);refreshPage();"
+                        pButton [label]="errorModalContent?.buttonLabel"></button>
+                  </al-dialog>
+
+                  <router-outlet></router-outlet>
+               </ng-container>
+            </div>
+         </div>
+      </div>
+      <footer id="footer" role="contentinfo">
+         <div class="al-u-2-2 al-u-4-4 al-u-8-8 al-u-16-16 portlet-column portlet-column-last" id="column-2">
+            <al-footer-wc auto-id="al-footer-wc"></al-footer-wc>
+         </div>
+      </footer>
+   </div>
+</div>

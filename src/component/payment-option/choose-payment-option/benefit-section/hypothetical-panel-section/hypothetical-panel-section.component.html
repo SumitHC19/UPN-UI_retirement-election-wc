@@ -1,0 +1,34 @@
+<div hidden>
+  <al-dynamic-edit-loader (cancelEdit)="onCancel()"></al-dynamic-edit-loader>
+</div>
+<div  *ngFor="let itemtext of data?.choosePaymentOptionTable?.paymentOptionGroupDetailList; let i = index">
+  <div *ngIf="optionalFormGroupId == itemtext.optionalFormGroupId">
+    <al-dialog #nameBeneficiaryDialog class="al-padding-2x" width="37.5%" [(visible)]="display">
+  <h3 class="al-padding-bottom-1x" [innerHTML]="itemtext?.hypotheticalOptionalFormPanel?.nameBeneficiaryModalHeader | UISafe: 'html'"></h3>
+  <p class="al-padding-bottom-1x" [innerHTML]="itemtext?.hypotheticalOptionalFormPanel?.nameBeneficiaryModalBody | UISafe: 'html'">
+  </p>
+  <div class="al-padding-top-1x">
+      <button type="button" class="al-button-positive al-button-large" pButton (click)="checkPreActivityEdit();nameBeneficiaryDialog.hideDialog($event)" [label]="data?.buttonLabels?.modalYes"></button>
+      <button type="button" class="al-button-neutral al-button-large" pButton (click)="nameBeneficiaryDialog.hideDialog($event)" [label]="data?.buttonLabels?.modalNo"></button>
+  </div>
+</al-dialog>
+<div *ngIf="itemtext?.hasHypoOptionalFormInGroup">
+<al-panel title="{{itemtext?.hypotheticalOptionalFormPanel?.hypotheticalOptionalFormPanelHeader}}" [active]="false">
+  <p *ngIf="itemtext?.hypotheticalOptionalFormPanel?.hypotheticalOptionalFormPanelOverviewText" [innerHTML]="itemtext?.hypotheticalOptionalFormPanel?.hypotheticalOptionalFormPanelOverviewText"></p>
+  <p *ngIf="itemtext?.hypotheticalOptionalFormPanel?.hypotheticalOptionalFormPanelSurvivorText">
+    <span [innerHTML]="this.nameABeneficiaryText[i]"></span>
+    <span [innerHTML]="this.nameABeneficiaryLink[i] | UISafe: 'html'" (click)="nameBeneficiaryDialog.showDialog($event)"></span>
+  </p>
+  <p *ngIf="itemtext?.hypotheticalOptionalFormPanel?.hypotheticalOptionalFormPanelSocialSecurityText" [innerHTML]="itemtext?.hypotheticalOptionalFormPanel?.hypotheticalOptionalFormPanelSocialSecurityText"></p>
+</al-panel>
+</div>
+<div *ngIf="itemtext?.relativeValuePanelSection?.relativeValuePanelHeader">
+<al-panel  title="{{itemtext?.relativeValuePanelSection?.relativeValuePanelHeader}}"  [active]="false">
+  <div *ngFor="let item of itemtext?.relativeValuePanelSection?.relativeValueParagraphList">
+    <p class="al-padding-bottom-1x" [innerHTML]="item"></p>
+  </div>
+</al-panel>
+</div>
+<hr>
+</div>
+</div>

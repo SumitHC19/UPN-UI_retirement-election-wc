@@ -1,0 +1,217 @@
+<ng-container *ngIf="!checkresponse">
+    <al-loading-indicator id="pagelevel" loadingType="pageLevel" [initialShow]="true" loadingText="loading">
+    </al-loading-indicator>
+</ng-container>
+
+<div *ngIf="checkresponse" id="choosecategory" class="al-font-change al-spacing">
+    <div class="al-u-10-16 al-480-w100 al-320-w100 al-720-w100">
+        <h1>{{data?.choosePaymentCategoryBean?.pageTitle}} </h1>
+        <div *ngIf="showError">
+            <al-error></al-error>
+        </div>
+        <div *ngIf="!showError">
+            <al-dynamic-edit-loader (continueEdit) = "continueClick($event)" (cancelEdit) = "onCancel()"></al-dynamic-edit-loader>
+            <p [innerHTML]="data?.choosePaymentCategoryBean?.pageUsageText | UISafe: 'html'"></p>
+            <h2 id="electiongroupdesc_{{data?.choosePaymentCategoryBean?.electionGroupTableData?.electionGroupId}}">{{data?.choosePaymentCategoryBean?.electionGroupTableData?.electionGroupDescription}} </h2>
+            <p [innerHTML]="data?.choosePaymentCategoryBean?.pensionAmtBefTaxNote | UISafe: 'html'"> </p>
+            <div class="al-container al-padding-all-2x al-margin-top-1x al-margin-bottom-1x">
+                <div *ngFor="let groupTableData of data?.choosePaymentCategoryBean?.electionGroupTableData?.electionTableDataContent; let i = index; let last=last">
+                    <div class="al-padding-all-1x al-container brand-3">
+                        <div class="al-gutter-row al-no-margin">
+                            <div class="al-gutter-col al-w75 al-480-w100">
+                                <h3 class="al-margin-bottom-1x" id="electiondesc_{{data?.choosePaymentCategoryBean?.electionGroupTableData?.electionGroupId}}_{{groupTableData?.electionId}}">
+                                    <strong> {{groupTableData?.electionDescription}} </strong>
+                                    <a aria-haspopup="true" title="Help" class="al-help-popover al-tooltip al-v-align-top" href="javaScript:void(0);" (click)="TooltipHelp.showPopOver($event)">
+                                        <al-help [value]="'Help'"></al-help>
+                                    </a>
+                                </h3>
+                                <al-popover #TooltipHelp position="bottom" contentClass="al-font-change" width="300px" [endPopoverAccessibilityText]="''"
+                                    [beginPopoverAccessibilityText]="''">
+                                    <h5>{{groupTableData?.electionDescription}}</h5>
+                                    <p *ngIf="groupTableData?.electionMoreInfoText" [innerHTML]="groupTableData?.electionMoreInfoText | UISafe:'html'"></p>
+                                </al-popover>
+
+                            </div>
+                            <div class="al-gutter-col al-w25 al-480-w100 al-text-align-right">
+                                    <ng-container *ngIf="selectedButton[i];then chosen else choose"></ng-container>
+                                    <ng-template #chosen>
+                                            <span class="al-margin-left-1x">
+                                                    <al-badges [type]="'tip'" [size]="'large'">
+                                                      <span class="al-padding-bottom-0">
+                                                        <span class="al-icon-done"></span>
+                                                      </span>
+                                                    </al-badges>
+                                                    <strong class="brand-clr2-c"> {{data?.choosePaymentCategoryBean?.chosenButtonText}} </strong>
+                                                  </span>
+                                          </ng-template>
+                                          <ng-template #choose>
+                                                    <button id="chooseGrpBtn_{{data?.choosePaymentCategoryBean?.electionGroupTableData?.electionGroupId}}_{{groupTableData?.electionId}}" pButton type="button" *ngIf="data?.choosePaymentCategoryBean?.chooseGroupButtonText" [label]="data?.choosePaymentCategoryBean?.chooseGroupButtonText"
+                                                    [title]="data?.choosePaymentCategoryBean?.chooseGroupButtonText" class="al-button-positive al-margin-bottom-1x" (click)="enableDisableRule(i)" ></button>
+                                          </ng-template>
+                            </div>
+                        </div>
+                        <table class="al-table al-table-responsive brand-1">
+                            <tbody>
+                                <ng-container *ngFor="let groupDataContent of groupTableData.optionalFormGroupPaymentData; let j = index" class="al-border-bottom-none">
+                                    <tr>
+                                        <td id="optionalFormGroupDescription_{{data?.choosePaymentCategoryBean?.electionGroupTableData?.electionGroupId}}_{{groupTableData?.electionId}}_{{groupDataContent?.optionalFormGroupId}}" class="al-w30 al-float-none al-480-w100">
+                                            <div class="al-gutter-row">
+                                                <div class="al-gutter-col al-w50 al-480-w50 al-320-w50 al-hidden-gt720">
+                                                    <strong> {{data?.choosePaymentCategoryBean?.responsiveDataTitle1}} </strong>
+                                                </div>
+                                                <div class="al-gutter-col al-w100 al-480-w50 al-320-w50" *ngIf="groupDataContent?.optionalFormGroupDescription">
+                                                    {{groupDataContent?.optionalFormGroupDescription}}
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td class="al-w30 al-float-none al-480-w100">
+                                            <div class="al-gutter-row">
+                                                <div class="al-gutter-col al-w50 al-480-w50 al-320-w50 al-hidden-gt720">
+                                                    <strong> {{data?.choosePaymentCategoryBean?.responsiveDataTitle2}} </strong>
+                                                </div>
+                                                <div class="al-gutter-col al-w100 al-480-w50 al-320-w50" *ngIf="groupTableData?.isElectionDeferred">
+                                                    {{data?.choosePaymentCategoryBean?.deferredText}}
+                                                </div>
+                                                <div *ngIf="!groupTableData?.isElectionDeferred">
+                                                    <div id="benefitDescription_{{data?.choosePaymentCategoryBean?.electionGroupTableData?.electionGroupId}}_{{groupTableData?.electionId}}_{{groupDataContent?.optionalFormGroupId}}" class="al-gutter-col al-w100 al-480-w50 al-320-w50" *ngIf="groupDataContent?.selectedOptionalFormPaymentData">
+                                                        <span *ngIf="groupDataContent?.selectedOptionalFormPaymentData?.optionalFormDescription"> {{groupDataContent?.selectedOptionalFormPaymentData?.optionalFormDescription}}
+                                                        </span>
+                                                    </div>
+                                                    <div id="notonfiletext_{{data?.choosePaymentCategoryBean?.electionGroupTableData?.electionGroupId}}_{{groupTableData?.electionId}}_{{groupDataContent?.optionalFormGroupId}}" class="al-gutter-col al-w100 al-480-w50 al-320-w50" *ngIf="!groupDataContent?.selectedOptionalFormPaymentData">
+                                                        <span [innerHTML]="data?.choosePaymentCategoryBean?.notOnFileText | UISafe: 'html'">  </span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td  class="al-text-align-right al-float-none al-w3-16 al-480-w100">
+                                            <div class="al-gutter-row">
+                                                <div class="al-gutter-col al-w50 al-480-w50 al-320-w50 al-hidden-gt720">
+                                                    <strong> {{data?.choosePaymentCategoryBean?.responsiveDataTitle3}} </strong>
+                                                </div>
+                                                <div class="al-gutter-col al-w100 al-480-w50 al-320-w50" *ngIf="groupTableData?.isElectionDeferred">
+                                                    <strong> — </strong>
+                                                </div>
+                                                <div *ngIf="!groupTableData?.isElectionDeferred">
+                                                    <div class="al-gutter-col al-w100 al-480-w50 al-320-w50" *ngIf="groupDataContent?.selectedOptionalFormPaymentData">
+                                                        <div id="benefitFrequencyPayment_{{data?.choosePaymentCategoryBean?.electionGroupTableData?.electionGroupId}}_{{groupTableData?.electionId}}_{{groupDataContent?.optionalFormGroupId}}" *ngIf="groupDataContent?.selectedOptionalFormPaymentData?.optionalFormStartAmount">
+                                                            <strong>{{groupDataContent?.selectedOptionalFormPaymentData?.optionalFormStartAmount}}
+                                                            </strong>
+                                                            <div *ngIf="groupDataContent?.selectedOptionalFormPaymentData?.optionalFormFrequencyText" [innerHTML]="groupDataContent?.selectedOptionalFormPaymentData?.optionalFormFrequencyText | UISafe: 'html'" >
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="al-gutter-col al-w100 al-480-w50 al-320-w50" *ngIf="!groupDataContent?.selectedOptionalFormPaymentData">
+                                                        —
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td class="al-text-align-right al-float-none">
+                                            <div class="al-gutter-row">
+                                                <!-- <div class="al-gutter-col al-w50 al-480-w50 al-320-w50 al-hidden-gt720">
+                                                        {{data?.choosePaymentCategoryBean?.responsiveDataTitle4}}
+                                                    </div> -->
+                                                <div class="al-gutter-col al-w100 " *ngIf="!groupTableData?.isElectionDeferred">
+                                                    <button id="optionsBtn_{{data?.choosePaymentCategoryBean?.electionGroupTableData?.electionGroupId}}_{{groupTableData?.electionId}}_{{groupDataContent?.optionalFormGroupId}}" pButton type="button" *ngIf="!groupDataContent?.selectedOptionalFormPaymentData && data?.choosePaymentCategoryBean?.optionsButtonText"
+                                                        [label]="data?.choosePaymentCategoryBean?.optionsButtonText" [title]="data?.choosePaymentCategoryBean?.optionsButtonText"
+                                                        (click)="setChosenCategoryGroupPlan(i,false)" class="al-margin-bottom-0 al-margin-left-50 al-button-positive"></button>
+
+                                                    <button id="changeBtn_{{data?.choosePaymentCategoryBean?.electionGroupTableData?.electionGroupId}}_{{groupTableData?.electionId}}_{{groupDataContent?.optionalFormGroupId}}" pButton type="button" *ngIf="groupDataContent?.selectedOptionalFormPaymentData && data?.choosePaymentCategoryBean?.changeButtonText"
+                                                        [label]="data?.choosePaymentCategoryBean?.changeButtonText" [title]="data?.choosePaymentCategoryBean?.changeButtonText"
+                                                        (click)="setChosenCategoryGroupPlan(i,false)" class="al-margin-bottom-0 al-margin-left-50 al-button-neutral"></button>
+                                                </div>
+                                                <div class="al-gutter-col al-w100" *ngIf="groupTableData?.isElectionDeferred">
+                                                    <button id="changeBtn_{{data?.choosePaymentCategoryBean?.electionGroupTableData?.electionGroupId}}_{{groupTableData?.electionId}}_{{groupDataContent?.optionalFormGroupId}}" pButton type="button" *ngIf="data?.choosePaymentCategoryBean?.changeButtonText" [label]="data?.choosePaymentCategoryBean?.changeButtonText"
+                                                        [title]="data?.choosePaymentCategoryBean?.changeButtonText" (click)="setChosenCategoryGroupPlan(i,false)"
+                                                        class="al-margin-bottom-0 al-margin-left-50 al-button-neutral"></button>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr *ngFor="let autoSelectedData of groupDataContent?.selectedOptionalFormPaymentData?.autoSelectedOptionalFormsOfPaymentList; let k = index">
+                                        <td *ngIf="!groupTableData?.isElectionDeferred" class="al-border-bottom-zero">
+                                        </td>
+                                        <td *ngIf="!groupTableData?.isElectionDeferred">
+                                            <div class="al-gutter-row">
+                                                <div class="al-gutter-col al-w50 al-480-w50 al-320-w50 al-hidden-gt720">
+                                                    <strong> {{data?.choosePaymentCategoryBean?.responsiveDataTitle2}} </strong>
+                                                </div>
+                                                <div id="autoselected_benefitDescription_{{data?.choosePaymentCategoryBean?.electionGroupTableData?.electionGroupId}}_{{groupTableData?.electionId}}_{{autoSelectedData?.optionalFormGroupId}}" class="al-gutter-col al-w100 al-480-w50 al-320-w50" *ngIf="autoSelectedData?.optionalFormDescription">
+                                                    {{autoSelectedData?.optionalFormDescription}}
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td class="al-text-align-right" *ngIf="!groupTableData?.isElectionDeferred">
+                                            <div class="al-gutter-row">
+                                                <div class="al-gutter-col al-w50 al-480-w50 al-320-w50 al-hidden-gt720">
+                                                    <strong> {{data?.choosePaymentCategoryBean?.responsiveDataTitle3}} </strong>
+                                                </div>
+                                                <div  id="autoselected_benefitFrequencyPayment_{{data?.choosePaymentCategoryBean?.electionGroupTableData?.electionGroupId}}_{{groupTableData?.electionId}}_{{autoSelectedData?.optionalFormGroupId}}"  class="al-gutter-col al-w100 al-480-w50 al-320-w50" *ngIf="autoSelectedData?.optionalFormStartAmount">
+                                                    <strong>{{autoSelectedData?.optionalFormStartAmount}} </strong>
+                                                    <br>
+                                                    <div *ngIf="autoSelectedData?.optionalFormFrequencyText" [innerHTML]="autoSelectedData?.optionalFormFrequencyText | UISafe: 'html'">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td *ngIf="!groupTableData?.isElectionDeferred" class="al-border-bottom-zero"></td>
+                                    </tr>
+                                </ng-container>
+                            </tbody>
+                        </table>
+
+                    </div>
+                    <p class="al-text-align-center " *ngIf="!last">
+                        <strong  [innerHTML]="data?.choosePaymentCategoryBean?.moreElectionText | UISafe: 'html'"> </strong>
+                    </p>
+                </div>
+            </div>
+            <!-- Start panel section here -->
+            <div *ngIf="data?.choosePaymentCategoryBean?.paymentChoicePanelList">
+                <al-panel-section></al-panel-section>
+            </div>
+            <hr>
+            <p [innerHTML]="data?.choosePaymentCategoryBean?.pageFootNote | UISafe: 'html'"> </p>
+
+            <!-- Start continue button section here -->
+            <div>
+                <button pButton type="button" (click)="redirectNext(true)" [label]="data?.choosePaymentCategoryBean?.flowButtonNavigation?.buttonList[0]?.label"
+                    [title]="data?.choosePaymentCategoryBean?.flowButtonNavigation?.buttonList[0]?.label" class="al-button-positive al-button-large al-margin-bottom-1x"></button>
+
+                <button *ngIf="showCBLButton" pButton type="button" (click)="redirectNext(false)" [label]="data?.choosePaymentCategoryBean?.flowButtonNavigation?.buttonList[1]?.label" [title]="data?.choosePaymentCategoryBean?.flowButtonNavigation?.buttonList[1]?.label"
+                    class="al-button-neutral al-button-large al-margin-bottom-1x al-margin-lft-rit-8">
+                </button>
+
+                <button *ngIf="showQuitButton" pButton type="button" [label]="data?.choosePaymentCategoryBean?.flowButtonNavigation?.buttonList[2]?.label" [title]="data?.choosePaymentCategoryBean?.flowButtonNavigation?.buttonList[2]?.label"
+                    class="al-button-neutral al-button-large al-margin-bottom-1x" (click)="quitModal.showDialog($event)"></button>
+
+                    <al-loading-indicator id="saveServiceLoader" loadingType="pageLevel" [initialShow]="false" loadingText="loading"></al-loading-indicator>
+                <!-- Start quitModal here -->
+                <al-dialog #quitModal [(visible)]="display" width="650">
+                    <h2 class="al-padding-bottom-1x" *ngIf="data?.choosePaymentCategoryBean?.flowButtonNavigation?.quitModalContent?.title">{{data?.choosePaymentCategoryBean?.flowButtonNavigation?.quitModalContent?.title}}</h2>
+                    <div *ngFor="let quitModaltext of data?.choosePaymentCategoryBean?.flowButtonNavigation?.quitModalContent?.bodyList; let r = index">
+                        <ng-container *ngIf="!showCBLButton && quitModaltext?.action === 'comeBackLater' else elseBlock"></ng-container>
+                        <ng-template #elseBlock>
+                            <h5><b [innerHTML]="quitModaltext?.heading"></b></h5>
+                            <p [innerHTML]="quitModaltext?.paragraph"></p>
+                        </ng-template>
+                    </div>
+                    <hr class="al-padding-bottom-1x">
+                    <button *ngIf="showCBLButton && data?.choosePaymentCategoryBean?.flowButtonNavigation?.quitModalContent?.buttonList[0]?.label" type="button"
+                        class="al-button-positive al-rew-pointer al-button-large al-margin-top-1x al-rew-pointer" pButton (click)="redirectNext(false);quitModal.hideDialog($event)"
+                        [label]="data?.choosePaymentCategoryBean?.flowButtonNavigation?.quitModalContent?.buttonList[0]?.label"
+                        [title]="data?.choosePaymentCategoryBean?.flowButtonNavigation?.quitModalContent?.buttonList[0]?.label"></button>
+                    <button pButton type="button" *ngIf="data?.choosePaymentCategoryBean?.flowButtonNavigation?.quitModalContent?.buttonList[1]?.label"
+                        (click)="checkPreActivityEdit();quitModal.hideDialog($event)"  [label]="data?.choosePaymentCategoryBean?.flowButtonNavigation?.quitModalContent?.buttonList[1]?.label"  [title]="data?.choosePaymentCategoryBean?.flowButtonNavigation?.quitModalContent?.buttonList[1]?.label"
+                        class="al-button-neutral al-button-large al-margin-top-1x al-rew-pointer"></button>
+                    <button pButton type="button" (click)="quitModal.hideDialog($event)" *ngIf="data?.choosePaymentCategoryBean?.flowButtonNavigation?.quitModalContent?.buttonList[2]?.label"
+                        [label]="data?.choosePaymentCategoryBean?.flowButtonNavigation.quitModalContent?.buttonList[2]?.label"
+                        [title]="data?.choosePaymentCategoryBean?.flowButtonNavigation.quitModalContent?.buttonList[2]?.label"
+                        class="al-button-neutral al-button-large al-margin-top-1x al-rew-pointer"></button>
+                </al-dialog>
+                <!-- END quitModal here -->
+            </div>
+        </div>
+    </div>
+    <al-right-side-components></al-right-side-components>
+</div>

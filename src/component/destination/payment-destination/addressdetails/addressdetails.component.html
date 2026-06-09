@@ -1,0 +1,78 @@
+<div [formGroup]=parentForm>
+    <div id ="addressDestinationData" *ngFor="let addressDestinationData of addressDetails; let j = index"
+        [ngClass]="splitPayment?'al-hr-hide-elmt':''">
+        <div class="al-gutter-row ">
+            <div class=" al-gutter-col  al-basic-w5-8 al-480-w100 al-320-w100">
+                <div class="al-480-w50 al-320-w50 al-padding-top-0 al-padding-left-0 al-view-lt480 al-w100 al-view-gt480 al-w75" id="address_{{controlName}}_{{addressDestinationData.addressDetail.addressIdText}}">
+                    <div class="al-field-label-align" *ngIf="addressDestinationData?.addressDetail?.addrOnFile">
+                            <p-radioButton *ngIf="addressDestinationData?.addressDetail?.finalcialAddress && addressDestinationData?.addressDetail?.directDepositAddressText" [value]="addressDestinationData.addressDetail.addressIdText"
+                                    class="al-display-inline"  [name]="controlName" [formControlName]="controlName"   [label]="addressDestinationData?.addressDetail?.directDepositAddressText" inputId="address_{{controlName}}_{{addressDestinationData.addressDetail.addressIdText}}">
+                            </p-radioButton>
+                                <p-radioButton *ngIf="addressDestinationData?.addressDetail?.addressTypeText && addressDestinationData?.addressDetail?.addressDescription" [value]="addressDestinationData.addressDetail.addressIdText"
+                                class="al-display-inline"  [name]="controlName" [formControlName]="controlName"  [label]="addressDestinationData?.addressDetail?.addressDescription" inputId="address_{{controlName}}_{{addressDestinationData.addressDetail.addressIdText}}">
+                            </p-radioButton>
+                            <p-radioButton *ngIf="!addressDestinationData?.addressDetail?.directDepositAddressText && !addressDestinationData?.addressDetail?.addressDescription" [value]="addressDestinationData.addressDetail.addressIdText"
+                                class="al-display-inline"  [name]="controlName" [formControlName]="controlName"  [label]="" inputId="address_{{controlName}}_{{addressDestinationData.addressDetail.addressIdText}}">
+                            </p-radioButton>
+                            <p class="al-padding-left-27">
+                                    <ng-container *ngFor="let addressLine of addressDestinationData?.addressDetail?.addressLines">
+                                        <span class="al-nowrap">{{addressLine}}</span><br>
+                                    </ng-container>
+                                </p>
+                            </div>
+
+                    <div class="al-field-label-align" *ngIf="!addressDestinationData?.addressDetail?.addrOnFile">
+                        <p-radioButton *ngIf="addressDestinationData?.addressDetail?.addressDescription"
+                            [value]="addressDestinationData.addressDetail.addressIdText"
+                            class="al-display-inline" [name]="controlName" [formControlName]="controlName"
+                            [label]="addressDestinationData.addressDetail.addressDescription"
+                            inputId="address_{{controlName}}_{{addressDestinationData.addressDetail.addressIdText}}">
+                        </p-radioButton>
+                        <p-radioButton *ngIf="addressDestinationData?.addressDetail?.directDepositAddressText"
+                            [value]="addressDestinationData.addressDetail.addressIdText" class="al-display-inline"
+                            [name]="controlName" [formControlName]="controlName"
+                            [label]="addressDestinationData.addressDetail.directDepositAddressText"
+                            inputId="address_{{controlName}}_{{addressDestinationData.addressDetail.addressIdText}}">
+                        </p-radioButton>
+                        <p class="al-padding-left-27"
+                            [innerHTML]="addressDestinationData?.addressDetail?.notOnFileAddressText"></p>
+                    </div>
+                </div>
+                <div class="al-gutter-col al-480-w50 al-320-w50 al-w25 al-text-align-right al-padding-top-0"  id="changeBtn_{{controlName}}_{{addressDestinationData.addressDetail.addressIdText}}">
+                    <div *ngIf="addressDestinationData?.addressDetail?.changeButtonText">
+                            <ng-container *ngIf="addressDestinationData?.addressDetail?.changeButtonLink">
+                                <span id="AFenabled_{{controlName}}_{{addressDestinationData.addressDetail.addressIdText}}"
+                                    [innerHTML]="addressDestinationData?.addressDetail?.changeButtonLink | UISafe:'html'"
+                                    hidden>
+                                </span>
+                            </ng-container>
+                            <button pButton type="button"
+                                label="{{addressDestinationData?.addressDetail?.changeButtonText}}"
+                                [title]="addressDestinationData?.addressDetail?.changeButtonText"
+                                class="al-button-neutral al-button-medium"
+                                (click)="updateAddress(controlName,addressDestinationData.addressDetail.addressIdText)">
+                            </button>
+                    </div>
+                    <div *ngIf="addressDestinationData?.addressDetail?.incorrectText">
+                        <al-popover #TooltipMouseOver position="top" contentClass="al-font-change"
+                            [endPopoverAccessibilityText]="''" [beginPopoverAccessibilityText]="''">
+                            <h5 *ngIf="!isCashoutFlag && !isNQFlag" [innerHTML]="addressDestinationData?.addressDetail?.incorrectModalHeaderText"></h5>
+                            <h5 *ngIf="isCashoutFlag || isNQFlag" [innerHTML]="addressDestinationData?.addressDetail?.incorrectText"></h5>
+                            <p class="al-margin-bottom-0"
+                                [innerHTML]="addressDestinationData?.addressDetail?.incorrectModalContentText"></p>
+                        </al-popover>
+                        <a class="al-tooltip incorrecttext" aria-haspopup="true" href="javaScript:void(0);"
+                            (mouseenter)="TooltipMouseOver.showPopOver($event)"
+                            (mouseleave)="TooltipMouseOver.hidePopOver($event)">{{addressDestinationData?.addressDetail?.incorrectText}}</a>
+                    </div>
+                </div>
+            </div>
+            <div class="al-gutter-col al-w3-8 al-480-w100 al-320-w100" id="mthdOfDelivery_{{controlName}}_{{addressDestinationData.addressDetail.addressIdText}}">
+                <p class="al-padding-left-2x" *ngIf="addressDestinationData?.addressDetail?.directDepositDeliveryText" [innerHTML]="addressDestinationData?.addressDetail?.directDepositDeliveryText"></p>
+                <p class="al-padding-left-2x" *ngIf="!isCashoutFlag && !isNQFlag && addressDestinationData?.addressDetail?.methodOfDeliveryText" [innerHTML]="addressDestinationData.addressDetail.methodOfDeliveryText"></p>
+                <p class="al-padding-left-2x" *ngIf="(isCashoutFlag || isNQFlag) && addressDestinationData?.addressDetail?.addrOnFile && addressDestinationData?.addressDetail?.methodOfDeliveryText" [innerHTML]="addressDestinationData.addressDetail.methodOfDeliveryText"></p>
+            </div>
+        </div>
+        <hr class="al-padding-bottom-1x">
+    </div>
+</div>

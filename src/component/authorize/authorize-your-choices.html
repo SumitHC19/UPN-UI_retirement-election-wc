@@ -1,0 +1,159 @@
+<ng-container *ngIf="!checkresponse">
+    <al-loading-indicator id="pagelevel" loadingType="pageLevel" [initialShow]="true" loadingText="loading">
+    </al-loading-indicator>
+</ng-container>
+<div *ngIf="checkresponse" id="authorizeYourChoices" class="al-view-gt960 al-font-change al-spacing">
+    <div class="al-view-960 al-u-10-16">
+        <div *ngIf="showError">
+            <al-error></al-error>
+        </div>
+        <div *ngIf="!showError">
+            <h1>{{data?.authorizeYourChoices?.pageNameText}}</h1>
+            <al-dynamic-edit-loader (continueEdit)="authorizeSaveService($event)" (cancelEdit)="onCancel()"></al-dynamic-edit-loader>
+            <div class="al-padding-bottom-1x">
+                <al-tips-alerts [tipText]="'!'" [tipType]="'action'" [tipSize]="'medium'"
+                    [displayText]="data?.authorizeYourChoices?.alertHeaderText" [moreLess]="false" moreText="More"
+                    lessText="Less">
+                    <p [innerHTML]="data?.authorizeYourChoices?.alertContentText | UISafe:'html'"></p>
+                </al-tips-alerts>
+            </div>
+            <p>{{data?.authorizeYourChoices?.authReadStmtText}}</p>
+            <h2>{{data?.authorizeYourChoices?.yourRightsText}}</h2>
+            <p>
+                <small>
+                    <a (click)="expandAll()">{{data?.authorizeYourChoices?.expandText}}</a> |
+                    <a (click)="collapseAll()">{{data?.authorizeYourChoices?.collapseText}}</a>
+                </small>
+            </p>
+            <al-panel title={{data?.authorizeYourChoices?.generalAuthorization?.titleText}}
+                [active]="generalAuthExpand ? true : false" (click)="setgeneralAuthExpand(generalAuthExpand)">
+                <p (click)="$event.stopPropagation()">{{data?.authorizeYourChoices?.generalAuthorization?.contentText}}</p>
+                <ul>
+                    <li *ngIf="data?.authorizeYourChoices?.generalAuthorization?.certifyBirthDateText"
+                        [innerHTML]="data?.authorizeYourChoices?.generalAuthorization?.certifyBirthDateText"></li>
+                    <li *ngIf="data?.authorizeYourChoices?.generalAuthorization?.singleRetroASDText"
+                        [innerHTML]="data?.authorizeYourChoices?.generalAuthorization?.singleRetroASDText"></li>
+                    <li *ngIf="data?.authorizeYourChoices?.generalAuthorization?.marriedRetroASDText"
+                        [innerHTML]="data?.authorizeYourChoices?.generalAuthorization?.marriedRetroASDText"></li>
+                    <li *ngIf="data?.authorizeYourChoices?.generalAuthorization?.hmEligibleText"
+                        [innerHTML]="data?.authorizeYourChoices?.generalAuthorization?.hmEligibleText"></li>
+                    <li *ngIf="data?.authorizeYourChoices?.generalAuthorization?.nonQDROEligibleText"
+                            [innerHTML]="data?.authorizeYourChoices?.generalAuthorization?.nonQDROEligibleText"></li>
+                    <li *ngIf="data?.authorizeYourChoices?.generalAuthorization?.cancelText"
+                        [innerHTML]="data?.authorizeYourChoices?.generalAuthorization?.cancelText"></li>
+                </ul>
+            </al-panel>
+            <ng-container *ngFor="let authorizationDetailData of data?.authorizeYourChoices?.authorizationDetailData; let i = index;">
+                <al-panel title={{authorizationDetailData?.pensionPlanAuthorization?.titleText}}
+                    [active]="authDetailDataItemExpand[i] ? true : false" (click)="setactive(authDetailDataItemExpand[i], i)">
+                    <p (click)="$event.stopPropagation()" *ngIf="authorizationDetailData?.pensionPlanAuthorization?.planIntroText">{{authorizationDetailData.pensionPlanAuthorization.planIntroText}}</p>
+                    <ul>
+                        <li *ngIf="authorizationDetailData?.pensionPlanAuthorization?.qualifiedPlanText">
+                            <p *ngIf="authorizationDetailData?.pensionPlanAuthorization?.qualifiedPlanText" [innerHTML]="authorizationDetailData?.pensionPlanAuthorization?.qualifiedPlanText | UISafe:'html'"
+                                class="al-display-inline"></p>
+                        </li>
+                        <li *ngIf="authorizationDetailData?.pensionPlanAuthorization?.qualifiedRetroASDText"
+                            [innerHTML]="authorizationDetailData?.pensionPlanAuthorization?.qualifiedRetroASDText"></li>
+                        <li *ngIf="authorizationDetailData?.pensionPlanAuthorization?.claimExemptText"
+                            [innerHTML]="authorizationDetailData?.pensionPlanAuthorization?.claimExemptText"></li>
+                        <li *ngIf="authorizationDetailData?.pensionPlanAuthorization?.nonRolloverText"
+                            [innerHTML]="authorizationDetailData?.pensionPlanAuthorization?.nonRolloverText"></li>
+                        <li *ngIf="authorizationDetailData?.pensionPlanAuthorization?.amountChangeText"
+                            [innerHTML]="authorizationDetailData?.pensionPlanAuthorization?.amountChangeText"></li>
+                        <li *ngIf="authorizationDetailData?.pensionPlanAuthorization?.contributionsText"
+                            [innerHTML]="authorizationDetailData?.pensionPlanAuthorization?.contributionsText"></li>
+                        <li *ngIf="authorizationDetailData?.pensionPlanAuthorization?.correctErrorText"
+                            [innerHTML]="authorizationDetailData?.pensionPlanAuthorization?.correctErrorText"></li>
+                    </ul>
+                    <ng-container
+                        *ngFor="let pensionElectionList of authorizationDetailData?.pensionPlanAuthorization?.pensionElectionAuthorization">
+                        <h5 *ngIf="pensionElectionList?.titleText">{{pensionElectionList.titleText}}</h5>
+                        <p *ngIf="pensionElectionList?.introText">{{pensionElectionList.introText}}</p>
+                        <ng-container
+                        *ngFor="let pensionPaymentAuthorizationList of pensionElectionList?.pensionPaymentAuthorization">
+                        <ul>
+                            <li *ngIf="pensionPaymentAuthorizationList.beginPaymentText"
+                                [innerHTML]="pensionPaymentAuthorizationList.beginPaymentText"></li>
+                            <li *ngIf="pensionPaymentAuthorizationList.amountPaymentText"
+                                [innerHTML]="pensionPaymentAuthorizationList.amountPaymentText"></li>
+                            <li  *ngIf="pensionPaymentAuthorizationList.benefitAmountText"
+                                [innerHTML]="pensionPaymentAuthorizationList.benefitAmountText"></li>
+                            <li *ngIf="pensionPaymentAuthorizationList.diesBeforeText"
+                                [innerHTML]="pensionPaymentAuthorizationList.diesBeforeText"></li>
+                            <li *ngIf="pensionPaymentAuthorizationList.endProductText"
+                                [innerHTML]="pensionPaymentAuthorizationList.endProductText"></li>
+                            </ul>
+                    </ng-container>
+                    </ng-container>
+                    <al-popover #TooltipMouseOver position="top" contentClass="al-font-change"
+                        [endPopoverAccessibilityText]="'End of popover content'"
+                        [beginPopoverAccessibilityText]="'Beginning of popover content'">
+                        <h5 [innerHTML]="authorizationDetailData?.pensionPlanAuthorization?.noticeText"></h5>
+                        <p [innerHTML]="authorizationDetailData?.pensionPlanAuthorization?.tooltipText"></p>
+                    </al-popover>
+                </al-panel>
+            </ng-container>
+            <hr />
+            <h2 [innerHTML]="data?.authorizeYourChoices?.acknowledgement?.acknowledgementText"></h2>
+            <div class="al-field-content">
+                <p-checkbox [style]="{'margin-bottom': '3px'}" name="chk1" class="label-inline" label="" value="val1"
+                    [(ngModel)]="selectedValues"></p-checkbox>
+                <p style="display: contents;" [innerHTML]="data?.authorizeYourChoices?.acknowledgement?.authCertifyText | UISafe:'html'">
+                </p>
+            </div>
+            <p class="al-padding-bottom-1x">
+                <a (click)="authToggleAll()" href="javascript:void(0);" class="ah-print-only">{{data?.authorizeYourChoices?.acknowledgement?.printLinkLabel}}</a> {{data?.authorizeYourChoices?.acknowledgement?.printText}}
+            </p>
+            <al-loading-indicator id="saveServiceLoader" loadingType="pageLevel" [initialShow]="false" loadingText="loading"></al-loading-indicator>
+            <div class="al-margin-bottom-2x">
+                <button pButton type="button" label="{{data?.authorizeYourChoices?.flowButtonNavigation?.buttonList[0]?.label}}" 
+                    title="{{data?.authorizeYourChoices?.flowButtonNavigation?.buttonList[0]?.label}}"
+                    (click)="canContinue(true)" class="al-button-positive al-button-large">
+                </button>
+                <button *ngIf="showCBLButton" pButton type="button"
+                    label="{{data?.authorizeYourChoices?.flowButtonNavigation?.buttonList[1]?.label}}"
+                    title="{{data?.authorizeYourChoices?.flowButtonNavigation?.buttonList[1]?.label}}"
+                    class="al-button-neutral al-button-large al-margin-right-1x"
+                    (click)="canContinue(false)">
+                </button>
+                    <button *ngIf="showQuitButton" pButton type="button" (click)="aldialogWithWidth.showDialog($event)"
+                        label="{{data?.authorizeYourChoices?.flowButtonNavigation?.buttonList[2]?.label}}"
+                        title="{{data?.authorizeYourChoices?.flowButtonNavigation?.buttonList[2]?.label}}"
+                        class="al-button-neutral al-button-large al-margin-top-1x">
+                    </button>
+                    <al-dialog #aldialogWithWidth [(visible)]="display" width="650">
+                        <h3 class="al-padding-bottom-1x">
+                            {{data?.authorizeYourChoices?.flowButtonNavigation?.quitModalContent?.title}}
+                        </h3>
+                        <div *ngFor="let quitModalText of data?.authorizeYourChoices?.flowButtonNavigation?.quitModalContent?.bodyList">
+                        <ng-container *ngIf="!showCBLButton && quitModalText?.action === 'comeBackLater' else elseBlock"></ng-container>
+                        <ng-template #elseBlock>
+                            <h5><b [innerHTML]="quitModalText?.heading"></b></h5>
+                            <p [innerHTML]="quitModalText?.paragraph"></p>
+                        </ng-template>
+                    </div>
+                        <hr class="al-padding-bottom-1x">
+                        <button *ngIf="showCBLButton && data?.authorizeYourChoices?.flowButtonNavigation?.quitModalContent?.buttonList[0]?.label" type="button"
+                            label={{data?.authorizeYourChoices?.flowButtonNavigation?.quitModalContent?.buttonList[0]?.label}}
+                            [title]="data?.authorizeYourChoices?.flowButtonNavigation?.quitModalContent?.buttonList[0]?.label"                            
+                            class="al-button-positive al-button-large " pButton
+                            (click)="aldialogWithWidth.hideDialog($event);canContinue(false)">
+                        </button>
+                            <button pButton type="button" (click)="aldialogWithWidth.hideDialog($event)"
+                                [label]="data?.authorizeYourChoices?.flowButtonNavigation?.quitModalContent?.buttonList[1]?.label"
+                                [title]="data?.authorizeYourChoices?.flowButtonNavigation?.quitModalContent?.buttonList[1]?.label"                                
+                                class="al-button-neutral al-button-large"
+                                (click)="aldialogWithWidth.hideDialog($event);checkPreActivityEdit()">
+                            </button>
+
+                        <button pButton type="button" (click)="aldialogWithWidth.hideDialog($event)"
+                            [label]="data?.authorizeYourChoices?.flowButtonNavigation?.quitModalContent?.buttonList[2]?.label"
+                            [title]="data?.authorizeYourChoices?.flowButtonNavigation?.quitModalContent?.buttonList[2]?.label"
+                            class="al-button-neutral al-button-large">
+                        </button>
+                    </al-dialog>
+            </div>
+        </div>
+    </div>
+    <al-right-side-components></al-right-side-components>
+</div>
